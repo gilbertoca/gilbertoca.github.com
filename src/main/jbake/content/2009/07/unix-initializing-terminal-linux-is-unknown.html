@@ -1,0 +1,8 @@
+title=Unix: Initializing..Terminal linux is unknown.
+date=2009-07-09
+type=post
+tags=aix,console,unix,configuracao
+status=published
+~~~~~~
+
+Nosso banco de dados atual está instalado em uma máquina unix - AIX 5.3. Mas por estar acostumado com ambientes Linux, instalei para o mesmo, o<a href="http://www-03.ibm.com/systems/power/software/aix/linux/"> pacote de ferramentas Linux</a> que a <a href="http://www.ibm.com/pt/pt/">IBM </a>disponibiliza. Funciona muito bem, mas quando executo um binário unix - exemplo: topas - o shell responde que esse erro.<br />A solução é ajustar a variável TERM  para xterm, nesse caso é claro, pois utilizo um ambiente gráfico para acessar o servidor. Não sei se funcionaria acessando de um terminal texto.<br /><pre><br />export TERM=xterm<br /></pre>

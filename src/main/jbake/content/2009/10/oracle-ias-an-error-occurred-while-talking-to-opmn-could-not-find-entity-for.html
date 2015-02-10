@@ -1,0 +1,8 @@
+title=Oracle IAS [An error occurred while talking to OPMN. Could not find entity for]
+date=2009-10-19
+type=post
+tags=linux,sistema-operacional,application-server
+status=published
+~~~~~~
+
+O servidor de aplicações Oracle (IAS 10g) não inicia, o enterprise manager reporta um erro que não diz muito:<br /><blockquote> An error occurred while talking to OPMN. Could not find entity for "nome do servidor" </blockquote><br /><br />Os arquivos de log necessários são:<br /><ul><br />	<li>$ORACLE_HOME/opmn/logs/ons.log</li><br /><br />	<li>$ORACLE_HOME/opmn/logs/opmn.log</li><br /><br />	<li>$ORACLE_HOME/opmn/logs/ipm.log</li><br /></ul><br /><br />O único que mostrou algo de errado foi ipm.log:<br /><code><br />cat ipm.log<br />09/10/19 10:18:09 [2] BIND (Address already in use)<br />09/10/19 10:18:09 [2] 127.0.0.1:6101 - listener BIND failed<br />09/10/19 10:18:09 [4] Thread do listener 98311: 127.0.0.1:6101 (0x442) está sendo encerrado<br />09/10/19 10:18:09 [1] Listener local encerrado<br /></code><br />A solução foi fechar todas a aplicações oracle em execução e verificar pelo utilitário <strong><a href="http://linux.die.net/man/1/ps">ps</a></strong> a existência de algum ainda rodando, para fechá-lo também.

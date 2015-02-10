@@ -1,14 +1,30 @@
-title=About
-date=2013-09-01
-type=page
+date=2009-04-07 17:25:08+00:00
 status=published
+title=About
+type=page
 ~~~~~~
 
-This site is a knowledge base for [ingenieux](http://www.ingenieux.com.br/) projects ([listed here](../projects/)).
+***[Toda a Escritura é inspirada por Deus e útil para o ensino, para a repreensão, para a correção e para a instrução na justiça,  
+para que o homem de Deus seja apto e plenamente preparado para toda boa obra.  
+2 Timóteo 3:16-17  
+][1]  
+***  
+Gilberto Caetano de Andrade
 
-Its purpose is to help users get from zero to hero in record time. It is based on our experience with customers
-how to leverage the features of our projects.
+  1. Tecnólogo em Processamento de Dados 
+  2. Especialista em Engenharia da Informação
+  3. Servidor Público, ocupando o cargo Analista em Tecnologia da Informação, desde abril de 2000
+  4. Função de Administrar Bancos de Dados
+  5. [Secretaria de Administração do Estado do Tocantins][2]
 
-In particular, you can [clone this site](http://bitbucket.org/ingenieux/docs.ingenieux.com.br/). It is powered by the excellent [JBake](https://github.com/jonbullock/JBake/) and our [jbake-maven-plugin](http://bitbucket.org/ingenieux/jbake-maven-plugin). Content is prototyped locally then deployed into AWS S3. Feel free to add questions, or better yet: clone and submit your pull request with changes :)
+Objetivo: 
 
+**Ser exemplo para meu filho como pai e amigo. Procurar ser um esposo digno e amoroso. Não envergonhar meu Senhor Jesus no meu agir, no meu pensar e principalmente no meu falar.  
+**</li> 
 
+Consequência: **Edificar a Igreja de Nosso Senhor Jesus Cristo**
+
+<!-- google_ad_section_end -->
+
+ [1]: http://www.bibliaonline.com.br/nvi/2tm/3/16-17
+ [2]: http://www.secad.to.gov.br

@@ -1,0 +1,8 @@
+title=umount: /mnt/XXXX: device is busy
+date=2010-02-24
+type=post
+tags=linux,opensuse,sistema-operacional
+status=published
+~~~~~~
+
+Você está cansado de ver estas mensagens, dizendo que você não pode desmountar /mnt/cdrom ou /mnt/flash? Veja esta pequena tática: <br /><pre lang="bash"><br />lsof | grep /mnt/cdrom<br /></pre><br />A sáida será o(s) processo(s) que estão usando este dispositivo. Agora pare ou derrube o processo. Outra opção: <br /><pre lang="bash"><br />fuser -muv /mnt/cdrom<br /></pre><br />O qual irá listar conta de usuário, PID, etc usando o dispositivo montado em /mnt/cdrom. <br /><br />
