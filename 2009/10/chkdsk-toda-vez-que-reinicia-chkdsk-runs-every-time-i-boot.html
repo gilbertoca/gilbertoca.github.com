@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+    Vivendo e Aprendendo ...
+        - CHKDSK toda vez que reinicia (CHKDSK runs every time I boot)!
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Author">
+    <meta name="description" content="Static blog generated with JBake">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/spacelab/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="/css/base.css">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav icon -->
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body>      
+    <nav class="navbar navbar-default navbar-fixed-top " role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Vivendo e Aprendendo ...</a>
+        </div>
+        
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="/pages/about.html">About me</a></li>
+            <li><a href="/pages/contact.html">Contact</a></li>
+          </ul>
+        
+        <!-- Right navigation -->
+        <ul class="nav navbar-nav navbar-right">
+              <li><a href="http://twitter.com/gilberto_gca" title="Twitter"><i class="fa fa-twitter-square"></i></a></li>
+              <li><a href="https://github.com/gilbertoca" title="Github"><i class="fa fa-github-square"></i></a></li>
+          <li><a href="/archive.html"><i class="fa fa-list"></i> Archive</a></li>
+          <li><a href="/feed.xml" title="Rss"><i class="fa fa-rss"></i> Feed</a></li>
+        </ul>
+        <!-- Right navigation end -->
+
+      </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav><!-- /.navbar -->
+
+    <!-- Begin page content -->
+    <div class="container">
+      
+      <div class="row">
+        <div class="col-md-12">
+          <article>
+            <div class="page-header"><h1>CHKDSK toda vez que reinicia (CHKDSK runs every time I boot)!</h1>
+              <ol class="breadcrumb tagsbar">
+                <li><a href="/tags/windows-xp.html">windows-xp</a></li>
+                <li><a href="/tags/sistema-operacional.html">sistema-operacional</a></li>
+              </ol>
+            </div>
+          <p class="post-meta">
+            <i class="fa fa-calendar"></i>&nbsp;17 Outubro 2009&nbsp;&nbsp;
+            <i class="fa fa-user"></i>&nbsp;Author&nbsp;&nbsp;
+          </p>
+              <p>
+Esse parece ser um problema comum e caso você não o tenha encontrado, pode ficar tranquilo. Sua vez vai chegar!<br />A solução que funcionou para mim, encontrei neste <a href="http://www.pcreview.co.uk/forums/thread-72388.php">fórum</a>. Vou deixar registrado pois sei que outros usuários também precisarão:<br /><ul><br />	<li>1. click no menu iniciar e abra a janela de execução;</li><br /><br />	<li>2. digite "cmd" e enter (nota: não use aspas);</li><br /><br />	<li>3. depois digite "fsutil dirty query e:";</li><br /><br />	<li>4. se a mensagem de retorno indicar que o volume está SUJO vá para o passo 5;<br /></li><br />	<li>5. depois digite "chkdsk e: /f /x";</li><br /><br />	<li>6. com a finalização repita o passo 3;</li><br /><br />	<li>7. se não mais indicar que está SUJO então reinicie e não verá mais a mensagem de agendamento do CHKDSK.</li><br /></ul><br /><pre>Microsoft Windows XP [versão 5.1.2600]<br />(C) Copyright 1985-2001 Microsoft Corp.<br /><br />C:Documents and SettingsGilberto>fsutil dirty query e:<br />O volume e: está sujo.<br /><br />C:Documents and SettingsGilberto>chkdsk e: /f /x<br />O tipo do sistema de arquivos é NTFS.<br />Volume desmontado. Todos os identificadores abertos para esse volume agora são i<br />nválidos.<br />O rótulo de volume é Disco local.<br /><br />CHKDSK está verificando os arquivos e pastas (etapa 1 de 3)...<br />Verificação de arquivos concluída.<br />CHKDSK está verificando índices (etapa 2 de 3)...<br />Verificação dos índices concluída.<br />CHKDSK está verificando os descritores de segurança (etapa 3 de 3)...<br />Verificação de descritores de segurança concluída.<br />O Windows verificou o sistema de arquivos e não encontrou problemas.<br /><br />  58878224 KB de espaço total em disco.<br />   7342712 KB em 18820 arquivos.<br />     11708 KB em 4861 índices.<br />         0 KB em setores defeituosos.<br />     96752 KB em uso pelo sistema.<br />     65536 KB ocupados pelo arquivo de log.<br />  51427052 KB disponíveis em disco.<br /><br />      4096 bytes em cada unidade de alocação.<br />  14719556 total de unidades de alocação no disco.<br />  12856763 unidades de alocação disponíveis em disco.<br /><br />C:Documents and SettingsGilberto>fsutil dirty query e:<br />O volume e: NÃO está sujo.<br /></pre><br />
+</p>
+      <div class="share">
+  <!-- Facebook -->
+          <a href="http://www.facebook.com/sharer.php?u=http://blog.gilbertoca.com/2009/10/chkdsk-toda-vez-que-reinicia-chkdsk-runs-every-time-i-boot.html" target="_blank"><img src="/img/sharebuttons/facebook.png" alt="Facebook" /></a>
+  <!-- Google+ -->
+  <!-- Twitter -->
+          <a href="http://twitter.com/share?url=http://blog.gilbertoca.com/2009/10/chkdsk-toda-vez-que-reinicia-chkdsk-runs-every-time-i-boot.html&text=CHKDSK toda vez que reinicia (CHKDSK runs every time I boot)! blog.gilbertoca.com/2009/10/chkdsk-toda-vez-que-reinicia-chkdsk-runs-every-time-i-boot.html" target="_blank"><img src="/img/sharebuttons/twitter.png" alt="Twitter" /></a>
+      </div>
+            </article>
+        </div> <!-- /.col-md-12 -->
+      </div> <!-- /.row -->
+        
+      </div><!-- /.container -->
+
+    <footer>
+      <div class="container">
+        <hr>
+        <div class="row">
+          <div class="col-xs-10">
+            <p class="text-muted credit">&copy; Gilberto Caetano de Andrade 2014 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake v2.2.1</a> | <i title="Linux" class="fa fa-linux"></i></p>
+          </div>
+          <div class="col-xs-2 gotop">
+            <a href="#"><i class="fa fa-arrow-circle-up"> top</i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gist-embed/1.6/gist-embed.min.js"></script>
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
+    <script type="text/javascript">
+      <!-- load prettify only when needed -->
+      $(document).ready(function(){
+        var prettify = false;
+        var classToAdd = 'prettyprint snippet';
+        $("pre > code").each(function() {
+          $("pre > code").parent().addClass(classToAdd);
+          prettify = true;
+        });
+        if(prettify) {
+          prettyPrint();
+        }
+      });
+    </script>
+
+
+        </body>
+</html>

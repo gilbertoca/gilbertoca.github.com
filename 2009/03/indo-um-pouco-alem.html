@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+    Vivendo e Aprendendo ...
+        - Indo um pouco além ...
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Author">
+    <meta name="description" content="Static blog generated with JBake">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/spacelab/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="/css/base.css">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav icon -->
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body>      
+    <nav class="navbar navbar-default navbar-fixed-top " role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Vivendo e Aprendendo ...</a>
+        </div>
+        
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="/pages/about.html">About me</a></li>
+            <li><a href="/pages/contact.html">Contact</a></li>
+          </ul>
+        
+        <!-- Right navigation -->
+        <ul class="nav navbar-nav navbar-right">
+              <li><a href="http://twitter.com/gilberto_gca" title="Twitter"><i class="fa fa-twitter-square"></i></a></li>
+              <li><a href="https://github.com/gilbertoca" title="Github"><i class="fa fa-github-square"></i></a></li>
+          <li><a href="/archive.html"><i class="fa fa-list"></i> Archive</a></li>
+          <li><a href="/feed.xml" title="Rss"><i class="fa fa-rss"></i> Feed</a></li>
+        </ul>
+        <!-- Right navigation end -->
+
+      </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav><!-- /.navbar -->
+
+    <!-- Begin page content -->
+    <div class="container">
+      
+      <div class="row">
+        <div class="col-md-12">
+          <article>
+            <div class="page-header"><h1>Indo um pouco além ...</h1>
+            </div>
+          <p class="post-meta">
+            <i class="fa fa-calendar"></i>&nbsp;23 Março 2009&nbsp;&nbsp;
+            <i class="fa fa-user"></i>&nbsp;Author&nbsp;&nbsp;
+          </p>
+              <p>
+<p><br />Estou aprendendo um pouco sobre programa&#231;&#227;o orientada a objeto em java e com o pouco que li resolvi implementar uma pequena api que abstrai as regras de acesso e recupera&#231;&#227;o de dados &minus; acesso a banco de dados. Gosto muito dessa (<a href="http://orbroker.sourceforge.net/" target="_blank">OrBroker</a>) api  de persist&#234;ncia com isso elaborei um contrato que acho o m&#237;nimo necess&#225;rio para o acesso a dados, o qual poder&#225; utilizar a api OrBroker - espero n&#227;o somente essa api, mas outras (desacoplamento).<br /></p><br /><p><br />IService: Interface (contrato) geral para uso com o mescanimo de persist&#234;ncia OrBroker. Estabelece assinaturas de m&#233;todos essenciais para opera&#231;&#245;es de acesso a banco de dados. <br />Assinaturas:<br /></p><br /><pre><br /><span style="color: #000000;">   </span><span style="font-weight: bold;color: #000000;">public</span><span style="color: #000000;"> </span><span style="font-weight: bold;color: #0095ff;">Collection</span><span style="color: #000000;">&lt;T&gt; </span><span style="color: #000080;">getAll</span><span style="color: #000000;">();</span><br /><span style="color: #000000;">   </span><span style="font-weight: bold;color: #000000;">public</span><span style="color: #000000;"> </span><span style="color: #800000;">boolean</span><span style="color: #000000;"> </span><span style="color: #000080;">find</span><span style="color: #000000;">(T entity);</span><br /><span style="color: #000000;">   </span><span style="font-weight: bold;color: #000000;">public</span><span style="color: #000000;"> </span><span style="color: #800000;">void</span><span style="color: #000000;"> </span><span style="color: #000080;">insert</span><span style="color: #000000;">(T entity);</span><br /><span style="color: #000000;">   </span><span style="font-weight: bold;color: #000000;">public</span><span style="color: #000000;"> </span><span style="color: #800000;">void</span><span style="color: #000000;"> </span><span style="color: #000080;">update</span><span style="color: #000000;">(T entity);</span><br /><span style="color: #000000;">   </span><span style="font-weight: bold;color: #000000;">public</span><span style="color: #000000;"> </span><span style="color: #800000;">void</span><span style="color: #000000;"> </span><span style="color: #000080;">delete</span><span style="color: #000000;">(T entity);</span><br /><span style="color: #000000;">   </span><span style="font-weight: bold;color: #000000;">public</span><span style="color: #000000;"> </span><span style="font-weight: bold;color: #0095ff;">Collection</span><span style="color: #000000;">&lt;T&gt; </span><span style="color: #000080;">findByNamedQuery</span><span style="color: #000000;">(</span><span style="font-weight: bold;color: #0095ff;">String</span><span style="color: #000000;"> queryName);</span><br /><span style="color: #000000;">   </span><span style="font-weight: bold;color: #000000;">public</span><span style="color: #000000;"> </span><span style="font-weight: bold;color: #0095ff;">Collection</span><span style="color: #000000;">&lt;T&gt; </span><span style="color: #000080;">findLike</span><span style="color: #000000;">(</span><span style="font-weight: bold;color: #0095ff;">String</span><span style="color: #000000;"> likeColumn, </span><span style="font-weight: bold;color: #0095ff;">String</span><span style="color: #000000;"> likeValue);</span><br /></pre><br /><p><br />Voc&#234;s podem notar o uso do ingl&#234;s para nomear classes, metodos e at&#233; atributos. Acho isso um v&#237;cio ou uma maneira de reduzir os nomes, pois em portugu&#234;s ficam enormes. Outra coisa, alguns podem comentar que o nome certo seria sufixar ou prefixar tal interface com o termo DAO, para expressar um padr&#227;o de projeto muito conhecido e utilizado para, tamb&#233;m, abstrair essas atividades de banco de dados. Acontece que essa minha pequena implementa&#231;&#227;o n&#227;o exigir&#225; tamanha desacoplagem e acho tamb&#233;m que um programa que grava e ler dados, n&#227;o faz somente isso, faz isso e um pouco mais - regras de neg&#243;cio. Assim, optei por, inicialmente, colocar as assinaturas necess&#225;rias ao acesso a dados e deixar para uma outra interface acrescentar as assinaturas de contrato espec&#237;ficas:<br /></p><br /><pre><br /><span style="font-weight: bold;color: #000000;">public</span><span style="color: #000000;"> </span><span style="font-weight: bold;color: #000000;">interface</span><span style="color: #000000;"> ICategoriaService </span><span style="font-weight: bold;color: #000000;">extends</span><span style="color: #000000;"> IService&lt;categoria, integer&gt; {</span><br /><span style="color: #000000;">	</span><span style="font-weight: bold;color: #000000;">public</span><span style="color: #000000;"> Categoria </span><span style="color: #000080;">find</span><span style="color: #000000;">(</span><span style="font-weight: bold;color: #0095ff;">Integer</span><span style="color: #000000;"> primaryKey);</span><br /><span style="color: #000000;">	</span><span style="font-weight: bold;color: #000000;">public</span><span style="color: #000000;"> </span><span style="color: #800000;">void</span><span style="color: #000000;"> </span><span style="color: #000080;">Classificar</span><span style="color: #000000;">();</span><br /><span style="color: #000000;">	}</span><br /></pre><br /><p><br />Na implementa&#231;&#227;o ocorre um fato interessante quando a entidade sendo trabalhada n&#227;o exigir contratos al&#233;m dos j&#225; fornecidos. Notei essa caracter&#237;stica quando da implementa&#231;&#227;o dos m&#233;todos por uma classe a ser utilizada como base de implementa&#231;&#227;o, ou seja, as classes mais espec&#237;ficas &minus; a exemplo da ICategoriaService &minus; herdar&#227;o dessa classe base e implementar&#227;o seus contratos espec&#237;ficos. Um exemplo de uso dessa classe base:<br /></p><br /><pre><br /><span style="font-weight: bold;color: #000000;">public</span><span style="color: #000000;"> </span><span style="font-weight: bold;color: #000000;">class</span><span style="color: #000000;"> CategoriaBaseServiceTest {</span><br /><span style="color: #000000;">	</span><span style="font-weight: bold;color: #000000;">private</span><span style="color: #000000;"> BaseService&lt;categoria, integer&gt; cS = </span><span style="font-weight: bold;color: #000000;">new</span><span style="color: #000000;"> BaseService&lt;categoria,integer&gt;(Categoria.</span><span style="color: #000080;">class</span><span style="color: #000000;">,Constants.</span><span style="color: #000080;">ORBROKER_INVENTARIO</span><span style="color: #000000;">);	</span><br /><span style="color: #000000;">	</span><br /><span style="color: #000000;">	@Test</span><br /><span style="color: #000000;">	</span><span style="font-weight: bold;color: #000000;">public</span><span style="color: #000000;"> </span><span style="color: #800000;">void</span><span style="color: #000000;"> </span><span style="color: #000080;">testGetAll</span><span style="color: #000000;">() {</span><br /><span style="color: #000000;">	</span><span style="font-weight: bold;color: #0095ff;">Collection</span><span style="color: #000000;">&lt;categoria&gt; result = cS.</span><span style="color: #000080;">getAll</span><span style="color: #000000;">();</span><br /><span style="color: #000000;">		</span><span style="font-weight: bold;color: #0095ff;">System</span><span style="color: #000000;">.</span><span style="color: #000080;">out</span><span style="color: #000000;">.</span><span style="color: #000080;">println</span><span style="color: #000000;">(result);</span><br /><span style="color: #000000;">		</span><span style="color: #000080;">assertFalse</span><span style="color: #000000;">(result.</span><span style="color: #000080;">isEmpty</span><span style="color: #000000;">());</span><br /><span style="color: #000000;">	}</span><br /><span style="color: #000000;">}</span><br /></pre><br /><p><br />Ent&#227;o ficou da seguinte maneira essa pequena api:<br /></><br /><pre><br /><span style="color: #000000;">Interface	Implementa&#231;&#227;o</span><br /><span style="color: #000000;">IService ----------&gt; BaseService</span><br /><span style="color: #000000;">:                     :</span><br /><span style="color: #000000;">:                     :</span><br /><span style="color: #000000;">ICategoriaService -&gt; CategoriaService	</span><br /></pre>
+</p>
+      <div class="share">
+  <!-- Facebook -->
+          <a href="http://www.facebook.com/sharer.php?u=http://blog.gilbertoca.com/2009/03/indo-um-pouco-alem.html" target="_blank"><img src="/img/sharebuttons/facebook.png" alt="Facebook" /></a>
+  <!-- Google+ -->
+  <!-- Twitter -->
+          <a href="http://twitter.com/share?url=http://blog.gilbertoca.com/2009/03/indo-um-pouco-alem.html&text=Indo um pouco além ... blog.gilbertoca.com/2009/03/indo-um-pouco-alem.html" target="_blank"><img src="/img/sharebuttons/twitter.png" alt="Twitter" /></a>
+      </div>
+            </article>
+        </div> <!-- /.col-md-12 -->
+      </div> <!-- /.row -->
+        
+      </div><!-- /.container -->
+
+    <footer>
+      <div class="container">
+        <hr>
+        <div class="row">
+          <div class="col-xs-10">
+            <p class="text-muted credit">&copy; Gilberto Caetano de Andrade 2014 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake v2.2.1</a> | <i title="Linux" class="fa fa-linux"></i></p>
+          </div>
+          <div class="col-xs-2 gotop">
+            <a href="#"><i class="fa fa-arrow-circle-up"> top</i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gist-embed/1.6/gist-embed.min.js"></script>
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
+    <script type="text/javascript">
+      <!-- load prettify only when needed -->
+      $(document).ready(function(){
+        var prettify = false;
+        var classToAdd = 'prettyprint snippet';
+        $("pre > code").each(function() {
+          $("pre > code").parent().addClass(classToAdd);
+          prettify = true;
+        });
+        if(prettify) {
+          prettyPrint();
+        }
+      });
+    </script>
+
+
+        </body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+    Vivendo e Aprendendo ...
+        - Instale Oracle JDK7 no openSUSE
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Author">
+    <meta name="description" content="Static blog generated with JBake">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/spacelab/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="/css/base.css">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav icon -->
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body>      
+    <nav class="navbar navbar-default navbar-fixed-top " role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Vivendo e Aprendendo ...</a>
+        </div>
+        
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="/pages/about.html">About me</a></li>
+            <li><a href="/pages/contact.html">Contact</a></li>
+          </ul>
+        
+        <!-- Right navigation -->
+        <ul class="nav navbar-nav navbar-right">
+              <li><a href="http://twitter.com/gilberto_gca" title="Twitter"><i class="fa fa-twitter-square"></i></a></li>
+              <li><a href="https://github.com/gilbertoca" title="Github"><i class="fa fa-github-square"></i></a></li>
+          <li><a href="/archive.html"><i class="fa fa-list"></i> Archive</a></li>
+          <li><a href="/feed.xml" title="Rss"><i class="fa fa-rss"></i> Feed</a></li>
+        </ul>
+        <!-- Right navigation end -->
+
+      </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav><!-- /.navbar -->
+
+    <!-- Begin page content -->
+    <div class="container">
+      
+      <div class="row">
+        <div class="col-md-12">
+          <article>
+            <div class="page-header"><h1>Instale Oracle JDK7 no openSUSE</h1>
+              <ol class="breadcrumb tagsbar">
+                <li><a href="/tags/opensuse.html">opensuse</a></li>
+                <li><a href="/tags/java.html">java</a></li>
+              </ol>
+            </div>
+          <p class="post-meta">
+            <i class="fa fa-calendar"></i>&nbsp;21 Fevereiro 2013&nbsp;&nbsp;
+            <i class="fa fa-user"></i>&nbsp;Author&nbsp;&nbsp;
+          </p>
+              <p>
+<p>
+<br />Realize o download a partir deste local: <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html" title="Java SE Development Kit 7 Downloads" target="_blank">Java SE Development Kit 7 Downloads</a>, em um diretório de sua escolha - escolhi: /Softwares_usados/Tools/java/jdk/ . 
+<br /></p>
+<br /><p>Depois como super usuário (root) utilize <a href="http://doc.opensuse.org/documentation/html/openSUSE/opensuse-startup/cha.sw_cl.html" title="Ferramenta de Gerenciamento de Software - Zypper" target="_blank">a Ferramente de Gerencimanto de Software - Zypper -</a> para instalar o pacote (arquivo RPM):
+<br /><pre lang="bash">
+<br />gilberto.andrade@A37710:~$ su -
+<br />Senha:
+<br />A37710:~ # cd /dados/D/Softwares_usados/Tools/java/jdk/
+<br />A37710:/dados/D/Softwares_usados/Tools/java/jdk # ll
+<br />total 439208
+<br />-rw-r----- 1 gilberto.andrade users   8405307 Feb 11 20:14 javafx-2_2_7-apidocs.zip
+<br />-rw-r--r-- 1 gilberto.andrade users  54426218 Oct 11 15:12 javafx_scenebuilder-1_1-beta-linux-x64.tar.gz
+<br />-rw-r--r-- 1 gilberto.andrade users 216263278 Jun 13  2012 javatutorials.zip
+<br />-rw-r----- 1 gilberto.andrade users  60768483 Feb 11 18:10 jdk-7u15-apidocs.zip
+<br />-rw-r----- 1 gilberto.andrade users 109860709 Feb 16 04:08 jdk-7u15-linux-x64.rpm
+<br />
+<br />A37710:/dados/D/Softwares_usados/Tools/java/jdk # zypper install jdk-7u15-linux-x64.rpm 
+<br /></pre>
+<br /></p>
+<br /><p>
+<br />Vamos "avisar" o mecanismo do sistema que é responsável por estes serviços - <a href="http://blog.gilbertoca.com/?p=875" title="Alterne entre versões Java facilmente [update-alternatives] parte 2" target="_blank">update-alternatives</a>- que existe uma nova versão do jdk instalada. O diretório (melhor dizendo, link) <strong>/usr/java/latest</strong> representa a versão mais recente instalada e irá apontar para última e mais nova versão:
+<br /><pre lang="bash">
+<br />A37710:/usr/java # ll
+<br />total 12
+<br />lrwxrwxrwx 1 root root   16 Feb 15 16:09 default -> /usr/java/latest
+<br />drwxr-xr-x 4 root root 4096 Feb 15 15:13 jdk1.7.0_07
+<br />drwxr-xr-x 3 root root 4096 Feb 21 14:36 jdk1.7.0_13
+<br />drwxr-xr-x 8 root root 4096 Feb 21 14:36 jdk1.7.0_15
+<br />lrwxrwxrwx 1 root root   21 Feb 21 14:36 latest -> /usr/java/jdk1.7.0_15
+<br /></pre>
+<br /></p>
+<br /><p>
+<br />A partir do diretório <strong>latest/bin</strong> e <strong>latest/jre/bin</strong> realize as seguintes modificações:
+<br /><pre lang="bash">
+<br />A37710:/usr/java # cd latest/bin/
+<br />A37710:/usr/java/latest/bin # for bin in *; do update-alternatives --install /usr/bin/$bin $bin $(pwd)/$bin 20000; done
+<br />A37710:/usr/java/latest/bin # cd ..
+<br />A37710:/usr/java/latest # cd jre/bin/
+<br />A37710:/usr/java/latest/jre/bin # for bin in *; do update-alternatives --install /usr/bin/$bin $bin $(pwd)/$bin 20000; done
+<br />A37710:/usr/java/latest/jre/bin #
+<br /></pre>
+<br /></p>
+<br /><p>
+<br />Por fim, atualizaremos o <strong>plugin java - javaplugin.so -</strong> para os navegadores instalados no sistema:
+<br /><pre lang="bash">
+<br />update-alternatives --install /usr/lib64/browser-plugins/javaplugin.so javaplugin /usr/java/latest/jre/lib/amd64/libnpjp2.so 20000
+<br /></pre>
+<br />Olhe com atenção pois utilizamos como referência para atualizar o update-alternatives o caminho base <strong>/usr/java/latest</strong>. 
+<br /><strong>Por quê? Você sabe explicar?</strong>
+<br /></p>
+<br />
+</p>
+      <div class="share">
+  <!-- Facebook -->
+          <a href="http://www.facebook.com/sharer.php?u=http://blog.gilbertoca.com/2013/02/instale-oracle-jdk7-no-opensuse.html" target="_blank"><img src="/img/sharebuttons/facebook.png" alt="Facebook" /></a>
+  <!-- Google+ -->
+  <!-- Twitter -->
+          <a href="http://twitter.com/share?url=http://blog.gilbertoca.com/2013/02/instale-oracle-jdk7-no-opensuse.html&text=Instale Oracle JDK7 no openSUSE blog.gilbertoca.com/2013/02/instale-oracle-jdk7-no-opensuse.html" target="_blank"><img src="/img/sharebuttons/twitter.png" alt="Twitter" /></a>
+      </div>
+            </article>
+        </div> <!-- /.col-md-12 -->
+      </div> <!-- /.row -->
+        
+      </div><!-- /.container -->
+
+    <footer>
+      <div class="container">
+        <hr>
+        <div class="row">
+          <div class="col-xs-10">
+            <p class="text-muted credit">&copy; Gilberto Caetano de Andrade 2014 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake v2.2.1</a> | <i title="Linux" class="fa fa-linux"></i></p>
+          </div>
+          <div class="col-xs-2 gotop">
+            <a href="#"><i class="fa fa-arrow-circle-up"> top</i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gist-embed/1.6/gist-embed.min.js"></script>
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
+    <script type="text/javascript">
+      <!-- load prettify only when needed -->
+      $(document).ready(function(){
+        var prettify = false;
+        var classToAdd = 'prettyprint snippet';
+        $("pre > code").each(function() {
+          $("pre > code").parent().addClass(classToAdd);
+          prettify = true;
+        });
+        if(prettify) {
+          prettyPrint();
+        }
+      });
+    </script>
+
+
+        </body>
+</html>

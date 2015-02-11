@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+    Vivendo e Aprendendo ...
+        - Alterne entre versões Java facilmente [update-alternatives]
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Author">
+    <meta name="description" content="Static blog generated with JBake">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/spacelab/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="/css/base.css">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav icon -->
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body>      
+    <nav class="navbar navbar-default navbar-fixed-top " role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Vivendo e Aprendendo ...</a>
+        </div>
+        
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="/pages/about.html">About me</a></li>
+            <li><a href="/pages/contact.html">Contact</a></li>
+          </ul>
+        
+        <!-- Right navigation -->
+        <ul class="nav navbar-nav navbar-right">
+              <li><a href="http://twitter.com/gilberto_gca" title="Twitter"><i class="fa fa-twitter-square"></i></a></li>
+              <li><a href="https://github.com/gilbertoca" title="Github"><i class="fa fa-github-square"></i></a></li>
+          <li><a href="/archive.html"><i class="fa fa-list"></i> Archive</a></li>
+          <li><a href="/feed.xml" title="Rss"><i class="fa fa-rss"></i> Feed</a></li>
+        </ul>
+        <!-- Right navigation end -->
+
+      </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav><!-- /.navbar -->
+
+    <!-- Begin page content -->
+    <div class="container">
+      
+      <div class="row">
+        <div class="col-md-12">
+          <article>
+            <div class="page-header"><h1>Alterne entre versões Java facilmente [update-alternatives]</h1>
+              <ol class="breadcrumb tagsbar">
+                <li><a href="/tags/linux.html">linux</a></li>
+                <li><a href="/tags/opensuse.html">opensuse</a></li>
+                <li><a href="/tags/console.html">console</a></li>
+                <li><a href="/tags/configuracao.html">configuracao</a></li>
+                <li><a href="/tags/sistema-operacional.html">sistema-operacional</a></li>
+                <li><a href="/tags/tocantins.html">tocantins</a></li>
+              </ol>
+            </div>
+          <p class="post-meta">
+            <i class="fa fa-calendar"></i>&nbsp;08 Junho 2010&nbsp;&nbsp;
+            <i class="fa fa-user"></i>&nbsp;Author&nbsp;&nbsp;
+          </p>
+              <p>
+<p><br />Com o surgimento de versões e atualizações da máquina virtual java, preciso verificar a compatibilidade da mesma com o <a href="http://www.techne.com.br/produtos/produtos.asp?id=4">sistema de gestão de pessoal</a> sendo implantado <a href="http://www.secad.to.gov.br">aqui na secretária</a>. <br /><br /><br /><blockquote><br />Atualizado em: 01/12/2005 16:10 - CONSAD<br /><br />Tocantins faz sua apresentação em TI<br /><br />As experiências inovadoras que o Tocantins tem desenvolvido em Tecnologia da Informação (TI) foram apresentadas na manhã deste primeiro dia do LX Fórum do Conselho Nacional de Secretários de Estado de Administração (Consad). O representante da superintendência de Informática do Estado, Marcos Tiago, foi o responsável pela apresentação. Nela, ele demonstrou aos presentes as redes digitais de todo o Estado, incluindo as que circundam a sede do Governo (Palácio Araguaia), e das secretarias da Administração, Fazenda e Segurança Pública.<br /><br />Em relação à Secad – Secretaria da Administração, Marcos Tiago apresentou o sistema de interligação de Recursos Humanos (Ergon) que está sendo implantado; citou ainda a experiência de Educação à Distância voltada para os servidores do Estado, onde o governo acaba de capacitar mais de 28 mil servidores no curso de Excelência no Atendimento e nas Relações de Trabalho.<br /><br />Fonte: Shirley Cruz / Secad<br /></blockquote><br />Longo tempo hein? Pois é, nossa administração pública! Mas o Estado, nestes dois últimos anos, ficou politicamente conturbado (<a href="http://www.portalct.com.br/n/61036301f280e5de0acb74eeebc8e948/to-chega-a-maioridade-em-clima-de-convulsao-e-inde/">Tocantins chega à maioridade em clima de convulsão e indefinição política</a>). Felizmente esta faze está passando e os projetos, aos poucos, retornam a sua normalidade.<br /></p><br /><p><br />O sistema usa como base a tecnologia <a href="www.oracle.com/technology/products/forms">Forms da empresa Oracle</a>, que usa applet no cliente.<br />Bom, primeiro precisamos instalar as versões que desejamos. Para facilitar adicione os seguintes repositórios ao <a href="http://en.opensuse.org/Yast">Yast</a>:<br /><table><br /><tr><br /><td>Nome</td><td>Repositório</td><br /><tr><br /><tr><br /><td>Java:sun:Factory</td><td><a href="http://download.opensuse.org/repositories/Java:/sun:/Factory/openSUSE_11.2/">http://download.opensuse.org/repositories/Java:/sun:/Factory/openSUSE_11.2/</a></td><br /><tr><br /><tr><br /><td>JPackages</td><td><a href="http://download.opensuse.org/repositories/Java:/packages/openSUSE_11.2/">http://download.opensuse.org/repositories/Java:/packages/openSUSE_11.2</a></td><br /><tr><br /></table><br />Veja o que tenho em meu ambiente:<br /><a href="/img/uploads/yast_java_instalado.png"><img src="/img/uploads/yast_java_instalado.png" alt="Ambiente Java Instalado" title="yast_java_instalado" width="808" height="627" class="alignleft size-full wp-image-405" /></a><br /></p><br /><p><br />Agora, como alternar entre as versões sem ter que manualmente mexer em variáveis de ambiente?<br />Qual versão estou usando?<br /><pre lang="bash"><br />gilberto@SUGEP-DMASI:~> java -version<br />java version "1.5.0_22"<br />Java(TM) 2 Runtime Environment, Standard Edition (build 1.5.0_22-b03)<br />Java HotSpot(TM) Server VM (build 1.5.0_22-b03, mixed mode)<br />gilberto@SUGEP-DMASI:~> <br /></pre><br />Para verificar de forma geral como o ambiente está, além da figura acima, vamos abrir um terminal como usuário root e checar através do comando <code>update-alternatives</code>:<br /><pre lang="bash"><br />gilberto@SUGEP-DMASI:~> su -<br />Password: <br />SUGEP-DMASI:~ # update-alternatives --list java<br />/usr/lib/jvm/jre-1.6.0-openjdk/bin/java<br />/usr/lib/jvm/jre-1.5.0-gcj/bin/java<br />/usr/lib/jvm/jre-1.6.0-sun/bin/java<br />/usr/lib/jvm/jre-1.5.0-sun/bin/java<br />SUGEP-DMASI:~ # update-alternatives --list javac<br />/usr/lib/jvm/java-1.5.0-gcj/bin/javac<br />/usr/lib/jvm/java-1.6.0-openjdk/bin/javac<br />/usr/lib/jvm/java-1.6.0-sun/bin/javac<br />/usr/lib/jvm/java-1.5.0-sun/bin/javac<br />SUGEP-DMASI:~ # update-alternatives --list javapluging<br />No alternatives for javapluging.<br />SUGEP-DMASI:~ # update-alternatives --list javaplugin<br />/usr/lib/jvm/jre-1.6.0-openjdk/lib/i386/IcedTeaNPPlugin.so<br />/usr/lib/jvm/java-1.6.0-sun-1.6.0/jre/lib/i386/libnpjp2.so<br />/usr/lib/jvm/java-1.5.0-sun-1.5.0/jre/plugin/i386/ns7/libjavaplugin_oji.so<br />SUGEP-DMASI:~ # <br /></pre><br /></p><br /><p><br />Para saber mais sobre este comando digite:<br /><pre lang="bash"><br />man update-alternatives<br /></pre><br />Agora vamos usá-lo para alternar entre as versões. Note nas opções acima que podemos alternar não somente a máquina virtual, mas também o plugin para navegadores de internet. Então mãos a obra! Para alternar usaremos a opção <code>--config</code>:<br /><pre lang="bash"><br />SUGEP-DMASI:~ # update-alternatives --config java<br /><br />There are 4 alternatives which provide `java'.<br /><br />  Selection    Alternative<br />-----------------------------------------------<br /> +        1    /usr/lib/jvm/jre-1.6.0-openjdk/bin/java<br />          2    /usr/lib/jvm/jre-1.5.0-gcj/bin/java<br />          3    /usr/lib/jvm/jre-1.6.0-sun/bin/java<br />*         4    /usr/lib/jvm/jre-1.5.0-sun/bin/java<br /><br />Press enter to keep the default[*], or type selection number: 3<br />Using '/usr/lib/jvm/jre-1.6.0-sun/bin/java' to provide 'java'.<br />SUGEP-DMASI:~ # <br /></pre><br />Abra um novo terminal e verifique a versão atual:<br /><pre lang="bash"><br />gilberto@SUGEP-DMASI:~> java -version<br />java version "1.6.0_20"<br />Java(TM) SE Runtime Environment (build 1.6.0_20-b02)<br />Java HotSpot(TM) Server VM (build 16.3-b01, mixed mode)<br />You have mail in /var/spool/mail/gilberto<br />gilberto@SUGEP-DMASI:~> <br /></pre><br /></p><br /><p><br />Podemos usar o utilitário <code>update-alternatives</code> para gerenciar outros links no sistema, mas o post já ficou extenso. Na próxima podemos mostrar como gerenciar links manualmente. <br /></p>
+</p>
+      <div class="share">
+  <!-- Facebook -->
+          <a href="http://www.facebook.com/sharer.php?u=http://blog.gilbertoca.com/2010/06/alterne-entre-versoes-java-facilmente-update-alternatives.html" target="_blank"><img src="/img/sharebuttons/facebook.png" alt="Facebook" /></a>
+  <!-- Google+ -->
+  <!-- Twitter -->
+          <a href="http://twitter.com/share?url=http://blog.gilbertoca.com/2010/06/alterne-entre-versoes-java-facilmente-update-alternatives.html&text=Alterne entre versões Java facilmente [update-alternatives] blog.gilbertoca.com/2010/06/alterne-entre-versoes-java-facilmente-update-alternatives.html" target="_blank"><img src="/img/sharebuttons/twitter.png" alt="Twitter" /></a>
+      </div>
+            </article>
+        </div> <!-- /.col-md-12 -->
+      </div> <!-- /.row -->
+        
+      </div><!-- /.container -->
+
+    <footer>
+      <div class="container">
+        <hr>
+        <div class="row">
+          <div class="col-xs-10">
+            <p class="text-muted credit">&copy; Gilberto Caetano de Andrade 2014 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake v2.2.1</a> | <i title="Linux" class="fa fa-linux"></i></p>
+          </div>
+          <div class="col-xs-2 gotop">
+            <a href="#"><i class="fa fa-arrow-circle-up"> top</i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gist-embed/1.6/gist-embed.min.js"></script>
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
+    <script type="text/javascript">
+      <!-- load prettify only when needed -->
+      $(document).ready(function(){
+        var prettify = false;
+        var classToAdd = 'prettyprint snippet';
+        $("pre > code").each(function() {
+          $("pre > code").parent().addClass(classToAdd);
+          prettify = true;
+        });
+        if(prettify) {
+          prettyPrint();
+        }
+      });
+    </script>
+
+
+        </body>
+</html>
