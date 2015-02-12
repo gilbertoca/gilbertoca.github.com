@@ -1,90 +1,100 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-        <modelVersion>4.0.0</modelVersion>
-        <groupId>io.github.gilbertoca</groupId>
-        <artifactId>blog</artifactId>
-        <version>1.0-SNAPSHOT</version>
-        <build>
-                <finalName>blog</finalName>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.gilbertoca</groupId>
+    <artifactId>blog</artifactId>
+    <packaging>jar</packaging>
+    <version>1.0-SNAPSHOT</version>
 
-                <plugins>
-                        <plugin>
-                                <groupId>org.apache.maven.plugins</groupId>
-                                <artifactId>maven-compiler-plugin</artifactId>
-                                <version>3.1</version>
-                                <configuration>
-                                        <source>1.7</source>
-                                        <target>1.7</target>
-                                </configuration>
-                        </plugin>
+    <properties>
+        <jbake.inputDirectory>${project.basedir}/src/jbake</jbake.inputDirectory>
+        <maven.deploy.skip>true</maven.deploy.skip>
+    </properties>
 
-                        <plugin>
-                                <groupId>br.com.ingenieux</groupId>
-                                <artifactId>jbake-maven-plugin</artifactId>
-                                <version>0.0.6</version>
-                                <executions>
-                                        <execution>
-                                                <id>default-generate</id>
-                                                <phase>generate-resources</phase>
-                                                <goals>
-                                                        <goal>generate</goal>
-                                                </goals>
-                                        </execution>
-                                </executions>
-                        </plugin>
+    <url>https://github.com/gilbertoca/gilbertoca.com</url>
 
-                        <!-- Commit and push site to github pages, by default to gh-pages branch -->
-                        <!-- https://github.com/github/maven-plugins -->
-                        <plugin>
-                                <groupId>com.github.github</groupId>
-                                <artifactId>site-maven-plugin</artifactId>
-                                <version>0.9</version>
-                                <configuration>
-                                        <message>${commit.message}</message>
-                                        <!-- <message>Creating site for ${project.version}</message> -->
-                                        <outputDirectory>${project.build.directory}/${project.build.finalName}</outputDirectory>
-                                        <!-- Provide repo name to upload, $(user,project).github.io -->
-                                        <repositoryName>gilbertoca.github.io</repositoryName>
-                                        <!-- Provide repo owner -->
-                                        <repositoryOwner>Gilbertoca</repositoryOwner>
-                                        <!-- If user repo used, set branch to master -->
-                                        <branch>refs/heads/master</branch>
-                                        <dryRun>false</dryRun>
-                                        <excludes>
-                                                <exclude>**/*.jsp</exclude>
-                                                <exclude>**/web.xml</exclude>
-                                        </excludes>
-                                </configuration>
-                                <executions>
-                                        <execution>
-                                                <goals>
-                                                        <goal>site</goal>
-                                                </goals>
-                                                <phase>site</phase>
-                                        </execution>
-                                </executions>
-                        </plugin>
+    <build>
+        <finalName>blog</finalName>
 
-                        <!-- Run mvn exec:exec to generate site and upload it with single step -->
-                        <plugin>
-                                <groupId>org.codehaus.mojo</groupId>
-                                <artifactId>exec-maven-plugin</artifactId>
-                                <version>1.2.1</version>
-                                <configuration>
-                                        <executable>mvn</executable>
-                                        <arguments>
-                                                <argument>clean:clean</argument>
-                                                <argument>jbake:generate</argument>
-                                                <argument>site:site</argument>
-                                                <argument>clean:clean</argument>
-                                        </arguments>
-                                </configuration>
-                        </plugin>
-                </plugins>
-        </build>
+        <plugins>
+            <plugin>
+                <groupId>br.com.ingenieux</groupId>
+                <artifactId>jbake-maven-plugin</artifactId>
+                <version>0.0.9</version>
+                <executions>
+                    <execution>
+                        <id>default-generate</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.codehaus.groovy</groupId>
+                        <artifactId>groovy-all</artifactId>
+                        <version>2.3.3</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.pegdown</groupId>
+                        <artifactId>pegdown</artifactId>
+                        <version>1.4.2</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.freemarker</groupId>
+                        <artifactId>freemarker</artifactId>
+                        <version>2.3.19</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
 
-        <properties>
-                <github.global.server>github</github.global.server>
-                <commit.message>Site update</commit.message>
-        </properties>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <!-- http://maven.apache.org/plugins/maven-compiler-plugin/ -->
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <!-- Deploy the web site -->
+                <groupId>com.github.github</groupId>
+                <artifactId>site-maven-plugin</artifactId>
+                <version>0.9</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>site</goal>
+                        </goals>
+                        <!-- select the Maven phase in which the plugin will be executed -->
+                        <phase>deploy</phase>
+                        <configuration>
+                            <!-- Plugin configuration ges here -->
+
+                            <server>github</server>
+
+                            <!-- The commit message -->
+                            <message>New version of blog</message>
+                            <!-- The location where the site is uploaded -->
+                            <outputDirectory>${project.build.directory}/${project.build.finalName}</outputDirectory>
+                            <!-- Use merge or override the content -->
+                            <merge>true</merge>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.rometools</groupId>
+            <artifactId>rome-fetcher</artifactId>
+            <version>1.5.0</version>
+        </dependency>
+    </dependencies>
 </project>
