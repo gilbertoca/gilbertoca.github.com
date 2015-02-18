@@ -1,9 +1,6 @@
-id=7
 title='openSuSe 11.0 &#8211; Failed to update system: Authorisation could not be obtained'
 status=published
 type=post
-guid=http://www.jroller.com/gilbertoca/entry/opensuse_11_0_failed_to
-permalink=/?p=7
 tags=
   - Linux
 tags=

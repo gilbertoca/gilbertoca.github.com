@@ -1,9 +1,6 @@
-id=990
 title=Livre-se do duplo click
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=990
-permalink=/?p=990
 enclosure:
   - |
     |

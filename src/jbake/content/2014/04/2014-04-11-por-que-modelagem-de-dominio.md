@@ -1,9 +1,6 @@
-id=1078
 title=Por que Modelagem de Domínio?
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=1078
-permalink=/?p=1078
 tags=
   - Estou lendo e você?
   - Traduções

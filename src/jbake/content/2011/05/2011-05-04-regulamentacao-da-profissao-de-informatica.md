@@ -1,9 +1,6 @@
-id=669
 title=REGULAMENTAÇÃO DA PROFISSÃO DE INFORMÁTICA
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=669
-permalink=/?p=669
 tags=
   - Geral
 tags=

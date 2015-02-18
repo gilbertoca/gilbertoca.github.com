@@ -1,10 +1,6 @@
-id=764
 title='Linux &#8211; Participação no domínio do Windows'
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=764
-permalink=/?p=764
-dsq_thread_id=
   - 3503809528
 tags=
   - Linux

@@ -1,9 +1,6 @@
-id=6
 title=Oracle JInitiator + Forms + IE6/IE7 + Windows Live Toolbar = Problema
 status=published
 type=post
-guid=http://www.jroller.com/gilbertoca/entry/oracle_jinitiator_forms_ie6_ie71
-permalink=/?p=6
 tags=
   - Application Server
 ~~~~~~

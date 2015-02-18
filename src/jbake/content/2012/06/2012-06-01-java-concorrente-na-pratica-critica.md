@@ -1,10 +1,6 @@
-id=910
 title='Java Concorrente na Prática &#8211; crítica'
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=910
-permalink=/?p=910
-dsq_thread_id=
   - 3503809743
 tags=
   - Estou lendo e você?
@@ -18,9 +14,7 @@ Para um livro já consagrado, uma boa tradução seria o mínimo. Mas lamento re
 
 Bom, vou parar por aqui. Não vou nem mencionar a coerência textual, caso contrário a editora teria que me ressarcir por essa &#8220;obra&#8221;. 
 
-<a href="http://www.altabooks.com.br/product_info.php?products_id=204" target="_blank">
 
-<div id="attachment_913" style="width: 187px" class="wp-caption alignleft">
   <img src="http://blog.gilbertoca.com/wp-content/uploads/java_conc_na_pratica.jpg" alt="" title="java_conc_na_pratica" width="177" height="250" class="size-full wp-image-913" />
   
   <p class="wp-caption-text">

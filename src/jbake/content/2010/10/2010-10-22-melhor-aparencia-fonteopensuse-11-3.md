@@ -1,10 +1,6 @@
-id=452
 title='Melhor aparência (fonte)[OpenSuSe 11.3]'
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=452
-permalink=/?p=452
-dsq_thread_id=
   - 3503809056
 tags=
   - Geral

@@ -1,10 +1,6 @@
-id=739
 title=Removendo itens pré-definidos da barra lateral(sidebar) iNove template
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=739
-permalink=/?p=739
-dsq_thread_id=
   - 3513638190
 tags=
   - Geral

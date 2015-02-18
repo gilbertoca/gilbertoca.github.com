@@ -1,9 +1,6 @@
-id=812
 title=A tabela de softwares equivalentes / substituições / análogos Windows no Linux.
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=812
-permalink=/?p=812
 tags=
   - Linux
   - Windows

@@ -1,9 +1,6 @@
-id=868
 title=Consumismo Infantil, um problema de todos
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=868
-permalink=/?p=868
 tags=
   - Geral
 tags=

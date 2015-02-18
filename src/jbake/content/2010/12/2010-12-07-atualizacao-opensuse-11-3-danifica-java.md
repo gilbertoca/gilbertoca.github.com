@@ -1,9 +1,6 @@
-id=461
 title=Atualização OpenSuSe 11.3 danifica Java
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=461
-permalink=/?p=461
 tags=
   - Geral
   - Java

@@ -1,10 +1,6 @@
-id=352
 title='Modelagem usando Uml em Cores [Análise de Requisitos]'
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=352
-permalink=/?p=352
-dsq_thread_id=
   - 3503808929
 tags=
   - Database
@@ -75,7 +71,6 @@ tags=
       </li>
     </ul>
     
-    <div id="attachment_360" style="width: 310px" class="wp-caption alignnone">
       <a href="http://blog.gilbertoca.com/wp-content/uploads/four_archetypes.png"><img src="http://blog.gilbertoca.com/wp-content/uploads/four_archetypes-300x142.png" alt="" title="four_archetypes" width="300" height="142" class="size-medium wp-image-360" /></a>
       
       <p class="wp-caption-text">

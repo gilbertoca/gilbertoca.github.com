@@ -1,10 +1,6 @@
-id=303
 title=Como configurar uma conta MSN Messenger?
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=303
-permalink=/?p=303
-dsq_thread_id=
   - 3503808818
 tags=
   - Geral

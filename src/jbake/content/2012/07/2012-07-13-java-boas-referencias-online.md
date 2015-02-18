@@ -1,9 +1,6 @@
-id=931
 title='Java &#8211; Boas referências online'
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=931
-permalink=/?p=931
 tags=
   - Estou lendo e você?
   - Geral

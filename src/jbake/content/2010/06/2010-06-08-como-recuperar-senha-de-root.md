@@ -1,9 +1,6 @@
-id=386
 title=Como recuperar senha de root
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=386
-permalink=/?p=386
 tags=
   - Geral
   - Linux

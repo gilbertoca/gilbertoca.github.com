@@ -1,10 +1,6 @@
-id=296
 title=Unir legenda (srt) e video (avi) com MENCODER
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=296
-permalink=/?p=296
-dsq_thread_id=
   - 3504154925
 tags=
   - Geral

@@ -1,9 +1,6 @@
-id=8
 title='OpenSuse 10.3 &#8211; pt_BR.UTF8'
 status=published
 type=post
-guid=http://www.jroller.com/gilbertoca/entry/opensuse_10_3_pt_br
-permalink=/?p=8
 tags=
   - Linux
 tags=

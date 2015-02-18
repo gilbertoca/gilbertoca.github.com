@@ -1,10 +1,6 @@
-id=712
 title=Herança de Projeto vs Agregação de Projeto
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=712
-permalink=/?p=712
-dsq_thread_id=
   - 3506863852
 tags=
   - Java
@@ -53,8 +49,6 @@ Entre estes códigos, em especial, quero destacar o park-samples. [Este é estru
 <span style="color: #000000; font-weight: bold;">|</span>   <span style="color: #000000; font-weight: bold;">|</span>-- power.architect
 <span style="color: #000000; font-weight: bold;">|</span>   <span style="color: #000000; font-weight: bold;">|</span>   <span style="color: #000000; font-weight: bold;">|</span>-- park.architect
 <span style="color: #000000; font-weight: bold;">|</span>   <span style="color: #000000; font-weight: bold;">|</span>   <span style="color: #000000; font-weight: bold;">`</span>-- park-er.pdf
-<span style="color: #000000; font-weight: bold;">|</span>   <span style="color: #000000; font-weight: bold;">|</span>-- 03000001.png
-<span style="color: #000000; font-weight: bold;">|</span>   <span style="color: #000000; font-weight: bold;">`</span>-- 03000003_en.png
 <span style="color: #000000; font-weight: bold;">|</span>-- park-cayenne
 <span style="color: #000000; font-weight: bold;">|</span>   <span style="color: #000000; font-weight: bold;">|</span>-- src
 <span style="color: #000000; font-weight: bold;">|</span>   <span style="color: #000000; font-weight: bold;">|</span>   <span style="color: #000000; font-weight: bold;">|</span>-- main

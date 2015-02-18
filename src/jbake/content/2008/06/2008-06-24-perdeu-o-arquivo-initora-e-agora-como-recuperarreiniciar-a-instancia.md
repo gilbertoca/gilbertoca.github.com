@@ -1,13 +1,7 @@
-id=11
 title=Perdeu o arquivo init.ora e agora? Como recuperar/reiniciar a instância?
 status=published
 type=post
-guid=http://www.jroller.com/gilbertoca/entry/perdeu_o_arquivo_init_ora
-permalink=/?p=11
-dsq_thread_id=
-  - 3504218378
-tags=
-  - Geral
+tags=Geral
 ~~~~~~
 <!-- google_ad_section_start -->
 

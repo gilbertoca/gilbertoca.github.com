@@ -1,10 +1,6 @@
-id=420
 title='Testes de Unidade em Paralelo[Maven|JUnit]'
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=420
-permalink=/?p=420
-dsq_thread_id=
   - 3505761989
 tags=
   - Geral

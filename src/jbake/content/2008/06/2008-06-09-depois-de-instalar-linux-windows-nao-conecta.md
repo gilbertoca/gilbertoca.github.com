@@ -1,15 +1,7 @@
-id=12
 title=Depois de instalar Linux, Windows nao conecta!
 status=published
 type=post
-guid=http://www.jroller.com/gilbertoca/entry/depois_de_instalar_linux_windows
-permalink=/?p=12
-tags=
-  - Linux
-tags=
-  - Linux
-  - opensuse
-  - Sistema Operacional
+tags=Linux,opensuse,Sistema Operacional
 ~~~~~~
 <!-- google_ad_section_start -->
 

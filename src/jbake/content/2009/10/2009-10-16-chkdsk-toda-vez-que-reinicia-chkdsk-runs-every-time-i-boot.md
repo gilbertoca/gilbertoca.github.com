@@ -1,10 +1,6 @@
-id=216
 title=CHKDSK toda vez que reinicia (CHKDSK runs every time I boot)!
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=216
-permalink=/?p=216
-dsq_thread_id=
   - 3503808703
 tags=
   - Geral

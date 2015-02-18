@@ -1,10 +1,6 @@
-id=1052
 title='Maioridade Penal: por Ariovaldo Ramos'
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=1052
-permalink=/?p=1052
-dsq_thread_id=
   - 3504150427
 tags=
   - Estou lendo e você?

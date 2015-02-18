@@ -1,19 +1,7 @@
-id=13
 title=Como obter histórico de dados modificados no banco de dados Oracle?
 status=published
 type=post
-guid=http://www.jroller.com/gilbertoca/entry/como_obter_hist%C3%B3rico_de_dados
-permalink=/?p=13
-dsq_thread_id=
-  - 3503808667
-tags=
-  - Database
-tags=
-  - Auditoria
-  - banco de dados
-  - configuração
-  - Data Mining
-  - oracle
+tags=Database,Auditoria,banco de dados,configuração,Data Mining,oracle
 ~~~~~~
 <!-- google_ad_section_start -->
 
@@ -28,4 +16,3 @@ podemos configurar a auditoria para registrar essas atividades. Com auditoria, r
 
 </ol> <!-- google_ad_section_end -->
 
- [1]: http://searchoracle.techtarget.com/expert/KnowledgebaseAnswer/0,289625,sid41_gci1313625,00.html?track=NL-94&#038;ad=643910&asrc=EM_NLT_3776659&uid=2562960

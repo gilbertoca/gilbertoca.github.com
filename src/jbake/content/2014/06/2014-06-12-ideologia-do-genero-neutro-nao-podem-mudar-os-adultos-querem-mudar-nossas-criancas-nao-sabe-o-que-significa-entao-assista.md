@@ -1,9 +1,6 @@
-id=1099
 title='Ideologia do gênero neutro??? Não podem mudar os adultos. Querem mudar nossas crianças! Não sabe o que significa, então assista &#8230;'
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=1099
-permalink=/?p=1099
 tags=
   - Estou lendo e você?
   - Geral

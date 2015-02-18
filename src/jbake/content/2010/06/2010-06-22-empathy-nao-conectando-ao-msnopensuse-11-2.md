@@ -1,10 +1,6 @@
-id=415
 title=Empathy não conectando ao MSN
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=415
-permalink=/?p=415
-dsq_thread_id=
   - 3503809025
 tags=
   - Geral

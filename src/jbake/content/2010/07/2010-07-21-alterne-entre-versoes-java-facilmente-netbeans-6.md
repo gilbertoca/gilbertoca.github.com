@@ -1,10 +1,6 @@
-id=432
 title='Alterne entre versões Java facilmente [Netbeans 6.*]'
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=432
-permalink=/?p=432
-dsq_thread_id=
   - 3516216851
 tags=
   - Geral

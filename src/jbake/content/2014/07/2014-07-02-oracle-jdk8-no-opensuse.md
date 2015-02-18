@@ -1,11 +1,6 @@
-id=1106
 title=Oracle JDK8 no OpenSUSE
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=1106
-permalink=/?p=1106
-post_views_count:
-  - 0
 tags=
   - Geral
   - Java

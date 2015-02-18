@@ -1,9 +1,6 @@
-id=239
 title='Uma Questão Por Dia[000]+Análise'
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=239
-permalink=/?p=239
 tags=
   - Concurso Público
   - Geral

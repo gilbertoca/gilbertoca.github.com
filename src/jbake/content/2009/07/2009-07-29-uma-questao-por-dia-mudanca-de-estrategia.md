@@ -1,9 +1,6 @@
-id=151
 title='Uma Questão Por Dia [mudança de estratégia]'
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=151
-permalink=/?p=151
 tags=
   - Geral
 ~~~~~~
@@ -26,4 +23,3 @@ Mais uma coisa, nós procuramos sempre acertar mas nem sempre isso é possível,
 
 <!-- google_ad_section_end -->
 
- [1]: http://blog.gilbertoca.com/?page_id=44

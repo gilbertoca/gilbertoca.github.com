@@ -1,9 +1,6 @@
-id=885
 title='Como o Linux é construído &#8211; Vídeo'
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=885
-permalink=/?p=885
 tags=
   - Geral
   - Linux

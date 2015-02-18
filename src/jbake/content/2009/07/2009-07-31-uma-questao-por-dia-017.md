@@ -1,9 +1,6 @@
-id=162
 title='Uma Questão Por Dia [017]'
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=162
-permalink=/?p=162
 tags=
   - Concurso Público
 tags=
@@ -23,4 +20,3 @@ O que quer dizer: [Uma Questão por Dia?][2]
 <!-- google_ad_section_end -->
 
  [1]: http://blog.gilbertoca.com/tools/acervo/questoespordia/[017]-mat-est-eco-cont-inf.odt
- [2]: http://blog.gilbertoca.com/?page_id=44

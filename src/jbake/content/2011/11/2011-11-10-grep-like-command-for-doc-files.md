@@ -1,9 +1,6 @@
-id=818
 title=Usando comando GREP em documentos Word, OpenOffice ou LibreOffice
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=818
-permalink=/?p=818
 tags=
   - Linux
   - Unix

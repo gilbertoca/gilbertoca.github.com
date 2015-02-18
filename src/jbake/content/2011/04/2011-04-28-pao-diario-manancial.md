@@ -1,10 +1,6 @@
-id=657
 title='Porções Diárias da Bíblia[Pão Diário &#038; Manancial]'
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=657
-permalink=/?p=657
-dsq_thread_id=
   - 3509484985
 tags=
   - Geral
@@ -36,7 +32,6 @@ Propus o uso de alguns mecanismos disponibilizados na rede mundial para auxiliar
   3. precisávamos definir um formato da mensagem (veja logo abaixo como ficou); 
   4. precisávamos definir qual versão do Microsoft Word usaríamos (escolhemos Microsoft Word 97/2000/XP) 
 
-<div id="attachment_664" style="width: 1034px" class="wp-caption alignright">
   <a href="http://blog.gilbertoca.com/wp-content/uploads/dropbox.png"><img src="http://blog.gilbertoca.com/wp-content/uploads/dropbox.png" alt="cliente dropbox linux" title="dropbox" width="1024" height="768" class="size-full wp-image-664" /></a>
   
   <p class="wp-caption-text">
@@ -44,7 +39,6 @@ Propus o uso de alguns mecanismos disponibilizados na rede mundial para auxiliar
   </p>
 </div>
 
-<div id="attachment_662" style="width: 1034px" class="wp-caption alignright">
   <a href="http://blog.gilbertoca.com/wp-content/uploads/formato.png"><img src="http://blog.gilbertoca.com/wp-content/uploads/formato.png" alt="Formato de transcrição de texto" title="formato" width="1024" height="768" class="size-full wp-image-662" /></a>
   
   <p class="wp-caption-text">

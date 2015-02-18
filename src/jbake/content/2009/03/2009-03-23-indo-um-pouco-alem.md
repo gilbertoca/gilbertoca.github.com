@@ -1,9 +1,6 @@
-id=4
 title='Indo um pouco além &#8230;'
 status=published
 type=post
-guid=http://www.jroller.com/gilbertoca/entry/indo_um_pouco_alem
-permalink=/?p=4
 tags=
   - Java
 ~~~~~~

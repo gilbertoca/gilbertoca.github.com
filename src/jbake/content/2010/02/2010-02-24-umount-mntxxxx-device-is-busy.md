@@ -1,10 +1,6 @@
-id=286
 title='umount: /mnt/XXXX: device is busy'
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=286
-permalink=/?p=286
-dsq_thread_id=
   - 3522232605
 tags=
   - Database

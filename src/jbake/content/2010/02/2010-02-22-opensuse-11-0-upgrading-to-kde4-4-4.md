@@ -1,9 +1,6 @@
-id=264
 title='openSuSe 11.0 [upgrading to KDE4 4.4: Nepomuk e Strigi]'
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=264
-permalink=/?p=264
 tags=
   - Linux
 tags=

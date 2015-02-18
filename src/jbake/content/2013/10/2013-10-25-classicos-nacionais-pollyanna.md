@@ -1,9 +1,6 @@
-id=1026
 title='Clássicos Nacionais &#8211; Pollyanna'
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=1026
-permalink=/?p=1026
 tags=
   - Estou lendo e você?
   - Geral

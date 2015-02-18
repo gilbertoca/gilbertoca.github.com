@@ -1,10 +1,6 @@
-id=601
 title='pen drive &#8211; Cadê minhas pastas?'
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=601
-permalink=/?p=601
-dsq_thread_id=
   - 3503809224
 tags=
   - Geral
@@ -24,7 +20,6 @@ Meus problemas com <a href="http://pt.wikipedia.org/wiki/V%C3%ADrus_de_computado
 Recentemente, algo tem chamado minha atenção; vira e mexe aparece minha esposa com bolso cheio de <a href="http://pt.wikipedia.org/wiki/USB_flash_drive" target="_blank">pen-drives</a> solicitando que eu recupere documentos e pastas que desapareceram nestes dispositivos que, por sinal, são bem mais úteis que os velhos disquetes. E aquela dica(para o windows explorer): Menu->Ferramentas->Opções de Pastas->[aba]Modo de exibição, depois marcar a opção &#8220;Mostrar pastas e arquivos ocultos&#8221;, não adianta.  
 
 
-<div id="attachment_608" style="width: 864px" class="wp-caption alignright">
   <a href="http://blog.gilbertoca.com/wp-content/uploads/MostrarOcultos.png"><img src="http://blog.gilbertoca.com/wp-content/uploads/MostrarOcultos.png" alt="Menu->Ferramentas->Outras Opções" title="MostrarOcultos" width="854" height="639" class="size-full wp-image-608" /></a>
   
   <p class="wp-caption-text">
@@ -38,7 +33,6 @@ Parece que alguns vírus mais recentes alteram não só o atributo oculto mas ta
 Ai você pergunta: por que sua esposa traz os dispositivos pra você? por que ela não pede ao pessoal para passar um <a href="http://pt.wikipedia.org/wiki/Antiv%C3%ADrus" target="_blank">antivírus</a>? Veja, eles fazem a varredura. Mas os arquivos e pastas continuam ocultos e minha esposa já havia tido uma experiência em casa onde o pen-drive que usava, mesmo infectado, aparecia todos os arquivos e pastas &#8211; <a href="http://live.gnome.org/Nautilus" target="_blank">o gerenciador de arquivos do Gnome (Nautilus)</a> &#8211; apresenta todos os arquivo e pastas, inclusive os criados pelo vírus.  
 
 
-<div id="attachment_612" style="width: 1034px" class="wp-caption alignright">
   <a href="http://blog.gilbertoca.com/wp-content/uploads/NavegadorArquivosGnome.png"><img src="http://blog.gilbertoca.com/wp-content/uploads/NavegadorArquivosGnome.png" alt="Navegador de arquivos do Gnome - nautilus" title="NavegadorArquivosGnome" width="1024" height="768" class="size-full wp-image-612" /></a>
   
   <p class="wp-caption-text">
@@ -49,7 +43,6 @@ Ai você pergunta: por que sua esposa traz os dispositivos pra você? por que el
 Bem, esta dica não é para usuários <a href="http://pt.wikipedia.org/wiki/Linux" target="_blank">linux</a>! Então vamos à solução? Para resolver você precisa conhecer o <a href="http://pt.wikipedia.org/wiki/Cmd.exe" target="_blank">prompt de comando do windows xp</a>, em especial o comando <a href="http://pt.wikipedia.org/wiki/Attrib" target="_blank">ATTRIB</a>. Para acioná-lo faço o seguinte: menu iniciar->Todos programas->Acessórios->Prompt de comando.  
 
 
-<div id="attachment_614" style="width: 1031px" class="wp-caption alignright">
   <a href="http://blog.gilbertoca.com/wp-content/uploads/PromptComando.png"><img src="http://blog.gilbertoca.com/wp-content/uploads/PromptComando.png" alt="prompt de comando do windows xp" title="PromptComando" width="1021" height="669" class="size-full wp-image-614" /></a>
   
   <p class="wp-caption-text">
@@ -63,7 +56,6 @@ Criei uma pasta para demonstração a qual contém uma sub-pasta e um arquivo te
 Primeiro, vou fazer o mesmo que alguns vírus fazem(nem tudo, é claro, apenas o que está relacionado com esta dica, ok?):  
 
 
-<div id="attachment_616" style="width: 1030px" class="wp-caption alignright">
   <a href="http://blog.gilbertoca.com/wp-content/uploads/ComandoATTRIB.png"><img src="http://blog.gilbertoca.com/wp-content/uploads/ComandoATTRIB.png" alt="prompt de comando do windows - usando ATTRIB" title="ComandoATTRIB" width="1020" height="660" class="size-full wp-image-616" /></a>
   
   <p class="wp-caption-text">
@@ -98,7 +90,6 @@ C:\Demonstracao&gt;</pre>
   </table>
 </div>
 
-**[02/07/2013] Atualização**: O Ivans Dias, em um dos comentários, colocou um vídeo do <a href="http://www.professorramos.com" title="Professor Ramos" target="_blank">Professor Ramos</a> bem didático &#8211; <a href="http://www.professorramos.com/video.php?id=187" title="Vírus de Pendrive - Como recuperar seus Arquivos Perdidos ou Ocultados de forma Simples" target="_blank">vale a pena conferir.</a>
 
 Um abração a todos!
 

@@ -1,9 +1,6 @@
-id=782
 title=Nosso herói!
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=782
-permalink=/?p=782
 tags=
   - Estou lendo e você?
   - Geral

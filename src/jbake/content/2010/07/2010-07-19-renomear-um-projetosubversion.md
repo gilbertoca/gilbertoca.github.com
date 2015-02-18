@@ -1,10 +1,6 @@
-id=424
 title='Renomear um projeto[SUBVERSION]'
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=424
-permalink=/?p=424
-dsq_thread_id=
   - 3504411932
 tags=
   - Geral

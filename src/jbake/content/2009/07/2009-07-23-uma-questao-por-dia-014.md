@@ -1,9 +1,6 @@
-id=138
 title='Uma Questão Por Dia [014]'
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=138
-permalink=/?p=138
 tags=
   - Geral
 ~~~~~~
@@ -19,4 +16,3 @@ O que quer dizer: [Uma Questão por Dia?][3]
 
  [1]: http://blog.gilbertoca.com/?p=97
  [2]: http://blog.gilbertoca.com/tools/acervo/questoespordia/[014]-mat-est-eco-cont-inf.odt
- [3]: http://blog.gilbertoca.com/?page_id=44

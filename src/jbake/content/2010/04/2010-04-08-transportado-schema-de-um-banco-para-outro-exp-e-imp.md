@@ -1,10 +1,6 @@
-id=338
 title='Transportado schema de um banco para outro [exp e imp]'
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=338
-permalink=/?p=338
-dsq_thread_id=
   - 3503808835
 tags=
   - Database

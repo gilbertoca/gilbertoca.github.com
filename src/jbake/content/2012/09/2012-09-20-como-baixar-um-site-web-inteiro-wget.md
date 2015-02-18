@@ -1,10 +1,6 @@
-id=948
 title='Como baixar um site web inteiro &#8211; wget'
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=948
-permalink=/?p=948
-dsq_thread_id=
   - 3504314158
 tags=
   - Geral

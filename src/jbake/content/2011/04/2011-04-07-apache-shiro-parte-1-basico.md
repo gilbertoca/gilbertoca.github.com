@@ -1,10 +1,6 @@
-id=626
 title='Apache Shiro Parte 1 &#8211; básico'
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=626
-permalink=/?p=626
-dsq_thread_id=
   - 3503809329
 tags=
   - Java

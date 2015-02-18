@@ -1,10 +1,6 @@
-id=956
 title='openSUSE &#8211; Repositórios adicionais'
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=956
-permalink=/?p=956
-dsq_thread_id=
   - 3503809821
 tags=
   - Geral

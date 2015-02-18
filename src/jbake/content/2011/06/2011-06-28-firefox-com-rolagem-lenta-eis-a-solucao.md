@@ -1,10 +1,6 @@
-id=760
 title=Firefox com rolagem lenta? Eis a solução!
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=760
-permalink=/?p=760
-dsq_thread_id=
   - 3517523889
 tags=
   - Geral

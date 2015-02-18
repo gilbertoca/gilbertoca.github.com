@@ -1,10 +1,6 @@
-id=5
 title='&#8220;Conexão Lenta com o Banco Oracle &#8211; TNSPING, SQLPLUS, ETC&#8221;'
 status=published
 type=post
-guid=http://www.jroller.com/gilbertoca/entry/conex%C3%A3o_lenta_com_o_banco
-permalink=/?p=5
-dsq_thread_id=
   - 3517850858
 tags=
   - Database

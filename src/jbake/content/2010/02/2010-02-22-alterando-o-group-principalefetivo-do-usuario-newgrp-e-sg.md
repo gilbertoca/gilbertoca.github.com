@@ -1,9 +1,6 @@
-id=275
 title='Alterando o group principal/efetivo do usuário &#8211; newgrp e sg'
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=275
-permalink=/?p=275
 tags=
   - Application Server
   - Database

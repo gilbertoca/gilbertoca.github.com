@@ -1,15 +1,7 @@
-id=18
 title=Removendo alertas antigos da página principal do DBCONSOLE
 status=published
 type=post
-guid=http://www.jroller.com/gilbertoca/entry/removendo_alertas_antigos_da_p%C3%A1gina
-permalink=/?p=18
-tags=
-  - Database
-tags=
-  - Concurso Público
-  - dbconsole
-  - oracle
+tags=Database, dbconsole, oracle
 ~~~~~~
 <!-- google_ad_section_start -->
 

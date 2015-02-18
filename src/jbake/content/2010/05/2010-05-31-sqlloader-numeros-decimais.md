@@ -1,9 +1,6 @@
-id=362
 title='SQL*Loader &#8211; Números decimais'
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=362
-permalink=/?p=362
 tags=
   - Database
   - Linux

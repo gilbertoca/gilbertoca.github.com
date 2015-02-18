@@ -1,10 +1,6 @@
-id=25
 title='Padronizando Nomes de Objeto &#8211; Banco de Dados'
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=25
-permalink=/?p=25
-dsq_thread_id=
   - 3504638469
 tags=
   - Database

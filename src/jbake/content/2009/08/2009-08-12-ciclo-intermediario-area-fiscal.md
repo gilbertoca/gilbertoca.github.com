@@ -1,9 +1,6 @@
-id=176
 title='Ciclo Intermediário &#8211; Área Fiscal'
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=176
-permalink=/?p=176
 tags=
   - Concurso Público
   - Geral

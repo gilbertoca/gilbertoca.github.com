@@ -1,9 +1,6 @@
-id=1123
 title=Visualizando arquivos de log no NetBeans
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=1123
-permalink=/?p=1123
 tags=
   - Geral
   - Java

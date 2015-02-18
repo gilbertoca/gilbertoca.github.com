@@ -1,10 +1,6 @@
-id=441
 title='bash não lê o arquivo .bashrc na inicialização[Cygwin]'
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=441
-permalink=/?p=441
-dsq_thread_id=
   - 3516450393
 tags=
   - Java

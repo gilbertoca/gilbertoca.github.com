@@ -1,10 +1,6 @@
-id=121
 title=Proteja-se Contra Virus(Disable USB Autorun)
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=121
-permalink=/?p=121
-dsq_thread_id=
   - 3512165510
 tags=
   - Geral

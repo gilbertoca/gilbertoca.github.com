@@ -1,10 +1,6 @@
-id=10
 title=Para duplicar um banco oracle na mesma maquina
 status=published
 type=post
-guid=http://www.jroller.com/gilbertoca/entry/para_duplicar_um_banco_oracle
-permalink=/?p=10
-dsq_thread_id=
   - 3514590971
 tags=
   - Database
@@ -264,7 +260,6 @@ end;
 <!-- google_ad_section_end -->
 
  [1]: www.secad.to.gov.br
- [2]: http://www.techne.com.br/produtos/produtos.asp?id=4
  [3]: http://download.oracle.com/docs/cd/B19306_01/backup.102/b14191/rcmdupdb.htm#i1006474
  [4]: #task1
  [5]: #task2

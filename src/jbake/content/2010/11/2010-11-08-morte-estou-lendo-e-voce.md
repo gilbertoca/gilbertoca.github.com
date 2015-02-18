@@ -1,9 +1,6 @@
-id=462
 title=Morte
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=462
-permalink=/?p=462
 tags=
   - Estou lendo e você?
 tags=

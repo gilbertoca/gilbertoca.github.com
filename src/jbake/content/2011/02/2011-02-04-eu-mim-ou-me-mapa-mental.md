@@ -1,10 +1,6 @@
-id=516
 title='EU, MIM ou ME? [Mapa Mental]'
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=516
-permalink=/?p=516
-dsq_thread_id=
   - 3503793886
 tags=
   - Concurso Público

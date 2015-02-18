@@ -1,10 +1,6 @@
-id=225
 title='Oracle IAS [An error occurred while talking to OPMN. Could not find entity for]'
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=225
-permalink=/?p=225
-dsq_thread_id=
   - 3503808728
 tags=
   - Application Server

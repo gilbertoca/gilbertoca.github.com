@@ -1,9 +1,6 @@
-id=370
 title='Direct Path Load &#8211; Como configurar'
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=370
-permalink=/?p=370
 tags=
   - Database
   - Linux

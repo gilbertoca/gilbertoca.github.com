@@ -1,10 +1,6 @@
-id=829
 title=Questionando a existência de Deus
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=829
-permalink=/?p=829
-dsq_thread_id=
   - 3503809741
 tags=
   - Estou lendo e você?
@@ -33,7 +29,6 @@ tags=
 > 
 > **<cite><a href="http://www.augustocury.com.br/#/livros">
 > 
-> <div id="attachment_512" style="width: 211px" class="wp-caption alignleft">
 >   <img src="http://blog.gilbertoca.com/wp-content/uploads/8_602866001.jpg" alt="" title="mestre da vida" width="201" height="300" class="size-medium wp-image-512" />
 >   
 >   <p class="wp-caption-text">

@@ -1,10 +1,6 @@
-id=1015
 title=O que pensavam os filósofos a respeito de Deus?
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=1015
-permalink=/?p=1015
-dsq_thread_id=
   - 3520261795
 tags=
   - Estou lendo e você?
@@ -24,7 +20,6 @@ tags=
 
 **<cite><a href="http://www.augustocury.com.br/#/livros">
 
-<div id="attachment_513" style="width: 411px" class="wp-caption alignleft">
   <img src="http://blog.gilbertoca.com/wp-content/uploads/o-futuro-da-humanidade.png" alt="" title="o futuro da humanidade" width="401" height="600"" />
   
   <p class="wp-caption-text">

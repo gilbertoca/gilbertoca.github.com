@@ -1,9 +1,6 @@
-id=117
 title='Unix: Initializing..Terminal linux is unknown.'
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=117
-permalink=/?p=117
 tags=
   - Database
   - Linux

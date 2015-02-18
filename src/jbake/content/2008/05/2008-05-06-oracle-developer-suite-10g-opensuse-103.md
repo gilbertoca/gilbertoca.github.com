@@ -1,11 +1,7 @@
-id=14
 title='Oracle Developer Suite 10g &#8211; [OpenSuSe 10.3]'
 status=published
 type=post
-guid=http://www.jroller.com/gilbertoca/entry/oracle_developer_suite_10g_opensuse
-permalink=/?p=14
-tags=
-  - Application Server
+tags=Application Server
 ~~~~~~
 <!-- google_ad_section_start -->
 

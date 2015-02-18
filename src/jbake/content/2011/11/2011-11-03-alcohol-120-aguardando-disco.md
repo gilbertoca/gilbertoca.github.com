@@ -1,10 +1,6 @@
-id=837
 title='Alcohol 120% &#8211; Aguardando Disco'
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=837
-permalink=/?p=837
-dsq_thread_id=
   - 3503809750
 tags=
   - Geral

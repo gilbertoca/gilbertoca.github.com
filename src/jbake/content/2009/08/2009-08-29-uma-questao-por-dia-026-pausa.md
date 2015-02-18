@@ -1,9 +1,6 @@
-id=205
 title='Uma Questão Por Dia [026] + Pausa'
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=205
-permalink=/?p=205
 tags=
   - Geral
 ~~~~~~
@@ -17,6 +14,4 @@ O que quer dizer: [Uma Questão por Dia?][3]
 
 <!-- google_ad_section_end -->
 
- [1]: http://www.euvoupassar.com.br/visao/artigos/completa.php?id=1969
  [2]: http://blog.gilbertoca.com/tools/acervo/questoespordia/[026]-mat-est-eco-cont-inf.odt
- [3]: http://blog.gilbertoca.com/?page_id=44

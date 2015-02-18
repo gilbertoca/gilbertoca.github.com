@@ -1,10 +1,6 @@
-id=971
 title=Instale Oracle JDK7 no openSUSE
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=971
-permalink=/?p=971
-dsq_thread_id=
   - 3515761335
 tags=
   - Geral

@@ -1,9 +1,6 @@
-id=97
 title='Créditos &#8211; Vários professores espalhados pelo Brasil'
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=97
-permalink=/?p=97
 tags=
   - Geral
 ~~~~~~
@@ -95,4 +92,3 @@ Recentemente iniciei um projeto &#8211; [Uma Questão por Dia?][1] &#8211; que e
   <table>
     <!-- google_ad_section_end -->
 
- [1]: http://blog.gilbertoca.com/?page_id=44

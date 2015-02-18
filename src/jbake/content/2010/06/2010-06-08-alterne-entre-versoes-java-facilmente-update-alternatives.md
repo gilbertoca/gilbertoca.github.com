@@ -1,10 +1,6 @@
-id=383
 title='Alterne entre versões Java facilmente [update-alternatives]'
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=383
-permalink=/?p=383
-dsq_thread_id=
   - 3503782278
 tags=
   - Geral
@@ -190,7 +186,6 @@ gilberto<span style="color: #000000; font-weight: bold;">@</span>SUGEP-DMASI:~<s
               
               <!-- google_ad_section_end -->
 
- [1]: http://www.techne.com.br/produtos/produtos.asp?id=4
  [2]: http://www.secad.to.gov.br
  [3]: http://www.portalct.com.br/n/61036301f280e5de0acb74eeebc8e948/to-chega-a-maioridade-em-clima-de-convulsao-e-inde/
  [4]: www.oracle.com/technology/products/forms

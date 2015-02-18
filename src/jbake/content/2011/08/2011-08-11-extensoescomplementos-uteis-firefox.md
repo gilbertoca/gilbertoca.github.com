@@ -1,9 +1,6 @@
-id=314
 title=Extensões (complementos) FireFox
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=314
-permalink=/?p=314
 tags=
   - Geral
 tags=

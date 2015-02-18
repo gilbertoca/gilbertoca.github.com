@@ -1,9 +1,6 @@
-id=332
 title=DBCA não encontra o banco de dados
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=332
-permalink=/?p=332
 tags=
   - Database
   - Linux

@@ -1,10 +1,6 @@
-id=679
 title=Debugando com Maven Jetty Plugin no Netbeans
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=679
-permalink=/?p=679
-dsq_thread_id=
   - 3524008297
 tags=
   - Application Server

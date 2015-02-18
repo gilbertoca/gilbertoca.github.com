@@ -1,9 +1,6 @@
-id=855
 title='Gnome 3 &#8211; diálogo modal move toda a aplicação'
 status=published
 type=post
-guid=http://blog.gilbertoca.com/?p=855
-permalink=/?p=855
 tags=
   - Geral
 ~~~~~~
