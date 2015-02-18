@@ -1,18 +1,18 @@
-id: 760
-title: Firefox com rolagem lenta? Eis a solução!
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=760
-permalink: /?p=760
-dsq_thread_id:
+id=760
+title=Firefox com rolagem lenta? Eis a solução!
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=760
+permalink=/?p=760
+dsq_thread_id=
   - 3517523889
-categories:
+tags=
   - Geral
-tags:
+tags=
   - configuração
   - FireFox
   - Jornada
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 Abra o Firefox, em &#8220;Editar >> Preferências >> Avançado >> Geral&#8221;, desmarque a opção &#8220;Rolagem Suave&#8221; na parte navegação.

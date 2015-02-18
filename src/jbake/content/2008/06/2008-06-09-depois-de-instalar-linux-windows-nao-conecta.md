@@ -1,16 +1,16 @@
-id: 12
-title: Depois de instalar Linux, Windows nao conecta!
-author: gilberto_ca
-layout: post
-guid: http://www.jroller.com/gilbertoca/entry/depois_de_instalar_linux_windows
-permalink: /?p=12
-categories:
+id=12
+title=Depois de instalar Linux, Windows nao conecta!
+status=published
+type=post
+guid=http://www.jroller.com/gilbertoca/entry/depois_de_instalar_linux_windows
+permalink=/?p=12
+tags=
   - Linux
-tags:
+tags=
   - Linux
   - opensuse
   - Sistema Operacional
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 Colocando essa frase no mecanismo de busca &#8211; google -, voc&#234; encontra uma lista enorme de pessoas com o mesmo problema. V&#225; entender esses novos hardwares! Para mim o que funcionou est&#225; descrito nesse **[Cabo de rede desconectado (no windows) ap&#243;s instalar Kurumin][1] **link.  

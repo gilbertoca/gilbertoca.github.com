@@ -1,20 +1,20 @@
-id: 275
-title: 'Alterando o group principal/efetivo do usuário &#8211; newgrp e sg'
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=275
-permalink: /?p=275
-categories:
+id=275
+title='Alterando o group principal/efetivo do usuário &#8211; newgrp e sg'
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=275
+permalink=/?p=275
+tags=
   - Application Server
   - Database
   - Linux
   - Unix
-tags:
+tags=
   - Linux
   - opensuse
   - Sistema Operacional
   - Unix
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 Para ter um ambiente semelhante ao de produção, neste caso para as aplicações que rodam em forms e para a instalação do banco, acabei por instalar o mesmo sistema operacional (SLES9), os mesmos softwares (OracleAs 10g, Oracle Database 10g e Oracle DevSuit 10g) no meu desktop. Com isso, toda vez que preciso usar qualquer um destes softwares eu tem que assumir o usuario de instalação dos mesmos que neste caso usei o default oracle. Veja a labuta que tem de fazer:

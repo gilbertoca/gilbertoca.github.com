@@ -1,12 +1,12 @@
-id: 855
-title: 'Gnome 3 &#8211; diálogo modal move toda a aplicação'
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=855
-permalink: /?p=855
-categories:
+id=855
+title='Gnome 3 &#8211; diálogo modal move toda a aplicação'
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=855
+permalink=/?p=855
+tags=
   - Geral
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 É, finalmente consegui um tempo para postar algo aqui no blog. Ultimamente (nos dois últimos meses) estive ocupado trabalhando na conversão de alguns projetos java para web: usavam Ant e agora, este trabalho, usam Maven. Neste período, <a href="http://blog.gilbertoca.com/?p=415" target="_blank">como vocês bem sabem</a>, fiz a atualização (na verdade uma nova instalação) do [openSUSE][1]. Estava com a versão 11.3 e com o recente lançamento da <a href="http://software.opensuse.org/121/en" target="_blank">versão 12.1</a>, não resisti &#8211; ansioso por usar o novo <a href="http://www.gnome.org/gnome-3/" target="_blank">Gnome 3</a>. 

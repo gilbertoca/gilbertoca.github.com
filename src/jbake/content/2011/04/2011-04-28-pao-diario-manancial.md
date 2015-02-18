@@ -1,21 +1,21 @@
-id: 657
-title: 'Porções Diárias da Bíblia[Pão Diário &#038; Manancial]'
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=657
-permalink: /?p=657
-dsq_thread_id:
+id=657
+title='Porções Diárias da Bíblia[Pão Diário &#038; Manancial]'
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=657
+permalink=/?p=657
+dsq_thread_id=
   - 3509484985
-categories:
+tags=
   - Geral
-tags:
+tags=
   - Bíblia
   - Estou lendo e você?
   - Internet
   - Jesus Cristo
   - Sistema Operacional
   - Windows XP
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 Diversos autores compartilham experiências de vida sob uma ótica cristã, trazendo mensagens diárias (simples mas profundas) de encorajamento e reflexão, que mostram uma nova perspectiva de enfrentar os desafios da vida cotidiana. Pastores, escolas, empresas, igrejas e cidadãos que querem crescer na vida devocional têm procurado esse material. 

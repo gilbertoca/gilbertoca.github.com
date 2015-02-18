@@ -1,20 +1,20 @@
-id: 782
-title: Nosso herói!
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=782
-permalink: /?p=782
-categories:
+id=782
+title=Nosso herói!
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=782
+permalink=/?p=782
+tags=
   - Estou lendo e você?
   - Geral
-tags:
+tags=
   - Bíblia
   - Estou lendo e você?
   - Jesus Cristo
   - Jornada
   - Livro Sagrado
   - Sabedoria
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 <table width="537" cellspacing="0" cellpadding="7">

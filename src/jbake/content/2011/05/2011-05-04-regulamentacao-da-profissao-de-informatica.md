@@ -1,18 +1,18 @@
-id: 669
-title: REGULAMENTAÇÃO DA PROFISSÃO DE INFORMÁTICA
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=669
-permalink: /?p=669
-categories:
+id=669
+title=REGULAMENTAÇÃO DA PROFISSÃO DE INFORMÁTICA
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=669
+permalink=/?p=669
+tags=
   - Geral
-tags:
+tags=
   - Ciência da Computação
   - Informática
   - Profissionalização
   - Regulamentação
   - Tecnologia da Informação
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 **  

@@ -1,21 +1,21 @@
-id: 948
-title: 'Como baixar um site web inteiro &#8211; wget'
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=948
-permalink: /?p=948
-dsq_thread_id:
+id=948
+title='Como baixar um site web inteiro &#8211; wget'
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=948
+permalink=/?p=948
+dsq_thread_id=
   - 3504314158
-categories:
+tags=
   - Geral
   - Linux
   - Unix
   - Windows
-tags:
+tags=
   - Internet
   - Linux
   - opensuse
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 Na verdade, a pergunta correta seria: como baixar todas as páginas &#8211; e seus recursos (css, javascript, imagem, etc) &#8211; de um site web?  

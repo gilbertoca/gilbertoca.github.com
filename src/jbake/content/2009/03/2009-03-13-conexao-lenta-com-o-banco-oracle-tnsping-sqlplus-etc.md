@@ -1,14 +1,14 @@
-id: 5
-title: '&#8220;Conexão Lenta com o Banco Oracle &#8211; TNSPING, SQLPLUS, ETC&#8221;'
-author: gilberto_ca
-layout: post
-guid: http://www.jroller.com/gilbertoca/entry/conex%C3%A3o_lenta_com_o_banco
-permalink: /?p=5
-dsq_thread_id:
+id=5
+title='&#8220;Conexão Lenta com o Banco Oracle &#8211; TNSPING, SQLPLUS, ETC&#8221;'
+status=published
+type=post
+guid=http://www.jroller.com/gilbertoca/entry/conex%C3%A3o_lenta_com_o_banco
+permalink=/?p=5
+dsq_thread_id=
   - 3517850858
-categories:
+tags=
   - Database
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 Se voc&#234; notar que ap&#243;s a configura&#231;&#227;o (Editando o arquivo tnsnames.ora ou usando o utilit&#225;rio netmgr) de um cliente de acesso ao Banco de Dados Oracle estiver muito lenta, verifique a vari&#225;vel NAMES.DIRECTORY_PATH no arquivo sqlnet.ora. 

@@ -1,16 +1,16 @@
-id: 18
-title: Removendo alertas antigos da página principal do DBCONSOLE
-author: gilberto_ca
-layout: post
-guid: http://www.jroller.com/gilbertoca/entry/removendo_alertas_antigos_da_p%C3%A1gina
-permalink: /?p=18
-categories:
+id=18
+title=Removendo alertas antigos da página principal do DBCONSOLE
+status=published
+type=post
+guid=http://www.jroller.com/gilbertoca/entry/removendo_alertas_antigos_da_p%C3%A1gina
+permalink=/?p=18
+tags=
   - Database
-tags:
+tags=
   - Concurso Público
   - dbconsole
   - oracle
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 Por um bom per&#237;odo de tempo estive lendo e pesquisando uma maneira de remover/limpar os alertas que aparecem na primeira p&#225;gina do dbconsole do oracle 10g 10.2.  

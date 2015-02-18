@@ -1,19 +1,19 @@
-id: 1078
-title: Por que Modelagem de Domínio?
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=1078
-permalink: /?p=1078
-categories:
+id=1078
+title=Por que Modelagem de Domínio?
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=1078
+permalink=/?p=1078
+tags=
   - Estou lendo e você?
   - Traduções
-tags:
+tags=
   - Estou lendo e você?
   - Metodologia Ágil
   - Modelagem
   - traduções
   - UML
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 > Rebecca Wirfs-Brock. <a href="http://wirfs-brock.com/blog/2013/02/27/why-domain-modeling/" title="Why Domain Modeling?" target="_blank">Why Domain Modeling?</a>  

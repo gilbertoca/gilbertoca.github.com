@@ -1,22 +1,22 @@
-id: 415
-title: Empathy não conectando ao MSN
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=415
-permalink: /?p=415
-dsq_thread_id:
+id=415
+title=Empathy não conectando ao MSN
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=415
+permalink=/?p=415
+dsq_thread_id=
   - 3503809025
-categories:
+tags=
   - Geral
   - Linux
-tags:
+tags=
   - configuração
   - Empathy
   - gnome
   - jabber
   - Linux
   - msn
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 Recentimente resolvi, novamente, atualizar o gnome da versão 2.28 para 2.30 através do procedimento descrito neste endereço: <http://en.opensuse.org/GNOME/2.30> .  Como sempre sem problemas. <a href="http://www.gnome.org/" target="_blank">O gnome</a> é um ambiente bastante consistente e a meu ver seguro! Mas um componente que uso como meio de comunicação &#8211; <a href="http://live.gnome.org/Empathy" target="_blank">Empathy</a> &#8211; começou a apresentar um erro conexão usando o protocolo MSN. Não havia percebido tal problema porque até então só tinha utilizado o <a href="http://pt.wikipedia.org/wiki/Extensible_Messaging_and_Presence_Protocol" target="_blank">protocolo Jabber</a>.

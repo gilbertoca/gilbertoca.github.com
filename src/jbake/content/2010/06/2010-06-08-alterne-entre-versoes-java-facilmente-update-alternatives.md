@@ -1,23 +1,23 @@
-id: 383
-title: 'Alterne entre versões Java facilmente [update-alternatives]'
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=383
-permalink: /?p=383
-dsq_thread_id:
+id=383
+title='Alterne entre versões Java facilmente [update-alternatives]'
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=383
+permalink=/?p=383
+dsq_thread_id=
   - 3503782278
-categories:
+tags=
   - Geral
   - Java
   - Linux
-tags:
+tags=
   - configuração
   - console
   - Linux
   - opensuse
   - Sistema Operacional
   - Tocantins
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 Com o surgimento de versões e atualizações da máquina virtual java, preciso verificar a compatibilidade da mesma com o [sistema de gestão de pessoal][1] sendo implantado [aqui na secretária][2]. 

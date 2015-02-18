@@ -1,15 +1,15 @@
-id: 875
-title: 'Alterne entre versões Java facilmente [update-alternatives] parte 2'
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=875
-permalink: /?p=875
-dsq_thread_id:
+id=875
+title='Alterne entre versões Java facilmente [update-alternatives] parte 2'
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=875
+permalink=/?p=875
+dsq_thread_id=
   - 3503830895
-categories:
+tags=
   - Geral
   - Java
-tags:
+tags=
   - Banco do Brasil
   - Chromium
   - Internet
@@ -17,7 +17,7 @@ tags:
   - Linux
   - opensuse
   - update-alternatives
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 A um tempo atrás escrevi sobre o <a href="http://linux.die.net/man/8/update-alternatives" title="update-alternatives" target="_blank">utilitário de sistema update-alternatives</a> e mostrei <a href="http://blog.gilbertoca.com/?p=383" title="Alterne entre versões Java facilmente [update-alternatives]" target="_blank">como alternar entre versões do Java usando o mesmo</a>. Naquele mesmo post mostrei que o Java já havia sido instalado e configurado pelo sistema de gerenciamento de pacotes pre-definido &#8211; <a href="http://en.opensuse.org/YaST_Software_Management" title="Yast" target="_blank">Yast</a>. Como já é de conhecimento de alguns a <a href="http://www.oracle.com" title="oracle" target="_blank">Oracle</a> mudou a <a href="http://www.hardware.com.br/noticias/2011-08/java-licenca-linux.html" title="mudança de licença Java" target="_blank">forma de licenciamento do Java</a> e com isso a maioria das distribuições &#8211; senão todas &#8211; optaram por retirar o Java distribuído pela Oracle de seus repositórios. Com isso, se você precisar instalar a versão Java da Oracle terá que fazê-la manualmente. 

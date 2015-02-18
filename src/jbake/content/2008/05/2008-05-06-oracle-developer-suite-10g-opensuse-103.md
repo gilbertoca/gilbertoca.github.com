@@ -1,12 +1,12 @@
-id: 14
-title: 'Oracle Developer Suite 10g &#8211; [OpenSuSe 10.3]'
-author: gilberto_ca
-layout: post
-guid: http://www.jroller.com/gilbertoca/entry/oracle_developer_suite_10g_opensuse
-permalink: /?p=14
-categories:
+id=14
+title='Oracle Developer Suite 10g &#8211; [OpenSuSe 10.3]'
+status=published
+type=post
+guid=http://www.jroller.com/gilbertoca/entry/oracle_developer_suite_10g_opensuse
+permalink=/?p=14
+tags=
   - Application Server
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 O processo de instala&#231;&#227;o da vers&#227;o 10.1.2.0.2 do DeveloperSuite10g no OpenSuSe 10.3 n&#227;o &#233; certificada. Mas como temos apenas licen&#231;a para o servidor, o jeito &#233; enfrentar os poss&#237;veis problemas com essa instala&#231;&#227;o.

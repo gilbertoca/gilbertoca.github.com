@@ -1,18 +1,18 @@
-id: 1052
-title: 'Maioridade Penal: por Ariovaldo Ramos'
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=1052
-permalink: /?p=1052
-dsq_thread_id:
+id=1052
+title='Maioridade Penal: por Ariovaldo Ramos'
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=1052
+permalink=/?p=1052
+dsq_thread_id=
   - 3504150427
-categories:
+tags=
   - Estou lendo e você?
   - Geral
-tags:
+tags=
   - Estou lendo e você?
   - Jornada
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 

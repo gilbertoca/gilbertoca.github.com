@@ -1,17 +1,17 @@
-id: 712
-title: Herança de Projeto vs Agregação de Projeto
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=712
-permalink: /?p=712
-dsq_thread_id:
+id=712
+title=Herança de Projeto vs Agregação de Projeto
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=712
+permalink=/?p=712
+dsq_thread_id=
   - 3506863852
-categories:
+tags=
   - Java
-tags:
+tags=
   - configuração
   - maven
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 **[Requisito][1]:** The packaging type required to be pom for parent and aggregation (multi-module) projects.  

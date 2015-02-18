@@ -1,21 +1,21 @@
-id: 764
-title: 'Linux &#8211; Participação no domínio do Windows'
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=764
-permalink: /?p=764
-dsq_thread_id:
+id=764
+title='Linux &#8211; Participação no domínio do Windows'
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=764
+permalink=/?p=764
+dsq_thread_id=
   - 3503809528
-categories:
+tags=
   - Linux
   - Windows
-tags:
+tags=
   - Active Directory
   - configuração
   - kerberos
   - opensuse
   - Sistema Operacional
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 > Eu não quero compartilhar aquivo nenhum, apenas quero me logar no dominio MS, para assim usar internet, e-mail, enfim tudo que uma estação d trabalho com XP faria quando ngressa no dominio!  

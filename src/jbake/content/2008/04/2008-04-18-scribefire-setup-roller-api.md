@@ -1,12 +1,12 @@
-id: 16
-title: 'ScribeFire Setup &#8211; Roller API'
-author: gilberto_ca
-layout: post
-guid: http://www.jroller.com/gilbertoca/entry/scribefire_setup_roller_api1
-permalink: /?p=16
-categories:
+id=16
+title='ScribeFire Setup &#8211; Roller API'
+status=published
+type=post
+guid=http://www.jroller.com/gilbertoca/entry/scribefire_setup_roller_api1
+permalink=/?p=16
+tags=
   - Geral
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 Fonte:  

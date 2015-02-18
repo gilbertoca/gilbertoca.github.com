@@ -1,20 +1,20 @@
-id: 286
-title: 'umount: /mnt/XXXX: device is busy'
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=286
-permalink: /?p=286
-dsq_thread_id:
+id=286
+title='umount: /mnt/XXXX: device is busy'
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=286
+permalink=/?p=286
+dsq_thread_id=
   - 3522232605
-categories:
+tags=
   - Database
   - Linux
   - Unix
-tags:
+tags=
   - Linux
   - opensuse
   - Sistema Operacional
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 Você está cansado de ver estas mensagens, dizendo que você não pode desmountar /mnt/cdrom ou /mnt/flash? Veja esta pequena tática:

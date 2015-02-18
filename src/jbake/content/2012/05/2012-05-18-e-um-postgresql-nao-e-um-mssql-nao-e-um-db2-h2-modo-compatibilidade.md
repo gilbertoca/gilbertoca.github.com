@@ -1,20 +1,20 @@
-id: 891
-title: 'É um PostgreSQL! Não, é um MSSql! Não, é um DB2! [h2 modo compatibilidade]'
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=891
-permalink: /?p=891
-dsq_thread_id:
+id=891
+title='É um PostgreSQL! Não, é um MSSql! Não, é um DB2! [h2 modo compatibilidade]'
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=891
+permalink=/?p=891
+dsq_thread_id=
   - 3504005468
-categories:
+tags=
   - Database
   - Geral
   - Java
-tags:
+tags=
   - banco de dados
   - Java
   - maven
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 Calma pessoal, é apenas o banco <a href="http://www.h2database.com/html/features.html#compatibility" target="_blank">H2 em modo compatibilidade</a>! Imagine  

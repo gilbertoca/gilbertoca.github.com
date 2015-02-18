@@ -1,19 +1,19 @@
-id: 338
-title: 'Transportado schema de um banco para outro [exp e imp]'
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=338
-permalink: /?p=338
-dsq_thread_id:
+id=338
+title='Transportado schema de um banco para outro [exp e imp]'
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=338
+permalink=/?p=338
+dsq_thread_id=
   - 3503808835
-categories:
+tags=
   - Database
   - Linux
-tags:
+tags=
   - backup
   - banco de dados
   - oracle
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 Fazer exportação e importação de schemas de usuários de um banco para outro com os [utilitários exp e imp][1] não coisa fácil, principalmente se você nunca fez essa tarefa! Mas há sempre uma primeira vez para quase tudo, não é mesmo? 

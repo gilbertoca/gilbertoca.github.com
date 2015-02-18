@@ -1,12 +1,12 @@
-id: 171
-title: 'Uma Questão Por Dia [019]'
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=171
-permalink: /?p=171
-categories:
+id=171
+title='Uma Questão Por Dia [019]'
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=171
+permalink=/?p=171
+tags=
   - Geral
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 > [\# Uma Questão por Dia # mat-est-eco-cont-inf # N. [019] ][1]

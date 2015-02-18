@@ -1,16 +1,16 @@
-id: 7
-title: 'openSuSe 11.0 &#8211; Failed to update system: Authorisation could not be obtained'
-author: gilberto_ca
-layout: post
-guid: http://www.jroller.com/gilbertoca/entry/opensuse_11_0_failed_to
-permalink: /?p=7
-categories:
+id=7
+title='openSuSe 11.0 &#8211; Failed to update system: Authorisation could not be obtained'
+status=published
+type=post
+guid=http://www.jroller.com/gilbertoca/entry/opensuse_11_0_failed_to
+permalink=/?p=7
+tags=
   - Linux
-tags:
+tags=
   - Objetivo
   - opensuse
   - Sistema Operacional
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 Resolvi mudar de interface gr&#225;fica no linux. Antes usava o KDE e agora uso o GNOME, apesar de algumas limita&#231;&#245;es da interface n&#227;o tenho muito do que reclamar. Este erro acontece como usu&#225;rio comum, mas como usu&#225;rio administrador (root) funciona sem problemas. Encontrei a solu&#231;&#227;o para esse problema no seguinte <a href="http://linux.derkeiler.com/Mailing-Lists/SuSE/2008-07/msg00999.html" target="_blank">LINK</a>. Reproduzindo: 

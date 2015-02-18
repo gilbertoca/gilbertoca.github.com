@@ -1,20 +1,20 @@
-id: 452
-title: 'Melhor aparência (fonte)[OpenSuSe 11.3]'
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=452
-permalink: /?p=452
-dsq_thread_id:
+id=452
+title='Melhor aparência (fonte)[OpenSuSe 11.3]'
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=452
+permalink=/?p=452
+dsq_thread_id=
   - 3503809056
-categories:
+tags=
   - Geral
   - Linux
-tags:
+tags=
   - configuração
   - desktop
   - Linux
   - opensuse
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 Sexta-feira, final de tarde! Um bom motivo para me aventurar em uma área que costumo deixar de lado: configuração do desktop. Primeiro as fontes! Percebo que as fontes não são exibidas de forma suave e elas estão bem pequenas devido a minha resolução de vídeo &#8211; 1152&#215;864. Vou seguir [a seguinte dica][1], descrita por Fahad: 

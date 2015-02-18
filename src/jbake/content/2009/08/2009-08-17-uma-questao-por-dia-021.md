@@ -1,19 +1,19 @@
-id: 186
-title: 'Uma Questão Por Dia [021]'
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=186
-permalink: /?p=186
-categories:
+id=186
+title='Uma Questão Por Dia [021]'
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=186
+permalink=/?p=186
+tags=
   - Geral
-tags:
+tags=
   - Concurso Público
   - Jornada
   - Objetivo
   - Questões
   - Resumos
   - Simulado
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 > [\# Uma Questão por Dia # mat-est-eco-cont-inf # N. [021] ][1]

@@ -1,20 +1,20 @@
-id: 239
-title: 'Uma Questão Por Dia[000]+Análise'
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=239
-permalink: /?p=239
-categories:
+id=239
+title='Uma Questão Por Dia[000]+Análise'
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=239
+permalink=/?p=239
+tags=
   - Concurso Público
   - Geral
-tags:
+tags=
   - Concurso Público
   - Jornada
   - Objetivo
   - Questões
   - Resumos
   - Simulado
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 A análise é mais precisamente na maneira que venho estudando e qual o resultado. Com [a pausa do projeto][1] resolvi fazer o [curso Reta Final para Auditor Fiscal da Receita Federal][2] oferecido pela rede [LFG][3]. Senti que estudando depois de 8 horas trabalho, em casa com filho e esposa, não era a melhor opção. O curso foi puxado e exigiu mais que dedicação, precisava ser mais organizado devido a quantidade de material que recebia. Já estava fazendo o Curso Regular há algum tempo, desde o segundo semestre de 2007/02, mas cometia o mesmo erro que cometi nestes últimos meses de preparação para o concurso: não praticar. No curso Reta Final não conseguia responder a bateria de questões que cada professor disponibilizava toda quarta-feira. Não conseguia ou não tinha capacidade para respondê-las! Nas aulas do Curso Regular entendia a matéria e os exercícios das aulas conseguia resolver, mas nos simulados, em casa procurando resolvê-los sozinho não tive o mesmo desempenho, parece que estava bloqueado, engessado!  

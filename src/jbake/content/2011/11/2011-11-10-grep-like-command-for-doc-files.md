@@ -1,20 +1,20 @@
-id: 818
-title: Usando comando GREP em documentos Word, OpenOffice ou LibreOffice
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=818
-permalink: /?p=818
-categories:
+id=818
+title=Usando comando GREP em documentos Word, OpenOffice ou LibreOffice
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=818
+permalink=/?p=818
+tags=
   - Linux
   - Unix
-tags:
+tags=
   - comandos
   - console
   - grep
   - Linux
   - opensuse
   - Sistema Operacional
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 Esta é uma pequena dica. Se você tem uma grande quantidade de arquivos MS Word, OpenOffice e agora LibreOffice, com certeza já teve a necessidade de utilizar os recursos que o Shell Linux/Unix nos trás &#8211; grep, sed, more, strings, <a href="http://www.wagner.pp.ru/~vitus/software/catdoc/" title="catdoc" target="_blank">catdoc</a>, <a href="http://www.winfield.demon.nl/" title="antiwork" target="_blank">antiwork</a>, etc. 

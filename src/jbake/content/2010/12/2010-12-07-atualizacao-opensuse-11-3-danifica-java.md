@@ -1,20 +1,20 @@
-id: 461
-title: Atualização OpenSuSe 11.3 danifica Java
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=461
-permalink: /?p=461
-categories:
+id=461
+title=Atualização OpenSuSe 11.3 danifica Java
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=461
+permalink=/?p=461
+tags=
   - Geral
   - Java
   - Linux
-tags:
+tags=
   - FireFox
   - Jornada
   - Linux
   - opensuse
   - Sistema Operacional
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 Veja como o [post que menciono o uso do utilitário update-alternatives][1] é importante.  

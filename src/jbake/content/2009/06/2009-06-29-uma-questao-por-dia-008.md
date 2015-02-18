@@ -1,12 +1,12 @@
-id: 114
-title: 'Uma Questão por Dia [008]'
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=114
-permalink: /?p=114
-categories:
+id=114
+title='Uma Questão por Dia [008]'
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=114
+permalink=/?p=114
+tags=
   - Geral
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 > [\# Uma Questão por Dia # mat-est-eco-cont-inf # N. [008] ][1]

@@ -1,14 +1,14 @@
-id: 462
-title: Morte
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=462
-permalink: /?p=462
-categories:
+id=462
+title=Morte
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=462
+permalink=/?p=462
+tags=
   - Estou lendo e você?
-tags:
+tags=
   - Estou lendo e você?
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 <blockquote cite="http://www.ograndeconflito.com.br/">

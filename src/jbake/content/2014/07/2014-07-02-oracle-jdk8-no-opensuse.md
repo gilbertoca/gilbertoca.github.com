@@ -1,21 +1,21 @@
-id: 1106
-title: Oracle JDK8 no OpenSUSE
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=1106
-permalink: /?p=1106
+id=1106
+title=Oracle JDK8 no OpenSUSE
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=1106
+permalink=/?p=1106
 post_views_count:
   - 0
-categories:
+tags=
   - Geral
   - Java
   - Linux
   - Unix
-tags:
+tags=
   - Java
   - Linux
   - Sistema Operacional
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 Esta forma de instalação é mais resumida que a do <a href="http://blog.gilbertoca.com/?p=971" title="Instale Oracle JDK7 no openSUSE" target="_blank">post antigo</a> e utiliza o formato comprimido (tar.gz). 

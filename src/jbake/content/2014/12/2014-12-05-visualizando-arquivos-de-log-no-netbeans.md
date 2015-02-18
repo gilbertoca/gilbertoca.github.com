@@ -1,19 +1,19 @@
-id: 1123
-title: Visualizando arquivos de log no NetBeans
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=1123
-permalink: /?p=1123
-categories:
+id=1123
+title=Visualizando arquivos de log no NetBeans
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=1123
+permalink=/?p=1123
+tags=
   - Geral
   - Java
   - Traduções
-tags:
+tags=
   - desenvolvimento
   - Java
   - NetBeans
   - traduções
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 > radhika. <a title="Viewing log files in NetBeans IDE" href="https://blogs.oracle.com/NetBeansSupport/entry/netbeans_ide_log_file" target="_blank">Viewing log files in NetBeans IDE</a>  

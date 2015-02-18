@@ -1,16 +1,16 @@
-id: 499
-title: A inteligência de Cristo diante da ansiedade
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=499
-permalink: /?p=499
-dsq_thread_id:
+id=499
+title=A inteligência de Cristo diante da ansiedade
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=499
+permalink=/?p=499
+dsq_thread_id=
   - 3503809112
-categories:
+tags=
   - Estou lendo e você?
-tags:
+tags=
   - Estou lendo e você?
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 > Cristo tinha razão: há uma ansiedade inerente ao ser humano, ligada à construção de pensamentos, influenciada pela carga genética, por fatores psíquicos e sociais. Só não tem essa ansiedade quem está [morto][1]. Somos a espécie que possui o maior de todos os espetáculos, o da construção de pensamentos. No entanto, muitas vezes usamos o pensamento contra nós mesmos, para gerar uma vida ansiosa. Os problemas ainda não ocorreram, mas já estamos angustiados por eles. O capítulo 6 de Mateus diz: &#8220;Não andeis ansiosos pelo dia de amanhã&#8230; Basta a cada dia o seu próprio mal.&#8221; Cristo queria vacinar seus discípulos contra o estresse produzido por pensamentos antecipatórios. Não abolia as metas, as prioridades, o planejamento do trabalho, pois ele mesmo tinha metas e prioridades bem estabelecidas, mas queria que os discípulos não gravitassem em torno de problemas imaginários. 

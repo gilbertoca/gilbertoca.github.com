@@ -1,18 +1,18 @@
-id: 801
-title: Onde vc acha que Deus está?
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=801
-permalink: /?p=801
-categories:
+id=801
+title=Onde vc acha que Deus está?
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=801
+permalink=/?p=801
+tags=
   - Estou lendo e você?
   - Geral
-tags:
+tags=
   - Bíblia
   - Deus
   - Jesus Cristo
   - Jornada
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 ** 

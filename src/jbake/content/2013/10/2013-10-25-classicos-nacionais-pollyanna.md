@@ -1,16 +1,16 @@
-id: 1026
-title: 'Clássicos Nacionais &#8211; Pollyanna'
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=1026
-permalink: /?p=1026
-categories:
+id=1026
+title='Clássicos Nacionais &#8211; Pollyanna'
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=1026
+permalink=/?p=1026
+tags=
   - Estou lendo e você?
   - Geral
-tags:
+tags=
   - Diversão
   - Estou lendo e você?
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 [<img src="http://blog.gilbertoca.com/wp-content/uploads/pollyanna-classicos-nacionais.jpg" alt="pollyanna-classicos-nacionais" width="400" height="553" class="alignleft size-full wp-image-1028" />][1] 

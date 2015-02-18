@@ -1,22 +1,22 @@
-id: 424
-title: 'Renomear um projeto[SUBVERSION]'
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=424
-permalink: /?p=424
-dsq_thread_id:
+id=424
+title='Renomear um projeto[SUBVERSION]'
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=424
+permalink=/?p=424
+dsq_thread_id=
   - 3504411932
-categories:
+tags=
   - Geral
   - Java
   - Linux
-tags:
+tags=
   - controle de versões
   - desenvolvimento
   - Linux
   - Sistema Operacional
   - subversion
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 Em nossa área de tecnologia da informação é comum o desgaste em discussões para nomear objetos, recursos, projetos, etc, sem falar em nossa imaginação para o assunto. Devo confessar, somos ímpares nesse quesito! <img src="http://blog.gilbertoca.com/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" /> 

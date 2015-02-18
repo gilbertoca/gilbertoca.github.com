@@ -1,22 +1,22 @@
-id: 484
-title: 'Sumiu os botões maximizar,minimizar,fechar[OpenSuSe 11.3]'
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=484
-permalink: /?p=484
-dsq_thread_id:
+id=484
+title='Sumiu os botões maximizar,minimizar,fechar[OpenSuSe 11.3]'
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=484
+permalink=/?p=484
+dsq_thread_id=
   - 3504024173
-categories:
+tags=
   - Geral
   - Linux
-tags:
+tags=
   - configuração
   - desktop
   - gnome
   - Linux
   - opensuse
   - Sistema Operacional
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 Este comportamento do gerenciador de janelas é esquisito, para não dizer indesejável. A coisa fica mais estranha ainda pois não tenho meios de rastrear a causa do problema (placa de vídeo, kernel, gnome, gdm qual é o cupido?). Alguém pode, em algumas situações, acusar o compiz, mas este não o caso &#8211; placa legada:
@@ -28,10 +28,10 @@ Este comportamento do gerenciador de janelas é esquisito, para não dizer indes
         <pre class="bash" style="font-family:monospace;">dhcppc0:<span style="color: #000000; font-weight: bold;">/</span>home<span style="color: #000000; font-weight: bold;">/</span>gilberto <span style="color: #666666; font-style: italic;"># hwinfo --gfxcard </span>
 <span style="color: #000000;">21</span>: PCI<span style="color: #7a0874; font-weight: bold;">&#40;</span>AGP<span style="color: #7a0874; font-weight: bold;">&#41;</span> <span style="color: #000000;">100.0</span>: 0300 VGA compatible controller <span style="color: #7a0874; font-weight: bold;">&#40;</span>VGA<span style="color: #7a0874; font-weight: bold;">&#41;</span>        
   <span style="color: #7a0874; font-weight: bold;">&#91;</span>Created at pci.318<span style="color: #7a0874; font-weight: bold;">&#93;</span>
-  Unique ID: VCu0.UZW4QWn62T6
-  Parent ID: vSkL.uvrveDpO5n6
-  SysFS ID: <span style="color: #000000; font-weight: bold;">/</span>devices<span style="color: #000000; font-weight: bold;">/</span>pci0000:00<span style="color: #000000; font-weight: bold;">/</span>0000:00:<span style="color: #000000;">01.0</span><span style="color: #000000; font-weight: bold;">/</span>0000:01:<span style="color: #000000;">00.0</span>
-  SysFS BusID: 0000:01:<span style="color: #000000;">00.0</span>
+  Unique id=VCu0.UZW4QWn62T6
+  Parent id=vSkL.uvrveDpO5n6
+  SysFS id=<span style="color: #000000; font-weight: bold;">/</span>devices<span style="color: #000000; font-weight: bold;">/</span>pci0000:00<span style="color: #000000; font-weight: bold;">/</span>0000:00:<span style="color: #000000;">01.0</span><span style="color: #000000; font-weight: bold;">/</span>0000:01:<span style="color: #000000;">00.0</span>
+  SysFS Busid=0000:01:<span style="color: #000000;">00.0</span>
   Hardware Class: graphics card
   Model: <span style="color: #ff0000;">"nVidia GeForce4 MX 440 with AGP8X"</span>
   Vendor: pci 0x10de <span style="color: #ff0000;">"nVidia Corporation"</span>

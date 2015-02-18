@@ -1,17 +1,17 @@
-id: 332
-title: DBCA não encontra o banco de dados
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=332
-permalink: /?p=332
-categories:
+id=332
+title=DBCA não encontra o banco de dados
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=332
+permalink=/?p=332
+tags=
   - Database
   - Linux
-tags:
+tags=
   - banco de dados
   - dbca
   - oracle
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 Após fazer alguns exercícios de clonagem de banco(através do dbconsole, dbca e manualmente), procurei fazer uma limpeza dos mesmos. Para minha surpresa, o DBCA não lista algumas instâncias clonadas manualmente para que eu possa removê-las. 

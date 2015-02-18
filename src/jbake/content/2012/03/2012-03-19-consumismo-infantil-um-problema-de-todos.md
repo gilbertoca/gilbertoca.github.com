@@ -1,17 +1,17 @@
-id: 868
-title: Consumismo Infantil, um problema de todos
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=868
-permalink: /?p=868
-categories:
+id=868
+title=Consumismo Infantil, um problema de todos
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=868
+permalink=/?p=868
+tags=
   - Geral
-tags:
+tags=
   - Estou lendo e você?
   - Jesus Cristo
   - Jornada
   - Proteção
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 > As crianças são um alvo importante, não apenas porque escolhem o que seus pais compram e são tratadas como consumidores mirins, mas também porque impactadas desde muito jovens tendem a ser mais fiéis a marcas e ao próprio hábito consumista que lhes é praticamente imposto.

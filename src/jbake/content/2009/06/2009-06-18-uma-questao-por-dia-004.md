@@ -1,20 +1,20 @@
-id: 81
-title: 'Uma Questão por Dia [004]'
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=81
-permalink: /?p=81
-categories:
+id=81
+title='Uma Questão por Dia [004]'
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=81
+permalink=/?p=81
+tags=
   - Concurso Público
   - Geral
-tags:
+tags=
   - Concurso Público
   - Jornada
   - Objetivo
   - Questões
   - Resumos
   - Simulado
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 > [\# Uma Questão por Dia # mat-est-eco-cont-inf # N. [004] # [18/06/2009]][1]

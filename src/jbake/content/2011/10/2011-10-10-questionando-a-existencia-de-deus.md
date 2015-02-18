@@ -1,20 +1,20 @@
-id: 829
-title: Questionando a existência de Deus
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=829
-permalink: /?p=829
-dsq_thread_id:
+id=829
+title=Questionando a existência de Deus
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=829
+permalink=/?p=829
+dsq_thread_id=
   - 3503809741
-categories:
+tags=
   - Estou lendo e você?
   - Geral
-tags:
+tags=
   - Deus
   - Estou lendo e você?
   - Jesus Cristo
   - Jornada
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 > Tentarei abordar um assunto muito complexo que perturbou e ainda perturba a mente de muitos teólogos, filósofos, pensadores e homens de todas as culturas e raças. Um assunto que também me tirou, durante anos, a tranquilidade. Um tema sobre o qual muitas vezes não temos coragem de falar, que fica represado em nossa alma, que raramente verbalizamos, mas que mina nossas convicções. Questionarei a existência de Deus sob a perspectiva da sua intervenção nos eventos da humanidade. 

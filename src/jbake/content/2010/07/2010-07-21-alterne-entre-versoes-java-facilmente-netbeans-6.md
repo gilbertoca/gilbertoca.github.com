@@ -1,23 +1,23 @@
-id: 432
-title: 'Alterne entre versões Java facilmente [Netbeans 6.*]'
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=432
-permalink: /?p=432
-dsq_thread_id:
+id=432
+title='Alterne entre versões Java facilmente [Netbeans 6.*]'
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=432
+permalink=/?p=432
+dsq_thread_id=
   - 3516216851
-categories:
+tags=
   - Geral
   - Java
   - Linux
-tags:
+tags=
   - desenvolvimento
   - Java
   - Linux
   - maven
   - opensuse
   - Sistema Operacional
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 Outro dia escrevi como [alterner entre versões Java facilmente][1] utilizando o utilitário de sistema operacional [update-alternatives][2]. Aquele post tem uma perspectiva do lado do servidor onde estão instalados servidores de aplicação java ou mesmo aplicativos e o administrador/desenvolvedor precisa testar como estes artefatos mencionados se comportariam em cada versão. 

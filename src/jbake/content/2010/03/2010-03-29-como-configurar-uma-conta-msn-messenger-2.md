@@ -1,19 +1,19 @@
-id: 303
-title: Como configurar uma conta MSN Messenger?
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=303
-permalink: /?p=303
-dsq_thread_id:
+id=303
+title=Como configurar uma conta MSN Messenger?
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=303
+permalink=/?p=303
+dsq_thread_id=
   - 3503808818
-categories:
+tags=
   - Geral
   - Windows
-tags:
+tags=
   - Diversão
   - Sistema Operacional
   - Windows XP
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 Para alguns essa pergunta é realmente simples de responder. Mas para alguém que não tem o costume de acessar a internet ou mesmo um computador para fazer trabalhos mais personalizados, essa tarefa é quase impossível. Essa postagem é uma maneira de ajudar uma pessoa muita querida a se comunicar mais facilmente comigo e com seus colegas de trabalho ou mesmo de profissão. Estou me referindo à minha irmã Márcia. 

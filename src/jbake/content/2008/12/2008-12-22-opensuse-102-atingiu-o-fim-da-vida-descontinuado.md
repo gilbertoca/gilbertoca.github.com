@@ -1,16 +1,16 @@
-id: 9
-title: '&#8220;openSUSE 10.2 atingiu o Fim da Vida&#8221; &#8211; Descontinuado'
-author: gilberto_ca
-layout: post
-guid: http://www.jroller.com/gilbertoca/entry/opensuse_10_2_atingiu_o
-permalink: /?p=9
-categories:
+id=9
+title='&#8220;openSUSE 10.2 atingiu o Fim da Vida&#8221; &#8211; Descontinuado'
+status=published
+type=post
+guid=http://www.jroller.com/gilbertoca/entry/opensuse_10_2_atingiu_o
+permalink=/?p=9
+tags=
   - Linux
-tags:
+tags=
   - Linux
   - opensuse
   - Sistema Operacional
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 N&#227;o posso deixar de lamentar essa not&#237;cia:[openSUSE 10.2 atingiu o Fim da Vida][1].  

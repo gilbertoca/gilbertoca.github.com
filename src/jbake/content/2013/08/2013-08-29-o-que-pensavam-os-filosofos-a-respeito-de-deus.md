@@ -1,20 +1,20 @@
-id: 1015
-title: O que pensavam os filósofos a respeito de Deus?
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=1015
-permalink: /?p=1015
-dsq_thread_id:
+id=1015
+title=O que pensavam os filósofos a respeito de Deus?
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=1015
+permalink=/?p=1015
+dsq_thread_id=
   - 3520261795
-categories:
+tags=
   - Estou lendo e você?
   - Geral
-tags:
+tags=
   - Augusto Cury
   - Estou lendo e você?
   - Jesus Cristo
   - Jornada
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 > Vendo que o jovem Marco Polo refletia sobre os mistérios da existência, Falcão adicionou:  

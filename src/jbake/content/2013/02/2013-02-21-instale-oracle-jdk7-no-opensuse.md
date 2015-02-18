@@ -1,19 +1,19 @@
-id: 971
-title: Instale Oracle JDK7 no openSUSE
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=971
-permalink: /?p=971
-dsq_thread_id:
+id=971
+title=Instale Oracle JDK7 no openSUSE
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=971
+permalink=/?p=971
+dsq_thread_id=
   - 3515761335
-categories:
+tags=
   - Geral
   - Java
   - Linux
-tags:
+tags=
   - Java
   - opensuse
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 Realize o download a partir deste local: <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html" title="Java SE Development Kit 7 Downloads" target="_blank">Java SE Development Kit 7 Downloads</a>, em um diretório de sua escolha &#8211; escolhi: /Softwares_usados/Tools/java/jdk/ . 

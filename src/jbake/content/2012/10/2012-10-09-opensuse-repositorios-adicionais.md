@@ -1,20 +1,20 @@
-id: 956
-title: 'openSUSE &#8211; Repositórios adicionais'
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=956
-permalink: /?p=956
-dsq_thread_id:
+id=956
+title='openSUSE &#8211; Repositórios adicionais'
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=956
+permalink=/?p=956
+dsq_thread_id=
   - 3503809821
-categories:
+tags=
   - Geral
   - Linux
-tags:
+tags=
   - Linux
   - opensuse
   - Sistema Operacional
   - Yast
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 Vira e mexe (entre uma instalação e outra, ou um upgrade e outro) preciso adicionar alguns repositórios(repository) ao <a href="http://pt.opensuse.org/YaST_Software_Management" title="Yast" target="_blank">Yast</a> para aplicativos que costumo utilizar. Registro logo abaixo os que não podem faltar: 

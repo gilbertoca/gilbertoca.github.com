@@ -1,9 +1,9 @@
-id: 990
-title: Livre-se do duplo click
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=990
-permalink: /?p=990
+id=990
+title=Livre-se do duplo click
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=990
+permalink=/?p=990
 enclosure:
   - |
     |
@@ -11,17 +11,17 @@ enclosure:
         9371444
         audio/ogg
         
-categories:
+tags=
   - Geral
   - Linux
   - Windows
-tags:
+tags=
   - desktop
   - freeseer
   - kde
   - Linux
   - screencast
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 **Primeiro screen-cast**

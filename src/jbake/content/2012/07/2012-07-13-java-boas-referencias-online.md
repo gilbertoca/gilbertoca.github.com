@@ -1,18 +1,18 @@
-id: 931
-title: 'Java &#8211; Boas referências online'
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=931
-permalink: /?p=931
-categories:
+id=931
+title='Java &#8211; Boas referências online'
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=931
+permalink=/?p=931
+tags=
   - Estou lendo e você?
   - Geral
   - Java
-tags:
+tags=
   - Estou lendo e você?
   - Internet
   - Java
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 Tenho alguns livros sobre Java, mas com as mudanças que a linguagem sofreu nos três últimos anos tenho por mim que minhas referências estão desatualizadas. Meu grande interesse é entender melhor os detalhes que muitos programadores (vindos de outra linguagem ou não) ignoram &#8211; seja por desconhecimento, seja por desinteresse, pois o arcabouço de APIs Java é muito amplo. 

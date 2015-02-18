@@ -1,17 +1,17 @@
-id: 910
-title: 'Java Concorrente na Prática &#8211; crítica'
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=910
-permalink: /?p=910
-dsq_thread_id:
+id=910
+title='Java Concorrente na Prática &#8211; crítica'
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=910
+permalink=/?p=910
+dsq_thread_id=
   - 3503809743
-categories:
+tags=
   - Estou lendo e você?
   - Geral
   - Java
   - Traduções
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 Para um livro já consagrado, uma boa tradução seria o mínimo. Mas lamento relatar que o profissional escolhido para tal tarefa deixou muito a desejar. Quem fez a revisão editorial do livro &#8211; se é que o fez &#8211; , também, não realizou um bom trabalho. É nítido, a partir do primeiro capítulo, o descaso com o leitor. Um exemplo explícito disto é você ver em várias partes do livro a operação de copiar e colar, ou melhor de substituição de texto: o tradutor ou editor, substituiu a sigla GUI por Grafical User Interface onde pode, assim, onde houvesse seGUIR, conseGUIR, etc. encontramos conseGUI(Grafical User Interface). Legal né! 

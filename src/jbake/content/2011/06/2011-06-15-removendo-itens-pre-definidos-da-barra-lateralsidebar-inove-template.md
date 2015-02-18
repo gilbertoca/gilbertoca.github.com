@@ -1,18 +1,18 @@
-id: 739
-title: Removendo itens pré-definidos da barra lateral(sidebar) iNove template
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=739
-permalink: /?p=739
-dsq_thread_id:
+id=739
+title=Removendo itens pré-definidos da barra lateral(sidebar) iNove template
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=739
+permalink=/?p=739
+dsq_thread_id=
   - 3513638190
-categories:
+tags=
   - Geral
-tags:
+tags=
   - Internet
   - Tema
   - Wordpress
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 Há algum tempo venho tentando personalizar a barra lateral(sidebar) do tema([iNove template][1]) que adotei pro blog. Mas quando adiciono, por exemplo, um widget no sidebar Norte ele aparece duplicado. 

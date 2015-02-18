@@ -1,19 +1,19 @@
-id: 131
-title: 'Uma Questão Por Dia [009 a 013]'
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=131
-permalink: /?p=131
-categories:
+id=131
+title='Uma Questão Por Dia [009 a 013]'
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=131
+permalink=/?p=131
+tags=
   - Concurso Público
   - Geral
-tags:
+tags=
   - Concurso Público
   - Jornada
   - Objetivo
   - Resumos
   - Simulado
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 Estive mais atarefado nos últimos dias por isso não consegui postar. 

@@ -1,19 +1,19 @@
-id: 117
-title: 'Unix: Initializing..Terminal linux is unknown.'
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=117
-permalink: /?p=117
-categories:
+id=117
+title='Unix: Initializing..Terminal linux is unknown.'
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=117
+permalink=/?p=117
+tags=
   - Database
   - Linux
   - Unix
-tags:
+tags=
   - AIX
   - configuração
   - console
   - Unix
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 Nosso banco de dados atual está instalado em uma máquina unix &#8211; AIX 5.3. Mas por estar acostumado com ambientes Linux, instalei para o mesmo, o[ pacote de ferramentas Linux][1] que a [IBM ][2]disponibiliza. Funciona muito bem, mas quando executo um binário unix &#8211; exemplo: topas &#8211; o shell responde que esse erro.  

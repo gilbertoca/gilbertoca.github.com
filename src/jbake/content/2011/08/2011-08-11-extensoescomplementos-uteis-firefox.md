@@ -1,15 +1,15 @@
-id: 314
-title: Extensões (complementos) FireFox
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=314
-permalink: /?p=314
-categories:
+id=314
+title=Extensões (complementos) FireFox
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=314
+permalink=/?p=314
+tags=
   - Geral
-tags:
+tags=
   - FireFox
   - Internet
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 As seguintes [extensões (complementos)][1] para o [navegador FireFox][2] melhoram bastante a navegabilidade:

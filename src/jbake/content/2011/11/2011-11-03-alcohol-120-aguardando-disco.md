@@ -1,18 +1,18 @@
-id: 837
-title: 'Alcohol 120% &#8211; Aguardando Disco'
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=837
-permalink: /?p=837
-dsq_thread_id:
+id=837
+title='Alcohol 120% &#8211; Aguardando Disco'
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=837
+permalink=/?p=837
+dsq_thread_id=
   - 3503809750
-categories:
+tags=
   - Geral
   - Windows
-tags:
+tags=
   - Sistema Operacional
   - Windows XP
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 [<img src="http://blog.gilbertoca.com/wp-content/uploads/imagem_alcohol.png" alt="" title="imagem_alcohol" width="1024" height="768" class="alignright size-full wp-image-839" />][1]

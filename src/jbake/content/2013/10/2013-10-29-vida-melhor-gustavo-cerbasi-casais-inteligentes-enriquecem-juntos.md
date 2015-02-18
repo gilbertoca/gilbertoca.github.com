@@ -1,19 +1,19 @@
-id: 1035
-title: 'Vida Melhor: Gustavo Cerbasi (Casais Inteligentes Enriquecem Juntos)'
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=1035
-permalink: /?p=1035
-dsq_thread_id:
+id=1035
+title='Vida Melhor: Gustavo Cerbasi (Casais Inteligentes Enriquecem Juntos)'
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=1035
+permalink=/?p=1035
+dsq_thread_id=
   - 3503809998
-categories:
+tags=
   - Estou lendo e você?
   - Geral
-tags:
+tags=
   - Estou lendo e você?
   - Jesus Cristo
   - Objetivo
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 

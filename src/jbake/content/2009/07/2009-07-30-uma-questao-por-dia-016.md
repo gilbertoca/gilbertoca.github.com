@@ -1,12 +1,12 @@
-id: 157
-title: 'Uma Questão Por Dia [016]'
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=157
-permalink: /?p=157
-categories:
+id=157
+title='Uma Questão Por Dia [016]'
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=157
+permalink=/?p=157
+tags=
   - Geral
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 O primeiro usando [a nova estratégia][1]. Quando postar o próximo, este aqui estará com o gabarito.

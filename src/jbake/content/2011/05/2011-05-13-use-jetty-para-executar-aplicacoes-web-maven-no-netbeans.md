@@ -1,15 +1,15 @@
-id: 679
-title: Debugando com Maven Jetty Plugin no Netbeans
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=679
-permalink: /?p=679
-dsq_thread_id:
+id=679
+title=Debugando com Maven Jetty Plugin no Netbeans
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=679
+permalink=/?p=679
+dsq_thread_id=
   - 3524008297
-categories:
+tags=
   - Application Server
   - Java
-tags:
+tags=
   - Apache Click
   - Apache Wicket
   - Debugging
@@ -20,7 +20,7 @@ tags:
   - maven
   - Metodologia Ágil
   - NetBeans
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 [Jetty ][1]é um servidor web excelente. É rápido para iniciar o que o torna muito útil durante o desenvolvimento. A [ferramente de construção Maven][2] possui um [plugin Jetty][3] que podemos usar em nossos projetos de aplicação Web que utilizam Maven. Desta forma, podemos usar o Jetty para testar nossos arquivos HTML/JSP/JSF/Wicket/Click/etc. Podemos editar o arquivo JSP/HTML e atualizar nosso navegador para ver o resultado imediatamente. Podemos até mesmo compilar um arquivo de classe Java e o servidor Jetty irá reiniciar para que possamos testar o resultado no nosso navegador.  

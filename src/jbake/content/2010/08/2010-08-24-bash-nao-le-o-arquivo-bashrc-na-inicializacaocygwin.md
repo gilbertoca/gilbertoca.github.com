@@ -1,21 +1,21 @@
-id: 441
-title: 'bash não lê o arquivo .bashrc na inicialização[Cygwin]'
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=441
-permalink: /?p=441
-dsq_thread_id:
+id=441
+title='bash não lê o arquivo .bashrc na inicialização[Cygwin]'
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=441
+permalink=/?p=441
+dsq_thread_id=
   - 3516450393
-categories:
+tags=
   - Java
   - Windows
-tags:
+tags=
   - configuração
   - console
   - cygwin
   - Linux
   - Windows XP
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 Uso a bastante tempo o ambiente [Cygwin ][1]em casa. Recentemente realizei a atualização para a versão 1.7. Por enquanto nenhuma queixa, tudo funcionando normalmente. Hoje resolvi me aventurar e customizar o console utilizado como padrão &#8211; cmd.exe. Para isso tomei como base o seguinte artigo: [Useful Configuration of Cygwin, Part 1: Install, rxvt, and BASH][2]. Fiz todos os ajustes recomendados e fui realizar o teste, mas por algum motivo meu arquivo .bashrc &#8211; de ajustes do ambiente bash &#8211; não era carregado na inicialização do [Cygwin][1]. 

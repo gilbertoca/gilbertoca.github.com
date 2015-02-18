@@ -1,19 +1,19 @@
-id: 1061
-title: Os Segredos dos Casais Inteligentes (Gustavo Cerbasi)
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=1061
-permalink: /?p=1061
-dsq_thread_id:
+id=1061
+title=Os Segredos dos Casais Inteligentes (Gustavo Cerbasi)
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=1061
+permalink=/?p=1061
+dsq_thread_id=
   - 3505629595
-categories:
+tags=
   - Estou lendo e você?
   - Geral
-tags:
+tags=
   - Estou lendo e você?
   - Jesus Cristo
   - Objetivo
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 

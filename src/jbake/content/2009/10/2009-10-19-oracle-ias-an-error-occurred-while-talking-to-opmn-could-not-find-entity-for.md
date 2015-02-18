@@ -1,20 +1,20 @@
-id: 225
-title: 'Oracle IAS [An error occurred while talking to OPMN. Could not find entity for]'
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=225
-permalink: /?p=225
-dsq_thread_id:
+id=225
+title='Oracle IAS [An error occurred while talking to OPMN. Could not find entity for]'
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=225
+permalink=/?p=225
+dsq_thread_id=
   - 3503808728
-categories:
+tags=
   - Application Server
   - Linux
   - Unix
-tags:
+tags=
   - Application Server
   - Linux
   - Sistema Operacional
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 O servidor de aplicações Oracle (IAS 10g) não inicia, o enterprise manager reporta um erro que não diz muito:

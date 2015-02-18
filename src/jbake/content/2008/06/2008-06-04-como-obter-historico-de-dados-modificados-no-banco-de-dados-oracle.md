@@ -1,20 +1,20 @@
-id: 13
-title: Como obter histórico de dados modificados no banco de dados Oracle?
-author: gilberto_ca
-layout: post
-guid: http://www.jroller.com/gilbertoca/entry/como_obter_hist%C3%B3rico_de_dados
-permalink: /?p=13
-dsq_thread_id:
+id=13
+title=Como obter histórico de dados modificados no banco de dados Oracle?
+status=published
+type=post
+guid=http://www.jroller.com/gilbertoca/entry/como_obter_hist%C3%B3rico_de_dados
+permalink=/?p=13
+dsq_thread_id=
   - 3503808667
-categories:
+tags=
   - Database
-tags:
+tags=
   - Auditoria
   - banco de dados
   - configuração
   - Data Mining
   - oracle
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 Na verdade a pergunta original, em ingl&#234;s, &#233; essa: [How can you get the history of data modified from an Oracle database?][1]  

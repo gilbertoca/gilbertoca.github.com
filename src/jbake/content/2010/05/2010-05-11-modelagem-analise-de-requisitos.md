@@ -1,21 +1,21 @@
-id: 352
-title: 'Modelagem usando Uml em Cores [Análise de Requisitos]'
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=352
-permalink: /?p=352
-dsq_thread_id:
+id=352
+title='Modelagem usando Uml em Cores [Análise de Requisitos]'
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=352
+permalink=/?p=352
+dsq_thread_id=
   - 3503808929
-categories:
+tags=
   - Database
   - Geral
-tags:
+tags=
   - banco de dados
   - Metodologia Ágil
   - Modelagem
   - UML
   - Uml em Cores
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 > Verificando posts de [meu antigo blog][1] notei que alguns não foram importados ou foram importados com defeitos em seu conteúdo. Então resolvi realizar um trabalho de revisão e o primeiro deles começa hoje: 

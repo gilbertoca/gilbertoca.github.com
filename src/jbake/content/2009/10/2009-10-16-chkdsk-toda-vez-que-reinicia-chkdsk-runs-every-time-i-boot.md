@@ -1,18 +1,18 @@
-id: 216
-title: CHKDSK toda vez que reinicia (CHKDSK runs every time I boot)!
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=216
-permalink: /?p=216
-dsq_thread_id:
+id=216
+title=CHKDSK toda vez que reinicia (CHKDSK runs every time I boot)!
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=216
+permalink=/?p=216
+dsq_thread_id=
   - 3503808703
-categories:
+tags=
   - Geral
   - Windows
-tags:
+tags=
   - Sistema Operacional
   - Windows XP
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 Esse parece ser um problema comum e caso você não o tenha encontrado, pode ficar tranquilo. Sua vez vai chegar!  

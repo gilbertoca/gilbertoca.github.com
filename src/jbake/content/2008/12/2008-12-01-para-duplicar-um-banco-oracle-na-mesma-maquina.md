@@ -1,14 +1,14 @@
-id: 10
-title: Para duplicar um banco oracle na mesma maquina
-author: gilberto_ca
-layout: post
-guid: http://www.jroller.com/gilbertoca/entry/para_duplicar_um_banco_oracle
-permalink: /?p=10
-dsq_thread_id:
+id=10
+title=Para duplicar um banco oracle na mesma maquina
+status=published
+type=post
+guid=http://www.jroller.com/gilbertoca/entry/para_duplicar_um_banco_oracle
+permalink=/?p=10
+dsq_thread_id=
   - 3514590971
-categories:
+tags=
   - Database
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 Atualmente aqui na [Secretaria][1] estamos em um processo de implanta&#231;&#227;o de um [sistema de recursos humanos][2], para ser mais exato, praticamente toda parte de infraestrutura (hardware e software) j&#225; est&#225; pronta para uso. Mas por quest&#245;es que foge ao meu conhecimento (penso ser licita&#231;&#227;o), a fase mais densa (treinamento e uso pelo usu&#225;rio final) est&#225; em fase de planejamento/reestrutura&#231;&#227;o. Bom, apesar dessa, vamos dizer morosidade, tem uma fase desse processo que n&#227;o p&#225;ra: a migra&#231;&#227;o. Nesse processo participam duas equipes: parametriza&#231;&#227;o e a pr&#243;pria migra&#231;&#227;o, o qual nessa &#250;ltima perten&#231;o. A migra&#231;&#227;o &#233; um ciclo constante onde a partir de modifica&#231;&#245;es (parametriza&#231;&#227;o) importantes no banco de produ&#231;&#227;o, &#233; acionado uma requisi&#231;&#227;o de atualiza&#231;&#227;o do banco de migra&#231;&#227;o (utilizado para validar a parametriza&#231;&#227;o com a ativa&#231;&#227;o de fun&#231;&#245;es do sistema de recursos humanos, por exemplo, calculo de folha). Para esse ciclo funcionar tive que realizar uma das tarefas mais comuns para quem administra um banco de dados, que &#233; c&#243;pia/duplica&#231;&#227;o/clonagem de um banco em produ&#231;&#227;o para outro banco (at&#233; mesmo em outro servidor) a ser utilizado como teste. O procedimento descrito aqui, nada mais &#233; do que seq&#252;&#234;ncia descrita na pr&#243;pria [documenta&#231;&#227;o do banco oracle][3]:

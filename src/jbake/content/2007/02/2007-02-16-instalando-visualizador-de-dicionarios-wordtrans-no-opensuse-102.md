@@ -1,16 +1,16 @@
-id: 21
-title: Instalando Visualizador de Dicionários WordTrans no openSuSe 10.2
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=21
-permalink: /?p=21
-categories:
+id=21
+title=Instalando Visualizador de Dicionários WordTrans no openSuSe 10.2
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=21
+permalink=/?p=21
+tags=
   - Linux
-tags:
+tags=
   - Linux
   - opensuse
   - Sistema Operacional
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 O [wordtrans ][1]é uma aplicação gráfica que permite a pesquisa de palavras em vários dicionários. O mesmo também pode traduzir uma palavra selecionada pelo mouse. Ele tem suporte a três tipos de dicionários:

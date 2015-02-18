@@ -1,22 +1,22 @@
-id: 601
-title: 'pen drive &#8211; Cadê minhas pastas?'
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=601
-permalink: /?p=601
-dsq_thread_id:
+id=601
+title='pen drive &#8211; Cadê minhas pastas?'
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=601
+permalink=/?p=601
+dsq_thread_id=
   - 3503809224
-categories:
+tags=
   - Geral
   - Windows
-tags:
+tags=
   - antivírus
   - configuração
   - Sistema Operacional
   - ubcd4win
   - Virus
   - Windows XP
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 Meus problemas com <a href="http://pt.wikipedia.org/wiki/V%C3%ADrus_de_computador" target="_blank">vírus de computador</a>, aqui em casa, já se tornaram história. Não me lembro quando foi a última vez que tive o trabalho de criar um <a href="http://www.ubcd4win.com/howto.htm" target="_blank">CD para boot do Windows XP</a> e a partir dele realizar a limpeza &#8211; isso não é totalmente verdade, volta e meia tenho que fazer isso para <a href="http://pt.wikipedia.org/wiki/Laptop" target="_blank">NoteBooks</a> de colegas ou de colegas de minha esposa. 

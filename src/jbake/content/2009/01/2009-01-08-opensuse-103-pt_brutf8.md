@@ -1,16 +1,16 @@
-id: 8
-title: 'OpenSuse 10.3 &#8211; pt_BR.UTF8'
-author: gilberto_ca
-layout: post
-guid: http://www.jroller.com/gilbertoca/entry/opensuse_10_3_pt_br
-permalink: /?p=8
-categories:
+id=8
+title='OpenSuse 10.3 &#8211; pt_BR.UTF8'
+status=published
+type=post
+guid=http://www.jroller.com/gilbertoca/entry/opensuse_10_3_pt_br
+permalink=/?p=8
+tags=
   - Linux
-tags:
+tags=
   - Linux
   - opensuse
   - Sistema Operacional
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 Para resolver de vez os problemas com caracteres estranhos e acentua&#231;&#227;o:

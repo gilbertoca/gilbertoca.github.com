@@ -1,18 +1,18 @@
-id: 1114
-title: Cursor do notebook muda de lugar sozinho a todo instante na digitação
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=1114
-permalink: /?p=1114
-dsq_thread_id:
+id=1114
+title=Cursor do notebook muda de lugar sozinho a todo instante na digitação
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=1114
+permalink=/?p=1114
+dsq_thread_id=
   - 3504083483
-categories:
+tags=
   - Geral
   - Windows
-tags:
+tags=
   - Sistema Operacional
   - Windows XP
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 Há duas semanas (férias) em casa, venho percebendo um comportamento irritante no laptop de trabalho de minha esposa: cursor pula fora da linha e se coloca em outra posição, desordenando as palavras ou frase quando estamos digitando um texto. É impossível escrever no Word, Navegador ou Skype pois o cursor não tem estabilidade. 

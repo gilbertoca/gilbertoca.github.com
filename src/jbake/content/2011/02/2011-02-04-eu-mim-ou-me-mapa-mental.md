@@ -1,20 +1,20 @@
-id: 516
-title: 'EU, MIM ou ME? [Mapa Mental]'
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=516
-permalink: /?p=516
-dsq_thread_id:
+id=516
+title='EU, MIM ou ME? [Mapa Mental]'
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=516
+permalink=/?p=516
+dsq_thread_id=
   - 3503793886
-categories:
+tags=
   - Concurso Público
   - Geral
-tags:
+tags=
   - Concurso Público
   - freemind
   - mapa mental
   - Questões
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 <span class="style_0">Exercício 1.0: Use EU, MIM ou ME, conforme convenha.</span>

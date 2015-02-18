@@ -1,12 +1,12 @@
-id: 97
-title: 'Créditos &#8211; Vários professores espalhados pelo Brasil'
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=97
-permalink: /?p=97
-categories:
+id=97
+title='Créditos &#8211; Vários professores espalhados pelo Brasil'
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=97
+permalink=/?p=97
+tags=
   - Geral
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 Recentemente iniciei um projeto &#8211; [Uma Questão por Dia?][1] &#8211; que espero tornar minha vida de concurseiro mais tranquila nas disciplinas que exigem mais cálculo e raciocínio rápido. Neste post registrarei os devidos créditos no trabalho de seleção das questões de concurso direcionadas ao concurso de AFRFB:

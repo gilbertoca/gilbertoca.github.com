@@ -1,16 +1,16 @@
-id: 370
-title: 'Direct Path Load &#8211; Como configurar'
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=370
-permalink: /?p=370
-categories:
+id=370
+title='Direct Path Load &#8211; Como configurar'
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=370
+permalink=/?p=370
+tags=
   - Database
   - Linux
-tags:
+tags=
   - banco de dados
   - oracle
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 > Verificando posts de [meu antigo blog][1] notei que alguns não foram importados ou foram importados com defeitos em seu conteúdo. Então resolvi realizar um trabalho de revisão e o **[terceiro][2]** começa hoje: 

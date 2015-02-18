@@ -1,12 +1,12 @@
-id: 4
-title: 'Indo um pouco além &#8230;'
-author: gilberto_ca
-layout: post
-guid: http://www.jroller.com/gilbertoca/entry/indo_um_pouco_alem
-permalink: /?p=4
-categories:
+id=4
+title='Indo um pouco além &#8230;'
+status=published
+type=post
+guid=http://www.jroller.com/gilbertoca/entry/indo_um_pouco_alem
+permalink=/?p=4
+tags=
   - Java
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 Estou aprendendo um pouco sobre programa&#231;&#227;o orientada a objeto em java e com o pouco que li resolvi implementar uma pequena api que abstrai as regras de acesso e recupera&#231;&#227;o de dados &minus; acesso a banco de dados. Gosto muito dessa (<a href="http://orbroker.sourceforge.net/" target="_blank">OrBroker</a>) api de persist&#234;ncia com isso elaborei um contrato que acho o m&#237;nimo necess&#225;rio para o acesso a dados, o qual poder&#225; utilizar a api OrBroker &#8211; espero n&#227;o somente essa api, mas outras (desacoplamento). 

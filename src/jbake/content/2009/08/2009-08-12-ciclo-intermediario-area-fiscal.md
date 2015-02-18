@@ -1,20 +1,20 @@
-id: 176
-title: 'Ciclo Intermediário &#8211; Área Fiscal'
-author: gilberto_ca
-layout: post
-guid: http://blog.gilbertoca.com/?p=176
-permalink: /?p=176
-categories:
+id=176
+title='Ciclo Intermediário &#8211; Área Fiscal'
+status=published
+type=post
+guid=http://blog.gilbertoca.com/?p=176
+permalink=/?p=176
+tags=
   - Concurso Público
   - Geral
-tags:
+tags=
   - Concurso Público
   - Jornada
   - Objetivo
   - Questões
   - Resumos
   - Simulado
----
+~~~~~~
 <!-- google_ad_section_start -->
 
 [Este é o ciclo que atualmente adoto][1], procuro ajustá-lo conforme meu horário (8h diárias) de trabalho e cursinho (3.5h a noite). A idéia é interessante mas inicialmente difícil de incorporar e requer disciplina para não desistir da estratégia. Para você saber mais sobre o assunto leia o [Manual do Concurso do Prof. Alexandre Meirelles][2].  
