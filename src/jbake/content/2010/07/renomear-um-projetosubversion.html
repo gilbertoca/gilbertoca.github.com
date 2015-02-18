@@ -1,8 +1,0 @@
-title=Renomear um projeto[SUBVERSION]
-date=2010-07-19
-type=post
-tags=linux,sistema-operacional,subversion,controle-de-versoes,desenvolvimento
-status=published
-~~~~~~
-
-<p><br />Em nossa área de tecnologia da informação é comum o desgaste em discussões para nomear objetos, recursos, projetos, etc, sem falar em nossa imaginação para o assunto. Devo confessar, somos ímpares nesse quesito! :)<br /></p><br /><p><br />Hoje, por uma necessidade tive que renomear um "projeto" (antigo módulo em cvs) em um repositório svn hospedado no Google Project Hosting. Para fazer a mudança você necessita fazer o chekout do "projeto" - coloco entre aspas, pois o mesmo é considerado como um diretório -  em uma área de trabalho primeiro. Veja como é o procedimento:<br /><pre lang="bash">cd gilberto@SUGEP-DMASI:~/dev/netbeans-config/click-jpa-integration<br />svn rename https://osu.googlecode.com/svn/trunk/click-jpa-integration https://osu.googlecode.com/svn/trunk/click-orm-integration<br />cd ..<br />rm -rf click-jpa-integration<br />svn checkout http://osu.googlecode.com/svn/trunk/click-orm-integration coi<br />cd coi</pre><br /></p><br /><blockquote><br /><strong>Atualização(07/03/2012):</strong><br />Uma correção, com este comando (rename=move) temos a opção de mover e/ou renomear alguma coisa em uma área de trabalho local ou no próprio repositório(remoto por uma URL).<br />Veja como ficaria comando usando URL:<br /><pre lang="bash"><br />svn move http://10.121.0.5/svn/gcs http://10.121.0.5/svn/opencms<br /></pre><br /></blockquote>
