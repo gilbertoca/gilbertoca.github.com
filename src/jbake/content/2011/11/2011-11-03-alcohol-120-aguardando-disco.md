@@ -1,13 +1,13 @@
-title='Alcohol 120% &#8211; Aguardando Disco'
-status=published
-type=post
-  - 3503809750
+
+title= 'Alcohol 120% &#8211; Aguardando Disco'
+date= 2011-11-03 22=22=54
+type= post
+status= publish
 tags=
-  - Geral
-  - Windows
-tags=
-  - Sistema Operacional
-  - Windows XP
+,Geral
+,Sistema Operacional
+,Windows
+,Windows XP
 ~~~~~~
 <!-- google_ad_section_start -->
 

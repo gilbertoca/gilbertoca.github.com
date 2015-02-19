@@ -1,12 +1,13 @@
-title='Direct Path Load &#8211; Como configurar'
-status=published
-type=post
+
+title= 'Direct Path Load &#8211; Como configurar'
+date= 2010-06-01 14=20=55
+type= post
+status= publish
 tags=
-  - Database
-  - Linux
-tags=
-  - banco de dados
-  - oracle
+,banco de dados
+,Database
+,Linux
+,oracle
 ~~~~~~
 <!-- google_ad_section_start -->
 

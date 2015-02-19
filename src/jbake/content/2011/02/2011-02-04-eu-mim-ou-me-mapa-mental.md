@@ -1,15 +1,14 @@
-title='EU, MIM ou ME? [Mapa Mental]'
-status=published
-type=post
-  - 3503793886
+
+title= 'EU, MIM ou ME? [Mapa Mental]'
+date= 2011-02-04 15=22=01
+type= post
+status= publish
 tags=
-  - Concurso Público
-  - Geral
-tags=
-  - Concurso Público
-  - freemind
-  - mapa mental
-  - Questões
+,Concurso Público
+,freemind
+,Geral
+,mapa mental
+,Questões
 ~~~~~~
 <!-- google_ad_section_start -->
 

@@ -1,16 +1,16 @@
-title='Uma Questão Por Dia[000]+Análise'
-status=published
-type=post
+
+title= 'Uma Questão Por Dia[000]+Análise'
+date= 2010-01-13 10=46=41
+type= post
+status= publish
 tags=
-  - Concurso Público
-  - Geral
-tags=
-  - Concurso Público
-  - Jornada
-  - Objetivo
-  - Questões
-  - Resumos
-  - Simulado
+,Concurso Público
+,Geral
+,Jornada
+,Objetivo
+,Questões
+,Resumos
+,Simulado
 ~~~~~~
 <!-- google_ad_section_start -->
 

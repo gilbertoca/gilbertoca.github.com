@@ -1,21 +1,21 @@
-title=Debugando com Maven Jetty Plugin no Netbeans
-status=published
-type=post
-  - 3524008297
+
+title= Debugando com Maven Jetty Plugin no Netbeans
+date= 2011-05-13 16=30=29
+type= post
+status= publish
 tags=
-  - Application Server
-  - Java
-tags=
-  - Apache Click
-  - Apache Wicket
-  - Debugging
-  - Depurar
-  - desenvolvimento
-  - IDE
-  - JSF
-  - maven
-  - Metodologia Ágil
-  - NetBeans
+,Apache Click
+,Apache Wicket
+,Application Server
+,Debugging
+,Depurar
+,desenvolvimento
+,IDE
+,Java
+,JSF
+,maven
+,Metodologia Ágil
+,NetBeans
 ~~~~~~
 <!-- google_ad_section_start -->
 

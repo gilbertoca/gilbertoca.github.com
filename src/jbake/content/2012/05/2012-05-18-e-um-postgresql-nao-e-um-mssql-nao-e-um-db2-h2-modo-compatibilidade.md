@@ -1,15 +1,14 @@
-title='É um PostgreSQL! Não, é um MSSql! Não, é um DB2! [h2 modo compatibilidade]'
-status=published
-type=post
-  - 3504005468
+
+title= 'É um PostgreSQL! Não, é um MSSql! Não, é um DB2! [h2 modo compatibilidade]'
+date= 2012-05-18 11=55=54
+type= post
+status= publish
 tags=
-  - Database
-  - Geral
-  - Java
-tags=
-  - banco de dados
-  - Java
-  - maven
+,banco de dados
+,Database
+,Geral
+,Java
+,maven
 ~~~~~~
 <!-- google_ad_section_start -->
 
@@ -129,6 +128,7 @@ navegador &#8211; a qual lhe permitirá escolher em qual MODE rodar o
 servidor.  
 
 
+<div id="attachment_899" style="width: 557px" class="wp-caption alignleft">
   <a href="http://blog.gilbertoca.com/wp-content/uploads/H2_admin_interface.png"><img src="http://blog.gilbertoca.com/wp-content/uploads/H2_admin_interface.png" alt="" title="H2_admin_interface" width="547" height="675" class="size-full wp-image-899" /></a>
   
   <p class="wp-caption-text">
@@ -141,6 +141,7 @@ Ao conectar àquela configuração definida incialmente, teremos outra
 interface de administração. Aqui poderemos administrar nosso &#8220;banco  
 PostgreSQL&#8221;
 
+<div id="attachment_903" style="width: 835px" class="wp-caption alignleft">
   <a href="http://blog.gilbertoca.com/wp-content/uploads/H2_admin_interface_PG_MODE.png"><img src="http://blog.gilbertoca.com/wp-content/uploads/H2_admin_interface_PG_MODE.png" alt="" title="H2_admin_interface_PG_MODE" width="825" height="831" class="size-full wp-image-903" /></a>
   
   <p class="wp-caption-text">

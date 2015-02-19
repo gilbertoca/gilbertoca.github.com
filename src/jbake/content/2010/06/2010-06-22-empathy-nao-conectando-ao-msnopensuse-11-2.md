@@ -1,17 +1,16 @@
-title=Empathy não conectando ao MSN
-status=published
-type=post
-  - 3503809025
+
+title= Empathy não conectando ao MSN
+date= 2010-06-22 10=28=24
+type= post
+status= publish
 tags=
-  - Geral
-  - Linux
-tags=
-  - configuração
-  - Empathy
-  - gnome
-  - jabber
-  - Linux
-  - msn
+,configuração
+,Empathy
+,Geral
+,gnome
+,jabber
+,Linux
+,msn
 ~~~~~~
 <!-- google_ad_section_start -->
 

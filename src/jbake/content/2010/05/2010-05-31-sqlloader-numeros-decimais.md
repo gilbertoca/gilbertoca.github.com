@@ -1,13 +1,13 @@
-title='SQL*Loader &#8211; Números decimais'
-status=published
-type=post
+
+title= 'SQL*Loader &#8211; Números decimais'
+date= 2010-05-31 16=30=31
+type= post
+status= publish
 tags=
-  - Database
-  - Linux
-tags=
-  - banco de dados
-  - Linux
-  - oracle
+,banco de dados
+,Database
+,Linux
+,oracle
 ~~~~~~
 <!-- google_ad_section_start -->
 

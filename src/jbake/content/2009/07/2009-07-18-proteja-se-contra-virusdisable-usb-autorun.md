@@ -1,14 +1,14 @@
-title=Proteja-se Contra Virus(Disable USB Autorun)
-status=published
-type=post
-  - 3512165510
+
+title= Proteja-se Contra Virus(Disable USB Autorun)
+date= 2009-07-18 22=43=45
+type= post
+status= publish
 tags=
-  - Geral
-  - Windows
-tags=
-  - Proteção
-  - Virus
-  - Windows XP
+,Geral
+,Proteção
+,Virus
+,Windows
+,Windows XP
 ~~~~~~
 <!-- google_ad_section_start -->
 

@@ -1,9 +1,10 @@
-title=Para duplicar um banco oracle na mesma maquina
-status=published
-type=post
-  - 3514590971
+
+title= Para duplicar um banco oracle na mesma maquina
+date= 2008-12-01 10=42=24
+type= post
+status= publish
 tags=
-  - Database
+,Database
 ~~~~~~
 <!-- google_ad_section_start -->
 
@@ -260,6 +261,7 @@ end;
 <!-- google_ad_section_end -->
 
  [1]: www.secad.to.gov.br
+ [2]: http://www.techne.com.br/produtos/produtos.asp?id=4
  [3]: http://download.oracle.com/docs/cd/B19306_01/backup.102/b14191/rcmdupdb.htm#i1006474
  [4]: #task1
  [5]: #task2

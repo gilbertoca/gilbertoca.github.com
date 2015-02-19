@@ -1,16 +1,16 @@
-title='Uma Questão por Dia [007]'
-status=published
-type=post
-  - 3515034805
+
+title= 'Uma Questão por Dia [007]'
+date= 2009-06-23 14=34=07
+type= post
+status= publish
 tags=
-  - Geral
-tags=
-  - Concurso Público
-  - Jornada
-  - Objetivo
-  - Questões
-  - Resumos
-  - Simulado
+,Concurso Público
+,Geral
+,Jornada
+,Objetivo
+,Questões
+,Resumos
+,Simulado
 ~~~~~~
 <!-- google_ad_section_start -->
 
@@ -21,3 +21,4 @@ O que quer dizer: [Uma Questão por Dia?][2]
 <!-- google_ad_section_end -->
 
  [1]: http://blog.gilbertoca.com/tools/acervo/questoespordia/2009-06-23-mat-est-eco-cont-inf.odt
+ [2]: http://blog.gilbertoca.com/?page_id=44

@@ -1,12 +1,13 @@
-title='Clássicos Nacionais &#8211; Pollyanna'
-status=published
-type=post
+
+title= 'Clássicos Nacionais &#8211; Pollyanna'
+date= 2013-10-25 15=08=35
+type= post
+status= publish
 tags=
-  - Estou lendo e você?
-  - Geral
-tags=
-  - Diversão
-  - Estou lendo e você?
+,Diversão
+,Estou lendo e você?
+,Estou lendo e você?
+,Geral
 ~~~~~~
 <!-- google_ad_section_start -->
 

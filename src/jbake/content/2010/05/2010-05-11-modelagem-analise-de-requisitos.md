@@ -1,16 +1,16 @@
-title='Modelagem usando Uml em Cores [Análise de Requisitos]'
-status=published
-type=post
-  - 3503808929
+
+title= 'Modelagem usando Uml em Cores [Análise de Requisitos]'
+date= 2010-05-11 11=06=35
+type= post
+status= publish
 tags=
-  - Database
-  - Geral
-tags=
-  - banco de dados
-  - Metodologia Ágil
-  - Modelagem
-  - UML
-  - Uml em Cores
+,banco de dados
+,Database
+,Geral
+,Metodologia Ágil
+,Modelagem
+,UML
+,Uml em Cores
 ~~~~~~
 <!-- google_ad_section_start -->
 
@@ -71,6 +71,7 @@ tags=
       </li>
     </ul>
     
+    <div id="attachment_360" style="width: 310px" class="wp-caption alignnone">
       <a href="http://blog.gilbertoca.com/wp-content/uploads/four_archetypes.png"><img src="http://blog.gilbertoca.com/wp-content/uploads/four_archetypes-300x142.png" alt="" title="four_archetypes" width="300" height="142" class="size-medium wp-image-360" /></a>
       
       <p class="wp-caption-text">

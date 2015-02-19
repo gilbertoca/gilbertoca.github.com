@@ -1,11 +1,12 @@
-title=Extensões (complementos) FireFox
-status=published
-type=post
+
+title= Extensões (complementos) FireFox
+date= 2011-08-11 10=00=42
+type= post
+status= publish
 tags=
-  - Geral
-tags=
-  - FireFox
-  - Internet
+,FireFox
+,Geral
+,Internet
 ~~~~~~
 <!-- google_ad_section_start -->
 

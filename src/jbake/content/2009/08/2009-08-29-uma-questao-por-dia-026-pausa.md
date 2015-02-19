@@ -1,8 +1,10 @@
-title='Uma Questão Por Dia [026] + Pausa'
-status=published
-type=post
+
+title= 'Uma Questão Por Dia [026] + Pausa'
+date= 2009-08-29 19=42=44
+type= post
+status= publish
 tags=
-  - Geral
+,Geral
 ~~~~~~
 <!-- google_ad_section_start -->
 
@@ -14,4 +16,6 @@ O que quer dizer: [Uma Questão por Dia?][3]
 
 <!-- google_ad_section_end -->
 
+ [1]: http://www.euvoupassar.com.br/visao/artigos/completa.php?id=1969
  [2]: http://blog.gilbertoca.com/tools/acervo/questoespordia/[026]-mat-est-eco-cont-inf.odt
+ [3]: http://blog.gilbertoca.com/?page_id=44

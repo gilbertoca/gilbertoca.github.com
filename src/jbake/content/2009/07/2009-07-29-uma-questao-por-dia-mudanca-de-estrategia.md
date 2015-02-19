@@ -1,8 +1,10 @@
-title='Uma Questão Por Dia [mudança de estratégia]'
-status=published
-type=post
+
+title= 'Uma Questão Por Dia [mudança de estratégia]'
+date= 2009-07-29 15=18=49
+type= post
+status= publish
 tags=
-  - Geral
+,Geral
 ~~~~~~
 <!-- google_ad_section_start -->
 
@@ -23,3 +25,4 @@ Mais uma coisa, nós procuramos sempre acertar mas nem sempre isso é possível,
 
 <!-- google_ad_section_end -->
 
+ [1]: http://blog.gilbertoca.com/?page_id=44

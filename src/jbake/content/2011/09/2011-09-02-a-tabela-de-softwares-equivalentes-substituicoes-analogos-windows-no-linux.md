@@ -1,16 +1,16 @@
-title=A tabela de softwares equivalentes / substituições / análogos Windows no Linux.
-status=published
-type=post
+
+title= A tabela de softwares equivalentes / substituições / análogos Windows no Linux.
+date= 2011-09-02 09=33=36
+type= post
+status= publish
 tags=
-  - Linux
-  - Windows
-tags=
-  - fedora
-  - Linux
-  - mandriva
-  - opensuse
-  - ubuntu
-  - Windows XP
+,fedora
+,Linux
+,mandriva
+,opensuse
+,ubuntu
+,Windows
+,Windows XP
 ~~~~~~
 <!-- google_ad_section_start -->
 

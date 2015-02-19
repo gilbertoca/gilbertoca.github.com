@@ -1,16 +1,15 @@
-title='Alterando o group principal/efetivo do usuário &#8211; newgrp e sg'
-status=published
-type=post
+
+title= 'Alterando o group principal/efetivo do usuário &#8211; newgrp e sg'
+date= 2010-02-22 17=24=31
+type= post
+status= publish
 tags=
-  - Application Server
-  - Database
-  - Linux
-  - Unix
-tags=
-  - Linux
-  - opensuse
-  - Sistema Operacional
-  - Unix
+,Application Server
+,Database
+,Linux
+,opensuse
+,Sistema Operacional
+,Unix
 ~~~~~~
 <!-- google_ad_section_start -->
 

@@ -1,8 +1,10 @@
-title='Créditos &#8211; Vários professores espalhados pelo Brasil'
-status=published
-type=post
+
+title= 'Créditos &#8211; Vários professores espalhados pelo Brasil'
+date= 2009-06-29 11=20=08
+type= post
+status= publish
 tags=
-  - Geral
+,Geral
 ~~~~~~
 <!-- google_ad_section_start -->
 
@@ -92,3 +94,4 @@ Recentemente iniciei um projeto &#8211; [Uma Questão por Dia?][1] &#8211; que e
   <table>
     <!-- google_ad_section_end -->
 
+ [1]: http://blog.gilbertoca.com/?page_id=44

@@ -1,16 +1,16 @@
-title=Atualização OpenSuSe 11.3 danifica Java
-status=published
-type=post
+
+title= Atualização OpenSuSe 11.3 danifica Java
+date= 2010-12-07 22=03=56
+type= post
+status= publish
 tags=
-  - Geral
-  - Java
-  - Linux
-tags=
-  - FireFox
-  - Jornada
-  - Linux
-  - opensuse
-  - Sistema Operacional
+,FireFox
+,Geral
+,Java
+,Jornada
+,Linux
+,opensuse
+,Sistema Operacional
 ~~~~~~
 <!-- google_ad_section_start -->
 

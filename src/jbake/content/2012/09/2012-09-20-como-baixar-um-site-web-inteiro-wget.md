@@ -1,16 +1,15 @@
-title='Como baixar um site web inteiro &#8211; wget'
-status=published
-type=post
-  - 3504314158
+
+title= 'Como baixar um site web inteiro &#8211; wget'
+date= 2012-09-20 10=31=34
+type= post
+status= publish
 tags=
-  - Geral
-  - Linux
-  - Unix
-  - Windows
-tags=
-  - Internet
-  - Linux
-  - opensuse
+,Geral
+,Internet
+,Linux
+,opensuse
+,Unix
+,Windows
 ~~~~~~
 <!-- google_ad_section_start -->
 

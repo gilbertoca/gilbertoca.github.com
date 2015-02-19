@@ -1,20 +1,19 @@
-title='Apache Shiro Parte 1 &#8211; básico'
-status=published
-type=post
-  - 3503809329
+
+title= 'Apache Shiro Parte 1 &#8211; básico'
+date= 2011-04-07 18=04=51
+type= post
+status= publish
 tags=
-  - Java
-  - Traduções
-tags=
-  - Apache Shiro
-  - Application Server
-  - Autenticação
-  - Autorização
-  - Java
-  - maven
-  - Proteção
-  - Recursos de Segurança
-  - traduções
+,Apache Shiro
+,Application Server
+,Autenticação
+,Autorização
+,Java
+,maven
+,Proteção
+,Recursos de Segurança
+,Traduções
+,traduções
 ~~~~~~
 <!-- google_ad_section_start -->
 

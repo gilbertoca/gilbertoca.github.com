@@ -1,23 +1,16 @@
-title=Livre-se do duplo click
-status=published
-type=post
-enclosure:
-  - |
-    |
-        http://blog.gilbertoca.com/wp-content/uploads/livre-se-do-duble-click.ogg
-        9371444
-        audio/ogg
-        
+
+title= Livre-se do duplo click
+date= 2013-05-22 22=17=12
+type= post
+status= publish
 tags=
-  - Geral
-  - Linux
-  - Windows
-tags=
-  - desktop
-  - freeseer
-  - kde
-  - Linux
-  - screencast
+,desktop
+,freeseer
+,Geral
+,kde
+,Linux
+,screencast
+,Windows
 ~~~~~~
 <!-- google_ad_section_start -->
 

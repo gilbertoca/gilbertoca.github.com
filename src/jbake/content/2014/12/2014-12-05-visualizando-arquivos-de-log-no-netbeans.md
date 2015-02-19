@@ -1,15 +1,15 @@
-title=Visualizando arquivos de log no NetBeans
-status=published
-type=post
+
+title= Visualizando arquivos de log no NetBeans
+date= 2014-12-05 09=26=55
+type= post
+status= publish
 tags=
-  - Geral
-  - Java
-  - Traduções
-tags=
-  - desenvolvimento
-  - Java
-  - NetBeans
-  - traduções
+,desenvolvimento
+,Geral
+,Java
+,NetBeans
+,Traduções
+,traduções
 ~~~~~~
 <!-- google_ad_section_start -->
 

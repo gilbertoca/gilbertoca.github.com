@@ -1,7 +1,10 @@
-title='ScribeFire Setup &#8211; Roller API'
-status=published
-type=post
-tags=Geral
+
+title= 'ScribeFire Setup &#8211; Roller API'
+date= 2008-04-18 09=52=23
+type= post
+status= publish
+tags=
+,Geral
 ~~~~~~
 <!-- google_ad_section_start -->
 
@@ -22,6 +25,7 @@ http://swik.net/OpenSolaris/Planet+Solaris/Dave+Miner:+Wasting+time+with+blogs.s
 
 3. Configure ScribeFire
 
+* blog url: http://www.jroller.com/<seu blogid="">  
 * pressione Manually Configure  
 * selecione Custom Blog  
 * selecione MetaWeblog API  

@@ -1,15 +1,14 @@
-title='umount: /mnt/XXXX: device is busy'
-status=published
-type=post
-  - 3522232605
+
+title= 'umount= /mnt/XXXX= device is busy'
+date= 2010-02-24 16=09=27
+type= post
+status= publish
 tags=
-  - Database
-  - Linux
-  - Unix
-tags=
-  - Linux
-  - opensuse
-  - Sistema Operacional
+,Database
+,Linux
+,opensuse
+,Sistema Operacional
+,Unix
 ~~~~~~
 <!-- google_ad_section_start -->
 

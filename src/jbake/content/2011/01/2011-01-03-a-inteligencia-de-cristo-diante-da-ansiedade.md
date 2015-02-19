@@ -1,11 +1,11 @@
-title=A inteligência de Cristo diante da ansiedade
-status=published
-type=post
-  - 3503809112
+
+title= A inteligência de Cristo diante da ansiedade
+date= 2011-01-03 10=18=10
+type= post
+status= publish
 tags=
-  - Estou lendo e você?
-tags=
-  - Estou lendo e você?
+,Estou lendo e você?
+,Estou lendo e você?
 ~~~~~~
 <!-- google_ad_section_start -->
 
@@ -19,6 +19,7 @@ tags=
 
 **<cite><a href="http://www.augustocury.com.br/#/livros">
 
+<div id="attachment_512" style="width: 211px" class="wp-caption alignleft">
   <img src="http://blog.gilbertoca.com/wp-content/uploads/6_457369206-201x300.jpg" alt="" title="mestre dos mestres" width="201" height="300" class="size-medium wp-image-512" />
   
   <p class="wp-caption-text">

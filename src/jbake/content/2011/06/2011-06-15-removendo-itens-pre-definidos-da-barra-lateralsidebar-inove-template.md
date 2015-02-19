@@ -1,13 +1,13 @@
-title=Removendo itens pré-definidos da barra lateral(sidebar) iNove template
-status=published
-type=post
-  - 3513638190
+
+title= Removendo itens pré-definidos da barra lateral(sidebar) iNove template
+date= 2011-06-15 23=03=40
+type= post
+status= publish
 tags=
-  - Geral
-tags=
-  - Internet
-  - Tema
-  - Wordpress
+,Geral
+,Internet
+,Tema
+,Wordpress
 ~~~~~~
 <!-- google_ad_section_start -->
 

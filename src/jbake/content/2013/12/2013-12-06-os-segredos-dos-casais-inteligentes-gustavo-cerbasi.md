@@ -1,14 +1,14 @@
-title=Os Segredos dos Casais Inteligentes (Gustavo Cerbasi)
-status=published
-type=post
-  - 3505629595
+
+title= Os Segredos dos Casais Inteligentes (Gustavo Cerbasi)
+date= 2013-12-06 19=10=11
+type= post
+status= publish
 tags=
-  - Estou lendo e você?
-  - Geral
-tags=
-  - Estou lendo e você?
-  - Jesus Cristo
-  - Objetivo
+,Estou lendo e você?
+,Estou lendo e você?
+,Geral
+,Jesus Cristo
+,Objetivo
 ~~~~~~
 <!-- google_ad_section_start -->
 

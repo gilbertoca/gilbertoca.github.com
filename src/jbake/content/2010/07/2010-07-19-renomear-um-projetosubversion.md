@@ -1,17 +1,16 @@
-title='Renomear um projeto[SUBVERSION]'
-status=published
-type=post
-  - 3504411932
+
+title= 'Renomear um projeto[SUBVERSION]'
+date= 2010-07-19 12=55=31
+type= post
+status= publish
 tags=
-  - Geral
-  - Java
-  - Linux
-tags=
-  - controle de versões
-  - desenvolvimento
-  - Linux
-  - Sistema Operacional
-  - subversion
+,controle de versões
+,desenvolvimento
+,Geral
+,Java
+,Linux
+,Sistema Operacional
+,subversion
 ~~~~~~
 <!-- google_ad_section_start -->
 

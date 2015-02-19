@@ -1,13 +1,13 @@
-title=CHKDSK toda vez que reinicia (CHKDSK runs every time I boot)!
-status=published
-type=post
-  - 3503808703
+
+title= CHKDSK toda vez que reinicia (CHKDSK runs every time I boot)!
+date= 2009-10-16 22=18=28
+type= post
+status= publish
 tags=
-  - Geral
-  - Windows
-tags=
-  - Sistema Operacional
-  - Windows XP
+,Geral
+,Sistema Operacional
+,Windows
+,Windows XP
 ~~~~~~
 <!-- google_ad_section_start -->
 

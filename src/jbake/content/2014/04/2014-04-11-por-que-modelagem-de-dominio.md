@@ -1,15 +1,16 @@
-title=Por que Modelagem de Domínio?
-status=published
-type=post
+
+title= Por que Modelagem de Domínio?
+date= 2014-04-11 09=47=15
+type= post
+status= publish
 tags=
-  - Estou lendo e você?
-  - Traduções
-tags=
-  - Estou lendo e você?
-  - Metodologia Ágil
-  - Modelagem
-  - traduções
-  - UML
+,Estou lendo e você?
+,Estou lendo e você?
+,Metodologia Ágil
+,Modelagem
+,Traduções
+,traduções
+,UML
 ~~~~~~
 <!-- google_ad_section_start -->
 

@@ -1,16 +1,16 @@
-title=Já começou! Essa jornada só pára com a conquista (aprovação).
-status=published
-type=post
+
+title= Já começou! Essa jornada só pára com a conquista (aprovação).
+date= 2009-06-14 23=50=29
+type= post
+status= publish
 tags=
-  - Concurso Público
-  - Geral
-tags=
-  - Concurso Público
-  - Jornada
-  - Objetivo
-  - Questões
-  - Resumos
-  - Simulado
+,Concurso Público
+,Geral
+,Jornada
+,Objetivo
+,Questões
+,Resumos
+,Simulado
 ~~~~~~
 <!-- google_ad_section_start -->
 
@@ -20,4 +20,5 @@ Já começou! [Essa jornada][1] só pára com a conquista (aprovação).
 
 <!-- google_ad_section_end -->
 
+ [1]: http://blog.gilbertoca.com/?page_id=44
  [2]: http://blog.gilbertoca.com/tools/acervo/questoespordia/2009-06-15-mat-est-eco-cont-inf.odt

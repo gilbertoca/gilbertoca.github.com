@@ -1,13 +1,14 @@
-title=DBCA não encontra o banco de dados
-status=published
-type=post
+
+title= DBCA não encontra o banco de dados
+date= 2010-04-07 17=45=28
+type= post
+status= publish
 tags=
-  - Database
-  - Linux
-tags=
-  - banco de dados
-  - dbca
-  - oracle
+,banco de dados
+,Database
+,dbca
+,Linux
+,oracle
 ~~~~~~
 <!-- google_ad_section_start -->
 

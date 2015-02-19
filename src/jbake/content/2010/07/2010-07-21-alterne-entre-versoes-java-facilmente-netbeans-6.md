@@ -1,18 +1,16 @@
-title='Alterne entre versões Java facilmente [Netbeans 6.*]'
-status=published
-type=post
-  - 3516216851
+
+title= 'Alterne entre versões Java facilmente [Netbeans 6.*]'
+date= 2010-07-21 14=22=40
+type= post
+status= publish
 tags=
-  - Geral
-  - Java
-  - Linux
-tags=
-  - desenvolvimento
-  - Java
-  - Linux
-  - maven
-  - opensuse
-  - Sistema Operacional
+,desenvolvimento
+,Geral
+,Java
+,Linux
+,maven
+,opensuse
+,Sistema Operacional
 ~~~~~~
 <!-- google_ad_section_start -->
 

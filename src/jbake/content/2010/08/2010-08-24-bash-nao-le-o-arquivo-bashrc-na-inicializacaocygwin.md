@@ -1,16 +1,16 @@
-title='bash não lê o arquivo .bashrc na inicialização[Cygwin]'
-status=published
-type=post
-  - 3516450393
+
+title= 'bash não lê o arquivo .bashrc na inicialização[Cygwin]'
+date= 2010-08-24 16=43=22
+type= post
+status= publish
 tags=
-  - Java
-  - Windows
-tags=
-  - configuração
-  - console
-  - cygwin
-  - Linux
-  - Windows XP
+,configuração
+,console
+,cygwin
+,Java
+,Linux
+,Windows
+,Windows XP
 ~~~~~~
 <!-- google_ad_section_start -->
 

@@ -1,16 +1,16 @@
-title='Ciclo Intermediário &#8211; Área Fiscal'
-status=published
-type=post
+
+title= 'Ciclo Intermediário &#8211; Área Fiscal'
+date= 2009-08-12 14=07=46
+type= post
+status= publish
 tags=
-  - Concurso Público
-  - Geral
-tags=
-  - Concurso Público
-  - Jornada
-  - Objetivo
-  - Questões
-  - Resumos
-  - Simulado
+,Concurso Público
+,Geral
+,Jornada
+,Objetivo
+,Questões
+,Resumos
+,Simulado
 ~~~~~~
 <!-- google_ad_section_start -->
 

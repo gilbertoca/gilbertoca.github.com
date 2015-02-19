@@ -1,15 +1,15 @@
-title=Questionando a existência de Deus
-status=published
-type=post
-  - 3503809741
+
+title= Questionando a existência de Deus
+date= 2011-10-10 09=29=05
+type= post
+status= publish
 tags=
-  - Estou lendo e você?
-  - Geral
-tags=
-  - Deus
-  - Estou lendo e você?
-  - Jesus Cristo
-  - Jornada
+,Deus
+,Estou lendo e você?
+,Estou lendo e você?
+,Geral
+,Jesus Cristo
+,Jornada
 ~~~~~~
 <!-- google_ad_section_start -->
 
@@ -29,6 +29,7 @@ tags=
 > 
 > **<cite><a href="http://www.augustocury.com.br/#/livros">
 > 
+> <div id="attachment_512" style="width: 211px" class="wp-caption alignleft">
 >   <img src="http://blog.gilbertoca.com/wp-content/uploads/8_602866001.jpg" alt="" title="mestre da vida" width="201" height="300" class="size-medium wp-image-512" />
 >   
 >   <p class="wp-caption-text">

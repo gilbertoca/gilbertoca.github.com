@@ -1,12 +1,13 @@
-title='openSuSe 11.0 &#8211; Failed to update system: Authorisation could not be obtained'
-status=published
-type=post
+
+title= 'openSuSe 11.0 &#8211; Failed to update system= Authorisation could not be obtained'
+date= 2009-03-02 13=56=32
+type= post
+status= publish
 tags=
-  - Linux
-tags=
-  - Objetivo
-  - opensuse
-  - Sistema Operacional
+,Linux
+,Objetivo
+,opensuse
+,Sistema Operacional
 ~~~~~~
 <!-- google_ad_section_start -->
 

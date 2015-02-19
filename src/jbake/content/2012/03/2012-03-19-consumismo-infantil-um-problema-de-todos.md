@@ -1,13 +1,14 @@
-title=Consumismo Infantil, um problema de todos
-status=published
-type=post
+
+title= Consumismo Infantil, um problema de todos
+date= 2012-03-19 21=51=19
+type= post
+status= publish
 tags=
-  - Geral
-tags=
-  - Estou lendo e você?
-  - Jesus Cristo
-  - Jornada
-  - Proteção
+,Estou lendo e você?
+,Geral
+,Jesus Cristo
+,Jornada
+,Proteção
 ~~~~~~
 <!-- google_ad_section_start -->
 

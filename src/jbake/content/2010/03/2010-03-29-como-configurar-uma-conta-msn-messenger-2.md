@@ -1,14 +1,14 @@
-title=Como configurar uma conta MSN Messenger?
-status=published
-type=post
-  - 3503808818
+
+title= Como configurar uma conta MSN Messenger?
+date= 2010-03-29 09=24=32
+type= post
+status= publish
 tags=
-  - Geral
-  - Windows
-tags=
-  - Diversão
-  - Sistema Operacional
-  - Windows XP
+,Diversão
+,Geral
+,Sistema Operacional
+,Windows
+,Windows XP
 ~~~~~~
 <!-- google_ad_section_start -->
 

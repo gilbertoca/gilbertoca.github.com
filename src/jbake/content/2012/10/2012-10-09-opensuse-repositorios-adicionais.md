@@ -1,15 +1,14 @@
-title='openSUSE &#8211; Repositórios adicionais'
-status=published
-type=post
-  - 3503809821
+
+title= 'openSUSE &#8211; Repositórios adicionais'
+date= 2012-10-09 10=42=36
+type= post
+status= publish
 tags=
-  - Geral
-  - Linux
-tags=
-  - Linux
-  - opensuse
-  - Sistema Operacional
-  - Yast
+,Geral
+,Linux
+,opensuse
+,Sistema Operacional
+,Yast
 ~~~~~~
 <!-- google_ad_section_start -->
 

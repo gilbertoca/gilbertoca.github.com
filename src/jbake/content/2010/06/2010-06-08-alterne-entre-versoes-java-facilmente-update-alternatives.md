@@ -1,18 +1,17 @@
-title='Alterne entre versões Java facilmente [update-alternatives]'
-status=published
-type=post
-  - 3503782278
+
+title= 'Alterne entre versões Java facilmente [update-alternatives]'
+date= 2010-06-08 14=50=18
+type= post
+status= publish
 tags=
-  - Geral
-  - Java
-  - Linux
-tags=
-  - configuração
-  - console
-  - Linux
-  - opensuse
-  - Sistema Operacional
-  - Tocantins
+,configuração
+,console
+,Geral
+,Java
+,Linux
+,opensuse
+,Sistema Operacional
+,Tocantins
 ~~~~~~
 <!-- google_ad_section_start -->
 
@@ -186,6 +185,7 @@ gilberto<span style="color: #000000; font-weight: bold;">@</span>SUGEP-DMASI:~<s
               
               <!-- google_ad_section_end -->
 
+ [1]: http://www.techne.com.br/produtos/produtos.asp?id=4
  [2]: http://www.secad.to.gov.br
  [3]: http://www.portalct.com.br/n/61036301f280e5de0acb74eeebc8e948/to-chega-a-maioridade-em-clima-de-convulsao-e-inde/
  [4]: www.oracle.com/technology/products/forms

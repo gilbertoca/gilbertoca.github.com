@@ -1,13 +1,13 @@
-title=Cursor do notebook muda de lugar sozinho a todo instante na digitação
-status=published
-type=post
-  - 3504083483
+
+title= Cursor do notebook muda de lugar sozinho a todo instante na digitação
+date= 2014-07-25 10=21=27
+type= post
+status= publish
 tags=
-  - Geral
-  - Windows
-tags=
-  - Sistema Operacional
-  - Windows XP
+,Geral
+,Sistema Operacional
+,Windows
+,Windows XP
 ~~~~~~
 <!-- google_ad_section_start -->
 
@@ -21,6 +21,7 @@ Enfim, existe um problema! Bom, o que fazer? O que fiz, pois não possuo laptop,
 Verifique se o driver do touchpad está adequadamente instalado(precisa ser o do próprio fabricante). No meu caso, um Itautec Infaway 7550, aparece um ícone desse componente na barra de tarefas. A partir daí você pode acessar suas propriedades e marcar a opção &#8220;Desativar quando um mouse USB externo for conectado&#8221;.  
 
 
+<div id="attachment_1116" style="width: 461px" class="wp-caption alignleft">
   <a href="http://blog.gilbertoca.com/wp-content/uploads/touchpad_propriedades.png"><img src="http://blog.gilbertoca.com/wp-content/uploads/touchpad_propriedades.png" alt="ItautecInfaway7550 touchpad propriedades" width="451" height="466" class="size-full wp-image-1116" /></a>
   
   <p class="wp-caption-text">

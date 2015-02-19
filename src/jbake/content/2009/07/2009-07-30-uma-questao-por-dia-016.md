@@ -1,8 +1,10 @@
-title='Uma Questão Por Dia [016]'
-status=published
-type=post
+
+title= 'Uma Questão Por Dia [016]'
+date= 2009-07-30 11=49=30
+type= post
+status= publish
 tags=
-  - Geral
+,Geral
 ~~~~~~
 <!-- google_ad_section_start -->
 
@@ -16,3 +18,4 @@ O que quer dizer: [Uma Questão por Dia?][3]
 
  [1]: http://blog.gilbertoca.com/?p=151
  [2]: http://blog.gilbertoca.com/tools/acervo/questoespordia/[016]-mat-est-eco-cont-inf.odt
+ [3]: http://blog.gilbertoca.com/?page_id=44

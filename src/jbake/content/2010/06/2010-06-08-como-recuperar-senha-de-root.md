@@ -1,15 +1,15 @@
-title=Como recuperar senha de root
-status=published
-type=post
+
+title= Como recuperar senha de root
+date= 2010-06-08 11=14=18
+type= post
+status= publish
 tags=
-  - Geral
-  - Linux
-  - Unix
-tags=
-  - console
-  - Linux
-  - opensuse
-  - Sistema Operacional
+,console
+,Geral
+,Linux
+,opensuse
+,Sistema Operacional
+,Unix
 ~~~~~~
 <!-- google_ad_section_start -->
 

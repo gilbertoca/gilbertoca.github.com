@@ -1,15 +1,14 @@
-title='Melhor aparência (fonte)[OpenSuSe 11.3]'
-status=published
-type=post
-  - 3503809056
+
+title= 'Melhor aparência (fonte)[OpenSuSe 11.3]'
+date= 2010-10-22 16=12=35
+type= post
+status= publish
 tags=
-  - Geral
-  - Linux
-tags=
-  - configuração
-  - desktop
-  - Linux
-  - opensuse
+,configuração
+,desktop
+,Geral
+,Linux
+,opensuse
 ~~~~~~
 <!-- google_ad_section_start -->
 

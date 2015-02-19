@@ -1,14 +1,14 @@
-title='Transportado schema de um banco para outro [exp e imp]'
-status=published
-type=post
-  - 3503808835
+
+title= 'Transportado schema de um banco para outro [exp e imp]'
+date= 2010-04-08 15=16=58
+type= post
+status= publish
 tags=
-  - Database
-  - Linux
-tags=
-  - backup
-  - banco de dados
-  - oracle
+,backup
+,banco de dados
+,Database
+,Linux
+,oracle
 ~~~~~~
 <!-- google_ad_section_start -->
 

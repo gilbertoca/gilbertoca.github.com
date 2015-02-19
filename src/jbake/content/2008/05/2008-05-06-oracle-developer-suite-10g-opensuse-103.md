@@ -1,7 +1,10 @@
-title='Oracle Developer Suite 10g &#8211; [OpenSuSe 10.3]'
-status=published
-type=post
-tags=Application Server
+
+title= 'Oracle Developer Suite 10g &#8211; [OpenSuSe 10.3]'
+date= 2008-05-06 21=10=09
+type= post
+status= publish
+tags=
+,Application Server
 ~~~~~~
 <!-- google_ad_section_start -->
 

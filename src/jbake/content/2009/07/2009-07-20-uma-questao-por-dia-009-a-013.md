@@ -1,15 +1,15 @@
-title='Uma Questão Por Dia [009 a 013]'
-status=published
-type=post
+
+title= 'Uma Questão Por Dia [009 a 013]'
+date= 2009-07-20 16=48=39
+type= post
+status= publish
 tags=
-  - Concurso Público
-  - Geral
-tags=
-  - Concurso Público
-  - Jornada
-  - Objetivo
-  - Resumos
-  - Simulado
+,Concurso Público
+,Geral
+,Jornada
+,Objetivo
+,Resumos
+,Simulado
 ~~~~~~
 <!-- google_ad_section_start -->
 
@@ -34,3 +34,4 @@ O que quer dizer: [Uma Questão por Dia?][6]
  [3]: http://blog.gilbertoca.com/tools/acervo/questoespordia/[011]-mat-est-eco-cont-inf.odt
  [4]: http://blog.gilbertoca.com/tools/acervo/questoespordia/[012]-mat-est-eco-cont-inf.odt
  [5]: http://blog.gilbertoca.com/tools/acervo/questoespordia/[013]-mat-est-eco-cont-inf.odt
+ [6]: http://blog.gilbertoca.com/?page_id=44

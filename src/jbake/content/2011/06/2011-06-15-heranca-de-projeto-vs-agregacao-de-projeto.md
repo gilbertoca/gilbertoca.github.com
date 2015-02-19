@@ -1,12 +1,12 @@
-title=Herança de Projeto vs Agregação de Projeto
-status=published
-type=post
-  - 3506863852
+
+title= Herança de Projeto vs Agregação de Projeto
+date= 2011-06-15 17=52=47
+type= post
+status= publish
 tags=
-  - Java
-tags=
-  - configuração
-  - maven
+,configuração
+,Java
+,maven
 ~~~~~~
 <!-- google_ad_section_start -->
 
@@ -49,6 +49,8 @@ Entre estes códigos, em especial, quero destacar o park-samples. [Este é estru
 <span style="color: #000000; font-weight: bold;">|</span>   <span style="color: #000000; font-weight: bold;">|</span>-- power.architect
 <span style="color: #000000; font-weight: bold;">|</span>   <span style="color: #000000; font-weight: bold;">|</span>   <span style="color: #000000; font-weight: bold;">|</span>-- park.architect
 <span style="color: #000000; font-weight: bold;">|</span>   <span style="color: #000000; font-weight: bold;">|</span>   <span style="color: #000000; font-weight: bold;">`</span>-- park-er.pdf
+<span style="color: #000000; font-weight: bold;">|</span>   <span style="color: #000000; font-weight: bold;">|</span>-- 03000001.png
+<span style="color: #000000; font-weight: bold;">|</span>   <span style="color: #000000; font-weight: bold;">`</span>-- 03000003_en.png
 <span style="color: #000000; font-weight: bold;">|</span>-- park-cayenne
 <span style="color: #000000; font-weight: bold;">|</span>   <span style="color: #000000; font-weight: bold;">|</span>-- src
 <span style="color: #000000; font-weight: bold;">|</span>   <span style="color: #000000; font-weight: bold;">|</span>   <span style="color: #000000; font-weight: bold;">|</span>-- main

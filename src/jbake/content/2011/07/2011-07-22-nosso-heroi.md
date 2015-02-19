@@ -1,16 +1,17 @@
-title=Nosso herói!
-status=published
-type=post
+
+title= Nosso herói!
+date= 2011-07-22 10=18=55
+type= post
+status= publish
 tags=
-  - Estou lendo e você?
-  - Geral
-tags=
-  - Bíblia
-  - Estou lendo e você?
-  - Jesus Cristo
-  - Jornada
-  - Livro Sagrado
-  - Sabedoria
+,Bíblia
+,Estou lendo e você?
+,Estou lendo e você?
+,Geral
+,Jesus Cristo
+,Jornada
+,Livro Sagrado
+,Sabedoria
 ~~~~~~
 <!-- google_ad_section_start -->
 

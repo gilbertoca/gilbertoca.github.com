@@ -1,15 +1,13 @@
-title='Oracle IAS [An error occurred while talking to OPMN. Could not find entity for]'
-status=published
-type=post
-  - 3503808728
+
+title= 'Oracle IAS [An error occurred while talking to OPMN. Could not find entity for]'
+date= 2009-10-19 11=43=40
+type= post
+status= publish
 tags=
-  - Application Server
-  - Linux
-  - Unix
-tags=
-  - Application Server
-  - Linux
-  - Sistema Operacional
+,Application Server
+,Linux
+,Sistema Operacional
+,Unix
 ~~~~~~
 <!-- google_ad_section_start -->
 
