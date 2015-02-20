@@ -1,12 +1,8 @@
-
-title= Instalando Visualizador de Dicionários WordTrans no openSuSe 10.2
-date= 2007-02-16 16=03=41
-type= post
-status= publish
-tags=
-,Linux
-,opensuse
-,Sistema Operacional
+title=Instalando Visualizador de Dicionários WordTrans no openSuSe 10.2
+date=2007-02-16 16=03=41
+type=post
+status=published
+tags=Linux,opensuse,Sistema Operacional
 ~~~~~~
 <!-- google_ad_section_start -->
 

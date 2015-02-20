@@ -1,8 +1,7 @@
-
-title= Oracle JInitiator + Forms + IE6/IE7 + Windows Live Toolbar = Problema
-date= 2009-03-06 15=43=35
-type= post
-status= publish
+title=Oracle JInitiator + Forms + IE6/IE7 + Windows Live Toolbar = Problema
+date=2009-03-06 15=43=35
+type=post
+status=published
 tags=
 ,Application Server
 ~~~~~~

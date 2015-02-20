@@ -1,8 +1,7 @@
-
-title= Empathy não conectando ao MSN
-date= 2010-06-22 10=28=24
-type= post
-status= publish
+title=Empathy não conectando ao MSN
+date=2010-06-22 10=28=24
+type=post
+status=published
 tags=
 ,configuração
 ,Empathy

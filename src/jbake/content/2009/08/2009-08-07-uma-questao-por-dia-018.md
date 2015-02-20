@@ -1,8 +1,7 @@
-
-title= 'Uma Questão Por Dia [018]'
-date= 2009-08-07 11=43=28
-type= post
-status= publish
+title='Uma Questão Por Dia [018]'
+date=2009-08-07 11=43=28
+type=post
+status=published
 tags=
 ,Geral
 ~~~~~~

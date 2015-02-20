@@ -1,8 +1,7 @@
-
-title= O que pensavam os filósofos a respeito de Deus?
-date= 2013-08-29 11=29=07
-type= post
-status= publish
+title=O que pensavam os filósofos a respeito de Deus?
+date=2013-08-29 11=29=07
+type=post
+status=published
 tags=
 ,Augusto Cury
 ,Estou lendo e você?

@@ -1,8 +1,7 @@
-
-title= 'Java Concorrente na Prática &#8211; crítica'
-date= 2012-06-01 10=43=49
-type= post
-status= publish
+title='Java Concorrente na Prática &#8211; crítica'
+date=2012-06-01 10=43=49
+type=post
+status=published
 tags=
 ,Estou lendo e você?
 ,Geral

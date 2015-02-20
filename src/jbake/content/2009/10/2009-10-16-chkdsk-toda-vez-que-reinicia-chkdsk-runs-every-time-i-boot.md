@@ -1,8 +1,7 @@
-
-title= CHKDSK toda vez que reinicia (CHKDSK runs every time I boot)!
-date= 2009-10-16 22=18=28
-type= post
-status= publish
+title=CHKDSK toda vez que reinicia (CHKDSK runs every time I boot)!
+date=2009-10-16 22=18=28
+type=post
+status=published
 tags=
 ,Geral
 ,Sistema Operacional

@@ -1,8 +1,7 @@
-
-title= Removendo itens pré-definidos da barra lateral(sidebar) iNove template
-date= 2011-06-15 23=03=40
-type= post
-status= publish
+title=Removendo itens pré-definidos da barra lateral(sidebar) iNove template
+date=2011-06-15 23=03=40
+type=post
+status=published
 tags=
 ,Geral
 ,Internet

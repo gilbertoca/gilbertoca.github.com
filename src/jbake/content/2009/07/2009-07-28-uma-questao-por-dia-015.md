@@ -1,8 +1,7 @@
-
-title= 'Uma Questão Por Dia [015]'
-date= 2009-07-28 17=23=24
-type= post
-status= publish
+title='Uma Questão Por Dia [015]'
+date=2009-07-28 17=23=24
+type=post
+status=published
 tags=
 ,Concurso Público
 ,Geral

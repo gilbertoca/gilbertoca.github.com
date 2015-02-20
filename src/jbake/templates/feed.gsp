@@ -6,14 +6,14 @@
     <atom:link href="${config.site_host}/${config.feed_file}" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>${published_date.format("EEE, d MMM yyyy HH:mm:ss Z")}</pubDate>
-    <lastBuildDate>${published_date.format("EEE, d MMM yyyy HH:mm:ss Z")}</lastBuildDate>
+    <pubDate>${published_date?.format("EEE, d MMM yyyy HH:mm:ss Z")}</pubDate>
+    <lastBuildDate>${published_date?.format("EEE, d MMM yyyy HH:mm:ss Z")}</lastBuildDate>
 
     <%published_posts.each {post -> %>
     <item>
       <title>${post.title}</title>
       <link>${config.site_host}/${post.uri}</link>
-      <pubDate>${post.date.format("EEE, d MMM yyyy HH:mm:ss Z")}</pubDate>
+      <pubDate>${post.date?.format("EEE, d MMM yyyy HH:mm:ss Z")}</pubDate>
       <guid isPermaLink="false">${post.uri}</guid>
       <description>
       ${escapeXml(post.body)}

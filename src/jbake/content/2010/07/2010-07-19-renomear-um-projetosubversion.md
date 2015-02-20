@@ -1,8 +1,7 @@
-
-title= 'Renomear um projeto[SUBVERSION]'
-date= 2010-07-19 12=55=31
-type= post
-status= publish
+title='Renomear um projeto[SUBVERSION]'
+date=2010-07-19 12=55=31
+type=post
+status=published
 tags=
 ,controle de versões
 ,desenvolvimento

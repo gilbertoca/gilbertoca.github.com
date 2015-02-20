@@ -1,8 +1,7 @@
-
-title= '&#8220;openSUSE 10.2 atingiu o Fim da Vida&#8221; &#8211; Descontinuado'
-date= 2008-12-22 08=09=22
-type= post
-status= publish
+title='&#8220;openSUSE 10.2 atingiu o Fim da Vida&#8221; &#8211; Descontinuado'
+date=2008-12-22 08=09=22
+type=post
+status=published
 tags=
 ,Linux
 ,opensuse

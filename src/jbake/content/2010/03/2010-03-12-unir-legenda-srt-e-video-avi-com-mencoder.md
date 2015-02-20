@@ -1,8 +1,7 @@
-
-title= Unir legenda (srt) e video (avi) com MENCODER
-date= 2010-03-12 17=45=17
-type= post
-status= publish
+title=Unir legenda (srt) e video (avi) com MENCODER
+date=2010-03-12 17=45=17
+type=post
+status=published
 tags=
 ,Diversão
 ,Geral

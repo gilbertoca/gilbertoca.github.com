@@ -1,8 +1,7 @@
-
-title= Para duplicar um banco oracle na mesma maquina
-date= 2008-12-01 10=42=24
-type= post
-status= publish
+title=Para duplicar um banco oracle na mesma maquina
+date=2008-12-01 10=42=24
+type=post
+status=published
 tags=
 ,Database
 ~~~~~~

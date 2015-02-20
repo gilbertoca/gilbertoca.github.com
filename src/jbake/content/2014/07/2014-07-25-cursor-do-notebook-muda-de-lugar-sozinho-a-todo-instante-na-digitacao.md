@@ -1,8 +1,7 @@
-
-title= Cursor do notebook muda de lugar sozinho a todo instante na digitação
-date= 2014-07-25 10=21=27
-type= post
-status= publish
+title=Cursor do notebook muda de lugar sozinho a todo instante na digitação
+date=2014-07-25 10=21=27
+type=post
+status=published
 tags=
 ,Geral
 ,Sistema Operacional

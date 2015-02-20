@@ -1,8 +1,7 @@
-
-title= 'Apache Shiro Parte 1 &#8211; básico'
-date= 2011-04-07 18=04=51
-type= post
-status= publish
+title='Apache Shiro Parte 1 &#8211; básico'
+date=2011-04-07 18=04=51
+type=post
+status=published
 tags=
 ,Apache Shiro
 ,Application Server

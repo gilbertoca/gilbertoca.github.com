@@ -1,8 +1,7 @@
-
-title= 'Uma Questão Por Dia [026] + Pausa'
-date= 2009-08-29 19=42=44
-type= post
-status= publish
+title='Uma Questão Por Dia [026] + Pausa'
+date=2009-08-29 19=42=44
+type=post
+status=published
 tags=
 ,Geral
 ~~~~~~
