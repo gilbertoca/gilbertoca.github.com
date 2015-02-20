@@ -1,5 +1,5 @@
 title='Porções Diárias da Bíblia[Pão Diário &#038; Manancial]'
-date=2011-04-28 23=23=39
+date=2011-04-28 23:23:39
 type=post
 status=published
 tags=

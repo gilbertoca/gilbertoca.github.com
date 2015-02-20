@@ -1,5 +1,5 @@
 title=Por que Modelagem de Domínio?
-date=2014-04-11 09=47=15
+date=2014-04-11 09:47:15
 type=post
 status=published
 tags=

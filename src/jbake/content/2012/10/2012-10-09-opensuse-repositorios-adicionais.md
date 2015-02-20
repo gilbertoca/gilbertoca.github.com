@@ -1,5 +1,5 @@
 title='openSUSE &#8211; Repositórios adicionais'
-date=2012-10-09 10=42=36
+date=2012-10-09 10:42:36
 type=post
 status=published
 tags=

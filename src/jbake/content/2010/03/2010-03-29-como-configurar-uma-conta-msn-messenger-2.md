@@ -1,5 +1,5 @@
 title=Como configurar uma conta MSN Messenger?
-date=2010-03-29 09=24=32
+date=2010-03-29 09:24:32
 type=post
 status=published
 tags=

@@ -1,5 +1,5 @@
 title='Clássicos Nacionais &#8211; Pollyanna'
-date=2013-10-25 15=08=35
+date=2013-10-25 15:08:35
 type=post
 status=published
 tags=

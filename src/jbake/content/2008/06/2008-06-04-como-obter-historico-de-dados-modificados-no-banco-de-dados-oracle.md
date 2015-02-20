@@ -1,5 +1,5 @@
 title=Como obter histórico de dados modificados no banco de dados Oracle?
-date=2008-06-04 18=09=43
+date=2008-06-04 18:09:43
 type=post
 status=published
 tags=

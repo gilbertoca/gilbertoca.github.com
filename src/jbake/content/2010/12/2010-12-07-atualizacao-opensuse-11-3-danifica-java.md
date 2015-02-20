@@ -1,5 +1,5 @@
 title=Atualização OpenSuSe 11.3 danifica Java
-date=2010-12-07 22=03=56
+date=2010-12-07 22:03:56
 type=post
 status=published
 tags=

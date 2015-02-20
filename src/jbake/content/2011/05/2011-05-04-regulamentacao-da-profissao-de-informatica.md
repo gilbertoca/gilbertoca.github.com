@@ -1,5 +1,5 @@
 title=REGULAMENTAÇÃO DA PROFISSÃO DE INFORMÁTICA
-date=2011-05-04 11=17=21
+date=2011-05-04 11:17:21
 type=post
 status=published
 tags=

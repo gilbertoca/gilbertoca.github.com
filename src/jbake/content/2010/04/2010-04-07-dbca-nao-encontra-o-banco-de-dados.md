@@ -1,5 +1,5 @@
 title=DBCA não encontra o banco de dados
-date=2010-04-07 17=45=28
+date=2010-04-07 17:45:28
 type=post
 status=published
 tags=

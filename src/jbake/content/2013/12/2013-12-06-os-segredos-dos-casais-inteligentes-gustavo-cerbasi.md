@@ -1,5 +1,5 @@
 title=Os Segredos dos Casais Inteligentes (Gustavo Cerbasi)
-date=2013-12-06 19=10=11
+date=2013-12-06 19:10:11
 type=post
 status=published
 tags=

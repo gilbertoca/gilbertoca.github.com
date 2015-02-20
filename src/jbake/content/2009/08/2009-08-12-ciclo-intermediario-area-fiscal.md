@@ -1,5 +1,5 @@
 title='Ciclo Intermediário &#8211; Área Fiscal'
-date=2009-08-12 14=07=46
+date=2009-08-12 14:07:46
 type=post
 status=published
 tags=

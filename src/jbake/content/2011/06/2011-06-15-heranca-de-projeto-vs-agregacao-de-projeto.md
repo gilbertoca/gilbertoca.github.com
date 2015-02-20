@@ -1,5 +1,5 @@
 title=Herança de Projeto vs Agregação de Projeto
-date=2011-06-15 17=52=47
+date=2011-06-15 17:52:47
 type=post
 status=published
 tags=

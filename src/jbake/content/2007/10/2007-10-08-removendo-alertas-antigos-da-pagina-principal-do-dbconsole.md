@@ -1,12 +1,8 @@
 title=Removendo alertas antigos da página principal do DBCONSOLE
-date=2007-10-08 14=22=17
+date=2007-10-08 14:22:17
 type=post
 status=published
-tags=
-,Concurso Público
-,Database
-,dbconsole
-,oracle
+tags=Concurso Público,Database,dbconsole,oracle
 ~~~~~~
 <!-- google_ad_section_start -->
 

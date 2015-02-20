@@ -1,5 +1,5 @@
 title=Consumismo Infantil, um problema de todos
-date=2012-03-19 21=51=19
+date=2012-03-19 21:51:19
 type=post
 status=published
 tags=

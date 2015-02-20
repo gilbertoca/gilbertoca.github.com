@@ -1,5 +1,5 @@
 title=Extensões (complementos) FireFox
-date=2011-08-11 10=00=42
+date=2011-08-11 10:00:42
 type=post
 status=published
 tags=

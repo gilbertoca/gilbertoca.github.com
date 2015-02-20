@@ -1,5 +1,5 @@
 title='Gnome 3 &#8211; diálogo modal move toda a aplicação'
-date=2012-03-02 17=36=28
+date=2012-03-02 17:36:28
 type=post
 status=published
 tags=

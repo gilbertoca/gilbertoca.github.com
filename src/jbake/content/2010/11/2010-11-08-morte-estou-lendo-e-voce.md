@@ -1,5 +1,5 @@
 title=Morte
-date=2010-11-08 23=04=49
+date=2010-11-08 23:04:49
 type=post
 status=published
 tags=

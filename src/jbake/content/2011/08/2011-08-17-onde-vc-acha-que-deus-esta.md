@@ -1,5 +1,5 @@
 title=Onde vc acha que Deus está?
-date=2011-08-17 11=19=04
+date=2011-08-17 11:19:04
 type=post
 status=published
 tags=

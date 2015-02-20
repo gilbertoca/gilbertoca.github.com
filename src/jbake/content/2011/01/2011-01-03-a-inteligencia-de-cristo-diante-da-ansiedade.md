@@ -1,5 +1,5 @@
 title=A inteligência de Cristo diante da ansiedade
-date=2011-01-03 10=18=10
+date=2011-01-03 10:18:10
 type=post
 status=published
 tags=

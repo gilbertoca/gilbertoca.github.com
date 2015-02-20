@@ -1,5 +1,5 @@
 title='pen drive &#8211; Cadê minhas pastas?'
-date=2011-03-25 22=17=58
+date=2011-03-25 22:17:58
 type=post
 status=published
 tags=

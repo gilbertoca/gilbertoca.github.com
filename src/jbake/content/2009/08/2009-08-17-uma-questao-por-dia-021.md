@@ -1,5 +1,5 @@
 title='Uma Questão Por Dia [021]'
-date=2009-08-17 21=23=33
+date=2009-08-17 21:23:33
 type=post
 status=published
 tags=

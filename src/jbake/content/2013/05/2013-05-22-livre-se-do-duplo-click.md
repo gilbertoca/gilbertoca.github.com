@@ -1,5 +1,5 @@
 title=Livre-se do duplo click
-date=2013-05-22 22=17=12
+date=2013-05-22 22:17:12
 type=post
 status=published
 tags=

@@ -1,5 +1,5 @@
 title='openSuSe 11.0 [upgrading to KDE4 4.4= Nepomuk e Strigi]'
-date=2010-02-22 11=00=43
+date=2010-02-22 11:00:43
 type=post
 status=published
 tags=

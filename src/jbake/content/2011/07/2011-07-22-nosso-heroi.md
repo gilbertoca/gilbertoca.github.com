@@ -1,5 +1,5 @@
 title=Nosso herói!
-date=2011-07-22 10=18=55
+date=2011-07-22 10:18:55
 type=post
 status=published
 tags=

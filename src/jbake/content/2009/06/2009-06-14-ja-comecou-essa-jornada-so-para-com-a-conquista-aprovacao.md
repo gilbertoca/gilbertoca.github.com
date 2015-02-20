@@ -1,5 +1,5 @@
 title=Já começou! Essa jornada só pára com a conquista (aprovação).
-date=2009-06-14 23=50=29
+date=2009-06-14 23:50:29
 type=post
 status=published
 tags=

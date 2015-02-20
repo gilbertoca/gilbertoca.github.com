@@ -1,5 +1,5 @@
 title=Questionando a existência de Deus
-date=2011-10-10 09=29=05
+date=2011-10-10 09:29:05
 type=post
 status=published
 tags=

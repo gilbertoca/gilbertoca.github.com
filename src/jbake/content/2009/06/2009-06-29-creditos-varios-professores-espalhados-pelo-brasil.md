@@ -1,5 +1,5 @@
 title='Créditos &#8211; Vários professores espalhados pelo Brasil'
-date=2009-06-29 11=20=08
+date=2009-06-29 11:20:08
 type=post
 status=published
 tags=

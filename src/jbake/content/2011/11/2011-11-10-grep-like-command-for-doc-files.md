@@ -1,5 +1,5 @@
 title=Usando comando GREP em documentos Word, OpenOffice ou LibreOffice
-date=2011-11-10 10=24=01
+date=2011-11-10 10:24:01
 type=post
 status=published
 tags=
