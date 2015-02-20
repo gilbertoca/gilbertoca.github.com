@@ -1,8 +1,7 @@
-
-title= Como fazer
-date= 2009-12-23 09=31=21
-type= page
-status= publish
+title=Como fazer
+date=2009-12-23 09=31=21
+type=page
+status=published
 ~~~~~~
 <!-- google_ad_section_start -->
 

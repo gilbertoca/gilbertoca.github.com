@@ -1,8 +1,8 @@
-
-title= A tabela de softwares equivalentes / substituições / análogos Windows no Linux.
+title=A tabela de softwares equivalentes / substituições / análogos Windows no 
+Linux.
 date= 2011-09-02 09=33=36
-type= post
-status= publish
+type=post
+status=published
 tags=
 ,fedora
 ,Linux

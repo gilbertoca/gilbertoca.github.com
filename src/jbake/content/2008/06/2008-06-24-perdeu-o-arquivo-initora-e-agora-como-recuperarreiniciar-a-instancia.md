@@ -1,8 +1,7 @@
-
-title= Perdeu o arquivo init.ora e agora? Como recuperar/reiniciar a instância?
-date= 2008-06-24 23=10=31
-type= post
-status= publish
+title=Perdeu o arquivo init.ora e agora? Como recuperar/reiniciar a instância?
+date=2008-06-24 23=10=31
+type=post
+status=published
 tags=
 ,Geral
 ~~~~~~

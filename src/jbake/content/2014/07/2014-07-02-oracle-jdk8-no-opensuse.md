@@ -1,8 +1,7 @@
-
-title= Oracle JDK8 no OpenSUSE
-date= 2014-07-02 14=31=06
-type= post
-status= publish
+title=Oracle JDK8 no OpenSUSE
+date=2014-07-02 14=31=06
+type=post
+status=published
 tags=
 ,Geral
 ,Java

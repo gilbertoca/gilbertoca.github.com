@@ -1,8 +1,7 @@
-
-title= 'Testes de Unidade em Paralelo[Maven|JUnit]'
-date= 2010-07-08 22=29=15
-type= post
-status= publish
+title='Testes de Unidade em Paralelo[Maven|JUnit]'
+date=2010-07-08 22=29=15
+type=post
+status=published
 tags=
 ,Geral
 ,Java

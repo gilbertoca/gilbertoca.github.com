@@ -1,8 +1,8 @@
-
-title= '&#8220;Conexão Lenta com o Banco Oracle &#8211; TNSPING, SQLPLUS, ETC&#8221;'
+title='&#8220;Conexão Lenta com o Banco Oracle &#8211; TNSPING, SQLPLUS, 
+ETC&#8221;'
 date= 2009-03-13 08=00=57
-type= post
-status= publish
+type=post
+status=published
 tags=
 ,Database
 ~~~~~~

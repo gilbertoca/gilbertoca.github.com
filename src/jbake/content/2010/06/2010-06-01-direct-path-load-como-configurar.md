@@ -1,8 +1,7 @@
-
-title= 'Direct Path Load &#8211; Como configurar'
-date= 2010-06-01 14=20=55
-type= post
-status= publish
+title='Direct Path Load &#8211; Como configurar'
+date=2010-06-01 14=20=55
+type=post
+status=published
 tags=
 ,banco de dados
 ,Database

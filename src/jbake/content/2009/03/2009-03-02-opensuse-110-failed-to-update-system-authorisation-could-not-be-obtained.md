@@ -1,8 +1,8 @@
-
-title= 'openSuSe 11.0 &#8211; Failed to update system= Authorisation could not be obtained'
+title='openSuSe 11.0 &#8211; Failed to update system= Authorisation could not be 
+obtained'
 date= 2009-03-02 13=56=32
-type= post
-status= publish
+type=post
+status=published
 tags=
 ,Linux
 ,Objetivo

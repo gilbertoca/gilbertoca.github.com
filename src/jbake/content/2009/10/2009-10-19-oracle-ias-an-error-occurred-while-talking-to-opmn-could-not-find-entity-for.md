@@ -1,8 +1,8 @@
-
-title= 'Oracle IAS [An error occurred while talking to OPMN. Could not find entity for]'
+title='Oracle IAS [An error occurred while talking to OPMN. Could not find 
+entity for]'
 date= 2009-10-19 11=43=40
-type= post
-status= publish
+type=post
+status=published
 tags=
 ,Application Server
 ,Linux

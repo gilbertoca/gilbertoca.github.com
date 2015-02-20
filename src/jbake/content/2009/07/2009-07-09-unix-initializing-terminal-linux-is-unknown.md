@@ -1,8 +1,7 @@
-
-title= 'Unix= Initializing..Terminal linux is unknown.'
-date= 2009-07-09 11=14=47
-type= post
-status= publish
+title='Unix= Initializing..Terminal linux is unknown.'
+date=2009-07-09 11=14=47
+type=post
+status=published
 tags=
 ,AIX
 ,configuração

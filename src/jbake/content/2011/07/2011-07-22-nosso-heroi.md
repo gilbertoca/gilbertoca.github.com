@@ -1,8 +1,7 @@
-
-title= Nosso herói!
-date= 2011-07-22 10=18=55
-type= post
-status= publish
+title=Nosso herói!
+date=2011-07-22 10=18=55
+type=post
+status=published
 tags=
 ,Bíblia
 ,Estou lendo e você?

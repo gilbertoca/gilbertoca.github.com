@@ -1,8 +1,7 @@
-
-title= 'Alterne entre versões Java facilmente [update-alternatives] parte 2'
-date= 2012-03-26 18=32=28
-type= post
-status= publish
+title='Alterne entre versões Java facilmente [update-alternatives] parte 2'
+date=2012-03-26 18=32=28
+type=post
+status=published
 tags=
 ,Banco do Brasil
 ,Chromium
