@@ -3,14 +3,7 @@ Linux.
 date=2011-09-02 09:33:36
 type=post
 status=published
-tags=
-,fedora
-,Linux
-,mandriva
-,opensuse
-,ubuntu
-,Windows
-,Windows XP
+tags=, fedora, Linux, mandriva, opensuse, ubuntu, Windows, Windows XP
 ~~~~~~
 <!-- google_ad_section_start -->
 

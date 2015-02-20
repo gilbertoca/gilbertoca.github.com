@@ -2,15 +2,7 @@ title='pen drive &#8211; Cadê minhas pastas?'
 date=2011-03-25 22:17:58
 type=post
 status=published
-tags=
-,antivírus
-,configuração
-,Geral
-,Sistema Operacional
-,ubcd4win
-,Virus
-,Windows
-,Windows XP
+tags=, antivírus, configuração, Geral, Sistema Operacional, ubcd4win, Virus, Windows, Windows XP
 ~~~~~~
 <!-- google_ad_section_start -->
 

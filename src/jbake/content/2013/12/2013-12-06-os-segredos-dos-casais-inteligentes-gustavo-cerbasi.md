@@ -2,12 +2,7 @@ title=Os Segredos dos Casais Inteligentes (Gustavo Cerbasi)
 date=2013-12-06 19:10:11
 type=post
 status=published
-tags=
-,Estou lendo e você?
-,Estou lendo e você?
-,Geral
-,Jesus Cristo
-,Objetivo
+tags=, Estou lendo e você?, Estou lendo e você?, Geral, Jesus Cristo, Objetivo
 ~~~~~~
 <!-- google_ad_section_start -->
 

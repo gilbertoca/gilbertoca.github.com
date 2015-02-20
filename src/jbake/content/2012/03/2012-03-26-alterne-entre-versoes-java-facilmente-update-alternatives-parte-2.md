@@ -2,15 +2,7 @@ title='Alterne entre versões Java facilmente [update-alternatives] parte 2'
 date=2012-03-26 18:32:28
 type=post
 status=published
-tags=
-,Banco do Brasil
-,Chromium
-,Geral
-,Internet
-,Java
-,Linux
-,opensuse
-,update-alternatives
+tags=, Banco do Brasil, Chromium, Geral, Internet, Java, Linux, opensuse, update-alternatives
 ~~~~~~
 <!-- google_ad_section_start -->
 

@@ -3,11 +3,7 @@ obtained'
 date=2009-03-02 13:56:32
 type=post
 status=published
-tags=
-,Linux
-,Objetivo
-,opensuse
-,Sistema Operacional
+tags=, Linux, Objetivo, opensuse, Sistema Operacional
 ~~~~~~
 <!-- google_ad_section_start -->
 

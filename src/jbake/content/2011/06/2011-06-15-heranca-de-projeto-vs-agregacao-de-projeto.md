@@ -2,10 +2,7 @@ title=Herança de Projeto vs Agregação de Projeto
 date=2011-06-15 17:52:47
 type=post
 status=published
-tags=
-,configuração
-,Java
-,maven
+tags=, configuração, Java, maven
 ~~~~~~
 <!-- google_ad_section_start -->
 

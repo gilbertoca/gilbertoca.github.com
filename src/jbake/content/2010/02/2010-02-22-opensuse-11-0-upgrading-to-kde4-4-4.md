@@ -2,10 +2,7 @@ title='openSuSe 11.0 [upgrading to KDE4 4.4= Nepomuk e Strigi]'
 date=2010-02-22 11:00:43
 type=post
 status=published
-tags=
-,Linux
-,opensuse
-,Sistema Operacional
+tags=, Linux, opensuse, Sistema Operacional
 ~~~~~~
 <!-- google_ad_section_start -->
 

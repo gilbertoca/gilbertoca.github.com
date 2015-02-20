@@ -2,8 +2,7 @@ title='ScribeFire Setup &#8211; Roller API'
 date=2008-04-18 09:52:23
 type=post
 status=published
-tags=
-,Geral
+tags=, Geral
 ~~~~~~
 <!-- google_ad_section_start -->
 

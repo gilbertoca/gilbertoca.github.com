@@ -2,10 +2,7 @@ title=Extensões (complementos) FireFox
 date=2011-08-11 10:00:42
 type=post
 status=published
-tags=
-,FireFox
-,Geral
-,Internet
+tags=, FireFox, Geral, Internet
 ~~~~~~
 <!-- google_ad_section_start -->
 

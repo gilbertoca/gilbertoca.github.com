@@ -2,15 +2,7 @@ title=Nosso herói!
 date=2011-07-22 10:18:55
 type=post
 status=published
-tags=
-,Bíblia
-,Estou lendo e você?
-,Estou lendo e você?
-,Geral
-,Jesus Cristo
-,Jornada
-,Livro Sagrado
-,Sabedoria
+tags=, Bíblia, Estou lendo e você?, Estou lendo e você?, Geral, Jesus Cristo, Jornada, Livro Sagrado, Sabedoria
 ~~~~~~
 <!-- google_ad_section_start -->
 

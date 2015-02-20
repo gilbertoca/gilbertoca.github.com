@@ -2,14 +2,7 @@ title='Linux &#8211; Participação no domínio do Windows'
 date=2011-07-15 22:27:44
 type=post
 status=published
-tags=
-,Active Directory
-,configuração
-,kerberos
-,Linux
-,opensuse
-,Sistema Operacional
-,Windows
+tags=, Active Directory, configuração, kerberos, Linux, opensuse, Sistema Operacional, Windows
 ~~~~~~
 <!-- google_ad_section_start -->
 

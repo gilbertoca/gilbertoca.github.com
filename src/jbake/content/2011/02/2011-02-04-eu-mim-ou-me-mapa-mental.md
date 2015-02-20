@@ -2,12 +2,7 @@ title='EU, MIM ou ME? [Mapa Mental]'
 date=2011-02-04 15:22:01
 type=post
 status=published
-tags=
-,Concurso Público
-,freemind
-,Geral
-,mapa mental
-,Questões
+tags=, Concurso Público, freemind, Geral, mapa mental, Questões
 ~~~~~~
 <!-- google_ad_section_start -->
 

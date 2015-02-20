@@ -3,11 +3,7 @@ entity for]'
 date=2009-10-19 11:43:40
 type=post
 status=published
-tags=
-,Application Server
-,Linux
-,Sistema Operacional
-,Unix
+tags=, Application Server, Linux, Sistema Operacional, Unix
 ~~~~~~
 <!-- google_ad_section_start -->
 

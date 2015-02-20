@@ -2,14 +2,7 @@ title='Sumiu os botões maximizar,minimizar,fechar[OpenSuSe 11.3]'
 date=2010-12-30 18:22:16
 type=post
 status=published
-tags=
-,configuração
-,desktop
-,Geral
-,gnome
-,Linux
-,opensuse
-,Sistema Operacional
+tags=, configuração, desktop, Geral, gnome, Linux, opensuse, Sistema Operacional
 ~~~~~~
 <!-- google_ad_section_start -->
 

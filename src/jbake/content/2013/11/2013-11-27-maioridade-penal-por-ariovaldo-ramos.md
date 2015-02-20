@@ -2,11 +2,7 @@ title='Maioridade Penal= por Ariovaldo Ramos'
 date=2013-11-27 10:30:24
 type=post
 status=published
-tags=
-,Estou lendo e você?
-,Estou lendo e você?
-,Geral
-,Jornada
+tags=, Estou lendo e você?, Estou lendo e você?, Geral, Jornada
 ~~~~~~
 <!-- google_ad_section_start -->
 

@@ -2,8 +2,7 @@ title='Uma Questão Por Dia [016]'
 date=2009-07-30 11:49:30
 type=post
 status=published
-tags=
-,Geral
+tags=, Geral
 ~~~~~~
 <!-- google_ad_section_start -->
 

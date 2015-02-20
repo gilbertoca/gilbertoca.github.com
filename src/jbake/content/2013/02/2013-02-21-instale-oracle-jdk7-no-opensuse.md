@@ -2,11 +2,7 @@ title=Instale Oracle JDK7 no openSUSE
 date=2013-02-21 15:49:09
 type=post
 status=published
-tags=
-,Geral
-,Java
-,Linux
-,opensuse
+tags=, Geral, Java, Linux, opensuse
 ~~~~~~
 <!-- google_ad_section_start -->
 

@@ -2,14 +2,7 @@ title='Ciclo Intermediário &#8211; Área Fiscal'
 date=2009-08-12 14:07:46
 type=post
 status=published
-tags=
-,Concurso Público
-,Geral
-,Jornada
-,Objetivo
-,Questões
-,Resumos
-,Simulado
+tags=, Concurso Público, Geral, Jornada, Objetivo, Questões, Resumos, Simulado
 ~~~~~~
 <!-- google_ad_section_start -->
 

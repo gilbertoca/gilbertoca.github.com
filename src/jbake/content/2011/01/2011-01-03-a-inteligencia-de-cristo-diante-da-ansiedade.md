@@ -2,9 +2,7 @@ title=A inteligência de Cristo diante da ansiedade
 date=2011-01-03 10:18:10
 type=post
 status=published
-tags=
-,Estou lendo e você?
-,Estou lendo e você?
+tags=, Estou lendo e você?, Estou lendo e você?
 ~~~~~~
 <!-- google_ad_section_start -->
 

@@ -2,12 +2,7 @@ title=Proteja-se Contra Virus(Disable USB Autorun)
 date=2009-07-18 22:43:45
 type=post
 status=published
-tags=
-,Geral
-,Proteção
-,Virus
-,Windows
-,Windows XP
+tags=, Geral, Proteção, Virus, Windows, Windows XP
 ~~~~~~
 <!-- google_ad_section_start -->
 

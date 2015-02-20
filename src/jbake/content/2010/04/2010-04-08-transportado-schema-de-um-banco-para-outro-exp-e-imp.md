@@ -2,12 +2,7 @@ title='Transportado schema de um banco para outro [exp e imp]'
 date=2010-04-08 15:16:58
 type=post
 status=published
-tags=
-,backup
-,banco de dados
-,Database
-,Linux
-,oracle
+tags=, backup, banco de dados, Database, Linux, oracle
 ~~~~~~
 <!-- google_ad_section_start -->
 

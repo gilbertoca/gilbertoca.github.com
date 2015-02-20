@@ -2,8 +2,7 @@ title='Indo um pouco além &#8230;'
 date=2009-03-23 17:20:46
 type=post
 status=published
-tags=
-,Java
+tags=, Java
 ~~~~~~
 <!-- google_ad_section_start -->
 

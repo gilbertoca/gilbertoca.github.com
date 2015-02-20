@@ -2,12 +2,7 @@ title='Padronizando Nomes de Objeto &#8211; Banco de Dados'
 date=2009-05-08 16:07:46
 type=post
 status=published
-tags=
-,banco de dados
-,Database
-,Geral
-,nomear objeto
-,padrão
+tags=, banco de dados, Database, Geral, nomear objeto, padrão
 ~~~~~~
 <!-- google_ad_section_start -->
 
