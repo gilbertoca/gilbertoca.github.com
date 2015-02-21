@@ -1,4 +1,4 @@
-title=openSuSe 11.0 [upgrading to KDE4 4.4= Nepomuk e Strigi] 
+title=openSuSe 11.0 [upgrading to KDE4 4.4: Nepomuk e Strigi] 
 date=2010-02-22 11:00:43
 type=post
 status=published
@@ -18,4 +18,4 @@ Para desabilitar este serviço siga os seguintes passos:
  [1]: http://en.opensuse.org/KDE/KDE4
  [2]: http://nepomuk.kde.org/
  [3]: http://forum.kde.org/viewtopic.php?f=20&#038;t=83054&#038;start=10
- [4]: http://blog.gilbertoca.com/wp-content/uploads/DesktopSearch.png
+ [4]: img/uploads/DesktopSearch.png

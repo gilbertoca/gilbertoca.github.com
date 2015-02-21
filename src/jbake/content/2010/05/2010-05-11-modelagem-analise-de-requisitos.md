@@ -64,7 +64,7 @@ tags=banco de dados, Database, Geral, Metodologia Ágil, Modelagem, UML, Uml em 
     </ul>
     
     <div id="attachment_360" style="width: 310px" class="wp-caption alignnone">
-      <a href="http://blog.gilbertoca.com/wp-content/uploads/four_archetypes.png"><img src="http://blog.gilbertoca.com/wp-content/uploads/four_archetypes-300x142.png" alt="" title="four_archetypes" width="300" height="142" class="size-medium wp-image-360" /></a>
+      <a href="img/uploads/four_archetypes.png"><img src:"img/uploads/four_archetypes-300x142.png" alt="" title="four_archetypes" width="300" height="142" class="size-medium wp-image-360" /></a>
       
       <p class="wp-caption-text">
         Quatro Arquétipos

@@ -14,7 +14,7 @@ Minha escolha, assim como de mais alguns colegas foi o [Netbeans][6] 6.8. Vejamo
 Tanto para configurar ou mesmo alternar a versão do java utilizado pode-se utilizar o seguinte caminho:  
 Project&#8217;s properties->Build:compile .  
 A partir deste diálogo, você poderá alternar de versão através &#8220;Java Plataform&#8221; ou gerenciar/adicionar/remover versões através da opção &#8220;Manage Java Plataforms&#8221;  
-[<img src="http://blog.gilbertoca.com/wp-content/uploads/compile_option-300x225.png" alt="" title="compile_option" width="300" height="225" class="alignleft size-medium wp-image-436" />][7]  
+[<img src="img/uploads/compile_option-300x225.png" alt:"" title="compile_option" width="300" height="225" class="alignleft size-medium wp-image-436" />][7]  
 Lembrando que antes disso precisamos instalar as versões que desejamos utilizar.
 
 <!-- google_ad_section_end -->
@@ -25,4 +25,4 @@ Lembrando que antes disso precisamos instalar as versões que desejamos utilizar
  [4]: http://www.eclipse.org
  [5]: http://maven.apache.org
  [6]: http://netbeans.org/index.html
- [7]: http://blog.gilbertoca.com/wp-content/uploads/compile_option.png
+ [7]: img/uploads/compile_option.png

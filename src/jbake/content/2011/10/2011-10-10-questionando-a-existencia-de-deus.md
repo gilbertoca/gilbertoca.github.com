@@ -23,7 +23,7 @@ tags=Deus, Estou lendo e você?, Estou lendo e você?, Geral, Jesus Cristo, Jorn
 > **<cite><a href="http://www.augustocury.com.br/#/livros">
 > 
 > <div id="attachment_512" style="width: 211px" class="wp-caption alignleft">
->   <img src="http://blog.gilbertoca.com/wp-content/uploads/8_602866001.jpg" alt="" title="mestre da vida" width="201" height="300" class="size-medium wp-image-512" />
+>   <img src="img/uploads/8_602866001.jpg" alt:"" title="mestre da vida" width="201" height="300" class="size-medium wp-image-512" />
 >   
 >   <p class="wp-caption-text">
 >     O Mestre da Vida

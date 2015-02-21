@@ -20,7 +20,7 @@ Recentemente, algo tem chamado minha atenção; vira e mexe aparece minha esposa
 
 
 <div id="attachment_608" style="width: 864px" class="wp-caption alignright">
-  <a href="http://blog.gilbertoca.com/wp-content/uploads/MostrarOcultos.png"><img src="http://blog.gilbertoca.com/wp-content/uploads/MostrarOcultos.png" alt="Menu->Ferramentas->Outras Opções" title="MostrarOcultos" width="854" height="639" class="size-full wp-image-608" /></a>
+  <a href="img/uploads/MostrarOcultos.png"><img src:"img/uploads/MostrarOcultos.png" alt="Menu->Ferramentas->Outras Opções" title="MostrarOcultos" width="854" height="639" class="size-full wp-image-608" /></a>
   
   <p class="wp-caption-text">
     Mostrar arquivos ocultos
@@ -34,7 +34,7 @@ Ai você pergunta: por que sua esposa traz os dispositivos pra você? por que el
 
 
 <div id="attachment_612" style="width: 1034px" class="wp-caption alignright">
-  <a href="http://blog.gilbertoca.com/wp-content/uploads/NavegadorArquivosGnome.png"><img src="http://blog.gilbertoca.com/wp-content/uploads/NavegadorArquivosGnome.png" alt="Navegador de arquivos do Gnome - nautilus" title="NavegadorArquivosGnome" width="1024" height="768" class="size-full wp-image-612" /></a>
+  <a href="img/uploads/NavegadorArquivosGnome.png"><img src:"img/uploads/NavegadorArquivosGnome.png" alt="Navegador de arquivos do Gnome - nautilus" title="NavegadorArquivosGnome" width="1024" height="768" class="size-full wp-image-612" /></a>
   
   <p class="wp-caption-text">
     Navegador de arquivos do Gnome - nautilus
@@ -45,7 +45,7 @@ Bem, esta dica não é para usuários <a href="http://pt.wikipedia.org/wiki/Linu
 
 
 <div id="attachment_614" style="width: 1031px" class="wp-caption alignright">
-  <a href="http://blog.gilbertoca.com/wp-content/uploads/PromptComando.png"><img src="http://blog.gilbertoca.com/wp-content/uploads/PromptComando.png" alt="prompt de comando do windows xp" title="PromptComando" width="1021" height="669" class="size-full wp-image-614" /></a>
+  <a href="img/uploads/PromptComando.png"><img src:"img/uploads/PromptComando.png" alt="prompt de comando do windows xp" title="PromptComando" width="1021" height="669" class="size-full wp-image-614" /></a>
   
   <p class="wp-caption-text">
     prompt de comando do windows xp
@@ -59,7 +59,7 @@ Primeiro, vou fazer o mesmo que alguns vírus fazem(nem tudo, é claro, apenas o
 
 
 <div id="attachment_616" style="width: 1030px" class="wp-caption alignright">
-  <a href="http://blog.gilbertoca.com/wp-content/uploads/ComandoATTRIB.png"><img src="http://blog.gilbertoca.com/wp-content/uploads/ComandoATTRIB.png" alt="prompt de comando do windows - usando ATTRIB" title="ComandoATTRIB" width="1020" height="660" class="size-full wp-image-616" /></a>
+  <a href="img/uploads/ComandoATTRIB.png"><img src:"img/uploads/ComandoATTRIB.png" alt="prompt de comando do windows - usando ATTRIB" title="ComandoATTRIB" width="1020" height="660" class="size-full wp-image-616" /></a>
   
   <p class="wp-caption-text">
     prompt de comando do windows - usando ATTRIB
@@ -93,7 +93,7 @@ C:\Demonstracao&gt;</pre>
   </table>
 </div>
 
-**[02/07/2013] Atualização**: O Ivans Dias, em um dos comentários, colocou um vídeo do <a href="http://www.professorramos.com" title="Professor Ramos" target="_blank">Professor Ramos</a> bem didático &#8211; <a href="http://www.professorramos.com/video.php?id=187" title="Vírus de Pendrive - Como recuperar seus Arquivos Perdidos ou Ocultados de forma Simples" target="_blank">vale a pena conferir.</a>
+**[02/07/2013] Atualização**: O Ivans Dias, em um dos comentários, colocou um vídeo do <a href="http://www.professorramos.com" title:"Professor Ramos" target="_blank">Professor Ramos</a> bem didático &#8211; <a href="http://www.professorramos.com/video.php?id=187" title="Vírus de Pendrive - Como recuperar seus Arquivos Perdidos ou Ocultados de forma Simples" target="_blank">vale a pena conferir.</a>
 
 Um abração a todos!
 
