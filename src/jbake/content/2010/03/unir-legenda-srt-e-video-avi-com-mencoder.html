@@ -1,8 +1,0 @@
-title=Unir legenda (srt) e video (avi) com MENCODER
-date=2010-03-12
-type=post
-tags=linux,opensuse,diversao
-status=published
-~~~~~~
-
-<p>Quem tiver um video e o arquivo de legenda e deseja unir ambos num aquivo o comando é este :<br /></p><br /><pre lang="bash"><br />mencoder -oac mp3lame -ovc lavc -sub legenda.srt video.avi -o videocomlegenda.avi<br /></pre><br /><p><br />Sintaxe :<br /><ol><br />	<li># mencoder ( programa que acompanha o mplayer capaz de ripar e outras coisas )</li><br />	<li># -oac (Qual sera o codec de audio no arquivo que seja criado, usando a opção help é possivel ter uma lista ex.: <br /><pre lang="bash"><br />mencoder -oac help <br /></pre><br />)</li><br />	<li># -ovc (Qual sera o codec de video no arquivo que seja criado, usando a opção help é possivel ter uma lista ex.: <br /><pre lang="bash"><br />mencoder -ovc help <br /></pre><br />)</li><br />	<li># -sub ( para especificar o arquivo de legendas )</li><br />	<li># -o ( arquivo de saida que sera gerado)</li><br /></ol><br /><br /></p>

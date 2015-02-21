@@ -1,8 +1,0 @@
-title=Melhor aparência (fonte)[OpenSuSe 11.3]
-date=2010-10-22
-type=post
-tags=linux,opensuse,configuracao,desktop
-status=published
-~~~~~~
-
-<p>Sexta-feira, final de tarde! Um bom motivo para me aventurar em uma área que costumo deixar de lado: configuração do desktop. Primeiro as fontes! Percebo que as fontes não são exibidas de forma suave e elas estão bem pequenas devido a minha resolução de vídeo - 1152x864. Vou seguir <a href="http://www.linuxcrunch.com/content/font-smoothing-opensuse-112">a seguinte dica</a>, descrita por Fahad:<br /></p><br /><ol><br /><li><br /> precisamos instalar o <a href="http://software.opensuse.org/search?q=freetype2&baseproject=openSUSE%3A11.3&lang=en&exclude_filter=home%3A&exclude_debug=true">pacote freetype2</a>. Veja se já instalou:<br /><img src="http://dl.dropbox.com/u/9093640/yast2.png" alt="Status da instalação do pacote freetype2" /><br /></li><br /><li><br />faça o seguinte ajuste em <br /><pre lang="properties" line="1"><br />Configure Desktop > Appearance > Fonts<br />* "Use anti-aliasing for fonts" > enabled<br />* "Force fonts DPI" > 96<br /></pre><br /></li><br /><li><br />faça o seguinte ajuste em (através do botão " Configure") <br /><pre lang="properties" line="1"><br />"Configure Anti-aliasing Settings" ><br />* "Use sub-pixel rendering:" > RGB<br />* "Hinting style:" > full<br /></pre><br /></li><br /></ol><br /><p><br />Depois de sair (log ou) e entrar (log in) novamente, você vai notar que o KDE irá exibir as fontes mais suaves.<br />Depois escolhi outras fontes e aumentei o  tamanho. Ficou um beleza!<br /><img src="http://dl.dropbox.com/u/9093640/Fonts.png" alt="Uma amostra de configuração" /><br /></p>
