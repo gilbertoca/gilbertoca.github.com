@@ -1,3 +1,5 @@
 tmp
 target
 src/jbake/output/
+src/jbake/cache/
+.diretory
