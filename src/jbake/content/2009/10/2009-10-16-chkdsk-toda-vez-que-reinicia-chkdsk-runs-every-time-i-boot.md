@@ -2,7 +2,7 @@ title=CHKDSK toda vez que reinicia (CHKDSK runs every time I boot)!
 date=2009-10-16 22:18:28
 type=post
 status=published
-tags=, Geral, Sistema Operacional, Windows, Windows XP
+tags=Geral, Sistema Operacional, Windows, Windows XP
 ~~~~~~
 <!-- google_ad_section_start -->
 

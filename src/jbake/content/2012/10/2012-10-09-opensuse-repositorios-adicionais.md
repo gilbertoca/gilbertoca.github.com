@@ -2,7 +2,7 @@ title='openSUSE &#8211; Repositórios adicionais'
 date=2012-10-09 10:42:36
 type=post
 status=published
-tags=, Geral, Linux, opensuse, Sistema Operacional, Yast
+tags=Geral, Linux, opensuse, Sistema Operacional, Yast
 ~~~~~~
 <!-- google_ad_section_start -->
 

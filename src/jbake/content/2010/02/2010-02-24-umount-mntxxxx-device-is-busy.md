@@ -2,7 +2,7 @@ title='umount= /mnt/XXXX= device is busy'
 date=2010-02-24 16:09:27
 type=post
 status=published
-tags=, Database, Linux, opensuse, Sistema Operacional, Unix
+tags=Database, Linux, opensuse, Sistema Operacional, Unix
 ~~~~~~
 <!-- google_ad_section_start -->
 

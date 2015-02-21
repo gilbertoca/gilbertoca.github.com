@@ -2,7 +2,7 @@ title='Uma Questão Por Dia [025]'
 date=2009-08-25 11:28:52
 type=post
 status=published
-tags=, Concurso Público, Geral, Jornada, Objetivo, Questões, Simulado
+tags=Concurso Público, Geral, Jornada, Objetivo, Questões, Simulado
 ~~~~~~
 <!-- google_ad_section_start -->
 

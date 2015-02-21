@@ -2,7 +2,7 @@ title='bash não lê o arquivo .bashrc na inicialização[Cygwin]'
 date=2010-08-24 16:43:22
 type=post
 status=published
-tags=, configuração, console, cygwin, Java, Linux, Windows, Windows XP
+tags=configuração, console, cygwin, Java, Linux, Windows, Windows XP
 ~~~~~~
 <!-- google_ad_section_start -->
 

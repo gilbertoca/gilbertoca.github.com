@@ -2,7 +2,7 @@ title=Firefox com rolagem lenta? Eis a solução!
 date=2011-06-28 20:35:45
 type=post
 status=published
-tags=, configuração, FireFox, Geral, Jornada
+tags=configuração, FireFox, Geral, Jornada
 ~~~~~~
 <!-- google_ad_section_start -->
 

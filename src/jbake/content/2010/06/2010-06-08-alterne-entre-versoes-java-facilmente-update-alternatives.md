@@ -2,7 +2,7 @@ title='Alterne entre versões Java facilmente [update-alternatives]'
 date=2010-06-08 14:50:18
 type=post
 status=published
-tags=, configuração, console, Geral, Java, Linux, opensuse, Sistema Operacional, Tocantins
+tags=configuração, console, Geral, Java, Linux, opensuse, Sistema Operacional, Tocantins
 ~~~~~~
 <!-- google_ad_section_start -->
 

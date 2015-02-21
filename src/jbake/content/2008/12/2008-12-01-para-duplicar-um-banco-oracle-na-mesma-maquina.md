@@ -2,7 +2,7 @@ title=Para duplicar um banco oracle na mesma maquina
 date=2008-12-01 10:42:24
 type=post
 status=published
-tags=, Database
+tags=Database
 ~~~~~~
 <!-- google_ad_section_start -->
 

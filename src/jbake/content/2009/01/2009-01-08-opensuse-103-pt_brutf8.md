@@ -2,7 +2,7 @@ title='OpenSuse 10.3 &#8211; pt_BR.UTF8'
 date=2009-01-08 16:41:15
 type=post
 status=published
-tags=, Linux, opensuse, Sistema Operacional
+tags=Linux, opensuse, Sistema Operacional
 ~~~~~~
 <!-- google_ad_section_start -->
 

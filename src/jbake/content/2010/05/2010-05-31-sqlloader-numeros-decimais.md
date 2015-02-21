@@ -2,7 +2,7 @@ title='SQL*Loader &#8211; Números decimais'
 date=2010-05-31 16:30:31
 type=post
 status=published
-tags=, banco de dados, Database, Linux, oracle
+tags=banco de dados, Database, Linux, oracle
 ~~~~~~
 <!-- google_ad_section_start -->
 

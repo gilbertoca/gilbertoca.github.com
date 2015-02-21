@@ -3,7 +3,7 @@ ETC&#8221;'
 date=2009-03-13 08:00:57
 type=post
 status=published
-tags=, Database
+tags=Database
 ~~~~~~
 <!-- google_ad_section_start -->
 

@@ -2,7 +2,7 @@ title='Renomear um projeto[SUBVERSION]'
 date=2010-07-19 12:55:31
 type=post
 status=published
-tags=, controle de versões, desenvolvimento, Geral, Java, Linux, Sistema Operacional, subversion
+tags=controle de versões, desenvolvimento, Geral, Java, Linux, Sistema Operacional, subversion
 ~~~~~~
 <!-- google_ad_section_start -->
 

@@ -2,7 +2,7 @@ title=Usando comando GREP em documentos Word, OpenOffice ou LibreOffice
 date=2011-11-10 10:24:01
 type=post
 status=published
-tags=, comandos, console, grep, Linux, opensuse, Sistema Operacional, Unix
+tags=comandos, console, grep, Linux, opensuse, Sistema Operacional, Unix
 ~~~~~~
 <!-- google_ad_section_start -->
 

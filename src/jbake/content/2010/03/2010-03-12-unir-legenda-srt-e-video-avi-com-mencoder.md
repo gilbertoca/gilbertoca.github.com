@@ -2,7 +2,7 @@ title=Unir legenda (srt) e video (avi) com MENCODER
 date=2010-03-12 17:45:17
 type=post
 status=published
-tags=, Diversão, Geral, Linux, opensuse
+tags=Diversão, Geral, Linux, opensuse
 ~~~~~~
 <!-- google_ad_section_start -->
 

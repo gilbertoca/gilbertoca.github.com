@@ -2,7 +2,7 @@ title=Como obter histórico de dados modificados no banco de dados Oracle?
 date=2008-06-04 18:09:43
 type=post
 status=published
-tags=, Auditoria, banco de dados, configuração, Data Mining, Database, oracle
+tags=Auditoria, banco de dados, configuração, Data Mining, Database, oracle
 ~~~~~~
 <!-- google_ad_section_start -->
 

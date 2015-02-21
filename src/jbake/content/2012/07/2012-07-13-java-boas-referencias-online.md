@@ -2,7 +2,7 @@ title='Java &#8211; Boas referências online'
 date=2012-07-13 11:31:10
 type=post
 status=published
-tags=, Estou lendo e você?, Estou lendo e você?, Geral, Internet, Java
+tags=Estou lendo e você?, Estou lendo e você?, Geral, Internet, Java
 ~~~~~~
 <!-- google_ad_section_start -->
 

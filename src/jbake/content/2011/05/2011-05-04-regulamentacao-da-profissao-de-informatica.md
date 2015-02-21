@@ -2,7 +2,7 @@ title=REGULAMENTAÇÃO DA PROFISSÃO DE INFORMÁTICA
 date=2011-05-04 11:17:21
 type=post
 status=published
-tags=, Ciência da Computação, Geral, Informática, Profissionalização, Regulamentação, Tecnologia da Informação
+tags=Ciência da Computação, Geral, Informática, Profissionalização, Regulamentação, Tecnologia da Informação
 ~~~~~~
 <!-- google_ad_section_start -->
 
