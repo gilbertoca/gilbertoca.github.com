@@ -1,4 +1,4 @@
-title='Transportado schema de um banco para outro [exp e imp]'
+title=Transportado schema de um banco para outro [exp e imp] 
 date=2010-04-08 15:16:58
 type=post
 status=published

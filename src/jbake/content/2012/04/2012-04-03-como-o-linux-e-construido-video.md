@@ -1,4 +1,4 @@
-title='Como o Linux é construído &#8211; Vídeo'
+title=Como o Linux é construído &#8211; Vídeo 
 date=2012-04-03 16:34:20
 type=post
 status=published

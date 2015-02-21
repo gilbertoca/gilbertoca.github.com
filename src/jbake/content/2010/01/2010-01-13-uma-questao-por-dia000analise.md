@@ -1,4 +1,4 @@
-title='Uma Questão Por Dia[000]+Análise'
+title=Uma Questão Por Dia[000]+Análise 
 date=2010-01-13 10:46:41
 type=post
 status=published

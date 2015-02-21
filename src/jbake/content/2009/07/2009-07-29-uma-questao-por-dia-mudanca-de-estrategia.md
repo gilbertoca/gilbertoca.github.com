@@ -1,4 +1,4 @@
-title='Uma Questão Por Dia [mudança de estratégia]'
+title=Uma Questão Por Dia [mudança de estratégia] 
 date=2009-07-29 15:18:49
 type=post
 status=published

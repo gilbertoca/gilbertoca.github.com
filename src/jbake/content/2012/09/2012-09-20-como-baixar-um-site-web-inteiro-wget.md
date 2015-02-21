@@ -1,4 +1,4 @@
-title='Como baixar um site web inteiro &#8211; wget'
+title=Como baixar um site web inteiro &#8211; wget 
 date=2012-09-20 10:31:34
 type=post
 status=published
