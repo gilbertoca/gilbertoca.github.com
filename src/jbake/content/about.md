@@ -1,8 +1,9 @@
-date=2009-04-07 17:25:08+00:00
-status=published
 title=About
+date=2009-04-07 13:25:08
 type=page
+status=published
 ~~~~~~
+<!-- google_ad_section_start -->
 
 ***[Toda a Escritura é inspirada por Deus e útil para o ensino, para a repreensão, para a correção e para a instrução na justiça,  
 para que o homem de Deus seja apto e plenamente preparado para toda boa obra.  
