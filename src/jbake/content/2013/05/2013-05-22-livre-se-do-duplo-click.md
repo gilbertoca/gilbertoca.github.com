@@ -12,6 +12,6 @@ tags= , desktop, freeseer, Geral, kde, Linux, screencast, Windows
 
 **Melhor visualização:** escolha FULL SCREEN ou TELA INTEIRA
 
-<video width="640" height="360" src="http://blog.gilbertoca.com/wp-content/uploads/livre-se-do-duble-click.ogg"></video>
+<video width="640" height="360" src="img/uploads/livre-se-do-duble-click.ogg"></video>
 
 <!-- google_ad_section_end -->

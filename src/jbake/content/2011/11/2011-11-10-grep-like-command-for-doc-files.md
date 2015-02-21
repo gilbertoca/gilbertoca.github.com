@@ -6,9 +6,9 @@ tags=comandos, console, grep, Linux, opensuse, Sistema Operacional, Unix
 ~~~~~~
 <!-- google_ad_section_start -->
 
-Esta é uma pequena dica. Se você tem uma grande quantidade de arquivos MS Word, OpenOffice e agora LibreOffice, com certeza já teve a necessidade de utilizar os recursos que o Shell Linux/Unix nos trás &#8211; grep, sed, more, strings, <a href="http://www.wagner.pp.ru/~vitus/software/catdoc/" title="catdoc" target="_blank">catdoc</a>, <a href="http://www.winfield.demon.nl/" title="antiwork" target="_blank">antiwork</a>, etc. 
+Esta é uma pequena dica. Se você tem uma grande quantidade de arquivos MS Word, OpenOffice e agora LibreOffice, com certeza já teve a necessidade de utilizar os recursos que o Shell Linux/Unix nos trás &#8211; grep, sed, more, strings, <a href="http://www.wagner.pp.ru/~vitus/software/catdoc/" title:"catdoc" target="_blank">catdoc</a>, <a href="http://www.winfield.demon.nl/" title="antiwork" target="_blank">antiwork</a>, etc. 
 
-Como vocês bem sabem, gerencio o grupo <a href="http://groups.google.com/group/ibmp-mensagens-reflexivas" title="Mensagens Reflexivas" target="_blank">Mensagens Reflexivas</a> e neste fim de semana &#8211; aos sábados editamos as mensagens &#8211; me deparei que tal necessidade: procurar em vários arquivos docs por um nome, neste caso, por um autor. 
+Como vocês bem sabem, gerencio o grupo <a href="http://groups.google.com/group/ibmp-mensagens-reflexivas" title:"Mensagens Reflexivas" target="_blank">Mensagens Reflexivas</a> e neste fim de semana &#8211; aos sábados editamos as mensagens &#8211; me deparei que tal necessidade: procurar em vários arquivos docs por um nome, neste caso, por um autor. 
 
 Bem, aqui está a dica:
 
@@ -38,7 +38,7 @@ gilberto<span style="color: #000000; font-weight: bold;">@</span>SUGEP-DMASI:~<s
 
 Uma busca pela rede mundial usando o Google ajuda muito nessas horas.
 
-  * <a href="http://superuser.com/questions/70343/grep-in-microsoft-word" title="Grep in Microsoft Word?" target="_blank">Grep in Microsoft Word?</a>
+  * <a href="http://superuser.com/questions/70343/grep-in-microsoft-word" title:"Grep in Microsoft Word?" target="_blank">Grep in Microsoft Word?</a>
 
 **Agora é descobrir como listar o nome dos arquivos. Alguém se habilita?**
 

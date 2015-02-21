@@ -6,7 +6,7 @@ tags=Geral, Sistema Operacional, Windows, Windows XP
 ~~~~~~
 <!-- google_ad_section_start -->
 
-[<img src="http://blog.gilbertoca.com/wp-content/uploads/imagem_alcohol.png" alt="" title="imagem_alcohol" width="1024" height="768" class="alignright size-full wp-image-839" />][1]
+[<img src="img/uploads/imagem_alcohol.png" alt:"" title="imagem_alcohol" width="1024" height="768" class="alignright size-full wp-image-839" />][1]
 
 Isso é um problema? Não. Na verdade o problema está entre o teclado e o computador. <img src="http://blog.gilbertoca.com/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" /> 
 
@@ -15,4 +15,4 @@ Referência: <a href="http://forum.alcohol-soft.com/index.php?/topic/26573-waiti
 
 <!-- google_ad_section_end -->
 
- [1]: http://blog.gilbertoca.com/wp-content/uploads/imagem_alcohol.png
+ [1]: img/uploads/imagem_alcohol.png

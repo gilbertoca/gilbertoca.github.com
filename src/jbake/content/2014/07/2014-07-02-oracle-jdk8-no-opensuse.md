@@ -6,11 +6,11 @@ tags=Geral, Java, Linux, Sistema Operacional, Unix
 ~~~~~~
 <!-- google_ad_section_start -->
 
-Esta forma de instalação é mais resumida que a do <a href="http://blog.gilbertoca.com/?p=971" title="Instale Oracle JDK7 no openSUSE" target="_blank">post antigo</a> e utiliza o formato comprimido (tar.gz). 
+Esta forma de instalação é mais resumida que a do <a href="http://blog.gilbertoca.com/?p:971" title="Instale Oracle JDK7 no openSUSE" target="_blank">post antigo</a> e utiliza o formato comprimido (tar.gz). 
 
-Realize o download a partir deste local: <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" title="Java SE Development Kit 8 Downloads" target="_blank">Java SE Development Kit 8 Downloads</a>, em um diretório de sua escolha &#8211; escolhi: Downloads. 
+Realize o download a partir deste local: <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" title:"Java SE Development Kit 8 Downloads" target="_blank">Java SE Development Kit 8 Downloads</a>, em um diretório de sua escolha &#8211; escolhi: Downloads. 
 
-Depois como super usuário (root) pelo <a href="http://kde.org/applications/system/konsole/" title="Kconsole" target="_blank">Kconsole</a> faça uso da seguinte sequência:
+Depois como super usuário (root) pelo <a href="http://kde.org/applications/system/konsole/" title:"Kconsole" target="_blank">Kconsole</a> faça uso da seguinte sequência:
 
 <div class="wp_syntax">
   <table>
