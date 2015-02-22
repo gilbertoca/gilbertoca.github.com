@@ -6,7 +6,7 @@ tags=configuração, desktop, Geral, gnome, Linux, opensuse, Sistema Operacional
 ~~~~~~
 <!-- google_ad_section_start -->
 
-Este comportamento do gerenciador de janelas é esquisito, para não dizer indesejável. A coisa fica mais estranha ainda pois não tenho meios de rastrear a causa do problema (placa de vídeo, kernel, gnome, gdm qual é o cupido?). Alguém pode, em algumas situações, acusar o compiz, mas este não o caso &#8211; placa legada:
+Este comportamento do gerenciador de janelas é esquisito, para não dizer indesejável. A coisa fica mais estranha ainda pois não tenho meios de rastrear a causa do problema (placa de vídeo, kernel, gnome, gdm qual é o cupido?). Alguém pode, em algumas situações, acusar o compiz, mas este não o caso - placa legada:
 
 <div class="wp_syntax">
   <table>
@@ -31,9 +31,9 @@ Este comportamento do gerenciador de janelas é esquisito, para não dizer indes
   </table>
 </div></p> 
 
-Assim que estalei o OpenSuSe 11.3 em casa ficou difícil evitar seu uso e olha que minha família ainda não viu &#8211; ou não usufruiu &#8211; das ferramentas gráficas pois ficamos aproximadamente 3 meses usando o [driver de vídeo que vem instalado por padrão][1] &#8211; O projeto Nouveau. Só recentemente a Nvidia publicou uma atualização [para minha placa de vídeo][2] e é claro para a minha versão do kernel. 
+Assim que estalei o OpenSuSe 11.3 em casa ficou difícil evitar seu uso e olha que minha família ainda não viu - ou não usufruiu - das ferramentas gráficas pois ficamos aproximadamente 3 meses usando o [driver de vídeo que vem instalado por padrão][1] - O projeto Nouveau. Só recentemente a Nvidia publicou uma atualização [para minha placa de vídeo][2] e é claro para a minha versão do kernel. 
 
-Bom, até agora podemos dizer que o problema não é hardware. Por que? Você pode perguntar. Veja, usei dois tipos de driver e com ambos o comportamento (defeito) persistiu. O pior é que fica dias sem aparecer e de repente acontece. Até então não havia outro meio de contornar o problema senão encerrar a sessão e entrar novamente. Hoje encontrei [uma discussão sobre o assunto][3] &#8211; Adivinha? Aconteceu hoje novamente &#8211; e nessa discussão o usuário &#8220;Rvos&#8221; sugere o seguinte contorno:
+Bom, até agora podemos dizer que o problema não é hardware. Por que? Você pode perguntar. Veja, usei dois tipos de driver e com ambos o comportamento (defeito) persistiu. O pior é que fica dias sem aparecer e de repente acontece. Até então não havia outro meio de contornar o problema senão encerrar a sessão e entrar novamente. Hoje encontrei [uma discussão sobre o assunto][3] - Adivinha? Aconteceu hoje novamente - e nessa discussão o usuário “Rvos” sugere o seguinte contorno:
 
 <div class="wp_syntax">
   <table>
@@ -86,12 +86,12 @@ E com outro ajustei para o sugerido:
 Vamos aguardar e torcer! <img src="http://blog.gilbertoca.com/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" /> 
 
 **ATUALIZAÇÃO (31/12/2010):**  
-Aconteceu novamente. Desta vez enquanto verificava a lista de contatos no [Empathy][6]. O mais complicado foi constatar que este problema afeta a digitação. Ao utilizar as teclas de atalho &#8211; alt + f2 &#8211; não aconteceu nada, a tela de execução de aplicativos não apareceu. Utilizei o menu iniciar para acionar o prompt de comando &#8211; terminal gnome &#8211; que logo apareceu, mas não recebia qualquer digitação. O que fazer? Fui abrindo &#8211; através do menu iniciar &#8211; aplicativos que pudessem receber digitação, mas nenhum respondia. Então tentei a caixa de texto para pesquisa do próprio menu iniciar:  
+Aconteceu novamente. Desta vez enquanto verificava a lista de contatos no [Empathy][6]. O mais complicado foi constatar que este problema afeta a digitação. Ao utilizar as teclas de atalho - alt + f2 - não aconteceu nada, a tela de execução de aplicativos não apareceu. Utilizei o menu iniciar para acionar o prompt de comando - terminal gnome - que logo apareceu, mas não recebia qualquer digitação. O que fazer? Fui abrindo - através do menu iniciar - aplicativos que pudessem receber digitação, mas nenhum respondia. Então tentei a caixa de texto para pesquisa do próprio menu iniciar:  
 ![Caixa de texto para pesquisa, menu iniciar.][7] 
 
-Com isso, fiz uma cópia do texto &#8211; ctrl+c &#8211; e adicionei um ícone no [painel principal][8], aquela grande barra no rodapé da tela, para acionar o Executar Aplicativo:  
+Com isso, fiz uma cópia do texto - ctrl+c - e adicionei um ícone no [painel principal][8], aquela grande barra no rodapé da tela, para acionar o Executar Aplicativo:  
 ![adicionar ao painel][9]  
-Observe que a imagem traz o botão de fechar, isso porque fiz a captura da tela agora depois de todo o processo. Com o ícone disponível foi só acioná-lo e colar &#8211; ctrl+v &#8211; o comando (metacity &#8211;replace) e executar. Pronto, Voltou ao normal! Até quando? <img src="http://blog.gilbertoca.com/wp-includes/images/smilies/icon_sad.gif" alt=":(" class="wp-smiley" />
+Observe que a imagem traz o botão de fechar, isso porque fiz a captura da tela agora depois de todo o processo. Com o ícone disponível foi só acioná-lo e colar - ctrl+v - o comando (metacity -replace) e executar. Pronto, Voltou ao normal! Até quando? <img src="http://blog.gilbertoca.com/wp-includes/images/smilies/icon_sad.gif" alt=":(" class="wp-smiley" />
 
 <!-- google_ad_section_end -->
 

@@ -7,7 +7,7 @@ tags=FireFox, Geral, Java, Jornada, Linux, opensuse, Sistema Operacional
 <!-- google_ad_section_start -->
 
 Veja como o [post que menciono o uso do utilitário update-alternatives][1] é importante.  
-Recentemente apliquei um patch &#8211; atualização de correção &#8211; para o [OpenSuSe 11.3][2] e se não houvesse duas [máquinas virtuais java &#8211; JRE -][3], certamente não conseguiria acessar qualquer site que dependesse do [Java][4]. 
+Recentemente apliquei um patch - atualização de correção - para o [OpenSuSe 11.3][2] e se não houvesse duas [máquinas virtuais java - JRE -][3], certamente não conseguiria acessar qualquer site que dependesse do [Java][4]. 
 
 Veja o problema:
 
@@ -61,7 +61,7 @@ dhcppc0:~ #</span></pre>
 
 Outra solução, caso você só tenha uma versão instalada, se encontra [nesta discussão][6], pelo comentário do usuário nwrickert. 
 
-**ATUALIZAÇÃO:** esqueci-me de mencionar que está estação de trabalho é a de minha casa e que hoje fazem 60 dias que instalei o OpenSuSe 11.3. Por que está nota? Porque os usuários do Windows XP &#8211; minha esposa e meu filho(9 anos) &#8211; adoraram a mudança!
+**ATUALIZAÇÃO:** esqueci-me de mencionar que está estação de trabalho é a de minha casa e que hoje fazem 60 dias que instalei o OpenSuSe 11.3. Por que está nota? Porque os usuários do Windows XP - minha esposa e meu filho(9 anos) - adoraram a mudança!
 
 <!-- google_ad_section_end -->
 

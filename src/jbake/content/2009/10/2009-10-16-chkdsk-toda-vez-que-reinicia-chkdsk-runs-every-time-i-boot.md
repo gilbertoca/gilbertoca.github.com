@@ -10,10 +10,10 @@ Esse parece ser um problema comum e caso você não o tenha encontrado, pode fic
 A solução que funcionou para mim, encontrei neste [fórum][1]. Vou deixar registrado pois sei que outros usuários também precisarão:
 
   * 1. click no menu iniciar e abra a janela de execução;
-  * 2. digite &#8220;cmd&#8221; e enter (nota: não use aspas);
-  * 3. depois digite &#8220;fsutil dirty query e:&#8221;;
+  * 2. digite “cmd” e enter (nota: não use aspas);
+  * 3. depois digite “fsutil dirty query e:”;
   * 4. se a mensagem de retorno indicar que o volume está SUJO vá para o passo 5; 
-  * 5. depois digite &#8220;chkdsk e: /f /x&#8221;;
+  * 5. depois digite “chkdsk e: /f /x”;
   * 6. com a finalização repita o passo 3;
   * 7. se não mais indicar que está SUJO então reinicie e não verá mais a mensagem de agendamento do CHKDSK.
 

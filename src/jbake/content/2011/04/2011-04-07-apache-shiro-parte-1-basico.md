@@ -1,4 +1,4 @@
-title=Apache Shiro Parte 1 &#8211; básico 
+title=Apache Shiro Parte 1 - básico 
 date=2011-04-07 18:04:51
 type=post
 status=published
@@ -8,10 +8,10 @@ tags=Apache Shiro, Application Server, Autenticação, Autorização, Java, mave
 
 ** 
 
-Este post é uma tradução livre do artigo &#8220;<a href="http://meri-stuff.blogspot.com/2011/03/apache-shiro-part-1-basics.html" target="_blank"> Apache Shiro Part 1 &#8211; Basics </a>&#8220;, publicado por Meri em 27 de março 2011 
+Este post é uma tradução livre do artigo “<a href="http://meri-stuff.blogspot.com/2011/03/apache-shiro-part-1-basics.html" target="_blank"> Apache Shiro Part 1 - Basics </a>“, publicado por Meri em 27 de março 2011 
 
 </strong>  
-**ATUALIZAÇÃO: duas novas seções adicionadas &#8211; tratamento de erros e hashing de senhas.**
+**ATUALIZAÇÃO: duas novas seções adicionadas - tratamento de erros e hashing de senhas.**
 
 <A href="http://shiro.apache.org/index.html" target="_blank"> Apache Shiro</A>, inicialmente chamado JSecurity, é um framework de segurança desenvolvido em java. Foi aceito e tornou-se um projeto Apache de nível superior em 2010. Tem como objetivo ser poderoso e fácil de usar. 
 
@@ -66,7 +66,7 @@ A aplicação representa um sistema interno para uma companhia fictícia. A comp
   
 
 
-Cada departamento tem sua própria página. Cada página contém botões que serão usados por usuários em sua atividade. Quando o usuário pressiona o botão, o trabalho é realizado. Por exemplo, qualquer reparador pode acessar a página reparadores(repairmen) e pressionar o botão &#8220;Reparar Refrigerador(Repair Refrigerator)&#8221;. O botão repara refrigerador e mostra mensagem de sucesso. 
+Cada departamento tem sua própria página. Cada página contém botões que serão usados por usuários em sua atividade. Quando o usuário pressiona o botão, o trabalho é realizado. Por exemplo, qualquer reparador pode acessar a página reparadores(repairmen) e pressionar o botão “Reparar Refrigerador(Repair Refrigerator)”. O botão repara refrigerador e mostra mensagem de sucesso. 
 
 Cada usuário tem sua própria página de gerenciamento de conta. Esta página de gerenciamento contém informações privadas do usuário. Como a aplicação sem segurança não tem usuários ainda, a página de gerenciamento de conta não faz nada. Adicionalmente, há uma página que contém todas funções da aplicação. Tudo que alguém pode fazer é possível ser feito nesta página. 
 
@@ -390,7 +390,7 @@ Login attempt was unsuccessful<span style="color: #339933;">:</span> <span style
   </table>
 </div>
 
-Cuidado: uma aplicação real não deve apresentar muitas informações de erro de autenticação. Uma mensagem como &#8220;tentativa de logon sem sucesso.&#8221;, com nenhuma informação adicional é geralmente suficiente. 
+Cuidado: uma aplicação real não deve apresentar muitas informações de erro de autenticação. Uma mensagem como “tentativa de logon sem sucesso.”, com nenhuma informação adicional é geralmente suficiente. 
 
 ##### Hashing de Senhas
 
@@ -485,9 +485,9 @@ You have succesfully logged out.</pre>
 
 #### Adicionar Autorização
 
-Concluiremos esta primeira parte adicionando autorização à aplicação. Começamos limitando o acesso às páginas aos usuários. Nenhum usuário deveria ser capaz de ver páginas de outros departamentos. Fornecendo assim, somente segurança parcial ao projeto, pois o usuário ainda é capaz de usar a página com &#8220;todas as funções da aplicação&#8221; ou editar o endereço (url) no navegador para realizar qualquer ação. Nós a chamaremos de autorização em nível de página. 
+Concluiremos esta primeira parte adicionando autorização à aplicação. Começamos limitando o acesso às páginas aos usuários. Nenhum usuário deveria ser capaz de ver páginas de outros departamentos. Fornecendo assim, somente segurança parcial ao projeto, pois o usuário ainda é capaz de usar a página com “todas as funções da aplicação” ou editar o endereço (url) no navegador para realizar qualquer ação. Nós a chamaremos de autorização em nível de página. 
 
-Então, limitaremos a habilidade dos usuários para realizar ações próprias. Mesmo que abra a página com &#8220;todas as funções da aplicação&#8221; ou edite o endereço (url) no navegador, ele poderá realizar somente funções específicas de seu departamento. Nós a chamaremos de autorização em nível de função. 
+Então, limitaremos a habilidade dos usuários para realizar ações próprias. Mesmo que abra a página com “todas as funções da aplicação” ou edite o endereço (url) no navegador, ele poderá realizar somente funções específicas de seu departamento. Nós a chamaremos de autorização em nível de função. 
 
 **Novos requisitos:** o usuário não é capaz de ver páginas de departamentos que não pertence. O usuário é capaz de realizar somente funções de seu departamento. Uma exceção a essa regra é o administrador, que pode realizar funções administrativas e de reparação. 
 
@@ -551,7 +551,7 @@ Sorry, you do not have access rights to that area.
 
 ##### Autorização de Funções
 
-Todas as páginas departamentais estão protegidas agora. No entanto, qualquer usuário pode ainda realizar qualquer função na página com &#8220;todas as funções da aplicação&#8221;. Além disso, qualquer usuário autenticado pode editar endereço (url) e assim fazer qualquer ação. Por exemplo, se você entrar como vendedor e colocar  
+Todas as páginas departamentais estão protegidas agora. No entanto, qualquer usuário pode ainda realizar qualquer função na página com “todas as funções da aplicação”. Além disso, qualquer usuário autenticado pode editar endereço (url) e assim fazer qualquer ação. Por exemplo, se você entrar como vendedor e colocar  
 https://localhost:8443/simpleshirosecuredapplication/masterservlet?action=MANAGE_REPAIRMEN na url, a aplicação irá realizar a função gerenciar reparadores também (e então irá dispará a exceção: null point, mas a violação de segurança já foi feita).  
 Atribuimos uma úncia <A href="http://shiro.apache.org/permissions.html" target="_blank"> permissão</A> para cada função. Elas estão divididas em grupos:  
 
@@ -559,27 +559,27 @@ Atribuimos uma úncia <A href="http://shiro.apache.org/permissions.html" target=
   
 
 
-  * todas as permissões estão no grupo &#8220;functions&#8221;,
+  * todas as permissões estão no grupo “functions”,
   
 
 
-  * todas as permissões administrativas estão no grupo &#8220;manage&#8221;,
+  * todas as permissões administrativas estão no grupo “manage”,
   
 
 
-  * todas as permissões reparação estão no grupo &#8220;repair&#8221;,
+  * todas as permissões reparação estão no grupo “repair”,
   
 
 
-  * todas as permissões venda estão no grupo &#8220;sale&#8221;, 
+  * todas as permissões venda estão no grupo “sale”, 
   
 
 
-  * todas as permissões ciência estão no grupo &#8220;science&#8221;.
+  * todas as permissões ciência estão no grupo “science”.
   
 
 
-Shiro suporta permissões de múltiplos níveis representadas como strings. Níveis são separados com o símbolo &#8216;:&#8217;. p.e. &#8220;functions:manage:repairmen&#8221; tem três níveis: &#8220;functions&#8221;, &#8220;manage&#8221; e &#8220;repairman&#8221;. Permissões de múltiplos níveis permitem facilmente o agrupamento de permissões. Por exemplo, o grupo science pertence ao grupo functions e contém três permissões:  
+Shiro suporta permissões de múltiplos níveis representadas como strings. Níveis são separados com o símbolo &#8216;:&#8217;. p.e. “functions:manage:repairmen” tem três níveis: “functions”, “manage” e “repairman”. Permissões de múltiplos níveis permitem facilmente o agrupamento de permissões. Por exemplo, o grupo science pertence ao grupo functions e contém três permissões:  
 
 
   
@@ -660,7 +660,7 @@ Administrator=functions<span style="color: #000000;">:</span>manage<span style="
   </table>
 </div></p> 
 
-Você pode agora acessar a página &#8220;todas as funções da aplicação&#8221; e testar as funções.  
+Você pode agora acessar a página “todas as funções da aplicação” e testar as funções.  
 Se um usuário autenticado não tiver a permissão requerida, uma mensagem de erro aparecerá no topo da página. Além disso, se você fizer a autenticação (log in) como vendedor e tentar hackear  
 https://localhost:8443/simpleshirosecuredapplication/masterservlet?action=MANAGE_REPAIRMEN, você verá uma mensagem de erro no console (em vez de uma mensagem de sucesso). 
 

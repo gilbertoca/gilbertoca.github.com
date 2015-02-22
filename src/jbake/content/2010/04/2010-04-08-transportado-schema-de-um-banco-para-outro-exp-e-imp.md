@@ -9,7 +9,7 @@ tags=backup, banco de dados, Database, Linux, oracle
 Fazer exportação e importação de schemas de usuários de um banco para outro com os [utilitários exp e imp][1] não coisa fácil, principalmente se você nunca fez essa tarefa! Mas há sempre uma primeira vez para quase tudo, não é mesmo? 
 
 O nosso banco está iniciando e não tem muitos dados, aproximadamente 6GB de tamanho físico. Só a exportação demorou aproximadamente seis horas.  
-Bom, o passo inicial foi criar um novo banco &#8211; isso porque estamos passando da [versão 10gR1 intel][2] para [10gR2 ppc][3] &#8211; com opções mínimas. O segundo foi realizar o exp no banco original somente dos usuários (schemas) necessários:
+Bom, o passo inicial foi criar um novo banco - isso porque estamos passando da [versão 10gR1 intel][2] para [10gR2 ppc][3] - com opções mínimas. O segundo foi realizar o exp no banco original somente dos usuários (schemas) necessários:
 
 <div class="wp_syntax">
   <table>
@@ -53,7 +53,7 @@ Bom, a solução inicial foi extrair do dump gerado pelo exp, a definição dos 
   </table>
 </div></p> 
 
-Que dureza! Veja que isso não ajudou muito porque o arquivo gerado &#8211; grants.sql &#8211; não faz distinção através do schema. Não entendeu? Vou mostrar:
+Que dureza! Veja que isso não ajudou muito porque o arquivo gerado - grants.sql - não faz distinção através do schema. Não entendeu? Vou mostrar:
 
 <div class="wp_syntax">
   <table>
@@ -103,15 +103,15 @@ exp <span style="color: #ff0000;">'/ AS SYSDBA'</span> <span style="color: #0078
 
 Tem um ditado que acho verdadeiro no nosso mundo TI: 
 
-> &#8220;Se eu posso complicar porque vou simplificar!&#8221;
+> “Se eu posso complicar porque vou simplificar!”
 
 . Você ri não é? Mas você precisava ver a cara do meu chefe depois de 3 dias nessa tarefa.  
 Depois de tudo isso, tem a caçada dos objetos inválidos que nem o script [utlrp.sql][5] resolve. 
 
-Ai você diz: &#8220;Mas que cara burro! Existe outra maneira de resolver isso muito mais simples.&#8221;.  
+Ai você diz: “Mas que cara burro! Existe outra maneira de resolver isso muito mais simples.”.  
 Pois é! Não é burrice não, é inesperiência mesmo! Sem contar na pressão que vc mesmo exerce sobre si para realizar a tarefa. Vc precisa demonstrar que é capaz. 
 
-Bom o resultado final é que depois de toda essa luta, encontrei outra maneira fácil de resolver esse problema &#8211; extrair a definição de determinados usuários e seus grants -. Muito fácil mesmo. <img src="http://blog.gilbertoca.com/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" /> 
+Bom o resultado final é que depois de toda essa luta, encontrei outra maneira fácil de resolver esse problema - extrair a definição de determinados usuários e seus grants -. Muito fácil mesmo. <img src="http://blog.gilbertoca.com/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" /> 
 
 <div class="wp_syntax">
   <table>

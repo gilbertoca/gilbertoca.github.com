@@ -1,4 +1,4 @@
-title=Linux &#8211; Participação no domínio do Windows 
+title=Linux - Participação no domínio do Windows 
 date=2011-07-15 22:27:44
 type=post
 status=published
@@ -62,7 +62,7 @@ Apesar de ser uma discussão antiga, ainda assim é bom fazer um passo a passo d
         net ads join -U Administrador  
         [<img src="img/uploads/7-join_ads_domain.png" alt:"" title="7-join_ads_domain" width="1024" height="768" class="alignright size-full wp-image-775" />][7] </li> 
         
-          * Adicionar a máquina ao domínio (agora utilizando o samba): no yast use a opção:&#8221;Participação no domínio do windows&#8221;, marcando a opção &#8220;Usar informação SMB para autenticação Linux&#8221;  
+          * Adicionar a máquina ao domínio (agora utilizando o samba): no yast use a opção:”Participação no domínio do windows”, marcando a opção “Usar informação SMB para autenticação Linux”  
             [<img src="img/uploads/8-windows_domain_membership.png" alt:"" title="8-windows_domain_membership" width="1024" height="768" class="alignright size-full wp-image-776" />][8] 
           * Reinicie a máquina  
             [<img src="img/uploads/9-reboot_linux_client.png" alt:"" title="9-reboot_linux_client" width="1024" height="768" class="alignright size-full wp-image-777" />][9] </ol> 

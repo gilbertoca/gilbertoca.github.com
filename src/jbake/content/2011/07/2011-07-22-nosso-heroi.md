@@ -36,7 +36,7 @@ tags=Bíblia, Estou lendo e você?, Estou lendo e você?, Geral, Jesus Cristo, J
       </p>
       
       <p>
-        <span style="font-family: Arial,sans-serif;"><span style="font-size: x-medium;">Não foi brilhante numa batalha entre homens, mas venceu a maior guerra que já se travou neste mundo ao morrer na cruz por nós, derrotando o inimigo das nossas almas. Ele não é o principal personagem de um livro qualquer &#8211; é o centro da mensagem da Bíblia, de valor eterno, e cujo autor é o próprio Deus. Por fim, Jesus não é o protagonista de um acontecimento qualquer: sua vinda ao mundo dividiu a história em antes dele e depois dele.</span></span>
+        <span style="font-family: Arial,sans-serif;"><span style="font-size: x-medium;">Não foi brilhante numa batalha entre homens, mas venceu a maior guerra que já se travou neste mundo ao morrer na cruz por nós, derrotando o inimigo das nossas almas. Ele não é o principal personagem de um livro qualquer - é o centro da mensagem da Bíblia, de valor eterno, e cujo autor é o próprio Deus. Por fim, Jesus não é o protagonista de um acontecimento qualquer: sua vinda ao mundo dividiu a história em antes dele e depois dele.</span></span>
       </p>
       
       <p>

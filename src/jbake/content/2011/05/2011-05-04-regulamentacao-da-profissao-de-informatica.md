@@ -7,7 +7,7 @@ tags=Ciência da Computação, Geral, Informática, Profissionalização, Regula
 <!-- google_ad_section_start -->
 
 **  
-[PLS &#8211; PROJETO DE LEI DO SENADO, Nº 607 de 2007.][1]  
+[PLS - PROJETO DE LEI DO SENADO, Nº 607 de 2007.][1]  
 Será que agora vai?  
 **
 

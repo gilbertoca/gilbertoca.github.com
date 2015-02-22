@@ -6,16 +6,16 @@ tags=Database
 ~~~~~~
 <!-- google_ad_section_start -->
 
-Atualmente aqui na [Secretaria][1] estamos em um processo de implanta&#231;&#227;o de um [sistema de recursos humanos][2], para ser mais exato, praticamente toda parte de infraestrutura (hardware e software) j&#225; est&#225; pronta para uso. Mas por quest&#245;es que foge ao meu conhecimento (penso ser licita&#231;&#227;o), a fase mais densa (treinamento e uso pelo usu&#225;rio final) est&#225; em fase de planejamento/reestrutura&#231;&#227;o. Bom, apesar dessa, vamos dizer morosidade, tem uma fase desse processo que n&#227;o p&#225;ra: a migra&#231;&#227;o. Nesse processo participam duas equipes: parametriza&#231;&#227;o e a pr&#243;pria migra&#231;&#227;o, o qual nessa &#250;ltima perten&#231;o. A migra&#231;&#227;o &#233; um ciclo constante onde a partir de modifica&#231;&#245;es (parametriza&#231;&#227;o) importantes no banco de produ&#231;&#227;o, &#233; acionado uma requisi&#231;&#227;o de atualiza&#231;&#227;o do banco de migra&#231;&#227;o (utilizado para validar a parametriza&#231;&#227;o com a ativa&#231;&#227;o de fun&#231;&#245;es do sistema de recursos humanos, por exemplo, calculo de folha). Para esse ciclo funcionar tive que realizar uma das tarefas mais comuns para quem administra um banco de dados, que &#233; c&#243;pia/duplica&#231;&#227;o/clonagem de um banco em produ&#231;&#227;o para outro banco (at&#233; mesmo em outro servidor) a ser utilizado como teste. O procedimento descrito aqui, nada mais &#233; do que seq&#252;&#234;ncia descrita na pr&#243;pria [documenta&#231;&#227;o do banco oracle][3]:
+Atualmente aqui na [Secretaria][1] estamos em um processo de implantação de um [sistema de recursos humanos][2], para ser mais exato, praticamente toda parte de infraestrutura (hardware e software) já está pronta para uso. Mas por questões que foge ao meu conhecimento (penso ser licitação), a fase mais densa (treinamento e uso pelo usuário final) está em fase de planejamento/reestruturação. Bom, apesar dessa, vamos dizer morosidade, tem uma fase desse processo que não pára: a migração. Nesse processo participam duas equipes: parametrização e a própria migração, o qual nessa última pertenço. A migração é um ciclo constante onde a partir de modificações (parametrização) importantes no banco de produção, é acionado uma requisição de atualização do banco de migração (utilizado para validar a parametrização com a ativação de funções do sistema de recursos humanos, por exemplo, calculo de folha). Para esse ciclo funcionar tive que realizar uma das tarefas mais comuns para quem administra um banco de dados, que é cópia/duplicação/clonagem de um banco em produção para outro banco (até mesmo em outro servidor) a ser utilizado como teste. O procedimento descrito aqui, nada mais é do que seq&#252;ência descrita na própria [documentação do banco oracle][3]:
 
   1. [Create an Oracle Password File for the Auxiliary Instance][4]
   2. [Establish Oracle Net Connectivity to the Auxiliary Instance][5]
   3. [Create an Initialization Parameter File for the Auxiliary Instance][6]
   4. [Start the Auxiliary Instance][7]
   5. [Mount or Open the Target Database][8]
-  6. [Make Sure You Have the Necessary Backups and Archived Redo Logs (Essencial &#8211; voc&#234; precisa de um backup][9]
+  6. [Make Sure You Have the Necessary Backups and Archived Redo Logs (Essencial - você precisa de um backup][9]
   7. [Allocate Auxiliary Channels if Automatic Channels Are Not Configured][10]
-  8. [Recrie a tablespace tempor&#225;ria (extra)][11]
+  8. [Recrie a tablespace temporária (extra)][11]
 
 ### <a name="task1">Task 1: Create an Oracle Password File for the Auxiliary Instance</a>
 
@@ -37,7 +37,7 @@ BETA =
   )
 </pre>
 
-#Aten&#231;&#227;o: a cria&#231;&#227;o est&#225;tica de um listener &#233; important&#237;ssima, caso contr&#225;rio vc encontr&#225; problemas de conex&#227;o, como o erro:  
+#Atenção: a criação estática de um listener é importantíssima, caso contrário vc encontrá problemas de conexão, como o erro:  
 #ORA-12528: TNS:listener: all appropriate instances are blocking new connections 
 
 <pre>vi $ORACLE_HOME/network/admin/listener.ora
@@ -71,7 +71,7 @@ LISTENER =
 
 ### <a name="task3">Task 3: Create an Initialization Parameter File for the Auxiliary Instance</a>
 
-#vamos criar primeiro a estrutura de diretorios onde ficar&#227;o os arquivos do banco 
+#vamos criar primeiro a estrutura de diretorios onde ficarão os arquivos do banco 
 
 <pre>cd /dm0/oracle/admin/beta
 mkdir adump
@@ -86,25 +86,25 @@ mkdir udump
 mkdir utlfile
 </pre>
 
-#Agora o arquivo de inicializa&#231;&#227;o, para isso vou fazer uma copia do banco original e fazer a mudan&#231;as necess&#225;rias 
+#Agora o arquivo de inicialização, para isso vou fazer uma copia do banco original e fazer a mudanças necessárias 
 
 <pre>cd /dm0/oracle/admin/beta/pfile/
 cp ../../producao/pfile/init.ora.292007145712 initbeta.ora
 vi initbeta.ora
 </pre>
 
-#Se estiver usando spfile no banco original, crie um arquivo de inicializa&#231;&#227;o (pfile) a partir dele 
+#Se estiver usando spfile no banco original, crie um arquivo de inicialização (pfile) a partir dele 
 
 <pre>export ORACLE_SID=producao
 sqlplus /as sysdba
 CREATE PFILE='/dm0/oracle/admin/beta/pfile/initbeta.ora' FROM SPFILE;
 </pre>
 
-#Substitua todas as ocorr&#234;ncias do banco anterior
+#Substitua todas as ocorrências do banco anterior
 
 <pre>:g/producao/s//beta/g
 
-#Acrescente mais uma se&#231;&#227;o neste arquivo
+#Acrescente mais uma seção neste arquivo
 ###########################################
 #  Filename Conversion Initialization Parameters
 #  Renaming Datafiles in RMAN DUPLICATE DATABASE
@@ -114,7 +114,7 @@ DB_FILE_NAME_CONVERT=(/dm0/oracle/admin/producao/data/ ,/dm0/oracle/admin/beta/d
 LOG_FILE_NAME_CONVERT=(/dm0/oracle/admin/producao/data ,/dm0/oracle/admin/beta/data)
 </pre>
 
-#Salve o arquivo. Para facilitar a duplica&#231;&#227;o recomenda-se criar um spfile no local padrao da instala&#231;&#227;o. Isso ir&#225; lhe poupar o trabalho quando o rman fizer o shutdwon e startup, ele n&#227;o solicitar&#225; o arquivo de inicializa&#231;&#227;o pfile.
+#Salve o arquivo. Para facilitar a duplicação recomenda-se criar um spfile no local padrao da instalação. Isso irá lhe poupar o trabalho quando o rman fizer o shutdwon e startup, ele não solicitará o arquivo de inicialização pfile.
 
 <pre>export ORACLE_SID=beta
 sqlplus /as sysdba
@@ -128,7 +128,7 @@ sqlplus /as sysdba
 STARTUP FORCE NOMOUNT
 </pre>
 
-### <a name="task5">Task 5: Mount or Open the Target Database (Opcional &#8211; provavelmente o banco original j&#225; esteja aberto!)</a>
+### <a name="task5">Task 5: Mount or Open the Target Database (Opcional - provavelmente o banco original já esteja aberto!)</a>
 
 \# conecte-se ao banco de origem
 
@@ -137,7 +137,7 @@ STARTUP FORCE NOMOUNT
 STARTUP MOUNT;#mount or open database origem
 </pre>
 
-### <a name="task6">Task 6: Make Sure You Have the Necessary Backups and Archived Redo Logs (Essencial &#8211; voc&#234; precisa de um backup recente, caso contr&#225;rio, a clonagem criar&#225; um banco antigo)</a>
+### <a name="task6">Task 6: Make Sure You Have the Necessary Backups and Archived Redo Logs (Essencial - você precisa de um backup recente, caso contrário, a clonagem criará um banco antigo)</a>
 
 <pre>export ORACLE_SID=producao
 rman target /
@@ -153,10 +153,10 @@ List of Backup Sets
 ### <a name="task7">Task 7: Allocate Auxiliary Channels if Automatic Channels Are Not Configured</a>
 
 #Start RMAN with a connection to the target database, the auxiliary instance, and, if applicable, the recovery catalog database  
-#Nesta conex&#227;o pode ocorrer um error comum na versao 10g:  
+#Nesta conexão pode ocorrer um error comum na versao 10g:  
 #ORA-12528: TNS:listener: all appropriate instances are blocking new connections  
-#Este &#233; um erro conhecido do Oracle 10g onde um SHUTDOWN IMMEDIATE &#233; seguido por um STARTUP MOUNT ou STARTUP FORCE MOUNT. Execute um novo SHUTDOWN no banco e ent&#227;o um STARTUP. Voc&#234; ser&#225; capaz de conectar novamente.  
-#Se ainda sim voc&#234; n&#227;o conseguir conectar, inverta as op&#231;&#245;es do rman:  
+#Este é um erro conhecido do Oracle 10g onde um SHUTDOWN IMMEDIATE é seguido por um STARTUP MOUNT ou STARTUP FORCE MOUNT. Execute um novo SHUTDOWN no banco e então um STARTUP. Você será capaz de conectar novamente.  
+#Se ainda sim você não conseguir conectar, inverta as opções do rman:  
 #Forma alternativa  
 #oracle@oracleibm:/dm0/oracle/admin/beta/pfile> export ORACLE_SID=beta  
 #oracle@oracleibm:/dm0/oracle/admin/beta/pfile>rman target sys@producao auxiliary / 
@@ -199,14 +199,14 @@ Finished Duplicate Db at 15/03/2007 09:55:47
 RMAN> quit
 </pre>
 
-### <a name="task8">Task 8: Recrie a tablespace tempor&#225;ria (extra)</a>
+### <a name="task8">Task 8: Recrie a tablespace temporária (extra)</a>
 
-<pre>#(vers&#227;o 9i e acima)
+<pre>#(versão 9i e acima)
 ALTER DATABASE TEMPFILE '/dm0/oracle/admin/beta/data/temp01.dbf' DROP INCLUDING DATAFILES;
 ALTER TABLESPACE TEMP ADD TEMPFILE '/dm0/oracle/admin/beta/data/temp01.dbf' SIZE 200M REUSE AUTOEXTEND ON NEXT 5M MAXSIZE 2000M; 
 </pre>
 
-#Outra coisa, como este banco &#233; para teste, devemos desabilitar o modo archive do mesmo
+#Outra coisa, como este banco é para teste, devemos desabilitar o modo archive do mesmo
 
 <pre>oracle@oracleibm:/dm0/oracle/admin/beta/pfile> export ORACLE_SID=beta
 oracle@oracleibm:/dm0/oracle/admin/beta/pfile> sqlplus / as sysdba
@@ -248,7 +248,7 @@ SQL>
 </pre>
 
 **  
-#N&#227;o esquecer de coletar estat&#237;sticas  
+#Não esquecer de coletar estatísticas  
 **
 
 <pre>begin

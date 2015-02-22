@@ -29,7 +29,7 @@ tags=configuração, Java, maven
   </table>
 </div></p> 
 
-Criei um [projeto hospedado no google][3] para armazenar códigos java &#8211; base de aprendizado na linguagem java, especialmente nas especificações Servlet e JPA.  
+Criei um [projeto hospedado no google][3] para armazenar códigos java - base de aprendizado na linguagem java, especialmente nas especificações Servlet e JPA.  
 Entre estes códigos, em especial, quero destacar o park-samples. [Este é estruturado utilizando tanto herança quanto agregação][4]:
 
 <div class="wp_syntax">
@@ -85,7 +85,7 @@ Entre estes códigos, em especial, quero destacar o park-samples. [Este é estru
 </div></p> 
 
 Veja que marquei o pom do diretório raiz como pai(PARENT), mudando o tipo de empacotamento. Mas você pode perguntar: o que difere um do outro?  
-Bom, primeiro devo dizer que usamos herança em arquivos maven para compartilhar configurações, dependências e até recursos &#8211; dê uma boa olhada [neste pom][2] e você verá ajustes que teria de repetir em praticamente todos os sub-projetos. Já a agregação, usamos para agrupar (óbvio né! :)) projetos que precisam ser construídos juntos &#8211; quando executar mvn clean (ou outro comando) no pai, ocorrerá o mesmo nos filhos, tipo efeito cascata. 
+Bom, primeiro devo dizer que usamos herança em arquivos maven para compartilhar configurações, dependências e até recursos - dê uma boa olhada [neste pom][2] e você verá ajustes que teria de repetir em praticamente todos os sub-projetos. Já a agregação, usamos para agrupar (óbvio né! :)) projetos que precisam ser construídos juntos - quando executar mvn clean (ou outro comando) no pai, ocorrerá o mesmo nos filhos, tipo efeito cascata. 
 
 Para a herança funcionar precisamos adicionar uma seção (tag parent) no pom do sub-projeto:
 

@@ -1,4 +1,4 @@
-title=ScribeFire Setup &#8211; Roller API 
+title=ScribeFire Setup - Roller API 
 date=2008-04-18 09:52:23
 type=post
 status=published
@@ -9,11 +9,11 @@ tags=Geral
 Fonte:  
 http://swik.net/OpenSolaris/Planet+Solaris/Dave+Miner:+Wasting+time+with+blogs.sun.com+and+ScribeFire/bcx8c
 
-1. Habilitar a op&#231;&#227;o para API clientes no servidor:
+1. Habilitar a opção para API clientes no servidor:
 
 * login em www.jroller.com  
 * Preferences -> Settings tab  
-* Marque &#8220;Enable Blogger and MetaWeblog APIs for your weblog?&#8221;
+* Marque “Enable Blogger and MetaWeblog APIs for your weblog?”
 
 2. Inicie ScribeFire
 
@@ -28,6 +28,6 @@ http://swik.net/OpenSolaris/Planet+Solaris/Dave+Miner:+Wasting+time+with+blogs.s
 * selecione Custom Blog  
 * selecione MetaWeblog API  
 * Server API URL: http://jroller.com/roller-services/xmlrpc  
-* Forne&#231;a username and password</seu>
+* Forneça username and password</seu>
 
 <!-- google_ad_section_end -->

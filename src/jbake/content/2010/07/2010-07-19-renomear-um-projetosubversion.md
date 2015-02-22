@@ -8,7 +8,7 @@ tags=controle de versões, desenvolvimento, Geral, Java, Linux, Sistema Operacio
 
 Em nossa área de tecnologia da informação é comum o desgaste em discussões para nomear objetos, recursos, projetos, etc, sem falar em nossa imaginação para o assunto. Devo confessar, somos ímpares nesse quesito! <img src="http://blog.gilbertoca.com/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" /> 
 
-Hoje, por uma necessidade tive que renomear um &#8220;projeto&#8221; (antigo módulo em cvs) em um repositório svn hospedado no Google Project Hosting. Para fazer a mudança você necessita fazer o chekout do &#8220;projeto&#8221; &#8211; coloco entre aspas, pois o mesmo é considerado como um diretório &#8211; em uma área de trabalho primeiro. Veja como é o procedimento:
+Hoje, por uma necessidade tive que renomear um “projeto” (antigo módulo em cvs) em um repositório svn hospedado no Google Project Hosting. Para fazer a mudança você necessita fazer o chekout do “projeto” - coloco entre aspas, pois o mesmo é considerado como um diretório - em uma área de trabalho primeiro. Veja como é o procedimento:
 
 <div class="wp_syntax">
   <table>

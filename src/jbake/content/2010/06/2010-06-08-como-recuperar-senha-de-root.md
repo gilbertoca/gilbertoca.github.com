@@ -37,7 +37,7 @@ Nota: se você selecionou recuperação de sistema(Rescue System), selecione a l
           </table>
         </div>
         
-        (substitua sda4 com o nome do dispositivo &#8211; device &#8211; pela a partição Linux raiz identificada no passo anterior); </li> 
+        (substitua sda4 com o nome do dispositivo - device - pela a partição Linux raiz identificada no passo anterior); </li> 
         
           * 6. Execute <div class="wp_syntax">
               <table>

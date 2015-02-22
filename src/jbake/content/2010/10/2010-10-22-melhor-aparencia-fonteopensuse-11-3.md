@@ -6,7 +6,7 @@ tags=configuração, desktop, Geral, Linux, opensuse
 ~~~~~~
 <!-- google_ad_section_start -->
 
-Sexta-feira, final de tarde! Um bom motivo para me aventurar em uma área que costumo deixar de lado: configuração do desktop. Primeiro as fontes! Percebo que as fontes não são exibidas de forma suave e elas estão bem pequenas devido a minha resolução de vídeo &#8211; 1152&#215;864. Vou seguir [a seguinte dica][1], descrita por Fahad: 
+Sexta-feira, final de tarde! Um bom motivo para me aventurar em uma área que costumo deixar de lado: configuração do desktop. Primeiro as fontes! Percebo que as fontes não são exibidas de forma suave e elas estão bem pequenas devido a minha resolução de vídeo - 1152&#215;864. Vou seguir [a seguinte dica][1], descrita por Fahad: 
 
   1. precisamos instalar o [pacote freetype2][2]. Veja se já instalou:  
     ![Status da instalação do pacote freetype2][3] 
@@ -29,7 +29,7 @@ Sexta-feira, final de tarde! Um bom motivo para me aventurar em uma área que co
       </table>
     </div>
 
-  3. faça o seguinte ajuste em (através do botão &#8221; Configure&#8221;)</p> <div class="wp_syntax">
+  3. faça o seguinte ajuste em (através do botão ” Configure”)</p> <div class="wp_syntax">
       <table>
         <tr>
           <td class="line_numbers">

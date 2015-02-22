@@ -10,14 +10,14 @@ Meus amigos professores sempre reclamam que não conseguem manter seus PCs/NoteB
 Procuro retratar a mesma dica, mas para os brasileiros:  
 A melhor forma de manter longe a auto instalação/execução de virus de USB em seu Desktop é desabilitando a característica de auto-execução para esses dispositivos. Irei demonstrar como fazê-lo:
 
-  1. clique no botão Iniciar, depois escolha Executar&#8230; e na caixa de texto digite &#8220;gpedit.msc&#8221; sem aspas 
+  1. clique no botão Iniciar, depois escolha Executar&#8230; e na caixa de texto digite “gpedit.msc” sem aspas 
   2. escolha Configuração do Computador -> Modelos Administrativos -> Sistema  
     ![Diretivas de Grupo][2] 
   3. entre os itens escolha Desativar AutoExecutar e clique duas vezes nele 
-  4. clique em &#8220;Ativado&#8221;, então em &#8220;Desativar Executar automaticamente em:&#8221; selecione &#8220;Todas as unidades&#8221;  
+  4. clique em “Ativado”, então em “Desativar Executar automaticamente em:” selecione “Todas as unidades”  
     ![Desativar AutoExecutar][3] 
 
-Esta configuração o protegerá da invasão automática de vírus por esse ou outro dispositivo, assim que você o conectar ao PC. A proteção se completa com uma solução contra vírus, ou seja, um antivírus. Recomendo um de uso pessoal &#8211; [AVG][4] &#8211; sem custo algum.
+Esta configuração o protegerá da invasão automática de vírus por esse ou outro dispositivo, assim que você o conectar ao PC. A proteção se completa com uma solução contra vírus, ou seja, um antivírus. Recomendo um de uso pessoal - [AVG][4] - sem custo algum.
 
 <!-- google_ad_section_end -->
 

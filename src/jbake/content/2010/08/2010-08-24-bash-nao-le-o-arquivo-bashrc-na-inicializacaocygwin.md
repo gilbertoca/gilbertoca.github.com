@@ -6,7 +6,7 @@ tags=configuração, console, cygwin, Java, Linux, Windows, Windows XP
 ~~~~~~
 <!-- google_ad_section_start -->
 
-Uso a bastante tempo o ambiente [Cygwin ][1]em casa. Recentemente realizei a atualização para a versão 1.7. Por enquanto nenhuma queixa, tudo funcionando normalmente. Hoje resolvi me aventurar e customizar o console utilizado como padrão &#8211; cmd.exe. Para isso tomei como base o seguinte artigo: [Useful Configuration of Cygwin, Part 1: Install, rxvt, and BASH][2]. Fiz todos os ajustes recomendados e fui realizar o teste, mas por algum motivo meu arquivo .bashrc &#8211; de ajustes do ambiente bash &#8211; não era carregado na inicialização do [Cygwin][1]. 
+Uso a bastante tempo o ambiente [Cygwin ][1]em casa. Recentemente realizei a atualização para a versão 1.7. Por enquanto nenhuma queixa, tudo funcionando normalmente. Hoje resolvi me aventurar e customizar o console utilizado como padrão - cmd.exe. Para isso tomei como base o seguinte artigo: [Useful Configuration of Cygwin, Part 1: Install, rxvt, and BASH][2]. Fiz todos os ajustes recomendados e fui realizar o teste, mas por algum motivo meu arquivo .bashrc - de ajustes do ambiente bash - não era carregado na inicialização do [Cygwin][1]. 
 
 Bom, resolvi verificar o problema e primeira parada foi a [FAQ][3] do projeto. Chequei meu ambiente como sugerido pela documentação, mas no entanto não conseguia fazer funcionar. A segunda opção foi pesquisar na lista de discussão: [logo de primeira encontrei a solução do problema][4]. O arquivo .bash_profile precisa conter:
 
@@ -22,7 +22,7 @@ Bom, resolvi verificar o problema e primeira parada foi a [FAQ][3] do projeto. C
 
 **ATUALIZAÇÃO:**
 
-Mais um problema que encontrei, não relacionado com o ambiente bash, mas ao utilitário que o usa &#8211; rxvt. Com a atualização do Cygwin, o atalho criado não funciona, alias, o utilitário não encontra o ambiente bash. Para resolver é fácil: coloque o caminho absoluto do ambiente bash. Da seguinte forma:
+Mais um problema que encontrei, não relacionado com o ambiente bash, mas ao utilitário que o usa - rxvt. Com a atualização do Cygwin, o atalho criado não funciona, alias, o utilitário não encontra o ambiente bash. Para resolver é fácil: coloque o caminho absoluto do ambiente bash. Da seguinte forma:
 
 <div class="wp_syntax">
   <table>

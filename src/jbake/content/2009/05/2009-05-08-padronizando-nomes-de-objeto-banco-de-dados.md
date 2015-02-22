@@ -1,4 +1,4 @@
-title=Padronizando Nomes de Objeto &#8211; Banco de Dados 
+title=Padronizando Nomes de Objeto - Banco de Dados 
 date=2009-05-08 16:07:46
 type=post
 status=published
@@ -145,7 +145,7 @@ Primeiro definimos a extensão dos arquivos que conterão as sentenças de cria�
     </td>
     
     <td>
-      Package Specification (Especificação de Pacote) &#8211; Script de criação das especificações dos pacotes
+      Package Specification (Especificação de Pacote) - Script de criação das especificações dos pacotes
     </td>
   </tr>
   
@@ -155,7 +155,7 @@ Primeiro definimos a extensão dos arquivos que conterão as sentenças de cria�
     </td>
     
     <td>
-      Package Body (Corpo de Pacote) &#8211; Script de criação do corpo dos pacotes
+      Package Body (Corpo de Pacote) - Script de criação do corpo dos pacotes
     </td>
   </tr>
   
@@ -192,14 +192,14 @@ Primeiro definimos a extensão dos arquivos que conterão as sentenças de cria�
 | <hr>_<nomecampo>                                          | para coluna representando campo tempo.                        | hr_saida                      |
 | <nu>_<nomecampo>                                          | para coluna representando campo numerico.                     | nu_leicriacao                 |
 
-Para nomear constraints, devemos usar um padrão porque não pode haver repetição de nomes dos mesmos (limitado a 30 caracteres &#8211; limitação do oracle). 
+Para nomear constraints, devemos usar um padrão porque não pode haver repetição de nomes dos mesmos (limitado a 30 caracteres - limitação do oracle). 
 
 | Para Constraints                                                                               | Descrição                                                     | Exemplo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <nome da tabela com prefixo>_<pk>                                                              | para chave primaria.                                          | constraint sys\_usuario\_pk primary key (cd_usuario) enable                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | <nome da tabela com prefixo>_<uk>                                                              | para indice unico.                                            | constraint sys\_usuario\_uk unique (login, email) enable                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | <nome da tabela origem sem prefixo>\_<to>\_<nome da tabela atual(destino sem prefixo>_<fk>     | para coluna(s) representando a presença de chave estrangeira. | constraint entidade\_to\_subentidade\_fk foreign key (id\_entidade) references kira.sys\_entidade (id\_entidade) enable                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| <nome da tabela sem prefixo>\_<nome da coluna>\_<ck>_<um digito &#8211; caso ocorra repeticao> | para check.                                                   | create table ergon.ergon\_regras\_compara_ff  
+| <nome da tabela sem prefixo>\_<nome da coluna>\_<ck>_<um digito - caso ocorra repeticao> | para check.                                                   | create table ergon.ergon\_regras\_compara_ff  
 (  
 regra number(6,0) constraint regras\_compara\_ff\_regra\_ck_0 not null enable,  
 fl\_ativa\_1 char(1 byte) default &#8216;n&#8217; constraint rg\_cp\_ff\_fl\_ativa\_1\_ck_0 not null enable,  

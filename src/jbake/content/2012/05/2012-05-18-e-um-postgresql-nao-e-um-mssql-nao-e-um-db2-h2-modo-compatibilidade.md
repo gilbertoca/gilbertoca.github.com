@@ -8,7 +8,7 @@ tags=banco de dados, Database, Geral, Java, maven
 
 Calma pessoal, é apenas o banco <a href="http://www.h2database.com/html/features.html#compatibility" target="_blank">H2 em modo compatibilidade</a>! Imagine  
 que você acabou levando trabalho pra casa (Novidade!!!) mas se  
-esqueceu que em casa vc não possui o ambiente &#8211; banco de dados &#8211;  
+esqueceu que em casa vc não possui o ambiente - banco de dados -  
 desenvolvimento semelhante ao do trabalho. Em meu caso um servidor de  
 banco de dados PostgreSQL. 
 
@@ -34,15 +34,15 @@ URL de conexão:
 </div>
 
 Assim você poderia recriar as estruturas do banco por script ou  
-ativando a criação das entidades no provedor de persistência &#8211; caso  
-utilize JPA. Veja que as estruturas &#8211; tabelas, views, sequências, etc  
+ativando a criação das entidades no provedor de persistência - caso  
+utilize JPA. Veja que as estruturas - tabelas, views, sequências, etc  
 - não teriam que ser ajustadas por estar utilizando o H2. O banco H2  
-entende o dialeto, por assim dizer, do banco a ser &#8220;emulado&#8221; pelo  
+entende o dialeto, por assim dizer, do banco a ser “emulado” pelo  
 parâmetro MODE. 
 
 A segunda maneira, por sinal mais interessante, é não fazer nada!  
 Como assim? Você provavelmente se questiona! É verdade, você não  
-mexe em nada do seu projeto &#8211; que é um banco específico, no meu caso o  
+mexe em nada do seu projeto - que é um banco específico, no meu caso o  
 PostgreSQL. Você continua utlizando o driver, a URL do seu banco e  
 deixa o H2 fazer o resto. Vamos ver?  
 Suponha que sua forma de conexão seja a seguinte:
@@ -103,7 +103,7 @@ PostgreSQL através do H2. Para facilitar as coisas, vamos criar <a href="http:/
   </table>
 </div>
 
-Agora a &#8220;grande sacada&#8221; do H2, abra dois terminais: um para rodar o  
+Agora a “grande sacada” do H2, abra dois terminais: um para rodar o  
 servidor e a outra para você trabalhar normalmente com o maven. Em uma  
 delas iremos iniciar o servidor:
 
@@ -117,8 +117,8 @@ delas iremos iniciar o servidor:
   </table>
 </div></p> 
 
-Após este comando, você terá a sua disposição uma interface &#8211; via  
-navegador &#8211; a qual lhe permitirá escolher em qual MODE rodar o  
+Após este comando, você terá a sua disposição uma interface - via  
+navegador - a qual lhe permitirá escolher em qual MODE rodar o  
 servidor.  
 
 
@@ -132,8 +132,8 @@ servidor.
 
   
 Ao conectar àquela configuração definida incialmente, teremos outra  
-interface de administração. Aqui poderemos administrar nosso &#8220;banco  
-PostgreSQL&#8221;
+interface de administração. Aqui poderemos administrar nosso “banco  
+PostgreSQL”
 
 <div id="attachment_903" style="width: 835px" class="wp-caption alignleft">
   <a href="img/uploads/H2_admin_interface_PG_MODE.png"><img src:"img/uploads/H2_admin_interface_PG_MODE.png" alt="" title="H2_admin_interface_PG_MODE" width="825" height="831" class="size-full wp-image-903" /></a>
@@ -145,7 +145,7 @@ PostgreSQL&#8221;
 
   
 Acesse este banco por sua aplicação ou por qualquer outro cliente  
-jdbc &#8211; por exemplo o squirrel. Lembre-se você estará acessando um  
+jdbc - por exemplo o squirrel. Lembre-se você estará acessando um  
 banco PostgreSQL!
 
 <!-- google_ad_section_end -->

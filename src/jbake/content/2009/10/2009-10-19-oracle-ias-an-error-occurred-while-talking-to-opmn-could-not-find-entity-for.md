@@ -1,5 +1,4 @@
-title=Oracle IAS [An error occurred while talking to OPMN. Could not find 
-entity for]'
+title=Oracle IAS [An error occurred while talking to OPMN. Could not find entity for]
 date=2009-10-19 11:43:40
 type=post
 status=published
@@ -9,7 +8,7 @@ tags=Application Server, Linux, Sistema Operacional, Unix
 
 O servidor de aplicações Oracle (IAS 10g) não inicia, o enterprise manager reporta um erro que não diz muito:
 
-> An error occurred while talking to OPMN. Could not find entity for &#8220;nome do servidor&#8221; 
+> An error occurred while talking to OPMN. Could not find entity for “nome do servidor” 
 
 Os arquivos de log necessários são:
 

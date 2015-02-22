@@ -14,7 +14,7 @@ tags=Estou lendo e você?, Estou lendo e você?
 
 &#8230; 
 
-> A teoria da imortalidade da alma foi uma das falsidades que Roma tomou emprestadas do paganismo. Lutero classificou-a entre as &#8220;monstruosas fábulas que fazem parte do monturo romano das decretais&#8221;. A Bíblia ensina que os mortos dormem até a ressurreição. 
+> A teoria da imortalidade da alma foi uma das falsidades que Roma tomou emprestadas do paganismo. Lutero classificou-a entre as “monstruosas fábulas que fazem parte do monturo romano das decretais”. A Bíblia ensina que os mortos dormem até a ressurreição. 
 
 **<cite><a href="http://www.ograndeconflito.com.br/">O Grande Conflito</a> edição condensada, Ellen G. Write. </cite>**
 

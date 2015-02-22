@@ -6,9 +6,9 @@ tags=Geral, Java, Linux, opensuse
 ~~~~~~
 <!-- google_ad_section_start -->
 
-Realize o download a partir deste local: <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html" title:"Java SE Development Kit 7 Downloads" target="_blank">Java SE Development Kit 7 Downloads</a>, em um diretório de sua escolha &#8211; escolhi: /Softwares_usados/Tools/java/jdk/ . 
+Realize o download a partir deste local: <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html" title:"Java SE Development Kit 7 Downloads" target="_blank">Java SE Development Kit 7 Downloads</a>, em um diretório de sua escolha - escolhi: /Softwares_usados/Tools/java/jdk/ . 
 
-Depois como super usuário (root) utilize <a href="http://doc.opensuse.org/documentation/html/openSUSE/opensuse-startup/cha.sw_cl.html" title:"Ferramenta de Gerenciamento de Software - Zypper" target="_blank">a Ferramente de Gerencimanto de Software &#8211; Zypper -</a> para instalar o pacote (arquivo RPM):
+Depois como super usuário (root) utilize <a href="http://doc.opensuse.org/documentation/html/openSUSE/opensuse-startup/cha.sw_cl.html" title:"Ferramenta de Gerenciamento de Software - Zypper" target="_blank">a Ferramente de Gerencimanto de Software - Zypper -</a> para instalar o pacote (arquivo RPM):
 
 <div class="wp_syntax">
   <table>
@@ -31,7 +31,7 @@ A37710:<span style="color: #000000; font-weight: bold;">/</span>dados<span style
   </table>
 </div></p> 
 
-Vamos &#8220;avisar&#8221; o mecanismo do sistema que é responsável por estes serviços &#8211; <a href="http://blog.gilbertoca.com/?p:875" title="Alterne entre versões Java facilmente [update-alternatives] parte 2" target="_blank">update-alternatives</a>- que existe uma nova versão do jdk instalada. O diretório (melhor dizendo, link) **/usr/java/latest** representa a versão mais recente instalada e irá apontar para última e mais nova versão:
+Vamos “avisar” o mecanismo do sistema que é responsável por estes serviços - <a href="http://blog.gilbertoca.com/?p:875" title="Alterne entre versões Java facilmente [update-alternatives] parte 2" target="_blank">update-alternatives</a>- que existe uma nova versão do jdk instalada. O diretório (melhor dizendo, link) **/usr/java/latest** representa a versão mais recente instalada e irá apontar para última e mais nova versão:
 
 <div class="wp_syntax">
   <table>
@@ -66,7 +66,7 @@ A37710:<span style="color: #000000; font-weight: bold;">/</span>usr<span style="
   </table>
 </div></p> 
 
-Por fim, atualizaremos o **plugin java &#8211; javaplugin.so -** para os navegadores instalados no sistema:
+Por fim, atualizaremos o **plugin java - javaplugin.so -** para os navegadores instalados no sistema:
 
 <div class="wp_syntax">
   <table>

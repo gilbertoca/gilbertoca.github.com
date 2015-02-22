@@ -55,7 +55,7 @@ netbeans<span style="color: #000000;">.</span>deploy<span style="color: #000000;
     
     Referências:
     
-      * [Using the Maven Jetty plugin &#8211; Wicket][9]
+      * [Using the Maven Jetty plugin - Wicket][9]
       * [Use Jetty to run Maven web applications in NetBeans][10]
     
     <!-- google_ad_section_end -->

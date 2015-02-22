@@ -8,7 +8,7 @@ tags=configuração, console, Geral, Java, Linux, opensuse, Sistema Operacional,
 
 Com o surgimento de versões e atualizações da máquina virtual java, preciso verificar a compatibilidade da mesma com o [sistema de gestão de pessoal][1] sendo implantado [aqui na secretária][2]. 
 
-> Atualizado em: 01/12/2005 16:10 &#8211; CONSAD
+> Atualizado em: 01/12/2005 16:10 - CONSAD
 > 
 > Tocantins faz sua apresentação em TI
 > 

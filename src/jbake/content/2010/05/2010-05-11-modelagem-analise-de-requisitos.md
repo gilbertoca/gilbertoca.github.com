@@ -14,7 +14,7 @@ tags=banco de dados, Database, Geral, Metodologia Ágil, Modelagem, UML, Uml em 
   </h2>
   
   <p>
-    <a href="#intro">Análise de Requisitos</a><br /> <a href="#cont">Quatro Archetypes/Cores &#8211; Pequena Introdução</a><br /> <a href="#conc">Dado uma Classe, Qual é a Cor, Qual é o Archetype?</a><br /> <a href="#refe">Referências</a> </div> 
+    <a href="#intro">Análise de Requisitos</a><br /> <a href="#cont">Quatro Archetypes/Cores - Pequena Introdução</a><br /> <a href="#conc">Dado uma Classe, Qual é a Cor, Qual é o Archetype?</a><br /> <a href="#refe">Referências</a> </div> 
     
     <p>
       </br>
@@ -29,11 +29,11 @@ tags=banco de dados, Database, Geral, Metodologia Ágil, Modelagem, UML, Uml em 
     </p>
     
     <p>
-      O que mais acontece é a elaboração de um protótipo inicial e o aperfeiçoamento no decorrer do projeto. Vou usar aqui algo que achei extremamente fácil para iniciantes no mundo OO ou mesmo para a modelagem de um sistema, a técnica chamada &#8220;UML in Color&#8221;, mais precisamente modelando com Archetypes (arquétipo).<br /> Para você entender porque a modelagem em cor é fácil e ao mesmo tempo tão poderosa é preciso que se entenda os quatro blocos de construção básicos no qual ela é baseada &#8211; Os Archetypes. Definição de Archetype:<br /> <em>um modelo no qual todas as coisas do mesmo tipo mais ou menos o seguem &#8211; incluindo atributos, links, métodos, pontos de entrada (plug-in), e interações.</em>
+      O que mais acontece é a elaboração de um protótipo inicial e o aperfeiçoamento no decorrer do projeto. Vou usar aqui algo que achei extremamente fácil para iniciantes no mundo OO ou mesmo para a modelagem de um sistema, a técnica chamada “UML in Color”, mais precisamente modelando com Archetypes (arquétipo).<br /> Para você entender porque a modelagem em cor é fácil e ao mesmo tempo tão poderosa é preciso que se entenda os quatro blocos de construção básicos no qual ela é baseada - Os Archetypes. Definição de Archetype:<br /> <em>um modelo no qual todas as coisas do mesmo tipo mais ou menos o seguem - incluindo atributos, links, métodos, pontos de entrada (plug-in), e interações.</em>
     </p>
     
     <h2>
-      <a name="cont">Quatro Archetypes/Cores &#8211; Pequena Introdução</a>
+      <a name="cont">Quatro Archetypes/Cores - Pequena Introdução</a>
     </h2>
     
     <p>

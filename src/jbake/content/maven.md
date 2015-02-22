@@ -62,7 +62,7 @@ status=published
     </td>
     
     <td>
-      mvn -Djdbc.url=&#8221;jdbc:h2:file:data/parkDB;create=true;MODE=PostgreSQL;DB_CLOSE_DELAY=-1&#8243; -Dmaven.test.skip=true clean install
+      mvn -Djdbc.url=”jdbc:h2:file:data/parkDB;create=true;MODE=PostgreSQL;DB_CLOSE_DELAY=-1” -Dmaven.test.skip=true clean install
     </td>
   </tr>
   
@@ -72,7 +72,7 @@ status=published
     </td>
     
     <td>
-      mvn clean compile exec:java -Dexec.mainClass=&#8221;com.tengen.m101j.HelloWorldMongoDBStyle&#8221;
+      mvn clean compile exec:java -Dexec.mainClass=”com.tengen.m101j.HelloWorldMongoDBStyle”
     </td>
   </tr>
 </table>

@@ -1,4 +1,4 @@
-title=SQL*Loader &#8211; Números decimais 
+title=SQL*Loader - Números decimais 
 date=2010-05-31 16:30:31
 type=post
 status=published

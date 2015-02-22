@@ -1,4 +1,4 @@
-title=Créditos &#8211; Vários professores espalhados pelo Brasil 
+title=Créditos - Vários professores espalhados pelo Brasil 
 date=2009-06-29 11:20:08
 type=post
 status=published
@@ -6,7 +6,7 @@ tags=Geral
 ~~~~~~
 <!-- google_ad_section_start -->
 
-Recentemente iniciei um projeto &#8211; [Uma Questão por Dia?][1] &#8211; que espero tornar minha vida de concurseiro mais tranquila nas disciplinas que exigem mais cálculo e raciocínio rápido. Neste post registrarei os devidos créditos no trabalho de seleção das questões de concurso direcionadas ao concurso de AFRFB:
+Recentemente iniciei um projeto - [Uma Questão por Dia?][1] - que espero tornar minha vida de concurseiro mais tranquila nas disciplinas que exigem mais cálculo e raciocínio rápido. Neste post registrarei os devidos créditos no trabalho de seleção das questões de concurso direcionadas ao concurso de AFRFB:
 
 <table>
   <tr>

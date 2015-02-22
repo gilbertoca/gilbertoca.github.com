@@ -15,7 +15,7 @@ Resolvi mudar a maneira de postar [estas questões][1]. Até este momento elabor
 
 Entenderam?
 
-Aviso ao colegas que por ventura tenham baixado documentos com questões &#8211; não continham o gabarito &#8211; que os mesmos foram atualizados com o respectivo gabarito. 
+Aviso ao colegas que por ventura tenham baixado documentos com questões - não continham o gabarito - que os mesmos foram atualizados com o respectivo gabarito. 
 
 Mais uma coisa, nós procuramos sempre acertar mas nem sempre isso é possível, peço por gentileza que reportem erros gramaticais, comentário ou gabarito errado.
 

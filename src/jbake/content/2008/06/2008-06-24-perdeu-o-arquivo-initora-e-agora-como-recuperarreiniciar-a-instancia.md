@@ -6,8 +6,8 @@ tags=Geral
 ~~~~~~
 <!-- google_ad_section_start -->
 
-O que fazer quando n&#243;s perdemos o arquivo de inicializa&#231;&#227;o de um banco oracle &#8211; inst&#226;ncia?  
-Se voc&#234; n&#227;o possuir uma c&#243;pia do mesmo, recrie utilizando o arquivo de alerta &#8211; alert_<inst&#226;ncia>.log.  
-</inst&#226;ncia>
+O que fazer quando nós perdemos o arquivo de inicialização de um banco oracle - instância?  
+Se você não possuir uma cópia do mesmo, recrie utilizando o arquivo de alerta - alert_<instância>.log.  
+</instância>
 
 <!-- google_ad_section_end -->
