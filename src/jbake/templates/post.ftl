@@ -1,15 +1,19 @@
 <#include "header.ftl">
 	
 	<#include "menu.ftl">
-	
-	<div class="page-header">
-		<h1><#escape x as x?xml>${content.title}</#escape></h1>
-	</div>
-
-	<p><em>${content.date?string("dd MMMM yyyy")}</em></p>
-
-	<p>${content.body}</p>
-
-	<hr />
+	<article>
+		<header>
+			<h1>${content.title}</h1>
+			<p>by <em>Gilberto C. Andrade</em> on <strong>${content.date?string("dd MMMM yyyy")}</strong></p>
+			<p>Tagged as: 
+			<#list content.tags as tag>
+				<a href="${content.rootpath}tags/${tag}.html">${tag}</a>,
+			</#list>
+			</p>
+		</header>
+		<section>
+			${content.body}
+		</section>
+	</article>
 	
 <#include "footer.ftl">

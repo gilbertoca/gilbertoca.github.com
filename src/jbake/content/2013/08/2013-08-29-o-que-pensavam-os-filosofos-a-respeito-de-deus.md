@@ -13,9 +13,11 @@ tags=Augusto Cury, Estou lendo e você?, Estou lendo e você?, Geral, Jesus Cris
 
 **<cite>
 
-  [<img src="img/uploads/o-futuro-da-humanidade.png" alt="o-futuro-da-humanidade" title="o futuro da humanidade" width="401" height="600"" />][1]
+[ ![o futuro da humanidade][1]](http://www.augustocury.com.br/#/livros)
 
-<br /> O Futuro da Humanidade pág. 52 e 53, <a href="http://www.augustocury.com.br/#/o+autor">Augusto Jorge Cury</a></cite>**
+<br /> 
+O Futuro da Humanidade pág. 52 e 53, [Augusto Jorge Cury](http://www.augustocury.com.br/#/o+autor)
+/cite>**
 
 <!-- google_ad_section_end -->
-[1]: <a href="http://www.augustocury.com.br/#/livros">
+[1]: img/uploads/o-futuro-da-humanidade.png
