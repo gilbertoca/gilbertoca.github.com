@@ -15,7 +15,14 @@
 
     <build>
         <finalName>blog</finalName>
-
+        <resources>
+            <resource>
+                <directory>${basedir}/src/jbake</directory>
+                <includes>
+                    <include>**/*.*</include>
+                </includes>                
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <groupId>br.com.ingenieux</groupId>
