@@ -1,3 +1,4 @@
+id=
 title=openSUSE 10.2 atingiu o Fim da Vida - Descontinuado
 date=2008-12-22 08:09:22
 type=post

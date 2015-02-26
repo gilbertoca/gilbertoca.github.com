@@ -1,8 +1,9 @@
+id=
 title=Porções Diárias da Bíblia[Pão Diário &#038; Manancial] 
 date=2011-04-28 23:23:39
 type=post
 status=published
-tags=Bíblia, Estou lendo e você?, Geral, Internet, Jesus Cristo, Sistema Operacional, Windows XP
+tags=Bíblia, Estou lendo e você, Geral, Internet, Jesus Cristo, Sistema Operacional, Windows XP
 ~~~~~~
 <!-- google_ad_section_start -->
 

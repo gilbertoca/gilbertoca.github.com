@@ -1,3 +1,4 @@
+id=
 title=Unix: Initializing..Terminal linux is unknown. 
 date=2009-07-09 11:14:47
 type=post

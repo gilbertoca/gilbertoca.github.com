@@ -1,3 +1,4 @@
+id=
 title=Sumiu os botões maximizar,minimizar,fechar[OpenSuSe 11.3] 
 date=2010-12-30 18:22:16
 type=post

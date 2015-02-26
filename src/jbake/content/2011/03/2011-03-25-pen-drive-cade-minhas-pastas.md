@@ -1,3 +1,4 @@
+id=
 title=pen drive - Cadê minhas pastas? 
 date=2011-03-25 22:17:58
 type=post

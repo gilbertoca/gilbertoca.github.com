@@ -1,3 +1,4 @@
+id=
 title=Uma Questão por Dia [007] 
 date=2009-06-23 14:34:07
 type=post

@@ -1,3 +1,4 @@
+id=
 title=Firefox com rolagem lenta? Eis a solução!
 date=2011-06-28 20:35:45
 type=post

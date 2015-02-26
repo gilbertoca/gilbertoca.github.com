@@ -1,3 +1,4 @@
+id=
 title=Créditos - Vários professores espalhados pelo Brasil 
 date=2009-06-29 11:20:08
 type=post

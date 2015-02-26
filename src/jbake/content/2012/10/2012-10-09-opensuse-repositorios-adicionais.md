@@ -1,3 +1,4 @@
+id=
 title=openSUSE - Repositórios adicionais 
 date=2012-10-09 10:42:36
 type=post

@@ -1,8 +1,9 @@
+id=
 title=Morte
 date=2010-11-08 23:04:49
 type=post
 status=published
-tags=Estou lendo e você?, Estou lendo e você?
+tags=Estou lendo e você
 ~~~~~~
 <!-- google_ad_section_start -->
 

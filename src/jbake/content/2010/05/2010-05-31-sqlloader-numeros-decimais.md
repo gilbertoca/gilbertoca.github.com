@@ -1,3 +1,4 @@
+id=
 title=SQL*Loader - Números decimais 
 date=2010-05-31 16:30:31
 type=post

@@ -1,4 +1,4 @@
- </section>
+</section>
 <footer>
 	<p>
 		<a href="https://pages.github.com/">Hosted by GitHub Pages</a> -
@@ -8,7 +8,7 @@
 </footer>
 <script type="text/javascript">
 	var _gaq = _gaq || [];
-	_gaq.push(['_setAccount', 'UA-9207155-5']);
+	_gaq.push(['_setAccount', 'UA-2586578-2']);
 	_gaq.push(['_trackPageview']);
 	(function() {
 	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;

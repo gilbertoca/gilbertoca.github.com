@@ -1,8 +1,9 @@
+id=
 title=Onde vc acha que Deus está?
 date=2011-08-17 11:19:04
 type=post
 status=published
-tags=Bíblia, Deus, Estou lendo e você?, Geral, Jesus Cristo, Jornada
+tags=Bíblia, Deus, Estou lendo e você, Geral, Jesus Cristo, Jornada
 ~~~~~~
 <!-- google_ad_section_start -->
 

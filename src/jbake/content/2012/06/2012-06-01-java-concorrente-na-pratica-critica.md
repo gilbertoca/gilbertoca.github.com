@@ -1,8 +1,9 @@
+id=
 title=Java Concorrente na Prática - crítica 
 date=2012-06-01 10:43:49
 type=post
 status=published
-tags=Estou lendo e você?, Geral, Java, Traduções
+tags=Estou lendo e você, Geral, Java, Traduções
 ~~~~~~
 <!-- google_ad_section_start -->
 

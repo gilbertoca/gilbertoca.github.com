@@ -1,3 +1,4 @@
+id=
 title=Alcohol 120% - Aguardando Disco 
 date=2011-11-03 22:22:54
 type=post

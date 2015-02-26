@@ -1,3 +1,4 @@
+id=
 title=Depois de instalar Linux, Windows nao conecta!
 date=2008-06-09 12:51:14
 type=post

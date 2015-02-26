@@ -1,3 +1,4 @@
+id=
 title=Gnome 3 - diálogo modal move toda a aplicação 
 date=2012-03-02 17:36:28
 type=post

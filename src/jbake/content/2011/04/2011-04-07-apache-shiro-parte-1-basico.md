@@ -1,3 +1,4 @@
+id=
 title=Apache Shiro Parte 1 - básico 
 date=2011-04-07 18:04:51
 type=post

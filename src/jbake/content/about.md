@@ -1,3 +1,4 @@
+id=
 title=About
 date=2009-04-07 13:25:08
 type=page

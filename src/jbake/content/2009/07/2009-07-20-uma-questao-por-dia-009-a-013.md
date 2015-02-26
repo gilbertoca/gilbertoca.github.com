@@ -1,3 +1,4 @@
+id=
 title=Uma Questão Por Dia [009 a 013] 
 date=2009-07-20 16:48:39
 type=post
