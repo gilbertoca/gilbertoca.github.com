@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+    <head>
+        <title></title>
+        <meta charset="utf-8"/>
+        <title>openSUSE - Repositórios adicionais </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
+        <link rel="alternate"  type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
+        <link href="../../css/default.css" rel="stylesheet">
+        <link href="../../css/syntax.css" rel="stylesheet">
+        <link href="../../css/prettify.css" rel="stylesheet">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="../../js/html5shiv.min.js"></script>
+        <![endif]-->
+
+        <!-- Fav and touch icons -->
+        <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+        <link rel="shortcut icon" href="../../favicon.ico">
+    </head>
+    <body onload="prettyPrint()">
+	
+<header>
+	<hgroup>
+		<h1><a href="/">Vivendo e Aprendendo</a></h1>
+		<h2>Experiência prática na administração de Banco de Dados</h2>
+	</hgroup>
+</header>
+<nav>
+<menu>
+	<a href="../../index.html">Home</a>
+	<a href="../../archive.html">All posts</a>
+	<a href="../../about.html">About me</a>
+	<a href="../../feeds/posts/default.xml">Atom feed</a>
+	</menu>
+</nav>
+<section>
+<article>
+    <header>
+        <h1>openSUSE - Repositórios adicionais </h1>
+        <p>by <em>Gilberto C. Andrade</em> on <strong>09 Outubro 2012</strong></p>
+        <p>Tagged as: 
+            <a href="../../tags/Geral.html">Geral</a>,
+            <a href="../../tags/Linux.html">Linux</a>,
+            <a href="../../tags/opensuse.html">opensuse</a>,
+            <a href="../../tags/Sistema Operacional.html">Sistema Operacional</a>,
+            <a href="../../tags/Yast.html">Yast</a>,
+        </p>
+    </header>
+    <section>
+	<!-- google_ad_section_start --><p>Vira e mexe (entre uma instalação e outra, ou um upgrade e outro) preciso adicionar alguns repositórios(repository) ao &lt;a href=&ldquo;<a href="http://pt.opensuse.org/YaST_Software_Management">http://pt.opensuse.org/YaST_Software_Management</a>&rdquo; title:&ldquo;Yast&rdquo; target=&quot;_blank&quot;&gt;Yast</a> para aplicativos que costumo utilizar. Registro logo abaixo os que não podem faltar: </p>
+<table border="1">
+  <tr>
+    <td>
+      <strong>Nome</strong>
+    </td>
+    
+    <td>
+      <strong>Como adicionar</strong>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      <a href="https://www.virtualbox.org/" title:"VirtualBox" target="_blank">VirtualBox</a>
+    </td>
+    
+    <td>
+      zypper addrepo -r http://download.virtualbox.org/virtualbox/rpm/opensuse/11.4/virtualbox.repo
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      Fonts
+    </td>
+    
+    <td>
+      zypper addrepo -r http://download.opensuse.org/repositories/M17N:/fonts/openSUSE_12.2/M17N:fonts.repo
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      <a href="https://www.google.com/intl/pt-BR/chrome/browser/?hl:pt-BR" title="Google Chrome" target="_blank">Google Chrome</a>
+    </td>
+    
+    <td>
+      zypper ar -f -n Google-Chrome http://dl.google.com/linux/chrome/rpm/stable/x86_64 Google-Chrome
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      <a href="http://opensuse-community.org/Restricted_formats/12.2" title:"Restricted Formats" target="_blank">Restricted formats</a>
+    </td>
+    
+    <td>
+      zypper addrepo -r http://packman.inode.at/suse/12.2/packman.repo<br /> zypper addrepo -r http://www.opensuse-guide.org/repo/12.2/libdvdcss.repo
+    </td>
+  </tr>
+</table><p>&lt;/&gt; </p><p>E aí, quais você mais usa?</p>
+<!-- google_ad_section_end -->
+    </section>
+<section>
+<div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'blog-gilbertoca-com',
+                disqus_identifier = 'openSUSE - Repositórios adicionais ',
+                disqus_url = window.location.href.split('/').splice(0,3).join("/")+'2012/10/2012-10-09-opensuse-repositorios-adicionais.html';
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+</article>
+	
+</section>
+<footer>
+	<p>
+		<a href="https://pages.github.com/">Hosted by GitHub Pages</a> -
+		<a href="http://jbake.org/">Generated with JBake</a> -
+		<a href="http://github.com/gilbertoca/gilbertoca.com">Source code</a>
+	</p>
+</footer>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2586578-2']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</body>
+</html>

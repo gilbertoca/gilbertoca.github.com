@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+    <head>
+        <title></title>
+        <meta charset="utf-8"/>
+        <title>Instalando Visualizador de Dicionários WordTrans no openSuSe 10.2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
+        <link rel="alternate"  type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
+        <link href="../../css/default.css" rel="stylesheet">
+        <link href="../../css/syntax.css" rel="stylesheet">
+        <link href="../../css/prettify.css" rel="stylesheet">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="../../js/html5shiv.min.js"></script>
+        <![endif]-->
+
+        <!-- Fav and touch icons -->
+        <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+        <link rel="shortcut icon" href="../../favicon.ico">
+    </head>
+    <body onload="prettyPrint()">
+	
+<header>
+	<hgroup>
+		<h1><a href="/">Vivendo e Aprendendo</a></h1>
+		<h2>Experiência prática na administração de Banco de Dados</h2>
+	</hgroup>
+</header>
+<nav>
+<menu>
+	<a href="../../index.html">Home</a>
+	<a href="../../archive.html">All posts</a>
+	<a href="../../about.html">About me</a>
+	<a href="../../feeds/posts/default.xml">Atom feed</a>
+	</menu>
+</nav>
+<section>
+<article>
+    <header>
+        <h1>Instalando Visualizador de Dicionários WordTrans no openSuSe 10.2</h1>
+        <p>by <em>Gilberto C. Andrade</em> on <strong>16 Fevereiro 2007</strong></p>
+        <p>Tagged as: 
+            <a href="../../tags/Linux.html">Linux</a>,
+            <a href="../../tags/opensuse.html">opensuse</a>,
+            <a href="../../tags/Sistema Operacional.html">Sistema Operacional</a>,
+        </p>
+    </header>
+    <section>
+	<!-- google_ad_section_start --><p>O <a href="http://www.escomposlinux.org/rvm/wordtrans/about_en.php">wordtrans </a>é uma aplicação gráfica que permite a pesquisa de palavras em vários dicionários. O mesmo também pode traduzir uma palavra selecionada pelo mouse. Ele tem suporte a três tipos de dicionários:</p>
+<ol>
+  <li>Dicionários do Tradutor Babylon.</li>
+  <li>Dicionários de Texto Puro.</li>
+  <li>Dicionários servidos pelo Servidor Dict.</li>
+</ol><p>Pré-requisitos:</p>
+<ol>
+  <li>dictd-1.10.6-21.i586.rpm</li>
+  <li>dicts-1.5-281.i586.rpm</li>
+  <li>wordtrans-1.1pre15-suse.i586.rpm</li>
+  <li><p>wordtrans-kde-1.1pre15-suse.i586.rpm<br/>Não esqueça de baixar também os <a href="http://www.escomposlinux.org/rvm/wordtrans/dictionaries_en.php">dicionários</a>.</li> </ol></p><p>Instale-os da seguinte forma:</p><p><pre>ti-des05:/home/gilberto/software_usados/tradutor # ll<br/>total 20596<br/>drwxr-xr-x 2 gilberto users 4096 Jun 14 2006 dicionarios<br/>-rw-r&ndash;r&ndash; 1 gilberto users 188473 Jun 14 2006 dictd-1.4.9-759.i586.rpm<br/>-rw-r&ndash;r&ndash; 1 gilberto users 20083705 Jun 14 2006 dicts-1.5-247.i586.rpm<br/>-rw-r&ndash;r-x 1 gilberto users 488334 Jun 2 2006 wordtrans-1.1pre15-suse.i586.rpm<br/>-rw-r&ndash;r-x 1 gilberto users 268334 Jun 2 2006 wordtrans-kde-1.1pre15-suse.i586.rpm<br/>-rwxr-xr-x 1 gilberto users 4444 Jun 2 2006 wordtrans_for_suse-2.patch.gz<br/>ti-des05:/home/gilberto/software_usados/tradutor # rpm -Uhv wordtrans-1.1pre15-suse.i586.rpm<br/>Preparing&hellip; ########################################### [100%]<br/> 1:wordtrans ########################################### [100%]</p></li>
+</ol><p>ti-des05:/home/gilberto/software_usados/tradutor # rpm -Uhv wordtrans-kde-1.1pre15-suse.i586.rpm<br/>Preparing&hellip; ########################################### [100%]<br/> 1:wordtrans-kde ########################################### [100%]<br/>ti-des05:/home/gilberto/software_usados/tradutor #</pre></p>
+<pre><code>Depois, faça a descompactação dos dicionários em um local:
+
+&lt;pre&gt;ti-des05:/home/gilberto/software_usados/tradutor # cd dicionarios/
+</code></pre><p>ti-des05:/home/gilberto/software_usados/tradutor/dicionarios # ll<br/>total 37648<br/>-rw-r&ndash;r&ndash; 1 gilberto users 8374290 Jun 14 2006 EngtoEng.dic<br/>-rw-r&ndash;r-x 1 gilberto users 4035857 Jun 2 2006 EngtoEng.dic.gz<br/>-rw-r&ndash;r&ndash; 1 gilberto users 7372222 Jun 14 2006 EngtoPor.dic<br/>-rw-r&ndash;r-x 1 gilberto users 3522348 Jun 14 2006 EngtoPor.dic.gz<br/>-rw-r&ndash;r&ndash; 1 gilberto users 7752828 Jun 14 2006 EngtoSpa.dic<br/>-rw-r&ndash;r-x 1 gilberto users 3750624 Jun 2 2006 EngtoSpa.dic.gz<br/>-rw-r&ndash;r&ndash; 1 gilberto users 1405056 Jun 14 2006 dict-world02-20030215.tar.gz<br/>-rw-r&ndash;r&ndash; 1 gilberto users 423 Jun 14 2006 dictionary<br/>-rwxr-xr-x 1 gilberto users 283 Jun 2 2006 dictionary.gz<br/>-rwxr-xr-x 1 gilberto users 546 Jun 2 2006 eng-hin.tar.gz<br/>-rwxr-xr-x 1 gilberto users 549 Jun 2 2006 eng-por.tar.gz<br/>-rw-r&ndash;r&ndash; 1 gilberto users 1250264 Jun 14 2006 english.dic<br/>-rw-r&ndash;r-x 1 gilberto users 480387 Jun 2 2006 english.dic.gz<br/>-rw-r&ndash;r&ndash; 1 gilberto users 122742 May 8 2003 por-eng.dict.dz<br/>-rw-r&ndash;r&ndash; 1 gilberto users 165280 May 8 2003 por-eng.index<br/>-rwxr-xr-x 1 gilberto users 208269 Jun 2 2006 por-eng.tar.gz<br/>ti-des05:/home/gilberto/software_usados/tradutor/dicionarios #</pre></p>
+<pre><code>Bom, agora precisamos adicionar os dicionários que precisamos ao worktrans. Para isso, através do menu Dictionaries, escolha New: Dictionaries-&gt;New &amp;#8230;. Aparecerá tela para selecionar o tipo de dicionário. Eu escolhi o tipo babylon. O restante é bem fácil e intuitivo!
+
+![][3]
+
+&lt;!-- google_ad_section_end --&gt;
+</code></pre>
+    </section>
+<section>
+<div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'blog-gilbertoca-com',
+                disqus_identifier = 'Instalando Visualizador de Dicionários WordTrans no openSuSe 10.2',
+                disqus_url = window.location.href.split('/').splice(0,3).join("/")+'2007/02/2007-02-16-instalando-visualizador-de-dicionarios-wordtrans-no-opensuse-102.html';
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+</article>
+	
+</section>
+<footer>
+	<p>
+		<a href="https://pages.github.com/">Hosted by GitHub Pages</a> -
+		<a href="http://jbake.org/">Generated with JBake</a> -
+		<a href="http://github.com/gilbertoca/gilbertoca.com">Source code</a>
+	</p>
+</footer>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2586578-2']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</body>
+</html>

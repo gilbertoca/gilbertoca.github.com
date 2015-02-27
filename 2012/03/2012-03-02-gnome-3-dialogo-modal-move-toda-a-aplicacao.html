@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+    <head>
+        <title></title>
+        <meta charset="utf-8"/>
+        <title>Gnome 3 - diálogo modal move toda a aplicação </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
+        <link rel="alternate"  type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
+        <link href="../../css/default.css" rel="stylesheet">
+        <link href="../../css/syntax.css" rel="stylesheet">
+        <link href="../../css/prettify.css" rel="stylesheet">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="../../js/html5shiv.min.js"></script>
+        <![endif]-->
+
+        <!-- Fav and touch icons -->
+        <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+        <link rel="shortcut icon" href="../../favicon.ico">
+    </head>
+    <body onload="prettyPrint()">
+	
+<header>
+	<hgroup>
+		<h1><a href="/">Vivendo e Aprendendo</a></h1>
+		<h2>Experiência prática na administração de Banco de Dados</h2>
+	</hgroup>
+</header>
+<nav>
+<menu>
+	<a href="../../index.html">Home</a>
+	<a href="../../archive.html">All posts</a>
+	<a href="../../about.html">About me</a>
+	<a href="../../feeds/posts/default.xml">Atom feed</a>
+	</menu>
+</nav>
+<section>
+<article>
+    <header>
+        <h1>Gnome 3 - diálogo modal move toda a aplicação </h1>
+        <p>by <em>Gilberto C. Andrade</em> on <strong>02 Março 2012</strong></p>
+        <p>Tagged as: 
+            <a href="../../tags/Geral.html">Geral</a>,
+        </p>
+    </header>
+    <section>
+	<!-- google_ad_section_start --><p>É, finalmente consegui um tempo para postar algo aqui no blog. Ultimamente (nos dois últimos meses) estive ocupado trabalhando na conversão de alguns projetos java para web: usavam Ant e agora, este trabalho, usam Maven. Neste período, <a href="http://blog.gilbertoca.com/?p=415" target="_blank">como vocês bem sabem</a>, fiz a atualização (na verdade uma nova instalação) do <a href="http://www.opensuse.org">openSUSE</a>. Estava com a versão 11.3 e com o recente lançamento da <a href="http://software.opensuse.org/121/en" target="_blank">versão 12.1</a>, não resisti - ansioso por usar o novo <a href="http://www.gnome.org/gnome-3/" target="_blank">Gnome 3</a>. </p><p>A mudança foi um pouco impactante mais pro lado positivo, diferente de outras experiências que tenho ouvido e lido a respeito. Bem, espero ajudar os novos adeptos a este ambiente gráfico por aqui: postando dicas e links para solucionar eventuais embaraços por assim dizer nesta jornada de aprendizado.<br/>Vamos começar com um link bem útil: &lt;a href=&ldquo;<a href="https://live.gnome.org/GnomeShell/CheatSheet">https://live.gnome.org/GnomeShell/CheatSheet</a>&rdquo; title:&ldquo;GnomeShell-CheatSheet&rdquo; target=&quot;_blank&quot;&gt;GnomeShell/CheatSheet</a> . </p><p>Agora algo que atrapalha um pouco: toda vez que precisamos abrir uma janela modal, tipo “Open File”, “Print”, esta mesma janela modal é anexada (colada mesmo!) à janela principal da aplicação(Evince, Firefox, NetBeans, Empathy, etc) tornando-a uma só. Isso é contra produtivo pois em algumas situações precisamos fazer um “copy and paste” de informações na janela principal da aplicação - ocorre muito com o Evince e com NetBeans no meu caso.<br/>No GNOME 3, o comportamento padrão de diálogo modal é este anexar-se à janela principal da aplicação, mas este comportamento pode ser customizado, veja:</p>
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="bash" style="font-family:monospace;">gconftool-<span style="color: #000000;">2</span> <span style="color: #660033;">--set</span> <span style="color: #000000; font-weight: bold;">/</span>desktop<span style="color: #000000; font-weight: bold;">/</span>gnome<span style="color: #000000; font-weight: bold;">/</span>shell<span style="color: #000000; font-weight: bold;">/</span>windows<span style="color: #000000; font-weight: bold;">/</span>attach_modal_dialogs <span style="color: #c20cb9; font-weight: bold;">false</span> <span style="color: #660033;">--type</span> bool</pre>
+      </td>
+    </tr>
+  </table>
+</div><p>Para desabilitar. E o contrário:</p><p><div class="wp_syntax"><br/> <table><br/> <tr><br/> <td class="code"><br/> <pre class="bash" style="font-family:monospace;">gconftool-<span style="color: #000000;">2</span> <span style="color: #660033;">&ndash;set</span> <span style="color: #000000; font-weight: bold;">/</span>desktop<span style="color: #000000; font-weight: bold;">/</span>gnome<span style="color: #000000; font-weight: bold;">/</span>shell<span style="color: #000000; font-weight: bold;">/</span>windows<span style="color: #000000; font-weight: bold;">/</span>attach_modal_dialogs <span style="color: #c20cb9; font-weight: bold;">true</span> <span style="color: #660033;">&ndash;type</span> bool</pre><br/> </td><br/> </tr><br/> </table><br/></div></p> </p><p><strong>Referência:The GNOME Shell Blog - &lt;a href=&ldquo;<a href="http://gnomeshell.wordpress.com/2011/09/10/the-modal-windows-behavior/">http://gnomeshell.wordpress.com/2011/09/10/the-modal-windows-behavior/</a>&rdquo; title:&ldquo;the-modal-windows-behavior&rdquo; target=&quot;_blank&quot;&gt;The modal windows behavior</a></strong></p>
+<!-- google_ad_section_end -->
+    </section>
+<section>
+<div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'blog-gilbertoca-com',
+                disqus_identifier = 'Gnome 3 - diálogo modal move toda a aplicação ',
+                disqus_url = window.location.href.split('/').splice(0,3).join("/")+'2012/03/2012-03-02-gnome-3-dialogo-modal-move-toda-a-aplicacao.html';
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+</article>
+	
+</section>
+<footer>
+	<p>
+		<a href="https://pages.github.com/">Hosted by GitHub Pages</a> -
+		<a href="http://jbake.org/">Generated with JBake</a> -
+		<a href="http://github.com/gilbertoca/gilbertoca.com">Source code</a>
+	</p>
+</footer>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2586578-2']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</body>
+</html>

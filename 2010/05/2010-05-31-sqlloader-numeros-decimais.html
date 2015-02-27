@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+    <head>
+        <title></title>
+        <meta charset="utf-8"/>
+        <title>SQL*Loader - Números decimais </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
+        <link rel="alternate"  type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
+        <link href="../../css/default.css" rel="stylesheet">
+        <link href="../../css/syntax.css" rel="stylesheet">
+        <link href="../../css/prettify.css" rel="stylesheet">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="../../js/html5shiv.min.js"></script>
+        <![endif]-->
+
+        <!-- Fav and touch icons -->
+        <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+        <link rel="shortcut icon" href="../../favicon.ico">
+    </head>
+    <body onload="prettyPrint()">
+	
+<header>
+	<hgroup>
+		<h1><a href="/">Vivendo e Aprendendo</a></h1>
+		<h2>Experiência prática na administração de Banco de Dados</h2>
+	</hgroup>
+</header>
+<nav>
+<menu>
+	<a href="../../index.html">Home</a>
+	<a href="../../archive.html">All posts</a>
+	<a href="../../about.html">About me</a>
+	<a href="../../feeds/posts/default.xml">Atom feed</a>
+	</menu>
+</nav>
+<section>
+<article>
+    <header>
+        <h1>SQL*Loader - Números decimais </h1>
+        <p>by <em>Gilberto C. Andrade</em> on <strong>31 Maio 2010</strong></p>
+        <p>Tagged as: 
+            <a href="../../tags/banco de dados.html">banco de dados</a>,
+            <a href="../../tags/Database.html">Database</a>,
+            <a href="../../tags/Linux.html">Linux</a>,
+            <a href="../../tags/oracle.html">oracle</a>,
+        </p>
+    </header>
+    <section>
+	<!-- google_ad_section_start -->
+<blockquote><p>Verificando posts de <a href="http://www.jroller.com/gilbertoca">meu antigo blog</a> notei que alguns não foram importados ou foram importados com defeitos em seu conteúdo. Então resolvi realizar um trabalho de revisão e o <strong><a href="http://www.jroller.com/gilbertoca/entry/sql_load_n%C3%BAmeros_decimais">segundo</a></strong> começa hoje: </p>
+</blockquote><p>Se burrice matasse, já estária morto! Calma vou explicar. Estou fazendo carga de um sistema legado (migração). E algumas tabelas contém colunas com o <a href="http://download.oracle.com/docs/cd/B19306_01/server.102/b14200/sql_elements001.htm#SQLRF00222">tipo de dado NUMBER</a>(15,6), mas os dados podem vir nulos, inteiros ou decimais.<br/>Inicialmente pensei que ele (<a href="http://download.oracle.com/docs/cd/B19306_01/server.102/b14215/part_ldr.htm#g996849">sqlldr</a>) faria a conversão, mas ..</p><p><div class="wp_syntax"><br/> <table><br/> <tr><br/> <td class="code"><br/> <pre class="sql" style="font-family:monospace;">Record <span style="color: #cc66cc;">1</span>: Rejected <span style="color: #66cc66;">-</span> Error <span style="color: #993333; font-weight: bold;">ON</span> <span style="color: #993333; font-weight: bold;">TABLE</span> VANTAGENS_TMP<span style="color: #66cc66;">,</span> <span style="color: #993333; font-weight: bold;">COLUMN</span> VALOR<span style="color: #66cc66;">.</span><br/>ORA<span style="color: #66cc66;">-</span>01722: invalid <span style="color: #993333; font-weight: bold;">NUMBER</span><br/>Record <span style="color: #cc66cc;">2</span>: Rejected <span style="color: #66cc66;">-</span> Error <span style="color: #993333; font-weight: bold;">ON</span> <span style="color: #993333; font-weight: bold;">TABLE</span> VANTAGENS_TMP<span style="color: #66cc66;">,</span> <span style="color: #993333; font-weight: bold;">COLUMN</span> VALOR<span style="color: #66cc66;">.</span><br/>ORA<span style="color: #66cc66;">-</span>01722: invalid <span style="color: #993333; font-weight: bold;">NUMBER</span></pre><br/> </td><br/> </tr><br/> </table><br/></div></p> </p><p>Depois tentei colocar <a href="http://download.oracle.com/docs/cd/B19306_01/server.102/b14215/ldr_field_list.htm">tipos específicos no control file</a> para estas colunas, como por exemplo <a href="http://download.oracle.com/docs/cd/B19306_01/server.102/b14215/ldr_field_list.htm#sthref948">INTEGER, INTEGER EXTERNAL, DECIMAL(15,6)</a>. Mas todas as tentativas acabavam com:</p><p><div class="wp_syntax"><br/> <table><br/> <tr><br/> <td class="code"><br/> <pre class="sql" style="font-family:monospace;">Record <span style="color: #cc66cc;">29</span>: Rejected <span style="color: #66cc66;">-</span> Error <span style="color: #993333; font-weight: bold;">ON</span> <span style="color: #993333; font-weight: bold;">TABLE</span> VANTAGENS_TMP<span style="color: #66cc66;">,</span> <span style="color: #993333; font-weight: bold;">COLUMN</span> VALOR<span style="color: #66cc66;">.</span><br/>ORA<span style="color: #66cc66;">-</span>01460: unimplemented <span style="color: #993333; font-weight: bold;">OR</span> unreasonable conversion requested</pre><br/> </td><br/> </tr><br/> </table><br/></div></p> </p><p>A solução, foi tão simples que estou até com vergonha de dizer. Bom, praticamente todas as atividades que você faz através de uma sessão sql, são regidas pela <a href="http://download.oracle.com/docs/cd/B19306_01/install.102/b25149/app_gblsupp.htm#sthref469">variável de ambiente NLS_LANG</a>. Pois é, você ajusta esta variável e todas que dependem dela, quer dizer, NLS_* vão assumir valores pre-definidos. Aí você fala: Qual é a novidade? A novidade é que se você fizer uma customização em qualquer uma das <a href="http://download.oracle.com/docs/cd/B19306_01/server.102/b14225/ch3globenv.htm#sthref316">outras variáveis</a> (que foi o caso do bonitão aqui), você terá que assumir as consequências. Enquanto estava fazendo um teste com procedimento ajustei uma destas variáveis:</p><p><div class="wp_syntax"><br/> <table><br/> <tr><br/> <td class="code"><br/> <pre class="bash" style="font-family:monospace;"><span style="color: #7a0874; font-weight: bold;">export</span> <span style="color: #007800;">NLS_NUMERIC_CHARACTERS</span>=,.</pre><br/> </td><br/> </tr><br/> </table><br/></div></p> </p><p>Bom, foi só trocar os sinais que conversão implícita funcionou. Mas uma coisa, uma dica é colocar o tipo do character set no <a href="http://download.oracle.com/docs/cd/B19306_01/server.102/b14215/ldr_control_file.htm#i1006645">control file</a> através do parametro CHARACTERSET, assim você não depende da configuração do ambiente para fazer carga.</p>
+<!-- google_ad_section_end -->
+    </section>
+<section>
+<div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'blog-gilbertoca-com',
+                disqus_identifier = 'SQL*Loader - Números decimais ',
+                disqus_url = window.location.href.split('/').splice(0,3).join("/")+'2010/05/2010-05-31-sqlloader-numeros-decimais.html';
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+</article>
+	
+</section>
+<footer>
+	<p>
+		<a href="https://pages.github.com/">Hosted by GitHub Pages</a> -
+		<a href="http://jbake.org/">Generated with JBake</a> -
+		<a href="http://github.com/gilbertoca/gilbertoca.com">Source code</a>
+	</p>
+</footer>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2586578-2']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</body>
+</html>

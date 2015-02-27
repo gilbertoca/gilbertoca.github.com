@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+    <head>
+        <title></title>
+        <meta charset="utf-8"/>
+        <title>Modelagem usando Uml em Cores [Análise de Requisitos] </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
+        <link rel="alternate"  type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
+        <link href="../../css/default.css" rel="stylesheet">
+        <link href="../../css/syntax.css" rel="stylesheet">
+        <link href="../../css/prettify.css" rel="stylesheet">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="../../js/html5shiv.min.js"></script>
+        <![endif]-->
+
+        <!-- Fav and touch icons -->
+        <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+        <link rel="shortcut icon" href="../../favicon.ico">
+    </head>
+    <body onload="prettyPrint()">
+	
+<header>
+	<hgroup>
+		<h1><a href="/">Vivendo e Aprendendo</a></h1>
+		<h2>Experiência prática na administração de Banco de Dados</h2>
+	</hgroup>
+</header>
+<nav>
+<menu>
+	<a href="../../index.html">Home</a>
+	<a href="../../archive.html">All posts</a>
+	<a href="../../about.html">About me</a>
+	<a href="../../feeds/posts/default.xml">Atom feed</a>
+	</menu>
+</nav>
+<section>
+<article>
+    <header>
+        <h1>Modelagem usando Uml em Cores [Análise de Requisitos] </h1>
+        <p>by <em>Gilberto C. Andrade</em> on <strong>11 Maio 2010</strong></p>
+        <p>Tagged as: 
+            <a href="../../tags/banco de dados.html">banco de dados</a>,
+            <a href="../../tags/Database.html">Database</a>,
+            <a href="../../tags/Geral.html">Geral</a>,
+            <a href="../../tags/Metodologia Ágil.html">Metodologia Ágil</a>,
+            <a href="../../tags/Modelagem.html">Modelagem</a>,
+            <a href="../../tags/UML.html">UML</a>,
+            <a href="../../tags/Uml em Cores.html">Uml em Cores</a>,
+        </p>
+    </header>
+    <section>
+	<!-- google_ad_section_start -->
+<blockquote><p>Verificando posts de <a href="http://www.jroller.com/gilbertoca">meu antigo blog</a> notei que alguns não foram importados ou foram importados com defeitos em seu conteúdo. Então resolvi realizar um trabalho de revisão e o primeiro deles começa hoje: </p>
+</blockquote>
+<div class="toc">
+  <h2>
+    Conteúdo
+  </h2>
+  
+  <p>
+    <a href="#intro">Análise de Requisitos</a><br /> <a href="#cont">Quatro Archetypes/Cores - Pequena Introdução</a><br /> <a href="#conc">Dado uma Classe, Qual é a Cor, Qual é o Archetype?</a><br /> <a href="#refe">Referências</a> </div>
+<pre><code>&lt;p&gt;
+  &lt;/br&gt;
+&lt;/p&gt;
+
+&lt;h2&gt;
+  &lt;a name=&quot;intro&quot;&gt;Análise de Requisitos&lt;/a&gt;
+&lt;/h2&gt;
+
+&lt;p&gt;
+  O post de hoje falaremos sobre a fase de levantamento, mais precisamente a &lt;a href=&quot;http://pt.wikipedia.org/wiki/An%C3%A1lise_de_requisitos_de_software&quot;&gt;análise de requisitos&lt;/a&gt;. Essa é considerada a mais importante fase do ciclo de desenvolvimento de sistemas. O levantamento dos requisitos do sistema pode definir ou mais precisamente nortear o futuro do mesmo. Como Analista/DBA, após a entrevista e coleta de formulários usados atualmente, tenho o hábito de rascunhar um pequeno diagrama de entidade relacionamento (ER). Este modelo(ER) de diagramação ainda é bastante usado, mas com o constante avanço dos modelos especificados pela Linguagem de Modelagem Unificada (UML) acho importante estudo e pratica dos mesmos. Ainda, não costumo seguir um processo de desenvolvimento de software, tais como: XP, RUP e assim vai.
+&lt;/p&gt;
+
+&lt;p&gt;
+  O que mais acontece é a elaboração de um protótipo inicial e o aperfeiçoamento no decorrer do projeto. Vou usar aqui algo que achei extremamente fácil para iniciantes no mundo OO ou mesmo para a modelagem de um sistema, a técnica chamada “UML in Color”, mais precisamente modelando com Archetypes (arquétipo).&lt;br /&gt; Para você entender porque a modelagem em cor é fácil e ao mesmo tempo tão poderosa é preciso que se entenda os quatro blocos de construção básicos no qual ela é baseada - Os Archetypes. Definição de Archetype:&lt;br /&gt; &lt;em&gt;um modelo no qual todas as coisas do mesmo tipo mais ou menos o seguem - incluindo atributos, links, métodos, pontos de entrada (plug-in), e interações.&lt;/em&gt;
+&lt;/p&gt;
+
+&lt;h2&gt;
+  &lt;a name=&quot;cont&quot;&gt;Quatro Archetypes/Cores - Pequena Introdução&lt;/a&gt;
+&lt;/h2&gt;
+
+&lt;p&gt;
+  A utilização de cores para cada Archetype foi uma idéia interessante e importante dos autores do livro &lt;a href=&quot;http://www.step-10.com/Books/JMCUBook.html&quot;&gt;Java Modeling in Color with UML&lt;/a&gt; . A cada classe Archetype é dado sua própria cor. A cor facilita o aprendizado e a fixação das classes Archetype tornando informações de alto nível, em um diagrama de classes, mais fáceis de ler. Usar cor também ajuda prevenir pessoas sendo colocadas de lado por não saber por onde começar quando postas diante de um diagrama de classes não trivial (complexo).
+&lt;/p&gt;
+
+&lt;h2&gt;
+  &lt;a name=&quot;conc&quot;&gt;Dado uma Classe, Qual é a Cor, Qual é o Archetype?&lt;/a&gt;
+&lt;/h2&gt;
+
+&lt;p&gt;
+  Então dado uma classe, que archetype ou cor deveremos usar? Usaremos o seguinte check-list:
+&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    Moment-Interval (rosa): A classe archetype Moment-Interval representa uma atividade que o sistema precisar rastrear por razões legais ou de negócio, algo que ocorre em um momento no tempo ou sobre um intervalo de tempo;
+  &lt;/li&gt;
+  &lt;li&gt;
+    Role (amarelo):A classe archetype Role representa um forma de participação por uma parte (pessoa ou organização), lugar ou, coisa em um Moment-Interval;
+  &lt;/li&gt;
+  &lt;li&gt;
+    Party, Place, or Thing (verde): A classe archetype Party, Place, ou Thing, PPT resumidamente, representa coisas que podem exercer um papel (Role) em diferentes atividades do sistema;
+  &lt;/li&gt;
+  &lt;li&gt;
+    Description (azul):A classe archetype Description representa um catálogo de descrição, um valor ou conjunto de valores que podem ser usados para etiquetar coisas. A forma mais fácil de pensar em uma classe archetype Description é pensar na informação que classifica uma entidade mas que não define sua identidade. Por exemplo, nacionalidade e estado de civil podem ser considerados descrições para uma pessoa enquanto que número do CPF ou de Passaporte fará parte da informação de identidade da pessoa.
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div id=&quot;attachment_360&quot; style=&quot;width: 310px&quot; class=&quot;wp-caption alignnone&quot;&gt;
+  &lt;a href=&quot;img/uploads/four_archetypes.png&quot;&gt;&lt;img src:&quot;img/uploads/four_archetypes-300x142.png&quot; alt=&quot;&quot; title=&quot;four_archetypes&quot; width=&quot;300&quot; height=&quot;142&quot; class=&quot;size-medium wp-image-360&quot; /&gt;&lt;/a&gt;
+
+  &lt;p class=&quot;wp-caption-text&quot;&gt;
+    Quatro Arquétipos
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+  Fique tranquilo, com o exercício/uso dessa modelagem você intuitivamente identificará em qual categoria de archetype sua classe se encaixa.
+&lt;/p&gt;
+
+&lt;h2&gt;
+  &lt;a href=&quot;#refe&quot;&gt;Referências&lt;/a&gt;
+&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;http://edn.embarcadero.com/br/article/33736#9UMLemCores&quot; target=&quot;referências&quot;&gt;Análise e Desenho Orientados por Objetos (2/4)&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;http://www.step-10.com/SoftwareDesign/ModellingInColour/index.html&quot; target=&quot;referências&quot;&gt;Modeling in Color&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;http://www.hostfrontier.com/index.php/200811029/agile-methodology/domain-modelling-using-color-uml.html&quot; target=&quot;referências&quot;&gt;Domain Modelling using color UML&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;http://www.step-10.com/Books/JMCUBook.html&quot; target=&quot;referências&quot;&gt;Java Modeling in Color with UML&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- google_ad_section_end --&gt;
+</code></pre>
+    </section>
+<section>
+<div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'blog-gilbertoca-com',
+                disqus_identifier = 'Modelagem usando Uml em Cores [Análise de Requisitos] ',
+                disqus_url = window.location.href.split('/').splice(0,3).join("/")+'2010/05/2010-05-11-modelagem-analise-de-requisitos.html';
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+</article>
+	
+</section>
+<footer>
+	<p>
+		<a href="https://pages.github.com/">Hosted by GitHub Pages</a> -
+		<a href="http://jbake.org/">Generated with JBake</a> -
+		<a href="http://github.com/gilbertoca/gilbertoca.com">Source code</a>
+	</p>
+</footer>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2586578-2']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</body>
+</html>

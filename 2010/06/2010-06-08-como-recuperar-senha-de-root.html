@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+    <head>
+        <title></title>
+        <meta charset="utf-8"/>
+        <title>Como recuperar senha de root</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
+        <link rel="alternate"  type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
+        <link href="../../css/default.css" rel="stylesheet">
+        <link href="../../css/syntax.css" rel="stylesheet">
+        <link href="../../css/prettify.css" rel="stylesheet">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="../../js/html5shiv.min.js"></script>
+        <![endif]-->
+
+        <!-- Fav and touch icons -->
+        <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+        <link rel="shortcut icon" href="../../favicon.ico">
+    </head>
+    <body onload="prettyPrint()">
+	
+<header>
+	<hgroup>
+		<h1><a href="/">Vivendo e Aprendendo</a></h1>
+		<h2>Experiência prática na administração de Banco de Dados</h2>
+	</hgroup>
+</header>
+<nav>
+<menu>
+	<a href="../../index.html">Home</a>
+	<a href="../../archive.html">All posts</a>
+	<a href="../../about.html">About me</a>
+	<a href="../../feeds/posts/default.xml">Atom feed</a>
+	</menu>
+</nav>
+<section>
+<article>
+    <header>
+        <h1>Como recuperar senha de root</h1>
+        <p>by <em>Gilberto C. Andrade</em> on <strong>08 Junho 2010</strong></p>
+        <p>Tagged as: 
+            <a href="../../tags/console.html">console</a>,
+            <a href="../../tags/Geral.html">Geral</a>,
+            <a href="../../tags/Linux.html">Linux</a>,
+            <a href="../../tags/opensuse.html">opensuse</a>,
+            <a href="../../tags/Sistema Operacional.html">Sistema Operacional</a>,
+            <a href="../../tags/Unix.html">Unix</a>,
+        </p>
+    </header>
+    <section>
+	<!-- google_ad_section_start --><p>Não é difícil encontrar novos usuários linux que esquecem ou perdem a senha do <a href="http://br-linux.org/artigos/dicas_root.htm">usuário root</a> em um servidor ou estação de trabalho. Este post é uma tradução do seguinte HOW-TO: <a href="http://www.novell.com/support/search.do?cmd=displayKC&#038;docType=kc&#038;externalId=3003803&#038;sliceId=SAL_Public&#038;dialogID=17188705&#038;stateId=0%200%2017194530">Recover the Linux root password</a>, publicado pela novell. </p><p>Então vamos resolver o problema:</p>
+<ul>
+  <li>
+  <ol>
+    <li>inicie (Boot) o computador a partir do Cd de instalação;</li>
+  </ol></li>
+  <li>
+  <ol>
+    <li>selecione qualquer método de instalação ou a opção recuperação de sistema (Rescue System);</li>
+  </ol></li>
+  <li>
+  <ol>
+    <li>na primeira tela de instalação quando for selecionar a linguagem, pressione <strong>ctrl-alt-f2</strong> para abir um terminal virtual(virtual console);<br/>Nota: se você selecionou recuperação de sistema(Rescue System), selecione a linguagem de seu teclado e então o prompt para o Login de Recuperação(Rescue Login) aparecerá. Entre como root.</li>
+  </ol></li>
+  <li>
+  <ol>
+    <li>Digite <div class="wp_syntax"><br/> <table><br/><tr><br/> <td class="code"><br/> <pre class="bash" style="font-family:monospace;"><span style="color: #c20cb9; font-weight: bold;">fdisk</span> <span style="color: #660033;">-l</span></pre><br/> </td><br/></tr><br/> </table><br/></div></li>
+  </ol><p>para listar as partições. Localize a partição Linux raiz(/). </li> </p>
+  <ul>
+    <li>
+    <ol>
+      <li>Digite <div class="wp_syntax"><br/> <table><br/><tr><br/> <td class="code"><br/> <pre class="bash" style="font-family:monospace;"><span style="color: #c20cb9; font-weight: bold;">mount</span> <span style="color: #000000; font-weight: bold;">/</span>dev<span style="color: #000000; font-weight: bold;">/</span>sda4 <span style="color: #000000; font-weight: bold;">/</span>mnt</pre><br/> </td><br/></tr><br/> </table><br/></div></li>
+    </ol></li>
+  </ul>
+  <pre><code>(substitua sda4 com o nome do dispositivo - device - pela a partição Linux raiz identificada no passo anterior); &lt;/li&gt; 
+
+  * 6. Execute &lt;div class=&quot;wp_syntax&quot;&gt;
+      &lt;table&gt;
+        &lt;tr&gt;
+          &lt;td class=&quot;code&quot;&gt;
+            &lt;pre class=&quot;bash&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;span style=&quot;color: #c20cb9; font-weight: bold;&quot;&gt;mount&lt;/span&gt; &lt;span style=&quot;color: #660033;&quot;&gt;-o&lt;/span&gt; &lt;span style=&quot;color: #7a0874; font-weight: bold;&quot;&gt;bind&lt;/span&gt; &lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;dev &lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;mnt&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;dev&lt;/pre&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+
+    para tornar os arquivos do dispositivo disponíveis (isso é necessário para o acesso ao dispositivo urandom o qual pode ser usado pelo comando passwd abaixo); &lt;/li&gt; 
+
+      * 7. Entre &lt;div class=&quot;wp_syntax&quot;&gt;
+          &lt;table&gt;
+            &lt;tr&gt;
+              &lt;td class=&quot;code&quot;&gt;
+                &lt;pre class=&quot;bash&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;span style=&quot;color: #c20cb9; font-weight: bold;&quot;&gt;chroot&lt;/span&gt; &lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;mnt&lt;/pre&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/table&gt;
+        &lt;/div&gt;
+
+      * 8. Agora entre&lt;/p&gt; &lt;div class=&quot;wp_syntax&quot;&gt;
+          &lt;table&gt;
+            &lt;tr&gt;
+              &lt;td class=&quot;code&quot;&gt;
+                &lt;pre class=&quot;bash&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;span style=&quot;color: #c20cb9; font-weight: bold;&quot;&gt;passwd&lt;/span&gt; root&lt;/pre&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/table&gt;
+        &lt;/div&gt;
+
+        e digite a nova senha do root;&lt;/li&gt; 
+
+          * 9. Digite&lt;/p&gt; &lt;div class=&quot;wp_syntax&quot;&gt;
+              &lt;table&gt;
+                &lt;tr&gt;
+                  &lt;td class=&quot;code&quot;&gt;
+                    &lt;pre class=&quot;bash&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;span style=&quot;color: #7a0874; font-weight: bold;&quot;&gt;exit&lt;/span&gt;&lt;/pre&gt;
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+              &lt;/table&gt;
+            &lt;/div&gt;
+
+            para sair do ambiente chroot;&lt;/li&gt; 
+
+              * 10. Desmonte o sistema de arquivos com &lt;div class=&quot;wp_syntax&quot;&gt;
+                  &lt;table&gt;
+                    &lt;tr&gt;
+                      &lt;td class=&quot;code&quot;&gt;
+                        &lt;pre class=&quot;bash&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;span style=&quot;color: #c20cb9; font-weight: bold;&quot;&gt;umount&lt;/span&gt; &lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;mnt&lt;/pre&gt;
+                      &lt;/td&gt;
+                    &lt;/tr&gt;
+                  &lt;/table&gt;
+                &lt;/div&gt;
+
+              * 11. Reinicie o sistema.&lt;/ul&gt; 
+            &lt;!-- google_ad_section_end --&gt;
+</code></pre></li>
+</ul>
+    </section>
+<section>
+<div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'blog-gilbertoca-com',
+                disqus_identifier = 'Como recuperar senha de root',
+                disqus_url = window.location.href.split('/').splice(0,3).join("/")+'2010/06/2010-06-08-como-recuperar-senha-de-root.html';
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+</article>
+	
+</section>
+<footer>
+	<p>
+		<a href="https://pages.github.com/">Hosted by GitHub Pages</a> -
+		<a href="http://jbake.org/">Generated with JBake</a> -
+		<a href="http://github.com/gilbertoca/gilbertoca.com">Source code</a>
+	</p>
+</footer>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2586578-2']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</body>
+</html>

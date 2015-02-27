@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+    <head>
+        <title></title>
+        <meta charset="utf-8"/>
+        <title>Alterando o group principal/efetivo do usuário - newgrp e sg </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
+        <link rel="alternate"  type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
+        <link href="../../css/default.css" rel="stylesheet">
+        <link href="../../css/syntax.css" rel="stylesheet">
+        <link href="../../css/prettify.css" rel="stylesheet">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="../../js/html5shiv.min.js"></script>
+        <![endif]-->
+
+        <!-- Fav and touch icons -->
+        <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+        <link rel="shortcut icon" href="../../favicon.ico">
+    </head>
+    <body onload="prettyPrint()">
+	
+<header>
+	<hgroup>
+		<h1><a href="/">Vivendo e Aprendendo</a></h1>
+		<h2>Experiência prática na administração de Banco de Dados</h2>
+	</hgroup>
+</header>
+<nav>
+<menu>
+	<a href="../../index.html">Home</a>
+	<a href="../../archive.html">All posts</a>
+	<a href="../../about.html">About me</a>
+	<a href="../../feeds/posts/default.xml">Atom feed</a>
+	</menu>
+</nav>
+<section>
+<article>
+    <header>
+        <h1>Alterando o group principal/efetivo do usuário - newgrp e sg </h1>
+        <p>by <em>Gilberto C. Andrade</em> on <strong>22 Fevereiro 2010</strong></p>
+        <p>Tagged as: 
+            <a href="../../tags/Application Server.html">Application Server</a>,
+            <a href="../../tags/Database.html">Database</a>,
+            <a href="../../tags/Linux.html">Linux</a>,
+            <a href="../../tags/opensuse.html">opensuse</a>,
+            <a href="../../tags/Sistema Operacional.html">Sistema Operacional</a>,
+            <a href="../../tags/Unix.html">Unix</a>,
+        </p>
+    </header>
+    <section>
+	<!-- google_ad_section_start --><p>Para ter um ambiente semelhante ao de produção, neste caso para as aplicações que rodam em forms e para a instalação do banco, acabei por instalar o mesmo sistema operacional (SLES9), os mesmos softwares (OracleAs 10g, Oracle Database 10g e Oracle DevSuit 10g) no meu desktop. Com isso, toda vez que preciso usar qualquer um destes softwares eu tem que assumir o usuario de instalação dos mesmos que neste caso usei o default oracle. Veja a labuta que tem de fazer:</p>
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="bash" style="font-family:monospace;"><span style="color: #c20cb9; font-weight: bold;">xhost</span> +
+&nbsp;
+sux – oracle
+&nbsp;
+<span style="color: #7a0874; font-weight: bold;">source</span> .oracleDB <span style="color: #7a0874; font-weight: bold;">&#40;</span>ou oracleDS ou oracleAS<span style="color: #7a0874; font-weight: bold;">&#41;</span></pre>
+      </td>
+    </tr>
+  </table>
+</div><p>Bom dos scripts de mudança de ambiente não tenho como escapar mas para facilitar minha vida, acabei adicionando os grupos DBA e oinstall para minha lista de grupos. Dessa forma não preciso usar o su para mudança de usuario. Ai tem um porem, meu grupo padrão é users. Nessa, quando tento compilar um forms ou iniciar o servidor de aplicações, acontece vários erros de permissões. Isso porque meu grupo principal/efetivo, como ja disse, não é o oinstall nem DBA. Para contornar este problema usei o utilitário de sistema newgrp. O comando newgrp é usado para alterar o grupo efetivo do usuário para o grupo solicitado em uma nova sessão de login:</p>
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="bash" style="font-family:monospace;">$ <span style="color: #c20cb9; font-weight: bold;">groups</span> 
+&nbsp;
+<span style="color: #c20cb9; font-weight: bold;">users</span> disk uucp dialout audio video oinstall dba
+&nbsp;
+$ newgrp oinstall
+&nbsp;
+$ <span style="color: #c20cb9; font-weight: bold;">groups</span> 
+&nbsp;
+oinstall disk uucp dialout audio video dba <span style="color: #c20cb9; font-weight: bold;">users</span>
+&nbsp;
+$ <span style="color: #7a0874; font-weight: bold;">exit</span>
+&nbsp;
+$ <span style="color: #c20cb9; font-weight: bold;">groups</span>
+&nbsp;
+<span style="color: #c20cb9; font-weight: bold;">users</span> disk uucp dialout audio video oinstall dba</pre>
+      </td>
+    </tr>
+  </table>
+</div><p>Desta forma meu grupo principal torna-se oinstall, me possibilitando trabalhar com a compilação dos forms. Legal hein! O outro utilitario de sistema que podemos usar é o sg. O sg é mais usando que vc so precisa executar um comando, mas usando o grupo o qual vc necessita:</p>
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="bash" style="font-family:monospace;">sg oinstall <span style="color: #660033;">-c</span> <span style="color: #c20cb9; font-weight: bold;">rm</span> <span style="color: #000000; font-weight: bold;">*</span>.err</pre>
+      </td>
+    </tr>
+  </table>
+</div>
+<!-- google_ad_section_end -->
+    </section>
+<section>
+<div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'blog-gilbertoca-com',
+                disqus_identifier = 'Alterando o group principal/efetivo do usuário - newgrp e sg ',
+                disqus_url = window.location.href.split('/').splice(0,3).join("/")+'2010/02/2010-02-22-alterando-o-group-principalefetivo-do-usuario-newgrp-e-sg.html';
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+</article>
+	
+</section>
+<footer>
+	<p>
+		<a href="https://pages.github.com/">Hosted by GitHub Pages</a> -
+		<a href="http://jbake.org/">Generated with JBake</a> -
+		<a href="http://github.com/gilbertoca/gilbertoca.com">Source code</a>
+	</p>
+</footer>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2586578-2']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</body>
+</html>

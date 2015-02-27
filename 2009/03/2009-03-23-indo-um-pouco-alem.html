@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+    <head>
+        <title></title>
+        <meta charset="utf-8"/>
+        <title>Indo um pouco além &amp;#8230; </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
+        <link rel="alternate"  type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
+        <link href="../../css/default.css" rel="stylesheet">
+        <link href="../../css/syntax.css" rel="stylesheet">
+        <link href="../../css/prettify.css" rel="stylesheet">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="../../js/html5shiv.min.js"></script>
+        <![endif]-->
+
+        <!-- Fav and touch icons -->
+        <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+        <link rel="shortcut icon" href="../../favicon.ico">
+    </head>
+    <body onload="prettyPrint()">
+	
+<header>
+	<hgroup>
+		<h1><a href="/">Vivendo e Aprendendo</a></h1>
+		<h2>Experiência prática na administração de Banco de Dados</h2>
+	</hgroup>
+</header>
+<nav>
+<menu>
+	<a href="../../index.html">Home</a>
+	<a href="../../archive.html">All posts</a>
+	<a href="../../about.html">About me</a>
+	<a href="../../feeds/posts/default.xml">Atom feed</a>
+	</menu>
+</nav>
+<section>
+<article>
+    <header>
+        <h1>Indo um pouco além &#8230; </h1>
+        <p>by <em>Gilberto C. Andrade</em> on <strong>23 Março 2009</strong></p>
+        <p>Tagged as: 
+            <a href="../../tags/Java.html">Java</a>,
+        </p>
+    </header>
+    <section>
+	<!-- google_ad_section_start --><p>Estou aprendendo um pouco sobre programação orientada a objeto em java e com o pouco que li resolvi implementar uma pequena api que abstrai as regras de acesso e recuperação de dados &minus; acesso a banco de dados. Gosto muito dessa (<a href="http://orbroker.sourceforge.net/" target="_blank">OrBroker</a>) api de persistência com isso elaborei um contrato que acho o mínimo necessário para o acesso a dados, o qual poderá utilizar a api OrBroker - espero não somente essa api, mas outras (desacoplamento). </p><p>IService: Interface (contrato) geral para uso com o mescanimo de persistência OrBroker. Estabelece assinaturas de métodos essenciais para operações de acesso a banco de dados.<br/>Assinaturas: </p>
+<pre><span style="color: #000000;">   </span><span style="font-weight: bold;color: #000000;">public</span><span style="color: #000000;"> </span><span style="font-weight: bold;color: #0095ff;">Collection</span><span style="color: #000000;">&lt;T&gt; </span><span style="color: #000080;">getAll</span><span style="color: #000000;">();</span>
+<span style="color: #000000;">   </span><span style="font-weight: bold;color: #000000;">public</span><span style="color: #000000;"> </span><span style="color: #800000;">boolean</span><span style="color: #000000;"> </span><span style="color: #000080;">find</span><span style="color: #000000;">(T entity);</span>
+<span style="color: #000000;">   </span><span style="font-weight: bold;color: #000000;">public</span><span style="color: #000000;"> </span><span style="color: #800000;">void</span><span style="color: #000000;"> </span><span style="color: #000080;">insert</span><span style="color: #000000;">(T entity);</span>
+<span style="color: #000000;">   </span><span style="font-weight: bold;color: #000000;">public</span><span style="color: #000000;"> </span><span style="color: #800000;">void</span><span style="color: #000000;"> </span><span style="color: #000080;">update</span><span style="color: #000000;">(T entity);</span>
+<span style="color: #000000;">   </span><span style="font-weight: bold;color: #000000;">public</span><span style="color: #000000;"> </span><span style="color: #800000;">void</span><span style="color: #000000;"> </span><span style="color: #000080;">delete</span><span style="color: #000000;">(T entity);</span>
+<span style="color: #000000;">   </span><span style="font-weight: bold;color: #000000;">public</span><span style="color: #000000;"> </span><span style="font-weight: bold;color: #0095ff;">Collection</span><span style="color: #000000;">&lt;T&gt; </span><span style="color: #000080;">findByNamedQuery</span><span style="color: #000000;">(</span><span style="font-weight: bold;color: #0095ff;">String</span><span style="color: #000000;"> queryName);</span>
+<span style="color: #000000;">   </span><span style="font-weight: bold;color: #000000;">public</span><span style="color: #000000;"> </span><span style="font-weight: bold;color: #0095ff;">Collection</span><span style="color: #000000;">&lt;T&gt; </span><span style="color: #000080;">findLike</span><span style="color: #000000;">(</span><span style="font-weight: bold;color: #0095ff;">String</span><span style="color: #000000;"> likeColumn, </span><span style="font-weight: bold;color: #0095ff;">String</span><span style="color: #000000;"> likeValue);</span>
+</pre><p>Vocês podem notar o uso do inglês para nomear classes, metodos e até atributos. Acho isso um vício ou uma maneira de reduzir os nomes, pois em português ficam enormes. Outra coisa, alguns podem comentar que o nome certo seria sufixar ou prefixar tal interface com o termo DAO, para expressar um padrão de projeto muito conhecido e utilizado para, também, abstrair essas atividades de banco de dados. Acontece que essa minha pequena implementação não exigirá tamanha desacoplagem e acho também que um programa que grava e ler dados, não faz somente isso, faz isso e um pouco mais - regras de negócio. Assim, optei por, inicialmente, colocar as assinaturas necessárias ao acesso a dados e deixar para uma outra interface acrescentar as assinaturas de contrato específicas: </p>
+<pre><span style="font-weight: bold;color: #000000;">public</span><span style="color: #000000;"> </span><span style="font-weight: bold;color: #000000;">interface</span><span style="color: #000000;"> ICategoriaService </span><span style="font-weight: bold;color: #000000;">extends</span><span style="color: #000000;"> IService&lt;categoria, integer&gt; {</span>
+<span style="color: #000000;">	</span><span style="font-weight: bold;color: #000000;">public</span><span style="color: #000000;"> Categoria </span><span style="color: #000080;">find</span><span style="color: #000000;">(</span><span style="font-weight: bold;color: #0095ff;">Integer</span><span style="color: #000000;"> primaryKey);</span>
+<span style="color: #000000;">	</span><span style="font-weight: bold;color: #000000;">public</span><span style="color: #000000;"> </span><span style="color: #800000;">void</span><span style="color: #000000;"> </span><span style="color: #000080;">Classificar</span><span style="color: #000000;">();</span>
+<span style="color: #000000;">	}</span>
+</pre><p>Na implementação ocorre um fato interessante quando a entidade sendo trabalhada não exigir contratos além dos já fornecidos. Notei essa característica quando da implementação dos métodos por uma classe a ser utilizada como base de implementação, ou seja, as classes mais específicas &minus; a exemplo da ICategoriaService &minus; herdarão dessa classe base e implementarão seus contratos específicos. Um exemplo de uso dessa classe base: </p>
+<pre><span style="font-weight: bold;color: #000000;">public</span><span style="color: #000000;"> </span><span style="font-weight: bold;color: #000000;">class</span><span style="color: #000000;"> CategoriaBaseServiceTest {</span>
+<span style="color: #000000;">	</span><span style="font-weight: bold;color: #000000;">private</span><span style="color: #000000;"> BaseService&lt;categoria, integer&gt; cS = </span><span style="font-weight: bold;color: #000000;">new</span><span style="color: #000000;"> BaseService&lt;categoria,integer&gt;(Categoria.</span><span style="color: #000080;">class</span><span style="color: #000000;">,Constants.</span><span style="color: #000080;">ORBROKER_INVENTARIO</span><span style="color: #000000;">);	</span>
+<span style="color: #000000;">	</span>
+<span style="color: #000000;">	@Test</span>
+<span style="color: #000000;">	</span><span style="font-weight: bold;color: #000000;">public</span><span style="color: #000000;"> </span><span style="color: #800000;">void</span><span style="color: #000000;"> </span><span style="color: #000080;">testGetAll</span><span style="color: #000000;">() {</span>
+<span style="color: #000000;">	</span><span style="font-weight: bold;color: #0095ff;">Collection</span><span style="color: #000000;">&lt;categoria&gt; result = cS.</span><span style="color: #000080;">getAll</span><span style="color: #000000;">();</span>
+<span style="color: #000000;">		</span><span style="font-weight: bold;color: #0095ff;">System</span><span style="color: #000000;">.</span><span style="color: #000080;">out</span><span style="color: #000000;">.</span><span style="color: #000080;">println</span><span style="color: #000000;">(result);</span>
+<span style="color: #000000;">		</span><span style="color: #000080;">assertFalse</span><span style="color: #000000;">(result.</span><span style="color: #000080;">isEmpty</span><span style="color: #000000;">());</span>
+<span style="color: #000000;">	}</span>
+<span style="color: #000000;">}</span>
+</pre><p>Então ficou da seguinte maneira essa pequena api:<br/>&lt;/&gt;</p>
+<pre><span style="color: #000000;">Interface	Implementação</span>
+<span style="color: #000000;">IService ----------&gt; BaseService</span>
+<span style="color: #000000;">:                     :</span>
+<span style="color: #000000;">:                     :</span>
+<span style="color: #000000;">ICategoriaService -&gt; CategoriaService	</span>
+</pre>
+<!-- google_ad_section_end -->
+    </section>
+<section>
+<div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'blog-gilbertoca-com',
+                disqus_identifier = 'Indo um pouco além &#8230; ',
+                disqus_url = window.location.href.split('/').splice(0,3).join("/")+'2009/03/2009-03-23-indo-um-pouco-alem.html';
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+</article>
+	
+</section>
+<footer>
+	<p>
+		<a href="https://pages.github.com/">Hosted by GitHub Pages</a> -
+		<a href="http://jbake.org/">Generated with JBake</a> -
+		<a href="http://github.com/gilbertoca/gilbertoca.com">Source code</a>
+	</p>
+</footer>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2586578-2']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</body>
+</html>

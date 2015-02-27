@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+    <head>
+        <title></title>
+        <meta charset="utf-8"/>
+        <title>Alterne entre versões Java facilmente [Netbeans 6.*] </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
+        <link rel="alternate"  type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
+        <link href="../../css/default.css" rel="stylesheet">
+        <link href="../../css/syntax.css" rel="stylesheet">
+        <link href="../../css/prettify.css" rel="stylesheet">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="../../js/html5shiv.min.js"></script>
+        <![endif]-->
+
+        <!-- Fav and touch icons -->
+        <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+        <link rel="shortcut icon" href="../../favicon.ico">
+    </head>
+    <body onload="prettyPrint()">
+	
+<header>
+	<hgroup>
+		<h1><a href="/">Vivendo e Aprendendo</a></h1>
+		<h2>Experiência prática na administração de Banco de Dados</h2>
+	</hgroup>
+</header>
+<nav>
+<menu>
+	<a href="../../index.html">Home</a>
+	<a href="../../archive.html">All posts</a>
+	<a href="../../about.html">About me</a>
+	<a href="../../feeds/posts/default.xml">Atom feed</a>
+	</menu>
+</nav>
+<section>
+<article>
+    <header>
+        <h1>Alterne entre versões Java facilmente [Netbeans 6.*] </h1>
+        <p>by <em>Gilberto C. Andrade</em> on <strong>21 Julho 2010</strong></p>
+        <p>Tagged as: 
+            <a href="../../tags/desenvolvimento.html">desenvolvimento</a>,
+            <a href="../../tags/Geral.html">Geral</a>,
+            <a href="../../tags/Java.html">Java</a>,
+            <a href="../../tags/Linux.html">Linux</a>,
+            <a href="../../tags/maven.html">maven</a>,
+            <a href="../../tags/opensuse.html">opensuse</a>,
+            <a href="../../tags/Sistema Operacional.html">Sistema Operacional</a>,
+        </p>
+    </header>
+    <section>
+	<!-- google_ad_section_start --><p>Outro dia escrevi como <a href="http://blog.gilbertoca.com/?p=383">alterner entre versões Java facilmente</a> utilizando o utilitário de sistema operacional <a href="http://man.he.net/man8/update-alternatives">update-alternatives</a>. Aquele post tem uma perspectiva do lado do servidor onde estão instalados servidores de aplicação java ou mesmo aplicativos e o administrador/desenvolvedor precisa testar como estes artefatos mencionados se comportariam em cada versão. </p><p>Hoje vou relatar outra maneira de alternar entre versões java em perspectiva do lado do desenvolvedor. Aqui na secretaria, podemos escolher entre <a href="http://www.netbeans.org">Netbeans</a> e <a href="http://www.eclipse.org">Eclipse</a> como ambientes de desenvolvimento, desde que o projeto seja gerenciado pela ferramenta de construção <a href="http://maven.apache.org">Maven</a>. </p><p>Minha escolha, assim como de mais alguns colegas foi o <a href="http://netbeans.org/index.html">Netbeans</a> 6.8. Vejamos então como configurar o IDE Netbeans para facilitar a traca de versões java para compilar ou rodar aplicativos.<br/>Tanto para configurar ou mesmo alternar a versão do java utilizado pode-se utilizar o seguinte caminho:<br/>Project&#8217;s properties-&gt;Build:compile .<br/>A partir deste diálogo, você poderá alternar de versão através “Java Plataform” ou gerenciar/adicionar/remover versões através da opção “Manage Java Plataforms”<br/><a href="http://blog.gilbertoca.com/img/uploads/compile_option.png">&lt;img src=&ldquo;img/uploads/compile_option-300x225.png&rdquo; alt:&quot;&ldquo; title=&rdquo;compile_option&ldquo; width=&rdquo;300&ldquo; height=&rdquo;225&ldquo; class=&rdquo;alignleft size-medium wp-image-436&quot; /&gt;</a><br/>Lembrando que antes disso precisamos instalar as versões que desejamos utilizar.</p>
+<!-- google_ad_section_end -->
+    </section>
+<section>
+<div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'blog-gilbertoca-com',
+                disqus_identifier = 'Alterne entre versões Java facilmente [Netbeans 6.*] ',
+                disqus_url = window.location.href.split('/').splice(0,3).join("/")+'2010/07/2010-07-21-alterne-entre-versoes-java-facilmente-netbeans-6.html';
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+</article>
+	
+</section>
+<footer>
+	<p>
+		<a href="https://pages.github.com/">Hosted by GitHub Pages</a> -
+		<a href="http://jbake.org/">Generated with JBake</a> -
+		<a href="http://github.com/gilbertoca/gilbertoca.com">Source code</a>
+	</p>
+</footer>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2586578-2']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</body>
+</html>

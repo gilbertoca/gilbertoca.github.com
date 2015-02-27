@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+    <head>
+        <title></title>
+        <meta charset="utf-8"/>
+        <title>Debugando com Maven Jetty Plugin no Netbeans</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
+        <link rel="alternate"  type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
+        <link href="../../css/default.css" rel="stylesheet">
+        <link href="../../css/syntax.css" rel="stylesheet">
+        <link href="../../css/prettify.css" rel="stylesheet">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="../../js/html5shiv.min.js"></script>
+        <![endif]-->
+
+        <!-- Fav and touch icons -->
+        <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+        <link rel="shortcut icon" href="../../favicon.ico">
+    </head>
+    <body onload="prettyPrint()">
+	
+<header>
+	<hgroup>
+		<h1><a href="/">Vivendo e Aprendendo</a></h1>
+		<h2>Experiência prática na administração de Banco de Dados</h2>
+	</hgroup>
+</header>
+<nav>
+<menu>
+	<a href="../../index.html">Home</a>
+	<a href="../../archive.html">All posts</a>
+	<a href="../../about.html">About me</a>
+	<a href="../../feeds/posts/default.xml">Atom feed</a>
+	</menu>
+</nav>
+<section>
+<article>
+    <header>
+        <h1>Debugando com Maven Jetty Plugin no Netbeans</h1>
+        <p>by <em>Gilberto C. Andrade</em> on <strong>13 Maio 2011</strong></p>
+        <p>Tagged as: 
+            <a href="../../tags/Apache Click.html">Apache Click</a>,
+            <a href="../../tags/Apache Wicket.html">Apache Wicket</a>,
+            <a href="../../tags/Application Server.html">Application Server</a>,
+            <a href="../../tags/Debugging.html">Debugging</a>,
+            <a href="../../tags/Depurar.html">Depurar</a>,
+            <a href="../../tags/desenvolvimento.html">desenvolvimento</a>,
+            <a href="../../tags/IDE.html">IDE</a>,
+            <a href="../../tags/Java.html">Java</a>,
+            <a href="../../tags/JSF.html">JSF</a>,
+            <a href="../../tags/maven.html">maven</a>,
+            <a href="../../tags/Metodologia Ágil.html">Metodologia Ágil</a>,
+            <a href="../../tags/NetBeans.html">NetBeans</a>,
+        </p>
+    </header>
+    <section>
+	<!-- google_ad_section_start --><p><a href="http://www.eclipse.org/jetty/">Jetty </a>é um servidor web excelente. É rápido para iniciar o que o torna muito útil durante o desenvolvimento. A <a href="http://maven.apache.org/what-is-maven.html">ferramente de construção Maven</a> possui um <a href="http://wiki.eclipse.org/Jetty/Feature/Jetty_Maven_Plugin">plugin Jetty</a> que podemos usar em nossos projetos de aplicação Web que utilizam Maven. Desta forma, podemos usar o Jetty para testar nossos arquivos HTML/JSP/JSF/Wicket/Click/etc. Podemos editar o arquivo JSP/HTML e atualizar nosso navegador para ver o resultado imediatamente. Podemos até mesmo compilar um arquivo de classe Java e o servidor Jetty irá reiniciar para que possamos testar o resultado no nosso navegador.<br/>Vejamos como configurar o <a href="http://www.eclipse.org/jetty/">Jetty</a>, utilizando como IDE o <a href="http://www.netbeans.org">Netbeans 6.9</a> (deve funcionar para outras versões também!), para executar e principalmente para depurar (Debugging) a aplicação:<br/><strong>requisito: ser uma aplicação web gerenciada pelo Maven.</strong> </p>
+<ol>
+  <li>Primeiro vamos habilitar a função Compilar ao Salvar (<a href="http://wiki.netbeans.org/FaqCompileOnSave#Using_Compile_on_Save_in_Maven_Projects">Compile On Save</a>) em nosso projeto. Esta função vem habilitada somente para execução de testes em projetos gerenciados pelo Maven, aqui estamos ajustando para execução do fonte também:<br/><a href="http://blog.gilbertoca.com/img/uploads/CompileOnSave.png">&lt;img src=&ldquo;img/uploads/CompileOnSave.png&rdquo; alt:&quot;&ldquo; title=&rdquo;CompileOnSave&ldquo; width=&rdquo;804&ldquo; height=&rdquo;563&ldquo; class=&rdquo;alignright size-full wp-image-701&quot; /&gt;</a></li>
+  <li>Adicione o <a href="http://wiki.eclipse.org/Jetty/Feature/Jetty_Maven_Plugin">plugin jetty</a> para o maven;<br/><div class="wp_syntax"><br/> <table><br/><tr><br/> <td class="code"><br/> <pre class="xml" style="font-family:monospace;"> <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;plugin<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br/> <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;groupId<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>org.mortbay.jetty<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/groupId<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br/> <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;artifactId<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>jetty-maven-plugin<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/artifactId<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br/> <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;version<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>7.0.1.v20091125<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/version<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br/> <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;configuration<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br/> <span style="color: #808080; font-style: italic;">&lt;!&ndash;reload&gt;manual&lt;/reload&ndash;&gt;</span><br/> <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;scanIntervalSeconds<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>10<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/scanIntervalSeconds<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br/> <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;stopKey<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>foo<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/stopKey<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br/> <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;stopPort<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>9966<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/stopPort<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br/> <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/configuration<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br/> <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/plugin<span style="color: #000000; font-weight: bold;">&gt;</span></span></span></pre><br/> </td><br/></tr><br/> </table><br/></div></li>
+  <li><p>Abra a janela de propriedades do projeto Maven e selecione Ações(Actions) da lista de categorias (Categories). Encontre a ação Executar (Run) e altere o valor do campo Metas de Execução (Execute Goals) para <bold>jetty:stop jetty:run</bold>;<br/><a href="http://blog.gilbertoca.com/img/uploads/ActionRunExecuteGoals.png">&lt;img src=&ldquo;img/uploads/ActionRunExecuteGoals.png&rdquo; alt:&quot;&ldquo; title=&rdquo;ActionRunExecuteGoals&ldquo; width=&rdquo;752&ldquo; height=&rdquo;580&ldquo; class=&rdquo;alignright size-full wp-image-687&quot; /&gt;</a> </p></li>
+  <li><p>Então, faça o mesmo para ação Depurar Projeto(Debug project)<br/>e adicione as seguintes propriedades:</p> <div class="wp_syntax"><br/> <table><br/> <tr><br/> <td class="code"><br/> <pre class="vim" style="font-family:monospace;">&nbsp;<br/>jpda<span style="color: #000000;">.</span>listen=maven<br/>netbeans<span style="color: #000000;">.</span>deploy<span style="color: #000000;">.</span>debugmode=true</pre><br/> </td><br/> </tr><br/> </table><br/></div></p><p><a href="http://blog.gilbertoca.com/img/uploads/ActionDebugExecuteGoals.png">&lt;img src=&ldquo;img/uploads/ActionDebugExecuteGoals.png&rdquo; alt:&quot;&ldquo; title=&rdquo;ActionDebugExecuteGoals&ldquo; width=&rdquo;760&ldquo; height=&rdquo;589&ldquo; class=&rdquo;alignright size-full wp-image-689&quot; /&gt;</a> </li> </ol> </p><p>O legal é poder depurar a aplicação web.<br/>Pronto!! <img src="http://blog.gilbertoca.com/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" /> </p><p>Referências:</p>
+  <ul>
+    <li><a href="https://cwiki.apache.org/WICKET/maven-jetty-plugin.html">Using the Maven Jetty plugin - Wicket</a></li>
+    <li><a href="http://mrhaki.blogspot.com/2009/02/use-jetty-to-run-maven-web-applications.html">Use Jetty to run Maven web applications in NetBeans</a></li>
+  </ul>
+  <!-- google_ad_section_end --></li>
+</ol>
+    </section>
+<section>
+<div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'blog-gilbertoca-com',
+                disqus_identifier = 'Debugando com Maven Jetty Plugin no Netbeans',
+                disqus_url = window.location.href.split('/').splice(0,3).join("/")+'2011/05/2011-05-13-use-jetty-para-executar-aplicacoes-web-maven-no-netbeans.html';
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+</article>
+	
+</section>
+<footer>
+	<p>
+		<a href="https://pages.github.com/">Hosted by GitHub Pages</a> -
+		<a href="http://jbake.org/">Generated with JBake</a> -
+		<a href="http://github.com/gilbertoca/gilbertoca.com">Source code</a>
+	</p>
+</footer>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2586578-2']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</body>
+</html>

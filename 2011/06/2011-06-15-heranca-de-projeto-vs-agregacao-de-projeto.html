@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+    <head>
+        <title></title>
+        <meta charset="utf-8"/>
+        <title>Herança de Projeto vs Agregação de Projeto</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
+        <link rel="alternate"  type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
+        <link href="../../css/default.css" rel="stylesheet">
+        <link href="../../css/syntax.css" rel="stylesheet">
+        <link href="../../css/prettify.css" rel="stylesheet">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="../../js/html5shiv.min.js"></script>
+        <![endif]-->
+
+        <!-- Fav and touch icons -->
+        <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+        <link rel="shortcut icon" href="../../favicon.ico">
+    </head>
+    <body onload="prettyPrint()">
+	
+<header>
+	<hgroup>
+		<h1><a href="/">Vivendo e Aprendendo</a></h1>
+		<h2>Experiência prática na administração de Banco de Dados</h2>
+	</hgroup>
+</header>
+<nav>
+<menu>
+	<a href="../../index.html">Home</a>
+	<a href="../../archive.html">All posts</a>
+	<a href="../../about.html">About me</a>
+	<a href="../../feeds/posts/default.xml">Atom feed</a>
+	</menu>
+</nav>
+<section>
+<article>
+    <header>
+        <h1>Herança de Projeto vs Agregação de Projeto</h1>
+        <p>by <em>Gilberto C. Andrade</em> on <strong>15 Junho 2011</strong></p>
+        <p>Tagged as: 
+            <a href="../../tags/configuração.html">configuração</a>,
+            <a href="../../tags/Java.html">Java</a>,
+            <a href="../../tags/maven.html">maven</a>,
+        </p>
+    </header>
+    <section>
+	<!-- google_ad_section_start --><p><strong><a href="http://maven.apache.org/pom.html#Inheritance">Requisito</a>:</strong> The packaging type required to be pom for parent and aggregation (multi-module) projects.<br/>**Tradução: **para que você possa criar ou transformar um projeto em um que seja pai (PARENT) ou agregação (AGGREGATION), necessita-se definir seu empacotamento (PACKING) para pom, <a href="http://code.google.com/p/construtor/source/browse/trunk/park-samples/pom.xml">assim</a>:</p><p><div class="wp_syntax"><br/> <table><br/> <tr><br/> <td class="code"><br/> <pre class="xml" style="font-family:monospace;"> <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;modelVersion<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>4.0.0<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/modelVersion<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br/> <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;groupId<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>com.google.constructor<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/groupId<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br/> <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;artifactId<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>park-samples<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/artifactId<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br/> <span style="color: #808080; font-style: italic;">&lt;!&ndash;The packaging type required to be pom for parent and aggregation (multi-module) projects.&ndash;&gt;</span><br/> <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;packaging<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>pom<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/packaging<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br/> <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;version<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>1.0-SNAPSHOT<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/version<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br/> <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;name<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>Apache Click Park Samples Project<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/name<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br/> <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;url<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><a href="http://code.google.com/p/construtor">http://code.google.com/p/construtor</a><span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/url<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br/> <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;description<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br/> A parent POM used for all the projects<br/> <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/description<span style="color: #000000; font-weight: bold;">&gt;</span></span></span></pre><br/> </td><br/> </tr><br/> </table><br/></div></p> </p><p>Criei um <a href="http://code.google.com/p/construtor/">projeto hospedado no google</a> para armazenar códigos java - base de aprendizado na linguagem java, especialmente nas especificações Servlet e JPA.<br/>Entre estes códigos, em especial, quero destacar o park-samples. <a href="http://code.google.com/p/construtor/source/browse/trunk/park-samples/README.txt">Este é estruturado utilizando tanto herança quanto agregação</a>:</p><p><div class="wp_syntax"><br/> <table><br/> <tr><br/> <td class="code"><br/> <pre class="bash" style="font-family:monospace;">gilberto<span style="color: #000000; font-weight: bold;">@</span>dhcppc0:~<span style="color: #000000; font-weight: bold;">/</span>dev<span style="color: #000000; font-weight: bold;">/</span>netbeans-config<span style="color: #000000; font-weight: bold;">/</span>park-samples<span style="color: #000000; font-weight: bold;">&gt;</span> <span style="color: #c20cb9; font-weight: bold;">tree</span> <span style="color: #660033;">&ndash;dirsfirst</span> <span style="color: #660033;">-L</span> <span style="color: #000000;">3</span><br/>.<br/><span style="color: #000000; font-weight: bold;">|</span>&ndash; docs<br/><span style="color: #000000; font-weight: bold;">|</span> <span style="color: #000000; font-weight: bold;">|</span>&ndash; evolus.pencil<br/><span style="color: #000000; font-weight: bold;">|</span> <span style="color: #000000; font-weight: bold;">|</span> <span style="color: #000000; font-weight: bold;">|</span>&ndash; EditLegalEntity.ep<br/><span style="color: #000000; font-weight: bold;">|</span> <span style="color: #000000; font-weight: bold;">|</span> <span style="color: #000000; font-weight: bold;"><code>&lt;/span&gt;-- EditNaturalPerson.ep
+&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;   &lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;-- power.architect
+&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;   &lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;   &lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;-- park.architect
+&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;   &lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;   &lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;</code></span>&ndash; park-er.pdf<br/><span style="color: #000000; font-weight: bold;">|</span> <span style="color: #000000; font-weight: bold;">|</span>&ndash; 03000001.png<br/><span style="color: #000000; font-weight: bold;">|</span> <span style="color: #000000; font-weight: bold;"><code>&lt;/span&gt;-- 03000003_en.png
+&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;-- park-cayenne
+&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;   &lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;-- src
+&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;   &lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;   &lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;-- main
+&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;   &lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;   &lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;</code></span>&ndash; <span style="color: #7a0874; font-weight: bold;">test</span><br/><span style="color: #000000; font-weight: bold;">|</span> <span style="color: #000000; font-weight: bold;">|</span>&ndash; nbactions.xml<br/><span style="color: #000000; font-weight: bold;">|</span> <span style="color: #000000; font-weight: bold;">|</span>&ndash; nb-configuration.xml<br/><span style="color: #000000; font-weight: bold;">|</span> <span style="color: #000000; font-weight: bold;"><code>&lt;/span&gt;-- pom.xml
+&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;-- park-jpa
+&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;   &lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;-- src
+&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;   &lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;   &lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;-- main
+&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;   &lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;   &lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;</code></span>&ndash; <span style="color: #7a0874; font-weight: bold;">test</span><br/><span style="color: #000000; font-weight: bold;">|</span> <span style="color: #000000; font-weight: bold;">|</span>&ndash; LICENSE.txt<br/><span style="color: #000000; font-weight: bold;">|</span> <span style="color: #000000; font-weight: bold;">|</span>&ndash; nbactions.xml<br/><span style="color: #000000; font-weight: bold;">|</span> <span style="color: #000000; font-weight: bold;">|</span>&ndash; nb-configuration.xml<br/><span style="color: #000000; font-weight: bold;">|</span> <span style="color: #000000; font-weight: bold;">|</span>&ndash; pom.xml<br/><span style="color: #000000; font-weight: bold;">|</span> <span style="color: #000000; font-weight: bold;"><code>&lt;/span&gt;-- README.txt
+&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;-- park-multi-module
+&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;   &lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;-- core
+&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;   &lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;   &lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;-- src
+&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;   &lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;   &lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;-- nbactions.xml
+&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;   &lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;   &lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;-- nb-configuration.xml
+&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;   &lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;   &lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;-- pom.xml
+&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;   &lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;   &lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;</code></span>&ndash; README.txt<br/><span style="color: #000000; font-weight: bold;">|</span> <span style="color: #000000; font-weight: bold;">|</span>&ndash; web<br/><span style="color: #000000; font-weight: bold;">|</span> <span style="color: #000000; font-weight: bold;">|</span> <span style="color: #000000; font-weight: bold;">|</span>&ndash; src<br/><span style="color: #000000; font-weight: bold;">|</span> <span style="color: #000000; font-weight: bold;">|</span> <span style="color: #000000; font-weight: bold;"><code>&lt;/span&gt;-- pom.xml
+&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;   &lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;-- LICENSE.txt
+&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;   &lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;-- pom.xml
+&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;|&lt;/span&gt;   &lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;</code></span>&ndash; README.txt<br/><span style="color: #000000; font-weight: bold;">|</span>&ndash; LICENSE.txt<br/><span style="color: #000000; font-weight: bold;">|</span>&ndash; pom.xml<br/><span style="color: #000000; font-weight: bold;">`</span>&ndash; README.txt</pre><br/> </td><br/> </tr><br/> </table><br/></div></p> </p><p>Veja que marquei o pom do diretório raiz como pai(PARENT), mudando o tipo de empacotamento. Mas você pode perguntar: o que difere um do outro?<br/>Bom, primeiro devo dizer que usamos herança em arquivos maven para compartilhar configurações, dependências e até recursos - dê uma boa olhada <a href="http://code.google.com/p/construtor/source/browse/trunk/park-samples/pom.xml">neste pom</a> e você verá ajustes que teria de repetir em praticamente todos os sub-projetos. Já a agregação, usamos para agrupar (óbvio né! :)) projetos que precisam ser construídos juntos - quando executar mvn clean (ou outro comando) no pai, ocorrerá o mesmo nos filhos, tipo efeito cascata. </p><p>Para a herança funcionar precisamos adicionar uma seção (tag parent) no pom do sub-projeto:</p><p><div class="wp_syntax"><br/> <table><br/> <tr><br/> <td class="code"><br/> <pre class="xml" style="font-family:monospace;"> <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;modelVersion<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>4.0.0<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/modelVersion<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br/> <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;parent<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br/> <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;groupId<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>com.google.constructor<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/groupId<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br/> <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;artifactId<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>park-samples<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/artifactId<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br/> <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;version<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>1.0-SNAPSHOT<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/version<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br/> <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/parent<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br/> <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;artifactId<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>park-jpa<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/artifactId<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br/> <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;packaging<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>war<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/packaging<span style="color: #000000; font-weight: bold;">&gt;</span></span></span><br/> <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;name<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>Parking Control[JPA]<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/name<span style="color: #000000; font-weight: bold;">&gt;</span></span></span></pre><br/> </td><br/> </tr><br/> </table><br/></div></p> </p><p>Quando quero agregar projetos, tenho que configurar **o projeto que será o agregador **através da seção módulos (modules):</p>
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="xml" style="font-family:monospace;">    <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;parent<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+        <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;groupId<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>com.google.constructor<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/groupId<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+        <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;artifactId<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>park-samples<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/artifactId<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+        <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;version<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>1.0-SNAPSHOT<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/version<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+    <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/parent<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>    
+    <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;artifactId<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>park-multi-module<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/artifactId<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+    <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;packaging<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>pom<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/packaging<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+    <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;name<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>Parking Control[MULTI-MODULE]<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/name<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+    <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;description<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+        A mult-module project using maven aggregation
+    <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/description<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+&nbsp;
+...
+&nbsp;
+   <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;modules<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+        <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;module<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>core<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/module<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+        <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;module<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>web<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/module<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+    <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/modules<span style="color: #000000; font-weight: bold;">&gt;</span></span></span></pre>
+      </td>
+    </tr>
+  </table>
+</div><p>Repare que neste sub-projeto usei os dois conceitos: herança (herdando as configurações do pai) e agregação (este pom agrupa dois outros projetos). </p><p>Para os sub-projetos do projeto park-multi-module, poderia adicionar a seção parent como fiz com os outros(apontando para park-samples), mas perderia o benefício da herança. Então o fiz apontando para o próprio park-multi-module, pois este já herda do raiz. Legal, né! <img src="http://blog.gilbertoca.com/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" /></p>
+<!-- google_ad_section_end -->
+    </section>
+<section>
+<div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'blog-gilbertoca-com',
+                disqus_identifier = 'Herança de Projeto vs Agregação de Projeto',
+                disqus_url = window.location.href.split('/').splice(0,3).join("/")+'2011/06/2011-06-15-heranca-de-projeto-vs-agregacao-de-projeto.html';
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+</article>
+	
+</section>
+<footer>
+	<p>
+		<a href="https://pages.github.com/">Hosted by GitHub Pages</a> -
+		<a href="http://jbake.org/">Generated with JBake</a> -
+		<a href="http://github.com/gilbertoca/gilbertoca.com">Source code</a>
+	</p>
+</footer>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2586578-2']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</body>
+</html>

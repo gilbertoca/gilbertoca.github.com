@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+    <head>
+        <title></title>
+        <meta charset="utf-8"/>
+        <title>Oracle JDK8 no OpenSUSE</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
+        <link rel="alternate"  type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
+        <link href="../../css/default.css" rel="stylesheet">
+        <link href="../../css/syntax.css" rel="stylesheet">
+        <link href="../../css/prettify.css" rel="stylesheet">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="../../js/html5shiv.min.js"></script>
+        <![endif]-->
+
+        <!-- Fav and touch icons -->
+        <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+        <link rel="shortcut icon" href="../../favicon.ico">
+    </head>
+    <body onload="prettyPrint()">
+	
+<header>
+	<hgroup>
+		<h1><a href="/">Vivendo e Aprendendo</a></h1>
+		<h2>Experiência prática na administração de Banco de Dados</h2>
+	</hgroup>
+</header>
+<nav>
+<menu>
+	<a href="../../index.html">Home</a>
+	<a href="../../archive.html">All posts</a>
+	<a href="../../about.html">About me</a>
+	<a href="../../feeds/posts/default.xml">Atom feed</a>
+	</menu>
+</nav>
+<section>
+<article>
+    <header>
+        <h1>Oracle JDK8 no OpenSUSE</h1>
+        <p>by <em>Gilberto C. Andrade</em> on <strong>02 Julho 2014</strong></p>
+        <p>Tagged as: 
+            <a href="../../tags/Geral.html">Geral</a>,
+            <a href="../../tags/Java.html">Java</a>,
+            <a href="../../tags/Linux.html">Linux</a>,
+            <a href="../../tags/Sistema Operacional.html">Sistema Operacional</a>,
+            <a href="../../tags/Unix.html">Unix</a>,
+        </p>
+    </header>
+    <section>
+	<!-- google_ad_section_start --><p>Esta forma de instalação é mais resumida que a do <a href="http://blog.gilbertoca.com/?p:971" title="Instale Oracle JDK7 no openSUSE" target="_blank">post antigo</a> e utiliza o formato comprimido (tar.gz). </p><p>Realize o download a partir deste local: &lt;a href=&ldquo;<a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</a>&rdquo; title:&ldquo;Java SE Development Kit 8 Downloads&rdquo; target=&quot;_blank&quot;&gt;Java SE Development Kit 8 Downloads</a>, em um diretório de sua escolha - escolhi: Downloads. </p><p>Depois como super usuário (root) pelo &lt;a href=&ldquo;<a href="http://kde.org/applications/system/konsole/">http://kde.org/applications/system/konsole/</a>&rdquo; title:&ldquo;Kconsole&rdquo; target=&quot;_blank&quot;&gt;Kconsole</a> faça uso da seguinte sequência:</p>
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="bash" style="font-family:monospace;">gilberto.andrade<span style="color: #000000; font-weight: bold;">@</span>A37710:~$ <span style="color: #c20cb9; font-weight: bold;">su</span> -
+Senha:
+A37710:~ 
+A37710:~ <span style="color: #7a0874; font-weight: bold;">cd</span> <span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>java
+A37710:~ <span style="color: #c20cb9; font-weight: bold;">tar</span> xvf ~<span style="color: #000000; font-weight: bold;">/</span>Downloads<span style="color: #000000; font-weight: bold;">/</span>jdk-8u5-linux-x64.tar.gz
+A37710:~ <span style="color: #c20cb9; font-weight: bold;">chown</span> <span style="color: #660033;">-R</span> root:root jdk1.8.0_05
+A37710:~ <span style="color: #c20cb9; font-weight: bold;">rm</span> latest
+A37710:~ <span style="color: #c20cb9; font-weight: bold;">ln</span> <span style="color: #660033;">-s</span> <span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>java<span style="color: #000000; font-weight: bold;">/</span>jdk1.8.0_05 <span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>java<span style="color: #000000; font-weight: bold;">/</span>latest
+A37710:~ <span style="color: #7a0874; font-weight: bold;">cd</span> latest<span style="color: #000000; font-weight: bold;">/</span>bin
+A37710:~ <span style="color: #000000; font-weight: bold;">for</span> bin <span style="color: #000000; font-weight: bold;">in</span> <span style="color: #000000; font-weight: bold;">*</span>; <span style="color: #000000; font-weight: bold;">do</span> update-alternatives <span style="color: #660033;">--install</span> <span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>bin<span style="color: #000000; font-weight: bold;">/</span><span style="color: #007800;">$bin</span> <span style="color: #007800;">$bin</span> $<span style="color: #7a0874; font-weight: bold;">&#40;</span><span style="color: #7a0874; font-weight: bold;">pwd</span><span style="color: #7a0874; font-weight: bold;">&#41;</span><span style="color: #000000; font-weight: bold;">/</span><span style="color: #007800;">$bin</span> <span style="color: #000000;">1</span>; <span style="color: #000000; font-weight: bold;">done</span>
+A37710:~ <span style="color: #7a0874; font-weight: bold;">cd</span> ..
+A37710:~ <span style="color: #7a0874; font-weight: bold;">cd</span> latest<span style="color: #000000; font-weight: bold;">/</span>jre<span style="color: #000000; font-weight: bold;">/</span>bin
+A37710:~ <span style="color: #000000; font-weight: bold;">for</span> bin <span style="color: #000000; font-weight: bold;">in</span> <span style="color: #000000; font-weight: bold;">*</span>; <span style="color: #000000; font-weight: bold;">do</span> update-alternatives <span style="color: #660033;">--install</span> <span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>bin<span style="color: #000000; font-weight: bold;">/</span><span style="color: #007800;">$bin</span> <span style="color: #007800;">$bin</span> $<span style="color: #7a0874; font-weight: bold;">&#40;</span><span style="color: #7a0874; font-weight: bold;">pwd</span><span style="color: #7a0874; font-weight: bold;">&#41;</span><span style="color: #000000; font-weight: bold;">/</span><span style="color: #007800;">$bin</span> <span style="color: #000000;">1</span>; <span style="color: #000000; font-weight: bold;">done</span>
+A37710:~ <span style="color: #7a0874; font-weight: bold;">cd</span> ..
+A37710:~ <span style="color: #7a0874; font-weight: bold;">cd</span> ..
+A37710:~ update-alternatives <span style="color: #660033;">--install</span> <span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>lib64<span style="color: #000000; font-weight: bold;">/</span>browser-plugins<span style="color: #000000; font-weight: bold;">/</span>javaplugin.so javaplugin <span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>java<span style="color: #000000; font-weight: bold;">/</span>latest<span style="color: #000000; font-weight: bold;">/</span>jre<span style="color: #000000; font-weight: bold;">/</span>lib<span style="color: #000000; font-weight: bold;">/</span>amd64<span style="color: #000000; font-weight: bold;">/</span>libnpjp2.so <span style="color: #000000;">1</span>
+A37710:~ update-alternatives <span style="color: #660033;">--config</span> java
+A37710:~ update-alternatives <span style="color: #660033;">--config</span> javac
+A37710:~ update-alternatives <span style="color: #660033;">--config</span> javaplugin
+A37710:~</pre>
+      </td>
+    </tr>
+  </table>
+</div>
+<!-- google_ad_section_end -->
+    </section>
+<section>
+<div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'blog-gilbertoca-com',
+                disqus_identifier = 'Oracle JDK8 no OpenSUSE',
+                disqus_url = window.location.href.split('/').splice(0,3).join("/")+'2014/07/2014-07-02-oracle-jdk8-no-opensuse.html';
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+</article>
+	
+</section>
+<footer>
+	<p>
+		<a href="https://pages.github.com/">Hosted by GitHub Pages</a> -
+		<a href="http://jbake.org/">Generated with JBake</a> -
+		<a href="http://github.com/gilbertoca/gilbertoca.com">Source code</a>
+	</p>
+</footer>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2586578-2']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</body>
+</html>

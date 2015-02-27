@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+    <head>
+        <title></title>
+        <meta charset="utf-8"/>
+        <title>Renomear um projeto[SUBVERSION] </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
+        <link rel="alternate"  type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
+        <link href="../../css/default.css" rel="stylesheet">
+        <link href="../../css/syntax.css" rel="stylesheet">
+        <link href="../../css/prettify.css" rel="stylesheet">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="../../js/html5shiv.min.js"></script>
+        <![endif]-->
+
+        <!-- Fav and touch icons -->
+        <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+        <link rel="shortcut icon" href="../../favicon.ico">
+    </head>
+    <body onload="prettyPrint()">
+	
+<header>
+	<hgroup>
+		<h1><a href="/">Vivendo e Aprendendo</a></h1>
+		<h2>Experiência prática na administração de Banco de Dados</h2>
+	</hgroup>
+</header>
+<nav>
+<menu>
+	<a href="../../index.html">Home</a>
+	<a href="../../archive.html">All posts</a>
+	<a href="../../about.html">About me</a>
+	<a href="../../feeds/posts/default.xml">Atom feed</a>
+	</menu>
+</nav>
+<section>
+<article>
+    <header>
+        <h1>Renomear um projeto[SUBVERSION] </h1>
+        <p>by <em>Gilberto C. Andrade</em> on <strong>19 Julho 2010</strong></p>
+        <p>Tagged as: 
+            <a href="../../tags/controle de versões.html">controle de versões</a>,
+            <a href="../../tags/desenvolvimento.html">desenvolvimento</a>,
+            <a href="../../tags/Geral.html">Geral</a>,
+            <a href="../../tags/Java.html">Java</a>,
+            <a href="../../tags/Linux.html">Linux</a>,
+            <a href="../../tags/Sistema Operacional.html">Sistema Operacional</a>,
+            <a href="../../tags/subversion.html">subversion</a>,
+        </p>
+    </header>
+    <section>
+	<!-- google_ad_section_start --><p>Em nossa área de tecnologia da informação é comum o desgaste em discussões para nomear objetos, recursos, projetos, etc, sem falar em nossa imaginação para o assunto. Devo confessar, somos ímpares nesse quesito! <img src="http://blog.gilbertoca.com/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" /> </p><p>Hoje, por uma necessidade tive que renomear um “projeto” (antigo módulo em cvs) em um repositório svn hospedado no Google Project Hosting. Para fazer a mudança você necessita fazer o chekout do “projeto” - coloco entre aspas, pois o mesmo é considerado como um diretório - em uma área de trabalho primeiro. Veja como é o procedimento:</p><p><div class="wp_syntax"><br/> <table><br/> <tr><br/> <td class="code"><br/> <pre class="bash" style="font-family:monospace;"><span style="color: #7a0874; font-weight: bold;">cd</span> gilberto<span style="color: #000000; font-weight: bold;">@</span>SUGEP-DMASI:~<span style="color: #000000; font-weight: bold;">/</span>dev<span style="color: #000000; font-weight: bold;">/</span>netbeans-config<span style="color: #000000; font-weight: bold;">/</span>click-jpa-integration<br/><span style="color: #c20cb9; font-weight: bold;">svn rename</span> https:<span style="color: #000000; font-weight: bold;">//</span>osu.googlecode.com<span style="color: #000000; font-weight: bold;">/</span>svn<span style="color: #000000; font-weight: bold;">/</span>trunk<span style="color: #000000; font-weight: bold;">/</span>click-jpa-integration https:<span style="color: #000000; font-weight: bold;">//</span>osu.googlecode.com<span style="color: #000000; font-weight: bold;">/</span>svn<span style="color: #000000; font-weight: bold;">/</span>trunk<span style="color: #000000; font-weight: bold;">/</span>click-orm-integration<br/><span style="color: #7a0874; font-weight: bold;">cd</span> ..<br/><span style="color: #c20cb9; font-weight: bold;">rm</span> <span style="color: #660033;">-rf</span> click-jpa-integration<br/><span style="color: #c20cb9; font-weight: bold;">svn checkout</span> http:<span style="color: #000000; font-weight: bold;">//</span>osu.googlecode.com<span style="color: #000000; font-weight: bold;">/</span>svn<span style="color: #000000; font-weight: bold;">/</span>trunk<span style="color: #000000; font-weight: bold;">/</span>click-orm-integration coi<br/><span style="color: #7a0874; font-weight: bold;">cd</span> coi</pre><br/> </td><br/> </tr><br/> </table><br/></div></p> </p>
+<blockquote><p><strong>Atualização(07/03/2012):</strong><br/>Uma correção, com este comando (rename=move) temos a opção de mover e/ou renomear alguma coisa em uma área de trabalho local ou no próprio repositório(remoto por uma URL).<br/>Veja como ficaria comando usando URL:</p>
+  <div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="bash" style="font-family:monospace;"><span style="color: #c20cb9; font-weight: bold;">svn move</span> http:<span style="color: #000000; font-weight: bold;">//</span>10.121.0.5<span style="color: #000000; font-weight: bold;">/</span>svn<span style="color: #000000; font-weight: bold;">/</span>gcs http:<span style="color: #000000; font-weight: bold;">//</span>10.121.0.5<span style="color: #000000; font-weight: bold;">/</span>svn<span style="color: #000000; font-weight: bold;">/</span>opencms</pre>
+      </td>
+    </tr>
+  </table>
+</div>
+</blockquote>
+<!-- google_ad_section_end -->
+    </section>
+<section>
+<div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'blog-gilbertoca-com',
+                disqus_identifier = 'Renomear um projeto[SUBVERSION] ',
+                disqus_url = window.location.href.split('/').splice(0,3).join("/")+'2010/07/2010-07-19-renomear-um-projetosubversion.html';
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+</article>
+	
+</section>
+<footer>
+	<p>
+		<a href="https://pages.github.com/">Hosted by GitHub Pages</a> -
+		<a href="http://jbake.org/">Generated with JBake</a> -
+		<a href="http://github.com/gilbertoca/gilbertoca.com">Source code</a>
+	</p>
+</footer>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2586578-2']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</body>
+</html>

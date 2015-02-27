@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+    <head>
+        <title></title>
+        <meta charset="utf-8"/>
+        <title>Para duplicar um banco oracle na mesma maquina</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
+        <link rel="alternate"  type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
+        <link href="../../css/default.css" rel="stylesheet">
+        <link href="../../css/syntax.css" rel="stylesheet">
+        <link href="../../css/prettify.css" rel="stylesheet">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="../../js/html5shiv.min.js"></script>
+        <![endif]-->
+
+        <!-- Fav and touch icons -->
+        <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+        <link rel="shortcut icon" href="../../favicon.ico">
+    </head>
+    <body onload="prettyPrint()">
+	
+<header>
+	<hgroup>
+		<h1><a href="/">Vivendo e Aprendendo</a></h1>
+		<h2>Experiência prática na administração de Banco de Dados</h2>
+	</hgroup>
+</header>
+<nav>
+<menu>
+	<a href="../../index.html">Home</a>
+	<a href="../../archive.html">All posts</a>
+	<a href="../../about.html">About me</a>
+	<a href="../../feeds/posts/default.xml">Atom feed</a>
+	</menu>
+</nav>
+<section>
+<article>
+    <header>
+        <h1>Para duplicar um banco oracle na mesma maquina</h1>
+        <p>by <em>Gilberto C. Andrade</em> on <strong>01 Dezembro 2008</strong></p>
+        <p>Tagged as: 
+            <a href="../../tags/Database.html">Database</a>,
+        </p>
+    </header>
+    <section>
+	<!-- google_ad_section_start --><p>Atualmente aqui na <a href="www.secad.to.gov.br">Secretaria</a> estamos em um processo de implantação de um <a href="http://www.techne.com.br/produtos/produtos.asp?id=4">sistema de recursos humanos</a>, para ser mais exato, praticamente toda parte de infraestrutura (hardware e software) já está pronta para uso. Mas por questões que foge ao meu conhecimento (penso ser licitação), a fase mais densa (treinamento e uso pelo usuário final) está em fase de planejamento/reestruturação. Bom, apesar dessa, vamos dizer morosidade, tem uma fase desse processo que não pára: a migração. Nesse processo participam duas equipes: parametrização e a própria migração, o qual nessa última pertenço. A migração é um ciclo constante onde a partir de modificações (parametrização) importantes no banco de produção, é acionado uma requisição de atualização do banco de migração (utilizado para validar a parametrização com a ativação de funções do sistema de recursos humanos, por exemplo, calculo de folha). Para esse ciclo funcionar tive que realizar uma das tarefas mais comuns para quem administra um banco de dados, que é cópia/duplicação/clonagem de um banco em produção para outro banco (até mesmo em outro servidor) a ser utilizado como teste. O procedimento descrito aqui, nada mais é do que seq&#252;ência descrita na própria <a href="http://download.oracle.com/docs/cd/B19306_01/backup.102/b14191/rcmdupdb.htm#i1006474">documentação do banco oracle</a>:</p>
+<ol>
+  <li><a href="#task1">Create an Oracle Password File for the Auxiliary Instance</a></li>
+  <li><a href="#task2">Establish Oracle Net Connectivity to the Auxiliary Instance</a></li>
+  <li><a href="#task3">Create an Initialization Parameter File for the Auxiliary Instance</a></li>
+  <li><a href="#task4">Start the Auxiliary Instance</a></li>
+  <li><a href="#task5">Mount or Open the Target Database</a></li>
+  <li><a href="#task6">Make Sure You Have the Necessary Backups and Archived Redo Logs (Essencial - você precisa de um backup</a></li>
+  <li><a href="#task7">Allocate Auxiliary Channels if Automatic Channels Are Not Configured</a></li>
+  <li><a href="#task8">Recrie a tablespace temporária (extra)</a></li>
+</ol><h3><a name="task1">Task 1: Create an Oracle Password File for the Auxiliary Instance</a></h3>
+<pre>cd $ORACLE_HOME/dbs/
+orapwd file=$ORACLE_HOME/dbs/orapwbeta password=senha entries=5
+</pre><h3><a name="task2">Task 2: Establish Oracle Net Connectivity to the Auxiliary Instance</a></h3>
+<pre>vi $ORACLE_HOME/network/admin/tnsnames.ora
+BETA =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = oracleibm.secad)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = beta.secad.to.gov.br)
+    )
+  )
+</pre><h1>Atenção: a criação estática de um listener é importantíssima, caso contrário vc encontrá problemas de conexão, como o erro:</h1><h1>ORA-12528: TNS:listener: all appropriate instances are blocking new connections</h1>
+<pre>vi $ORACLE_HOME/network/admin/listener.ora
+# listener.ora Network Configuration File: /opt/oracle/db/10.2.0.1.0/server/network/admin/listener.ora
+# Generated by Oracle configuration tools.
+
+SID_LIST_LISTENER =
+  (SID_LIST =
+    (SID_DESC =
+      (GLOBAL_DBNAME = producao.secad.to.gov.br)
+      (ORACLE_HOME = /opt/oracle/db/10.2.0.1.0/server)
+      (SID_NAME = producao)
+    )
+    (SID_DESC =
+      (GLOBAL_DBNAME = alfa.secad.to.gov.br)
+      (ORACLE_HOME = /opt/oracle/db/10.2.0.1.0/server)
+      (SID_NAME = alfa)
+    )
+    (SID_DESC =
+      (GLOBAL_DBNAME = beta.secad.to.gov.br)
+      (ORACLE_HOME = /opt/oracle/db/10.2.0.1.0/server)
+      (SID_NAME = beta)
+    )
+  )
+
+LISTENER =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = oracleibm)(PORT = 1521))
+  )
+</pre><h3><a name="task3">Task 3: Create an Initialization Parameter File for the Auxiliary Instance</a></h3><h1>vamos criar primeiro a estrutura de diretorios onde ficarão os arquivos do banco</h1>
+<pre>cd /dm0/oracle/admin/beta
+mkdir adump
+mkdir arch
+mkdir bdump
+mkdir cdump
+mkdir data
+mkdir exp
+mkdir pfile
+mkdir scripts
+mkdir udump
+mkdir utlfile
+</pre><h1>Agora o arquivo de inicialização, para isso vou fazer uma copia do banco original e fazer a mudanças necessárias</h1>
+<pre>cd /dm0/oracle/admin/beta/pfile/
+cp ../../producao/pfile/init.ora.292007145712 initbeta.ora
+vi initbeta.ora
+</pre><h1>Se estiver usando spfile no banco original, crie um arquivo de inicialização (pfile) a partir dele</h1>
+<pre>export ORACLE_SID=producao
+sqlplus /as sysdba
+CREATE PFILE='/dm0/oracle/admin/beta/pfile/initbeta.ora' FROM SPFILE;
+</pre><h1>Substitua todas as ocorrências do banco anterior</h1>
+<pre>:g/producao/s//beta/g
+
+#Acrescente mais uma seção neste arquivo
+###########################################
+#  Filename Conversion Initialization Parameters
+#  Renaming Datafiles in RMAN DUPLICATE DATABASE
+#  Renaming Online Logs in RMAN DUPLICATE DATABASE
+###########################################
+DB_FILE_NAME_CONVERT=(/dm0/oracle/admin/producao/data/ ,/dm0/oracle/admin/beta/data/)
+LOG_FILE_NAME_CONVERT=(/dm0/oracle/admin/producao/data ,/dm0/oracle/admin/beta/data)
+</pre><h1>Salve o arquivo. Para facilitar a duplicação recomenda-se criar um spfile no local padrao da instalação. Isso irá lhe poupar o trabalho quando o rman fizer o shutdwon e startup, ele não solicitará o arquivo de inicialização pfile.</h1>
+<pre>export ORACLE_SID=beta
+sqlplus /as sysdba
+CREATE SPFILE FROM PFILE='/dm0/oracle/admin/beta/pfile/initbeta.ora';
+</pre><h3><a name="task4">Task 4: Start the Auxiliary Instance</a></h3>
+<pre>export ORACLE_SID=beta
+sqlplus /as sysdba
+STARTUP FORCE NOMOUNT
+</pre><h3><a name="task5">Task 5: Mount or Open the Target Database (Opcional - provavelmente o banco original já esteja aberto!)</a></h3><p># conecte-se ao banco de origem</p>
+<pre>SQL> CONNECT SYS/oracle@producao AS SYSDBA;
+
+STARTUP MOUNT;#mount or open database origem
+</pre><h3><a name="task6">Task 6: Make Sure You Have the Necessary Backups and Archived Redo Logs (Essencial - você precisa de um backup recente, caso contrário, a clonagem criará um banco antigo)</a></h3>
+<pre>export ORACLE_SID=producao
+rman target /
+Recovery Manager: Release 10.2.0.2.0 - Production on Wed Mar 14 18:12:58 2007
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+connected to target database: PRODUCAO (DBID=2991538920)
+RMAN> list backup;
+using target database control file instead of recovery catalog
+List of Backup Sets
+===================
+</pre><h3><a name="task7">Task 7: Allocate Auxiliary Channels if Automatic Channels Are Not Configured</a></h3><h1>Start RMAN with a connection to the target database, the auxiliary instance, and, if applicable, the recovery catalog database</h1><h1>Nesta conexão pode ocorrer um error comum na versao 10g:</h1><h1>ORA-12528: TNS:listener: all appropriate instances are blocking new connections</h1><h1>Este é um erro conhecido do Oracle 10g onde um SHUTDOWN IMMEDIATE é seguido por um STARTUP MOUNT ou STARTUP FORCE MOUNT. Execute um novo SHUTDOWN no banco e então um STARTUP. Você será capaz de conectar novamente.</h1><h1>Se ainda sim você não conseguir conectar, inverta as opções do rman:</h1><h1>Forma alternativa</h1><h1><a href="mailto:&#111;r&#97;&#x63;&#x6c;&#x65;&#x40;&#111;&#x72;&#x61;c&#108;&#x65;&#105;b&#109;&#58;&#47;d&#109;0&#x2f;&#111;&#x72;&#x61;&#99;&#108;e&#x2f;&#x61;d&#109;&#x69;&#x6e;&#47;&#98;&#101;&#116;&#97;&#x2f;&#x70;&#102;&#105;&#108;&#101;">&#111;r&#97;&#x63;&#x6c;&#x65;&#x40;&#111;&#x72;&#x61;c&#108;&#x65;&#105;b&#109;&#58;&#47;d&#109;0&#x2f;&#111;&#x72;&#x61;&#99;&#108;e&#x2f;&#x61;d&#109;&#x69;&#x6e;&#47;&#98;&#101;&#116;&#97;&#x2f;&#x70;&#102;&#105;&#108;&#101;</a> export ORACLE_SID=beta</h1><h1><a href="mailto:&#x6f;&#114;&#97;&#99;&#x6c;&#101;&#64;&#x6f;&#114;&#x61;&#x63;&#x6c;&#x65;&#105;&#x62;&#109;&#58;/&#100;&#x6d;&#x30;/&#x6f;&#114;&#97;&#99;&#x6c;&#101;/&#x61;&#100;&#109;&#x69;&#110;&#x2f;&#98;&#101;&#116;&#x61;&#x2f;&#x70;&#102;&#105;&#108;&#x65;">&#x6f;&#114;&#97;&#99;&#x6c;&#101;&#64;&#x6f;&#114;&#x61;&#x63;&#x6c;&#x65;&#105;&#x62;&#109;&#58;/&#100;&#x6d;&#x30;/&#x6f;&#114;&#97;&#99;&#x6c;&#101;/&#x61;&#100;&#109;&#x69;&#110;&#x2f;&#98;&#101;&#116;&#x61;&#x2f;&#x70;&#102;&#105;&#108;&#x65;</a>rman target <a href="mailto:&#x73;&#121;&#115;@&#x70;r&#111;&#100;u&#x63;&#x61;&#x6f;">&#x73;&#121;&#115;@&#x70;r&#111;&#100;u&#x63;&#x61;&#x6f;</a> auxiliary /</h1>
+<pre>oracle@oracleibm:/dm0/oracle/admin/beta/pfile> export ORACLE_SID=producao
+oracle@oracleibm:/dm0/oracle/admin/beta/pfile> rman TARGET /  AUXILIARY SYS@beta
+
+Recovery Manager: Release 10.2.0.2.0 - Production on Thu Mar 15 09:03:41 2007
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+connected to target database: PRODUCAO (DBID=2991538920)
+auxiliary database Password:
+connected to auxiliary database: BETA (not mounted)
+
+RMAN>
+RUN 
+{
+  # to manually allocate a channel of type sbt issue:
+  #ALLOCATE AUXILIARY CHANNEL ch1 DEVICE TYPE sbt;
+
+  # to manually allocate two auxiliary channels for disk issue (specifying 
+  # whatever channel id that you want):
+  ALLOCATE AUXILIARY CHANNEL aux1 DEVICE TYPE DISK;
+  ALLOCATE AUXILIARY CHANNEL aux2 DEVICE TYPE DISK;
+  DUPLICATE TARGET DATABASE TO beta;
+}
+.
+.
+.
+contents of Memory Script:
+{
+   Alter clone database open resetlogs;
+}
+executing Memory Script
+
+database opened
+Finished Duplicate Db at 15/03/2007 09:55:47
+
+RMAN> quit
+</pre><h3><a name="task8">Task 8: Recrie a tablespace temporária (extra)</a></h3>
+<pre>#(versão 9i e acima)
+ALTER DATABASE TEMPFILE '/dm0/oracle/admin/beta/data/temp01.dbf' DROP INCLUDING DATAFILES;
+ALTER TABLESPACE TEMP ADD TEMPFILE '/dm0/oracle/admin/beta/data/temp01.dbf' SIZE 200M REUSE AUTOEXTEND ON NEXT 5M MAXSIZE 2000M; 
+</pre><h1>Outra coisa, como este banco é para teste, devemos desabilitar o modo archive do mesmo</h1>
+<pre>oracle@oracleibm:/dm0/oracle/admin/beta/pfile> export ORACLE_SID=beta
+oracle@oracleibm:/dm0/oracle/admin/beta/pfile> sqlplus / as sysdba
+SQL> archive log list
+Database log mode              Archive Mode
+Automatic archival             Enabled
+Archive destination            /opt/oracle/db/10.2.0.1.0/server/dbs/arch
+Oldest online log sequence     0
+Next log sequence to archive   1
+Current log sequence           1
+
+SQL> shutdown immediate
+Database closed.
+Database dismounted.
+ORACLE instance shut down.
+
+SQL> startup mount
+ORACLE instance started.
+Total System Global Area 1811939328 bytes
+Fixed Size                  2071896 bytes
+Variable Size             419431080 bytes
+Database Buffers         1375731712 bytes
+Redo Buffers               14704640 bytes
+Database mounted.
+
+SQL> alter database noarchivelog;
+Database altered.
+
+SQL> alter database open;
+Database altered.
+
+SQL> archive log list
+Database log mode              No Archive Mode
+Automatic archival             Disabled
+Archive destination            /opt/oracle/db/10.2.0.1.0/server/dbs/arch
+Oldest online log sequence     0
+Current log sequence           1
+SQL> 
+</pre><p>** </p><h1>Não esquecer de coletar estatísticas</h1><p>**</p>
+<pre>begin
+dbms_stats.gather_database_stats(options=> 'GATHER AUTO');
+end;
+</pre>
+<!-- google_ad_section_end -->
+    </section>
+<section>
+<div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'blog-gilbertoca-com',
+                disqus_identifier = 'Para duplicar um banco oracle na mesma maquina',
+                disqus_url = window.location.href.split('/').splice(0,3).join("/")+'2008/12/2008-12-01-para-duplicar-um-banco-oracle-na-mesma-maquina.html';
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+</article>
+	
+</section>
+<footer>
+	<p>
+		<a href="https://pages.github.com/">Hosted by GitHub Pages</a> -
+		<a href="http://jbake.org/">Generated with JBake</a> -
+		<a href="http://github.com/gilbertoca/gilbertoca.com">Source code</a>
+	</p>
+</footer>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2586578-2']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</body>
+</html>

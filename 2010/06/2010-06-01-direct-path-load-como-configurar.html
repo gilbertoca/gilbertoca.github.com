@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+    <head>
+        <title></title>
+        <meta charset="utf-8"/>
+        <title>Direct Path Load - Como configurar </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
+        <link rel="alternate"  type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
+        <link href="../../css/default.css" rel="stylesheet">
+        <link href="../../css/syntax.css" rel="stylesheet">
+        <link href="../../css/prettify.css" rel="stylesheet">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="../../js/html5shiv.min.js"></script>
+        <![endif]-->
+
+        <!-- Fav and touch icons -->
+        <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+        <link rel="shortcut icon" href="../../favicon.ico">
+    </head>
+    <body onload="prettyPrint()">
+	
+<header>
+	<hgroup>
+		<h1><a href="/">Vivendo e Aprendendo</a></h1>
+		<h2>Experiência prática na administração de Banco de Dados</h2>
+	</hgroup>
+</header>
+<nav>
+<menu>
+	<a href="../../index.html">Home</a>
+	<a href="../../archive.html">All posts</a>
+	<a href="../../about.html">About me</a>
+	<a href="../../feeds/posts/default.xml">Atom feed</a>
+	</menu>
+</nav>
+<section>
+<article>
+    <header>
+        <h1>Direct Path Load - Como configurar </h1>
+        <p>by <em>Gilberto C. Andrade</em> on <strong>01 Junho 2010</strong></p>
+        <p>Tagged as: 
+            <a href="../../tags/banco de dados.html">banco de dados</a>,
+            <a href="../../tags/Database.html">Database</a>,
+            <a href="../../tags/Linux.html">Linux</a>,
+            <a href="../../tags/oracle.html">oracle</a>,
+        </p>
+    </header>
+    <section>
+	<!-- google_ad_section_start -->
+<blockquote><p>Verificando posts de <a href="http://www.jroller.com/gilbertoca">meu antigo blog</a> notei que alguns não foram importados ou foram importados com defeitos em seu conteúdo. Então resolvi realizar um trabalho de revisão e o <strong><a href="http://www.jroller.com/gilbertoca/entry/direct_path_load_como_configurar">terceiro</a></strong> começa hoje: </p>
+</blockquote><p>Para que se possa usar a opção de <a href="http://download.oracle.com/docs/cd/B19306_01/server.102/b14215/ldr_modes.htm#i1007669">carga direta usando o SQL Load</a>, você precisa primeiro configurar o banco de dados para tal atividade.<br/>A configuração é simples, basta você executar o script catldr.sql, localizado na instalação do produto, $ORACLE_HOME/rdbms/admin.<br/>Depois é só utilizar a opção direct=true na linha de comando.</p><p><div class="wp_syntax"><br/> <table><br/> <tr><br/> <td class="code"><br/> <pre class="bash" style="font-family:monospace;">oracle<span style="color: #000000; font-weight: bold;">@</span>SUGEP-DMASI:~<span style="color: #000000; font-weight: bold;">&gt;</span> sqlplus <span style="color: #000000; font-weight: bold;">/</span> <span style="color: #c20cb9; font-weight: bold;">as</span> sysdba<br/>SQL<span style="color: #000000; font-weight: bold;">*</span>Plus: Release 10.2.0.1.0 - Production on Ter Jun <span style="color: #000000;">1</span> <span style="color: #000000;">17</span>:04:<span style="color: #000000;">20</span> <span style="color: #000000;">2010</span><br/>Copyright <span style="color: #7a0874; font-weight: bold;">&#40;</span>c<span style="color: #7a0874; font-weight: bold;">&#41;</span> <span style="color: #000000;">1982</span>, <span style="color: #000000;">2005</span>, Oracle. All rights reserved.<br/>Connected to:<br/>Oracle Database 10g Enterprise Edition Release 10.2.0.1.0 - Production<br/>With the Partitioning, OLAP and Data Mining options<br/>SQL<span style="color: #000000; font-weight: bold;">&gt;</span> <span style="color: #000000; font-weight: bold;">!</span><span style="color: #c20cb9; font-weight: bold;">ls</span> <span style="color: #007800;">$ORACLE_HOME</span><span style="color: #000000; font-weight: bold;">/</span>rdbms<span style="color: #000000; font-weight: bold;">/</span>admin<span style="color: #000000; font-weight: bold;">/</span>catl<span style="color: #000000; font-weight: bold;">*</span><br/><span style="color: #000000; font-weight: bold;">/</span>opt<span style="color: #000000; font-weight: bold;">/</span>oracle<span style="color: #000000; font-weight: bold;">/</span>db<span style="color: #000000; font-weight: bold;">/</span><span style="color: #000000;">10.2</span><span style="color: #000000; font-weight: bold;">/</span>server<span style="color: #000000; font-weight: bold;">/</span>rdbms<span style="color: #000000; font-weight: bold;">/</span>admin<span style="color: #000000; font-weight: bold;">/</span>catldap.sql <span style="color: #000000; font-weight: bold;">/</span>opt<span style="color: #000000; font-weight: bold;">/</span>oracle<span style="color: #000000; font-weight: bold;">/</span>db<span style="color: #000000; font-weight: bold;">/</span><span style="color: #000000;">10.2</span><span style="color: #000000; font-weight: bold;">/</span>server<span style="color: #000000; font-weight: bold;">/</span>rdbms<span style="color: #000000; font-weight: bold;">/</span>admin<span style="color: #000000; font-weight: bold;">/</span>catlibc.sql<br/><span style="color: #000000; font-weight: bold;">/</span>opt<span style="color: #000000; font-weight: bold;">/</span>oracle<span style="color: #000000; font-weight: bold;">/</span>db<span style="color: #000000; font-weight: bold;">/</span><span style="color: #000000;">10.2</span><span style="color: #000000; font-weight: bold;">/</span>server<span style="color: #000000; font-weight: bold;">/</span>rdbms<span style="color: #000000; font-weight: bold;">/</span>admin<span style="color: #000000; font-weight: bold;">/</span>catldr.sql <span style="color: #000000; font-weight: bold;">/</span>opt<span style="color: #000000; font-weight: bold;">/</span>oracle<span style="color: #000000; font-weight: bold;">/</span>db<span style="color: #000000; font-weight: bold;">/</span><span style="color: #000000;">10.2</span><span style="color: #000000; font-weight: bold;">/</span>server<span style="color: #000000; font-weight: bold;">/</span>rdbms<span style="color: #000000; font-weight: bold;">/</span>admin<span style="color: #000000; font-weight: bold;">/</span>catlsby.sql<br/>&nbsp;<br/>SQL<span style="color: #000000; font-weight: bold;">&gt;</span> <span style="color: #000000; font-weight: bold;">@/</span>opt<span style="color: #000000; font-weight: bold;">/</span>oracle<span style="color: #000000; font-weight: bold;">/</span>db<span style="color: #000000; font-weight: bold;">/</span><span style="color: #000000;">10.2</span><span style="color: #000000; font-weight: bold;">/</span>server<span style="color: #000000; font-weight: bold;">/</span>rdbms<span style="color: #000000; font-weight: bold;">/</span>admin<span style="color: #000000; font-weight: bold;">/</span>catldr.sql<br/>.<br/>.<br/>View created.<br/>Synonym created.<br/>Grant succeeded.<br/>&nbsp;<br/>SQL<span style="color: #000000; font-weight: bold;">&gt;</span></pre><br/> </td><br/> </tr><br/> </table><br/></div></p> </p>
+<!-- google_ad_section_end -->
+    </section>
+<section>
+<div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'blog-gilbertoca-com',
+                disqus_identifier = 'Direct Path Load - Como configurar ',
+                disqus_url = window.location.href.split('/').splice(0,3).join("/")+'2010/06/2010-06-01-direct-path-load-como-configurar.html';
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+</article>
+	
+</section>
+<footer>
+	<p>
+		<a href="https://pages.github.com/">Hosted by GitHub Pages</a> -
+		<a href="http://jbake.org/">Generated with JBake</a> -
+		<a href="http://github.com/gilbertoca/gilbertoca.com">Source code</a>
+	</p>
+</footer>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2586578-2']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</body>
+</html>

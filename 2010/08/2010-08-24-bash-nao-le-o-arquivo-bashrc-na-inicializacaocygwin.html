@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+    <head>
+        <title></title>
+        <meta charset="utf-8"/>
+        <title>bash não lê o arquivo .bashrc na inicialização[Cygwin] </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
+        <link rel="alternate"  type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
+        <link href="../../css/default.css" rel="stylesheet">
+        <link href="../../css/syntax.css" rel="stylesheet">
+        <link href="../../css/prettify.css" rel="stylesheet">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="../../js/html5shiv.min.js"></script>
+        <![endif]-->
+
+        <!-- Fav and touch icons -->
+        <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+        <link rel="shortcut icon" href="../../favicon.ico">
+    </head>
+    <body onload="prettyPrint()">
+	
+<header>
+	<hgroup>
+		<h1><a href="/">Vivendo e Aprendendo</a></h1>
+		<h2>Experiência prática na administração de Banco de Dados</h2>
+	</hgroup>
+</header>
+<nav>
+<menu>
+	<a href="../../index.html">Home</a>
+	<a href="../../archive.html">All posts</a>
+	<a href="../../about.html">About me</a>
+	<a href="../../feeds/posts/default.xml">Atom feed</a>
+	</menu>
+</nav>
+<section>
+<article>
+    <header>
+        <h1>bash não lê o arquivo .bashrc na inicialização[Cygwin] </h1>
+        <p>by <em>Gilberto C. Andrade</em> on <strong>24 Agosto 2010</strong></p>
+        <p>Tagged as: 
+            <a href="../../tags/configuração.html">configuração</a>,
+            <a href="../../tags/console.html">console</a>,
+            <a href="../../tags/cygwin.html">cygwin</a>,
+            <a href="../../tags/Java.html">Java</a>,
+            <a href="../../tags/Linux.html">Linux</a>,
+            <a href="../../tags/Windows.html">Windows</a>,
+            <a href="../../tags/Windows XP.html">Windows XP</a>,
+        </p>
+    </header>
+    <section>
+	<!-- google_ad_section_start --><p>Uso a bastante tempo o ambiente <a href="http://cygwin.com">Cygwin </a>em casa. Recentemente realizei a atualização para a versão 1.7. Por enquanto nenhuma queixa, tudo funcionando normalmente. Hoje resolvi me aventurar e customizar o console utilizado como padrão - cmd.exe. Para isso tomei como base o seguinte artigo: <a href="http://infrablue.tripod.com/cygwin.html">Useful Configuration of Cygwin, Part 1: Install, rxvt, and BASH</a>. Fiz todos os ajustes recomendados e fui realizar o teste, mas por algum motivo meu arquivo .bashrc - de ajustes do ambiente bash - não era carregado na inicialização do <a href="http://cygwin.com">Cygwin</a>. </p><p>Bom, resolvi verificar o problema e primeira parada foi a <a href="http://cygwin.com/faq/faq-nochunks.html#faq.using.bashrc">FAQ</a> do projeto. Chequei meu ambiente como sugerido pela documentação, mas no entanto não conseguia fazer funcionar. A segunda opção foi pesquisar na lista de discussão: <a href="http://old.nabble.com/bash-load-td18529958.html">logo de primeira encontrei a solução do problema</a>. O arquivo .bash_profile precisa conter:</p><p><div class="wp_syntax"><br/> <table><br/> <tr><br/> <td class="code"><br/> <pre class="bash" style="font-family:monospace;">. <span style="color: #ff0000;">&ldquo;<span style="color: #007800;">${HOME}</span>&rdquo;</span><span style="color: #000000; font-weight: bold;">/</span>.bashrc</pre><br/> </td><br/> </tr><br/> </table><br/></div></p> </p><p><strong>ATUALIZAÇÃO:</strong></p><p>Mais um problema que encontrei, não relacionado com o ambiente bash, mas ao utilitário que o usa - rxvt. Com a atualização do Cygwin, o atalho criado não funciona, alias, o utilitário não encontra o ambiente bash. Para resolver é fácil: coloque o caminho absoluto do ambiente bash. Da seguinte forma:</p><p><div class="wp_syntax"><br/> <table><br/> <tr><br/> <td class="code"><br/> <pre class="bash" style="font-family:monospace;">C:cygwinbinrxvt.exe <span style="color: #660033;">-sl</span> <span style="color: #000000;">1500</span> <span style="color: #660033;">-fn</span> <span style="color: #ff0000;">&ldquo;Lucida Console-12&rdquo;</span> <span style="color: #660033;">-bg</span> black <span style="color: #660033;">-fg</span> grey <span style="color: #660033;">-sr</span> <span style="color: #660033;">-e</span> <span style="color: #000000; font-weight: bold;">/</span>bin<span style="color: #000000; font-weight: bold;">/</span><span style="color: #c20cb9; font-weight: bold;">bash</span> <span style="color: #660033;">&ndash;login</span> <span style="color: #660033;">-i</span></pre><br/> </td><br/> </tr><br/> </table><br/></div></p> </p>
+<!-- google_ad_section_end -->
+    </section>
+<section>
+<div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'blog-gilbertoca-com',
+                disqus_identifier = 'bash não lê o arquivo .bashrc na inicialização[Cygwin] ',
+                disqus_url = window.location.href.split('/').splice(0,3).join("/")+'2010/08/2010-08-24-bash-nao-le-o-arquivo-bashrc-na-inicializacaocygwin.html';
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+</article>
+	
+</section>
+<footer>
+	<p>
+		<a href="https://pages.github.com/">Hosted by GitHub Pages</a> -
+		<a href="http://jbake.org/">Generated with JBake</a> -
+		<a href="http://github.com/gilbertoca/gilbertoca.com">Source code</a>
+	</p>
+</footer>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2586578-2']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+    <head>
+        <title></title>
+        <meta charset="utf-8"/>
+        <title>Empathy não conectando ao MSN</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
+        <link rel="alternate"  type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
+        <link href="../../css/default.css" rel="stylesheet">
+        <link href="../../css/syntax.css" rel="stylesheet">
+        <link href="../../css/prettify.css" rel="stylesheet">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="../../js/html5shiv.min.js"></script>
+        <![endif]-->
+
+        <!-- Fav and touch icons -->
+        <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+        <link rel="shortcut icon" href="../../favicon.ico">
+    </head>
+    <body onload="prettyPrint()">
+	
+<header>
+	<hgroup>
+		<h1><a href="/">Vivendo e Aprendendo</a></h1>
+		<h2>Experiência prática na administração de Banco de Dados</h2>
+	</hgroup>
+</header>
+<nav>
+<menu>
+	<a href="../../index.html">Home</a>
+	<a href="../../archive.html">All posts</a>
+	<a href="../../about.html">About me</a>
+	<a href="../../feeds/posts/default.xml">Atom feed</a>
+	</menu>
+</nav>
+<section>
+<article>
+    <header>
+        <h1>Empathy não conectando ao MSN</h1>
+        <p>by <em>Gilberto C. Andrade</em> on <strong>22 Junho 2010</strong></p>
+        <p>Tagged as: 
+            <a href="../../tags/configuração.html">configuração</a>,
+            <a href="../../tags/Empathy.html">Empathy</a>,
+            <a href="../../tags/Geral.html">Geral</a>,
+            <a href="../../tags/gnome.html">gnome</a>,
+            <a href="../../tags/jabber.html">jabber</a>,
+            <a href="../../tags/Linux.html">Linux</a>,
+            <a href="../../tags/msn.html">msn</a>,
+        </p>
+    </header>
+    <section>
+	<!-- google_ad_section_start --><p>Recentimente resolvi, novamente, atualizar o gnome da versão 2.28 para 2.30 através do procedimento descrito neste endereço: <a href="http://en.opensuse.org/GNOME/2.30">http://en.opensuse.org/GNOME/2.30</a> .  Como sempre sem problemas. <a href="http://www.gnome.org/" target="_blank">O gnome</a> é um ambiente bastante consistente e a meu ver seguro! Mas um componente que uso como meio de comunicação - <a href="http://live.gnome.org/Empathy" target="_blank">Empathy</a> - começou a apresentar um erro conexão usando o protocolo MSN. Não havia percebido tal problema porque até então só tinha utilizado o <a href="http://pt.wikipedia.org/wiki/Extensible_Messaging_and_Presence_Protocol" target="_blank">protocolo Jabber</a>.</p><p>Bem, após uma pesquisa pelo google, <a href="http://ubuntu-utah.ubuntuforums.org/showpost.php?p=8058121&postcount=9" target="_blank">encontrei a solução do problema</a>: desisntalar o *pacote telepathy-butterfly. *Lembrando que há a necessidade de fechar o programa antes de remover este componente.</p>
+<blockquote><p><strong>Atualização(13/12/2011):</strong> Hoje, após uma atualização, o empathy parou de conectar. Voltando <a href="http://forums.opensuse.org/english/get-technical-help-here/applications/467973-empathy-not-working-msn-2.html#post2417727" target="_blank">àquela discussão no forum OpenSUSE</a>, notei que a solução é bem mais simples:</p>
+  <div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="bash" style="font-family:monospace;">- Remova sua conta<span style="color: #7a0874; font-weight: bold;">&#40;</span>Remove your live account<span style="color: #7a0874; font-weight: bold;">&#41;</span>.
+- Sair <span style="color: #000000; font-weight: bold;">do</span> Empathy<span style="color: #7a0874; font-weight: bold;">&#40;</span>Exit from Empathy<span style="color: #7a0874; font-weight: bold;">&#41;</span>
+- Desinstalar o pacote <span style="color: #7a0874; font-weight: bold;">&#40;</span>Remove telepathy-butterfly<span style="color: #7a0874; font-weight: bold;">&#41;</span>
+- Encerrar sua sessão<span style="color: #000000; font-weight: bold;">/</span>Entrar em uma nova sessão<span style="color: #7a0874; font-weight: bold;">&#40;</span>logout<span style="color: #000000; font-weight: bold;">/</span><span style="color: #c20cb9; font-weight: bold;">login</span><span style="color: #7a0874; font-weight: bold;">&#41;</span>
+- Adicione sua conta MSN novamente<span style="color: #7a0874; font-weight: bold;">&#40;</span>Enter your account again<span style="color: #7a0874; font-weight: bold;">&#41;</span>
+- Marque a opção Método Http<span style="color: #7a0874; font-weight: bold;">&#40;</span>mark the Http Method option<span style="color: #7a0874; font-weight: bold;">&#41;</span></pre>
+      </td>
+    </tr>
+  </table>
+</div><p><a href="http://blog.gilbertoca.com/img/uploads/empathy_msn.png">&lt;img src=&ldquo;img/uploads/empathy_msn-300x240.png&rdquo; alt:&quot;&ldquo; title=&rdquo;Empathy MSN&ldquo; width=&rdquo;300&ldquo; height=&rdquo;240&ldquo; class=&rdquo;alignnone size-medium wp-image-850&quot; /&gt;</a><br/>Lembre-se: você precisa fechar o aplicativo(Empathy). </p><p><strong>Atualização(28/11/2011):</strong> No trabalho já estou utilizando o openSUSE 12.1 (adaptando-me ao novo jeito do gnome 3). Este gerenciador de mensagens, novamente, veio com problema para conectar ao protocolo MSN. Desta vez não precisamos desinstalar nada, apenas realizar uma pequena modificação em uma biblioteca que o acompanha. &lt;a href=&ldquo;<a href="http://forums.opensuse.org/english/get-technical-help-here/applications/467973-empathy-not-working-msn.html#post2405889">http://forums.opensuse.org/english/get-technical-help-here/applications/467973-empathy-not-working-msn.html#post2405889</a>&rdquo; title:&ldquo;Empathy not working with MSN&rdquo; target=&quot;_blank&quot;&gt;Edite o seguinte arquivo da biblioteca ql</a>:</p>
+  <div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="bash" style="font-family:monospace;">gilberto<span style="color: #000000; font-weight: bold;">@</span>SUGEP265338:~<span style="color: #000000; font-weight: bold;">&gt;</span> <span style="color: #c20cb9; font-weight: bold;">sudo</span> <span style="color: #c20cb9; font-weight: bold;">vi</span> <span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>lib<span style="color: #000000; font-weight: bold;">/</span>python2.7<span style="color: #000000; font-weight: bold;">/</span>site-packages<span style="color: #000000; font-weight: bold;">/</span>papyon<span style="color: #000000; font-weight: bold;">/</span>service<span style="color: #000000; font-weight: bold;">/</span>description<span style="color: #000000; font-weight: bold;">/</span>AB<span style="color: #000000; font-weight: bold;">/</span>__init__.py</pre>
+      </td>
+    </tr>
+  </table>
+</div><p>e faça a seguinte modificação:</p>
+  <div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="vim" style="font-family:monospace;">#url = <span style="color: #C5A22D;">"http://contacts.msn.com/abservice/abservice.asmx"</span>
+url = <span style="color: #C5A22D;">"http://local-bay.contacts.msn.com/abservice/abservice.asmx"</span></pre>
+      </td>
+    </tr>
+  </table>
+</div><p>Lembre-se: você precisa fechar o aplicativo(Empathy). </p>
+</blockquote><p>Espero que esta informação ajude a outros colegas usuários linux.</p>
+<!-- google_ad_section_end -->
+    </section>
+<section>
+<div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'blog-gilbertoca-com',
+                disqus_identifier = 'Empathy não conectando ao MSN',
+                disqus_url = window.location.href.split('/').splice(0,3).join("/")+'2010/06/2010-06-22-empathy-nao-conectando-ao-msnopensuse-11-2.html';
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+</article>
+	
+</section>
+<footer>
+	<p>
+		<a href="https://pages.github.com/">Hosted by GitHub Pages</a> -
+		<a href="http://jbake.org/">Generated with JBake</a> -
+		<a href="http://github.com/gilbertoca/gilbertoca.com">Source code</a>
+	</p>
+</footer>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2586578-2']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</body>
+</html>

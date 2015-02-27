@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+    <head>
+        <title></title>
+        <meta charset="utf-8"/>
+        <title>Como baixar um site web inteiro - wget </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
+        <link rel="alternate"  type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
+        <link href="../../css/default.css" rel="stylesheet">
+        <link href="../../css/syntax.css" rel="stylesheet">
+        <link href="../../css/prettify.css" rel="stylesheet">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="../../js/html5shiv.min.js"></script>
+        <![endif]-->
+
+        <!-- Fav and touch icons -->
+        <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+        <link rel="shortcut icon" href="../../favicon.ico">
+    </head>
+    <body onload="prettyPrint()">
+	
+<header>
+	<hgroup>
+		<h1><a href="/">Vivendo e Aprendendo</a></h1>
+		<h2>Experiência prática na administração de Banco de Dados</h2>
+	</hgroup>
+</header>
+<nav>
+<menu>
+	<a href="../../index.html">Home</a>
+	<a href="../../archive.html">All posts</a>
+	<a href="../../about.html">About me</a>
+	<a href="../../feeds/posts/default.xml">Atom feed</a>
+	</menu>
+</nav>
+<section>
+<article>
+    <header>
+        <h1>Como baixar um site web inteiro - wget </h1>
+        <p>by <em>Gilberto C. Andrade</em> on <strong>20 Setembro 2012</strong></p>
+        <p>Tagged as: 
+            <a href="../../tags/Geral.html">Geral</a>,
+            <a href="../../tags/Internet.html">Internet</a>,
+            <a href="../../tags/Linux.html">Linux</a>,
+            <a href="../../tags/opensuse.html">opensuse</a>,
+            <a href="../../tags/Unix.html">Unix</a>,
+            <a href="../../tags/Windows.html">Windows</a>,
+        </p>
+    </header>
+    <section>
+	<!-- google_ad_section_start --><p>Na verdade, a pergunta correta seria: como baixar todas as páginas - e seus recursos (css, javascript, imagem, etc) - de um site web?<br/>Após uma &lt;a href=&ldquo;<a href="http://superuser.com/questions/14403/how-can-i-download-an-entire-website">http://superuser.com/questions/14403/how-can-i-download-an-entire-website</a>&rdquo; title:&ldquo;pesquisa&rdquo; target=&quot;_blank&ldquo;&gt;breve pesquisa</a>, fiquei surpreso ao saber que possuía a ferramenta adequada para essa tarefa, mas ao mesmo tempo decepcionado comigo mesmo por se tratar de um utilitário que uso a um bom tempo - aquela velha história, compra-se um produto mas não se importa em usar todo o seu potencial.<br/>O &lt;a href=&rdquo;<a href="http://www.gnu.org/software/wget/">http://www.gnu.org/software/wget/</a>&ldquo; title:&rdquo;wget&ldquo; target=&rdquo;_blank&quot;&gt;Wget</a> é uma ferramenta de linha de comando bem clássica para este tipo de tarefa. Ele vem com a maioria dos sistemas Unix/Linux, há versão para o Windows também (mais recente <a href="http://opensourcepack.blogspot.com.br/2010/05/wget-112-for-windows.html" title="wget para windows" target="_blank">está disponível aqui</a>).<br/>Assim temos:</p>
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="bash" style="font-family:monospace;"><span style="color: #c20cb9; font-weight: bold;">wget</span> <span style="color: #660033;">-r</span> <span style="color: #660033;">--no-parent</span> http:<span style="color: #000000; font-weight: bold;">//</span>site.com<span style="color: #000000; font-weight: bold;">/</span>pdfs<span style="color: #000000; font-weight: bold;">/</span></pre>
+      </td>
+    </tr>
+  </table>
+</div><p>Aqui mais dois ótimos sites como exemplo:</p>
+<ul>
+  <li><a href="http://linuxreviews.org/quicktips/wget/" target="_blank"><a href="http://linuxreviews.org/quicktips/wget/">http://linuxreviews.org/quicktips/wget/</a></a></li>
+  <li><a href="http://www.krazyworks.com/?p=591" target="_blank"><a href="http://www.krazyworks.com/?p=591">http://www.krazyworks.com/?p=591</a></a></li>
+</ul>
+<!-- google_ad_section_end -->
+    </section>
+<section>
+<div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'blog-gilbertoca-com',
+                disqus_identifier = 'Como baixar um site web inteiro - wget ',
+                disqus_url = window.location.href.split('/').splice(0,3).join("/")+'2012/09/2012-09-20-como-baixar-um-site-web-inteiro-wget.html';
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+</article>
+	
+</section>
+<footer>
+	<p>
+		<a href="https://pages.github.com/">Hosted by GitHub Pages</a> -
+		<a href="http://jbake.org/">Generated with JBake</a> -
+		<a href="http://github.com/gilbertoca/gilbertoca.com">Source code</a>
+	</p>
+</footer>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2586578-2']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+    <head>
+        <title></title>
+        <meta charset="utf-8"/>
+        <title>Instale Oracle JDK7 no openSUSE</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
+        <link rel="alternate"  type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
+        <link href="../../css/default.css" rel="stylesheet">
+        <link href="../../css/syntax.css" rel="stylesheet">
+        <link href="../../css/prettify.css" rel="stylesheet">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="../../js/html5shiv.min.js"></script>
+        <![endif]-->
+
+        <!-- Fav and touch icons -->
+        <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+        <link rel="shortcut icon" href="../../favicon.ico">
+    </head>
+    <body onload="prettyPrint()">
+	
+<header>
+	<hgroup>
+		<h1><a href="/">Vivendo e Aprendendo</a></h1>
+		<h2>Experiência prática na administração de Banco de Dados</h2>
+	</hgroup>
+</header>
+<nav>
+<menu>
+	<a href="../../index.html">Home</a>
+	<a href="../../archive.html">All posts</a>
+	<a href="../../about.html">About me</a>
+	<a href="../../feeds/posts/default.xml">Atom feed</a>
+	</menu>
+</nav>
+<section>
+<article>
+    <header>
+        <h1>Instale Oracle JDK7 no openSUSE</h1>
+        <p>by <em>Gilberto C. Andrade</em> on <strong>21 Fevereiro 2013</strong></p>
+        <p>Tagged as: 
+            <a href="../../tags/Geral.html">Geral</a>,
+            <a href="../../tags/Java.html">Java</a>,
+            <a href="../../tags/Linux.html">Linux</a>,
+            <a href="../../tags/opensuse.html">opensuse</a>,
+        </p>
+    </header>
+    <section>
+	<!-- google_ad_section_start --><p>Realize o download a partir deste local: &lt;a href=&ldquo;<a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html">http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html</a>&rdquo; title:&ldquo;Java SE Development Kit 7 Downloads&rdquo; target=&quot;_blank&quot;&gt;Java SE Development Kit 7 Downloads</a>, em um diretório de sua escolha - escolhi: /Softwares_usados/Tools/java/jdk/ . </p><p>Depois como super usuário (root) utilize &lt;a href=&ldquo;<a href="http://doc.opensuse.org/documentation/html/openSUSE/opensuse-startup/cha.sw_cl.html">http://doc.opensuse.org/documentation/html/openSUSE/opensuse-startup/cha.sw_cl.html</a>&rdquo; title:&ldquo;Ferramenta de Gerenciamento de Software - Zypper&rdquo; target=&quot;_blank&quot;&gt;a Ferramente de Gerencimanto de Software - Zypper -</a> para instalar o pacote (arquivo RPM):</p><p><div class="wp_syntax"><br/> <table><br/> <tr><br/> <td class="code"><br/> <pre class="bash" style="font-family:monospace;">gilberto.andrade<span style="color: #000000; font-weight: bold;">@</span>A37710:~$ <span style="color: #c20cb9; font-weight: bold;">su</span> -<br/>Senha:<br/>A37710:~ <span style="color: #666666; font-style: italic;"># cd /dados/D/Softwares_usados/Tools/java/jdk/</span><br/>A37710:<span style="color: #000000; font-weight: bold;">/</span>dados<span style="color: #000000; font-weight: bold;">/</span>D<span style="color: #000000; font-weight: bold;">/</span>Softwares_usados<span style="color: #000000; font-weight: bold;">/</span>Tools<span style="color: #000000; font-weight: bold;">/</span>java<span style="color: #000000; font-weight: bold;">/</span>jdk <span style="color: #666666; font-style: italic;"># ll</span><br/>total <span style="color: #000000;">439208</span><br/><span style="color: #660033;">-rw-r&mdash;&ndash;</span> <span style="color: #000000;">1</span> gilberto.andrade <span style="color: #c20cb9; font-weight: bold;">users</span> <span style="color: #000000;">8405307</span> Feb <span style="color: #000000;">11</span> <span style="color: #000000;">20</span>:<span style="color: #000000;">14</span> javafx-<span style="color: #000000;">2</span>_2_7-apidocs.zip<br/><span style="color: #660033;">-rw-r&ndash;r&ndash;</span> <span style="color: #000000;">1</span> gilberto.andrade <span style="color: #c20cb9; font-weight: bold;">users</span> <span style="color: #000000;">54426218</span> Oct <span style="color: #000000;">11</span> <span style="color: #000000;">15</span>:<span style="color: #000000;">12</span> javafx_scenebuilder-<span style="color: #000000;">1</span>_1-beta-linux-x64.tar.gz<br/><span style="color: #660033;">-rw-r&ndash;r&ndash;</span> <span style="color: #000000;">1</span> gilberto.andrade <span style="color: #c20cb9; font-weight: bold;">users</span> <span style="color: #000000;">216263278</span> Jun <span style="color: #000000;">13</span> <span style="color: #000000;">2012</span> javatutorials.zip<br/><span style="color: #660033;">-rw-r&mdash;&ndash;</span> <span style="color: #000000;">1</span> gilberto.andrade <span style="color: #c20cb9; font-weight: bold;">users</span> <span style="color: #000000;">60768483</span> Feb <span style="color: #000000;">11</span> <span style="color: #000000;">18</span>:<span style="color: #000000;">10</span> jdk-7u15-apidocs.zip<br/><span style="color: #660033;">-rw-r&mdash;&ndash;</span> <span style="color: #000000;">1</span> gilberto.andrade <span style="color: #c20cb9; font-weight: bold;">users</span> <span style="color: #000000;">109860709</span> Feb <span style="color: #000000;">16</span> 04:08 jdk-7u15-linux-x64.rpm<br/>&nbsp;<br/>A37710:<span style="color: #000000; font-weight: bold;">/</span>dados<span style="color: #000000; font-weight: bold;">/</span>D<span style="color: #000000; font-weight: bold;">/</span>Softwares_usados<span style="color: #000000; font-weight: bold;">/</span>Tools<span style="color: #000000; font-weight: bold;">/</span>java<span style="color: #000000; font-weight: bold;">/</span>jdk <span style="color: #666666; font-style: italic;"># zypper install jdk-7u15-linux-x64.rpm</span></pre><br/> </td><br/> </tr><br/> </table><br/></div></p> </p><p>Vamos “avisar” o mecanismo do sistema que é responsável por estes serviços - <a href="http://blog.gilbertoca.com/?p:875" title="Alterne entre versões Java facilmente [update-alternatives] parte 2" target="_blank">update-alternatives</a>- que existe uma nova versão do jdk instalada. O diretório (melhor dizendo, link) <strong>/usr/java/latest</strong> representa a versão mais recente instalada e irá apontar para última e mais nova versão:</p><p><div class="wp_syntax"><br/> <table><br/> <tr><br/> <td class="code"><br/> <pre class="bash" style="font-family:monospace;">A37710:<span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>java <span style="color: #666666; font-style: italic;"># ll</span><br/>total <span style="color: #000000;">12</span><br/>lrwxrwxrwx <span style="color: #000000;">1</span> root root <span style="color: #000000;">16</span> Feb <span style="color: #000000;">15</span> <span style="color: #000000;">16</span>:09 default -<span style="color: #000000; font-weight: bold;">&gt;</span> <span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>java<span style="color: #000000; font-weight: bold;">/</span>latest<br/>drwxr-xr-x <span style="color: #000000;">4</span> root root <span style="color: #000000;">4096</span> Feb <span style="color: #000000;">15</span> <span style="color: #000000;">15</span>:<span style="color: #000000;">13</span> jdk1.7.0_07<br/>drwxr-xr-x <span style="color: #000000;">3</span> root root <span style="color: #000000;">4096</span> Feb <span style="color: #000000;">21</span> <span style="color: #000000;">14</span>:<span style="color: #000000;">36</span> jdk1.7.0_13<br/>drwxr-xr-x <span style="color: #000000;">8</span> root root <span style="color: #000000;">4096</span> Feb <span style="color: #000000;">21</span> <span style="color: #000000;">14</span>:<span style="color: #000000;">36</span> jdk1.7.0_15<br/>lrwxrwxrwx <span style="color: #000000;">1</span> root root <span style="color: #000000;">21</span> Feb <span style="color: #000000;">21</span> <span style="color: #000000;">14</span>:<span style="color: #000000;">36</span> latest -<span style="color: #000000; font-weight: bold;">&gt;</span> <span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>java<span style="color: #000000; font-weight: bold;">/</span>jdk1.7.0_15</pre><br/> </td><br/> </tr><br/> </table><br/></div></p> </p><p>A partir do diretório <strong>latest/bin</strong> e <strong>latest/jre/bin</strong> realize as seguintes modificações:</p><p><div class="wp_syntax"><br/> <table><br/> <tr><br/> <td class="code"><br/> <pre class="bash" style="font-family:monospace;">A37710:<span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>java <span style="color: #666666; font-style: italic;"># cd latest/bin/</span><br/>A37710:<span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>java<span style="color: #000000; font-weight: bold;">/</span>latest<span style="color: #000000; font-weight: bold;">/</span>bin <span style="color: #666666; font-style: italic;"># for bin in *; do update-alternatives &ndash;install /usr/bin/$bin $bin $(pwd)/$bin 20000; done</span><br/>A37710:<span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>java<span style="color: #000000; font-weight: bold;">/</span>latest<span style="color: #000000; font-weight: bold;">/</span>bin <span style="color: #666666; font-style: italic;"># cd ..</span><br/>A37710:<span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>java<span style="color: #000000; font-weight: bold;">/</span>latest <span style="color: #666666; font-style: italic;"># cd jre/bin/</span><br/>A37710:<span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>java<span style="color: #000000; font-weight: bold;">/</span>latest<span style="color: #000000; font-weight: bold;">/</span>jre<span style="color: #000000; font-weight: bold;">/</span>bin <span style="color: #666666; font-style: italic;"># for bin in *; do update-alternatives &ndash;install /usr/bin/$bin $bin $(pwd)/$bin 20000; done</span><br/>A37710:<span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>java<span style="color: #000000; font-weight: bold;">/</span>latest<span style="color: #000000; font-weight: bold;">/</span>jre<span style="color: #000000; font-weight: bold;">/</span>bin <span style="color: #666666; font-style: italic;">#</span></pre><br/> </td><br/> </tr><br/> </table><br/></div></p> </p><p>Por fim, atualizaremos o <strong>plugin java - javaplugin.so -</strong> para os navegadores instalados no sistema:</p>
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="bash" style="font-family:monospace;">update-alternatives <span style="color: #660033;">--install</span> <span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>lib64<span style="color: #000000; font-weight: bold;">/</span>browser-plugins<span style="color: #000000; font-weight: bold;">/</span>javaplugin.so javaplugin <span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>java<span style="color: #000000; font-weight: bold;">/</span>latest<span style="color: #000000; font-weight: bold;">/</span>jre<span style="color: #000000; font-weight: bold;">/</span>lib<span style="color: #000000; font-weight: bold;">/</span>amd64<span style="color: #000000; font-weight: bold;">/</span>libnpjp2.so <span style="color: #000000;">20000</span></pre>
+      </td>
+    </tr>
+  </table>
+</div><p>Olhe com atenção pois utilizamos como referência para atualizar o update-alternatives o caminho base <strong>/usr/java/latest</strong>.<br/><strong>Por quê? Você sabe explicar?</strong></p>
+<!-- google_ad_section_end -->
+    </section>
+<section>
+<div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'blog-gilbertoca-com',
+                disqus_identifier = 'Instale Oracle JDK7 no openSUSE',
+                disqus_url = window.location.href.split('/').splice(0,3).join("/")+'2013/02/2013-02-21-instale-oracle-jdk7-no-opensuse.html';
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+</article>
+	
+</section>
+<footer>
+	<p>
+		<a href="https://pages.github.com/">Hosted by GitHub Pages</a> -
+		<a href="http://jbake.org/">Generated with JBake</a> -
+		<a href="http://github.com/gilbertoca/gilbertoca.com">Source code</a>
+	</p>
+</footer>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2586578-2']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</body>
+</html>

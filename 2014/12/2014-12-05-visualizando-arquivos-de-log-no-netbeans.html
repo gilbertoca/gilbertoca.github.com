@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+    <head>
+        <title></title>
+        <meta charset="utf-8"/>
+        <title>Visualizando arquivos de log no NetBeans</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
+        <link rel="alternate"  type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
+        <link href="../../css/default.css" rel="stylesheet">
+        <link href="../../css/syntax.css" rel="stylesheet">
+        <link href="../../css/prettify.css" rel="stylesheet">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="../../js/html5shiv.min.js"></script>
+        <![endif]-->
+
+        <!-- Fav and touch icons -->
+        <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+        <link rel="shortcut icon" href="../../favicon.ico">
+    </head>
+    <body onload="prettyPrint()">
+	
+<header>
+	<hgroup>
+		<h1><a href="/">Vivendo e Aprendendo</a></h1>
+		<h2>Experiência prática na administração de Banco de Dados</h2>
+	</hgroup>
+</header>
+<nav>
+<menu>
+	<a href="../../index.html">Home</a>
+	<a href="../../archive.html">All posts</a>
+	<a href="../../about.html">About me</a>
+	<a href="../../feeds/posts/default.xml">Atom feed</a>
+	</menu>
+</nav>
+<section>
+<article>
+    <header>
+        <h1>Visualizando arquivos de log no NetBeans</h1>
+        <p>by <em>Gilberto C. Andrade</em> on <strong>05 Dezembro 2014</strong></p>
+        <p>Tagged as: 
+            <a href="../../tags/desenvolvimento.html">desenvolvimento</a>,
+            <a href="../../tags/Geral.html">Geral</a>,
+            <a href="../../tags/Java.html">Java</a>,
+            <a href="../../tags/NetBeans.html">NetBeans</a>,
+            <a href="../../tags/Traduções.html">Traduções</a>,
+            <a href="../../tags/traduções.html">traduções</a>,
+        </p>
+    </header>
+    <section>
+	<!-- google_ad_section_start -->
+<blockquote><p>radhika. &lt;a title=&ldquo;Viewing log files in NetBeans IDE&rdquo; href:&ldquo;<a href="https://blogs.oracle.com/NetBeansSupport/entry/netbeans_ide_log_file">https://blogs.oracle.com/NetBeansSupport/entry/netbeans_ide_log_file</a>&rdquo; target=&quot;_blank&quot;&gt;Viewing log files in NetBeans IDE</a><br/>[online] Disponível na Internet via WWW. URL: <a href="https://blogs.oracle.com/NetBeansSupport/entry/netbeans\_ide\_log_file">https://blogs.oracle.com/NetBeansSupport/entry/netbeans\_ide\_log_file</a>. Arquivo capturado em 05 de dezembro de 2014</p>
+</blockquote><p>Os diferentes arquivos de log que o usuário do NetBeans necessita verificar em caso de problema, e como visualizá-los através do próprio IDE:</p>
+<ul>
+  <li>O arquivo de log do NetBeans: Para visualizar o conteúdo deste arquivo acesse Menu Principal -&gt; Exibir -&gt; Log do IDE (ou diretamente $netbeans_userdir/var/log/messages.log). O conteúdo aparece na janela de saída com o título log do IDE</li>
+  <li>Os arquivos de log de Servidor: Para visualizar os arquivos de log de Servidor, mude para janela Serviços, expanda o nó Servidores, clique com o botão direito do mouse sobre o nó da instância, e selecione &#8216;Exibir Log do Servidor&#8217;.</li>
+  <li>Por exemplo, para o servidor de aplicações GlassFish Server Open Source que vem na instalação do NetBeans, na janela Serviços, expanda o nó Servidores -&gt; GlassFish V4 e clique com o botão direito do mouse, e selecione &#8216;Exibir Log do Servidor&#8217;. O conteúdo aparece na janela de saída sob aba de título glassFish V4.</li>
+  <li>Observe que para um Servidor Tomcat registrado, clicar com o botão direito do mouse e selecionar &#8216;Visualizar saída do servidor&#8217;, exibirá o arquivo de log do servidor definido no arquivo de configuração server.xml. Este menu fica disponpível quando o servidor estiver em execução.</li>
+</ul>
+<!-- google_ad_section_end -->
+    </section>
+<section>
+<div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'blog-gilbertoca-com',
+                disqus_identifier = 'Visualizando arquivos de log no NetBeans',
+                disqus_url = window.location.href.split('/').splice(0,3).join("/")+'2014/12/2014-12-05-visualizando-arquivos-de-log-no-netbeans.html';
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+</article>
+	
+</section>
+<footer>
+	<p>
+		<a href="https://pages.github.com/">Hosted by GitHub Pages</a> -
+		<a href="http://jbake.org/">Generated with JBake</a> -
+		<a href="http://github.com/gilbertoca/gilbertoca.com">Source code</a>
+	</p>
+</footer>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2586578-2']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</body>
+</html>
