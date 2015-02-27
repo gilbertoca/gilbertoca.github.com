@@ -65,10 +65,10 @@ ti-des05:/home/gilberto/software_usados/tradutor/dicionarios #</pre>
     
     Bom, agora precisamos adicionar os dicionários que precisamos ao worktrans. Para isso, através do menu Dictionaries, escolha New: Dictionaries->New &#8230;. Aparecerá tela para selecionar o tipo de dicionário. Eu escolhi o tipo babylon. O restante é bem fácil e intuitivo!
     
-    ![][3]
+    ![menu Dictionaries][3]
     
     <!-- google_ad_section_end -->
 
  [1]: http://www.escomposlinux.org/rvm/wordtrans/about_en.php
  [2]: http://www.escomposlinux.org/rvm/wordtrans/dictionaries_en.php
- [3]: http://blog.gilbertoca.com/img/uploads/wordtrans.png
+ [3]: http://blog.gilbertoca.com/http://blog.gilbertoca.com/img/uploads/wordtrans.png

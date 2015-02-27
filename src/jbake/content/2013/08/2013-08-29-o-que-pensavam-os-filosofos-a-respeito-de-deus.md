@@ -15,7 +15,7 @@ tags=Augusto Cury, Estou lendo e você, Geral, Jesus Cristo, Jornada
 **<cite><a href="http://www.augustocury.com.br/#/livros">
 
 <div id="attachment_513" style="width: 411px" class="wp-caption alignleft">
-  <img src="../img/uploads/o-futuro-da-humanidade.png" alt="" title="o futuro da humanidade" width="401" height="600"" />
+  <img src="../http://blog.gilbertoca.com/img/uploads/o-futuro-da-humanidade.png" alt="" title="o futuro da humanidade" width="401" height="600"" />
 
   <p class="wp-caption-text">
     O Futuro da Humanidade

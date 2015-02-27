@@ -58,7 +58,7 @@ Bom, primeiro precisamos instalar as versões que desejamos. Para facilitar adic
               </table> 
               
               <p>
-                Veja o que tenho em meu ambiente:<br /> <a href="img/uploads/yast_java_instalado.png"><img src:"img/uploads/yast_java_instalado.png" alt="Ambiente Java Instalado" title="yast_java_instalado" width="808" height="627" class="alignleft size-full wp-image-405" /></a>
+                Veja o que tenho em meu ambiente:<br /> <a href="http://blog.gilbertoca.com/img/uploads/yast_java_instalado.png"><img src:"http://blog.gilbertoca.com/img/uploads/yast_java_instalado.png" alt="Ambiente Java Instalado" title="yast_java_instalado" width="808" height="627" class="alignleft size-full wp-image-405" /></a>
               </p>
               
               <p>
