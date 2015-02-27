@@ -72,12 +72,12 @@ Apesar de ser uma discussão antiga, ainda assim é bom fazer um passo a passo d
         
         <!-- google_ad_section_end -->
 
- [1]: img/uploads/1-register_domain_controler_machine_hosts.png
- [2]: img/uploads/2-edit_etc_resolver_conf_add_DC_as_nameserver.png
- [3]: img/uploads/3-configure_kerberos_capitalletters_for_DC.png
- [4]: img/uploads/4-samba_DC_none_workgroupname_domain_security_ads_realms.png
- [5]: img/uploads/5-restart_samba_server.png
- [6]: img/uploads/6-test_kerberos_autentication.png
- [7]: img/uploads/7-join_ads_domain.png
- [8]: img/uploads/8-windows_domain_membership.png
- [9]: img/uploads/9-reboot_linux_client.png
+ [1]: http://blog.gilbertoca.com/img/uploads/1-register_domain_controler_machine_hosts.png
+ [2]: http://blog.gilbertoca.com/img/uploads/2-edit_etc_resolver_conf_add_DC_as_nameserver.png
+ [3]: http://blog.gilbertoca.com/img/uploads/3-configure_kerberos_capitalletters_for_DC.png
+ [4]: http://blog.gilbertoca.com/img/uploads/4-samba_DC_none_workgroupname_domain_security_ads_realms.png
+ [5]: http://blog.gilbertoca.com/img/uploads/5-restart_samba_server.png
+ [6]: http://blog.gilbertoca.com/img/uploads/6-test_kerberos_autentication.png
+ [7]: http://blog.gilbertoca.com/img/uploads/7-join_ads_domain.png
+ [8]: http://blog.gilbertoca.com/img/uploads/8-windows_domain_membership.png
+ [9]: http://blog.gilbertoca.com/img/uploads/9-reboot_linux_client.png

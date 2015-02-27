@@ -26,4 +26,4 @@ Lembrando que antes disso precisamos instalar as versões que desejamos utilizar
  [4]: http://www.eclipse.org
  [5]: http://maven.apache.org
  [6]: http://netbeans.org/index.html
- [7]: img/uploads/compile_option.png
+ [7]: http://blog.gilbertoca.com/img/uploads/compile_option.png

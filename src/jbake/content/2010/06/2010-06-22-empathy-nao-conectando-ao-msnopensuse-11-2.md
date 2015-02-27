@@ -62,4 +62,4 @@ Espero que esta informação ajude a outros colegas usuários linux.
 
 <!-- google_ad_section_end -->
 
- [1]: img/uploads/empathy_msn.png
+ [1]: http://blog.gilbertoca.com/img/uploads/empathy_msn.png

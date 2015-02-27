@@ -30,4 +30,4 @@ Colocando um widget de Text vazio faz a mágica. Foi o que coloquei em cada side
 
  [1]: http://www.neoease.com/inove/
  [2]: http://wordpress.org/support/topic/removing-sidebar-items-in-inove-template
- [3]: img/uploads/delete_archives_widget.png
+ [3]: http://blog.gilbertoca.com/img/uploads/delete_archives_widget.png

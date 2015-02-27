@@ -34,6 +34,6 @@ Para aqueles que já usam o [FreeMind][2], deixo o arquivo para melhoria: [EU\_M
 
 <!-- google_ad_section_end -->
 
- [1]: img/uploads/EU_MIM_ou_ME.png
+ [1]: http://blog.gilbertoca.com/img/uploads/EU_MIM_ou_ME.png
  [2]: http://freemind.sourceforge.net
- [3]: img/uploads/EU_MIM_ou_ME.mm
+ [3]: http://blog.gilbertoca.com/img/uploads/EU_MIM_ou_ME.mm

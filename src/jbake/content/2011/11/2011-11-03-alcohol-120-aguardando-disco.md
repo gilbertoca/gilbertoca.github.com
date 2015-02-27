@@ -16,4 +16,4 @@ Referência: <a href="http://forum.alcohol-soft.com/index.php?/topic/26573-waiti
 
 <!-- google_ad_section_end -->
 
- [1]: img/uploads/imagem_alcohol.png
+ [1]: http://blog.gilbertoca.com/img/uploads/imagem_alcohol.png

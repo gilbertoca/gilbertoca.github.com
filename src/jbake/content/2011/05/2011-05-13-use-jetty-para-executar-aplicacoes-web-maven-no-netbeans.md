@@ -66,8 +66,8 @@ netbeans<span style="color: #000000;">.</span>deploy<span style="color: #000000;
  [3]: http://wiki.eclipse.org/Jetty/Feature/Jetty_Maven_Plugin
  [4]: http://www.netbeans.org
  [5]: http://wiki.netbeans.org/FaqCompileOnSave#Using_Compile_on_Save_in_Maven_Projects
- [6]: img/uploads/CompileOnSave.png
- [7]: img/uploads/ActionRunExecuteGoals.png
- [8]: img/uploads/ActionDebugExecuteGoals.png
+ [6]: http://blog.gilbertoca.com/img/uploads/CompileOnSave.png
+ [7]: http://blog.gilbertoca.com/img/uploads/ActionRunExecuteGoals.png
+ [8]: http://blog.gilbertoca.com/img/uploads/ActionDebugExecuteGoals.png
  [9]: https://cwiki.apache.org/WICKET/maven-jetty-plugin.html
  [10]: http://mrhaki.blogspot.com/2009/02/use-jetty-to-run-maven-web-applications.html
