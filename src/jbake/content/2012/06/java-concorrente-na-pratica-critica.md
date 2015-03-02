@@ -1,4 +1,4 @@
-id=
+id=910
 title=Java Concorrente na Prática - crítica 
 date=2012-06-01 10:43:49
 type=post
@@ -14,7 +14,7 @@ Bom, vou parar por aqui. Não vou nem mencionar a coerência textual, caso contr
 <a href="http://www.altabooks.com.br/product_info.php?products_id=204" target="_blank">
 
 <div id="attachment_913" style="width: 187px" class="wp-caption alignleft">
-  <img src="http://blog.gilbertoca.com/img/uploads/java_conc_na_pratica.jpg" alt:"" title="java_conc_na_pratica" width="177" height="250" class="size-full wp-image-913" />
+  <img src="http://blog.gilbertoca.com/img/uploads/java_conc_na_pratica.jpg"  title="java_conc_na_pratica" width="177" height="250" class="size-full wp-image-913" />
   
   <p class="wp-caption-text">
     Java Concorrent na Prática

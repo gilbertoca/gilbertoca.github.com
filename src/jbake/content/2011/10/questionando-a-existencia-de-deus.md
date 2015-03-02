@@ -1,4 +1,4 @@
-id=
+id=829
 title=Questionando a existência de Deus
 date=2011-10-10 09:29:05
 type=post
@@ -24,7 +24,7 @@ tags=Deus, Estou lendo e você, Geral, Jesus Cristo, Jornada
 > **<cite><a href="http://www.augustocury.com.br/#/livros">
 > 
 > <div id="attachment_512" style="width: 211px" class="wp-caption alignleft">
->   <img src="http://blog.gilbertoca.com/img/uploads/8_602866001.jpg" alt:"" title="mestre da vida" width="201" height="300" class="size-medium wp-image-512" />
+>   <img src="http://blog.gilbertoca.com/img/uploads/8_602866001.jpg"  title="mestre da vida" width="201" height="300" class="size-medium wp-image-512" />
 >   
 >   <p class="wp-caption-text">
 >     O Mestre da Vida

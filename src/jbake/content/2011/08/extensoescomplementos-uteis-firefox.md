@@ -1,4 +1,4 @@
-id=
+id=314
 title=Extensões (complementos) FireFox
 date=2011-08-11 10:00:42
 type=post

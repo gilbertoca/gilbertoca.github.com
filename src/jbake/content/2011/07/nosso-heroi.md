@@ -1,4 +1,4 @@
-id=
+id=782
 title=Nosso herói!
 date=2011-07-22 10:18:55
 type=post

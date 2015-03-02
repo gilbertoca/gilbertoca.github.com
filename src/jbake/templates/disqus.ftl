@@ -2,9 +2,9 @@
 <div id="disqus_thread"></div>
         <script type="text/javascript">
             /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-            var disqus_shortname = 'blog-gilbertoca-com',
-                disqus_identifier = '${content.title}',
-                disqus_url = window.location.href.split('/').splice(0,3).join("/")+'${content.uri}';
+            var disqus_shortname = 'blog-gilbertoca-com';
+            var disqus_identifier = '${content.id}';
+
             /* * * DON'T EDIT BELOW THIS LINE * * */
             (function() {
                 var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

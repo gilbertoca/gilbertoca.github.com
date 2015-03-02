@@ -1,4 +1,4 @@
-id=
+id=216
 title=CHKDSK toda vez que reinicia (CHKDSK runs every time I boot)!
 date=2009-10-16 22:18:28
 type=post

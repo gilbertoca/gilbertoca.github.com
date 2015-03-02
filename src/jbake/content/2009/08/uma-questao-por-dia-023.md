@@ -1,4 +1,4 @@
-id=
+id=197
 title=Uma Questão Por Dia [023] 
 date=2009-08-22 22:10:18
 type=post

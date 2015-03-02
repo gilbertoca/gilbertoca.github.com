@@ -1,4 +1,4 @@
-id=
+id=432
 title=Alterne entre versões Java facilmente [Netbeans 6.*] 
 date=2010-07-21 14:22:40
 type=post
@@ -15,7 +15,7 @@ Minha escolha, assim como de mais alguns colegas foi o [Netbeans][6] 6.8. Vejamo
 Tanto para configurar ou mesmo alternar a versão do java utilizado pode-se utilizar o seguinte caminho:  
 Project&#8217;s properties->Build:compile .  
 A partir deste diálogo, você poderá alternar de versão através “Java Plataform” ou gerenciar/adicionar/remover versões através da opção “Manage Java Plataforms”  
-[<img src="http://blog.gilbertoca.com/img/uploads/compile_option-300x225.png" alt:"" title="compile_option" width="300" height="225" class="alignleft size-medium wp-image-436" />][7]  
+[<img src="http://blog.gilbertoca.com/img/uploads/compile_option-300x225.png"  title="compile_option" width="300" height="225" class="alignleft size-medium wp-image-436" />][7]  
 Lembrando que antes disso precisamos instalar as versões que desejamos utilizar.
 
 <!-- google_ad_section_end -->

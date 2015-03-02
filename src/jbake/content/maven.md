@@ -1,4 +1,4 @@
-id=
+id=como-fazer
 title=Como fazer
 date=2009-12-23 09:31:21
 type=page

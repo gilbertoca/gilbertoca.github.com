@@ -1,4 +1,4 @@
-id=
+id=1106
 title=Oracle JDK8 no OpenSUSE
 date=2014-07-02 14:31:06
 type=post

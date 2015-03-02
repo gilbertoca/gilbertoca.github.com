@@ -1,4 +1,4 @@
-id=
+id=5
 title=Conexão Lenta com o Banco Oracle - TNSPING, SQLPLUS, ETC
 date=2009-03-13 08:00:57
 type=post

@@ -1,4 +1,4 @@
-id=
+id=11
 title=Perdeu o arquivo init.ora e agora? Como recuperar/reiniciar a instância?
 date=2008-06-24 23:10:31
 type=post

@@ -1,4 +1,4 @@
-id=
+id=370
 title=Direct Path Load - Como configurar 
 date=2010-06-01 14:20:55
 type=post

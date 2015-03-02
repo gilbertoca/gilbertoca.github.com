@@ -1,4 +1,4 @@
-id=
+id=452
 title=Melhor aparência (fonte)[OpenSuSe 11.3] 
 date=2010-10-22 16:12:35
 type=post

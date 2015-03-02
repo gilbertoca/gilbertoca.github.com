@@ -1,4 +1,4 @@
-id=
+id=837
 title=Alcohol 120% - Aguardando Disco 
 date=2011-11-03 22:22:54
 type=post
@@ -7,7 +7,7 @@ tags=Geral, Sistema Operacional, Windows, Windows XP
 ~~~~~~
 <!-- google_ad_section_start -->
 
-[<img src="http://blog.gilbertoca.com/img/uploads/imagem_alcohol.png" alt:"" title="imagem_alcohol" width="1024" height="768" class="alignright size-full wp-image-839" />][1]
+[<img src="http://blog.gilbertoca.com/img/uploads/imagem_alcohol.png" title="imagem_alcohol" width="1024" height="768" class="alignright size-full wp-image-839" />][1]
 
 Isso é um problema? Não. Na verdade o problema está entre o teclado e o computador. <img src="http://blog.gilbertoca.com/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" /> 
 

@@ -1,4 +1,4 @@
-id=
+id=499
 title=A inteligência de Cristo diante da ansiedade
 date=2011-01-03 10:18:10
 type=post
@@ -18,7 +18,7 @@ tags=Estou lendo e você
 **<cite><a href="http://www.augustocury.com.br/#/livros">
 
 <div id="attachment_512" style="width: 211px" class="wp-caption alignleft">
-  <img src="http://blog.gilbertoca.com/img/uploads/6_457369206-201x300.jpg" alt:"" title="mestre dos mestres" width="201" height="300" class="size-medium wp-image-512" />
+  <img src="http://blog.gilbertoca.com/img/uploads/6_457369206-201x300.jpg"  title="mestre dos mestres" width="201" height="300" class="size-medium wp-image-512" />
   
   <p class="wp-caption-text">
     O Mestre dos Mestres

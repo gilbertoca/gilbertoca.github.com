@@ -1,4 +1,4 @@
-id=
+id=679
 title=Debugando com Maven Jetty Plugin no Netbeans
 date=2011-05-13 16:30:29
 type=post
@@ -12,7 +12,7 @@ Vejamos como configurar o [Jetty][1], utilizando como IDE o [Netbeans 6.9][4] (d
 **requisito: ser uma aplicação web gerenciada pelo Maven.** 
 
   1. Primeiro vamos habilitar a função Compilar ao Salvar ([Compile On Save][5]) em nosso projeto. Esta função vem habilitada somente para execução de testes em projetos gerenciados pelo Maven, aqui estamos ajustando para execução do fonte também:  
-    [<img src="http://blog.gilbertoca.com/img/uploads/CompileOnSave.png" alt:"" title="CompileOnSave" width="804" height="563" class="alignright size-full wp-image-701" />][6] 
+    [<img src="http://blog.gilbertoca.com/img/uploads/CompileOnSave.png"  title="CompileOnSave" width="804" height="563" class="alignright size-full wp-image-701" />][6] 
   2. Adicione o [plugin jetty][3] para o maven;
 <div class="wp_syntax">
   <table>
@@ -35,7 +35,7 @@ Vejamos como configurar o [Jetty][1], utilizando como IDE o [Netbeans 6.9][4] (d
 </div>
 
   3. Abra a janela de propriedades do projeto Maven e selecione Ações(Actions) da lista de categorias (Categories). Encontre a ação Executar (Run) e altere o valor do campo Metas de Execução (Execute Goals) para <bold>jetty:stop jetty:run</bold>;  
-    [<img src="http://blog.gilbertoca.com/img/uploads/ActionRunExecuteGoals.png" alt:"" title="ActionRunExecuteGoals" width="752" height="580" class="alignright size-full wp-image-687" />][7] 
+    [<img src="http://blog.gilbertoca.com/img/uploads/ActionRunExecuteGoals.png"  title="ActionRunExecuteGoals" width="752" height="580" class="alignright size-full wp-image-687" />][7] 
   4. Então, faça o mesmo para ação Depurar Projeto(Debug project)  
     e adicione as seguintes propriedades:</p> <div class="wp_syntax">
       <table>
@@ -49,7 +49,7 @@ netbeans<span style="color: #000000;">.</span>deploy<span style="color: #000000;
       </table>
     </div>
     
-    [<img src="http://blog.gilbertoca.com/img/uploads/ActionDebugExecuteGoals.png" alt:"" title="ActionDebugExecuteGoals" width="760" height="589" class="alignright size-full wp-image-689" />][8] </li> </ol> 
+    [<img src="http://blog.gilbertoca.com/img/uploads/ActionDebugExecuteGoals.png"  title="ActionDebugExecuteGoals" width="760" height="589" class="alignright size-full wp-image-689" />][8] </li> </ol> 
     
     O legal é poder depurar a aplicação web.  
     Pronto!! <img src="http://blog.gilbertoca.com/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" /> 

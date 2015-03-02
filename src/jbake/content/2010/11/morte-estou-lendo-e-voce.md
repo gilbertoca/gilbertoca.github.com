@@ -1,4 +1,4 @@
-id=
+id=462
 title=Morte
 date=2010-11-08 23:04:49
 type=post

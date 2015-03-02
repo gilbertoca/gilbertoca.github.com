@@ -1,4 +1,4 @@
-id=
+id=386
 title=Como recuperar senha de root
 date=2010-06-08 11:14:18
 type=post

@@ -1,4 +1,4 @@
-id=
+id=67
 title=Uma Questão por Dia [002] 
 date=2009-06-16 19:28:32
 type=post

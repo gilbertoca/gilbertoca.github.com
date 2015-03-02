@@ -1,4 +1,4 @@
-id=
+id=332
 title=DBCA não encontra o banco de dados
 date=2010-04-07 17:45:28
 type=post

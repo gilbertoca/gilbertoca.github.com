@@ -1,4 +1,4 @@
-id=
+id=764
 title=Linux - Participação no domínio do Windows 
 date=2011-07-15 22:27:44
 type=post
@@ -15,13 +15,13 @@ Este pedido de ajuda está registrado <a href="http://www.vivaolinux.com.br/topi
 Apesar de ser uma discussão antiga, ainda assim é bom fazer um passo a passo deste procedimento. Antes devo relatar que aqui na secretaria usamos <a href="http://technet.microsoft.com/pt-br/library/cc668412.aspx" title:"Active Directory" target="_blank">Active Directory</a> para autenticação, então foi esse ambiente que usei para testar a inclusão de uma estação <a href="http://pt.opensuse.org/Portal:Distribui%C3%A7%C3%A3o" title="OpenSUSE" target="_blank">Linux OpenSUSE</a> em um Domínio Windows: 
 
   1. Registrar seu controlador de domínio(DC) na lista de nomes de máquinas. Adicione todo o nome qualificado primeiro e o apelido como alias: 192.168.1.2 = server.domain.com server  
-    [<img src="http://blog.gilbertoca.com/img/uploads/1-register_domain_controler_machine_hosts.png" alt:"" title="1-register_domain_controler_machine_hosts" width="1024" height="768" class="alignright size-full wp-image-769" />][1] 
+    [<img src="http://blog.gilbertoca.com/img/uploads/1-register_domain_controler_machine_hosts.png"  title="1-register_domain_controler_machine_hosts" width="1024" height="768" class="alignright size-full wp-image-769" />][1] 
   2. Editar o arquivo /etc/resolv.conf e adicionar seu DC como nameserver: nameserver = server.domain.com  
-    [<img src="http://blog.gilbertoca.com/img/uploads/2-edit_etc_resolver_conf_add_DC_as_nameserver.png" alt:"" title="2-edit_etc_resolver_conf_add_DC_as_nameserver" width="1024" height="768" class="alignright size-full wp-image-770" />][2] 
+    [<img src="http://blog.gilbertoca.com/img/uploads/2-edit_etc_resolver_conf_add_DC_as_nameserver.png"  title="2-edit_etc_resolver_conf_add_DC_as_nameserver" width="1024" height="768" class="alignright size-full wp-image-770" />][2] 
   3. Configure o kerberos através do yast: o realm deverá ser escrito em letra maiúscula: DOMAIN.COM  
-    [<img src="http://blog.gilbertoca.com/img/uploads/3-configure_kerberos_capitalletters_for_DC.png" alt:"" title="3-configure_kerberos_capitalletters_for_DC" width="1024" height="768" class="alignright size-full wp-image-771" />][3] 
+    [<img src="http://blog.gilbertoca.com/img/uploads/3-configure_kerberos_capitalletters_for_DC.png"  title="3-configure_kerberos_capitalletters_for_DC" width="1024" height="768" class="alignright size-full wp-image-771" />][3] 
   4. Configura o samba  
-    [<img src="http://blog.gilbertoca.com/img/uploads/4-samba_DC_none_workgroupname_domain_security_ads_realms.png" alt:"" title="4-samba_DC_none_workgroupname_domain_security_ads_realms" width="1024" height="768" class="alignright size-full wp-image-772" />][4]</p> <div class="wp_syntax">
+    [<img src="http://blog.gilbertoca.com/img/uploads/4-samba_DC_none_workgroupname_domain_security_ads_realms.png"  title="4-samba_DC_none_workgroupname_domain_security_ads_realms" width="1024" height="768" class="alignright size-full wp-image-772" />][4]</p> <div class="wp_syntax">
       <table>
         <tr>
           <td class="code">
@@ -56,17 +56,17 @@ Apesar de ser uma discussão antiga, ainda assim é bom fazer um passo a passo d
     </div>
     
     Não esqueça de reiniciar os serviços  
-    [<img src="http://blog.gilbertoca.com/img/uploads/5-restart_samba_server.png" alt:"" title="5-restart_samba_server" width="1024" height="768" class="alignright size-full wp-image-773" />][5] </li> 
+    [<img src="http://blog.gilbertoca.com/img/uploads/5-restart_samba_server.png"  title="5-restart_samba_server" width="1024" height="768" class="alignright size-full wp-image-773" />][5] </li> 
     
       * Adicionar a máquina ao domínio (neste momento utilizando o kerberos)  
-        [<img src="http://blog.gilbertoca.com/img/uploads/6-test_kerberos_autentication.png" alt:"" title="6-test_kerberos_autentication" width="1024" height="768" class="alignright size-full wp-image-774" />][6]</p> 
+        [<img src="http://blog.gilbertoca.com/img/uploads/6-test_kerberos_autentication.png"  title="6-test_kerberos_autentication" width="1024" height="768" class="alignright size-full wp-image-774" />][6]</p> 
         net ads join -U Administrador  
-        [<img src="http://blog.gilbertoca.com/img/uploads/7-join_ads_domain.png" alt:"" title="7-join_ads_domain" width="1024" height="768" class="alignright size-full wp-image-775" />][7] </li> 
+        [<img src="http://blog.gilbertoca.com/img/uploads/7-join_ads_domain.png"  title="7-join_ads_domain" width="1024" height="768" class="alignright size-full wp-image-775" />][7] </li> 
         
           * Adicionar a máquina ao domínio (agora utilizando o samba): no yast use a opção:”Participação no domínio do windows”, marcando a opção “Usar informação SMB para autenticação Linux”  
-            [<img src="http://blog.gilbertoca.com/img/uploads/8-windows_domain_membership.png" alt:"" title="8-windows_domain_membership" width="1024" height="768" class="alignright size-full wp-image-776" />][8] 
+            [<img src="http://blog.gilbertoca.com/img/uploads/8-windows_domain_membership.png"  title="8-windows_domain_membership" width="1024" height="768" class="alignright size-full wp-image-776" />][8] 
           * Reinicie a máquina  
-            [<img src="http://blog.gilbertoca.com/img/uploads/9-reboot_linux_client.png" alt:"" title="9-reboot_linux_client" width="1024" height="768" class="alignright size-full wp-image-777" />][9] </ol> 
+            [<img src="http://blog.gilbertoca.com/img/uploads/9-reboot_linux_client.png"  title="9-reboot_linux_client" width="1024" height="768" class="alignright size-full wp-image-777" />][9] </ol> 
         
         Use com moderação! <img src="http://blog.gilbertoca.com/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" /> 
         

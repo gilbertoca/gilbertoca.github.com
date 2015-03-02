@@ -1,4 +1,4 @@
-id=
+id=about
 title=About
 date=2009-04-07 13:25:08
 type=page
@@ -6,11 +6,10 @@ status=published
 ~~~~~~
 <!-- google_ad_section_start -->
 
-***[Toda a Escritura é inspirada por Deus e útil para o ensino, para a repreensão, para a correção e para a instrução na justiça,  
-para que o homem de Deus seja apto e plenamente preparado para toda boa obra.  
-2 Timóteo 3:16-17  
-][1]  
-***  
+> Toda a Escritura é inspirada por Deus e útil para o ensino, para a repreensão, para a correção e para a instrução na justiça, para que o homem de Deus seja apto e plenamente preparado para toda boa obra.  
+>
+> -- <cite>[2 Timóteo 3:16-17 ][1]</cite>
+
 Gilberto Caetano de Andrade
 
   1. Tecnólogo em Processamento de Dados 
@@ -20,11 +19,12 @@ Gilberto Caetano de Andrade
   5. [Secretaria de Administração do Estado do Tocantins][2]
 
 Objetivo: 
+Ser exemplo para meu filho como pai e amigo. Procurar ser um esposo digno e amoroso. 
+Não envergonhar meu Senhor Jesus no meu agir, no meu pensar e principalmente no meu falar.  
 
-**Ser exemplo para meu filho como pai e amigo. Procurar ser um esposo digno e amoroso. Não envergonhar meu Senhor Jesus no meu agir, no meu pensar e principalmente no meu falar.  
-**</li> 
 
-Consequência: **Edificar a Igreja de Nosso Senhor Jesus Cristo**
+Consequência: 
+Edificar a Igreja de Nosso Senhor Jesus Cristo
 
 <!-- google_ad_section_end -->
 

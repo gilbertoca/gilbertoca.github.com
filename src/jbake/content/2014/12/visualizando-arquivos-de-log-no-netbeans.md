@@ -1,4 +1,4 @@
-id=
+id=1123
 title=Visualizando arquivos de log no NetBeans
 date=2014-12-05 09:26:55
 type=post

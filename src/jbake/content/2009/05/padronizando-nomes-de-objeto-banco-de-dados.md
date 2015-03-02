@@ -1,4 +1,4 @@
-id=
+id=25
 title=Padronizando Nomes de Objeto - Banco de Dados 
 date=2009-05-08 16:07:46
 type=post

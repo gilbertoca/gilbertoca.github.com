@@ -1,4 +1,4 @@
-id=
+id=441
 title=bash não lê o arquivo .bashrc na inicialização[Cygwin] 
 date=2010-08-24 16:43:22
 type=post

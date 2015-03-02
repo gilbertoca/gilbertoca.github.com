@@ -1,4 +1,4 @@
-id=
+id=14
 title=Oracle Developer Suite 10g - [OpenSuSe 10.3] 
 date=2008-05-06 21:10:09
 type=post

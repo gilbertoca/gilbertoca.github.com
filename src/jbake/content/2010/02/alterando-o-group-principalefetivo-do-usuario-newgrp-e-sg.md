@@ -1,4 +1,4 @@
-id=
+id=275
 title=Alterando o group principal/efetivo do usuário - newgrp e sg 
 date=2010-02-22 17:24:31
 type=post

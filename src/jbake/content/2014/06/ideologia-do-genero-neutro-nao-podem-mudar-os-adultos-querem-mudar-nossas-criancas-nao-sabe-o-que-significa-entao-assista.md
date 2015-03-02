@@ -1,4 +1,4 @@
-id=
+id=1099
 title=Ideologia do gênero neutro??? Não podem mudar os adultos. Querem mudar nossas crianças! Não sabe o que significa, então assista &#8230; 
 date=2014-06-12 08:57:49
 type=post
