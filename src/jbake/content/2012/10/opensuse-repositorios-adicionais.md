@@ -7,7 +7,7 @@ tags=Geral, Linux, opensuse, Sistema Operacional, Yast
 ~~~~~~
 <!-- google_ad_section_start -->
 
-Vira e mexe (entre uma instalação e outra, ou um upgrade e outro) preciso adicionar alguns repositórios(repository) ao <a href="http://pt.opensuse.org/YaST_Software_Management" title:"Yast" target="_blank">Yast</a> para aplicativos que costumo utilizar. Registro logo abaixo os que não podem faltar: 
+Vira e mexe (entre uma instalação e outra, ou um upgrade e outro) preciso adicionar alguns repositórios(repository) ao <a href="http://pt.opensuse.org/YaST_Software_Management" title="Yast" target="_blank">Yast</a> para aplicativos que costumo utilizar. Registro logo abaixo os que não podem faltar: 
 
 <table border="1">
   <tr>
@@ -22,7 +22,7 @@ Vira e mexe (entre uma instalação e outra, ou um upgrade e outro) preciso adic
   
   <tr>
     <td>
-      <a href="https://www.virtualbox.org/" title:"VirtualBox" target="_blank">VirtualBox</a>
+      <a href="https://www.virtualbox.org/" title="VirtualBox" target="_blank">VirtualBox</a>
     </td>
     
     <td>
@@ -52,7 +52,7 @@ Vira e mexe (entre uma instalação e outra, ou um upgrade e outro) preciso adic
   
   <tr>
     <td>
-      <a href="http://opensuse-community.org/Restricted_formats/12.2" title:"Restricted Formats" target="_blank">Restricted formats</a>
+      <a href="http://opensuse-community.org/Restricted_formats/12.2" title="Restricted Formats" target="_blank">Restricted formats</a>
     </td>
     
     <td>

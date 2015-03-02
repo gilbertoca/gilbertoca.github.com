@@ -86,7 +86,7 @@ C:\Demonstracao&gt;</pre>
   </table>
 </div>
 
-**[02/07/2013] Atualização**: O Ivans Dias, em um dos comentários, colocou um vídeo do <a href="http://www.professorramos.com" title:"Professor Ramos" target="_blank">Professor Ramos</a> bem didático - <a href="http://www.professorramos.com/video.php?id=187" title="Vírus de Pendrive - Como recuperar seus Arquivos Perdidos ou Ocultados de forma Simples" target="_blank">vale a pena conferir.</a>
+**[02/07/2013] Atualização**: O Ivans Dias, em um dos comentários, colocou um vídeo do <a href="http://www.professorramos.com" title="Professor Ramos" target="_blank">Professor Ramos</a> bem didático - <a href="http://www.professorramos.com/video.php?id=187" title="Vírus de Pendrive - Como recuperar seus Arquivos Perdidos ou Ocultados de forma Simples" target="_blank">vale a pena conferir.</a>
 
 Um abração a todos!
 

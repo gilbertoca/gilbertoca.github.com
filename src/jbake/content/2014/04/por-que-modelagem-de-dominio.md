@@ -7,7 +7,7 @@ tags=Estou lendo e você, Metodologia Ágil, Modelagem, Traduções, traduções
 ~~~~~~
 <!-- google_ad_section_start -->
 
-> Rebecca Wirfs-Brock. <a href="http://wirfs-brock.com/blog/2013/02/27/why-domain-modeling/" title:"Why Domain Modeling?" target="_blank">Why Domain Modeling?</a>  
+> Rebecca Wirfs-Brock. <a href="http://wirfs-brock.com/blog/2013/02/27/why-domain-modeling/" title="Why Domain Modeling?" target="_blank">Why Domain Modeling?</a>  
 > [online] Disponível na Internet via WWW. URL: http://wirfs-brock.com/blog/2013/02/27/why-domain-modeling/. Arquivo capturado em 27 de fevereiro de 2013 
 
 <p style="text-align:justify">

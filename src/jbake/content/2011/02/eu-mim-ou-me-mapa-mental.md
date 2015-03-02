@@ -28,7 +28,7 @@ tags=Concurso Público, freemind, Geral, mapa mental, Questões
 
 O legal seria publicar o mapa mental depois do exercício. Mas coloquei apenas uma amostra de questões, então procure mais exercício, resolva-os primeiro e depois revise o assunto com o mapa mental.
 
-[<img class="aligncenter size-large wp-image-519" title:"EU_MIM_ou_ME" alt="" src="http://blog.gilbertoca.com/img/uploads/EU_MIM_ou_ME-1024x168.png" width="1024" height="168" />][1]
+[<img class="aligncenter size-large wp-image-519" title="EU_MIM_ou_ME" alt="" src="http://blog.gilbertoca.com/img/uploads/EU_MIM_ou_ME-1024x168.png" width="1024" height="168" />][1]
 
 Para aqueles que já usam o [FreeMind][2], deixo o arquivo para melhoria: [EU\_MIM\_ou_ME][3]
 

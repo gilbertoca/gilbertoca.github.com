@@ -31,7 +31,7 @@ Bem, após uma pesquisa pelo google, <a href="http://ubuntu-utah.ubuntuforums.or
 > [<img src="http://blog.gilbertoca.com/img/uploads/empathy_msn-300x240.png"  title="Empathy MSN" width="300" height="240" class="alignnone size-medium wp-image-850" />][1]  
 > Lembre-se: você precisa fechar o aplicativo(Empathy). 
 
-> **Atualização(28/11/2011):** No trabalho já estou utilizando o openSUSE 12.1 (adaptando-me ao novo jeito do gnome 3). Este gerenciador de mensagens, novamente, veio com problema para conectar ao protocolo MSN. Desta vez não precisamos desinstalar nada, apenas realizar uma pequena modificação em uma biblioteca que o acompanha. <a href="http://forums.opensuse.org/english/get-technical-help-here/applications/467973-empathy-not-working-msn.html#post2405889" title:"Empathy not working with MSN" target="_blank">Edite o seguinte arquivo da biblioteca ql</a>:
+> **Atualização(28/11/2011):** No trabalho já estou utilizando o openSUSE 12.1 (adaptando-me ao novo jeito do gnome 3). Este gerenciador de mensagens, novamente, veio com problema para conectar ao protocolo MSN. Desta vez não precisamos desinstalar nada, apenas realizar uma pequena modificação em uma biblioteca que o acompanha. <a href="http://forums.opensuse.org/english/get-technical-help-here/applications/467973-empathy-not-working-msn.html#post2405889" title="Empathy not working with MSN" target="_blank">Edite o seguinte arquivo da biblioteca ql</a>:
 > 
 > <div class="wp_syntax">
 >   <table>
