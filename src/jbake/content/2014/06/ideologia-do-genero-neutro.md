@@ -1,11 +1,13 @@
 id=1099
-title=Ideologia do gênero neutro??? Não podem mudar os adultos. Querem mudar nossas crianças! Não sabe o que significa, então assista &#8230; 
+title=Ideologia do gênero neutro?? Não podem mudar os adultos...
 date=2014-06-12 08:57:49
 type=post
 status=published
 tags=Bíblia, Deus, Estou lendo e você, Geral, Jesus Cristo, Jornada
 ~~~~~~
 <!-- google_ad_section_start -->
+
+Ideologia do gênero neutro?? Não podem mudar os adultos. Querem mudar nossas crianças! Não sabe o que significa, então assista.
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/E2y6QeJbKcY?list=PLgG6b4TPOPJ8fxKUrNysnQmTvVy-yka8u" frameborder="0" allowfullscreen></iframe>
 
