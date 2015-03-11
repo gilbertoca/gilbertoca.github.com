@@ -89,6 +89,15 @@ As seguintes [extensões (complementos)][1] para o [navegador FireFox][2] melhor
       Utilitário para baixar vídeos
     </td>
   </tr>
+  <tr>
+    <td>
+      <a href="https://addons.mozilla.org/pt-br/firefox/addon/print-edit/?src=search">Print Edit</a>
+    </td>
+    
+    <td>
+      Permite editar o conteúdo da página antes de imprimir
+    </td>
+  </tr>
 </table>
 
 Existem mais complementos, alias uma infinidade deles, que ajudam e transformam o [navegador FireFox][2] em um aplicativo de uso diário. Estes são prioridade para mim e com este post posso buscar e instalar rapidamente.
