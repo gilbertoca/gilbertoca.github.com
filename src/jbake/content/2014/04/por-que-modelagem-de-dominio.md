@@ -3,9 +3,9 @@ title=Por que Modelagem de Domínio?
 date=2014-04-11 09:47:15
 type=post
 status=published
-tags=Estou lendo e você, Metodologia Ágil, Modelagem, Traduções, traduções, UML
+tags=Estou lendo e você, Metodologia Ágil, Modelagem, Traduções, UML
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 > Rebecca Wirfs-Brock. <a href="http://wirfs-brock.com/blog/2013/02/27/why-domain-modeling/" title="Why Domain Modeling?" target="_blank">Why Domain Modeling?</a>  
 > [online] Disponível na Internet via WWW. URL: http://wirfs-brock.com/blog/2013/02/27/why-domain-modeling/. Arquivo capturado em 27 de fevereiro de 2013 
@@ -34,4 +34,3 @@ tags=Estou lendo e você, Metodologia Ágil, Modelagem, Traduções, traduções
   Entender e descrever um domínio e criar qualquer modelo dele de algum forma, fica fora de muitas atividades de desenvolvimento.<br /> Mas se seu software é complexo, sofre mudanças repentinas, estratégico e você não está fazendo nenhuma modelagem de domínio, você pode estar perdendo alguma coisa realmente importante. Se seu software é complexo o bastante, você pode notavelmente se beneficiar da modelagem de domínio e certamente realizar algumas atividades do Projeto Dirigido por Domínio(Domain-Driven Design).<br /> Por exemplo, a “Estratégia de Projeto” do Projeto Dirigido por Domínio é um esforço consciente para criar um entendimento comum entre visionários do negócio, especialistas do domínio e desenvolvedores. Discussões de domínio iniciais de alto nível leva ao entendimento do que é central ao problema(o núcleo do domínio) e ao relacionamento entre todas as partes(subdomínios) que se interagem. Ganhar tal consenso te ajuda a manter o foco em melhores práticas de projeto e estruturar (ou restruturar) seu software habilitando-o a crescer e evoluir sustentavelmente.<br /> Mas não para por aí. Se você compra a ideia de modelagem de domínio, você também se compromete a desenvolver um profundo compartilhamento do entendimento do domínio do problema ao lado do seu código. Sua missão não é somente entregar operações funcionais, mas incorporar conhecimento do domínio em sua solução. Seu código terá objetos que representam conceitos do domínio. Você será mais minucioso ao nomear classes e métodos, assim refletindo exatamente a linguagem do domínio. Você terá discussões progressivas com especialistas de domínio e em conjunto discutir e refinar seu entendimento do domínio. Ao longo do caminho você pode rascunhar e revisar modelos de domínio. Se esforçará para identificar, preservar, fortalecer e tornar explícito as conexões entre o problema do negócio e seu código. Quando refatorar seu projeto ao ganhar mais entendimento, você não esquecerá de refletir o domínio em seu código. Seu modelo de domínio vive e evolui junto com o código.<br /> Como consequência, não há aquela grande desconexão entre o que você codifica e o que o negócio diz. E essa pode ser uma poderosa força para uma colaboração mais próxima entre desenvolvedores e especialistas do domínio.
 </p>
 
-<!-- google_ad_section_end -->

@@ -5,7 +5,7 @@ type=post
 status=published
 tags=Geral
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 Devo confessar que não estou conseguindo comentar estes pequenos simulados. Gasto muito tempo para comentá-los e isso está me atrapalhando. Vou continuar postando apenas as questões com o gabarito, mas sem os meus comentários. 
 
@@ -13,7 +13,7 @@ Devo confessar que não estou conseguindo comentar estes pequenos simulados. Gas
 
 O que quer dizer: [Uma Questão por Dia?][2]
 
-<!-- google_ad_section_end -->
+
 
  [1]: http://blog.gilbertoca.com/tools/acervo/questoespordia/[018]-mat-est-eco-cont-inf.odt
  [2]: http://blog.gilbertoca.com/?page_id=44

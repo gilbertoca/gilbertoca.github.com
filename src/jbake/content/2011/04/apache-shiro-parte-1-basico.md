@@ -3,9 +3,9 @@ title=Apache Shiro Parte 1 - básico
 date=2011-04-07 18:04:51
 type=post
 status=published
-tags=Apache Shiro, Application Server, Autenticação, Autorização, Java, maven, Proteção, Recursos de Segurança, Traduções, traduções
+tags=Apache Shiro, Application Server, Autenticação, Autorização, Java, maven, Proteção, Recursos de Segurança, Traduções
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 ** 
 
@@ -671,6 +671,6 @@ A aplicação final está disponível no ramo(branch) <A href="https://github.co
 
 Na segunda parte iremos criar um <A href="http://shiro.apache.org/realm.html" target="_blank"> realm</A> personalizado e mover usuários, senhas, perfis(roles) e permissões do arquivo ini para um banco de dados.
 
-<!-- google_ad_section_end -->
+
 
  [1]: https://github.com/SomMeri/SimpleShiroSecuredApplication/blob/static_authentication_and_authorization/src/main/java/org/meri/simpleshirosecuredapplication/servlet/VerboseFormAuthenticationFilter.java

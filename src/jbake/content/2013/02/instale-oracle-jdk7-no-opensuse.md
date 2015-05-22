@@ -3,13 +3,13 @@ title=Instale Oracle JDK7 no openSUSE
 date=2013-02-21 15:49:09
 type=post
 status=published
-tags=Geral, Java, Linux, opensuse
+tags= Java, Linux, openSUSE
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 Realize o download a partir deste local: <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html" title="Java SE Development Kit 7 Downloads" target="_blank">Java SE Development Kit 7 Downloads</a>, em um diretório de sua escolha - escolhi: /Softwares_usados/Tools/java/jdk/ . 
 
-Depois como super usuário (root) utilize <a href="http://doc.opensuse.org/documentation/html/openSUSE/opensuse-startup/cha.sw_cl.html" title="Ferramenta de Gerenciamento de Software - Zypper" target="_blank">a Ferramente de Gerencimanto de Software - Zypper -</a> para instalar o pacote (arquivo RPM):
+Depois como super usuário (root) utilize <a href="http://doc.openSUSE.org/documentation/html/openSUSE/openSUSE-startup/cha.sw_cl.html" title="Ferramenta de Gerenciamento de Software - Zypper" target="_blank">a Ferramente de Gerencimanto de Software - Zypper -</a> para instalar o pacote (arquivo RPM):
 
 <div class="wp_syntax">
   <table>
@@ -82,4 +82,3 @@ Por fim, atualizaremos o **plugin java - javaplugin.so -** para os navegadores i
 Olhe com atenção pois utilizamos como referência para atualizar o update-alternatives o caminho base **/usr/java/latest**.  
 **Por quê? Você sabe explicar?**
 
-<!-- google_ad_section_end -->

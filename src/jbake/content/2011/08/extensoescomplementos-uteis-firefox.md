@@ -3,9 +3,9 @@ title=Extensões (complementos) FireFox
 date=2011-08-11 10:00:42
 type=post
 status=published
-tags=FireFox, Geral, Internet
+tags=FireFox,  Internet
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 As seguintes [extensões (complementos)][1] para o [navegador FireFox][2] melhoram bastante a navegabilidade:
 
@@ -29,6 +29,15 @@ As seguintes [extensões (complementos)][1] para o [navegador FireFox][2] melhor
       Gerenciador de Downloads
     </td>
   </tr>
+  <tr>
+    <td>
+      <a href="https://addons.mozilla.org/en-US/firefox/addon/flashgot/?src=search">FlashGot Mass Downloader</a>
+    </td>
+    
+    <td>
+      Gerenciador de Downloads
+    </td>
+  </tr>  
   
   <tr>
     <td>
@@ -59,7 +68,6 @@ As seguintes [extensões (complementos)][1] para o [navegador FireFox][2] melhor
       Sincronizar e gerenciar seus Favoritos com o Google<br /> Bookmarks
     </td>
   </tr>
-  
   <tr>
     <td>
       <a href="https://addons.mozilla.org/pt-BR/firefox/addon/3257">Dicionário pt-BR</a>
@@ -69,7 +77,6 @@ As seguintes [extensões (complementos)][1] para o [navegador FireFox][2] melhor
       Dicionário português brasileiro para o verificador ortográfico integrado do Firefox
     </td>
   </tr>
-  
   <tr>
     <td>
       <a href="https://addons.mozilla.org/en-US/firefox/addon/easy-youtube-video-download/?src=search">Easy Youtube Video Downloader Express</a>
@@ -79,7 +86,6 @@ As seguintes [extensões (complementos)][1] para o [navegador FireFox][2] melhor
       Utilitário para baixar vídeos
     </td>
   </tr>
-  
   <tr>
     <td>
       <a href="https://addons.mozilla.org/pt-br/firefox/addon/video-downloadhelper/">video-downloadhelper</a>
@@ -91,6 +97,15 @@ As seguintes [extensões (complementos)][1] para o [navegador FireFox][2] melhor
   </tr>
   <tr>
     <td>
+      <a href="https://addons.mozilla.org/en-US/firefox/addon/html5-video-everywhere/">html5-video-everywhere</a>
+    </td>
+    
+    <td>
+      Utilitário para baixar vídeos
+    </td>
+  </tr>  
+  <tr>
+    <td>
       <a href="https://addons.mozilla.org/pt-br/firefox/addon/print-edit/?src=search">Print Edit</a>
     </td>
     
@@ -98,11 +113,29 @@ As seguintes [extensões (complementos)][1] para o [navegador FireFox][2] melhor
       Permite editar o conteúdo da página antes de imprimir
     </td>
   </tr>
+  <tr>
+    <td>
+      <a href="https://addons.mozilla.org/en-us/firefox/addon/findbar-tweak/">FindBar Tweak</a>
+    </td>
+    
+    <td>
+      FindBar Tweak fará sua barra de pesquisa funcionar!
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://addons.mozilla.org/en-US/firefox/addon/session-manager/">Session Manager</a>
+    </td>
+    
+    <td>
+      Session Manager saves and restores the state of all or some windows - either when you want it or automatically at startup and after crashes. It can also automatically save the state of open windows individually.
+    </td>
+  </tr>
 </table>
 
 Existem mais complementos, alias uma infinidade deles, que ajudam e transformam o [navegador FireFox][2] em um aplicativo de uso diário. Estes são prioridade para mim e com este post posso buscar e instalar rapidamente.
 
-<!-- google_ad_section_end -->
+
 
  [1]: http://br.mozdev.org/firefox/extensoes
  [2]: https://addons.mozilla.org/pt-BR/firefox/

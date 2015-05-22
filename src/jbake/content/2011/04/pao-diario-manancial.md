@@ -3,9 +3,9 @@ title=Porções Diárias da Bíblia[Pão Diário &#038; Manancial]
 date=2011-04-28 23:23:39
 type=post
 status=published
-tags=Bíblia, Estou lendo e você, Geral, Internet, Jesus Cristo, Sistema Operacional, Windows XP
+tags=Bíblia, Estou lendo e você,  Internet, Jesus Cristo, Sistema Operacional
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 Diversos autores compartilham experiências de vida sob uma ótica cristã, trazendo mensagens diárias (simples mas profundas) de encorajamento e reflexão, que mostram uma nova perspectiva de enfrentar os desafios da vida cotidiana. Pastores, escolas, empresas, igrejas e cidadãos que querem crescer na vida devocional têm procurado esse material. 
 
@@ -46,7 +46,7 @@ Minha escolha foi arriscada e ao mesmo tempo feliz. Arriscada por ter uma equipe
 Bom, tive duas intenções ao escrever este post: a primeira descrever a experiência e o desafio que é desenvolver este trabalho; a outra é [convidá-lo][1]: receba você também uma porção diária da Bíblia em seu e-mail!  
 Os benefícios de uma leitura constante da Bíblia são imensos, mas isso conto em outro post.
 
-<!-- google_ad_section_end -->
+
 
  [1]: http://groups.google.com/group/ibmp-mensagens-reflexivas?hl=pt-BR
  [2]: https://www.dropbox.com/

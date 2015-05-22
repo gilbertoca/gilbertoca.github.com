@@ -3,9 +3,9 @@ title=Java Concorrente na Prática - crítica
 date=2012-06-01 10:43:49
 type=post
 status=published
-tags=Estou lendo e você, Geral, Java, Traduções
+tags=Estou lendo e você,  Java, Traduções
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 Para um livro já consagrado, uma boa tradução seria o mínimo. Mas lamento relatar que o profissional escolhido para tal tarefa deixou muito a desejar. Quem fez a revisão editorial do livro - se é que o fez - , também, não realizou um bom trabalho. É nítido, a partir do primeiro capítulo, o descaso com o leitor. Um exemplo explícito disto é você ver em várias partes do livro a operação de copiar e colar, ou melhor de substituição de texto: o tradutor ou editor, substituiu a sigla GUI por Grafical User Interface onde pode, assim, onde houvesse seGUIR, conseGUIR, etc. encontramos conseGUI(Grafical User Interface). Legal né! 
 
@@ -23,4 +23,3 @@ Bom, vou parar por aqui. Não vou nem mencionar a coerência textual, caso contr
 
 <br /> </a>
 
-<!-- google_ad_section_end -->

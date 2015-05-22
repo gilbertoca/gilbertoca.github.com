@@ -5,7 +5,7 @@ type=post
 status=published
 tags=Estou lendo e você
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 <blockquote cite="http://www.ograndeconflito.com.br/">
   <p>
@@ -19,4 +19,3 @@ tags=Estou lendo e você
 
 **<cite><a href="http://www.ograndeconflito.com.br/">O Grande Conflito</a> edição condensada, Ellen G. Write. </cite>**
 
-<!-- google_ad_section_end -->

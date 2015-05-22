@@ -3,34 +3,28 @@ title=umount: /mnt/XXXX device is busy
 date=2010-02-24 16:09:27
 type=post
 status=published
-tags=Database, Linux, opensuse, Sistema Operacional, Unix
+tags=Database, Linux, openSUSE, Sistema Operacional
 ~~~~~~
-<!-- google_ad_section_start -->
 
-Você está cansado de ver estas mensagens, dizendo que você não pode desmountar /mnt/cdrom ou /mnt/flash? Veja esta pequena tática:
+Você está cansado de ver estas mensagens, dizendo que você não pode 
+desmountar <code>/mnt/cdrom</code> ou <code>/mnt/flash</code>? Veja esta 
+pequena tática:
 
-<div class="wp_syntax">
-  <table>
-    <tr>
-      <td class="code">
-        <pre class="bash" style="font-family:monospace;">lsof <span style="color: #000000; font-weight: bold;">|</span> <span style="color: #c20cb9; font-weight: bold;">grep</span> <span style="color: #000000; font-weight: bold;">/</span>mnt<span style="color: #000000; font-weight: bold;">/</span>cdrom</pre>
-      </td>
-    </tr>
-  </table>
-</div>
+<pre>
+<code class="bash">
+    lsof | grep /mnt/cdrom
+</code>
+</pre>
 
-A sáida será o(s) processo(s) que estão usando este dispositivo. Agora pare ou derrube o processo. Outra opção:
 
-<div class="wp_syntax">
-  <table>
-    <tr>
-      <td class="code">
-        <pre class="bash" style="font-family:monospace;"><span style="color: #c20cb9; font-weight: bold;">fuser</span> <span style="color: #660033;">-muv</span> <span style="color: #000000; font-weight: bold;">/</span>mnt<span style="color: #000000; font-weight: bold;">/</span>cdrom</pre>
-      </td>
-    </tr>
-  </table>
-</div>
+A sáida será o(s) processo(s) que estão usando este dispositivo. Agora pare ou 
+derrube o processo. Outra opção:
 
-O qual irá listar conta de usuário, PID, etc usando o dispositivo montado em /mnt/cdrom. 
+<pre>
+<code class="bash">
+    fuser -muv /mnt/cdrom
+</code>
+</pre>
 
-<!-- google_ad_section_end -->
+O qual irá listar conta de usuário, PID, etc usando o dispositivo montado 
+em <code>/mnt/cdrom</code>. 

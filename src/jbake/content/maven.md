@@ -4,7 +4,7 @@ date=2009-12-23 09:31:21
 type=page
 status=published
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 <table>
   <tr>
@@ -78,4 +78,3 @@ status=published
   </tr>
 </table>
 
-<!-- google_ad_section_end -->

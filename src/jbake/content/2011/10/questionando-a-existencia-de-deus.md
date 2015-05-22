@@ -3,9 +3,9 @@ title=Questionando a existência de Deus
 date=2011-10-10 09:29:05
 type=post
 status=published
-tags=Deus, Estou lendo e você, Geral, Jesus Cristo, Jornada
+tags=Deus, Estou lendo e você,  Jesus Cristo, Jornada
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 > Tentarei abordar um assunto muito complexo que perturbou e ainda perturba a mente de muitos teólogos, filósofos, pensadores e homens de todas as culturas e raças. Um assunto que também me tirou, durante anos, a tranquilidade. Um tema sobre o qual muitas vezes não temos coragem de falar, que fica represado em nossa alma, que raramente verbalizamos, mas que mina nossas convicções. Questionarei a existência de Deus sob a perspectiva da sua intervenção nos eventos da humanidade. 
 > 
@@ -33,4 +33,4 @@ tags=Deus, Estou lendo e você, Geral, Jesus Cristo, Jornada
 > 
 > <br /> O mestre da Vida pág. 127 e 128, <a href="http://www.augustocury.com.br/#/o+autor">Augusto Jorge Cury</a></cite>**
 > 
-> <!-- google_ad_section_end -->
+> 

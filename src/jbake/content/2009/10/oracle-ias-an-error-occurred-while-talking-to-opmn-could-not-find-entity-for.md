@@ -3,9 +3,9 @@ title=Oracle IAS [An error occurred while talking to OPMN. Could not find entity
 date=2009-10-19 11:43:40
 type=post
 status=published
-tags=Application Server, Linux, Sistema Operacional, Unix
+tags=Application Server, Linux, Sistema Operacional
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 O servidor de aplicações Oracle (IAS 10g) não inicia, o enterprise manager reporta um erro que não diz muito:
 
@@ -27,6 +27,6 @@ cat ipm.log<br />
 `  
 A solução foi fechar todas a aplicações oracle em execução e verificar pelo utilitário **[ps][1]** a existência de algum ainda rodando, para fechá-lo também.
 
-<!-- google_ad_section_end -->
+
 
  [1]: http://linux.die.net/man/1/ps

@@ -3,15 +3,15 @@ title=Empathy não conectando ao MSN
 date=2010-06-22 10:28:24
 type=post
 status=published
-tags=configuração, Empathy, Geral, gnome, jabber, Linux, msn
+tags=Empathy,  gnome, jabber, Linux, msn
 ~~~~~~
-<!-- google_ad_section_start -->
 
-Recentimente resolvi, novamente, atualizar o gnome da versão 2.28 para 2.30 através do procedimento descrito neste endereço: <http://en.opensuse.org/GNOME/2.30> .  Como sempre sem problemas. <a href="http://www.gnome.org/" target="_blank">O gnome</a> é um ambiente bastante consistente e a meu ver seguro! Mas um componente que uso como meio de comunicação - <a href="http://live.gnome.org/Empathy" target="_blank">Empathy</a> - começou a apresentar um erro conexão usando o protocolo MSN. Não havia percebido tal problema porque até então só tinha utilizado o <a href="http://pt.wikipedia.org/wiki/Extensible_Messaging_and_Presence_Protocol" target="_blank">protocolo Jabber</a>.
+
+Recentimente resolvi, novamente, atualizar o gnome da versão 2.28 para 2.30 através do procedimento descrito neste endereço: <http://en.openSUSE.org/GNOME/2.30> .  Como sempre sem problemas. <a href="http://www.gnome.org/" target="_blank">O gnome</a> é um ambiente bastante consistente e a meu ver seguro! Mas um componente que uso como meio de comunicação - <a href="http://live.gnome.org/Empathy" target="_blank">Empathy</a> - começou a apresentar um erro conexão usando o protocolo MSN. Não havia percebido tal problema porque até então só tinha utilizado o <a href="http://pt.wikipedia.org/wiki/Extensible_Messaging_and_Presence_Protocol" target="_blank">protocolo Jabber</a>.
 
 Bem, após uma pesquisa pelo google, <a href="http://ubuntu-utah.ubuntuforums.org/showpost.php?p=8058121&postcount=9" target="_blank">encontrei a solução do problema</a>: desisntalar o *pacote telepathy-butterfly. *Lembrando que há a necessidade de fechar o programa antes de remover este componente.
 
-> **Atualização(13/12/2011):** Hoje, após uma atualização, o empathy parou de conectar. Voltando <a href="http://forums.opensuse.org/english/get-technical-help-here/applications/467973-empathy-not-working-msn-2.html#post2417727" target="_blank">àquela discussão no forum OpenSUSE</a>, notei que a solução é bem mais simples:
+> **Atualização(13/12/2011):** Hoje, após uma atualização, o empathy parou de conectar. Voltando <a href="http://forums.openSUSE.org/english/get-technical-help-here/applications/467973-empathy-not-working-msn-2.html#post2417727" target="_blank">àquela discussão no forum openSUSE</a>, notei que a solução é bem mais simples:
 > 
 > <div class="wp_syntax">
 >   <table>
@@ -31,7 +31,7 @@ Bem, após uma pesquisa pelo google, <a href="http://ubuntu-utah.ubuntuforums.or
 > [<img src="http://blog.gilbertoca.com/img/uploads/empathy_msn-300x240.png"  title="Empathy MSN" width="300" height="240" class="alignnone size-medium wp-image-850" />][1]  
 > Lembre-se: você precisa fechar o aplicativo(Empathy). 
 
-> **Atualização(28/11/2011):** No trabalho já estou utilizando o openSUSE 12.1 (adaptando-me ao novo jeito do gnome 3). Este gerenciador de mensagens, novamente, veio com problema para conectar ao protocolo MSN. Desta vez não precisamos desinstalar nada, apenas realizar uma pequena modificação em uma biblioteca que o acompanha. <a href="http://forums.opensuse.org/english/get-technical-help-here/applications/467973-empathy-not-working-msn.html#post2405889" title="Empathy not working with MSN" target="_blank">Edite o seguinte arquivo da biblioteca ql</a>:
+> **Atualização(28/11/2011):** No trabalho já estou utilizando o openSUSE 12.1 (adaptando-me ao novo jeito do gnome 3). Este gerenciador de mensagens, novamente, veio com problema para conectar ao protocolo MSN. Desta vez não precisamos desinstalar nada, apenas realizar uma pequena modificação em uma biblioteca que o acompanha. <a href="http://forums.openSUSE.org/english/get-technical-help-here/applications/467973-empathy-not-working-msn.html#post2405889" title="Empathy not working with MSN" target="_blank">Edite o seguinte arquivo da biblioteca ql</a>:
 > 
 > <div class="wp_syntax">
 >   <table>
@@ -60,6 +60,6 @@ url = <span style="color: #C5A22D;">"http://local-bay.contacts.msn.com/abservice
 
 Espero que esta informação ajude a outros colegas usuários linux.
 
-<!-- google_ad_section_end -->
 
- [1]: http://blog.gilbertoca.com/http://blog.gilbertoca.com/img/uploads/empathy_msn.png
+
+ [1]: http://blog.gilbertoca.com/img/uploads/empathy_msn.png

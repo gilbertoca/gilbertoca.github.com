@@ -5,7 +5,7 @@ type=post
 status=published
 tags=Database
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 Se você notar que após a configuração (Editando o arquivo tnsnames.ora ou usando o utilitário netmgr) de um cliente de acesso ao Banco de Dados Oracle estiver muito lenta, verifique a variável NAMES.DIRECTORY_PATH no arquivo sqlnet.ora. 
 
@@ -33,4 +33,3 @@ Outro parâmetro que pode impactar de forma negativa suas sessões é o
 
 . Esse especifica que o Oracle permita a autenticação nativa NT para usuários windows.
 
-<!-- google_ad_section_end -->

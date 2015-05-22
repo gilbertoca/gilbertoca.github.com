@@ -3,9 +3,9 @@ title=Herança de Projeto vs Agregação de Projeto
 date=2011-06-15 17:52:47
 type=post
 status=published
-tags=configuração, Java, maven
+tags=Java, maven
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 **[Requisito][1]:** The packaging type required to be pom for parent and aggregation (multi-module) projects.  
 **Tradução: **para que você possa criar ou transformar um projeto em um que seja pai (PARENT) ou agregação (AGGREGATION), necessita-se definir seu empacotamento (PACKING) para pom, [assim][2]:
@@ -141,7 +141,7 @@ Repare que neste sub-projeto usei os dois conceitos: herança (herdando as confi
 
 Para os sub-projetos do projeto park-multi-module, poderia adicionar a seção parent como fiz com os outros(apontando para park-samples), mas perderia o benefício da herança. Então o fiz apontando para o próprio park-multi-module, pois este já herda do raiz. Legal, né! <img src="http://blog.gilbertoca.com/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" />
 
-<!-- google_ad_section_end -->
+
 
  [1]: http://maven.apache.org/pom.html#Inheritance
  [2]: http://code.google.com/p/construtor/source/browse/trunk/park-samples/pom.xml

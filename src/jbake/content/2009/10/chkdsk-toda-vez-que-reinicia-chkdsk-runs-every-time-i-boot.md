@@ -3,9 +3,9 @@ title=CHKDSK toda vez que reinicia (CHKDSK runs every time I boot)!
 date=2009-10-16 22:18:28
 type=post
 status=published
-tags=Geral, Sistema Operacional, Windows, Windows XP
+tags= Sistema Operacional, Windows
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 Esse parece ser um problema comum e caso você não o tenha encontrado, pode ficar tranquilo. Sua vez vai chegar!  
 A solução que funcionou para mim, encontrei neste [fórum][1]. Vou deixar registrado pois sei que outros usuários também precisarão:
@@ -54,6 +54,6 @@ C:Documents and SettingsGilberto>fsutil dirty query e:
 O volume e: NÃO está sujo.
 </pre>
 
-<!-- google_ad_section_end -->
+
 
  [1]: http://www.pcreview.co.uk/forums/thread-72388.php

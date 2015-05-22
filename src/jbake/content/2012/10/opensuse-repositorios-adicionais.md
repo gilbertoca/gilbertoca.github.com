@@ -3,11 +3,11 @@ title=openSUSE - Repositórios adicionais
 date=2012-10-09 10:42:36
 type=post
 status=published
-tags=Geral, Linux, opensuse, Sistema Operacional, Yast
+tags= Linux, openSUSE, Sistema Operacional, Yast
 ~~~~~~
-<!-- google_ad_section_start -->
 
-Vira e mexe (entre uma instalação e outra, ou um upgrade e outro) preciso adicionar alguns repositórios(repository) ao <a href="http://pt.opensuse.org/YaST_Software_Management" title="Yast" target="_blank">Yast</a> para aplicativos que costumo utilizar. Registro logo abaixo os que não podem faltar: 
+
+Vira e mexe (entre uma instalação e outra, ou um upgrade e outro) preciso adicionar alguns repositórios(repository) ao <a href="http://pt.openSUSE.org/YaST_Software_Management" title="Yast" target="_blank">Yast</a> para aplicativos que costumo utilizar. Registro logo abaixo os que não podem faltar: 
 
 <table border="1">
   <tr>
@@ -26,7 +26,7 @@ Vira e mexe (entre uma instalação e outra, ou um upgrade e outro) preciso adic
     </td>
     
     <td>
-      zypper addrepo -r http://download.virtualbox.org/virtualbox/rpm/opensuse/11.4/virtualbox.repo
+      zypper addrepo -r http://download.virtualbox.org/virtualbox/rpm/openSUSE/11.4/virtualbox.repo
     </td>
   </tr>
   
@@ -36,7 +36,7 @@ Vira e mexe (entre uma instalação e outra, ou um upgrade e outro) preciso adic
     </td>
     
     <td>
-      zypper addrepo -r http://download.opensuse.org/repositories/M17N:/fonts/openSUSE_12.2/M17N:fonts.repo
+      zypper addrepo -r http://download.openSUSE.org/repositories/M17N:/fonts/openSUSE_12.2/M17N:fonts.repo
     </td>
   </tr>
   
@@ -52,11 +52,11 @@ Vira e mexe (entre uma instalação e outra, ou um upgrade e outro) preciso adic
   
   <tr>
     <td>
-      <a href="http://opensuse-community.org/Restricted_formats/12.2" title="Restricted Formats" target="_blank">Restricted formats</a>
+      <a href="http://openSUSE-community.org/Restricted_formats/12.2" title="Restricted Formats" target="_blank">Restricted formats</a>
     </td>
     
     <td>
-      zypper addrepo -r http://packman.inode.at/suse/12.2/packman.repo<br /> zypper addrepo -r http://www.opensuse-guide.org/repo/12.2/libdvdcss.repo
+      zypper addrepo -r http://packman.inode.at/suse/12.2/packman.repo<br /> zypper addrepo -r http://www.openSUSE-guide.org/repo/12.2/libdvdcss.repo
     </td>
   </tr>
 </table>
@@ -65,4 +65,3 @@ Vira e mexe (entre uma instalação e outra, ou um upgrade e outro) preciso adic
 
 E aí, quais você mais usa?
 
-<!-- google_ad_section_end -->

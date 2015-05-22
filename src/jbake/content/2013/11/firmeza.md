@@ -3,9 +3,9 @@ title=Firmeza
 date=2013-11-08 08:18:56
 type=post
 status=published
-tags=Bíblia, Estou lendo e você, Geral, Jesus Cristo, Jornada
+tags=Bíblia, Estou lendo e você,  Jesus Cristo, Jornada
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 &nbsp;
 
@@ -101,4 +101,4 @@ tags=Bíblia, Estou lendo e você, Geral, Jesus Cristo, Jornada
           </tr>
         </table>
         
-        <!-- google_ad_section_end -->
+        

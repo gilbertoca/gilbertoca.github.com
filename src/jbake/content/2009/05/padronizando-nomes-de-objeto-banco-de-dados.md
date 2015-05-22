@@ -3,9 +3,9 @@ title=Padronizando Nomes de Objeto - Banco de Dados
 date=2009-05-08 16:07:46
 type=post
 status=published
-tags=banco de dados, Database, Geral, nomear objeto, padrão
+tags=Database,  nomear objeto, padrão
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 Primeiro definimos a extensão dos arquivos que conterão as sentenças de criação dos objetos do banco de dados: 
 
@@ -228,6 +228,6 @@ Uso essa estratégia há algum tempo e fica muito fácil de trabalhar e manter.
 Você adota uma notação?  
 Qual notação você usa?
 
-<!-- google_ad_section_end -->
+
 
  [1]: http://www.oracle-base.com/articles/misc/NamingConventions.php

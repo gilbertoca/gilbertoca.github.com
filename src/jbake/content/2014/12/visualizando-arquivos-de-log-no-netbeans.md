@@ -3,9 +3,8 @@ title=Visualizando arquivos de log no NetBeans
 date=2014-12-05 09:26:55
 type=post
 status=published
-tags=desenvolvimento, Geral, Java, NetBeans, Traduções, traduções
+tags=desenvolvimento,  Java, NetBeans, Traduções
 ~~~~~~
-<!-- google_ad_section_start -->
 
 > radhika. <a title="Viewing log files in NetBeans IDE" href:"https://blogs.oracle.com/NetBeansSupport/entry/netbeans_ide_log_file" target="_blank">Viewing log files in NetBeans IDE</a>  
 > [online] Disponível na Internet via WWW. URL: https://blogs.oracle.com/NetBeansSupport/entry/netbeans\_ide\_log_file. Arquivo capturado em 05 de dezembro de 2014
@@ -17,4 +16,3 @@ Os diferentes arquivos de log que o usuário do NetBeans necessita verificar em 
   * Por exemplo, para o servidor de aplicações GlassFish Server Open Source que vem na instalação do NetBeans, na janela Serviços, expanda o nó Servidores -> GlassFish V4 e clique com o botão direito do mouse, e selecione &#8216;Exibir Log do Servidor&#8217;. O conteúdo aparece na janela de saída sob aba de título glassFish V4.
   * Observe que para um Servidor Tomcat registrado, clicar com o botão direito do mouse e selecionar &#8216;Visualizar saída do servidor&#8217;, exibirá o arquivo de log do servidor definido no arquivo de configuração server.xml. Este menu fica disponpível quando o servidor estiver em execução.
 
-<!-- google_ad_section_end -->

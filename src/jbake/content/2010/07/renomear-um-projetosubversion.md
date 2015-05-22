@@ -3,9 +3,9 @@ title=Renomear um projeto[SUBVERSION]
 date=2010-07-19 12:55:31
 type=post
 status=published
-tags=controle de versões, desenvolvimento, Geral, Java, Linux, Sistema Operacional, subversion
+tags=controle de versões, desenvolvimento,  Java, Linux, Sistema Operacional, subversion
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 Em nossa área de tecnologia da informação é comum o desgaste em discussões para nomear objetos, recursos, projetos, etc, sem falar em nossa imaginação para o assunto. Devo confessar, somos ímpares nesse quesito! <img src="http://blog.gilbertoca.com/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" /> 
 
@@ -40,4 +40,3 @@ Hoje, por uma necessidade tive que renomear um “projeto” (antigo módulo em 
 >   </table>
 > </div>
 
-<!-- google_ad_section_end -->

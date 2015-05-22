@@ -3,9 +3,9 @@ title=Unir legenda (srt) e video (avi) com MENCODER
 date=2010-03-12 17:45:17
 type=post
 status=published
-tags=Diversão, Geral, Linux, opensuse
+tags=Diversão,  Linux, openSUSE
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 Quem tiver um video e o arquivo de legenda e deseja unir ambos num aquivo o comando é este : 
 
@@ -48,4 +48,4 @@ Sintaxe :
         
           * \# -sub ( para especificar o arquivo de legendas )
           * \# -o ( arquivo de saida que sera gerado)</ol> 
-        <!-- google_ad_section_end -->
+        

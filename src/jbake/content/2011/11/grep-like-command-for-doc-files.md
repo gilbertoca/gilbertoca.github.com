@@ -3,9 +3,9 @@ title=Usando comando GREP em documentos Word, OpenOffice ou LibreOffice
 date=2011-11-10 10:24:01
 type=post
 status=published
-tags=comandos, console, grep, Linux, opensuse, Sistema Operacional, Unix
+tags=comandos, console, grep, Linux, openSUSE, Sistema Operacional
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 Esta é uma pequena dica. Se você tem uma grande quantidade de arquivos MS Word, OpenOffice e agora LibreOffice, com certeza já teve a necessidade de utilizar os recursos que o Shell Linux/Unix nos trás - grep, sed, more, strings, <a href="http://www.wagner.pp.ru/~vitus/software/catdoc/" title="catdoc" target="_blank">catdoc</a>, <a href="http://www.winfield.demon.nl/" title="antiwork" target="_blank">antiwork</a>, etc. 
 
@@ -43,4 +43,3 @@ Uma busca pela rede mundial usando o Google ajuda muito nessas horas.
 
 **Agora é descobrir como listar o nome dos arquivos. Alguém se habilita?**
 
-<!-- google_ad_section_end -->

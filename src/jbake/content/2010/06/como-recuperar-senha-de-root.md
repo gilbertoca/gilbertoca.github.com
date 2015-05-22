@@ -3,9 +3,9 @@ title=Como recuperar senha de root
 date=2010-06-08 11:14:18
 type=post
 status=published
-tags=console, Geral, Linux, opensuse, Sistema Operacional, Unix
+tags=console,  Linux, openSUSE, Sistema Operacional
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 Não é difícil encontrar novos usuários linux que esquecem ou perdem a senha do [usuário root][1] em um servidor ou estação de trabalho. Este post é uma tradução do seguinte HOW-TO: [Recover the Linux root password][2], publicado pela novell. 
 
@@ -97,7 +97,7 @@ Nota: se você selecionou recuperação de sistema(Rescue System), selecione a l
                         </div>
                     
                       * 11. Reinicie o sistema.</ul> 
-                    <!-- google_ad_section_end -->
+                    
 
  [1]: http://br-linux.org/artigos/dicas_root.htm
  [2]: http://www.novell.com/support/search.do?cmd=displayKC&#038;docType=kc&#038;externalId=3003803&#038;sliceId=SAL_Public&#038;dialogID=17188705&#038;stateId=0%200%2017194530

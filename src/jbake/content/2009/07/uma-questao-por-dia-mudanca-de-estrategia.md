@@ -5,7 +5,7 @@ type=post
 status=published
 tags=Geral
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 Resolvi mudar a maneira de postar [estas questões][1]. Até este momento elaborava as questões, disponibilizava o documento imediatamente e no decorrer da semana tentava resolver. Mas não estava dando certo! A semana passada tentei outra estratégia: elaborar o documento com as questões, postar e no intervalo de elaborar outro documento, responder e comentar. A principal mudança é realizar a postagem de um outro somente quando terminar de responder/comentar **o último postado**, assim, sempre haverá um documento com gabarito e comentários. Não esqueça que **o último postado** não conterá gabarito ou comentário. Não entendeu? Vou exemplificar:
 
@@ -22,6 +22,6 @@ Mais uma coisa, nós procuramos sempre acertar mas nem sempre isso é possível,
 
 > Sinceramente desejo-lhes sucesso e todas as coisas boas.
 
-<!-- google_ad_section_end -->
+
 
  [1]: http://blog.gilbertoca.com/?page_id=44

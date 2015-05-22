@@ -3,9 +3,9 @@ title=SQL*Loader - Números decimais
 date=2010-05-31 16:30:31
 type=post
 status=published
-tags=banco de dados, Database, Linux, oracle
+tags=Database, Linux, oracle
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 > Verificando posts de [meu antigo blog][1] notei que alguns não foram importados ou foram importados com defeitos em seu conteúdo. Então resolvi realizar um trabalho de revisão e o **[segundo][2]** começa hoje: 
 
@@ -52,7 +52,7 @@ A solução, foi tão simples que estou até com vergonha de dizer. Bom, pratica
 
 Bom, foi só trocar os sinais que conversão implícita funcionou. Mas uma coisa, uma dica é colocar o tipo do character set no [control file][9] através do parametro CHARACTERSET, assim você não depende da configuração do ambiente para fazer carga.
 
-<!-- google_ad_section_end -->
+
 
  [1]: http://www.jroller.com/gilbertoca
  [2]: http://www.jroller.com/gilbertoca/entry/sql_load_n%C3%BAmeros_decimais

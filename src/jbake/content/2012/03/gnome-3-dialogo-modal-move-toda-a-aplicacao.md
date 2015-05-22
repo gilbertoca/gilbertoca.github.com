@@ -5,9 +5,9 @@ type=post
 status=published
 tags=Geral
 ~~~~~~
-<!-- google_ad_section_start -->
 
-É, finalmente consegui um tempo para postar algo aqui no blog. Ultimamente (nos dois últimos meses) estive ocupado trabalhando na conversão de alguns projetos java para web: usavam Ant e agora, este trabalho, usam Maven. Neste período, <a href="http://blog.gilbertoca.com/?p=415" target="_blank">como vocês bem sabem</a>, fiz a atualização (na verdade uma nova instalação) do [openSUSE][1]. Estava com a versão 11.3 e com o recente lançamento da <a href="http://software.opensuse.org/121/en" target="_blank">versão 12.1</a>, não resisti - ansioso por usar o novo <a href="http://www.gnome.org/gnome-3/" target="_blank">Gnome 3</a>. 
+
+É, finalmente consegui um tempo para postar algo aqui no blog. Ultimamente (nos dois últimos meses) estive ocupado trabalhando na conversão de alguns projetos java para web: usavam Ant e agora, este trabalho, usam Maven. Neste período, <a href="http://blog.gilbertoca.com/?p=415" target="_blank">como vocês bem sabem</a>, fiz a atualização (na verdade uma nova instalação) do [openSUSE][1]. Estava com a versão 11.3 e com o recente lançamento da <a href="http://software.openSUSE.org/121/en" target="_blank">versão 12.1</a>, não resisti - ansioso por usar o novo <a href="http://www.gnome.org/gnome-3/" target="_blank">Gnome 3</a>. 
 
 A mudança foi um pouco impactante mais pro lado positivo, diferente de outras experiências que tenho ouvido e lido a respeito. Bem, espero ajudar os novos adeptos a este ambiente gráfico por aqui: postando dicas e links para solucionar eventuais embaraços por assim dizer nesta jornada de aprendizado.  
 Vamos começar com um link bem útil: <a href="https://live.gnome.org/GnomeShell/CheatSheet" title="GnomeShell-CheatSheet" target="_blank">GnomeShell/CheatSheet</a> . 
@@ -39,6 +39,6 @@ Para desabilitar. E o contrário:
 
 **Referência:The GNOME Shell Blog - <a href="http://gnomeshell.wordpress.com/2011/09/10/the-modal-windows-behavior/" title="the-modal-windows-behavior" target="_blank">The modal windows behavior</a>**
 
-<!-- google_ad_section_end -->
 
- [1]: http://www.opensuse.org
+
+ [1]: http://www.openSUSE.org

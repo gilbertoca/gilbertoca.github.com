@@ -1,11 +1,11 @@
 id=484
-title=Sumiu os botões maximizar,minimizar,fechar[OpenSuSe 11.3] 
+title=Sumiu os botões maximizar,minimizar,fechar[openSUSE 11.3] 
 date=2010-12-30 18:22:16
 type=post
 status=published
-tags=configuração, desktop, Geral, gnome, Linux, opensuse, Sistema Operacional
+tags=desktop,  gnome, Linux, openSUSE, Sistema Operacional
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 Este comportamento do gerenciador de janelas é esquisito, para não dizer indesejável. A coisa fica mais estranha ainda pois não tenho meios de rastrear a causa do problema (placa de vídeo, kernel, gnome, gdm qual é o cupido?). Alguém pode, em algumas situações, acusar o compiz, mas este não o caso - placa legada:
 
@@ -32,7 +32,7 @@ Este comportamento do gerenciador de janelas é esquisito, para não dizer indes
   </table>
 </div></p> 
 
-Assim que estalei o OpenSuSe 11.3 em casa ficou difícil evitar seu uso e olha que minha família ainda não viu - ou não usufruiu - das ferramentas gráficas pois ficamos aproximadamente 3 meses usando o [driver de vídeo que vem instalado por padrão][1] - O projeto Nouveau. Só recentemente a Nvidia publicou uma atualização [para minha placa de vídeo][2] e é claro para a minha versão do kernel. 
+Assim que estalei o openSUSE 11.3 em casa ficou difícil evitar seu uso e olha que minha família ainda não viu - ou não usufruiu - das ferramentas gráficas pois ficamos aproximadamente 3 meses usando o [driver de vídeo que vem instalado por padrão][1] - O projeto Nouveau. Só recentemente a Nvidia publicou uma atualização [para minha placa de vídeo][2] e é claro para a minha versão do kernel. 
 
 Bom, até agora podemos dizer que o problema não é hardware. Por que? Você pode perguntar. Veja, usei dois tipos de driver e com ambos o comportamento (defeito) persistiu. O pior é que fica dias sem aparecer e de repente acontece. Até então não havia outro meio de contornar o problema senão encerrar a sessão e entrar novamente. Hoje encontrei [uma discussão sobre o assunto][3] - Adivinha? Aconteceu hoje novamente - e nessa discussão o usuário “Rvos” sugere o seguinte contorno:
 
@@ -94,7 +94,7 @@ Com isso, fiz uma cópia do texto - ctrl+c - e adicionei um ícone no [painel pr
 ![adicionar ao painel][9]  
 Observe que a imagem traz o botão de fechar, isso porque fiz a captura da tela agora depois de todo o processo. Com o ícone disponível foi só acioná-lo e colar - ctrl+v - o comando (metacity -replace) e executar. Pronto, Voltou ao normal! Até quando? <img src="http://blog.gilbertoca.com/wp-includes/images/smilies/icon_sad.gif" alt=":(" class="wp-smiley" />
 
-<!-- google_ad_section_end -->
+
 
  [1]: http://nouveau.freedesktop.org/wiki/
  [2]: http://www.nvidia.com/object/linux-display-ia32-96.43.19-driver.html

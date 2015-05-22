@@ -4,7 +4,7 @@ date=2009-04-07 13:25:08
 type=page
 status=published
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 > Toda a Escritura é inspirada por Deus e útil para o ensino, para a repreensão, para a correção e para a instrução na justiça, para que o homem de Deus seja apto e plenamente preparado para toda boa obra.  
 >
@@ -26,7 +26,7 @@ Não envergonhar meu Senhor Jesus no meu agir, no meu pensar e principalmente no
 Consequência: 
 Edificar a Igreja de Nosso Senhor Jesus Cristo
 
-<!-- google_ad_section_end -->
+
 
  [1]: http://www.bibliaonline.com.br/nvi/2tm/3/16-17
  [2]: http://www.secad.to.gov.br

@@ -5,7 +5,7 @@ type=post
 status=published
 tags=Estou lendo e você
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 > Cristo tinha razão: há uma ansiedade inerente ao ser humano, ligada à construção de pensamentos, influenciada pela carga genética, por fatores psíquicos e sociais. Só não tem essa ansiedade quem está [morto][1]. Somos a espécie que possui o maior de todos os espetáculos, o da construção de pensamentos. No entanto, muitas vezes usamos o pensamento contra nós mesmos, para gerar uma vida ansiosa. Os problemas ainda não ocorreram, mas já estamos angustiados por eles. O capítulo 6 de Mateus diz: “Não andeis ansiosos pelo dia de amanhã&#8230; Basta a cada dia o seu próprio mal.” Cristo queria vacinar seus discípulos contra o estresse produzido por pensamentos antecipatórios. Não abolia as metas, as prioridades, o planejamento do trabalho, pois ele mesmo tinha metas e prioridades bem estabelecidas, mas queria que os discípulos não gravitassem em torno de problemas imaginários. 
 > 
@@ -27,7 +27,7 @@ tags=Estou lendo e você
 
 <br /> O mestre dos Mestres pág. 50, <a href="http://www.augustocury.com.br/#/o+autor">Augusto Jorge Cury</a></cite>**
 
-<!-- google_ad_section_end -->
+
 
  [1]: http://blog.gilbertoca.com/?p=462
  [2]: http://www.dicionarioweb.com.br/paradoxo.html

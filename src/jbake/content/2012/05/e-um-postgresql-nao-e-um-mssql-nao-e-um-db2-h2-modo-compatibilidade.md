@@ -3,9 +3,9 @@ title=É um PostgreSQL! Não, é um MSSql! Não, é um DB2! [h2 modo compatibili
 date=2012-05-18 11:55:54
 type=post
 status=published
-tags=banco de dados, Database, Geral, Java, maven
+tags=Database,  Java, maven
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 Calma pessoal, é apenas o banco <a href="http://www.h2database.com/html/features.html#compatibility" target="_blank">H2 em modo compatibilidade</a>! Imagine  
 que você acabou levando trabalho pra casa (Novidade!!!) mas se  
@@ -149,4 +149,3 @@ Acesse este banco por sua aplicação ou por qualquer outro cliente
 jdbc - por exemplo o squirrel. Lembre-se você estará acessando um  
 banco PostgreSQL!
 
-<!-- google_ad_section_end -->

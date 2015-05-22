@@ -1,11 +1,11 @@
 id=1106
-title=Oracle JDK8 no OpenSUSE
+title=Oracle JDK8 no openSUSE
 date=2014-07-02 14:31:06
 type=post
 status=published
-tags=Geral, Java, Linux, Sistema Operacional, Unix
+tags= Java, Linux, Sistema Operacional
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 Esta forma de instalação é mais resumida que a do <a href="http://blog.gilbertoca.com/?p:971" title="Instale Oracle JDK7 no openSUSE" target="_blank">post antigo</a> e utiliza o formato comprimido (tar.gz). 
 
@@ -31,4 +31,3 @@ Depois como super usuário (root) pelo <a href="http://kde.org/applications/syst
     # update-alternatives --config javaplugin
 
 
-<!-- google_ad_section_end -->

@@ -5,7 +5,7 @@ type=post
 status=published
 tags=Database
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 Atualmente aqui na [Secretaria](www.secad.to.gov.br) estamos em um processo de 
 implantação de um [sistema de recursos 
@@ -23,7 +23,7 @@ importantes no banco de produção, é acionado uma requisição de atualizaçã
 banco de migração (utilizado para validar a parametrização com a ativação de 
 funções do sistema de recursos humanos, por exemplo, calculo de folha). Para 
 esse ciclo funcionar tive que realizar uma das tarefas mais comuns para quem 
-administra um banco de dados, que é cópia/duplicação/clonagem de um banco em 
+administra um que é cópia/duplicação/clonagem de um banco em 
 produção para outro banco (até mesmo em outro servidor) a ser utilizado como 
 teste. O procedimento descrito aqui, nada mais é do que sequência descrita na 
 própria 
@@ -321,5 +321,5 @@ dbms_stats.gather_database_stats(options=> 'GATHER AUTO');
 end;
 ```
 
-<!-- google_ad_section_end -->
+
 

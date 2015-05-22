@@ -3,9 +3,9 @@ title=Nosso herói!
 date=2011-07-22 10:18:55
 type=post
 status=published
-tags=Bíblia, Estou lendo e você, Geral, Jesus Cristo, Jornada, Livro Sagrado, Sabedoria
+tags=Bíblia, Estou lendo e você,  Jesus Cristo, Jornada, Livro Sagrado, Sabedoria
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 <table width="537" cellspacing="0" cellpadding="7">
   <col width="261" /> <col width="16" /> <col width="316" /> <tr valign="TOP">
@@ -105,4 +105,3 @@ tags=Bíblia, Estou lendo e você, Geral, Jesus Cristo, Jornada, Livro Sagrado, 
   </tr>
 </table>
 
-<!-- google_ad_section_end -->

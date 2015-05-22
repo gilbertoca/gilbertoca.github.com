@@ -3,13 +3,22 @@ title=pen drive - Cadê minhas pastas?
 date=2011-03-25 22:17:58
 type=post
 status=published
-tags=antivírus, configuração, Geral, Sistema Operacional, ubcd4win, Virus, Windows, Windows XP
+tags=Sistema Operacional, Virus, Windows
 ~~~~~~
-<!-- google_ad_section_start -->
 
-Meus problemas com <a href="http://pt.wikipedia.org/wiki/V%C3%ADrus_de_computador" target="_blank">vírus de computador</a>, aqui em casa, já se tornaram história. Não me lembro quando foi a última vez que tive o trabalho de criar um <a href="http://www.ubcd4win.com/howto.htm" target="_blank">CD para boot do Windows XP</a> e a partir dele realizar a limpeza - isso não é totalmente verdade, volta e meia tenho que fazer isso para <a href="http://pt.wikipedia.org/wiki/Laptop" target="_blank">NoteBooks</a> de colegas ou de colegas de minha esposa. 
+Meus problemas com <a href="http://pt.wikipedia.org/wiki/V%C3%ADrus_de_computador" target="_blank">vírus de computador</a>, 
+aqui em casa, já se tornaram história. Não me lembro quando foi a última vez que 
+tive o trabalho de criar um <a href="http://www.ubcd4win.com/howto.htm" target="_blank">CD para boot do Windows XP</a> 
+e a partir dele realizar a limpeza - isso não é totalmente verdade, volta e meia 
+tenho que fazer isso para <a href="http://pt.wikipedia.org/wiki/Laptop" target="_blank">NoteBooks</a> 
+de colegas ou de colegas de minha esposa. 
 
-Recentemente, algo tem chamado minha atenção; vira e mexe aparece minha esposa com bolso cheio de <a href="http://pt.wikipedia.org/wiki/USB_flash_drive" target="_blank">pen-drives</a> solicitando que eu recupere documentos e pastas que desapareceram nestes dispositivos que, por sinal, são bem mais úteis que os velhos disquetes. E aquela dica(para o windows explorer): Menu->Ferramentas->Opções de Pastas->[aba]Modo de exibição, depois marcar a opção “Mostrar pastas e arquivos ocultos”, não adianta.  
+Recentemente, algo tem chamado minha atenção; vira e mexe aparece minha esposa 
+com bolso cheio de <a href="http://pt.wikipedia.org/wiki/USB_flash_drive" target="_blank">pen-drives</a> 
+solicitando que eu recupere documentos e pastas que desapareceram nestes 
+dispositivos que, por sinal, são bem mais úteis que os velhos disquetes. E 
+aquela dica(para o windows explorer): Menu->Ferramentas->Opções de Pastas->[aba]Modo de exibição, 
+depois marcar a opção “Mostrar pastas e arquivos ocultos”, não adianta.  
 
 
 <div id="attachment_608" style="width: 864px" class="wp-caption alignright">
@@ -90,4 +99,4 @@ C:\Demonstracao&gt;</pre>
 
 Um abração a todos!
 
-<!-- google_ad_section_end -->
+

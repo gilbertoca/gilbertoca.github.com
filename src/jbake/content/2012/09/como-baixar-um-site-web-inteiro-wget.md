@@ -3,9 +3,9 @@ title=Como baixar um site web inteiro - wget
 date=2012-09-20 10:31:34
 type=post
 status=published
-tags=Geral, Internet, Linux, opensuse, Unix, Windows
+tags= Internet, Linux, openSUSE, Windows
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 Na verdade, a pergunta correta seria: como baixar todas as páginas - e seus recursos (css, javascript, imagem, etc) - de um site web?  
 Após uma <a href="http://superuser.com/questions/14403/how-can-i-download-an-entire-website" title="pesquisa" target="_blank">breve pesquisa</a>, fiquei surpreso ao saber que possuía a ferramenta adequada para essa tarefa, mas ao mesmo tempo decepcionado comigo mesmo por se tratar de um utilitário que uso a um bom tempo - aquela velha história, compra-se um produto mas não se importa em usar todo o seu potencial.  
@@ -27,4 +27,3 @@ Aqui mais dois ótimos sites como exemplo:
   * <a href="http://linuxreviews.org/quicktips/wget/" target="_blank">http://linuxreviews.org/quicktips/wget/</a>
   * <a href="http://www.krazyworks.com/?p=591" target="_blank">http://www.krazyworks.com/?p=591</a>
 
-<!-- google_ad_section_end -->

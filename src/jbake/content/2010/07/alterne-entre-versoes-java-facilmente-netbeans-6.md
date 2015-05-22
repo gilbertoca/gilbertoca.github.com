@@ -3,9 +3,9 @@ title=Alterne entre versões Java facilmente [Netbeans 6.*]
 date=2010-07-21 14:22:40
 type=post
 status=published
-tags=desenvolvimento, Geral, Java, Linux, maven, opensuse, Sistema Operacional
+tags=desenvolvimento,  Java, Linux, maven, openSUSE, Sistema Operacional
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 Outro dia escrevi como [alterner entre versões Java facilmente][1] utilizando o utilitário de sistema operacional [update-alternatives][2]. Aquele post tem uma perspectiva do lado do servidor onde estão instalados servidores de aplicação java ou mesmo aplicativos e o administrador/desenvolvedor precisa testar como estes artefatos mencionados se comportariam em cada versão. 
 
@@ -18,7 +18,7 @@ A partir deste diálogo, você poderá alternar de versão através “Java Plat
 [<img src="http://blog.gilbertoca.com/img/uploads/compile_option-300x225.png"  title="compile_option" width="300" height="225" class="alignleft size-medium wp-image-436" />][7]  
 Lembrando que antes disso precisamos instalar as versões que desejamos utilizar.
 
-<!-- google_ad_section_end -->
+
 
  [1]: http://blog.gilbertoca.com/?p=383
  [2]: http://man.he.net/man8/update-alternatives
@@ -26,4 +26,4 @@ Lembrando que antes disso precisamos instalar as versões que desejamos utilizar
  [4]: http://www.eclipse.org
  [5]: http://maven.apache.org
  [6]: http://netbeans.org/index.html
- [7]: http://blog.gilbertoca.com/http://blog.gilbertoca.com/img/uploads/compile_option.png
+ [7]: http://blog.gilbertoca.com/img/uploads/compile_option.png

@@ -3,9 +3,9 @@ title=Proteja-se Contra Virus(Disable USB Autorun)
 date=2009-07-18 22:43:45
 type=post
 status=published
-tags=Geral, Proteção, Virus, Windows, Windows XP
+tags= Proteção, Virus, Windows
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 Meus amigos professores sempre reclamam que não conseguem manter seus PCs/NoteBooks livres de vírus. E uma queixa maior é a infestação por uso de dispositivos usb (pen drive). [Encontrei uma dica excelente sobre o assunto][1].  
 Procuro retratar a mesma dica, mas para os brasileiros:  
@@ -20,7 +20,7 @@ A melhor forma de manter longe a auto instalação/execução de virus de USB em
 
 Esta configuração o protegerá da invasão automática de vírus por esse ou outro dispositivo, assim que você o conectar ao PC. A proteção se completa com uma solução contra vírus, ou seja, um antivírus. Recomendo um de uso pessoal - [AVG][4] - sem custo algum.
 
-<!-- google_ad_section_end -->
+
 
  [1]: http://www.sizlopedia.com/2008/03/18/disable-usb-autorun-to-save-pc-from-usb-viruses/
  [2]: http://blog.gilbertoca.com/tools/blog/wp-content/uploads/gpedit.msc.jpeg

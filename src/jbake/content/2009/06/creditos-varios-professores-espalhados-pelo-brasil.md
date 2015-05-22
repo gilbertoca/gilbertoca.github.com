@@ -5,7 +5,7 @@ type=post
 status=published
 tags=Geral
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 Recentemente iniciei um projeto - [Uma Questão por Dia?][1] - que espero tornar minha vida de concurseiro mais tranquila nas disciplinas que exigem mais cálculo e raciocínio rápido. Neste post registrarei os devidos créditos no trabalho de seleção das questões de concurso direcionadas ao concurso de AFRFB:
 
@@ -91,6 +91,6 @@ Recentemente iniciei um projeto - [Uma Questão por Dia?][1] - que espero tornar
   </tr>
   
   <table>
-    <!-- google_ad_section_end -->
+    
 
  [1]: http://blog.gilbertoca.com/?page_id=44

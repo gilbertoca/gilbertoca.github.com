@@ -3,9 +3,9 @@ title=Modelagem usando Uml em Cores [Análise de Requisitos]
 date=2010-05-11 11:06:35
 type=post
 status=published
-tags=banco de dados, Database, Geral, Metodologia Ágil, Modelagem, UML, Uml em Cores
+tags=Database,  Metodologia Ágil, Modelagem, UML, Uml em Cores
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 > Verificando posts de [meu antigo blog][1] notei que alguns não foram importados ou foram importados com defeitos em seu conteúdo. Então resolvi realizar um trabalho de revisão e o primeiro deles começa hoje: 
 
@@ -95,6 +95,6 @@ tags=banco de dados, Database, Geral, Metodologia Ágil, Modelagem, UML, Uml em 
       </li>
     </ul>
     
-    <!-- google_ad_section_end -->
+    
 
  [1]: http://www.jroller.com/gilbertoca

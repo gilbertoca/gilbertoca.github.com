@@ -3,9 +3,9 @@ title=Alterne entre versões Java facilmente [update-alternatives]
 date=2010-06-08 14:50:18
 type=post
 status=published
-tags=configuração, console, Geral, Java, Linux, opensuse, Sistema Operacional, Tocantins
+tags=console,  Java, Linux, openSUSE, Sistema Operacional, Tocantins
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 Com o surgimento de versões e atualizações da máquina virtual java, preciso verificar a compatibilidade da mesma com o [sistema de gestão de pessoal][1] sendo implantado [aqui na secretária][2]. 
 
@@ -41,7 +41,7 @@ Bom, primeiro precisamos instalar as versões que desejamos. Para facilitar adic
         </td>
         
         <td>
-          <a href="http://download.opensuse.org/repositories/Java:/sun:/Factory/openSUSE_11.2/">http://download.opensuse.org/repositories/Java:/sun:/Factory/openSUSE_11.2/</a>
+          <a href="http://download.openSUSE.org/repositories/Java:/sun:/Factory/openSUSE_11.2/">http://download.openSUSE.org/repositories/Java:/sun:/Factory/openSUSE_11.2/</a>
         </td>
         
         <tr>
@@ -51,7 +51,7 @@ Bom, primeiro precisamos instalar as versões que desejamos. Para facilitar adic
             </td>
             
             <td>
-              <a href="http://download.opensuse.org/repositories/Java:/packages/openSUSE_11.2/">http://download.opensuse.org/repositories/Java:/packages/openSUSE_11.2</a>
+              <a href="http://download.openSUSE.org/repositories/Java:/packages/openSUSE_11.2/">http://download.openSUSE.org/repositories/Java:/packages/openSUSE_11.2</a>
             </td>
             
             <tr>
@@ -175,10 +175,10 @@ gilberto<span style="color: #000000; font-weight: bold;">@</span>SUGEP-DMASI:~<s
                 Podemos usar o utilitário <code>update-alternatives</code> para gerenciar outros links no sistema, mas o post já ficou extenso. Na próxima podemos mostrar como gerenciar links manualmente.
               </p>
               
-              <!-- google_ad_section_end -->
+              
 
  [1]: http://www.techne.com.br/produtos/produtos.asp?id=4
  [2]: http://www.secad.to.gov.br
  [3]: http://www.portalct.com.br/n/61036301f280e5de0acb74eeebc8e948/to-chega-a-maioridade-em-clima-de-convulsao-e-inde/
  [4]: www.oracle.com/technology/products/forms
- [5]: http://en.opensuse.org/Yast
+ [5]: http://en.openSUSE.org/Yast

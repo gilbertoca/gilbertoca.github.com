@@ -3,9 +3,9 @@ title=Maioridade Penal: por Ariovaldo Ramos
 date=2013-11-27 10:30:24
 type=post
 status=published
-tags=Estou lendo e você, Geral, Jornada
+tags=Estou lendo e você,  Jornada
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 <iframe src="//player.vimeo.com/video/64759494" width="500" height="280" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
@@ -13,4 +13,3 @@ tags=Estou lendo e você, Geral, Jornada
 
 Precisamos ter discernimento e clareza nesse assunto.
 
-<!-- google_ad_section_end -->

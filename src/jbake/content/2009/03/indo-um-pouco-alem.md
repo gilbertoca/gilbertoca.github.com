@@ -5,7 +5,7 @@ type=post
 status=published
 tags=Java
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 Estou aprendendo um pouco sobre programação orientada a objeto em java e com o pouco que li resolvi implementar uma pequena api que abstrai as regras de acesso e recuperação de dados &minus; acesso a banco de dados. Gosto muito dessa (<a href="http://orbroker.sourceforge.net/" target="_blank">OrBroker</a>) api de persistência com isso elaborei um contrato que acho o mínimo necessário para o acesso a dados, o qual poderá utilizar a api OrBroker - espero não somente essa api, mas outras (desacoplamento). 
 
@@ -53,4 +53,3 @@ Então ficou da seguinte maneira essa pequena api:
 <span style="color: #000000;">ICategoriaService -&gt; CategoriaService	</span>
 </pre>
 
-<!-- google_ad_section_end -->

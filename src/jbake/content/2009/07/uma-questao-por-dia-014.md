@@ -5,7 +5,7 @@ type=post
 status=published
 tags=Geral
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 Finalmente consegui comentar as questões, na verdade os comentários não são totalmente meus, mas deixei bem claro nos mesmos [os devidos créditos][1].
 
@@ -13,7 +13,7 @@ Finalmente consegui comentar as questões, na verdade os comentários não são 
 
 O que quer dizer: [Uma Questão por Dia?][3]
 
-<!-- google_ad_section_end -->
+
 
  [1]: http://blog.gilbertoca.com/?p=97
  [2]: http://blog.gilbertoca.com/tools/acervo/questoespordia/[014]-mat-est-eco-cont-inf.odt

@@ -3,9 +3,9 @@ title=Como configurar uma conta MSN Messenger?
 date=2010-03-29 09:24:32
 type=post
 status=published
-tags=Diversão, Geral, Sistema Operacional, Windows, Windows XP
+tags=Diversão,  Sistema Operacional, Windows
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 Para alguns essa pergunta é realmente simples de responder. Mas para alguém que não tem o costume de acessar a internet ou mesmo um computador para fazer trabalhos mais personalizados, essa tarefa é quase impossível. Essa postagem é uma maneira de ajudar uma pessoa muita querida a se comunicar mais facilmente comigo e com seus colegas de trabalho ou mesmo de profissão. Estou me referindo à minha irmã Márcia. 
 
@@ -29,7 +29,7 @@ Agora, vamos acessar o MSN Messenger com seu novo passaporte:
   5. Entre com a senha que você usou para criar seu passaporte MSN;
   6. Click no botão “Sign In” ou “Entrar” para começar a usar sua conta MSN Messenger. 
 
-<!-- google_ad_section_end -->
+
 
  [1]: http://pt.wikipedia.org/wiki/Windows_Live_ID
  [2]: https://accountservices.passport.net/ppnetworkhome.srf?vv=450&#038;lc=1033

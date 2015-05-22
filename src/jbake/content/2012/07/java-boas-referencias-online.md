@@ -3,9 +3,9 @@ title=Java - Boas referências online
 date=2012-07-13 11:31:10
 type=post
 status=published
-tags=Estou lendo e você, Geral, Internet, Java
+tags=Estou lendo e você,  Internet, Java
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 Tenho alguns livros sobre Java, mas com as mudanças que a linguagem sofreu nos três últimos anos tenho por mim que minhas referências estão desatualizadas. Meu grande interesse é entender melhor os detalhes que muitos programadores (vindos de outra linguagem ou não) ignoram - seja por desconhecimento, seja por desinteresse, pois o arcabouço de APIs Java é muito amplo. 
 
@@ -20,4 +20,3 @@ Enquanto realizo minha tarefa diária - implementando ou corrigindo código - co
   * <a href="http://mindview.net/Books/TIJ4" target="_blank">Thinking in Java</a> - Author: Bruce Eckel
   * <a href="http://www.people.okanagan.bc.ca/rgee/javabook.pdf" target="_blank">Java – Objects First: An Introduction to Computer Programming using Java and BlueJ</a> - Author: <a href="http://www.people.okanagan.bc.ca/rgee/" target="_blank">Rick Gee</a>
 
-<!-- google_ad_section_end -->

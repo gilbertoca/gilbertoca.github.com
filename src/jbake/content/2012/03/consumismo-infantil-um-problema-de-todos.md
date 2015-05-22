@@ -3,9 +3,9 @@ title=Consumismo Infantil, um problema de todos
 date=2012-03-19 21:51:19
 type=post
 status=published
-tags=Estou lendo e você, Geral, Jesus Cristo, Jornada, Proteção
+tags=Estou lendo e você,  Jesus Cristo, Jornada, Proteção
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 > As crianças são um alvo importante, não apenas porque escolhem o que seus pais compram e são tratadas como consumidores mirins, mas também porque impactadas desde muito jovens tendem a ser mais fiéis a marcas e ao próprio hábito consumista que lhes é praticamente imposto.
 
@@ -16,4 +16,3 @@ tags=Estou lendo e você, Geral, Jesus Cristo, Jornada, Proteção
 
 <a href="http://www.publicidadeinfantilnao.org.br/" title="Publicidade Infantil Não" target="_blank">Publicidade Infantil Não</a>
 
-<!-- google_ad_section_end -->

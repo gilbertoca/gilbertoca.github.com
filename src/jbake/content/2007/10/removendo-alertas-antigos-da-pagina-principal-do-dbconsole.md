@@ -3,15 +3,18 @@ title=Removendo alertas antigos da página principal do DBCONSOLE
 date=2007-10-08 14:22:17
 type=post
 status=published
-tags=Concurso Público,Database,dbconsole,oracle
-id: 18
+tags=Database,oracle
 ~~~~~~
-<!-- google_ad_section_start -->
 
-Por um bom período de tempo estive lendo e pesquisando uma maneira de remover/limpar os alertas que aparecem na primeira página do dbconsole do oracle 10g 10.2.  
-Finalmente após encontrar uma discussão no forum oracle ([Clear the Alert list][1]) sobre o assunto, acabei, através uma consulta pelo google (desta fez com a palavra certa: MGMT_SEVERITY), encontrando um artigo ([ Clearing Alerts in Enterprise Man][2]) que relata uma forma simples de fazer a limpeza destes alertas antigos.
+Por um bom período de tempo estive lendo e pesquisando uma maneira de 
+remover/limpar os alertas que aparecem na primeira página do dbconsole do 
+oracle 10g 10.2.  
+Finalmente após encontrar uma discussão no forum oracle ([Clear the Alert list][1]) 
+sobre o assunto, acabei, através uma consulta pelo google (desta fez com a 
+palavra certa: MGMT_SEVERITY), encontrando um artigo ([ Clearing Alerts in Enterprise Man][2]) 
+que relata uma forma simples de fazer a limpeza destes alertas antigos.
 
-<!-- google_ad_section_end -->
+
 
  [1]: http://forums.oracle.com/forums/thread.jspa?threadID=389167&#038;tstart=0
  [2]: http://www.dbasupport.com/oracle/ora10g/clearing_alerts.shtml

@@ -5,7 +5,6 @@ type=post
 status=published
 tags=Geral
 ~~~~~~
-<!-- google_ad_section_start -->
 
 Fonte:  
 http://swik.net/OpenSolaris/Planet+Solaris/Dave+Miner:+Wasting+time+with+blogs.sun.com+and+ScribeFire/bcx8c
@@ -31,4 +30,3 @@ http://swik.net/OpenSolaris/Planet+Solaris/Dave+Miner:+Wasting+time+with+blogs.s
 * Server API URL: http://jroller.com/roller-services/xmlrpc  
 * Forneça username and password</seu>
 
-<!-- google_ad_section_end -->

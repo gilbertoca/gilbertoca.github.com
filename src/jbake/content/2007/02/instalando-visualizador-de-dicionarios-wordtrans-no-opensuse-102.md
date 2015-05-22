@@ -1,11 +1,11 @@
 id=21
-title=Instalando Visualizador de Dicionários WordTrans no openSuSe 10.2
+title=Instalando Visualizador de Dicionários WordTrans no openSUSE 10.2
 date=2007-02-16 16:03:41
 type=post
 status=published
-tags=Linux,opensuse,Sistema Operacional
+tags=Linux,openSUSE,Sistema Operacional,Traduções
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 O [wordtrans ][1]é uma aplicação gráfica que permite a pesquisa de palavras em vários dicionários. O mesmo também pode traduzir uma palavra selecionada pelo mouse. Ele tem suporte a três tipos de dicionários:
 
@@ -18,12 +18,15 @@ Pré-requisitos:
   1. dictd-1.10.6-21.i586.rpm
   2. dicts-1.5-281.i586.rpm
   3. wordtrans-1.1pre15-suse.i586.rpm
-  4. wordtrans-kde-1.1pre15-suse.i586.rpm 
-    Não esqueça de baixar também os [dicionários][2].</li> </ol> 
+  4. wordtrans-kde-1.1pre15-suse.i586.rpm
+
+Não esqueça de baixar também os [dicionários][2]!
     
-    Instale-os da seguinte forma:
+Instale-os da seguinte forma:
     
-    <pre>ti-des05:/home/gilberto/software_usados/tradutor # ll
+<pre>
+<code class="bash">
+ti-des05:/home/gilberto/software_usados/tradutor # ll
 total 20596
 drwxr-xr-x 2 gilberto users     4096 Jun 14  2006 dicionarios
 -rw-r--r-- 1 gilberto users   188473 Jun 14  2006 dictd-1.4.9-759.i586.rpm
@@ -38,11 +41,15 @@ Preparing...                ########################################### [100%]
 ti-des05:/home/gilberto/software_usados/tradutor # rpm -Uhv wordtrans-kde-1.1pre15-suse.i586.rpm
 Preparing...                ########################################### [100%]
    1:wordtrans-kde          ########################################### [100%]
-ti-des05:/home/gilberto/software_usados/tradutor #</pre>
+ti-des05:/home/gilberto/software_usados/tradutor #
+</code>
+</pre>
     
-    Depois, faça a descompactação dos dicionários em um local:
+Depois, faça a descompactação dos dicionários em um local:
     
-    <pre>ti-des05:/home/gilberto/software_usados/tradutor # cd dicionarios/
+<pre>
+<code class="bash">
+ti-des05:/home/gilberto/software_usados/tradutor # cd dicionarios/
 ti-des05:/home/gilberto/software_usados/tradutor/dicionarios # ll
 total 37648
 -rw-r--r-- 1 gilberto users 8374290 Jun 14  2006 EngtoEng.dic
@@ -61,14 +68,16 @@ total 37648
 -rw-r--r-- 1 gilberto users  122742 May  8  2003 por-eng.dict.dz
 -rw-r--r-- 1 gilberto users  165280 May  8  2003 por-eng.index
 -rwxr-xr-x 1 gilberto users  208269 Jun  2  2006 por-eng.tar.gz
-ti-des05:/home/gilberto/software_usados/tradutor/dicionarios #</pre>
+ti-des05:/home/gilberto/software_usados/tradutor/dicionarios #
+</code>
+</pre>
     
-    Bom, agora precisamos adicionar os dicionários que precisamos ao worktrans. Para isso, através do menu Dictionaries, escolha New: Dictionaries->New &#8230;. Aparecerá tela para selecionar o tipo de dicionário. Eu escolhi o tipo babylon. O restante é bem fácil e intuitivo!
+Bom, agora precisamos adicionar os dicionários que precisamos ao worktrans. Para isso, através do menu Dictionaries, escolha New: Dictionaries->New &#8230;. Aparecerá tela para selecionar o tipo de dicionário. Eu escolhi o tipo babylon. O restante é bem fácil e intuitivo!
     
-    ![menu Dictionaries][3]
+![menu Dictionaries][3]
     
-    <!-- google_ad_section_end -->
+    
 
- [1]: http://www.escomposlinux.org/rvm/wordtrans/about_en.php
- [2]: http://www.escomposlinux.org/rvm/wordtrans/dictionaries_en.php
- [3]: http://blog.gilbertoca.com/http://blog.gilbertoca.com/img/uploads/wordtrans.png
+[1]: http://www.escomposlinux.org/rvm/wordtrans/about_en.php
+[2]: http://www.escomposlinux.org/rvm/wordtrans/dictionaries_en.php
+[3]: http://blog.gilbertoca.com/img/uploads/wordtrans.png

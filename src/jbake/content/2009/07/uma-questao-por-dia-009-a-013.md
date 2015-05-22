@@ -3,9 +3,9 @@ title=Uma Questão Por Dia [009 a 013]
 date=2009-07-20 16:48:39
 type=post
 status=published
-tags=Concurso Público, Geral, Jornada, Objetivo, Resumos, Simulado
+tags=Concurso Público,  Jornada, Objetivo, Resumos, Simulado
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 Estive mais atarefado nos últimos dias por isso não consegui postar. 
 
@@ -21,7 +21,7 @@ Estive mais atarefado nos últimos dias por isso não consegui postar.
 
 O que quer dizer: [Uma Questão por Dia?][6]
 
-<!-- google_ad_section_end -->
+
 
  [1]: http://blog.gilbertoca.com/tools/acervo/questoespordia/[009]-mat-est-eco-cont-inf.odt
  [2]: http://blog.gilbertoca.com/tools/acervo/questoespordia/[010]-mat-est-eco-cont-inf.odt

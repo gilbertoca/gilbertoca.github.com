@@ -3,9 +3,9 @@ title=Removendo itens pré-definidos da barra lateral(sidebar) iNove template
 date=2011-06-15 23:03:40
 type=post
 status=published
-tags=Geral, Internet, Tema, Wordpress
+tags= Internet, Tema, Wordpress
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 Há algum tempo venho tentando personalizar a barra lateral(sidebar) do tema([iNove template][1]) que adotei pro blog. Mas quando adiciono, por exemplo, um widget no sidebar Norte ele aparece duplicado. 
 
@@ -26,8 +26,8 @@ Então, se você quiser remover o widget Archives:
 Colocando um widget de Text vazio faz a mágica. Foi o que coloquei em cada sidebar! Desta forma pude personalizar o primeiro(North sidebar)  
 [<img src="http://blog.gilbertoca.com/img/uploads/Widgets_personalizado.png" alt:"Widgets_personalizado" title="Widgets_personalizado" width="436" height="712" class="aligncenter size-full wp-image-744" />][3]
 
-<!-- google_ad_section_end -->
+
 
  [1]: http://www.neoease.com/inove/
  [2]: http://wordpress.org/support/topic/removing-sidebar-items-in-inove-template
- [3]: http://blog.gilbertoca.com/http://blog.gilbertoca.com/img/uploads/delete_archives_widget.png
+ [3]: http://blog.gilbertoca.com/img/uploads/delete_archives_widget.png

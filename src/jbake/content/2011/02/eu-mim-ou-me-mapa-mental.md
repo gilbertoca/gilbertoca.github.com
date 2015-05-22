@@ -3,9 +3,9 @@ title=EU, MIM ou ME? [Mapa Mental]
 date=2011-02-04 15:22:01
 type=post
 status=published
-tags=Concurso Público, freemind, Geral, mapa mental, Questões
+tags=Concurso Público, freemind,  mapa mental, Questões
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 <span class="style_0">Exercício 1.0: Use EU, MIM ou ME, conforme convenha.</span>
 
@@ -32,8 +32,8 @@ O legal seria publicar o mapa mental depois do exercício. Mas coloquei apenas u
 
 Para aqueles que já usam o [FreeMind][2], deixo o arquivo para melhoria: [EU\_MIM\_ou_ME][3]
 
-<!-- google_ad_section_end -->
 
- [1]: http://blog.gilbertoca.com/http://blog.gilbertoca.com/img/uploads/EU_MIM_ou_ME.png
+
+ [1]: http://blog.gilbertoca.com/img/uploads/EU_MIM_ou_ME.png
  [2]: http://freemind.sourceforge.net
- [3]: http://blog.gilbertoca.com/http://blog.gilbertoca.com/img/uploads/EU_MIM_ou_ME.mm
+ [3]: http://blog.gilbertoca.com/img/uploads/EU_MIM_ou_ME.mm

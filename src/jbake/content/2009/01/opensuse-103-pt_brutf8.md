@@ -1,11 +1,11 @@
 id=8
-title=OpenSuse 10.3 - pt_BR.UTF8 
+title=openSUSE 10.3 - pt_BR.UTF8 
 date=2009-01-08 16:41:15
 type=post
 status=published
-tags=Linux, opensuse, Sistema Operacional
+tags=Linux, openSUSE, Sistema Operacional
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 Para resolver de vez os problemas com caracteres estranhos e acentuação:
 
@@ -18,4 +18,3 @@ Estes ajustes são gravados no arquivo de configuração <span class="filename">
 
 &nbsp;
 
-<!-- google_ad_section_end -->

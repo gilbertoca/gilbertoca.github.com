@@ -3,9 +3,9 @@ title=Direct Path Load - Como configurar
 date=2010-06-01 14:20:55
 type=post
 status=published
-tags=banco de dados, Database, Linux, oracle
+tags=Database, Linux, oracle
 ~~~~~~
-<!-- google_ad_section_start -->
+
 
 > Verificando posts de [meu antigo blog][1] notei que alguns não foram importados ou foram importados com defeitos em seu conteúdo. Então resolvi realizar um trabalho de revisão e o **[terceiro][2]** começa hoje: 
 
@@ -40,7 +40,7 @@ SQL<span style="color: #000000; font-weight: bold;">&gt;</span></pre>
   </table>
 </div></p> 
 
-<!-- google_ad_section_end -->
+
 
  [1]: http://www.jroller.com/gilbertoca
  [2]: http://www.jroller.com/gilbertoca/entry/direct_path_load_como_configurar
