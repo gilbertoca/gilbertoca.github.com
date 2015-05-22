@@ -7,26 +7,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
 
-        <link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
-        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
-        <link rel="alternate"  type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
+        <!--link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css"-->
+        <link rel="alternate" type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
         <link href="../../css/default.css" rel="stylesheet">
-        <link href="../../css/syntax.css" rel="stylesheet">
-        <link href="../../css/prettify.css" rel="stylesheet">
-
-        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-          <script src="../../js/html5shiv.min.js"></script>
-        <![endif]-->
+        <!--link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css" -->
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/monokai_sublime.min.css">  
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>        
+        <script>hljs.initHighlightingOnLoad();</script>
 
         <!-- Fav and touch icons -->
-        <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
         <link rel="shortcut icon" href="../../favicon.ico">
     </head>
-    <body onload="prettyPrint()">
+    <body>
 	
 <header>
 	<hgroup>
@@ -52,13 +45,11 @@
             <a href="../../tags/Metodologia Ágil.html">Metodologia Ágil</a>,
             <a href="../../tags/Modelagem.html">Modelagem</a>,
             <a href="../../tags/Traduções.html">Traduções</a>,
-            <a href="../../tags/traduções.html">traduções</a>,
             <a href="../../tags/UML.html">UML</a>,
         </p>
     </header>
     <section>
-	<!-- google_ad_section_start -->
-<blockquote><p>Rebecca Wirfs-Brock. <a href="http://wirfs-brock.com/blog/2013/02/27/why-domain-modeling/" title="Why Domain Modeling?" target="_blank">Why Domain Modeling?</a><br/>[online] Disponível na Internet via WWW. URL: <a href="http://wirfs-brock.com/blog/2013/02/27/why-domain-modeling/">http://wirfs-brock.com/blog/2013/02/27/why-domain-modeling/</a>. Arquivo capturado em 27 de fevereiro de 2013 </p>
+	<blockquote><p>Rebecca Wirfs-Brock. <a href="http://wirfs-brock.com/blog/2013/02/27/why-domain-modeling/" title="Why Domain Modeling?" target="_blank">Why Domain Modeling?</a><br/>[online] Disponível na Internet via WWW. URL: <a href="http://wirfs-brock.com/blog/2013/02/27/why-domain-modeling/">http://wirfs-brock.com/blog/2013/02/27/why-domain-modeling/</a>. Arquivo capturado em 27 de fevereiro de 2013 </p>
 </blockquote>
 <p style="text-align:justify">
   Uma barreira ao considerar arquiteturas ricas em modelo de domínio é a ideia errônea do valor ou propósito de um modelo de domínio. Para alguns, criar um modelo de domínio parere retroceder à aqueles dias iniciais onde projeto e modelagem eram percebidas como atividades discretas, longas e muitas vezes improdutivas.
@@ -78,7 +69,6 @@
 <p style="text-align:justify">
   Entender e descrever um domínio e criar qualquer modelo dele de algum forma, fica fora de muitas atividades de desenvolvimento.<br /> Mas se seu software é complexo, sofre mudanças repentinas, estratégico e você não está fazendo nenhuma modelagem de domínio, você pode estar perdendo alguma coisa realmente importante. Se seu software é complexo o bastante, você pode notavelmente se beneficiar da modelagem de domínio e certamente realizar algumas atividades do Projeto Dirigido por Domínio(Domain-Driven Design).<br /> Por exemplo, a “Estratégia de Projeto” do Projeto Dirigido por Domínio é um esforço consciente para criar um entendimento comum entre visionários do negócio, especialistas do domínio e desenvolvedores. Discussões de domínio iniciais de alto nível leva ao entendimento do que é central ao problema(o núcleo do domínio) e ao relacionamento entre todas as partes(subdomínios) que se interagem. Ganhar tal consenso te ajuda a manter o foco em melhores práticas de projeto e estruturar (ou restruturar) seu software habilitando-o a crescer e evoluir sustentavelmente.<br /> Mas não para por aí. Se você compra a ideia de modelagem de domínio, você também se compromete a desenvolver um profundo compartilhamento do entendimento do domínio do problema ao lado do seu código. Sua missão não é somente entregar operações funcionais, mas incorporar conhecimento do domínio em sua solução. Seu código terá objetos que representam conceitos do domínio. Você será mais minucioso ao nomear classes e métodos, assim refletindo exatamente a linguagem do domínio. Você terá discussões progressivas com especialistas de domínio e em conjunto discutir e refinar seu entendimento do domínio. Ao longo do caminho você pode rascunhar e revisar modelos de domínio. Se esforçará para identificar, preservar, fortalecer e tornar explícito as conexões entre o problema do negócio e seu código. Quando refatorar seu projeto ao ganhar mais entendimento, você não esquecerá de refletir o domínio em seu código. Seu modelo de domínio vive e evolui junto com o código.<br /> Como consequência, não há aquela grande desconexão entre o que você codifica e o que o negócio diz. E essa pode ser uma poderosa força para uma colaboração mais próxima entre desenvolvedores e especialistas do domínio.
 </p>
-<!-- google_ad_section_end -->
     </section>
 <section>
 <div id="disqus_thread"></div>

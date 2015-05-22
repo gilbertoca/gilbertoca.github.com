@@ -3,30 +3,23 @@
     <head>
         <title></title>
         <meta charset="utf-8"/>
-        <title>Melhor aparência (fonte)[OpenSuSe 11.3] </title>
+        <title>Melhor aparência (fonte)[openSUSE 11.3] </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
 
-        <link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
-        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
-        <link rel="alternate"  type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
+        <!--link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css"-->
+        <link rel="alternate" type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
         <link href="../../css/default.css" rel="stylesheet">
-        <link href="../../css/syntax.css" rel="stylesheet">
-        <link href="../../css/prettify.css" rel="stylesheet">
-
-        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-          <script src="../../js/html5shiv.min.js"></script>
-        <![endif]-->
+        <!--link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css" -->
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/monokai_sublime.min.css">  
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>        
+        <script>hljs.initHighlightingOnLoad();</script>
 
         <!-- Fav and touch icons -->
-        <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
         <link rel="shortcut icon" href="../../favicon.ico">
     </head>
-    <body onload="prettyPrint()">
+    <body>
 	
 <header>
 	<hgroup>
@@ -45,40 +38,29 @@
 <section>
 <article>
     <header>
-        <h1>Melhor aparência (fonte)[OpenSuSe 11.3] </h1>
+        <h1>Melhor aparência (fonte)[openSUSE 11.3] </h1>
         <p>by <em>Gilberto C. Andrade</em> on <strong>22 Outubro 2010</strong></p>
         <p>Tagged as: 
-            <a href="../../tags/configuração.html">configuração</a>,
             <a href="../../tags/desktop.html">desktop</a>,
-            <a href="../../tags/Geral.html">Geral</a>,
             <a href="../../tags/Linux.html">Linux</a>,
-            <a href="../../tags/opensuse.html">opensuse</a>,
+            <a href="../../tags/openSUSE.html">openSUSE</a>,
         </p>
     </header>
     <section>
-	<!-- google_ad_section_start --><p>Sexta-feira, final de tarde! Um bom motivo para me aventurar em uma área que costumo deixar de lado: configuração do desktop. Primeiro as fontes! Percebo que as fontes não são exibidas de forma suave e elas estão bem pequenas devido a minha resolução de vídeo - 1152&#215;864. Vou seguir <a href="http://www.linuxcrunch.com/content/font-smoothing-opensuse-112">a seguinte dica</a>, descrita por Fahad: </p>
+	<p>Sexta-feira, final de tarde! Um bom motivo para me aventurar em uma área que costumo deixar de lado: configuração do desktop. Primeiro as fontes! Percebo que as fontes não são exibidas de forma suave e elas estão bem pequenas devido a minha resolução de vídeo - 1152x864. Vou seguir <a href="http://www.linuxcrunch.com/content/font-smoothing-openSUSE-112">a seguinte dica</a>, descrita por Fahad:</p>
 <ol>
-  <li>precisamos instalar o <a href="http://software.opensuse.org/search?q=freetype2&#038;baseproject=openSUSE%3A11.3&#038;lang=en&#038;exclude_filter=home%3A&#038;exclude_debug=true">pacote freetype2</a>. Veja se já instalou:<br/><img src="http://dl.dropbox.com/u/9093640/yast2.png" alt="Status da instalação do pacote freetype2""/></li>
-  <li><p>faça o seguinte ajuste em</p> <div class="wp_syntax">  <table>  <tr>  <td class="line_numbers">  <pre>1 2 3 </pre>  </td></p>
-  <pre><code>  &lt;td class=&quot;code&quot;&gt;
-    &lt;pre class=&quot;properties&quot; style=&quot;font-family:monospace;&quot;&gt;Configure Desktop &amp;gt; Appearance &amp;gt; Fonts
-</code></pre></li>
-</ol>
-<ul>
-  <li><span style="color: #933;">"Use anti-aliasing for fonts"</span> &gt; enabled</li>
-  <li><span style="color: #933;">"Force fonts DPI"</span> &gt; <span style="">96</span></pre>  </td>  </tr>  </table> </div></li>
-</ul>
-<ol>
-  <li><p>faça o seguinte ajuste em (através do botão ” Configure”)</p> <div class="wp_syntax">  <table>  <tr>  <td class="line_numbers">  <pre>1 2 3 </pre>  </td></p>
-  <pre><code>  &lt;td class=&quot;code&quot;&gt;
-    &lt;pre class=&quot;properties&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;span style=&quot;color: #933;&quot;&gt;&quot;Configure Anti-aliasing Settings&quot;&lt;/span&gt; &amp;gt;
-</code></pre></li>
-</ol>
-<ul>
-  <li><span style="color: #933;">"Use sub-pixel rendering:"</span> &gt; RGB</li>
-  <li><span style="color: #933;">"Hinting style:"</span> &gt; full</pre>  </td>  </tr>  </table> </div></li>
-</ul><p>Depois de sair (log ou) e entrar (log in) novamente, você vai notar que o KDE irá exibir as fontes mais suaves.<br/>Depois escolhi outras fontes e aumentei o tamanho. Ficou um beleza!<br/><img src="http://dl.dropbox.com/u/9093640/Fonts.png" alt="Uma amostra de configuração""/></p>
-<!-- google_ad_section_end -->
+  <li><p>precisamos instalar o <a href="http://software.openSUSE.org/search?q=freetype2&baseproject=openSUSE%3A11.3&lang=en&exclude_filter=home%3A&exclude_debug=true">pacote freetype2</a>. Veja se já instalou: <img src="http://dl.dropbox.com/u/9093640/yast2.png" alt="Status da instalação do pacote freetype2""/></p></li>
+  <li><p>faça o seguinte ajuste em Configure Desktop &gt; Appearance &gt; Fonts</p>
+  <ul>
+    <li>"Use anti-aliasing for fonts" &gt; enabled</li>
+    <li>"Force fonts DPI" &gt; 96</li>
+  </ul></li>
+  <li><p>faça o seguinte ajuste em (através do botão " Configure")<br/>"Configure Anti-aliasing Settings" &gt;</p>
+  <ul>
+    <li>"Use sub-pixel rendering:" &gt; RGB</li>
+    <li>"Hinting style:" &gt; full</li>
+  </ul></li>
+</ol><p>Depois de sair (log ou) e entrar (log in) novamente, você vai notar que o KDE irá exibir as fontes mais suaves. Depois escolhi outras fontes e aumentei o tamanho. Ficou um beleza! <img src="http://dl.dropbox.com/u/9093640/Fonts.png" alt="Uma amostra de configuração""/></p><p>Mais uma opção <img src="http://dl.dropbox.com/u/9093640/Fonts2.png" alt="Outra amostra de configuração""/></p>
     </section>
 <section>
 <div id="disqus_thread"></div>

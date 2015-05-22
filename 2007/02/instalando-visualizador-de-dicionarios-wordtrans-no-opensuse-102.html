@@ -3,30 +3,23 @@
     <head>
         <title></title>
         <meta charset="utf-8"/>
-        <title>Instalando Visualizador de Dicionários WordTrans no openSuSe 10.2</title>
+        <title>Instalando Visualizador de Dicionários WordTrans no openSUSE 10.2</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
 
-        <link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
-        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
-        <link rel="alternate"  type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
+        <!--link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css"-->
+        <link rel="alternate" type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
         <link href="../../css/default.css" rel="stylesheet">
-        <link href="../../css/syntax.css" rel="stylesheet">
-        <link href="../../css/prettify.css" rel="stylesheet">
-
-        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-          <script src="../../js/html5shiv.min.js"></script>
-        <![endif]-->
+        <!--link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css" -->
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/monokai_sublime.min.css">  
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>        
+        <script>hljs.initHighlightingOnLoad();</script>
 
         <!-- Fav and touch icons -->
-        <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
         <link rel="shortcut icon" href="../../favicon.ico">
     </head>
-    <body onload="prettyPrint()">
+    <body>
 	
 <header>
 	<hgroup>
@@ -45,16 +38,17 @@
 <section>
 <article>
     <header>
-        <h1>Instalando Visualizador de Dicionários WordTrans no openSuSe 10.2</h1>
+        <h1>Instalando Visualizador de Dicionários WordTrans no openSUSE 10.2</h1>
         <p>by <em>Gilberto C. Andrade</em> on <strong>16 Fevereiro 2007</strong></p>
         <p>Tagged as: 
             <a href="../../tags/Linux.html">Linux</a>,
-            <a href="../../tags/opensuse.html">opensuse</a>,
+            <a href="../../tags/openSUSE.html">openSUSE</a>,
             <a href="../../tags/Sistema Operacional.html">Sistema Operacional</a>,
+            <a href="../../tags/Traduções.html">Traduções</a>,
         </p>
     </header>
     <section>
-	<!-- google_ad_section_start --><p>O <a href="http://www.escomposlinux.org/rvm/wordtrans/about_en.php">wordtrans </a>é uma aplicação gráfica que permite a pesquisa de palavras em vários dicionários. O mesmo também pode traduzir uma palavra selecionada pelo mouse. Ele tem suporte a três tipos de dicionários:</p>
+	<p>O <a href="http://www.escomposlinux.org/rvm/wordtrans/about_en.php">wordtrans </a>é uma aplicação gráfica que permite a pesquisa de palavras em vários dicionários. O mesmo também pode traduzir uma palavra selecionada pelo mouse. Ele tem suporte a três tipos de dicionários:</p>
 <ol>
   <li>Dicionários do Tradutor Babylon.</li>
   <li>Dicionários de Texto Puro.</li>
@@ -64,18 +58,52 @@
   <li>dictd-1.10.6-21.i586.rpm</li>
   <li>dicts-1.5-281.i586.rpm</li>
   <li>wordtrans-1.1pre15-suse.i586.rpm</li>
-  <li><p>wordtrans-kde-1.1pre15-suse.i586.rpm Não esqueça de baixar também os <a href="http://www.escomposlinux.org/rvm/wordtrans/dictionaries_en.php">dicionários</a>.</li> </ol></p><p>Instale-os da seguinte forma:</p><p><pre>ti-des05:/home/gilberto/software_usados/tradutor # ll total 20596 drwxr-xr-x 2 gilberto users 4096 Jun 14 2006 dicionarios -rw-r--r-- 1 gilberto users 188473 Jun 14 2006 dictd-1.4.9-759.i586.rpm -rw-r--r-- 1 gilberto users 20083705 Jun 14 2006 dicts-1.5-247.i586.rpm -rw-r--r-x 1 gilberto users 488334 Jun 2 2006 wordtrans-1.1pre15-suse.i586.rpm -rw-r--r-x 1 gilberto users 268334 Jun 2 2006 wordtrans-kde-1.1pre15-suse.i586.rpm -rwxr-xr-x 1 gilberto users 4444 Jun 2 2006 wordtrans_for_suse-2.patch.gz ti-des05:/home/gilberto/software_usados/tradutor # rpm -Uhv wordtrans-1.1pre15-suse.i586.rpm Preparing... ########################################### [100%]  1:wordtrans ########################################### [100%]</p></li>
-</ol><p>ti-des05:/home/gilberto/software_usados/tradutor # rpm -Uhv wordtrans-kde-1.1pre15-suse.i586.rpm Preparing... ########################################### [100%]  1:wordtrans-kde ########################################### [100%] ti-des05:/home/gilberto/software_usados/tradutor #</pre></p>
-<pre><code>Depois, faça a descompactação dos dicionários em um local:
+  <li>wordtrans-kde-1.1pre15-suse.i586.rpm</li>
+</ol><p>Não esqueça de baixar também os <a href="http://www.escomposlinux.org/rvm/wordtrans/dictionaries_en.php">dicionários</a>!</p><p>Instale-os da seguinte forma:</p>
+<pre>
+<code class="bash">
+ti-des05:/home/gilberto/software_usados/tradutor # ll
+total 20596
+drwxr-xr-x 2 gilberto users     4096 Jun 14  2006 dicionarios
+-rw-r--r-- 1 gilberto users   188473 Jun 14  2006 dictd-1.4.9-759.i586.rpm
+-rw-r--r-- 1 gilberto users 20083705 Jun 14  2006 dicts-1.5-247.i586.rpm
+-rw-r--r-x 1 gilberto users   488334 Jun  2  2006 wordtrans-1.1pre15-suse.i586.rpm
+-rw-r--r-x 1 gilberto users   268334 Jun  2  2006 wordtrans-kde-1.1pre15-suse.i586.rpm
+-rwxr-xr-x 1 gilberto users     4444 Jun  2  2006 wordtrans_for_suse-2.patch.gz
+ti-des05:/home/gilberto/software_usados/tradutor # rpm -Uhv wordtrans-1.1pre15-suse.i586.rpm
+Preparing...                ########################################### [100%]
+   1:wordtrans              ########################################### [100%]
 
-&lt;pre&gt;ti-des05:/home/gilberto/software_usados/tradutor # cd dicionarios/
-</code></pre><p>ti-des05:/home/gilberto/software_usados/tradutor/dicionarios # ll total 37648 -rw-r--r-- 1 gilberto users 8374290 Jun 14 2006 EngtoEng.dic -rw-r--r-x 1 gilberto users 4035857 Jun 2 2006 EngtoEng.dic.gz -rw-r--r-- 1 gilberto users 7372222 Jun 14 2006 EngtoPor.dic -rw-r--r-x 1 gilberto users 3522348 Jun 14 2006 EngtoPor.dic.gz -rw-r--r-- 1 gilberto users 7752828 Jun 14 2006 EngtoSpa.dic -rw-r--r-x 1 gilberto users 3750624 Jun 2 2006 EngtoSpa.dic.gz -rw-r--r-- 1 gilberto users 1405056 Jun 14 2006 dict-world02-20030215.tar.gz -rw-r--r-- 1 gilberto users 423 Jun 14 2006 dictionary -rwxr-xr-x 1 gilberto users 283 Jun 2 2006 dictionary.gz -rwxr-xr-x 1 gilberto users 546 Jun 2 2006 eng-hin.tar.gz -rwxr-xr-x 1 gilberto users 549 Jun 2 2006 eng-por.tar.gz -rw-r--r-- 1 gilberto users 1250264 Jun 14 2006 english.dic -rw-r--r-x 1 gilberto users 480387 Jun 2 2006 english.dic.gz -rw-r--r-- 1 gilberto users 122742 May 8 2003 por-eng.dict.dz -rw-r--r-- 1 gilberto users 165280 May 8 2003 por-eng.index -rwxr-xr-x 1 gilberto users 208269 Jun 2 2006 por-eng.tar.gz ti-des05:/home/gilberto/software_usados/tradutor/dicionarios #</pre></p>
-<pre><code>Bom, agora precisamos adicionar os dicionários que precisamos ao worktrans. Para isso, através do menu Dictionaries, escolha New: Dictionaries-&gt;New &amp;#8230;. Aparecerá tela para selecionar o tipo de dicionário. Eu escolhi o tipo babylon. O restante é bem fácil e intuitivo!
-
-![menu Dictionaries][3]
-
-&lt;!-- google_ad_section_end --&gt;
-</code></pre>
+ti-des05:/home/gilberto/software_usados/tradutor # rpm -Uhv wordtrans-kde-1.1pre15-suse.i586.rpm
+Preparing...                ########################################### [100%]
+   1:wordtrans-kde          ########################################### [100%]
+ti-des05:/home/gilberto/software_usados/tradutor #
+</code>
+</pre><p>Depois, faça a descompactação dos dicionários em um local:</p>
+<pre>
+<code class="bash">
+ti-des05:/home/gilberto/software_usados/tradutor # cd dicionarios/
+ti-des05:/home/gilberto/software_usados/tradutor/dicionarios # ll
+total 37648
+-rw-r--r-- 1 gilberto users 8374290 Jun 14  2006 EngtoEng.dic
+-rw-r--r-x 1 gilberto users 4035857 Jun  2  2006 EngtoEng.dic.gz
+-rw-r--r-- 1 gilberto users 7372222 Jun 14  2006 EngtoPor.dic
+-rw-r--r-x 1 gilberto users 3522348 Jun 14  2006 EngtoPor.dic.gz
+-rw-r--r-- 1 gilberto users 7752828 Jun 14  2006 EngtoSpa.dic
+-rw-r--r-x 1 gilberto users 3750624 Jun  2  2006 EngtoSpa.dic.gz
+-rw-r--r-- 1 gilberto users 1405056 Jun 14  2006 dict-world02-20030215.tar.gz
+-rw-r--r-- 1 gilberto users     423 Jun 14  2006 dictionary
+-rwxr-xr-x 1 gilberto users     283 Jun  2  2006 dictionary.gz
+-rwxr-xr-x 1 gilberto users     546 Jun  2  2006 eng-hin.tar.gz
+-rwxr-xr-x 1 gilberto users     549 Jun  2  2006 eng-por.tar.gz
+-rw-r--r-- 1 gilberto users 1250264 Jun 14  2006 english.dic
+-rw-r--r-x 1 gilberto users  480387 Jun  2  2006 english.dic.gz
+-rw-r--r-- 1 gilberto users  122742 May  8  2003 por-eng.dict.dz
+-rw-r--r-- 1 gilberto users  165280 May  8  2003 por-eng.index
+-rwxr-xr-x 1 gilberto users  208269 Jun  2  2006 por-eng.tar.gz
+ti-des05:/home/gilberto/software_usados/tradutor/dicionarios #
+</code>
+</pre><p>Bom, agora precisamos adicionar os dicionários que precisamos ao worktrans. Para isso, através do menu Dictionaries, escolha New: Dictionaries-&gt;New &#8230;. Aparecerá tela para selecionar o tipo de dicionário. Eu escolhi o tipo babylon. O restante é bem fácil e intuitivo!</p><p><img src="http://blog.gilbertoca.com/img/uploads/wordtrans.png" alt="menu Dictionaries""/></p>
     </section>
 <section>
 <div id="disqus_thread"></div>

@@ -7,26 +7,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
 
-        <link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
-        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
-        <link rel="alternate"  type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
+        <!--link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css"-->
+        <link rel="alternate" type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
         <link href="../../css/default.css" rel="stylesheet">
-        <link href="../../css/syntax.css" rel="stylesheet">
-        <link href="../../css/prettify.css" rel="stylesheet">
-
-        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-          <script src="../../js/html5shiv.min.js"></script>
-        <![endif]-->
+        <!--link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css" -->
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/monokai_sublime.min.css">  
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>        
+        <script>hljs.initHighlightingOnLoad();</script>
 
         <!-- Fav and touch icons -->
-        <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
         <link rel="shortcut icon" href="../../favicon.ico">
     </head>
-    <body onload="prettyPrint()">
+    <body>
 	
 <header>
 	<hgroup>
@@ -49,18 +42,18 @@
         <p>by <em>Gilberto C. Andrade</em> on <strong>09 Julho 2009</strong></p>
         <p>Tagged as: 
             <a href="../../tags/AIX.html">AIX</a>,
-            <a href="../../tags/configuração.html">configuração</a>,
             <a href="../../tags/console.html">console</a>,
             <a href="../../tags/Database.html">Database</a>,
             <a href="../../tags/Linux.html">Linux</a>,
-            <a href="../../tags/Unix.html">Unix</a>,
         </p>
     </header>
     <section>
-	<!-- google_ad_section_start --><p>Nosso banco de dados atual está instalado em uma máquina unix - AIX 5.3. Mas por estar acostumado com ambientes Linux, instalei para o mesmo, o<a href="http://www-03.ibm.com/systems/power/software/aix/linux/"> pacote de ferramentas Linux</a> que a <a href="http://www.ibm.com/pt/pt/">IBM </a>disponibiliza. Funciona muito bem, mas quando executo um binário unix - exemplo: topas - o shell responde que esse erro.<br/>A solução é ajustar a variável TERM para xterm, nesse caso é claro, pois utilizo um ambiente gráfico para acessar o servidor. Não sei se funcionaria acessando de um terminal texto.</p>
-<pre>export TERM=xterm
+	<p>Nosso banco de dados atual está instalado em uma máquina unix - AIX 5.3. Mas por estar acostumado com ambientes Linux, instalei para o mesmo, o<a href="http://www-03.ibm.com/systems/power/software/aix/linux/"> pacote de ferramentas Linux</a> que a <a href="http://www.ibm.com/pt/pt/">IBM </a>disponibiliza. Funciona muito bem, mas quando executo um binário unix - exemplo: topas - o shell responde que esse erro.<br/>A solução é ajustar a variável TERM para xterm, nesse caso é claro, pois utilizo um ambiente gráfico para acessar o servidor. Não sei se funcionaria acessando de um terminal texto.</p>
+<pre>
+<code class="bash">
+        export TERM=xterm
+</code>
 </pre>
-<!-- google_ad_section_end -->
     </section>
 <section>
 <div id="disqus_thread"></div>

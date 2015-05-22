@@ -7,26 +7,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
 
-        <link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
-        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
-        <link rel="alternate"  type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
+        <!--link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css"-->
+        <link rel="alternate" type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
         <link href="../../css/default.css" rel="stylesheet">
-        <link href="../../css/syntax.css" rel="stylesheet">
-        <link href="../../css/prettify.css" rel="stylesheet">
-
-        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-          <script src="../../js/html5shiv.min.js"></script>
-        <![endif]-->
+        <!--link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css" -->
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/monokai_sublime.min.css">  
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>        
+        <script>hljs.initHighlightingOnLoad();</script>
 
         <!-- Fav and touch icons -->
-        <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
         <link rel="shortcut icon" href="../../favicon.ico">
     </head>
-    <body onload="prettyPrint()">
+    <body>
 	
 <header>
 	<hgroup>
@@ -48,20 +41,18 @@
         <h1>Alterne entre versões Java facilmente [update-alternatives] </h1>
         <p>by <em>Gilberto C. Andrade</em> on <strong>08 Junho 2010</strong></p>
         <p>Tagged as: 
-            <a href="../../tags/configuração.html">configuração</a>,
             <a href="../../tags/console.html">console</a>,
-            <a href="../../tags/Geral.html">Geral</a>,
             <a href="../../tags/Java.html">Java</a>,
             <a href="../../tags/Linux.html">Linux</a>,
-            <a href="../../tags/opensuse.html">opensuse</a>,
+            <a href="../../tags/openSUSE.html">openSUSE</a>,
             <a href="../../tags/Sistema Operacional.html">Sistema Operacional</a>,
             <a href="../../tags/Tocantins.html">Tocantins</a>,
         </p>
     </header>
     <section>
-	<!-- google_ad_section_start --><p>Com o surgimento de versões e atualizações da máquina virtual java, preciso verificar a compatibilidade da mesma com o <a href="http://www.techne.com.br/produtos/produtos.asp?id=4">sistema de gestão de pessoal</a> sendo implantado <a href="http://www.secad.to.gov.br">aqui na secretária</a>. </p>
+	<p>Com o surgimento de versões e atualizações da máquina virtual java, preciso verificar a compatibilidade da mesma com o <a href="http://www.techne.com.br/produtos/produtos.asp?id=4">sistema de gestão de pessoal</a> sendo implantado <a href="http://www.secad.to.gov.br">aqui na secretária</a>. </p>
 <blockquote><p>Atualizado em: 01/12/2005 16:10 - CONSAD</p><p>Tocantins faz sua apresentação em TI</p><p>As experiências inovadoras que o Tocantins tem desenvolvido em Tecnologia da Informação (TI) foram apresentadas na manhã deste primeiro dia do LX Fórum do Conselho Nacional de Secretários de Estado de Administração (Consad). O representante da superintendência de Informática do Estado, Marcos Tiago, foi o responsável pela apresentação. Nela, ele demonstrou aos presentes as redes digitais de todo o Estado, incluindo as que circundam a sede do Governo (Palácio Araguaia), e das secretarias da Administração, Fazenda e Segurança Pública.</p><p>Em relação à Secad – Secretaria da Administração, Marcos Tiago apresentou o sistema de interligação de Recursos Humanos (Ergon) que está sendo implantado; citou ainda a experiência de Educação à Distância voltada para os servidores do Estado, onde o governo acaba de capacitar mais de 28 mil servidores no curso de Excelência no Atendimento e nas Relações de Trabalho.</p><p>Fonte: Shirley Cruz / Secad </p>
-</blockquote><p>Longo tempo hein? Pois é, nossa administração pública! Mas o Estado, nestes dois últimos anos, ficou politicamente conturbado (<a href="http://www.portalct.com.br/n/61036301f280e5de0acb74eeebc8e948/to-chega-a-maioridade-em-clima-de-convulsao-e-inde/">Tocantins chega à maioridade em clima de convulsão e indefinição política</a>). Felizmente esta faze está passando e os projetos, aos poucos, retornam a sua normalidade. </p><p>O sistema usa como base a tecnologia <a href="www.oracle.com/technology/products/forms">Forms da empresa Oracle</a>, que usa applet no cliente.<br/>Bom, primeiro precisamos instalar as versões que desejamos. Para facilitar adicione os seguintes repositórios ao <a href="http://en.opensuse.org/Yast">Yast</a>:</p>
+</blockquote><p>Longo tempo hein? Pois é, nossa administração pública! Mas o Estado, nestes dois últimos anos, ficou politicamente conturbado (<a href="http://www.portalct.com.br/n/61036301f280e5de0acb74eeebc8e948/to-chega-a-maioridade-em-clima-de-convulsao-e-inde/">Tocantins chega à maioridade em clima de convulsão e indefinição política</a>). Felizmente esta faze está passando e os projetos, aos poucos, retornam a sua normalidade. </p><p>O sistema usa como base a tecnologia <a href="www.oracle.com/technology/products/forms">Forms da empresa Oracle</a>, que usa applet no cliente.<br/>Bom, primeiro precisamos instalar as versões que desejamos. Para facilitar adicione os seguintes repositórios ao <a href="http://en.openSUSE.org/Yast">Yast</a>:</p>
 <table>
   <tr>
     <td>
@@ -79,7 +70,7 @@
         </td>
         
         <td>
-          <a href="http://download.opensuse.org/repositories/Java:/sun:/Factory/openSUSE_11.2/">http://download.opensuse.org/repositories/Java:/sun:/Factory/openSUSE_11.2/</a>
+          <a href="http://download.openSUSE.org/repositories/Java:/sun:/Factory/openSUSE_11.2/">http://download.openSUSE.org/repositories/Java:/sun:/Factory/openSUSE_11.2/</a>
         </td>
         
         <tr>
@@ -89,7 +80,7 @@
             </td>
             
             <td>
-              <a href="http://download.opensuse.org/repositories/Java:/packages/openSUSE_11.2/">http://download.opensuse.org/repositories/Java:/packages/openSUSE_11.2</a>
+              <a href="http://download.openSUSE.org/repositories/Java:/packages/openSUSE_11.2/">http://download.openSUSE.org/repositories/Java:/packages/openSUSE_11.2</a>
             </td>
             
             <tr>
@@ -159,8 +150,6 @@
 <pre><code>          &lt;p&gt;
             Podemos usar o utilitário &lt;code&gt;update-alternatives&lt;/code&gt; para gerenciar outros links no sistema, mas o post já ficou extenso. Na próxima podemos mostrar como gerenciar links manualmente.
           &lt;/p&gt;
-
-          &lt;!-- google_ad_section_end --&gt;
 </code></pre>
     </section>
 <section>

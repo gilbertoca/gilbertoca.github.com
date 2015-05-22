@@ -7,26 +7,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
 
-        <link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
-        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
-        <link rel="alternate"  type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
+        <!--link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css"-->
+        <link rel="alternate" type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
         <link href="../../css/default.css" rel="stylesheet">
-        <link href="../../css/syntax.css" rel="stylesheet">
-        <link href="../../css/prettify.css" rel="stylesheet">
-
-        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-          <script src="../../js/html5shiv.min.js"></script>
-        <![endif]-->
+        <!--link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css" -->
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/monokai_sublime.min.css">  
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>        
+        <script>hljs.initHighlightingOnLoad();</script>
 
         <!-- Fav and touch icons -->
-        <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
         <link rel="shortcut icon" href="../../favicon.ico">
     </head>
-    <body onload="prettyPrint()">
+    <body>
 	
 <header>
 	<hgroup>
@@ -52,7 +45,7 @@
         </p>
     </header>
     <section>
-	<!-- google_ad_section_start --><p>É, finalmente consegui um tempo para postar algo aqui no blog. Ultimamente (nos dois últimos meses) estive ocupado trabalhando na conversão de alguns projetos java para web: usavam Ant e agora, este trabalho, usam Maven. Neste período, <a href="http://blog.gilbertoca.com/?p=415" target="_blank">como vocês bem sabem</a>, fiz a atualização (na verdade uma nova instalação) do <a href="http://www.opensuse.org">openSUSE</a>. Estava com a versão 11.3 e com o recente lançamento da <a href="http://software.opensuse.org/121/en" target="_blank">versão 12.1</a>, não resisti - ansioso por usar o novo <a href="http://www.gnome.org/gnome-3/" target="_blank">Gnome 3</a>. </p><p>A mudança foi um pouco impactante mais pro lado positivo, diferente de outras experiências que tenho ouvido e lido a respeito. Bem, espero ajudar os novos adeptos a este ambiente gráfico por aqui: postando dicas e links para solucionar eventuais embaraços por assim dizer nesta jornada de aprendizado.<br/>Vamos começar com um link bem útil: <a href="https://live.gnome.org/GnomeShell/CheatSheet" title="GnomeShell-CheatSheet" target="_blank">GnomeShell/CheatSheet</a> . </p><p>Agora algo que atrapalha um pouco: toda vez que precisamos abrir uma janela modal, tipo “Open File”, “Print”, esta mesma janela modal é anexada (colada mesmo!) à janela principal da aplicação(Evince, Firefox, NetBeans, Empathy, etc) tornando-a uma só. Isso é contra produtivo pois em algumas situações precisamos fazer um “copy and paste” de informações na janela principal da aplicação - ocorre muito com o Evince e com NetBeans no meu caso.<br/>No GNOME 3, o comportamento padrão de diálogo modal é este anexar-se à janela principal da aplicação, mas este comportamento pode ser customizado, veja:</p>
+	<p>É, finalmente consegui um tempo para postar algo aqui no blog. Ultimamente (nos dois últimos meses) estive ocupado trabalhando na conversão de alguns projetos java para web: usavam Ant e agora, este trabalho, usam Maven. Neste período, <a href="http://blog.gilbertoca.com/?p=415" target="_blank">como vocês bem sabem</a>, fiz a atualização (na verdade uma nova instalação) do <a href="http://www.openSUSE.org">openSUSE</a>. Estava com a versão 11.3 e com o recente lançamento da <a href="http://software.openSUSE.org/121/en" target="_blank">versão 12.1</a>, não resisti - ansioso por usar o novo <a href="http://www.gnome.org/gnome-3/" target="_blank">Gnome 3</a>. </p><p>A mudança foi um pouco impactante mais pro lado positivo, diferente de outras experiências que tenho ouvido e lido a respeito. Bem, espero ajudar os novos adeptos a este ambiente gráfico por aqui: postando dicas e links para solucionar eventuais embaraços por assim dizer nesta jornada de aprendizado.<br/>Vamos começar com um link bem útil: <a href="https://live.gnome.org/GnomeShell/CheatSheet" title="GnomeShell-CheatSheet" target="_blank">GnomeShell/CheatSheet</a> . </p><p>Agora algo que atrapalha um pouco: toda vez que precisamos abrir uma janela modal, tipo “Open File”, “Print”, esta mesma janela modal é anexada (colada mesmo!) à janela principal da aplicação(Evince, Firefox, NetBeans, Empathy, etc) tornando-a uma só. Isso é contra produtivo pois em algumas situações precisamos fazer um “copy and paste” de informações na janela principal da aplicação - ocorre muito com o Evince e com NetBeans no meu caso.<br/>No GNOME 3, o comportamento padrão de diálogo modal é este anexar-se à janela principal da aplicação, mas este comportamento pode ser customizado, veja:</p>
 <div class="wp_syntax">
   <table>
     <tr>
@@ -62,7 +55,6 @@
     </tr>
   </table>
 </div><p>Para desabilitar. E o contrário:</p><p><div class="wp_syntax">  <table>  <tr>  <td class="code">  <pre class="bash" style="font-family:monospace;">gconftool-<span style="color: #000000;">2</span> <span style="color: #660033;">--set</span> <span style="color: #000000; font-weight: bold;">/</span>desktop<span style="color: #000000; font-weight: bold;">/</span>gnome<span style="color: #000000; font-weight: bold;">/</span>shell<span style="color: #000000; font-weight: bold;">/</span>windows<span style="color: #000000; font-weight: bold;">/</span>attach_modal_dialogs <span style="color: #c20cb9; font-weight: bold;">true</span> <span style="color: #660033;">--type</span> bool</pre>  </td>  </tr>  </table> </div></p> </p><p><strong>Referência:The GNOME Shell Blog - <a href="http://gnomeshell.wordpress.com/2011/09/10/the-modal-windows-behavior/" title="the-modal-windows-behavior" target="_blank">The modal windows behavior</a></strong></p>
-<!-- google_ad_section_end -->
     </section>
 <section>
 <div id="disqus_thread"></div>

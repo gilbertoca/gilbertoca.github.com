@@ -7,26 +7,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
 
-        <link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
-        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
-        <link rel="alternate"  type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
+        <!--link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css"-->
+        <link rel="alternate" type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
         <link href="../../css/default.css" rel="stylesheet">
-        <link href="../../css/syntax.css" rel="stylesheet">
-        <link href="../../css/prettify.css" rel="stylesheet">
-
-        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-          <script src="../../js/html5shiv.min.js"></script>
-        <![endif]-->
+        <!--link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css" -->
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/monokai_sublime.min.css">  
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>        
+        <script>hljs.initHighlightingOnLoad();</script>
 
         <!-- Fav and touch icons -->
-        <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
         <link rel="shortcut icon" href="../../favicon.ico">
     </head>
-    <body onload="prettyPrint()">
+    <body>
 	
 <header>
 	<hgroup>
@@ -57,11 +50,10 @@
             <a href="../../tags/Proteção.html">Proteção</a>,
             <a href="../../tags/Recursos de Segurança.html">Recursos de Segurança</a>,
             <a href="../../tags/Traduções.html">Traduções</a>,
-            <a href="../../tags/traduções.html">traduções</a>,
         </p>
     </header>
     <section>
-	<!-- google_ad_section_start --><p>** </p><p>Este post é uma tradução livre do artigo “<a href="http://meri-stuff.blogspot.com/2011/03/apache-shiro-part-1-basics.html" target="_blank"> Apache Shiro Part 1 - Basics </a>“, publicado por Meri em 27 de março 2011 </p><p></strong><br/><strong>ATUALIZAÇÃO: duas novas seções adicionadas - tratamento de erros e hashing de senhas.</strong></p><p><A href="http://shiro.apache.org/index.html" target="_blank"> Apache Shiro</A>, inicialmente chamado JSecurity, é um framework de segurança desenvolvido em java. Foi aceito e tornou-se um projeto Apache de nível superior em 2010. Tem como objetivo ser poderoso e fácil de usar. </p><p>O projeto está em constante desenvolvimento e com listas de e-mails ativas para usuários e desenvolvedores. Áreas mais importantes estão <a href="http://shiro.apache.org/documentation.html" target="_blank"> documentadas em sua página web</a>. No entanto, existem algumas lacunas na documentação. Não é possível aprender a usar o máximo dos recursos do Shiro somente com a documentação. Felizmente, o código é bem documentado e onde o testei, ela foi de fácil leitura. </p><p>Principais recursos do projeto Shiro são: </p>
+	<p>** </p><p>Este post é uma tradução livre do artigo “<a href="http://meri-stuff.blogspot.com/2011/03/apache-shiro-part-1-basics.html" target="_blank"> Apache Shiro Part 1 - Basics </a>“, publicado por Meri em 27 de março 2011 </p><p></strong><br/><strong>ATUALIZAÇÃO: duas novas seções adicionadas - tratamento de erros e hashing de senhas.</strong></p><p><A href="http://shiro.apache.org/index.html" target="_blank"> Apache Shiro</A>, inicialmente chamado JSecurity, é um framework de segurança desenvolvido em java. Foi aceito e tornou-se um projeto Apache de nível superior em 2010. Tem como objetivo ser poderoso e fácil de usar. </p><p>O projeto está em constante desenvolvimento e com listas de e-mails ativas para usuários e desenvolvedores. Áreas mais importantes estão <a href="http://shiro.apache.org/documentation.html" target="_blank"> documentadas em sua página web</a>. No entanto, existem algumas lacunas na documentação. Não é possível aprender a usar o máximo dos recursos do Shiro somente com a documentação. Felizmente, o código é bem documentado e onde o testei, ela foi de fácil leitura. </p><p>Principais recursos do projeto Shiro são: </p>
 <ul>
   <li>autenticação,</li>
 </ul>
@@ -290,7 +282,6 @@ SecurityUtils.<span style="color: #006633;">getSubject</span><span style="color:
     </tr>
   </table>
 </div><p>NOTA: Outro modo de se alcançar o mesmo objetivo é através de anotações. </p><p>O servlet <A href="https://github.com/SomMeri/SimpleShiroSecuredApplication/blob/static_authentication_and_authorization/src/main/java/org/meri/simpleshirosecuredapplication/servlet/PerformFunctionAndGoBackServlet.java" target="_blank"> PerformFunctionAndGoBackServlet</A> captura exceções de autorização e as converte em mensagem de erro:</p><p><div class="wp_syntax">  <table>  <tr>  <td class="code">  <pre class="java" style="font-family:monospace;"><span style="color: #000000; font-weight: bold;">private</span> <span style="color: #003399;">String</span> performAction<span style="color: #009900;">&#40;</span><span style="color: #003399;">String</span> actionName<span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>  <span style="color: #000000; font-weight: bold;">try</span> <span style="color: #009900;">&#123;</span>  Actions action <span style="color: #339933;">=</span> findAction<span style="color: #009900;">&#40;</span>actionName<span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>  <span style="color: #003399;">String</span> result <span style="color: #339933;">=</span> action <span style="color: #339933;">==</span> <span style="color: #000066; font-weight: bold;">null</span> <span style="color: #339933;">?</span> <span style="color: #000066; font-weight: bold;">null</span> <span style="color: #339933;">:</span> action.<span style="color: #006633;">doIt</span><span style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>  log.<span style="color: #006633;">debug</span><span style="color: #009900;">&#40;</span><span style="color: #0000ff;">"Performed function with result: "</span> <span style="color: #339933;">+</span> result<span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>  <span style="color: #000000; font-weight: bold;">return</span> result<span style="color: #339933;">;</span>  <span style="color: #009900;">&#125;</span> <span style="color: #000000; font-weight: bold;">catch</span> <span style="color: #009900;">&#40;</span>ShiroException ex<span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>  log.<span style="color: #006633;">debug</span><span style="color: #009900;">&#40;</span><span style="color: #0000ff;">"Function failed with "</span> <span style="color: #339933;">+</span> ex.<span style="color: #006633;">getMessage</span><span style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span> <span style="color: #339933;">+</span> <span style="color: #0000ff;">" message."</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>  <span style="color: #000000; font-weight: bold;">return</span> <span style="color: #0000ff;">"Error: "</span> <span style="color: #339933;">+</span> ex.<span style="color: #006633;">getMessage</span><span style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>  <span style="color: #009900;">&#125;</span> <span style="color: #009900;">&#125;</span></pre>  </td>  </tr>  </table> </div></p> </p><p>Finalmente, precisamos configurar as permissões para os perfis no arquivo Shiro.ini. Shiro suporta curingas para permissões de múltiplo nível. Assim, não temos que especificar cada permissão departamental em separado:</p><p><div class="wp_syntax">  <table>  <tr>  <td class="code">  <pre class="vim" style="font-family:monospace;"><span style="color: #000000;">&#91;</span>roles<span style="color: #000000;">&#93;</span></p><h1>members of departments should be able <span style="color: #668080;">to</span> perform all departmental functions</h1><p>sales=functions<span style="color: #000000;">:</span>sale<span style="color: #000000;">:*</span> scientist=functions<span style="color: #000000;">:</span>science<span style="color: #000000;">:*</span> repairman=functions<span style="color: #000000;">:</span>repair<span style="color: #000000;">:*</span> &nbsp;</p><h1>administrators are able <span style="color: #668080;">to</span> do all management functions and repair functions</h1><p>Administrator=functions<span style="color: #000000;">:</span>manage<span style="color: #000000;">:*</span>,functions<span style="color: #000000;">:</span>repair<span style="color: #000000;">:*</span></pre>  </td>  </tr>  </table> </div></p> </p><p>Você pode agora acessar a página “todas as funções da aplicação” e testar as funções.<br/>Se um usuário autenticado não tiver a permissão requerida, uma mensagem de erro aparecerá no topo da página. Além disso, se você fizer a autenticação (log in) como vendedor e tentar hackear<br/><a href="https://localhost:8443/simpleshirosecuredapplication/masterservlet?action=MANAGE_REPAIRMEN">https://localhost:8443/simpleshirosecuredapplication/masterservlet?action=MANAGE_REPAIRMEN</a>, você verá uma mensagem de erro no console (em vez de uma mensagem de sucesso). </p><h4>Fim</h4><p>A aplicação final está disponível no ramo(branch) <A href="https://github.com/SomMeri/SimpleShiroSecuredApplication/tree/static_authentication_and_authorization" target="_blank"> &#8216;static_authentication_and_authorization&#8217;</A> hospedado no Github. </p><p>Na segunda parte iremos criar um <A href="http://shiro.apache.org/realm.html" target="_blank"> realm</A> personalizado e mover usuários, senhas, perfis(roles) e permissões do arquivo ini para um banco de dados.</p>
-<!-- google_ad_section_end -->
     </section>
 <section>
 <div id="disqus_thread"></div>

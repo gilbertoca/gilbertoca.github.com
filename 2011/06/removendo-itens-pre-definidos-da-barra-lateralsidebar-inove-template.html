@@ -7,26 +7,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
 
-        <link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
-        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
-        <link rel="alternate"  type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
+        <!--link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css"-->
+        <link rel="alternate" type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
         <link href="../../css/default.css" rel="stylesheet">
-        <link href="../../css/syntax.css" rel="stylesheet">
-        <link href="../../css/prettify.css" rel="stylesheet">
-
-        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-          <script src="../../js/html5shiv.min.js"></script>
-        <![endif]-->
+        <!--link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css" -->
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/monokai_sublime.min.css">  
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>        
+        <script>hljs.initHighlightingOnLoad();</script>
 
         <!-- Fav and touch icons -->
-        <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
         <link rel="shortcut icon" href="../../favicon.ico">
     </head>
-    <body onload="prettyPrint()">
+    <body>
 	
 <header>
 	<hgroup>
@@ -48,14 +41,13 @@
         <h1>Removendo itens pré-definidos da barra lateral(sidebar) iNove template</h1>
         <p>by <em>Gilberto C. Andrade</em> on <strong>15 Junho 2011</strong></p>
         <p>Tagged as: 
-            <a href="../../tags/Geral.html">Geral</a>,
             <a href="../../tags/Internet.html">Internet</a>,
             <a href="../../tags/Tema.html">Tema</a>,
             <a href="../../tags/Wordpress.html">Wordpress</a>,
         </p>
     </header>
     <section>
-	<!-- google_ad_section_start --><p>Há algum tempo venho tentando personalizar a barra lateral(sidebar) do tema(<a href="http://www.neoease.com/inove/">iNove template</a>) que adotei pro blog. Mas quando adiciono, por exemplo, um widget no sidebar Norte ele aparece duplicado. </p><p>Hoje encontrei uma <a href="http://wordpress.org/support/topic/removing-sidebar-items-in-inove-template">discussão sobre o assunto</a> e finalmente a solução. Veja, como estão definidos os widgets para este tema:</p>
+	<p>Há algum tempo venho tentando personalizar a barra lateral(sidebar) do tema(<a href="http://www.neoease.com/inove/">iNove template</a>) que adotei pro blog. Mas quando adiciono, por exemplo, um widget no sidebar Norte ele aparece duplicado. </p><p>Hoje encontrei uma <a href="http://wordpress.org/support/topic/removing-sidebar-items-in-inove-template">discussão sobre o assunto</a> e finalmente a solução. Veja, como estão definidos os widgets para este tema:</p>
 <ol>
   <li>North sidebar: Recent Posts, WP-RecentComments, Tag Cloud</li>
   <li>South sidebar: Meta</li>
@@ -65,9 +57,8 @@
 <ol>
   <li>escolha Appearance-&gt;Widgets</li>
   <li>selecione west_sidebar</li>
-  <li>arraste um widget Text para o sidebar selecionado e salve <a href="http://blog.gilbertoca.com/http://blog.gilbertoca.com/img/uploads/delete_archives_widget.png">&lt;img src="http://blog.gilbertoca.com/img/uploads/delete_archives_widget.png" alt:"delete archives widget" title="delete_archives_widget" width="436" height="712" class="aligncenter size-full wp-image-744" /&gt;</a> </ol></li>
-</ol><p>Colocando um widget de Text vazio faz a mágica. Foi o que coloquei em cada sidebar! Desta forma pude personalizar o primeiro(North sidebar)<br/><a href="http://blog.gilbertoca.com/http://blog.gilbertoca.com/img/uploads/delete_archives_widget.png">&lt;img src="http://blog.gilbertoca.com/img/uploads/Widgets_personalizado.png" alt:"Widgets_personalizado" title="Widgets_personalizado" width="436" height="712" class="aligncenter size-full wp-image-744" /&gt;</a></p>
-<!-- google_ad_section_end -->
+  <li>arraste um widget Text para o sidebar selecionado e salve <a href="http://blog.gilbertoca.com/img/uploads/delete_archives_widget.png">&lt;img src="http://blog.gilbertoca.com/img/uploads/delete_archives_widget.png" alt:"delete archives widget" title="delete_archives_widget" width="436" height="712" class="aligncenter size-full wp-image-744" /&gt;</a> </ol></li>
+</ol><p>Colocando um widget de Text vazio faz a mágica. Foi o que coloquei em cada sidebar! Desta forma pude personalizar o primeiro(North sidebar)<br/><a href="http://blog.gilbertoca.com/img/uploads/delete_archives_widget.png">&lt;img src="http://blog.gilbertoca.com/img/uploads/Widgets_personalizado.png" alt:"Widgets_personalizado" title="Widgets_personalizado" width="436" height="712" class="aligncenter size-full wp-image-744" /&gt;</a></p>
     </section>
 <section>
 <div id="disqus_thread"></div>

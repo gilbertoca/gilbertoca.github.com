@@ -7,26 +7,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
 
-        <link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
-        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
-        <link rel="alternate"  type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
+        <!--link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css"-->
+        <link rel="alternate" type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
         <link href="../../css/default.css" rel="stylesheet">
-        <link href="../../css/syntax.css" rel="stylesheet">
-        <link href="../../css/prettify.css" rel="stylesheet">
-
-        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-          <script src="../../js/html5shiv.min.js"></script>
-        <![endif]-->
+        <!--link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css" -->
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/monokai_sublime.min.css">  
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>        
+        <script>hljs.initHighlightingOnLoad();</script>
 
         <!-- Fav and touch icons -->
-        <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
         <link rel="shortcut icon" href="../../favicon.ico">
     </head>
-    <body onload="prettyPrint()">
+    <body>
 	
 <header>
 	<hgroup>
@@ -48,15 +41,14 @@
         <h1>openSUSE - Repositórios adicionais </h1>
         <p>by <em>Gilberto C. Andrade</em> on <strong>09 Outubro 2012</strong></p>
         <p>Tagged as: 
-            <a href="../../tags/Geral.html">Geral</a>,
             <a href="../../tags/Linux.html">Linux</a>,
-            <a href="../../tags/opensuse.html">opensuse</a>,
+            <a href="../../tags/openSUSE.html">openSUSE</a>,
             <a href="../../tags/Sistema Operacional.html">Sistema Operacional</a>,
             <a href="../../tags/Yast.html">Yast</a>,
         </p>
     </header>
     <section>
-	<!-- google_ad_section_start --><p>Vira e mexe (entre uma instalação e outra, ou um upgrade e outro) preciso adicionar alguns repositórios(repository) ao <a href="http://pt.opensuse.org/YaST_Software_Management" title="Yast" target="_blank">Yast</a> para aplicativos que costumo utilizar. Registro logo abaixo os que não podem faltar: </p>
+	<p>Vira e mexe (entre uma instalação e outra, ou um upgrade e outro) preciso adicionar alguns repositórios(repository) ao <a href="http://pt.openSUSE.org/YaST_Software_Management" title="Yast" target="_blank">Yast</a> para aplicativos que costumo utilizar. Registro logo abaixo os que não podem faltar: </p>
 <table border="1">
   <tr>
     <td>
@@ -74,7 +66,7 @@
     </td>
     
     <td>
-      zypper addrepo -r http://download.virtualbox.org/virtualbox/rpm/opensuse/11.4/virtualbox.repo
+      zypper addrepo -r http://download.virtualbox.org/virtualbox/rpm/openSUSE/11.4/virtualbox.repo
     </td>
   </tr>
   
@@ -84,7 +76,7 @@
     </td>
     
     <td>
-      zypper addrepo -r http://download.opensuse.org/repositories/M17N:/fonts/openSUSE_12.2/M17N:fonts.repo
+      zypper addrepo -r http://download.openSUSE.org/repositories/M17N:/fonts/openSUSE_12.2/M17N:fonts.repo
     </td>
   </tr>
   
@@ -100,15 +92,14 @@
   
   <tr>
     <td>
-      <a href="http://opensuse-community.org/Restricted_formats/12.2" title="Restricted Formats" target="_blank">Restricted formats</a>
+      <a href="http://openSUSE-community.org/Restricted_formats/12.2" title="Restricted Formats" target="_blank">Restricted formats</a>
     </td>
     
     <td>
-      zypper addrepo -r http://packman.inode.at/suse/12.2/packman.repo<br /> zypper addrepo -r http://www.opensuse-guide.org/repo/12.2/libdvdcss.repo
+      zypper addrepo -r http://packman.inode.at/suse/12.2/packman.repo<br /> zypper addrepo -r http://www.openSUSE-guide.org/repo/12.2/libdvdcss.repo
     </td>
   </tr>
 </table><p>&lt;/&gt; </p><p>E aí, quais você mais usa?</p>
-<!-- google_ad_section_end -->
     </section>
 <section>
 <div id="disqus_thread"></div>

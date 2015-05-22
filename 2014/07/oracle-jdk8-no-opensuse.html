@@ -3,30 +3,23 @@
     <head>
         <title></title>
         <meta charset="utf-8"/>
-        <title>Oracle JDK8 no OpenSUSE</title>
+        <title>Oracle JDK8 no openSUSE</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
 
-        <link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
-        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
-        <link rel="alternate"  type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
+        <!--link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css"-->
+        <link rel="alternate" type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
         <link href="../../css/default.css" rel="stylesheet">
-        <link href="../../css/syntax.css" rel="stylesheet">
-        <link href="../../css/prettify.css" rel="stylesheet">
-
-        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-          <script src="../../js/html5shiv.min.js"></script>
-        <![endif]-->
+        <!--link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css" -->
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/monokai_sublime.min.css">  
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>        
+        <script>hljs.initHighlightingOnLoad();</script>
 
         <!-- Fav and touch icons -->
-        <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
         <link rel="shortcut icon" href="../../favicon.ico">
     </head>
-    <body onload="prettyPrint()">
+    <body>
 	
 <header>
 	<hgroup>
@@ -45,18 +38,16 @@
 <section>
 <article>
     <header>
-        <h1>Oracle JDK8 no OpenSUSE</h1>
+        <h1>Oracle JDK8 no openSUSE</h1>
         <p>by <em>Gilberto C. Andrade</em> on <strong>02 Julho 2014</strong></p>
         <p>Tagged as: 
-            <a href="../../tags/Geral.html">Geral</a>,
             <a href="../../tags/Java.html">Java</a>,
             <a href="../../tags/Linux.html">Linux</a>,
             <a href="../../tags/Sistema Operacional.html">Sistema Operacional</a>,
-            <a href="../../tags/Unix.html">Unix</a>,
         </p>
     </header>
     <section>
-	<!-- google_ad_section_start --><p>Esta forma de instalação é mais resumida que a do <a href="http://blog.gilbertoca.com/?p:971" title="Instale Oracle JDK7 no openSUSE" target="_blank">post antigo</a> e utiliza o formato comprimido (tar.gz). </p><p>Realize o download a partir deste local: <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" title="Java SE Development Kit 8 Downloads" target="_blank">Java SE Development Kit 8 Downloads</a>, em um diretório de sua escolha - escolhi: Downloads. </p><p>Depois como super usuário (root) pelo <a href="http://kde.org/applications/system/konsole/" title="Kconsole" target="_blank">Kconsole</a> faça uso da seguinte sequência:</p>
+	<p>Esta forma de instalação é mais resumida que a do <a href="http://blog.gilbertoca.com/?p:971" title="Instale Oracle JDK7 no openSUSE" target="_blank">post antigo</a> e utiliza o formato comprimido (tar.gz). </p><p>Realize o download a partir deste local: <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" title="Java SE Development Kit 8 Downloads" target="_blank">Java SE Development Kit 8 Downloads</a>, em um diretório de sua escolha - escolhi: Downloads. </p><p>Depois como super usuário (root) pelo <a href="http://kde.org/applications/system/konsole/" title="Kconsole" target="_blank">Kconsole</a> faça uso da seguinte sequência:</p>
 <pre><code># cd /usr/java
 # tar xvf ~/Downloads/jdk-8u5-linux-x64.tar.gz
 # chown -R root:root jdk1.8.0_05
@@ -74,7 +65,6 @@
 # update-alternatives --config javac
 # update-alternatives --config javaplugin
 </code></pre>
-<!-- google_ad_section_end -->
     </section>
 <section>
 <div id="disqus_thread"></div>

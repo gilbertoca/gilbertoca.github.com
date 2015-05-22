@@ -7,26 +7,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
 
-        <link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
-        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
-        <link rel="alternate"  type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
+        <!--link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css"-->
+        <link rel="alternate" type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
         <link href="../../css/default.css" rel="stylesheet">
-        <link href="../../css/syntax.css" rel="stylesheet">
-        <link href="../../css/prettify.css" rel="stylesheet">
-
-        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-          <script src="../../js/html5shiv.min.js"></script>
-        <![endif]-->
+        <!--link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css" -->
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/monokai_sublime.min.css">  
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>        
+        <script>hljs.initHighlightingOnLoad();</script>
 
         <!-- Fav and touch icons -->
-        <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
         <link rel="shortcut icon" href="../../favicon.ico">
     </head>
-    <body onload="prettyPrint()">
+    <body>
 	
 <header>
 	<hgroup>
@@ -48,22 +41,16 @@
         <h1>Como obter histórico de dados modificados no banco de dados Oracle?</h1>
         <p>by <em>Gilberto C. Andrade</em> on <strong>04 Junho 2008</strong></p>
         <p>Tagged as: 
-            <a href="../../tags/Auditoria.html">Auditoria</a>,
-            <a href="../../tags/banco de dados.html">banco de dados</a>,
-            <a href="../../tags/configuração.html">configuração</a>,
-            <a href="../../tags/Data Mining.html">Data Mining</a>,
             <a href="../../tags/Database.html">Database</a>,
             <a href="../../tags/oracle.html">oracle</a>,
         </p>
     </header>
     <section>
-	<!-- google_ad_section_start --><p>Na verdade a pergunta original, em inglês, é essa: <a href="http://searchoracle.techtarget.com/expert/KnowledgebaseAnswer/0,289625,sid41_gci1313625,00.html?track=NL-94&#038;ad=643910&asrc=EM_NLT_3776659&uid=2562960">How can you get the history of data modified from an Oracle database?</a><br/>Gosto das dicas desse autor. Essa em questão, nos dá as opções existentes para captura de histórico de modificações no banco de dado. </p>
-<ol>
-  <li>Depois do fato ocorrido podemos “minerar” nossos logs de arquivamento usando o utilitário oracle Log Miner;</li>
-</ol>
+	<p>Na verdade a pergunta original, em inglês, é essa: <a href="http://searchoracle.techtarget.com/expert/KnowledgebaseAnswer/0,289625,sid41_gci1313625,00.html?track=NL-94&#038;ad=643910&asrc=EM_NLT_3776659&uid=2562960">How can you get the history of data modified from an Oracle database?</a> Gosto das dicas desse autor. Essa em questão, nos dá as opções existentes para captura de histórico de modificações no banco de dado: </p>
 <ul>
-  <li>Antes do fato ocorrido podemos configurar a auditoria para registrar essas atividades. Com auditoria, registramos as ações ocorridas em tabelas no banco e então consultar tal tabela de registros em qualquer época futura.</li>
-</ul><p></ol> <!-- google_ad_section_end --></p>
+  <li>Depois do fato ocorrido podemos “minerar” nossos logs de arquivamento usando o utilitário oracle <a href="http://download.oracle.com/docs/cd/B19306_01/server.102/b14215/logminer.htm#sthref1875">Log Miner</a>;</li>
+  <li>Antes do fato ocorrido podemos <a href="http://download.oracle.com/docs/cd/B19306_01/network.102/b14266/auditing.htm#i1011984">configurar a auditoria</a> para registrar essas atividades. Com auditoria, registramos as ações ocorridas em tabelas no banco e então consultar tal tabela de registros em qualquer época futura.</li>
+</ul>
     </section>
 <section>
 <div id="disqus_thread"></div>

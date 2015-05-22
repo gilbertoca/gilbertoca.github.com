@@ -3,30 +3,23 @@
     <head>
         <title></title>
         <meta charset="utf-8"/>
-        <title>openSuSe 11.0 - Failed to update system: Authorisation could not be obtained</title>
+        <title>openSUSE 11.0 - Failed to update system: Authorisation could not be obtained</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
 
-        <link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
-        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
-        <link rel="alternate"  type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
+        <!--link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css"-->
+        <link rel="alternate" type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
         <link href="../../css/default.css" rel="stylesheet">
-        <link href="../../css/syntax.css" rel="stylesheet">
-        <link href="../../css/prettify.css" rel="stylesheet">
-
-        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-          <script src="../../js/html5shiv.min.js"></script>
-        <![endif]-->
+        <!--link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css" -->
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/monokai_sublime.min.css">  
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>        
+        <script>hljs.initHighlightingOnLoad();</script>
 
         <!-- Fav and touch icons -->
-        <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
         <link rel="shortcut icon" href="../../favicon.ico">
     </head>
-    <body onload="prettyPrint()">
+    <body>
 	
 <header>
 	<hgroup>
@@ -45,25 +38,24 @@
 <section>
 <article>
     <header>
-        <h1>openSuSe 11.0 - Failed to update system: Authorisation could not be obtained</h1>
+        <h1>openSUSE 11.0 - Failed to update system: Authorisation could not be obtained</h1>
         <p>by <em>Gilberto C. Andrade</em> on <strong>02 Março 2009</strong></p>
         <p>Tagged as: 
             <a href="../../tags/Linux.html">Linux</a>,
             <a href="../../tags/Objetivo.html">Objetivo</a>,
-            <a href="../../tags/opensuse.html">opensuse</a>,
+            <a href="../../tags/openSUSE.html">openSUSE</a>,
             <a href="../../tags/Sistema Operacional.html">Sistema Operacional</a>,
         </p>
     </header>
     <section>
-	<!-- google_ad_section_start --><p>Resolvi mudar de interface gráfica no linux. Antes usava o KDE e agora uso o GNOME, apesar de algumas limitações da interface não tenho muito do que reclamar. Este erro acontece como usuário comum, mas como usuário administrador (root) funciona sem problemas. Encontrei a solução para esse problema no seguinte <a href="http://linux.derkeiler.com/Mailing-Lists/SuSE/2008-07/msg00999.html" target="_blank">LINK</a>. Reproduzindo: </p>
+	<p>Resolvi mudar de interface gráfica no linux. Antes usava o KDE e agora uso o GNOME, apesar de algumas limitações da interface não tenho muito do que reclamar. Este erro acontece como usuário comum, mas como usuário administrador (root) funciona sem problemas. Encontrei a solução para esse problema no seguinte <a href="http://linux.derkeiler.com/Mailing-Lists/SuSE/2008-07/msg00999.html" target="_blank">LINK</a>. Reproduzindo: </p>
 <pre>vi /etc/PolicyKit/PolicyKit.conf
 </pre><p><config version=”0.1”><br/></config></p><p>adicione a seguinte entrada para seu usuário: </p>
 <pre>vi /etc/PolicyKit/PolicyKit.conf
-</pre><p><config version=”0.1”><br/><match user=”foo”><br/><return result=”yes”><br/></return><br/></match><br/></config></p><p><strong><big><big>DESISTÊNCIA!<br /> </big></big></strong></p><p>Após dois dias, confesso que GNOME não foi uma experiência agradável. Realmente o KDE3 trás o necessário para boa produtividade e tranquilidade. Um aplicativo, para mim, determina tudo que uma interface gráfica pode fornecer: gerenciador de arquivos. Então, o que mais senti falta? <a href="http://konqueror.kde.org/" target="_blank">Konqueror</a>, <a href="http://en.opensuse.org/Konqueror_Tips_and_Tricks" target="_blank">um canivete suíço</a>! É o primeiro aplicativo que abro para trabalhar e por ele realizo a maioria de minhas atividades. </p><p>**<big><big>KDE4?</p> </p>
+</pre><p><config version=”0.1”><br/><match user=”foo”><br/><return result=”yes”><br/></return><br/></match><br/></config></p><p><strong><big><big>DESISTÊNCIA!<br /> </big></big></strong></p><p>Após dois dias, confesso que GNOME não foi uma experiência agradável. Realmente o KDE3 trás o necessário para boa produtividade e tranquilidade. Um aplicativo, para mim, determina tudo que uma interface gráfica pode fornecer: gerenciador de arquivos. Então, o que mais senti falta? <a href="http://konqueror.kde.org/" target="_blank">Konqueror</a>, <a href="http://en.openSUSE.org/Konqueror_Tips_and_Tricks" target="_blank">um canivete suíço</a>! É o primeiro aplicativo que abro para trabalhar e por ele realizo a maioria de minhas atividades. </p><p>**<big><big>KDE4?</p> </p>
 <p>
   </big></big></b> Nem pensar!
 </p>
-<!-- google_ad_section_end -->
     </section>
 <section>
 <div id="disqus_thread"></div>

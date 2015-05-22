@@ -3,7 +3,7 @@
     <head>
         <title></title>
         <meta charset="utf-8"/>
-        <title>Unir legenda (srt) e video (avi) com MENCODER</title>
+        <title>Removendo alertas antigos da página principal do DBCONSOLE</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
 
@@ -38,44 +38,22 @@
 <section>
 <article>
     <header>
-        <h1>Unir legenda (srt) e video (avi) com MENCODER</h1>
-        <p>by <em>Gilberto C. Andrade</em> on <strong>12 Março 2010</strong></p>
+        <h1>Removendo alertas antigos da página principal do DBCONSOLE</h1>
+        <p>by <em>Gilberto C. Andrade</em> on <strong>08 Outubro 2007</strong></p>
         <p>Tagged as: 
-            <a href="../../tags/Diversão.html">Diversão</a>,
-            <a href="../../tags/Linux.html">Linux</a>,
-            <a href="../../tags/openSUSE.html">openSUSE</a>,
+            <a href="../../tags/Database.html">Database</a>,
+            <a href="../../tags/oracle.html">oracle</a>,
         </p>
     </header>
     <section>
-	<p>Quem tiver um video e o arquivo de legenda e deseja unir ambos num aquivo o comando é este : </p>
-<div class="wp_syntax">
-  <table>
-    <tr>
-      <td class="code">
-        <pre class="bash" style="font-family:monospace;">mencoder <span style="color: #660033;">-oac</span> mp3lame <span style="color: #660033;">-ovc</span> lavc <span style="color: #660033;">-sub</span> legenda.srt video.avi <span style="color: #660033;">-o</span> videocomlegenda.avi</pre>
-      </td>
-    </tr>
-  </table>
-</div><p>Sintaxe :</p>
-<ol>
-  <li># mencoder ( programa que acompanha o mplayer capaz de ripar e outras coisas )</li>
-  <li><p># -oac (Qual sera o codec de audio no arquivo que seja criado, usando a opção help é possivel ter uma lista ex.: <div class="wp_syntax">  <table>  <tr>  <td class="code">  <pre class="bash" style="font-family:monospace;">mencoder <span style="color: #660033;">-oac</span> <span style="color: #7a0874; font-weight: bold;">help</span></pre>  </td>  </tr>  </table> </div></p><p>)</li> </p>
-  <ul>
-    <li># -ovc (Qual sera o codec de video no arquivo que seja criado, usando a opção help é possivel ter uma lista ex.: <div class="wp_syntax">  <table>  <tr>  <td class="code">  <pre class="bash" style="font-family:monospace;">mencoder <span style="color: #660033;">-ovc</span> <span style="color: #7a0874; font-weight: bold;">help</span></pre>  </td>  </tr>  </table> </div></li>
-  </ul>
-  <pre><code>)&lt;/li&gt; 
-
-  * \# -sub ( para especificar o arquivo de legendas )
-  * \# -o ( arquivo de saida que sera gerado)&lt;/ol&gt; 
-</code></pre></li>
-</ol>
+	<p>Por um bom período de tempo estive lendo e pesquisando uma maneira de remover/limpar os alertas que aparecem na primeira página do dbconsole do oracle 10g 10.2.<br/>Finalmente após encontrar uma discussão no forum oracle (<a href="http://forums.oracle.com/forums/thread.jspa?threadID=389167&#038;tstart=0">Clear the Alert list</a>) sobre o assunto, acabei, através uma consulta pelo google (desta fez com a palavra certa: MGMT_SEVERITY), encontrando um artigo (<a href="http://www.dbasupport.com/oracle/ora10g/clearing_alerts.shtml"> Clearing Alerts in Enterprise Man</a>) que relata uma forma simples de fazer a limpeza destes alertas antigos.</p>
     </section>
 <section>
 <div id="disqus_thread"></div>
         <script type="text/javascript">
             /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
             var disqus_shortname = 'blog-gilbertoca-com';
-            var disqus_identifier = '296';
+            var disqus_identifier = '18';
 
             /* * * DON'T EDIT BELOW THIS LINE * * */
             (function() {

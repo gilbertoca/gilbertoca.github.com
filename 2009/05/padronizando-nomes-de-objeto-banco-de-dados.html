@@ -7,26 +7,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
 
-        <link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
-        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
-        <link rel="alternate"  type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
+        <!--link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css"-->
+        <link rel="alternate" type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
         <link href="../../css/default.css" rel="stylesheet">
-        <link href="../../css/syntax.css" rel="stylesheet">
-        <link href="../../css/prettify.css" rel="stylesheet">
-
-        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-          <script src="../../js/html5shiv.min.js"></script>
-        <![endif]-->
+        <!--link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css" -->
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/monokai_sublime.min.css">  
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>        
+        <script>hljs.initHighlightingOnLoad();</script>
 
         <!-- Fav and touch icons -->
-        <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
         <link rel="shortcut icon" href="../../favicon.ico">
     </head>
-    <body onload="prettyPrint()">
+    <body>
 	
 <header>
 	<hgroup>
@@ -48,15 +41,13 @@
         <h1>Padronizando Nomes de Objeto - Banco de Dados </h1>
         <p>by <em>Gilberto C. Andrade</em> on <strong>08 Maio 2009</strong></p>
         <p>Tagged as: 
-            <a href="../../tags/banco de dados.html">banco de dados</a>,
             <a href="../../tags/Database.html">Database</a>,
-            <a href="../../tags/Geral.html">Geral</a>,
             <a href="../../tags/nomear objeto.html">nomear objeto</a>,
             <a href="../../tags/padrão.html">padrão</a>,
         </p>
     </header>
     <section>
-	<!-- google_ad_section_start --><p>Primeiro definimos a extensão dos arquivos que conterão as sentenças de criação dos objetos do banco de dados: </p>
+	<p>Primeiro definimos a extensão dos arquivos que conterão as sentenças de criação dos objetos do banco de dados: </p>
 <table border="0">
   <tr>
     <td>
@@ -218,7 +209,6 @@
     </td>
   </tr>
 </table><p>| Para Tabelas | Descrição | Exemplo | | ---------------------- | ------------------------------------------------------------------------------------ | ---------- | | <prefixo>_<nometabela> | onde <prefixo> deverá ser letras representando o módulo em que esta tabela pertença. | ger_pessoa |</p><p></tr> | Para Visão | Descrição | Exemplo | | -------------------------- | ------------------------------------------------------------------------------------ | -------------------- | | <prefixo>_<nomevisao>_vw | onde <prefixo> deverá ser letras representando o módulo em que esta tabela pertença. | ger_funcionario_vw |</p><p>| Para Sequências | Descrição | Exemplo | | --------------------------------- | ------------------------------------------------------------------------------------ | -------------------------- | | <prefixo>_<nometabela>_sequence | onde <prefixo> deverá ser letras representando o módulo em que esta tabela pertença. | ger_funcionario_sequence |</p><p>| Para Colunas | Descrição | Exemplo | | --------------------------------------------------------- | ------------------------------------------------------------- | ----------------------------- | | <cd>_<nometabela> | para coluna representando a chave primaria da tabela. | cd_pessoa | | <cd>_<nometabelaestrangeira> | para coluna(s) representando a presença de chave estrangeira. | cd_municipio | | <cd>_<nometabelaestrangeira><significadodorelacionamento> | para coluna(s) representando a presença de chave estrangeira. | cd_municipionaturalidade | | <fl>_<nomecampo> | para coluna representando campo lógico(verdadeiro ou falso). | fl_dependente, fl_encerrado | | <dt>_<nomecampo> | para coluna representando campo data. | dt_nascimento | | <hr>_<nomecampo> | para coluna representando campo tempo. | hr_saida | | <nu>_<nomecampo> | para coluna representando campo numerico. | nu_leicriacao |</p><p>Para nomear constraints, devemos usar um padrão porque não pode haver repetição de nomes dos mesmos (limitado a 30 caracteres - limitação do oracle). </p><p>| Para Constraints | Descrição | Exemplo | | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | | <nome da tabela com prefixo>_<pk> | para chave primaria. | constraint sys_usuario_pk primary key (cd_usuario) enable | | <nome da tabela com prefixo>_<uk> | para indice unico. | constraint sys_usuario_uk unique (login, email) enable | | <nome da tabela origem sem prefixo>_<to>_&lt;nome da tabela atual(destino sem prefixo&gt;_<fk> | para coluna(s) representando a presença de chave estrangeira. | constraint entidade_to_subentidade_fk foreign key (id_entidade) references kira.sys_entidade (id_entidade) enable | | <nome da tabela sem prefixo>_<nome da coluna>_<ck>_<um digito - caso ocorra repeticao> | para check. | create table ergon.ergon_regras_compara_ff<br/>(<br/>regra number(6,0) constraint regras_compara_ff_regra_ck_0 not null enable,<br/>fl_ativa_1 char(1 byte) default &#8216;n&#8217; constraint rg_cp_ff_fl_ativa_1_ck_0 not null enable,<br/>fl_ativa_2 char(1 byte) default &#8216;n&#8217; constraint rg_cp_ff_fl_ativa_2_ck_0 not null enable,<br/>fl_ativa_3 char(1 byte) default &#8216;n&#8217; constraint rg_cp_ff_fl_ativa_3_ck_0 not null enable,<br/>limite_diferenca number(11,2),<br/>constraint ergon_regras_compara_ff_pk primary key (regra) enable,<br/>constraint rg_cp_ff_fl_ativa_1_ck_1 check (fl_ativa_1 in (&#8216;s&#8217;, &#8216;n&#8217;)) enable novalidate,<br/>constraint rg_cp_ff_fl_ativa_2_ck_2 check (fl_ativa_2 in (&#8216;s&#8217;, &#8216;n&#8217;)) enable novalidate,<br/>constraint rg_cp_ff_fl_ativa_3_ck_3 check (fl_ativa_3 in (&#8216;s&#8217;, &#8216;n&#8217;)) enable novalidate<br/>) ; |</p><p><strong>Nota:</strong> em todos os casos acima, sendo o nome do objeto grande, devemos abreviar o nome do mesmo.<br/>ex.:<br/>aplicacoes = apli (4)<br/>aplicacao_funcoes = apfu (2:2)<br/>aplicacao_funcao_papeis = apfp (2:1:1)<br/>aplicacao_funcao_papel_bananas = afpb (1:1:1:1)<br/>aplicacao_funcao_papel_banana_macas = (Seja criativo!) </p><p><strong>REFERENCIA:</strong> <a href="http://www.oracle-base.com/articles/misc/NamingConventions.php">NamingConventions.php</a></p><p>Uso essa estratégia há algum tempo e fica muito fácil de trabalhar e manter. </p><p>Você adota uma notação?<br/>Qual notação você usa?</p>
-<!-- google_ad_section_end -->
     </section>
 <section>
 <div id="disqus_thread"></div>

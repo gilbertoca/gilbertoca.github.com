@@ -3,30 +3,23 @@
     <head>
         <title></title>
         <meta charset="utf-8"/>
-        <title>Sumiu os botões maximizar,minimizar,fechar[OpenSuSe 11.3] </title>
+        <title>Sumiu os botões maximizar,minimizar,fechar[openSUSE 11.3] </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
 
-        <link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
-        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
-        <link rel="alternate"  type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
+        <!--link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css"-->
+        <link rel="alternate" type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
         <link href="../../css/default.css" rel="stylesheet">
-        <link href="../../css/syntax.css" rel="stylesheet">
-        <link href="../../css/prettify.css" rel="stylesheet">
-
-        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-          <script src="../../js/html5shiv.min.js"></script>
-        <![endif]-->
+        <!--link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css" -->
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/monokai_sublime.min.css">  
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>        
+        <script>hljs.initHighlightingOnLoad();</script>
 
         <!-- Fav and touch icons -->
-        <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
         <link rel="shortcut icon" href="../../favicon.ico">
     </head>
-    <body onload="prettyPrint()">
+    <body>
 	
 <header>
 	<hgroup>
@@ -45,20 +38,18 @@
 <section>
 <article>
     <header>
-        <h1>Sumiu os botões maximizar,minimizar,fechar[OpenSuSe 11.3] </h1>
+        <h1>Sumiu os botões maximizar,minimizar,fechar[openSUSE 11.3] </h1>
         <p>by <em>Gilberto C. Andrade</em> on <strong>30 Dezembro 2010</strong></p>
         <p>Tagged as: 
-            <a href="../../tags/configuração.html">configuração</a>,
             <a href="../../tags/desktop.html">desktop</a>,
-            <a href="../../tags/Geral.html">Geral</a>,
             <a href="../../tags/gnome.html">gnome</a>,
             <a href="../../tags/Linux.html">Linux</a>,
-            <a href="../../tags/opensuse.html">opensuse</a>,
+            <a href="../../tags/openSUSE.html">openSUSE</a>,
             <a href="../../tags/Sistema Operacional.html">Sistema Operacional</a>,
         </p>
     </header>
     <section>
-	<!-- google_ad_section_start --><p>Este comportamento do gerenciador de janelas é esquisito, para não dizer indesejável. A coisa fica mais estranha ainda pois não tenho meios de rastrear a causa do problema (placa de vídeo, kernel, gnome, gdm qual é o cupido?). Alguém pode, em algumas situações, acusar o compiz, mas este não o caso - placa legada:</p><p><div class="wp_syntax">  <table>  <tr>  <td class="code">  <pre class="bash" style="font-family:monospace;">dhcppc0:<span style="color: #000000; font-weight: bold;">/</span>home<span style="color: #000000; font-weight: bold;">/</span>gilberto <span style="color: #666666; font-style: italic;"># hwinfo --gfxcard </span> <span style="color: #000000;">21</span>: PCI<span style="color: #7a0874; font-weight: bold;">&#40;</span>AGP<span style="color: #7a0874; font-weight: bold;">&#41;</span> <span style="color: #000000;">100.0</span>: 0300 VGA compatible controller <span style="color: #7a0874; font-weight: bold;">&#40;</span>VGA<span style="color: #7a0874; font-weight: bold;">&#41;</span><br/> <span style="color: #7a0874; font-weight: bold;">&#91;</span>Created at pci.318<span style="color: #7a0874; font-weight: bold;">&#93;</span>  Unique ID: VCu0.UZW4QWn62T6  Parent ID: vSkL.uvrveDpO5n6  SysFS ID: <span style="color: #000000; font-weight: bold;">/</span>devices<span style="color: #000000; font-weight: bold;">/</span>pci0000:00<span style="color: #000000; font-weight: bold;">/</span>0000:00:<span style="color: #000000;">01.0</span><span style="color: #000000; font-weight: bold;">/</span>0000:01:<span style="color: #000000;">00.0</span>  SysFS BusID: 0000:01:<span style="color: #000000;">00.0</span>  Hardware Class: graphics card  Model: <span style="color: #ff0000;">"nVidia GeForce4 MX 440 with AGP8X"</span>  Vendor: pci 0x10de <span style="color: #ff0000;">"nVidia Corporation"</span>  Device: pci 0x0181 <span style="color: #ff0000;">"GeForce4 MX 440 with AGP8X"</span>  Revision: 0xc1  Driver: <span style="color: #ff0000;">"nvidia"</span>  Driver Modules: <span style="color: #ff0000;">"nvidia"</span></pre>  </td>  </tr>  </table> </div></p> </p><p>Assim que estalei o OpenSuSe 11.3 em casa ficou difícil evitar seu uso e olha que minha família ainda não viu - ou não usufruiu - das ferramentas gráficas pois ficamos aproximadamente 3 meses usando o <a href="http://nouveau.freedesktop.org/wiki/">driver de vídeo que vem instalado por padrão</a> - O projeto Nouveau. Só recentemente a Nvidia publicou uma atualização <a href="http://www.nvidia.com/object/linux-display-ia32-96.43.19-driver.html">para minha placa de vídeo</a> e é claro para a minha versão do kernel. </p><p>Bom, até agora podemos dizer que o problema não é hardware. Por que? Você pode perguntar. Veja, usei dois tipos de driver e com ambos o comportamento (defeito) persistiu. O pior é que fica dias sem aparecer e de repente acontece. Até então não havia outro meio de contornar o problema senão encerrar a sessão e entrar novamente. Hoje encontrei <a href="http://ubuntuforum-br.org/index.php?topic=69863.msg388780#msg388780">uma discussão sobre o assunto</a> - Adivinha? Aconteceu hoje novamente - e nessa discussão o usuário “Rvos” sugere o seguinte contorno:</p>
+	<p>Este comportamento do gerenciador de janelas é esquisito, para não dizer indesejável. A coisa fica mais estranha ainda pois não tenho meios de rastrear a causa do problema (placa de vídeo, kernel, gnome, gdm qual é o cupido?). Alguém pode, em algumas situações, acusar o compiz, mas este não o caso - placa legada:</p><p><div class="wp_syntax">  <table>  <tr>  <td class="code">  <pre class="bash" style="font-family:monospace;">dhcppc0:<span style="color: #000000; font-weight: bold;">/</span>home<span style="color: #000000; font-weight: bold;">/</span>gilberto <span style="color: #666666; font-style: italic;"># hwinfo --gfxcard </span> <span style="color: #000000;">21</span>: PCI<span style="color: #7a0874; font-weight: bold;">&#40;</span>AGP<span style="color: #7a0874; font-weight: bold;">&#41;</span> <span style="color: #000000;">100.0</span>: 0300 VGA compatible controller <span style="color: #7a0874; font-weight: bold;">&#40;</span>VGA<span style="color: #7a0874; font-weight: bold;">&#41;</span><br/> <span style="color: #7a0874; font-weight: bold;">&#91;</span>Created at pci.318<span style="color: #7a0874; font-weight: bold;">&#93;</span>  Unique ID: VCu0.UZW4QWn62T6  Parent ID: vSkL.uvrveDpO5n6  SysFS ID: <span style="color: #000000; font-weight: bold;">/</span>devices<span style="color: #000000; font-weight: bold;">/</span>pci0000:00<span style="color: #000000; font-weight: bold;">/</span>0000:00:<span style="color: #000000;">01.0</span><span style="color: #000000; font-weight: bold;">/</span>0000:01:<span style="color: #000000;">00.0</span>  SysFS BusID: 0000:01:<span style="color: #000000;">00.0</span>  Hardware Class: graphics card  Model: <span style="color: #ff0000;">"nVidia GeForce4 MX 440 with AGP8X"</span>  Vendor: pci 0x10de <span style="color: #ff0000;">"nVidia Corporation"</span>  Device: pci 0x0181 <span style="color: #ff0000;">"GeForce4 MX 440 with AGP8X"</span>  Revision: 0xc1  Driver: <span style="color: #ff0000;">"nvidia"</span>  Driver Modules: <span style="color: #ff0000;">"nvidia"</span></pre>  </td>  </tr>  </table> </div></p> </p><p>Assim que estalei o openSUSE 11.3 em casa ficou difícil evitar seu uso e olha que minha família ainda não viu - ou não usufruiu - das ferramentas gráficas pois ficamos aproximadamente 3 meses usando o <a href="http://nouveau.freedesktop.org/wiki/">driver de vídeo que vem instalado por padrão</a> - O projeto Nouveau. Só recentemente a Nvidia publicou uma atualização <a href="http://www.nvidia.com/object/linux-display-ia32-96.43.19-driver.html">para minha placa de vídeo</a> e é claro para a minha versão do kernel. </p><p>Bom, até agora podemos dizer que o problema não é hardware. Por que? Você pode perguntar. Veja, usei dois tipos de driver e com ambos o comportamento (defeito) persistiu. O pior é que fica dias sem aparecer e de repente acontece. Até então não havia outro meio de contornar o problema senão encerrar a sessão e entrar novamente. Hoje encontrei <a href="http://ubuntuforum-br.org/index.php?topic=69863.msg388780#msg388780">uma discussão sobre o assunto</a> - Adivinha? Aconteceu hoje novamente - e nessa discussão o usuário “Rvos” sugere o seguinte contorno:</p>
 <div class="wp_syntax">
   <table>
     <tr>
@@ -93,7 +84,6 @@
     </tr>
   </table>
 </div><p>Vamos aguardar e torcer! <img src="http://blog.gilbertoca.com/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" /> </p><p><strong>ATUALIZAÇÃO (31/12/2010):</strong><br/>Aconteceu novamente. Desta vez enquanto verificava a lista de contatos no <a href="http://live.gnome.org/Empathy">Empathy</a>. O mais complicado foi constatar que este problema afeta a digitação. Ao utilizar as teclas de atalho - alt + f2 - não aconteceu nada, a tela de execução de aplicativos não apareceu. Utilizei o menu iniciar para acionar o prompt de comando - terminal gnome - que logo apareceu, mas não recebia qualquer digitação. O que fazer? Fui abrindo - através do menu iniciar - aplicativos que pudessem receber digitação, mas nenhum respondia. Então tentei a caixa de texto para pesquisa do próprio menu iniciar:<br/><img src="http://dl.dropbox.com/u/9093640/imagem1.png" alt="Caixa de texto para pesquisa, menu iniciar.""/> </p><p>Com isso, fiz uma cópia do texto - ctrl+c - e adicionei um ícone no <a href="http://pt.wikipedia.org/wiki/Gnome-panel">painel principal</a>, aquela grande barra no rodapé da tela, para acionar o Executar Aplicativo:<br/><img src="http://dl.dropbox.com/u/9093640/adicionar_ao_painel.png" alt="adicionar ao painel""/><br/>Observe que a imagem traz o botão de fechar, isso porque fiz a captura da tela agora depois de todo o processo. Com o ícone disponível foi só acioná-lo e colar - ctrl+v - o comando (metacity -replace) e executar. Pronto, Voltou ao normal! Até quando? <img src="http://blog.gilbertoca.com/wp-includes/images/smilies/icon_sad.gif" alt=":(" class="wp-smiley" /></p>
-<!-- google_ad_section_end -->
     </section>
 <section>
 <div id="disqus_thread"></div>

@@ -7,26 +7,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
 
-        <link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
-        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
-        <link rel="alternate"  type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
+        <!--link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css"-->
+        <link rel="alternate" type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
         <link href="../../css/default.css" rel="stylesheet">
-        <link href="../../css/syntax.css" rel="stylesheet">
-        <link href="../../css/prettify.css" rel="stylesheet">
-
-        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-          <script src="../../js/html5shiv.min.js"></script>
-        <![endif]-->
+        <!--link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css" -->
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/monokai_sublime.min.css">  
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>        
+        <script>hljs.initHighlightingOnLoad();</script>
 
         <!-- Fav and touch icons -->
-        <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
         <link rel="shortcut icon" href="../../favicon.ico">
     </head>
-    <body onload="prettyPrint()">
+    <body>
 	
 <header>
 	<hgroup>
@@ -52,7 +45,7 @@
         </p>
     </header>
     <section>
-	<!-- google_ad_section_start --><p>Atualmente aqui na <a href="www.secad.to.gov.br">Secretaria</a> estamos em um processo de implantação de um <a href="http://www.techne.com.br/produtos/produtos.asp?id=4">sistema de recursos humanos</a>, para ser mais exato, praticamente toda parte de infraestrutura (hardware e software) já está pronta para uso. Mas por questões que foge ao meu conhecimento (penso ser licitação), a fase mais densa (treinamento e uso pelo usuário final) está em fase de planejamento/reestruturação. Bom, apesar dessa, vamos dizer morosidade, tem uma fase desse processo que não pára: a migração. Nesse processo participam duas equipes: parametrização e a própria migração, o qual nessa última pertenço. </p><p>A migração é um ciclo constante onde a partir de modificações(parametrização) importantes no banco de produção, é acionado uma requisição de atualização do banco de migração (utilizado para validar a parametrização com a ativação de funções do sistema de recursos humanos, por exemplo, calculo de folha). Para esse ciclo funcionar tive que realizar uma das tarefas mais comuns para quem administra um banco de dados, que é cópia/duplicação/clonagem de um banco em produção para outro banco (até mesmo em outro servidor) a ser utilizado como teste. O procedimento descrito aqui, nada mais é do que sequência descrita na própria [documentação (<a href="http://download.oracle.com/docs/cd/B19306_01/backup.102/b14191/rcmdupdb">http://download.oracle.com/docs/cd/B19306_01/backup.102/b14191/rcmdupdb</a>. htm#i1006474):</p>
+	<p>Atualmente aqui na <a href="www.secad.to.gov.br">Secretaria</a> estamos em um processo de implantação de um <a href="http://www.techne.com.br/produtos/produtos.asp?id=4">sistema de recursos humanos</a>, para ser mais exato, praticamente toda parte de infraestrutura (hardware e software) já está pronta para uso. Mas por questões que foge ao meu conhecimento (penso ser licitação), a fase mais densa (treinamento e uso pelo usuário final) está em fase de planejamento/reestruturação. Bom, apesar dessa, vamos dizer morosidade, tem uma fase desse processo que não pára: a migração. Nesse processo participam duas equipes: parametrização e a própria migração, o qual nessa última pertenço. </p><p>A migração é um ciclo constante onde a partir de modificações(parametrização) importantes no banco de produção, é acionado uma requisição de atualização do banco de migração (utilizado para validar a parametrização com a ativação de funções do sistema de recursos humanos, por exemplo, calculo de folha). Para esse ciclo funcionar tive que realizar uma das tarefas mais comuns para quem administra um que é cópia/duplicação/clonagem de um banco em produção para outro banco (até mesmo em outro servidor) a ser utilizado como teste. O procedimento descrito aqui, nada mais é do que sequência descrita na própria [documentação (<a href="http://download.oracle.com/docs/cd/B19306_01/backup.102/b14191/rcmdupdb">http://download.oracle.com/docs/cd/B19306_01/backup.102/b14191/rcmdupdb</a>. htm#i1006474):</p>
 <ol>
   <li><a href="#task1">Create an Oracle Password File for the Auxiliary Instance</a></li>
   <li><a href="#task2">Establish Oracle Net Connectivity to the Auxiliary Instance</a></li>
@@ -248,7 +241,6 @@ SQL&gt;
 dbms_stats.gather_database_stats(options=&gt; &#39;GATHER AUTO&#39;);
 end;
 </code></pre>
-<!-- google_ad_section_end -->
     </section>
 <section>
 <div id="disqus_thread"></div>

@@ -3,30 +3,23 @@
     <head>
         <title></title>
         <meta charset="utf-8"/>
-        <title>Atualização OpenSuSe 11.3 danifica Java</title>
+        <title>Atualização openSUSE 11.3 danifica Java</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
 
-        <link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
-        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
-        <link rel="alternate"  type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
+        <!--link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css"-->
+        <link rel="alternate" type="application/atom+xml" title="Vivendo e Aprendendo (Atom)" href="/feed.xml" />
         <link href="../../css/default.css" rel="stylesheet">
-        <link href="../../css/syntax.css" rel="stylesheet">
-        <link href="../../css/prettify.css" rel="stylesheet">
-
-        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-          <script src="../../js/html5shiv.min.js"></script>
-        <![endif]-->
+        <!--link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css" -->
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/monokai_sublime.min.css">  
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>        
+        <script>hljs.initHighlightingOnLoad();</script>
 
         <!-- Fav and touch icons -->
-        <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
         <link rel="shortcut icon" href="../../favicon.ico">
     </head>
-    <body onload="prettyPrint()">
+    <body>
 	
 <header>
 	<hgroup>
@@ -45,31 +38,34 @@
 <section>
 <article>
     <header>
-        <h1>Atualização OpenSuSe 11.3 danifica Java</h1>
+        <h1>Atualização openSUSE 11.3 danifica Java</h1>
         <p>by <em>Gilberto C. Andrade</em> on <strong>07 Dezembro 2010</strong></p>
         <p>Tagged as: 
             <a href="../../tags/FireFox.html">FireFox</a>,
-            <a href="../../tags/Geral.html">Geral</a>,
             <a href="../../tags/Java.html">Java</a>,
-            <a href="../../tags/Jornada.html">Jornada</a>,
             <a href="../../tags/Linux.html">Linux</a>,
-            <a href="../../tags/opensuse.html">opensuse</a>,
+            <a href="../../tags/openSUSE.html">openSUSE</a>,
             <a href="../../tags/Sistema Operacional.html">Sistema Operacional</a>,
         </p>
     </header>
     <section>
-	<!-- google_ad_section_start --><p>Veja como o <a href="http://blog.gilbertoca.com/?p=383">post que menciono o uso do utilitário update-alternatives</a> é importante.<br/>Recentemente apliquei um patch - atualização de correção - para o <a href="http://www.opensuse.org/pt-br/">OpenSuSe 11.3</a> e se não houvesse duas <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">máquinas virtuais java - JRE -</a>, certamente não conseguiria acessar qualquer site que dependesse do <a href="http://www.oracle.com/technetwork/java/index.html">Java</a>. </p><p>Veja o problema:</p>
-<pre><code class="bash">gilberto@dhcppc0:~&gt; firefox -g
-Gtk-Message: (for origin information, set GTK_DEBUG): failed to retrieve property &lt;/span&gt;GtkTreeView::odd-row-color&lt;span style=&quot;color: #ff0000;&quot;&gt;&#39; of typeGdkColor’ from rc file value “((GString*) 0xb1f11100)” of type &lt;/span&gt;GString&lt;span style=&quot;color: #ff0000;&quot;&gt;&#39;
+	<p>Veja como o <a href="http://blog.gilbertoca.com/?p=383">post que menciono o uso do utilitário update-alternatives</a> é importante.<br/>Recentemente apliquei um patch - atualização de correção - para o <a href="http://www.openSUSE.org/pt-br/">openSUSE 11.3</a> e se não houvesse duas <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">máquinas virtuais java - JRE -</a>, certamente não conseguiria acessar qualquer site que dependesse do <a href="http://www.oracle.com/technetwork/java/index.html">Java</a>. </p><p>Veja o problema:</p>
+<pre>
+<code class="bash">
+gilberto@dhcppc0:~> firefox -g
+Gtk-Message: (for origin information, set GTK_DEBUG): failed to retrieve property GtkTreeView::odd-row-color' of typeGdkColor’ from rc file value “((GString*) 0xb1f11100)” of type GString'
 *** nss-shared-helper: Shared database disabled (set NSS_USE_SHARED_DB to enable).
 ERROR: Invalid browser function table. Some functionality may be restricted.
-/usr/src/packages/BUILD/icedtea6-1.9.2/plugin/icedteanp/IcedTeaNPPlugin.cc:1506: thread 0x8090738: Error: Failed to spawn applet viewer: Falha ao executar processo filho &quot;/etc/alternatives/../../bin/java&quot; (Arquivo ou diretório não encontrado)
+/usr/src/packages/BUILD/icedtea6-1.9.2/plugin/icedteanp/IcedTeaNPPlugin.cc:1506: thread 0x8090738: Error: Failed to spawn applet viewer: Falha ao executar processo filho "/etc/alternatives/../../bin/java" (Arquivo ou diretório não encontrado)
 *** NSPlugin Wrapper *** ERROR: NP_Initialize() wait for reply: Message timeout
 ERROR: Invalid browser function table. Some functionality may be restricted.
-/usr/src/packages/BUILD/icedtea6-1.9.2/plugin/icedteanp/IcedTeaNPPlugin.cc:1506: thread 0x8090738: Error: Failed to spawn applet viewer: Falha ao executar processo filho &quot;/etc/alternatives/../../bin/java&quot; (Arquivo ou diretório não encontrado)
-gilberto@dhcppc0:~&gt;
-</code></pre><p>Quando constatei o problema, utilizei o <a href="http://transit.iut2.upmf-grenoble.fr/cgi-bin/man/man2html?8+update-alternatives">update-alternatives</a> para alternar a versão da máquina virtual java:</p>
-<pre><code class="bash">gilberto@dhcppc0:~&gt; su -
+/usr/src/packages/BUILD/icedtea6-1.9.2/plugin/icedteanp/IcedTeaNPPlugin.cc:1506: thread 0x8090738: Error: Failed to spawn applet viewer: Falha ao executar processo filho "/etc/alternatives/../../bin/java" (Arquivo ou diretório não encontrado)
+gilberto@dhcppc0:~>
+</code>    
+</pre><p>Quando constatei o problema, utilizei o <a href="http://transit.iut2.upmf-grenoble.fr/cgi-bin/man/man2html?8+update-alternatives">update-alternatives</a> para alternar a versão da máquina virtual java:</p>
+<pre>
+<code class="bash">
+gilberto@dhcppc0:~> su -
 Senha:
 dhcppc0:~ # update-alternatives –config javaplugin
 There are 2 alternatives which provide `javaplugin’.
@@ -77,11 +73,11 @@ There are 2 alternatives which provide `javaplugin’.
 -----------------------------------------------
  +        1    /usr/lib/jvm/jre-1.6.0-openjdk/lib/i386/IcedTeaPlugin.so
 *         2    /usr/lib/jvm/java-1.6.0-sun-1.6.0/jre/lib/i386/libnpjp2.so
-&amp;nbsp;
+
 Press enter to keep the default[*], or type selection number: 
 dhcppc0:~ #
-</code></pre><p>Outra solução, caso você só tenha uma versão instalada, se encontra <a href="http://www.dslreports.com/forum/r24716562-suse-update-broke-java">nesta discussão</a>, pelo comentário do usuário nwrickert. </p><p><strong>ATUALIZAÇÃO:</strong> esqueci-me de mencionar que está estação de trabalho é a de minha casa e que hoje fazem 60 dias que instalei o OpenSuSe 11.3. Por que está nota? Porque os usuários do Windows XP - minha esposa e meu filho(9 anos) - adoraram a mudança!</p>
-<!-- google_ad_section_end -->
+</code>    
+</pre><p>Outra solução, caso você só tenha uma versão instalada, se encontra <a href="http://www.dslreports.com/forum/r24716562-suse-update-broke-java">nesta discussão</a>, pelo comentário do usuário nwrickert. </p><p><strong>ATUALIZAÇÃO:</strong> esqueci-me de mencionar que está estação de trabalho é a de minha casa e que hoje fazem 60 dias que instalei o openSUSE 11.3. Por que está nota? Porque os usuários do Windows XP - minha esposa e meu filho(9 anos) - adoraram a mudança!</p>
     </section>
 <section>
 <div id="disqus_thread"></div>
