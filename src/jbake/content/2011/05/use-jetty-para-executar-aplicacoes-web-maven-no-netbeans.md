@@ -14,40 +14,28 @@ Vejamos como configurar o [Jetty][1], utilizando como IDE o [Netbeans 6.9][4] (d
   1. Primeiro vamos habilitar a função Compilar ao Salvar ([Compile On Save][5]) em nosso projeto. Esta função vem habilitada somente para execução de testes em projetos gerenciados pelo Maven, aqui estamos ajustando para execução do fonte também:  
     [<img src="http://blog.gilbertoca.com/img/uploads/CompileOnSave.png"  title="CompileOnSave" width="804" height="563" class="alignright size-full wp-image-701" />][6] 
   2. Adicione o [plugin jetty][3] para o maven;
-<div class="wp_syntax">
-  <table>
-    <tr>
-      <td class="code">
-        <pre class="xml" style="font-family:monospace;">            <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;plugin<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
-                <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;groupId<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>org.mortbay.jetty<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/groupId<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
-                <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;artifactId<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>jetty-maven-plugin<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/artifactId<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
-                <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;version<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>7.0.1.v20091125<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/version<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
-                <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;configuration<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
-                    <span style="color: #808080; font-style: italic;">&lt;!--reload&gt;manual&lt;/reload--&gt;</span>
-                    <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;scanIntervalSeconds<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>10<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/scanIntervalSeconds<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
-                    <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;stopKey<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>foo<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/stopKey<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
-                    <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;stopPort<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>9966<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/stopPort<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
-                <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/configuration<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
-            <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/plugin<span style="color: #000000; font-weight: bold;">&gt;</span></span></span></pre>
-      </td>
-    </tr>
-  </table>
-</div>
 
+```Xml
+<plugin>
+    <groupId>org.mortbay.jetty</groupId>
+    <artifactId>jetty-maven-plugin</artifactId>
+    <version>7.0.1.v20091125</version>
+    <configuration>  
+        <!--reload>manual</reload-->
+        <scanIntervalSeconds>10</scanIntervalSeconds>
+        <stopKey>foo</stopKey>
+        <stopPort>9966</stopPort>
+    </configuration>
+</plugin>
+```
   3. Abra a janela de propriedades do projeto Maven e selecione Ações(Actions) da lista de categorias (Categories). Encontre a ação Executar (Run) e altere o valor do campo Metas de Execução (Execute Goals) para <bold>jetty:stop jetty:run</bold>;  
     [<img src="http://blog.gilbertoca.com/img/uploads/ActionRunExecuteGoals.png"  title="ActionRunExecuteGoals" width="752" height="580" class="alignright size-full wp-image-687" />][7] 
   4. Então, faça o mesmo para ação Depurar Projeto(Debug project)  
-    e adicione as seguintes propriedades:</p> <div class="wp_syntax">
-      <table>
-        <tr>
-          <td class="code">
-            <pre class="vim" style="font-family:monospace;">&nbsp;
-jpda<span style="color: #000000;">.</span>listen=maven
-netbeans<span style="color: #000000;">.</span>deploy<span style="color: #000000;">.</span>debugmode=true</pre>
-          </td>
-        </tr>
-      </table>
-    </div>
+    e adicione as seguintes propriedades:
+
+    ```Shell
+    jpda.listen=maven netbeans.deploy.debugmode=true
+    ```
     
     [<img src="http://blog.gilbertoca.com/img/uploads/ActionDebugExecuteGoals.png"  title="ActionDebugExecuteGoals" width="760" height="589" class="alignright size-full wp-image-689" />][8] </li> </ol> 
     

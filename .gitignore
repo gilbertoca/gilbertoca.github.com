@@ -5,3 +5,4 @@ src/jbake/cache/
 .diretory
 src/jbake/output
 output
+/cache/

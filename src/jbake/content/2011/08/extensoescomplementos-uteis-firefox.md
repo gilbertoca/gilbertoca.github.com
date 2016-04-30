@@ -115,11 +115,11 @@ As seguintes [extensões (complementos)][1] para o [navegador FireFox][2] melhor
   </tr>
   <tr>
     <td>
-      <a href="https://addons.mozilla.org/en-us/firefox/addon/findbar-tweak/">FindBar Tweak</a>
+      <a href="https://addons.mozilla.org/en-US/firefox/addon/capture-print/?src=search">Capture & Print</a>
     </td>
     
     <td>
-      FindBar Tweak fará sua barra de pesquisa funcionar!
+      Capture & Print permite capturar uma área da página e salvá-la em disco ou enviar para impressora
     </td>
   </tr>
   <tr>
