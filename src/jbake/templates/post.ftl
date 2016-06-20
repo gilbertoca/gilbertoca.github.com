@@ -1,7 +1,6 @@
 <#include "header.ftl">
 	
 <#include "menu.ftl">
-<#include "cross_post_references.ftl">
 <article>
     <header>
         <h1>${content.title}</h1>

@@ -7,8 +7,8 @@ tags=Estou lendo e você, Metodologia Ágil, Modelagem, Traduções, UML
 ~~~~~~
 
 
-> Rebecca Wirfs-Brock. <a href="http://wirfs-brock.com/blog/2013/02/27/why-domain-modeling/" title="Why Domain Modeling?" target="_blank">Why Domain Modeling?</a>  
-> [online] Disponível na Internet via WWW. URL: http://wirfs-brock.com/blog/2013/02/27/why-domain-modeling/. Arquivo capturado em 27 de fevereiro de 2013 
+*Disponível na Internet. Rebecca Wirfs-Brock <a href="http://wirfs-brock.com/blog/2013/02/27/why-domain-modeling/" target="_blank">Why Domain Modeling?</a>
+Arquivo capturado em 27 de fevereiro de 2013*
 
 <p style="text-align:justify">
   Uma barreira ao considerar arquiteturas ricas em modelo de domínio é a ideia errônea do valor ou propósito de um modelo de domínio. Para alguns, criar um modelo de domínio parere retroceder à aqueles dias iniciais onde projeto e modelagem eram percebidas como atividades discretas, longas e muitas vezes improdutivas.

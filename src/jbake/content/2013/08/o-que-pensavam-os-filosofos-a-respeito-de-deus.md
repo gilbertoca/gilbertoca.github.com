@@ -12,16 +12,10 @@ tags=Augusto Cury, Estou lendo e você,  Jesus Cristo, Jornada
 > Marco Polo ficou inquieto. Esfregou as duas mãos no rosto. Suspirou, colocou a mão no queixo, apoiou o cotovelo sobre a coxa como um pensador e perguntou:  
 > - O que pensavam os filósofos a respeito de Deus? 
 
-**<cite><a href="http://www.augustocury.com.br/#/livros">
 
-<div id="attachment_513" style="width: 411px" class="wp-caption alignleft">
-  <img src="../http://blog.gilbertoca.com/img/uploads/o-futuro-da-humanidade.png" alt="" title="o futuro da humanidade" width="401" height="600"" />
+[<img src="/img/uploads/o-futuro-da-humanidade.png" alt="o-futuro-da-humanidade" width="400" height="553" />][1] 
 
-  <p class="wp-caption-text">
-    O Futuro da Humanidade
-  </p>
-</div></a>
-
-<br /> O Futuro da Humanidade pág. 52 e 53, <a href="http://www.augustocury.com.br/#/o+autor">Augusto Jorge Cury</a></cite>**
+O Futuro da Humanidade pág. 52 e 53, <a href="http://www.augustocury.com.br/#/o+autor">Augusto Jorge Cury</a>
 
 
+[1]: http://www.augustocury.com.br/#/livros

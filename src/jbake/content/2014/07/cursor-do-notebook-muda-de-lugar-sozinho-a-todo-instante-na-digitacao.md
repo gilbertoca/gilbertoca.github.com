@@ -9,7 +9,7 @@ tags= Sistema Operacional, Windows
 
 Há duas semanas (férias) em casa, venho percebendo um comportamento irritante no laptop de trabalho de minha esposa: cursor pula fora da linha e se coloca em outra posição, desordenando as palavras ou frase quando estamos digitando um texto. É impossível escrever no Word, Navegador ou Skype pois o cursor não tem estabilidade. 
 
-Uma ligeira pesquisa pelo Google você encontra outras pessoas na mesma situação. Pelo que entendi, lendo sobre o assunto em alguns fóruns, o problema está inicialmente no próprio usuário - o quê, em mim, vc questiona? **Pois é, acidentalmente, quando digitamos fazemos leves toques no touchpad. **  
+Uma ligeira pesquisa pelo Google você encontra outras pessoas na mesma situação. Pelo que entendi, lendo sobre o assunto em alguns fóruns, o problema está inicialmente no próprio usuário - o quê, em mim, vc questiona? **Pois é, acidentalmente, quando digitamos fazemos leves toques no touchpad.**  
 <a href="http://answers.microsoft.com/pt-br/windows/forum/windows_7-performance/o-cursor-pula-fora-da-linha-e-se-coloca-em-outra/5712b49e-dc47-4655-8113-743cdf00a41c?page:1" title="O cursor pula fora da linha e se coloca em outra posição, desordenando as palavras ou frase. É impossível escrever no Word, Outlook ou Windows live pois o cursor não tem estabilidade. " target="_blank">Outros</a>, reclamam que mesmo desabilitando o touchpad o comportamento continua. 
 
 Enfim, existe um problema! Bom, o que fazer? O que fiz, pois não possuo laptop, foi compra um mouse usb para aliviar minha inabilidade com touchpad. Feito isso, descobri que o problema persistia mesmo procurando não tocar no touchpad. Agora vem a dica! 

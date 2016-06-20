@@ -6,8 +6,9 @@ status=published
 tags=desenvolvimento,  Java, NetBeans, Traduções
 ~~~~~~
 
-> radhika. <a title="Viewing log files in NetBeans IDE" href:"https://blogs.oracle.com/NetBeansSupport/entry/netbeans_ide_log_file" target="_blank">Viewing log files in NetBeans IDE</a>  
-> [online] Disponível na Internet via WWW. URL: https://blogs.oracle.com/NetBeansSupport/entry/netbeans\_ide\_log_file. Arquivo capturado em 05 de dezembro de 2014
+*Disponível na Internet. <a href="https://blogs.oracle.com/NetBeansSupport/entry/netbeans_ide_log_file" target="_blank">Viewing log files in NetBeans IDE</a>
+Arquivo capturado em 05 de dezembro de 2014*
+
 
 Os diferentes arquivos de log que o usuário do NetBeans necessita verificar em caso de problema, e como visualizá-los através do próprio IDE:
 

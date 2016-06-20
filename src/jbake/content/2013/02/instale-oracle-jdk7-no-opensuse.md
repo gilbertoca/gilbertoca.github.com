@@ -23,7 +23,7 @@ total 439208
 -rw-r----- 1 gilberto.andrade users 109860709 Feb 16 04:08 jdk-7u15-linux-x64.rpm   
 A37710:/dados/D/Softwares_usados/Tools/java/jdk # zypper install jdk-7u15-linux-x64.rpm
 ```
-Vamos “avisar” o mecanismo do sistema que é responsável por estes serviços - <a href="http://blog.gilbertoca.com/?p:875" title="Alterne entre versões Java facilmente [update-alternatives] parte 2" target="_blank">update-alternatives</a>- que existe uma nova versão do jdk instalada. O diretório (melhor dizendo, link) **/usr/java/latest** representa a versão mais recente instalada e irá apontar para última e mais nova versão:
+Vamos “avisar” o mecanismo do sistema que é responsável por estes serviços - <a href="/2012/03/alterne-entre-versoes-java-facilmente-update-alternatives-parte-2.html" title="Alterne entre versões Java facilmente [update-alternatives] parte 2" target="_blank">update-alternatives</a>- que existe uma nova versão do jdk instalada. O diretório (melhor dizendo, link) **/usr/java/latest** representa a versão mais recente instalada e irá apontar para última e mais nova versão:
 
 <div class="wp_syntax">
   <table>

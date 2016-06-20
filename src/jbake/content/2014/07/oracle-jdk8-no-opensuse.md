@@ -7,7 +7,7 @@ tags= Java, Linux, Sistema Operacional
 ~~~~~~
 
 
-Esta forma de instalação é mais resumida que a do <a href="${crossRefMap['971']}" title="Instale Oracle JDK7 no openSUSE" target="_blank">post antigo</a> e utiliza o formato comprimido (tar.gz).
+Esta forma de instalação é mais resumida que a do <a href="/2013/02/instale-oracle-jdk7-no-opensuse.html" title="Instale Oracle JDK7 no openSUSE" target="_blank">post antigo</a> e utiliza o formato comprimido (tar.gz).
 
 Realize o download a partir deste local: <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" title="Java SE Development Kit 8 Downloads" target="_blank">Java SE Development Kit 8 Downloads</a>, em um diretório de sua escolha - escolhi: Downloads. 
 
