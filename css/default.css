@@ -3,10 +3,14 @@ body {
     min-width: 20em;
     margin: auto;
     padding: 1em;
-/*  font-family: 'Crimson Text', serif;
-    font-size: 18px;
-*/
-    line-height: 1.4em;
+    font-family:sans-serif;
+    -webkit-text-size-adjust:100%;
+    -ms-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+        /*  font-family: 'Crimson Text', serif;
+            font-size: 18px;
+        */
+    line-height:1.4em;
 }
 
 h1, h2, h3, h4, h5, h6 {

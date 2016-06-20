@@ -6,8 +6,8 @@
     <atom:link href="http://blog.gilbertoca.com/feeds/posts/default.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>Sex, 22 mai 2015 17:58:34 -0300</pubDate>
-    <lastBuildDate>Sex, 22 mai 2015 17:58:34 -0300</lastBuildDate>
+    <pubDate>Seg, 20 jun 2016 17:12:23 -0300</pubDate>
+    <lastBuildDate>Seg, 20 jun 2016 17:12:23 -0300</lastBuildDate>
 
     <item>
       <title>Visualizando arquivos de log no NetBeans</title>
@@ -15,8 +15,7 @@
       <pubDate>Sex, 5 dez 2014 00:00:00 -0300</pubDate>
       <guid isPermaLink="false">2014/12/visualizando-arquivos-de-log-no-netbeans.html</guid>
       	<description>
-	&lt;blockquote&gt;&lt;p&gt;radhika. &amp;lt;a title=&quot;Viewing log files in NetBeans IDE&quot; href:&quot;https://blogs.oracle.com/NetBeansSupport/entry/netbeans_ide_log_file&quot; target=&quot;_blank&quot;&amp;gt;Viewing log files in NetBeans IDE&lt;/a&gt;&lt;br/&gt;[online] Disponível na Internet via WWW. URL: &lt;a href=&quot;https://blogs.oracle.com/NetBeansSupport/entry/netbeans\_ide\_log_file&quot;&gt;https://blogs.oracle.com/NetBeansSupport/entry/netbeans\_ide\_log_file&lt;/a&gt;. Arquivo capturado em 05 de dezembro de 2014&lt;/p&gt;
-&lt;/blockquote&gt;&lt;p&gt;Os diferentes arquivos de log que o usuário do NetBeans necessita verificar em caso de problema, e como visualizá-los através do próprio IDE:&lt;/p&gt;
+	&lt;p&gt;&lt;em&gt;Disponível na Internet. &lt;a href=&quot;https://blogs.oracle.com/NetBeansSupport/entry/netbeans_ide_log_file&quot; target=&quot;_blank&quot;&gt;Viewing log files in NetBeans IDE&lt;/a&gt; Arquivo capturado em 05 de dezembro de 2014&lt;/em&gt;&lt;/p&gt;&lt;p&gt;Os diferentes arquivos de log que o usuário do NetBeans necessita verificar em caso de problema, e como visualizá-los através do próprio IDE:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;O arquivo de log do NetBeans: Para visualizar o conteúdo deste arquivo acesse Menu Principal -&amp;gt; Exibir -&amp;gt; Log do IDE (ou diretamente $netbeans_userdir/var/log/messages.log). O conteúdo aparece na janela de saída com o título log do IDE&lt;/li&gt;
   &lt;li&gt;Os arquivos de log de Servidor: Para visualizar os arquivos de log de Servidor, mude para janela Serviços, expanda o nó Servidores, clique com o botão direito do mouse sobre o nó da instância, e selecione &amp;#8216;Exibir Log do Servidor&amp;#8217;.&lt;/li&gt;
@@ -31,7 +30,7 @@
       <pubDate>Sex, 25 jul 2014 00:00:00 -0300</pubDate>
       <guid isPermaLink="false">2014/07/cursor-do-notebook-muda-de-lugar-sozinho-a-todo-instante-na-digitacao.html</guid>
       	<description>
-	&lt;p&gt;Há duas semanas (férias) em casa, venho percebendo um comportamento irritante no laptop de trabalho de minha esposa: cursor pula fora da linha e se coloca em outra posição, desordenando as palavras ou frase quando estamos digitando um texto. É impossível escrever no Word, Navegador ou Skype pois o cursor não tem estabilidade. &lt;/p&gt;&lt;p&gt;Uma ligeira pesquisa pelo Google você encontra outras pessoas na mesma situação. Pelo que entendi, lendo sobre o assunto em alguns fóruns, o problema está inicialmente no próprio usuário - o quê, em mim, vc questiona? **Pois é, acidentalmente, quando digitamos fazemos leves toques no touchpad. **&lt;br/&gt;&lt;a href=&quot;http://answers.microsoft.com/pt-br/windows/forum/windows_7-performance/o-cursor-pula-fora-da-linha-e-se-coloca-em-outra/5712b49e-dc47-4655-8113-743cdf00a41c?page:1&quot; title=&quot;O cursor pula fora da linha e se coloca em outra posição, desordenando as palavras ou frase. É impossível escrever no Word, Outlook ou Windows live pois o cursor não tem estabilidade. &quot; target=&quot;_blank&quot;&gt;Outros&lt;/a&gt;, reclamam que mesmo desabilitando o touchpad o comportamento continua. &lt;/p&gt;&lt;p&gt;Enfim, existe um problema! Bom, o que fazer? O que fiz, pois não possuo laptop, foi compra um mouse usb para aliviar minha inabilidade com touchpad. Feito isso, descobri que o problema persistia mesmo procurando não tocar no touchpad. Agora vem a dica! &lt;/p&gt;&lt;p&gt;Verifique se o driver do touchpad está adequadamente instalado(precisa ser o do próprio fabricante). No meu caso, um Itautec Infaway 7550, aparece um ícone desse componente na barra de tarefas. A partir daí você pode acessar suas propriedades e marcar a opção “Desativar quando um mouse USB externo for conectado”. &lt;/p&gt;
+	&lt;p&gt;Há duas semanas (férias) em casa, venho percebendo um comportamento irritante no laptop de trabalho de minha esposa: cursor pula fora da linha e se coloca em outra posição, desordenando as palavras ou frase quando estamos digitando um texto. É impossível escrever no Word, Navegador ou Skype pois o cursor não tem estabilidade. &lt;/p&gt;&lt;p&gt;Uma ligeira pesquisa pelo Google você encontra outras pessoas na mesma situação. Pelo que entendi, lendo sobre o assunto em alguns fóruns, o problema está inicialmente no próprio usuário - o quê, em mim, vc questiona? &lt;strong&gt;Pois é, acidentalmente, quando digitamos fazemos leves toques no touchpad.&lt;/strong&gt;&lt;br/&gt;&lt;a href=&quot;http://answers.microsoft.com/pt-br/windows/forum/windows_7-performance/o-cursor-pula-fora-da-linha-e-se-coloca-em-outra/5712b49e-dc47-4655-8113-743cdf00a41c?page:1&quot; title=&quot;O cursor pula fora da linha e se coloca em outra posição, desordenando as palavras ou frase. É impossível escrever no Word, Outlook ou Windows live pois o cursor não tem estabilidade. &quot; target=&quot;_blank&quot;&gt;Outros&lt;/a&gt;, reclamam que mesmo desabilitando o touchpad o comportamento continua. &lt;/p&gt;&lt;p&gt;Enfim, existe um problema! Bom, o que fazer? O que fiz, pois não possuo laptop, foi compra um mouse usb para aliviar minha inabilidade com touchpad. Feito isso, descobri que o problema persistia mesmo procurando não tocar no touchpad. Agora vem a dica! &lt;/p&gt;&lt;p&gt;Verifique se o driver do touchpad está adequadamente instalado(precisa ser o do próprio fabricante). No meu caso, um Itautec Infaway 7550, aparece um ícone desse componente na barra de tarefas. A partir daí você pode acessar suas propriedades e marcar a opção “Desativar quando um mouse USB externo for conectado”. &lt;/p&gt;
 &lt;div id=&quot;attachment_1116&quot; style=&quot;width: 461px&quot; class=&quot;wp-caption alignleft&quot;&gt;
   &lt;a href=&quot;http://blog.gilbertoca.com/img/uploads/touchpad_propriedades.png&quot;&gt;&lt;img src=&quot;http://blog.gilbertoca.com/img/uploads/touchpad_propriedades.png&quot; alt=&quot;ItautecInfaway7550 touchpad propriedades&quot; width=&quot;451&quot; height=&quot;466&quot; class=&quot;size-full wp-image-1116&quot; /&gt;&lt;/a&gt;
   
@@ -47,23 +46,23 @@
       <pubDate>Qua, 2 jul 2014 00:00:00 -0300</pubDate>
       <guid isPermaLink="false">2014/07/oracle-jdk8-no-opensuse.html</guid>
       	<description>
-	&lt;p&gt;Esta forma de instalação é mais resumida que a do &lt;a href=&quot;http://blog.gilbertoca.com/?p:971&quot; title=&quot;Instale Oracle JDK7 no openSUSE&quot; target=&quot;_blank&quot;&gt;post antigo&lt;/a&gt; e utiliza o formato comprimido (tar.gz). &lt;/p&gt;&lt;p&gt;Realize o download a partir deste local: &lt;a href=&quot;http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html&quot; title=&quot;Java SE Development Kit 8 Downloads&quot; target=&quot;_blank&quot;&gt;Java SE Development Kit 8 Downloads&lt;/a&gt;, em um diretório de sua escolha - escolhi: Downloads. &lt;/p&gt;&lt;p&gt;Depois como super usuário (root) pelo &lt;a href=&quot;http://kde.org/applications/system/konsole/&quot; title=&quot;Kconsole&quot; target=&quot;_blank&quot;&gt;Kconsole&lt;/a&gt; faça uso da seguinte sequência:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;# cd /usr/java
-# tar xvf ~/Downloads/jdk-8u5-linux-x64.tar.gz
-# chown -R root:root jdk1.8.0_05
-# rm latest
-# ln -s /usr/java/jdk1.8.0_05 /usr/java/latest
-# cd latest/bin
-# for bin in *; do update-alternatives --install /usr/bin/$bin $bin $(pwd)/$bin 1; done
-# cd ..
-# cd latest/jre/bin
-# for bin in *; do update-alternatives --install /usr/bin/$bin $bin $(pwd)/$bin 1; done
-# cd ..
-# cd ..
-# update-alternatives --install /usr/lib64/browser-plugins/javaplugin.so javaplugin /usr/java/latest/jre/lib/amd64/libnpjp2.so 1
-# update-alternatives --config java
-# update-alternatives --config javac
-# update-alternatives --config javaplugin
+	&lt;p&gt;Esta forma de instalação é mais resumida que a do &lt;a href=&quot;/2013/02/instale-oracle-jdk7-no-opensuse.html&quot; title=&quot;Instale Oracle JDK7 no openSUSE&quot; target=&quot;_blank&quot;&gt;post antigo&lt;/a&gt; e utiliza o formato comprimido (tar.gz).&lt;/p&gt;&lt;p&gt;Realize o download a partir deste local: &lt;a href=&quot;http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html&quot; title=&quot;Java SE Development Kit 8 Downloads&quot; target=&quot;_blank&quot;&gt;Java SE Development Kit 8 Downloads&lt;/a&gt;, em um diretório de sua escolha - escolhi: Downloads. &lt;/p&gt;&lt;p&gt;Depois como super usuário (root) pelo &lt;a href=&quot;http://kde.org/applications/system/konsole/&quot; title=&quot;Kconsole&quot; target=&quot;_blank&quot;&gt;Kconsole&lt;/a&gt; faça uso da seguinte sequência:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;Shell&quot;&gt; cd /usr/java
+ tar xvf ~/Downloads/jdk-8u5-linux-x64.tar.gz
+ chown -R root:root jdk1.8.0_05
+ rm latest
+ ln -s /usr/java/jdk1.8.0_05 /usr/java/latest
+ cd latest/bin
+ for bin in *; do update-alternatives --install /usr/bin/$bin $bin $(pwd)/$bin 1; done
+ cd ..
+ cd latest/jre/bin
+ for bin in *; do update-alternatives --install /usr/bin/$bin $bin $(pwd)/$bin 1; done
+ cd ..
+ cd ..
+ update-alternatives --install /usr/lib64/browser-plugins/javaplugin.so javaplugin /usr/java/latest/jre/lib/amd64/libnpjp2.so 1
+ update-alternatives --config java
+ update-alternatives --config javac
+ update-alternatives --config javaplugin
 &lt;/code&gt;&lt;/pre&gt;
 	</description>
     </item>
@@ -82,8 +81,7 @@
       <pubDate>Sex, 11 abr 2014 00:00:00 -0300</pubDate>
       <guid isPermaLink="false">2014/04/por-que-modelagem-de-dominio.html</guid>
       	<description>
-	&lt;blockquote&gt;&lt;p&gt;Rebecca Wirfs-Brock. &lt;a href=&quot;http://wirfs-brock.com/blog/2013/02/27/why-domain-modeling/&quot; title=&quot;Why Domain Modeling?&quot; target=&quot;_blank&quot;&gt;Why Domain Modeling?&lt;/a&gt;&lt;br/&gt;[online] Disponível na Internet via WWW. URL: &lt;a href=&quot;http://wirfs-brock.com/blog/2013/02/27/why-domain-modeling/&quot;&gt;http://wirfs-brock.com/blog/2013/02/27/why-domain-modeling/&lt;/a&gt;. Arquivo capturado em 27 de fevereiro de 2013 &lt;/p&gt;
-&lt;/blockquote&gt;
+	&lt;p&gt;&lt;em&gt;Disponível na Internet. Rebecca Wirfs-Brock &lt;a href=&quot;http://wirfs-brock.com/blog/2013/02/27/why-domain-modeling/&quot; target=&quot;_blank&quot;&gt;Why Domain Modeling?&lt;/a&gt; Arquivo capturado em 27 de fevereiro de 2013&lt;/em&gt;&lt;/p&gt;
 &lt;p style=&quot;text-align:justify&quot;&gt;
   Uma barreira ao considerar arquiteturas ricas em modelo de domínio é a ideia errônea do valor ou propósito de um modelo de domínio. Para alguns, criar um modelo de domínio parere retroceder à aqueles dias iniciais onde projeto e modelagem eram percebidas como atividades discretas, longas e muitas vezes improdutivas.
 &lt;/p&gt;
@@ -123,106 +121,6 @@
 	</description>
     </item>
     <item>
-      <title>Firmeza</title>
-      <link>http://blog.gilbertoca.com/2013/11/firmeza.html</link>
-      <pubDate>Sex, 8 nov 2013 00:00:00 -0300</pubDate>
-      <guid isPermaLink="false">2013/11/firmeza.html</guid>
-      	<description>
-	&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;table border=&quot;0&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
-  &lt;tr&gt;
-    &lt;td valign=&quot;top&quot; width=&quot;276&quot;&gt;
-      &lt;p align=&quot;center&quot;&gt;
-        &lt;b&gt;Firmeza&lt;/b&gt;
-      &lt;/p&gt;
-    &lt;/td&gt;
-    
-    &lt;td colspan=&quot;2&quot; valign=&quot;top&quot; width=&quot;361&quot;&gt;
-      &lt;p align=&quot;center&quot;&gt;
-        &lt;b&gt;Leitura Bíblica:&lt;/b&gt; &lt;a href=&quot;http://www.bibliaonline.com.br/nvi/atos/14/21-23&quot;&gt;Atos 14.21-23&lt;/a&gt;
-      &lt;/p&gt;
-    &lt;/td&gt;
-  &lt;/tr&gt;
-  
-  &lt;tr&gt;
-    &lt;td colspan=&quot;3&quot; valign=&quot;top&quot; width=&quot;637&quot;&gt;
-      &lt;p align=&quot;center&quot;&gt;
-        &lt;b&gt;Bem-aventurados os perseguidos por causa da justiça, pois deles é o reino dos céus&lt;/b&gt; (Mt 5.10).
-      &lt;/p&gt;
-      
-      &lt;p&gt;
-        &amp;nbsp;
-      &lt;/p&gt;
-      
-      &lt;p&gt;
-        O livro de Atos registra um cristianismo corajoso e saudoso, que ia acontecendo na medida em que as pessoas contavam umas às outras suas descobertas na caminhada com Deus, crendo que Cristo era o enviado de Deus ao mundo. Os apóstolos punham sua vida em risco por amor às pessoas, para que estas conhecessem a Deus. Aqueles que abraçavam a fé em Cristo, em vez de se dar bem, sofriam perseguição religiosa, discriminação e até ameaças.&lt;strong&gt; Não havia promessas de conseguir um emprego melhor, nem de prosperidade financeira ou ascensão social.&lt;/strong&gt; O que havia era a experiência viva com Deus e isso bastava.
-      &lt;/p&gt;
-      
-      &lt;p&gt;
-        Chama-me a atenção a frase que Paulo e Barnabé dizem aos discípulos, estimulando-os à firmeza: “É necessário que passemos por muitas tribulações para entrarmos no Reino de Deus”. &lt;strong&gt;Isso parece bem o oposto do que se proclama hoje! Quando surge uma “tribulação” (um problema, uma enfermidade, um revés qualquer) muitos já a conectam a uma ação diabólica, como se cristãos fossem isentos de problemas, como se Deus fosse um tipo de super-herói pessoal que está sempre alerta para nos livrar dos problemas assim que estes surgirem.&lt;/strong&gt; Isso gera um cristianismo oportunista e infantil. Quem não tem problemas? Quem não sofre angústias? Quem não tem sua fé questionada vez ou outra?
-      &lt;/p&gt;
-      
-      &lt;p&gt;
-        Ser cristão implica ter fibra, exercer a justiça, demonstrar amor, compaixão e verdade. Ser cristão não é um seguro contra problemas, e o nome de Jesus não é uma senha ou palavra mágica que abre todas as portas. Aqueles discípulos perseguidos foram encorajados a permanecer firmes na fé apenas porque criam em Jesus e se reconheciam amados por Deus, e isso lhes bastava. &lt;strong&gt;Que Deus nos torne hoje cristãos maduros, que enfrentam os problemas do dia a dia porque os pés estão bem firmados em Cristo que nos sustenta!&lt;/strong&gt; - WMJ
-      &lt;/p&gt;
-      
-      &lt;p&gt;
-        &amp;nbsp;
-      &lt;/p&gt;
-      
-      &lt;p align=&quot;center&quot;&gt;
-        &lt;b&gt;Vida cristã não é uma carona para o céu, mas uma caminhada em solo firme e seguro.&lt;/b&gt;
-      &lt;/p&gt;
-      
-      &lt;p&gt;
-        &amp;nbsp;&lt;/td&gt; &lt;/tr&gt; 
-        
-        &lt;tr&gt;
-          &lt;td colspan=&quot;2&quot; valign=&quot;top&quot; width=&quot;306&quot;&gt;
-            &lt;b&gt;Autor:&lt;/b&gt; Wanderley de Mattos Júnior, São Paulo - SP&lt;b&gt;Edição:&lt;/b&gt; Transcrito do Pão Diário, 15 de maio de 2011 – Rádio Trans Mundial(RTM)
-          &lt;/td&gt;
-          
-          &lt;td valign=&quot;top&quot; width=&quot;331&quot;&gt;
-            Prezado amigo, caso queira interagir conosco sobre as MENSAGENS REFLEXIVAS, ou qualquer outro contato, favor utilizar o endereço&lt;a href=&quot;mailto:ibm.palmas@gmail.com&quot;&gt;ibm.palmas@gmail.com&lt;/a&gt;
-          &lt;/td&gt;
-        &lt;/tr&gt;
-        
-        &lt;tr&gt;
-          &lt;td colspan=&quot;3&quot; valign=&quot;top&quot; width=&quot;637&quot;&gt;
-            &lt;p align=&quot;center&quot;&gt;
-              &lt;b&gt;Não copie ou reproduza este texto. Colabore com a missão da RTM, adquirindo seu exemplar do Pão Diário. Para adquirir o seu exemplar do Pão Diário&lt;/b&gt; &lt;a href=&quot;http://www.transmundial.com.br/publicacoes.php3&quot;&gt;clique aqui&lt;/a&gt;.
-            &lt;/p&gt;
-          &lt;/td&gt;
-        &lt;/tr&gt;&lt;/tbody&gt; &lt;/table&gt;
-&lt;pre&gt;&lt;code&gt;    &amp;lt;table style=&amp;quot;background-color: #fff; padding: 5px;&amp;quot; border=&amp;quot;0&amp;quot; cellspacing=&amp;quot;0&amp;quot;&amp;gt;
-      &amp;lt;tr&amp;gt;
-        &amp;lt;td&amp;gt;
-          &amp;lt;img alt=&amp;quot;Grupos do Google&amp;quot; src=&amp;quot;http://groups.google.com/intl/pt-BR/images/logos/groups_logo_sm.gif&amp;quot; width=&amp;quot;140&amp;quot; height=&amp;quot;30&amp;quot; /&amp;gt;
-        &amp;lt;/td&amp;gt;
-      &amp;lt;/tr&amp;gt;
-
-      &amp;lt;tr&amp;gt;
-        &amp;lt;td style=&amp;quot;padding-left: 5px;&amp;quot;&amp;gt;
-          &amp;lt;strong&amp;gt;Participe do grupo Mensagens Reflexivas&amp;lt;/strong&amp;gt;
-        &amp;lt;/td&amp;gt;
-      &amp;lt;/tr&amp;gt;
-
-      &amp;lt;tr&amp;gt;
-        &amp;lt;td style=&amp;quot;padding-left: 5px;&amp;quot;&amp;gt;
-          E-mail: &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;email&amp;quot; /&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;input type=&amp;quot;submit&amp;quot; name=&amp;quot;sub&amp;quot; value=&amp;quot;Inscrever&amp;quot; /&amp;gt;
-        &amp;lt;/td&amp;gt;
-      &amp;lt;/tr&amp;gt;
-
-      &amp;lt;tr&amp;gt;
-        &amp;lt;td align=&amp;quot;right&amp;quot;&amp;gt;
-          &amp;lt;a href=&amp;quot;http://groups.google.com/group/ibmp-mensagens-reflexivas&amp;quot;&amp;gt;Visitar este grupo&amp;lt;/a&amp;gt;
-        &amp;lt;/td&amp;gt;
-      &amp;lt;/tr&amp;gt;
-    &amp;lt;/table&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-	</description>
-    </item>
-    <item>
       <title>Vida Melhor: Gustavo Cerbasi (Casais Inteligentes Enriquecem Juntos) </title>
       <link>http://blog.gilbertoca.com/2013/10/vida-melhor-gustavo-cerbasi-casais-inteligentes-enriquecem-juntos.html</link>
       <pubDate>Ter, 29 out 2013 00:00:00 -0300</pubDate>
@@ -237,7 +135,7 @@
       <pubDate>Sex, 25 out 2013 00:00:00 -0300</pubDate>
       <guid isPermaLink="false">2013/10/classicos-nacionais-pollyanna.html</guid>
       	<description>
-	&lt;p&gt;&lt;a href=&quot;http://www.ibep-nacional.com.br/nacional2010/htdocs/script/catalogo.asp?isbn=9788534230902&quot;&gt;&lt;img src=&quot;http://blog.gilbertoca.com/img/uploads/pollyanna-classicos-nacionais.jpg&quot; alt=&quot;pollyanna-classicos-nacionais&quot; width=&quot;400&quot; height=&quot;553&quot; class=&quot;alignleft size-full wp-image-1028&quot; /&gt;&lt;/a&gt; &lt;/p&gt;&lt;p&gt;Aos 11 anos, Pollyanna fica órfã e vai morar com a tia. Passa por muitos momentos difíceis, mas sempre encontra um motivo para ficar feliz. Curiosa e atrevida, essa menina transforma os lugares por onde passa e as pessoas que conhece, com seu incrível “Jogo do Contente”, descobrindo sempre alguma coisa para se alegrar e levando bom humor onde só havia amarguras, desencadeando em todo o mundo uma impressionante onda de esperança, de boa vontade e de entusiasmo, tornando-se símbolo da bondade e do otimismo.&lt;/p&gt;
+	&lt;p&gt;&lt;a href=&quot;http://www.ibep-nacional.com.br/nacional2010/htdocs/script/catalogo.asp?isbn=9788534230902&quot;&gt;&lt;img src=&quot;/img/uploads/pollyanna-classicos-nacionais.jpg&quot; alt=&quot;pollyanna-classicos-nacionais&quot; width=&quot;400&quot; height=&quot;553&quot; /&gt;&lt;/a&gt; &lt;/p&gt;&lt;p&gt;Aos 11 anos, Pollyanna fica órfã e vai morar com a tia. Passa por muitos momentos difíceis, mas sempre encontra um motivo para ficar feliz. Curiosa e atrevida, essa menina transforma os lugares por onde passa e as pessoas que conhece, com seu incrível “Jogo do Contente”, descobrindo sempre alguma coisa para se alegrar e levando bom humor onde só havia amarguras, desencadeando em todo o mundo uma impressionante onda de esperança, de boa vontade e de entusiasmo, tornando-se símbolo da bondade e do otimismo.&lt;/p&gt;
 	</description>
     </item>
     <item>
@@ -247,7 +145,7 @@
       <guid isPermaLink="false">2013/08/o-que-pensavam-os-filosofos-a-respeito-de-deus.html</guid>
       	<description>
 	&lt;blockquote&gt;&lt;p&gt;Vendo que o jovem Marco Polo refletia sobre os mistérios da existência, Falcão adicionou:&lt;br/&gt;- Você pode duvidar de que Deus existe, mas Deus não duvida de que você existe. É nisso que creio.&lt;br/&gt;Marco Polo ficou inquieto. Esfregou as duas mãos no rosto. Suspirou, colocou a mão no queixo, apoiou o cotovelo sobre a coxa como um pensador e perguntou:&lt;br/&gt;- O que pensavam os filósofos a respeito de Deus? &lt;/p&gt;
-&lt;/blockquote&gt;&lt;p&gt;**&lt;cite&gt;&lt;a href=&quot;http://www.augustocury.com.br/#/livros&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;div id=&quot;attachment_513&quot; style=&quot;width: 411px&quot; class=&quot;wp-caption alignleft&quot;&gt;  &amp;lt;img src=&quot;../http://blog.gilbertoca.com/img/uploads/o-futuro-da-humanidade.png&quot; alt=&quot;&quot; title=&quot;o futuro da humanidade&quot; width=&quot;401&quot; height=&quot;600&quot;&quot; /&amp;gt;&lt;/p&gt;&lt;p&gt;&lt;p class=&quot;wp-caption-text&quot;&gt;  O Futuro da Humanidade  &lt;/p&gt; &lt;/div&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt; O Futuro da Humanidade pág. 52 e 53, &lt;a href=&quot;http://www.augustocury.com.br/#/o+autor&quot;&gt;Augusto Jorge Cury&lt;/a&gt;&lt;/cite&gt;**&lt;/p&gt;
+&lt;/blockquote&gt;&lt;p&gt;&lt;a href=&quot;http://www.augustocury.com.br/#/livros&quot;&gt;&lt;img src=&quot;/img/uploads/o-futuro-da-humanidade.png&quot; alt=&quot;o-futuro-da-humanidade&quot; width=&quot;400&quot; height=&quot;553&quot; /&gt;&lt;/a&gt; &lt;/p&gt;&lt;p&gt;O Futuro da Humanidade pág. 52 e 53, &lt;a href=&quot;http://www.augustocury.com.br/#/o+autor&quot;&gt;Augusto Jorge Cury&lt;/a&gt;&lt;/p&gt;
 	</description>
     </item>
     <item>
@@ -265,7 +163,18 @@
       <pubDate>Qui, 21 fev 2013 00:00:00 -0300</pubDate>
       <guid isPermaLink="false">2013/02/instale-oracle-jdk7-no-opensuse.html</guid>
       	<description>
-	&lt;p&gt;Realize o download a partir deste local: &lt;a href=&quot;http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html&quot; title=&quot;Java SE Development Kit 7 Downloads&quot; target=&quot;_blank&quot;&gt;Java SE Development Kit 7 Downloads&lt;/a&gt;, em um diretório de sua escolha - escolhi: /Softwares_usados/Tools/java/jdk/ . &lt;/p&gt;&lt;p&gt;Depois como super usuário (root) utilize &lt;a href=&quot;http://doc.openSUSE.org/documentation/html/openSUSE/openSUSE-startup/cha.sw_cl.html&quot; title=&quot;Ferramenta de Gerenciamento de Software - Zypper&quot; target=&quot;_blank&quot;&gt;a Ferramente de Gerencimanto de Software - Zypper -&lt;/a&gt; para instalar o pacote (arquivo RPM):&lt;/p&gt;&lt;p&gt;&lt;div class=&quot;wp_syntax&quot;&gt;  &lt;table&gt;  &lt;tr&gt;  &lt;td class=&quot;code&quot;&gt;  &lt;pre class=&quot;bash&quot; style=&quot;font-family:monospace;&quot;&gt;gilberto.andrade&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;@&lt;/span&gt;A37710:~$ &lt;span style=&quot;color: #c20cb9; font-weight: bold;&quot;&gt;su&lt;/span&gt; - Senha: A37710:~ &lt;span style=&quot;color: #666666; font-style: italic;&quot;&gt;# cd /dados/D/Softwares_usados/Tools/java/jdk/&lt;/span&gt; A37710:&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;dados&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;D&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;Softwares_usados&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;Tools&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;java&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;jdk &lt;span style=&quot;color: #666666; font-style: italic;&quot;&gt;# ll&lt;/span&gt; total &lt;span style=&quot;color: #000000;&quot;&gt;439208&lt;/span&gt; &lt;span style=&quot;color: #660033;&quot;&gt;-rw-r-----&lt;/span&gt; &lt;span style=&quot;color: #000000;&quot;&gt;1&lt;/span&gt; gilberto.andrade &lt;span style=&quot;color: #c20cb9; font-weight: bold;&quot;&gt;users&lt;/span&gt; &lt;span style=&quot;color: #000000;&quot;&gt;8405307&lt;/span&gt; Feb &lt;span style=&quot;color: #000000;&quot;&gt;11&lt;/span&gt; &lt;span style=&quot;color: #000000;&quot;&gt;20&lt;/span&gt;:&lt;span style=&quot;color: #000000;&quot;&gt;14&lt;/span&gt; javafx-&lt;span style=&quot;color: #000000;&quot;&gt;2&lt;/span&gt;_2_7-apidocs.zip &lt;span style=&quot;color: #660033;&quot;&gt;-rw-r--r--&lt;/span&gt; &lt;span style=&quot;color: #000000;&quot;&gt;1&lt;/span&gt; gilberto.andrade &lt;span style=&quot;color: #c20cb9; font-weight: bold;&quot;&gt;users&lt;/span&gt; &lt;span style=&quot;color: #000000;&quot;&gt;54426218&lt;/span&gt; Oct &lt;span style=&quot;color: #000000;&quot;&gt;11&lt;/span&gt; &lt;span style=&quot;color: #000000;&quot;&gt;15&lt;/span&gt;:&lt;span style=&quot;color: #000000;&quot;&gt;12&lt;/span&gt; javafx_scenebuilder-&lt;span style=&quot;color: #000000;&quot;&gt;1&lt;/span&gt;_1-beta-linux-x64.tar.gz &lt;span style=&quot;color: #660033;&quot;&gt;-rw-r--r--&lt;/span&gt; &lt;span style=&quot;color: #000000;&quot;&gt;1&lt;/span&gt; gilberto.andrade &lt;span style=&quot;color: #c20cb9; font-weight: bold;&quot;&gt;users&lt;/span&gt; &lt;span style=&quot;color: #000000;&quot;&gt;216263278&lt;/span&gt; Jun &lt;span style=&quot;color: #000000;&quot;&gt;13&lt;/span&gt; &lt;span style=&quot;color: #000000;&quot;&gt;2012&lt;/span&gt; javatutorials.zip &lt;span style=&quot;color: #660033;&quot;&gt;-rw-r-----&lt;/span&gt; &lt;span style=&quot;color: #000000;&quot;&gt;1&lt;/span&gt; gilberto.andrade &lt;span style=&quot;color: #c20cb9; font-weight: bold;&quot;&gt;users&lt;/span&gt; &lt;span style=&quot;color: #000000;&quot;&gt;60768483&lt;/span&gt; Feb &lt;span style=&quot;color: #000000;&quot;&gt;11&lt;/span&gt; &lt;span style=&quot;color: #000000;&quot;&gt;18&lt;/span&gt;:&lt;span style=&quot;color: #000000;&quot;&gt;10&lt;/span&gt; jdk-7u15-apidocs.zip &lt;span style=&quot;color: #660033;&quot;&gt;-rw-r-----&lt;/span&gt; &lt;span style=&quot;color: #000000;&quot;&gt;1&lt;/span&gt; gilberto.andrade &lt;span style=&quot;color: #c20cb9; font-weight: bold;&quot;&gt;users&lt;/span&gt; &lt;span style=&quot;color: #000000;&quot;&gt;109860709&lt;/span&gt; Feb &lt;span style=&quot;color: #000000;&quot;&gt;16&lt;/span&gt; 04:08 jdk-7u15-linux-x64.rpm &amp;nbsp; A37710:&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;dados&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;D&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;Softwares_usados&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;Tools&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;java&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;jdk &lt;span style=&quot;color: #666666; font-style: italic;&quot;&gt;# zypper install jdk-7u15-linux-x64.rpm&lt;/span&gt;&lt;/pre&gt;  &lt;/td&gt;  &lt;/tr&gt;  &lt;/table&gt; &lt;/div&gt;&lt;/p&gt; &lt;/p&gt;&lt;p&gt;Vamos “avisar” o mecanismo do sistema que é responsável por estes serviços - &lt;a href=&quot;http://blog.gilbertoca.com/?p:875&quot; title=&quot;Alterne entre versões Java facilmente [update-alternatives] parte 2&quot; target=&quot;_blank&quot;&gt;update-alternatives&lt;/a&gt;- que existe uma nova versão do jdk instalada. O diretório (melhor dizendo, link) &lt;strong&gt;/usr/java/latest&lt;/strong&gt; representa a versão mais recente instalada e irá apontar para última e mais nova versão:&lt;/p&gt;&lt;p&gt;&lt;div class=&quot;wp_syntax&quot;&gt;  &lt;table&gt;  &lt;tr&gt;  &lt;td class=&quot;code&quot;&gt;  &lt;pre class=&quot;bash&quot; style=&quot;font-family:monospace;&quot;&gt;A37710:&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;usr&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;java &lt;span style=&quot;color: #666666; font-style: italic;&quot;&gt;# ll&lt;/span&gt; total &lt;span style=&quot;color: #000000;&quot;&gt;12&lt;/span&gt; lrwxrwxrwx &lt;span style=&quot;color: #000000;&quot;&gt;1&lt;/span&gt; root root &lt;span style=&quot;color: #000000;&quot;&gt;16&lt;/span&gt; Feb &lt;span style=&quot;color: #000000;&quot;&gt;15&lt;/span&gt; &lt;span style=&quot;color: #000000;&quot;&gt;16&lt;/span&gt;:09 default -&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;usr&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;java&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;latest drwxr-xr-x &lt;span style=&quot;color: #000000;&quot;&gt;4&lt;/span&gt; root root &lt;span style=&quot;color: #000000;&quot;&gt;4096&lt;/span&gt; Feb &lt;span style=&quot;color: #000000;&quot;&gt;15&lt;/span&gt; &lt;span style=&quot;color: #000000;&quot;&gt;15&lt;/span&gt;:&lt;span style=&quot;color: #000000;&quot;&gt;13&lt;/span&gt; jdk1.7.0_07 drwxr-xr-x &lt;span style=&quot;color: #000000;&quot;&gt;3&lt;/span&gt; root root &lt;span style=&quot;color: #000000;&quot;&gt;4096&lt;/span&gt; Feb &lt;span style=&quot;color: #000000;&quot;&gt;21&lt;/span&gt; &lt;span style=&quot;color: #000000;&quot;&gt;14&lt;/span&gt;:&lt;span style=&quot;color: #000000;&quot;&gt;36&lt;/span&gt; jdk1.7.0_13 drwxr-xr-x &lt;span style=&quot;color: #000000;&quot;&gt;8&lt;/span&gt; root root &lt;span style=&quot;color: #000000;&quot;&gt;4096&lt;/span&gt; Feb &lt;span style=&quot;color: #000000;&quot;&gt;21&lt;/span&gt; &lt;span style=&quot;color: #000000;&quot;&gt;14&lt;/span&gt;:&lt;span style=&quot;color: #000000;&quot;&gt;36&lt;/span&gt; jdk1.7.0_15 lrwxrwxrwx &lt;span style=&quot;color: #000000;&quot;&gt;1&lt;/span&gt; root root &lt;span style=&quot;color: #000000;&quot;&gt;21&lt;/span&gt; Feb &lt;span style=&quot;color: #000000;&quot;&gt;21&lt;/span&gt; &lt;span style=&quot;color: #000000;&quot;&gt;14&lt;/span&gt;:&lt;span style=&quot;color: #000000;&quot;&gt;36&lt;/span&gt; latest -&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;usr&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;java&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;jdk1.7.0_15&lt;/pre&gt;  &lt;/td&gt;  &lt;/tr&gt;  &lt;/table&gt; &lt;/div&gt;&lt;/p&gt; &lt;/p&gt;&lt;p&gt;A partir do diretório &lt;strong&gt;latest/bin&lt;/strong&gt; e &lt;strong&gt;latest/jre/bin&lt;/strong&gt; realize as seguintes modificações:&lt;/p&gt;&lt;p&gt;&lt;div class=&quot;wp_syntax&quot;&gt;  &lt;table&gt;  &lt;tr&gt;  &lt;td class=&quot;code&quot;&gt;  &lt;pre class=&quot;bash&quot; style=&quot;font-family:monospace;&quot;&gt;A37710:&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;usr&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;java &lt;span style=&quot;color: #666666; font-style: italic;&quot;&gt;# cd latest/bin/&lt;/span&gt; A37710:&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;usr&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;java&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;latest&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;bin &lt;span style=&quot;color: #666666; font-style: italic;&quot;&gt;# for bin in *; do update-alternatives --install /usr/bin/$bin $bin $(pwd)/$bin 20000; done&lt;/span&gt; A37710:&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;usr&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;java&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;latest&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;bin &lt;span style=&quot;color: #666666; font-style: italic;&quot;&gt;# cd ..&lt;/span&gt; A37710:&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;usr&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;java&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;latest &lt;span style=&quot;color: #666666; font-style: italic;&quot;&gt;# cd jre/bin/&lt;/span&gt; A37710:&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;usr&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;java&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;latest&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;jre&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;bin &lt;span style=&quot;color: #666666; font-style: italic;&quot;&gt;# for bin in *; do update-alternatives --install /usr/bin/$bin $bin $(pwd)/$bin 20000; done&lt;/span&gt; A37710:&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;usr&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;java&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;latest&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;jre&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;bin &lt;span style=&quot;color: #666666; font-style: italic;&quot;&gt;#&lt;/span&gt;&lt;/pre&gt;  &lt;/td&gt;  &lt;/tr&gt;  &lt;/table&gt; &lt;/div&gt;&lt;/p&gt; &lt;/p&gt;&lt;p&gt;Por fim, atualizaremos o &lt;strong&gt;plugin java - javaplugin.so -&lt;/strong&gt; para os navegadores instalados no sistema:&lt;/p&gt;
+	&lt;p&gt;Realize o download a partir deste local: &lt;a href=&quot;http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html&quot; title=&quot;Java SE Development Kit 7 Downloads&quot; target=&quot;_blank&quot;&gt;Java SE Development Kit 7 Downloads&lt;/a&gt;, em um diretório de sua escolha - escolhi: /Softwares_usados/Tools/java/jdk/ . &lt;/p&gt;&lt;p&gt;Depois como super usuário (root) utilize &lt;a href=&quot;http://doc.openSUSE.org/documentation/html/openSUSE/openSUSE-startup/cha.sw_cl.html&quot; title=&quot;Ferramenta de Gerenciamento de Software - Zypper&quot; target=&quot;_blank&quot;&gt;a Ferramente de Gerencimanto de Software - Zypper -&lt;/a&gt; para instalar o pacote (arquivo RPM):&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;Shell&quot;&gt;gilberto.andrade@A37710:~$ su - Senha
+A37710:~ # cd /dados/D/Softwares_usados/Tools/java/jdk/ 
+A37710:/dados/D/Softwares_usados/Tools/java/jdk # ll 
+total 439208 
+-rw-r----- 1 gilberto.andrade users 8405307 Feb 11 20:14 javafx-2_2_7-apidocs.zip 
+-rw-r--r-- 1 gilberto.andrade users 54426218 Oct 11 15:12 javafx_scenebuilder-1_1-beta-linux-x64.tar.gz 
+-rw-r--r-- 1 gilberto.andrade users 216263278 Jun 13 2012 javatutorials.zip 
+-rw-r----- 1 gilberto.andrade users 60768483 Feb 11 18:10 jdk-7u15-apidocs.zip 
+-rw-r----- 1 gilberto.andrade users 109860709 Feb 16 04:08 jdk-7u15-linux-x64.rpm   
+A37710:/dados/D/Softwares_usados/Tools/java/jdk # zypper install jdk-7u15-linux-x64.rpm
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Vamos “avisar” o mecanismo do sistema que é responsável por estes serviços - &lt;a href=&quot;/2012/03/alterne-entre-versoes-java-facilmente-update-alternatives-parte-2.html&quot; title=&quot;Alterne entre versões Java facilmente [update-alternatives] parte 2&quot; target=&quot;_blank&quot;&gt;update-alternatives&lt;/a&gt;- que existe uma nova versão do jdk instalada. O diretório (melhor dizendo, link) &lt;strong&gt;/usr/java/latest&lt;/strong&gt; representa a versão mais recente instalada e irá apontar para última e mais nova versão:&lt;/p&gt;&lt;p&gt;&lt;div class=&quot;wp_syntax&quot;&gt;  &lt;table&gt;  &lt;tr&gt;  &lt;td class=&quot;code&quot;&gt;  &lt;pre class=&quot;bash&quot; style=&quot;font-family:monospace;&quot;&gt;A37710:&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;usr&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;java &lt;span style=&quot;color: #666666; font-style: italic;&quot;&gt;# ll&lt;/span&gt; total &lt;span style=&quot;color: #000000;&quot;&gt;12&lt;/span&gt; lrwxrwxrwx &lt;span style=&quot;color: #000000;&quot;&gt;1&lt;/span&gt; root root &lt;span style=&quot;color: #000000;&quot;&gt;16&lt;/span&gt; Feb &lt;span style=&quot;color: #000000;&quot;&gt;15&lt;/span&gt; &lt;span style=&quot;color: #000000;&quot;&gt;16&lt;/span&gt;:09 default -&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;usr&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;java&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;latest drwxr-xr-x &lt;span style=&quot;color: #000000;&quot;&gt;4&lt;/span&gt; root root &lt;span style=&quot;color: #000000;&quot;&gt;4096&lt;/span&gt; Feb &lt;span style=&quot;color: #000000;&quot;&gt;15&lt;/span&gt; &lt;span style=&quot;color: #000000;&quot;&gt;15&lt;/span&gt;:&lt;span style=&quot;color: #000000;&quot;&gt;13&lt;/span&gt; jdk1.7.0_07 drwxr-xr-x &lt;span style=&quot;color: #000000;&quot;&gt;3&lt;/span&gt; root root &lt;span style=&quot;color: #000000;&quot;&gt;4096&lt;/span&gt; Feb &lt;span style=&quot;color: #000000;&quot;&gt;21&lt;/span&gt; &lt;span style=&quot;color: #000000;&quot;&gt;14&lt;/span&gt;:&lt;span style=&quot;color: #000000;&quot;&gt;36&lt;/span&gt; jdk1.7.0_13 drwxr-xr-x &lt;span style=&quot;color: #000000;&quot;&gt;8&lt;/span&gt; root root &lt;span style=&quot;color: #000000;&quot;&gt;4096&lt;/span&gt; Feb &lt;span style=&quot;color: #000000;&quot;&gt;21&lt;/span&gt; &lt;span style=&quot;color: #000000;&quot;&gt;14&lt;/span&gt;:&lt;span style=&quot;color: #000000;&quot;&gt;36&lt;/span&gt; jdk1.7.0_15 lrwxrwxrwx &lt;span style=&quot;color: #000000;&quot;&gt;1&lt;/span&gt; root root &lt;span style=&quot;color: #000000;&quot;&gt;21&lt;/span&gt; Feb &lt;span style=&quot;color: #000000;&quot;&gt;21&lt;/span&gt; &lt;span style=&quot;color: #000000;&quot;&gt;14&lt;/span&gt;:&lt;span style=&quot;color: #000000;&quot;&gt;36&lt;/span&gt; latest -&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;usr&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;java&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;jdk1.7.0_15&lt;/pre&gt;  &lt;/td&gt;  &lt;/tr&gt;  &lt;/table&gt; &lt;/div&gt;&lt;/p&gt; &lt;/p&gt;&lt;p&gt;A partir do diretório &lt;strong&gt;latest/bin&lt;/strong&gt; e &lt;strong&gt;latest/jre/bin&lt;/strong&gt; realize as seguintes modificações:&lt;/p&gt;&lt;p&gt;&lt;div class=&quot;wp_syntax&quot;&gt;  &lt;table&gt;  &lt;tr&gt;  &lt;td class=&quot;code&quot;&gt;  &lt;pre class=&quot;bash&quot; style=&quot;font-family:monospace;&quot;&gt;A37710:&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;usr&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;java &lt;span style=&quot;color: #666666; font-style: italic;&quot;&gt;# cd latest/bin/&lt;/span&gt; A37710:&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;usr&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;java&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;latest&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;bin &lt;span style=&quot;color: #666666; font-style: italic;&quot;&gt;# for bin in *; do update-alternatives --install /usr/bin/$bin $bin $(pwd)/$bin 20000; done&lt;/span&gt; A37710:&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;usr&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;java&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;latest&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;bin &lt;span style=&quot;color: #666666; font-style: italic;&quot;&gt;# cd ..&lt;/span&gt; A37710:&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;usr&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;java&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;latest &lt;span style=&quot;color: #666666; font-style: italic;&quot;&gt;# cd jre/bin/&lt;/span&gt; A37710:&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;usr&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;java&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;latest&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;jre&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;bin &lt;span style=&quot;color: #666666; font-style: italic;&quot;&gt;# for bin in *; do update-alternatives --install /usr/bin/$bin $bin $(pwd)/$bin 20000; done&lt;/span&gt; A37710:&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;usr&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;java&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;latest&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;jre&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;bin &lt;span style=&quot;color: #666666; font-style: italic;&quot;&gt;#&lt;/span&gt;&lt;/pre&gt;  &lt;/td&gt;  &lt;/tr&gt;  &lt;/table&gt; &lt;/div&gt;&lt;/p&gt; &lt;/p&gt;&lt;p&gt;Por fim, atualizaremos o &lt;strong&gt;plugin java - javaplugin.so -&lt;/strong&gt; para os navegadores instalados no sistema:&lt;/p&gt;
 &lt;div class=&quot;wp_syntax&quot;&gt;
   &lt;table&gt;
     &lt;tr&gt;
@@ -689,11 +598,11 @@ zypper &lt;span style=&quot;color: #c20cb9; font-weight: bold;&quot;&gt;install&
   &lt;/tr&gt;
   &lt;tr&gt;
     &lt;td&gt;
-      &lt;a href=&quot;https://addons.mozilla.org/en-us/firefox/addon/findbar-tweak/&quot;&gt;FindBar Tweak&lt;/a&gt;
+      &lt;a href=&quot;https://addons.mozilla.org/en-US/firefox/addon/capture-print/?src=search&quot;&gt;Capture &amp; Print&lt;/a&gt;
     &lt;/td&gt;
     
     &lt;td&gt;
-      FindBar Tweak fará sua barra de pesquisa funcionar!
+      Capture &amp; Print permite capturar uma área da página e salvá-la em disco ou enviar para impressora
     &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
@@ -930,9 +839,25 @@ Use com moderação! &amp;lt;img src=&amp;quot;http://blog.gilbertoca.com/wp-inc
 	&lt;p&gt;&lt;a href=&quot;http://www.eclipse.org/jetty/&quot;&gt;Jetty &lt;/a&gt;é um servidor web excelente. É rápido para iniciar o que o torna muito útil durante o desenvolvimento. A &lt;a href=&quot;http://maven.apache.org/what-is-maven.html&quot;&gt;ferramente de construção Maven&lt;/a&gt; possui um &lt;a href=&quot;http://wiki.eclipse.org/Jetty/Feature/Jetty_Maven_Plugin&quot;&gt;plugin Jetty&lt;/a&gt; que podemos usar em nossos projetos de aplicação Web que utilizam Maven. Desta forma, podemos usar o Jetty para testar nossos arquivos HTML/JSP/JSF/Wicket/Click/etc. Podemos editar o arquivo JSP/HTML e atualizar nosso navegador para ver o resultado imediatamente. Podemos até mesmo compilar um arquivo de classe Java e o servidor Jetty irá reiniciar para que possamos testar o resultado no nosso navegador.&lt;br/&gt;Vejamos como configurar o &lt;a href=&quot;http://www.eclipse.org/jetty/&quot;&gt;Jetty&lt;/a&gt;, utilizando como IDE o &lt;a href=&quot;http://www.netbeans.org&quot;&gt;Netbeans 6.9&lt;/a&gt; (deve funcionar para outras versões também!), para executar e principalmente para depurar (Debugging) a aplicação:&lt;br/&gt;&lt;strong&gt;requisito: ser uma aplicação web gerenciada pelo Maven.&lt;/strong&gt; &lt;/p&gt;
 &lt;ol&gt;
   &lt;li&gt;Primeiro vamos habilitar a função Compilar ao Salvar (&lt;a href=&quot;http://wiki.netbeans.org/FaqCompileOnSave#Using_Compile_on_Save_in_Maven_Projects&quot;&gt;Compile On Save&lt;/a&gt;) em nosso projeto. Esta função vem habilitada somente para execução de testes em projetos gerenciados pelo Maven, aqui estamos ajustando para execução do fonte também:&lt;br/&gt;&lt;a href=&quot;http://blog.gilbertoca.com/img/uploads/CompileOnSave.png&quot;&gt;&lt;img src=&quot;http://blog.gilbertoca.com/img/uploads/CompileOnSave.png&quot;  title=&quot;CompileOnSave&quot; width=&quot;804&quot; height=&quot;563&quot; class=&quot;alignright size-full wp-image-701&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Adicione o &lt;a href=&quot;http://wiki.eclipse.org/Jetty/Feature/Jetty_Maven_Plugin&quot;&gt;plugin jetty&lt;/a&gt; para o maven; &lt;div class=&quot;wp_syntax&quot;&gt;  &lt;table&gt; &lt;tr&gt;  &lt;td class=&quot;code&quot;&gt;  &lt;pre class=&quot;xml&quot; style=&quot;font-family:monospace;&quot;&gt; &lt;span style=&quot;color: #009900;&quot;&gt;&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;&amp;lt;plugin&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;  &lt;span style=&quot;color: #009900;&quot;&gt;&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;&amp;lt;groupId&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;org.mortbay.jetty&lt;span style=&quot;color: #009900;&quot;&gt;&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;&amp;lt;/groupId&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;  &lt;span style=&quot;color: #009900;&quot;&gt;&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;&amp;lt;artifactId&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;jetty-maven-plugin&lt;span style=&quot;color: #009900;&quot;&gt;&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;&amp;lt;/artifactId&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;  &lt;span style=&quot;color: #009900;&quot;&gt;&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;&amp;lt;version&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;7.0.1.v20091125&lt;span style=&quot;color: #009900;&quot;&gt;&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;&amp;lt;/version&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;  &lt;span style=&quot;color: #009900;&quot;&gt;&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;&amp;lt;configuration&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;  &lt;span style=&quot;color: #808080; font-style: italic;&quot;&gt;&amp;lt;!--reload&amp;gt;manual&amp;lt;/reload--&amp;gt;&lt;/span&gt;  &lt;span style=&quot;color: #009900;&quot;&gt;&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;&amp;lt;scanIntervalSeconds&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;10&lt;span style=&quot;color: #009900;&quot;&gt;&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;&amp;lt;/scanIntervalSeconds&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;  &lt;span style=&quot;color: #009900;&quot;&gt;&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;&amp;lt;stopKey&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;foo&lt;span style=&quot;color: #009900;&quot;&gt;&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;&amp;lt;/stopKey&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;  &lt;span style=&quot;color: #009900;&quot;&gt;&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;&amp;lt;stopPort&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;9966&lt;span style=&quot;color: #009900;&quot;&gt;&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;&amp;lt;/stopPort&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;  &lt;span style=&quot;color: #009900;&quot;&gt;&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;&amp;lt;/configuration&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;  &lt;span style=&quot;color: #009900;&quot;&gt;&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;&amp;lt;/plugin&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;  &lt;/td&gt; &lt;/tr&gt;  &lt;/table&gt; &lt;/div&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;p&gt;Abra a janela de propriedades do projeto Maven e selecione Ações(Actions) da lista de categorias (Categories). Encontre a ação Executar (Run) e altere o valor do campo Metas de Execução (Execute Goals) para &lt;bold&gt;jetty:stop jetty:run&lt;/bold&gt;;&lt;br/&gt;&lt;a href=&quot;http://blog.gilbertoca.com/img/uploads/ActionRunExecuteGoals.png&quot;&gt;&lt;img src=&quot;http://blog.gilbertoca.com/img/uploads/ActionRunExecuteGoals.png&quot;  title=&quot;ActionRunExecuteGoals&quot; width=&quot;752&quot; height=&quot;580&quot; class=&quot;alignright size-full wp-image-687&quot; /&gt;&lt;/a&gt; &lt;/p&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;p&gt;Então, faça o mesmo para ação Depurar Projeto(Debug project)&lt;br/&gt;e adicione as seguintes propriedades:&lt;/p&gt; &lt;div class=&quot;wp_syntax&quot;&gt;  &lt;table&gt;  &lt;tr&gt;  &lt;td class=&quot;code&quot;&gt;  &lt;pre class=&quot;vim&quot; style=&quot;font-family:monospace;&quot;&gt;&amp;nbsp; jpda&lt;span style=&quot;color: #000000;&quot;&gt;.&lt;/span&gt;listen=maven netbeans&lt;span style=&quot;color: #000000;&quot;&gt;.&lt;/span&gt;deploy&lt;span style=&quot;color: #000000;&quot;&gt;.&lt;/span&gt;debugmode=true&lt;/pre&gt;  &lt;/td&gt;  &lt;/tr&gt;  &lt;/table&gt; &lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://blog.gilbertoca.com/img/uploads/ActionDebugExecuteGoals.png&quot;&gt;&lt;img src=&quot;http://blog.gilbertoca.com/img/uploads/ActionDebugExecuteGoals.png&quot;  title=&quot;ActionDebugExecuteGoals&quot; width=&quot;760&quot; height=&quot;589&quot; class=&quot;alignright size-full wp-image-689&quot; /&gt;&lt;/a&gt; &lt;/li&gt; &lt;/ol&gt; &lt;/p&gt;&lt;p&gt;O legal é poder depurar a aplicação web.&lt;br/&gt;Pronto!! &lt;img src=&quot;http://blog.gilbertoca.com/wp-includes/images/smilies/icon_smile.gif&quot; alt=&quot;:)&quot; class=&quot;wp-smiley&quot; /&gt; &lt;/p&gt;&lt;p&gt;Referências:&lt;/p&gt;
+  &lt;li&gt;Adicione o &lt;a href=&quot;http://wiki.eclipse.org/Jetty/Feature/Jetty_Maven_Plugin&quot;&gt;plugin jetty&lt;/a&gt; para o maven;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;Xml&quot;&gt;&amp;lt;plugin&amp;gt;
+    &amp;lt;groupId&amp;gt;org.mortbay.jetty&amp;lt;/groupId&amp;gt;
+    &amp;lt;artifactId&amp;gt;jetty-maven-plugin&amp;lt;/artifactId&amp;gt;
+    &amp;lt;version&amp;gt;7.0.1.v20091125&amp;lt;/version&amp;gt;
+    &amp;lt;configuration&amp;gt;  
+        &amp;lt;!--reload&amp;gt;manual&amp;lt;/reload--&amp;gt;
+        &amp;lt;scanIntervalSeconds&amp;gt;10&amp;lt;/scanIntervalSeconds&amp;gt;
+        &amp;lt;stopKey&amp;gt;foo&amp;lt;/stopKey&amp;gt;
+        &amp;lt;stopPort&amp;gt;9966&amp;lt;/stopPort&amp;gt;
+    &amp;lt;/configuration&amp;gt;
+&amp;lt;/plugin&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol&gt;
+  &lt;li&gt;Abra a janela de propriedades do projeto Maven e selecione Ações(Actions) da lista de categorias (Categories). Encontre a ação Executar (Run) e altere o valor do campo Metas de Execução (Execute Goals) para &lt;bold&gt;jetty:stop jetty:run&lt;/bold&gt;;&lt;br/&gt;&lt;a href=&quot;http://blog.gilbertoca.com/img/uploads/ActionRunExecuteGoals.png&quot;&gt;&lt;img src=&quot;http://blog.gilbertoca.com/img/uploads/ActionRunExecuteGoals.png&quot;  title=&quot;ActionRunExecuteGoals&quot; width=&quot;752&quot; height=&quot;580&quot; class=&quot;alignright size-full wp-image-687&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;Então, faça o mesmo para ação Depurar Projeto(Debug project)&lt;br/&gt;e adicione as seguintes propriedades:&lt;/p&gt;
+  &lt;pre&gt;&lt;code class=&quot;Shell&quot;&gt;jpda.listen=maven netbeans.deploy.debugmode=true
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;a href=&quot;http://blog.gilbertoca.com/img/uploads/ActionDebugExecuteGoals.png&quot;&gt;&lt;img src=&quot;http://blog.gilbertoca.com/img/uploads/ActionDebugExecuteGoals.png&quot;  title=&quot;ActionDebugExecuteGoals&quot; width=&quot;760&quot; height=&quot;589&quot; class=&quot;alignright size-full wp-image-689&quot; /&gt;&lt;/a&gt; &lt;/li&gt; &lt;/ol&gt; &lt;/p&gt;&lt;p&gt;O legal é poder depurar a aplicação web.&lt;br/&gt;Pronto!! &lt;img src=&quot;http://blog.gilbertoca.com/wp-includes/images/smilies/icon_smile.gif&quot; alt=&quot;:)&quot; class=&quot;wp-smiley&quot; /&gt; &lt;/p&gt;&lt;p&gt;Referências:&lt;/p&gt;
   &lt;ul&gt;
     &lt;li&gt;&lt;a href=&quot;https://cwiki.apache.org/WICKET/maven-jetty-plugin.html&quot;&gt;Using the Maven Jetty plugin - Wicket&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;http://mrhaki.blogspot.com/2009/02/use-jetty-to-run-maven-web-applications.html&quot;&gt;Use Jetty to run Maven web applications in NetBeans&lt;/a&gt;&lt;/li&gt;
@@ -2087,15 +2012,6 @@ alfa:&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span
 	</description>
     </item>
     <item>
-      <title>Uma Questão Por Dia[000]+Análise </title>
-      <link>http://blog.gilbertoca.com/2010/01/uma-questao-por-dia000analise.html</link>
-      <pubDate>Qua, 13 jan 2010 00:00:00 -0300</pubDate>
-      <guid isPermaLink="false">2010/01/uma-questao-por-dia000analise.html</guid>
-      	<description>
-	&lt;p&gt;A análise é mais precisamente na maneira que venho estudando e qual o resultado. Com &lt;a href=&quot;http://blog.gilbertoca.com/?p=205&quot;&gt;a pausa do projeto&lt;/a&gt; resolvi fazer o &lt;a href=&quot;http://www.cursoparaconcursos.com.br&quot;&gt;curso Reta Final para Auditor Fiscal da Receita Federal&lt;/a&gt; oferecido pela rede &lt;a href=&quot;http://www.lfg.com.br&quot;&gt;LFG&lt;/a&gt;. Senti que estudando depois de 8 horas trabalho, em casa com filho e esposa, não era a melhor opção. O curso foi puxado e exigiu mais que dedicação, precisava ser mais organizado devido a quantidade de material que recebia. Já estava fazendo o Curso Regular há algum tempo, desde o segundo semestre de 2007/02, mas cometia o mesmo erro que cometi nestes últimos meses de preparação para o concurso: não praticar. No curso Reta Final não conseguia responder a bateria de questões que cada professor disponibilizava toda quarta-feira. Não conseguia ou não tinha capacidade para respondê-las! Nas aulas do Curso Regular entendia a matéria e os exercícios das aulas conseguia resolver, mas nos simulados, em casa procurando resolvê-los sozinho não tive o mesmo desempenho, parece que estava bloqueado, engessado!&lt;br/&gt;Durante as provas, nas disciplinas que exigiam astúcia e cálculo rápido, lembrava do assunto mas faltava a agilidade para resolver as questões.&lt;br/&gt;Senti um imenso peso depois que corrigi os gabaritos, vi o quanto fui negligente com meus estudos e como estava me enganando.&lt;br/&gt;Fiquei alguns dias com um amargo na boca, não conseguia entender que depois de tanto tempo estudando pude ter um fraco desempenho nas principais disciplinas para essa área fiscal. Não fosse minha família, colegas de cursinho e meus irmãos em Cristo teria desistido ou ao menos parado por um tempo.&lt;br/&gt;Não vou falar nas disciplinas que surgiram neste concurso pois sabia que não conseguiria cobrir todo o programa. Vamos ver o desempenho: &lt;a href=&quot;http://blog.gilbertoca.com/tools/acervo/questoespordia/ResultadoAFRFB2009.odt&quot;&gt;ResultadoAFRFB2009 &lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Fique a vontade para usar o arquivo como modelo para a sua análise.&lt;/p&gt;
-	</description>
-    </item>
-    <item>
       <title>Oracle IAS [An error occurred while talking to OPMN. Could not find entity for]</title>
       <link>http://blog.gilbertoca.com/2009/10/oracle-ias-an-error-occurred-while-talking-to-opmn-could-not-find-entity-for.html</link>
       <pubDate>Seg, 19 out 2009 00:00:00 -0300</pubDate>
@@ -2192,177 +2108,6 @@ O volume e: NÃO está sujo.
 	</description>
     </item>
     <item>
-      <title>Uma Questão Por Dia [026] + Pausa </title>
-      <link>http://blog.gilbertoca.com/2009/08/uma-questao-por-dia-026-pausa.html</link>
-      <pubDate>Sáb, 29 ago 2009 00:00:00 -0300</pubDate>
-      <guid isPermaLink="false">2009/08/uma-questao-por-dia-026-pausa.html</guid>
-      	<description>
-	&lt;p&gt;A pausa é consequência da “chuva” de boatos sobre o conteúdo do edital para o concurso de Auditor Fiscal da Receita Federal do Brasil. Diante da iminente &lt;a href=&quot;http://www.euvoupassar.com.br/visao/artigos/completa.php?id=1969&quot;&gt;possibilidade&lt;/a&gt; de mudanças nas disciplinas do edital - saem matemática financeira, estatística, economia e direito internacional e entram direito civil e empresarial - resolvi interromper as postagens diárias e focar nas disciplinas básicas: &lt;strong&gt;Português, Direito Constitucional, Administrativo, Tributário e Contabilidade&lt;/strong&gt;. &lt;/p&gt;
-&lt;blockquote&gt;&lt;p&gt;&lt;a href=&quot;http://blog.gilbertoca.com/tools/acervo/questoespordia/[026]-mat-est-eco-cont-inf.odt&quot;&gt;# Uma Questão por Dia # mat-est-eco-cont-inf # N. [026] &lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;&lt;p&gt;O que quer dizer: &lt;a href=&quot;http://blog.gilbertoca.com/?page_id=44&quot;&gt;Uma Questão por Dia?&lt;/a&gt;&lt;/p&gt;
-	</description>
-    </item>
-    <item>
-      <title>Uma Questão Por Dia [025] </title>
-      <link>http://blog.gilbertoca.com/2009/08/uma-questao-por-dia-025.html</link>
-      <pubDate>Ter, 25 ago 2009 00:00:00 -0300</pubDate>
-      <guid isPermaLink="false">2009/08/uma-questao-por-dia-025.html</guid>
-      	<description>
-	&lt;blockquote&gt;&lt;p&gt;&lt;a href=&quot;http://blog.gilbertoca.com/tools/acervo/questoespordia/[025]-mat-est-eco-cont-inf.odt&quot;&gt;# Uma Questão por Dia # mat-est-eco-cont-inf # N. [025] &lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;&lt;p&gt;O que quer dizer: &lt;a href=&quot;http://blog.gilbertoca.com/?page_id=44&quot;&gt;Uma Questão por Dia?&lt;/a&gt;&lt;/p&gt;
-	</description>
-    </item>
-    <item>
-      <title>Uma Questão Por Dia [024] </title>
-      <link>http://blog.gilbertoca.com/2009/08/uma-questao-por-dia-024.html</link>
-      <pubDate>Seg, 24 ago 2009 00:00:00 -0300</pubDate>
-      <guid isPermaLink="false">2009/08/uma-questao-por-dia-024.html</guid>
-      	<description>
-	&lt;blockquote&gt;&lt;p&gt;&lt;a href=&quot;http://blog.gilbertoca.com/tools/acervo/questoespordia/[024]-mat-est-eco-cont-inf.odt&quot;&gt;# Uma Questão por Dia # mat-est-eco-cont-inf # N. [024] &lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;&lt;p&gt;O que quer dizer: &lt;a href=&quot;http://blog.gilbertoca.com/?page_id=44&quot;&gt;Uma Questão por Dia?&lt;/a&gt;&lt;/p&gt;
-	</description>
-    </item>
-    <item>
-      <title>Uma Questão Por Dia [023] </title>
-      <link>http://blog.gilbertoca.com/2009/08/uma-questao-por-dia-023.html</link>
-      <pubDate>Sáb, 22 ago 2009 00:00:00 -0300</pubDate>
-      <guid isPermaLink="false">2009/08/uma-questao-por-dia-023.html</guid>
-      	<description>
-	&lt;blockquote&gt;&lt;p&gt;&lt;a href=&quot;http://blog.gilbertoca.com/tools/acervo/questoespordia/[023]-mat-est-eco-cont-inf.odt&quot;&gt;# Uma Questão por Dia # mat-est-eco-cont-inf # N. [023] &lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;&lt;p&gt;O que quer dizer: &lt;a href=&quot;http://blog.gilbertoca.com/?page_id=44&quot;&gt;Uma Questão por Dia?&lt;/a&gt;&lt;/p&gt;
-	</description>
-    </item>
-    <item>
-      <title>Uma Questão Por Dia [022] </title>
-      <link>http://blog.gilbertoca.com/2009/08/uma-questao-por-dia-022.html</link>
-      <pubDate>Ter, 18 ago 2009 00:00:00 -0300</pubDate>
-      <guid isPermaLink="false">2009/08/uma-questao-por-dia-022.html</guid>
-      	<description>
-	&lt;blockquote&gt;&lt;p&gt;&lt;a href=&quot;http://blog.gilbertoca.com/tools/acervo/questoespordia/[022]-mat-est-eco-cont-inf.odt&quot;&gt;# Uma Questão por Dia # mat-est-eco-cont-inf # N. [022] &lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;&lt;p&gt;O que quer dizer: &lt;a href=&quot;http://blog.gilbertoca.com/?page_id=44&quot;&gt;Uma Questão por Dia?&lt;/a&gt;&lt;/p&gt;
-	</description>
-    </item>
-    <item>
-      <title>Uma Questão Por Dia [021] </title>
-      <link>http://blog.gilbertoca.com/2009/08/uma-questao-por-dia-021.html</link>
-      <pubDate>Seg, 17 ago 2009 00:00:00 -0300</pubDate>
-      <guid isPermaLink="false">2009/08/uma-questao-por-dia-021.html</guid>
-      	<description>
-	&lt;blockquote&gt;&lt;p&gt;&lt;a href=&quot;http://blog.gilbertoca.com/tools/acervo/questoespordia/[021]-mat-est-eco-cont-inf.odt&quot;&gt;# Uma Questão por Dia # mat-est-eco-cont-inf # N. [021] &lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;&lt;p&gt;O que quer dizer: &lt;a href=&quot;http://blog.gilbertoca.com/?page_id=44&quot;&gt;Uma Questão por Dia?&lt;/a&gt;&lt;/p&gt;
-	</description>
-    </item>
-    <item>
-      <title>Uma Questão Por Dia [020] </title>
-      <link>http://blog.gilbertoca.com/2009/08/uma-questao-por-dia-020.html</link>
-      <pubDate>Sex, 14 ago 2009 00:00:00 -0300</pubDate>
-      <guid isPermaLink="false">2009/08/uma-questao-por-dia-020.html</guid>
-      	<description>
-	&lt;blockquote&gt;&lt;p&gt;&lt;a href=&quot;http://blog.gilbertoca.com/tools/acervo/questoespordia/[020]-mat-est-eco-cont-inf.odt&quot;&gt;# Uma Questão por Dia # mat-est-eco-cont-inf # N. [020] &lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;&lt;p&gt;O que quer dizer: &lt;a href=&quot;http://blog.gilbertoca.com/?page_id=44&quot;&gt;Uma Questão por Dia?&lt;/a&gt;&lt;/p&gt;
-	</description>
-    </item>
-    <item>
-      <title>Ciclo Intermediário - Área Fiscal </title>
-      <link>http://blog.gilbertoca.com/2009/08/ciclo-intermediario-area-fiscal.html</link>
-      <pubDate>Qua, 12 ago 2009 00:00:00 -0300</pubDate>
-      <guid isPermaLink="false">2009/08/ciclo-intermediario-area-fiscal.html</guid>
-      	<description>
-	&lt;p&gt;&lt;a href=&quot;http://blog.gilbertoca.com/tools/acervo/questoespordia/ciclo_estudos_24h.odt&quot;&gt;Este é o ciclo que atualmente adoto&lt;/a&gt;, procuro ajustá-lo conforme meu horário (8h diárias) de trabalho e cursinho (3.5h a noite). A idéia é interessante mas inicialmente difícil de incorporar e requer disciplina para não desistir da estratégia. Para você saber mais sobre o assunto leia o &lt;a href=&quot;http://www.cursoparaconcursos.com.br/index.php?s=1&amp;#038;m=eva_conteudo&amp;#038;a=&amp;#038;u=&amp;#038;tipo=exibir&amp;#038;modo=item&amp;#038;it_cod=31118&quot;&gt;Manual do Concurso do Prof. Alexandre Meirelles&lt;/a&gt;.&lt;br/&gt;Espero este exemplo ajude e que os companheiros de jornada colaborem com correção, dicas e comentários. &lt;/p&gt;
-	</description>
-    </item>
-    <item>
-      <title>Uma Questão Por Dia [019] </title>
-      <link>http://blog.gilbertoca.com/2009/08/uma-questao-por-dia-019.html</link>
-      <pubDate>Ter, 11 ago 2009 00:00:00 -0300</pubDate>
-      <guid isPermaLink="false">2009/08/uma-questao-por-dia-019.html</guid>
-      	<description>
-	&lt;blockquote&gt;&lt;p&gt;&lt;a href=&quot;http://blog.gilbertoca.com/tools/acervo/questoespordia/[019]-mat-est-eco-cont-inf.odt&quot;&gt;# Uma Questão por Dia # mat-est-eco-cont-inf # N. [019] &lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;&lt;p&gt;O que quer dizer: &lt;a href=&quot;http://blog.gilbertoca.com/?page_id=44&quot;&gt;Uma Questão por Dia?&lt;/a&gt;&lt;/p&gt;
-	</description>
-    </item>
-    <item>
-      <title>Uma Questão Por Dia [018] </title>
-      <link>http://blog.gilbertoca.com/2009/08/uma-questao-por-dia-018.html</link>
-      <pubDate>Sex, 7 ago 2009 00:00:00 -0300</pubDate>
-      <guid isPermaLink="false">2009/08/uma-questao-por-dia-018.html</guid>
-      	<description>
-	&lt;p&gt;Devo confessar que não estou conseguindo comentar estes pequenos simulados. Gasto muito tempo para comentá-los e isso está me atrapalhando. Vou continuar postando apenas as questões com o gabarito, mas sem os meus comentários. &lt;/p&gt;
-&lt;blockquote&gt;&lt;p&gt;&lt;a href=&quot;http://blog.gilbertoca.com/tools/acervo/questoespordia/[018]-mat-est-eco-cont-inf.odt&quot;&gt;# Uma Questão por Dia # mat-est-eco-cont-inf # N. [018] &lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;&lt;p&gt;O que quer dizer: &lt;a href=&quot;http://blog.gilbertoca.com/?page_id=44&quot;&gt;Uma Questão por Dia?&lt;/a&gt;&lt;/p&gt;
-	</description>
-    </item>
-    <item>
-      <title>Uma Questão Por Dia [017] </title>
-      <link>http://blog.gilbertoca.com/2009/07/uma-questao-por-dia-017.html</link>
-      <pubDate>Sex, 31 jul 2009 00:00:00 -0300</pubDate>
-      <guid isPermaLink="false">2009/07/uma-questao-por-dia-017.html</guid>
-      	<description>
-	&lt;blockquote&gt;&lt;p&gt;&lt;a href=&quot;http://blog.gilbertoca.com/tools/acervo/questoespordia/[017]-mat-est-eco-cont-inf.odt&quot;&gt;# Uma Questão por Dia # mat-est-eco-cont-inf # N. [017] &lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;&lt;p&gt;O que quer dizer: &lt;a href=&quot;http://blog.gilbertoca.com/?page_id=44&quot;&gt;Uma Questão por Dia?&lt;/a&gt;&lt;/p&gt;
-	</description>
-    </item>
-    <item>
-      <title>Uma Questão Por Dia [016] </title>
-      <link>http://blog.gilbertoca.com/2009/07/uma-questao-por-dia-016.html</link>
-      <pubDate>Qui, 30 jul 2009 00:00:00 -0300</pubDate>
-      <guid isPermaLink="false">2009/07/uma-questao-por-dia-016.html</guid>
-      	<description>
-	&lt;p&gt;O primeiro usando &lt;a href=&quot;http://blog.gilbertoca.com/?p=151&quot;&gt;a nova estratégia&lt;/a&gt;. Quando postar o próximo, este aqui estará com o gabarito.&lt;/p&gt;
-&lt;blockquote&gt;&lt;p&gt;&lt;a href=&quot;http://blog.gilbertoca.com/tools/acervo/questoespordia/[016]-mat-est-eco-cont-inf.odt&quot;&gt;# Uma Questão por Dia # mat-est-eco-cont-inf # N. [016] &lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;&lt;p&gt;O que quer dizer: &lt;a href=&quot;http://blog.gilbertoca.com/?page_id=44&quot;&gt;Uma Questão por Dia?&lt;/a&gt;&lt;/p&gt;
-	</description>
-    </item>
-    <item>
-      <title>Uma Questão Por Dia [mudança de estratégia] </title>
-      <link>http://blog.gilbertoca.com/2009/07/uma-questao-por-dia-mudanca-de-estrategia.html</link>
-      <pubDate>Qua, 29 jul 2009 00:00:00 -0300</pubDate>
-      <guid isPermaLink="false">2009/07/uma-questao-por-dia-mudanca-de-estrategia.html</guid>
-      	<description>
-	&lt;p&gt;Resolvi mudar a maneira de postar &lt;a href=&quot;http://blog.gilbertoca.com/?page_id=44&quot;&gt;estas questões&lt;/a&gt;. Até este momento elaborava as questões, disponibilizava o documento imediatamente e no decorrer da semana tentava resolver. Mas não estava dando certo! A semana passada tentei outra estratégia: elaborar o documento com as questões, postar e no intervalo de elaborar outro documento, responder e comentar. A principal mudança é realizar a postagem de um outro somente quando terminar de responder/comentar &lt;strong&gt;o último postado&lt;/strong&gt;, assim, sempre haverá um documento com gabarito e comentários. Não esqueça que &lt;strong&gt;o último postado&lt;/strong&gt; não conterá gabarito ou comentário. Não entendeu? Vou exemplificar:&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;segunda-feira: sai um documento quentinho sem gabarito;&lt;/li&gt;
-  &lt;li&gt;você, eu ou quem estiver interessado baixa as questões e procura responder/comentar;&lt;/li&gt;
-  &lt;li&gt;enquanto isso elaboro mais um documento com questões;&lt;/li&gt;
-  &lt;li&gt;terminado de responder/comentar o primeiro, publico o segundo documento sem gabarito e atualizo o primeiro (que agora não mais é &lt;strong&gt;o último postado&lt;/strong&gt;).&lt;/li&gt;
-&lt;/ol&gt;&lt;p&gt;Entenderam?&lt;/p&gt;&lt;p&gt;Aviso ao colegas que por ventura tenham baixado documentos com questões - não continham o gabarito - que os mesmos foram atualizados com o respectivo gabarito. &lt;/p&gt;&lt;p&gt;Mais uma coisa, nós procuramos sempre acertar mas nem sempre isso é possível, peço por gentileza que reportem erros gramaticais, comentário ou gabarito errado.&lt;/p&gt;
-&lt;blockquote&gt;&lt;p&gt;Sinceramente desejo-lhes sucesso e todas as coisas boas.&lt;/p&gt;
-&lt;/blockquote&gt;
-	</description>
-    </item>
-    <item>
-      <title>Uma Questão Por Dia [015] </title>
-      <link>http://blog.gilbertoca.com/2009/07/uma-questao-por-dia-015.html</link>
-      <pubDate>Ter, 28 jul 2009 00:00:00 -0300</pubDate>
-      <guid isPermaLink="false">2009/07/uma-questao-por-dia-015.html</guid>
-      	<description>
-	&lt;blockquote&gt;&lt;p&gt;&lt;a href=&quot;http://blog.gilbertoca.com/tools/acervo/questoespordia/[015]-mat-est-eco-cont-inf.odt&quot;&gt;# Uma Questão por Dia # mat-est-eco-cont-inf # N. [015] &lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;&lt;p&gt;O que quer dizer: &lt;a href=&quot;http://blog.gilbertoca.com/?page_id=44&quot;&gt;Uma Questão por Dia?&lt;/a&gt;&lt;/p&gt;
-	</description>
-    </item>
-    <item>
-      <title>Uma Questão Por Dia [014] </title>
-      <link>http://blog.gilbertoca.com/2009/07/uma-questao-por-dia-014.html</link>
-      <pubDate>Qui, 23 jul 2009 00:00:00 -0300</pubDate>
-      <guid isPermaLink="false">2009/07/uma-questao-por-dia-014.html</guid>
-      	<description>
-	&lt;p&gt;Finalmente consegui comentar as questões, na verdade os comentários não são totalmente meus, mas deixei bem claro nos mesmos &lt;a href=&quot;http://blog.gilbertoca.com/?p=97&quot;&gt;os devidos créditos&lt;/a&gt;.&lt;/p&gt;
-&lt;blockquote&gt;&lt;p&gt;&lt;a href=&quot;http://blog.gilbertoca.com/tools/acervo/questoespordia/[014]-mat-est-eco-cont-inf.odt&quot;&gt;# Uma Questão por Dia # mat-est-eco-cont-inf # N. [014] &lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;&lt;p&gt;O que quer dizer: &lt;a href=&quot;http://blog.gilbertoca.com/?page_id=44&quot;&gt;Uma Questão por Dia?&lt;/a&gt;&lt;/p&gt;
-	</description>
-    </item>
-    <item>
-      <title>Uma Questão Por Dia [009 a 013] </title>
-      <link>http://blog.gilbertoca.com/2009/07/uma-questao-por-dia-009-a-013.html</link>
-      <pubDate>Seg, 20 jul 2009 00:00:00 -0300</pubDate>
-      <guid isPermaLink="false">2009/07/uma-questao-por-dia-009-a-013.html</guid>
-      	<description>
-	&lt;p&gt;Estive mais atarefado nos últimos dias por isso não consegui postar. &lt;/p&gt;
-&lt;blockquote&gt;&lt;p&gt;&lt;a href=&quot;http://blog.gilbertoca.com/tools/acervo/questoespordia/[009]-mat-est-eco-cont-inf.odt&quot;&gt;# Uma Questão por Dia # mat-est-eco-cont-inf # N. [009] &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://blog.gilbertoca.com/tools/acervo/questoespordia/[010]-mat-est-eco-cont-inf.odt&quot;&gt;# Uma Questão por Dia # mat-est-eco-cont-inf # N. [010] &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://blog.gilbertoca.com/tools/acervo/questoespordia/[011]-mat-est-eco-cont-inf.odt&quot;&gt;# Uma Questão por Dia # mat-est-eco-cont-inf # N. [011] &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://blog.gilbertoca.com/tools/acervo/questoespordia/[012]-mat-est-eco-cont-inf.odt&quot;&gt;# Uma Questão por Dia # mat-est-eco-cont-inf # N. [012] &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://blog.gilbertoca.com/tools/acervo/questoespordia/[013]-mat-est-eco-cont-inf.odt&quot;&gt;# Uma Questão por Dia # mat-est-eco-cont-inf # N. [013] &lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;&lt;p&gt;O que quer dizer: &lt;a href=&quot;http://blog.gilbertoca.com/?page_id=44&quot;&gt;Uma Questão por Dia?&lt;/a&gt;&lt;/p&gt;
-	</description>
-    </item>
-    <item>
       <title>Proteja-se Contra Virus(Disable USB Autorun)</title>
       <link>http://blog.gilbertoca.com/2009/07/proteja-se-contra-virusdisable-usb-autorun.html</link>
       <pubDate>Sáb, 18 jul 2009 00:00:00 -0300</pubDate>
@@ -2389,129 +2134,6 @@ O volume e: NÃO está sujo.
         export TERM=xterm
 &lt;/code&gt;
 &lt;/pre&gt;
-	</description>
-    </item>
-    <item>
-      <title>Créditos - Vários professores espalhados pelo Brasil </title>
-      <link>http://blog.gilbertoca.com/2009/06/creditos-varios-professores-espalhados-pelo-brasil.html</link>
-      <pubDate>Seg, 29 jun 2009 00:00:00 -0300</pubDate>
-      <guid isPermaLink="false">2009/06/creditos-varios-professores-espalhados-pelo-brasil.html</guid>
-      	<description>
-	&lt;p&gt;Recentemente iniciei um projeto - &lt;a href=&quot;http://blog.gilbertoca.com/?page_id=44&quot;&gt;Uma Questão por Dia?&lt;/a&gt; - que espero tornar minha vida de concurseiro mais tranquila nas disciplinas que exigem mais cálculo e raciocínio rápido. Neste post registrarei os devidos créditos no trabalho de seleção das questões de concurso direcionadas ao concurso de AFRFB:&lt;/p&gt;
-&lt;table&gt;&lt;p&gt;&lt;tr&gt;  &lt;th&gt;  Professor(a)  &lt;/th&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;th&amp;gt;
-  Referência
-&amp;lt;/th&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/tr&gt;&lt;/p&gt;&lt;p&gt;&lt;tr&gt;  &lt;td&gt;  Sérgio Carvalho  &lt;/td&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;td&amp;gt;
-  &amp;lt;a href=&amp;quot;http://www.euvoupassar.com.br/visao/professores/detalhe.php?professor=1&amp;quot;&amp;gt;Matemática Financeira e Estatística&amp;lt;/a&amp;gt;
-&amp;lt;/td&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/tr&gt;&lt;/p&gt;&lt;p&gt;&lt;tr&gt;  &lt;td&gt;  Ângelo Nogueira  &lt;/td&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;td&amp;gt;
-  &amp;lt;a href=&amp;quot;http://www.curcoparaconcursos.com.br&amp;quot;&amp;gt;Economia&amp;lt;/a&amp;gt;
-&amp;lt;/td&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/tr&gt;&lt;/p&gt;&lt;p&gt;&lt;tr&gt;  &lt;td&gt;  Carlos Ramos  &lt;/td&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;td&amp;gt;
-  &amp;lt;a href=&amp;quot;http://www.curcoparaconcursos.com.br&amp;quot;&amp;gt;Economia&amp;lt;/a&amp;gt;
-&amp;lt;/td&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/tr&gt;&lt;/p&gt;&lt;p&gt;&lt;tr&gt;  &lt;td&gt;  Vanessa Lage  &lt;/td&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;td&amp;gt;
-  &amp;lt;a href=&amp;quot;http://www.curcoparaconcursos.com.br&amp;quot;&amp;gt;Contabilidade&amp;lt;/a&amp;gt;
-&amp;lt;/td&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/tr&gt;&lt;/p&gt;&lt;p&gt;&lt;tr&gt;  &lt;td&gt;  Germana Chaves  &lt;/td&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;td&amp;gt;
-  &amp;lt;a href=&amp;quot;http://www.euvoupassar.com.br/visao/professores/detalhe.php?professor=13&amp;quot;&amp;gt;Contabilidade&amp;lt;/a&amp;gt;
-&amp;lt;/td&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/tr&gt;&lt;/p&gt;&lt;p&gt;&lt;tr&gt;  &lt;td&gt;  João Antônio  &lt;/td&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;td&amp;gt;
-  &amp;lt;a href=&amp;quot;http://www.euvoupassar.com.br/visao/professores/detalhe.php?professor=2&amp;quot;&amp;gt;Informática&amp;lt;/a&amp;gt;
-&amp;lt;/td&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/tr&gt;&lt;/p&gt;&lt;p&gt;&lt;tr&gt;  &lt;td&gt;  Bruno Guilhen  &lt;/td&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;td&amp;gt;
-  &amp;lt;a href=&amp;quot;http://www.brunoguilhen.com.br/&amp;quot;&amp;gt;Informática&amp;lt;/a&amp;gt;
-&amp;lt;/td&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/tr&gt;&lt;/p&gt;&lt;p&gt;&lt;table&gt;&lt;/p&gt;
-	</description>
-    </item>
-    <item>
-      <title>Uma Questão por Dia [008] </title>
-      <link>http://blog.gilbertoca.com/2009/06/uma-questao-por-dia-008.html</link>
-      <pubDate>Seg, 29 jun 2009 00:00:00 -0300</pubDate>
-      <guid isPermaLink="false">2009/06/uma-questao-por-dia-008.html</guid>
-      	<description>
-	&lt;blockquote&gt;&lt;p&gt;&lt;a href=&quot;http://blog.gilbertoca.com/tools/acervo/questoespordia/[008]-mat-est-eco-cont-inf.odt&quot;&gt;# Uma Questão por Dia # mat-est-eco-cont-inf # N. [008] &lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;&lt;p&gt;O que quer dizer: &lt;a href=&quot;http://blog.gilbertoca.com/?page_id=44&quot;&gt;Uma Questão por Dia?&lt;/a&gt;&lt;/p&gt;
-	</description>
-    </item>
-    <item>
-      <title>Uma Questão por Dia [006] </title>
-      <link>http://blog.gilbertoca.com/2009/06/uma-questao-por-dia-006.html</link>
-      <pubDate>Ter, 23 jun 2009 00:00:00 -0300</pubDate>
-      <guid isPermaLink="false">2009/06/uma-questao-por-dia-006.html</guid>
-      	<description>
-	&lt;blockquote&gt;&lt;p&gt;&lt;a href=&quot;http://blog.gilbertoca.com/tools/acervo/questoespordia/2009-06-22-mat-est-eco-cont-inf.odt&quot;&gt;# Uma Questão por Dia # mat-est-eco-cont-inf # N. [006] # [22/06/2009]&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;&lt;p&gt;O que quer dizer: &lt;a href=&quot;http://blog.gilbertoca.com/?page_id=44&quot;&gt;Uma Questão por Dia&lt;/a&gt;?&lt;/p&gt;
-	</description>
-    </item>
-    <item>
-      <title>Uma Questão por Dia [007] </title>
-      <link>http://blog.gilbertoca.com/2009/06/uma-questao-por-dia-007.html</link>
-      <pubDate>Ter, 23 jun 2009 00:00:00 -0300</pubDate>
-      <guid isPermaLink="false">2009/06/uma-questao-por-dia-007.html</guid>
-      	<description>
-	&lt;blockquote&gt;&lt;p&gt;&lt;a href=&quot;http://blog.gilbertoca.com/tools/acervo/questoespordia/2009-06-23-mat-est-eco-cont-inf.odt&quot;&gt;# Uma Questão por Dia # mat-est-eco-cont-inf # N. [007] # [23/06/2009]&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;&lt;p&gt;O que quer dizer: &lt;a href=&quot;http://blog.gilbertoca.com/?page_id=44&quot;&gt;Uma Questão por Dia?&lt;/a&gt;&lt;/p&gt;
-	</description>
-    </item>
-    <item>
-      <title>Uma Questão por Dia [005] </title>
-      <link>http://blog.gilbertoca.com/2009/06/uma-questao-por-dia-005.html</link>
-      <pubDate>Sex, 19 jun 2009 00:00:00 -0300</pubDate>
-      <guid isPermaLink="false">2009/06/uma-questao-por-dia-005.html</guid>
-      	<description>
-	&lt;blockquote&gt;&lt;p&gt;&lt;a href=&quot;http://blog.gilbertoca.com/tools/acervo/questoespordia/2009-06-19-mat-est-eco-cont-inf.odt&quot;&gt;# Uma Questão por Dia # mat-est-eco-cont-inf # N. [005] # [19/06/2009]&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;&lt;p&gt;O que quer dizer: &lt;a href=&quot;http://blog.gilbertoca.com/?page_id=44&quot;&gt;Uma Questão por Dia&lt;/a&gt;?&lt;/p&gt;
-	</description>
-    </item>
-    <item>
-      <title>Uma Questão por Dia [004] </title>
-      <link>http://blog.gilbertoca.com/2009/06/uma-questao-por-dia-004.html</link>
-      <pubDate>Qui, 18 jun 2009 00:00:00 -0300</pubDate>
-      <guid isPermaLink="false">2009/06/uma-questao-por-dia-004.html</guid>
-      	<description>
-	&lt;blockquote&gt;&lt;p&gt;&lt;a href=&quot;http://blog.gilbertoca.com/tools/acervo/questoespordia/2009-06-18-mat-est-eco-cont-inf.odt&quot;&gt;# Uma Questão por Dia # mat-est-eco-cont-inf # N. [004] # [18/06/2009]&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;&lt;p&gt;O que quer dizer: &lt;a href=&quot;http://blog.gilbertoca.com/?page_id=44&quot;&gt;Uma Questão por Dia&lt;/a&gt;?&lt;/p&gt;
-	</description>
-    </item>
-    <item>
-      <title>Uma Questão por Dia [003] </title>
-      <link>http://blog.gilbertoca.com/2009/06/uma-questao-por-dia-003.html</link>
-      <pubDate>Qua, 17 jun 2009 00:00:00 -0300</pubDate>
-      <guid isPermaLink="false">2009/06/uma-questao-por-dia-003.html</guid>
-      	<description>
-	&lt;blockquote&gt;&lt;p&gt;&lt;a href=&quot;http://blog.gilbertoca.com/tools/acervo/questoespordia/2009-06-17-mat-est-eco-cont-inf.odt&quot;&gt;# Uma Questão por Dia # mat-est-eco-cont-inf # N. [003] # [17/06/2009]&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;&lt;p&gt;O que quer dizer: &lt;a href=&quot;http://blog.gilbertoca.com/?page_id=44&quot;&gt;Uma Questão por Dia&lt;/a&gt;?&lt;/p&gt;
-	</description>
-    </item>
-    <item>
-      <title>Uma Questão por Dia [002] </title>
-      <link>http://blog.gilbertoca.com/2009/06/uma-questao-por-dia.html</link>
-      <pubDate>Ter, 16 jun 2009 00:00:00 -0300</pubDate>
-      <guid isPermaLink="false">2009/06/uma-questao-por-dia.html</guid>
-      	<description>
-	&lt;blockquote&gt;&lt;p&gt;&lt;a href=&quot;http://blog.gilbertoca.com/tools/acervo/questoespordia/2009-06-16-mat-est-eco-cont-inf.odt&quot;&gt;# Uma Questão por Dia # mat-est-eco-cont-inf # N. [002] # [16/06/2009]&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;&lt;p&gt;O que quer dizer: &lt;a href=&quot;http://blog.gilbertoca.com/?page_id=44&quot;&gt;Uma Questão por Dia&lt;/a&gt;?&lt;/p&gt;
-	</description>
-    </item>
-    <item>
-      <title>Já começou! Essa jornada só pára com a conquista (aprovação).</title>
-      <link>http://blog.gilbertoca.com/2009/06/ja-comecou-essa-jornada-so-para-com-a-conquista-aprovacao.html</link>
-      <pubDate>Dom, 14 jun 2009 00:00:00 -0300</pubDate>
-      <guid isPermaLink="false">2009/06/ja-comecou-essa-jornada-so-para-com-a-conquista-aprovacao.html</guid>
-      	<description>
-	&lt;p&gt;Já começou! &lt;a href=&quot;http://blog.gilbertoca.com/?page_id=44&quot;&gt;Essa jornada&lt;/a&gt; só pára com a conquista (aprovação).&lt;/p&gt;
-&lt;blockquote&gt;&lt;p&gt;&lt;a href=&quot;http://blog.gilbertoca.com/tools/acervo/questoespordia/2009-06-15-mat-est-eco-cont-inf.odt&quot;&gt;# Uma Questão por Dia # mat-est-eco-cont-inf # N. [001] # [15/062009]&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
 	</description>
     </item>
     <item>
