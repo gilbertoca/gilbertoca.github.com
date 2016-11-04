@@ -18,7 +18,7 @@ Verifique se o driver do touchpad está adequadamente instalado(precisa ser o do
 
 
 <div id="attachment_1116" style="width: 461px" class="wp-caption alignleft">
-  <a href="http://blog.gilbertoca.com/img/uploads/touchpad_propriedades.png"><img src="http://blog.gilbertoca.com/img/uploads/touchpad_propriedades.png" alt="ItautecInfaway7550 touchpad propriedades" width="451" height="466" class="size-full wp-image-1116" /></a>
+  <a href="touchpad_propriedades.png"><img src="touchpad_propriedades.png" alt="ItautecInfaway7550 touchpad propriedades" width="451" height="466" class="size-full wp-image-1116" /></a>
   
   <p class="wp-caption-text">
     ItautecInfaway7550 touchpad propriedades

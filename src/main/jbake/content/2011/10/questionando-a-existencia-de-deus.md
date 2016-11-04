@@ -24,7 +24,7 @@ tags=Deus, Estou lendo e você,  Jesus Cristo, Jornada
 > **<cite><a href="http://www.augustocury.com.br/#/livros">
 > 
 > <div id="attachment_512" style="width: 211px" class="wp-caption alignleft">
->   <img src="http://blog.gilbertoca.com/img/uploads/8_602866001.jpg"  title="mestre da vida" width="201" height="300" class="size-medium wp-image-512" />
+>   <img src="8_602866001.jpg"  title="mestre da vida" width="201" height="300" class="size-medium wp-image-512" />
 >   
 >   <p class="wp-caption-text">
 >     O Mestre da Vida

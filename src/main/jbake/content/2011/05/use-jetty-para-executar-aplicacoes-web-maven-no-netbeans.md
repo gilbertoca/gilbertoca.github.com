@@ -12,7 +12,7 @@ Vejamos como configurar o [Jetty][1], utilizando como IDE o [Netbeans 6.9][4] (d
 **requisito: ser uma aplicação web gerenciada pelo Maven.** 
 
   1. Primeiro vamos habilitar a função Compilar ao Salvar ([Compile On Save][5]) em nosso projeto. Esta função vem habilitada somente para execução de testes em projetos gerenciados pelo Maven, aqui estamos ajustando para execução do fonte também:  
-    [<img src="http://blog.gilbertoca.com/img/uploads/CompileOnSave.png"  title="CompileOnSave" width="804" height="563" class="alignright size-full wp-image-701" />][6] 
+    [<img src="CompileOnSave.png"  title="CompileOnSave" width="804" height="563" class="alignright size-full wp-image-701" />][6] 
   2. Adicione o [plugin jetty][3] para o maven;
 
 ```Xml
@@ -29,7 +29,7 @@ Vejamos como configurar o [Jetty][1], utilizando como IDE o [Netbeans 6.9][4] (d
 </plugin>
 ```
   3. Abra a janela de propriedades do projeto Maven e selecione Ações(Actions) da lista de categorias (Categories). Encontre a ação Executar (Run) e altere o valor do campo Metas de Execução (Execute Goals) para <bold>jetty:stop jetty:run</bold>;  
-    [<img src="http://blog.gilbertoca.com/img/uploads/ActionRunExecuteGoals.png"  title="ActionRunExecuteGoals" width="752" height="580" class="alignright size-full wp-image-687" />][7] 
+    [<img src="ActionRunExecuteGoals.png"  title="ActionRunExecuteGoals" width="752" height="580" class="alignright size-full wp-image-687" />][7] 
   4. Então, faça o mesmo para ação Depurar Projeto(Debug project)  
     e adicione as seguintes propriedades:
 
@@ -37,7 +37,7 @@ Vejamos como configurar o [Jetty][1], utilizando como IDE o [Netbeans 6.9][4] (d
     jpda.listen=maven netbeans.deploy.debugmode=true
     ```
     
-    [<img src="http://blog.gilbertoca.com/img/uploads/ActionDebugExecuteGoals.png"  title="ActionDebugExecuteGoals" width="760" height="589" class="alignright size-full wp-image-689" />][8] </li> </ol> 
+    [<img src="ActionDebugExecuteGoals.png"  title="ActionDebugExecuteGoals" width="760" height="589" class="alignright size-full wp-image-689" />][8] </li> </ol> 
     
     O legal é poder depurar a aplicação web.  
     Pronto!! <img src="http://blog.gilbertoca.com/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" /> 
@@ -54,8 +54,8 @@ Vejamos como configurar o [Jetty][1], utilizando como IDE o [Netbeans 6.9][4] (d
  [3]: http://wiki.eclipse.org/Jetty/Feature/Jetty_Maven_Plugin
  [4]: http://www.netbeans.org
  [5]: http://wiki.netbeans.org/FaqCompileOnSave#Using_Compile_on_Save_in_Maven_Projects
- [6]: http://blog.gilbertoca.com/img/uploads/CompileOnSave.png
- [7]: http://blog.gilbertoca.com/img/uploads/ActionRunExecuteGoals.png
- [8]: http://blog.gilbertoca.com/img/uploads/ActionDebugExecuteGoals.png
+ [6]: CompileOnSave.png
+ [7]: ActionRunExecuteGoals.png
+ [8]: ActionDebugExecuteGoals.png
  [9]: https://cwiki.apache.org/WICKET/maven-jetty-plugin.html
  [10]: http://mrhaki.blogspot.com/2009/02/use-jetty-to-run-maven-web-applications.html

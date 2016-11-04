@@ -19,4 +19,4 @@ Para desabilitar este serviço siga os seguintes passos:
  [1]: http://en.openSUSE.org/KDE/KDE4
  [2]: http://nepomuk.kde.org/
  [3]: http://forum.kde.org/viewtopic.php?f=20&#038;t=83054&#038;start=10
- [4]: http://blog.gilbertoca.com/img/uploads/DesktopSearch.png
+ [4]: DesktopSearch.png

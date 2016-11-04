@@ -23,6 +23,6 @@ Esta configuração o protegerá da invasão automática de vírus por esse ou o
 
 
  [1]: http://www.sizlopedia.com/2008/03/18/disable-usb-autorun-to-save-pc-from-usb-viruses/
- [2]: http://blog.gilbertoca.com/tools/blog/wp-content/uploads/gpedit.msc.jpeg
- [3]: http://blog.gilbertoca.com/tools/blog/wp-content/uploads/gpedit.autorun.jpeg
+ [2]: gpedit.msc.jpeg
+ [3]: gpedit.autorun.jpeg
  [4]: http://free.avg.com/

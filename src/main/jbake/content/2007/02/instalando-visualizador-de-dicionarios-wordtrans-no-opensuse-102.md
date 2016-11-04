@@ -80,4 +80,4 @@ Bom, agora precisamos adicionar os dicionários que precisamos ao worktrans. Par
 
 [1]: http://www.escomposlinux.org/rvm/wordtrans/about_en.php
 [2]: http://www.escomposlinux.org/rvm/wordtrans/dictionaries_en.php
-[3]: http://blog.gilbertoca.com/img/uploads/wordtrans.png
+[3]: wordtrans.png

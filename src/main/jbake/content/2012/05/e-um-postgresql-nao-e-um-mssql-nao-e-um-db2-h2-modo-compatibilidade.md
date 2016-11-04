@@ -124,7 +124,7 @@ servidor.
 
 
 <div id="attachment_899" style="width: 557px" class="wp-caption alignleft">
-  <a href="http://blog.gilbertoca.com/img/uploads/H2_admin_interface.png"><img src:"http://blog.gilbertoca.com/img/uploads/H2_admin_interface.png" alt="" title="H2_admin_interface" width="547" height="675" class="size-full wp-image-899" /></a>
+  <a href="H2_admin_interface.png"><img src:"H2_admin_interface.png" alt="" title="H2_admin_interface" width="547" height="675" class="size-full wp-image-899" /></a>
   
   <p class="wp-caption-text">
     H2 Admin Interface
@@ -137,7 +137,7 @@ interface de administração. Aqui poderemos administrar nosso “banco
 PostgreSQL”
 
 <div id="attachment_903" style="width: 835px" class="wp-caption alignleft">
-  <a href="http://blog.gilbertoca.com/img/uploads/H2_admin_interface_PG_MODE.png"><img src:"http://blog.gilbertoca.com/img/uploads/H2_admin_interface_PG_MODE.png" alt="" title="H2_admin_interface_PG_MODE" width="825" height="831" class="size-full wp-image-903" /></a>
+  <a href="H2_admin_interface_PG_MODE.png"><img src:"H2_admin_interface_PG_MODE.png" alt="" title="H2_admin_interface_PG_MODE" width="825" height="831" class="size-full wp-image-903" /></a>
   
   <p class="wp-caption-text">
     H2 Admin Console

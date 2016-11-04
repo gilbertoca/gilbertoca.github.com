@@ -13,7 +13,7 @@ tags=Augusto Cury, Estou lendo e você,  Jesus Cristo, Jornada
 > - O que pensavam os filósofos a respeito de Deus? 
 
 
-[<img src="/img/uploads/o-futuro-da-humanidade.png" alt="o-futuro-da-humanidade" width="400" height="553" />][1] 
+[<img src="o-futuro-da-humanidade.png" alt="o-futuro-da-humanidade" width="400" height="553" />][1] 
 
 O Futuro da Humanidade pág. 52 e 53, <a href="http://www.augustocury.com.br/#/o+autor">Augusto Jorge Cury</a>
 

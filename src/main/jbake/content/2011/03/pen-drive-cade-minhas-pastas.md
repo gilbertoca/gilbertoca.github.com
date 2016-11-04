@@ -22,7 +22,7 @@ depois marcar a opção “Mostrar pastas e arquivos ocultos”, não adianta.
 
 
 <div id="attachment_608" style="width: 864px" class="wp-caption alignright">
-  <a href="http://blog.gilbertoca.com/img/uploads/MostrarOcultos.png"><img src:"http://blog.gilbertoca.com/img/uploads/MostrarOcultos.png" alt="Menu->Ferramentas->Outras Opções" title="MostrarOcultos" width="854" height="639" class="size-full wp-image-608" /></a>
+  <a href="MostrarOcultos.png"><img src:"MostrarOcultos.png" alt="Menu->Ferramentas->Outras Opções" title="MostrarOcultos" width="854" height="639" class="size-full wp-image-608" /></a>
   
   <p class="wp-caption-text">
     Mostrar arquivos ocultos
@@ -36,7 +36,7 @@ Ai você pergunta: por que sua esposa traz os dispositivos pra você? por que el
 
 
 <div id="attachment_612" style="width: 1034px" class="wp-caption alignright">
-  <a href="http://blog.gilbertoca.com/img/uploads/NavegadorArquivosGnome.png"><img src:"http://blog.gilbertoca.com/img/uploads/NavegadorArquivosGnome.png" alt="Navegador de arquivos do Gnome - nautilus" title="NavegadorArquivosGnome" width="1024" height="768" class="size-full wp-image-612" /></a>
+  <a href="NavegadorArquivosGnome.png"><img src:"NavegadorArquivosGnome.png" alt="Navegador de arquivos do Gnome - nautilus" title="NavegadorArquivosGnome" width="1024" height="768" class="size-full wp-image-612" /></a>
   
   <p class="wp-caption-text">
     Navegador de arquivos do Gnome - nautilus
@@ -47,7 +47,7 @@ Bem, esta dica não é para usuários <a href="http://pt.wikipedia.org/wiki/Linu
 
 
 <div id="attachment_614" style="width: 1031px" class="wp-caption alignright">
-  <a href="http://blog.gilbertoca.com/img/uploads/PromptComando.png"><img src:"http://blog.gilbertoca.com/img/uploads/PromptComando.png" alt="prompt de comando do windows xp" title="PromptComando" width="1021" height="669" class="size-full wp-image-614" /></a>
+  <a href="PromptComando.png"><img src:"PromptComando.png" alt="prompt de comando do windows xp" title="PromptComando" width="1021" height="669" class="size-full wp-image-614" /></a>
   
   <p class="wp-caption-text">
     prompt de comando do windows xp
@@ -61,7 +61,7 @@ Primeiro, vou fazer o mesmo que alguns vírus fazem(nem tudo, é claro, apenas o
 
 
 <div id="attachment_616" style="width: 1030px" class="wp-caption alignright">
-  <a href="http://blog.gilbertoca.com/img/uploads/ComandoATTRIB.png"><img src:"http://blog.gilbertoca.com/img/uploads/ComandoATTRIB.png" alt="prompt de comando do windows - usando ATTRIB" title="ComandoATTRIB" width="1020" height="660" class="size-full wp-image-616" /></a>
+  <a href="ComandoATTRIB.png"><img src:"ComandoATTRIB.png" alt="prompt de comando do windows - usando ATTRIB" title="ComandoATTRIB" width="1020" height="660" class="size-full wp-image-616" /></a>
   
   <p class="wp-caption-text">
     prompt de comando do windows - usando ATTRIB

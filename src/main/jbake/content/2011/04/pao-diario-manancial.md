@@ -26,7 +26,7 @@ Propus o uso de alguns mecanismos disponibilizados na rede mundial para auxiliar
   4. precisávamos definir qual versão do Microsoft Word usaríamos (escolhemos Microsoft Word 97/2000/XP) 
 
 <div id="attachment_664" style="width: 1034px" class="wp-caption alignright">
-  <a href="http://blog.gilbertoca.com/img/uploads/dropbox.png"><img src:"http://blog.gilbertoca.com/img/uploads/dropbox.png" alt="cliente dropbox linux" title="dropbox" width="1024" height="768" class="size-full wp-image-664" /></a>
+  <a href="dropbox.png"><img src:"dropbox.png" alt="cliente dropbox linux" title="dropbox" width="1024" height="768" class="size-full wp-image-664" /></a>
   
   <p class="wp-caption-text">
     cliente dropbox linux
@@ -34,7 +34,7 @@ Propus o uso de alguns mecanismos disponibilizados na rede mundial para auxiliar
 </div>
 
 <div id="attachment_662" style="width: 1034px" class="wp-caption alignright">
-  <a href="http://blog.gilbertoca.com/img/uploads/formato.png"><img src:"http://blog.gilbertoca.com/img/uploads/formato.png" alt="Formato de transcrição de texto" title="formato" width="1024" height="768" class="size-full wp-image-662" /></a>
+  <a href="formato.png"><img src:"formato.png" alt="Formato de transcrição de texto" title="formato" width="1024" height="768" class="size-full wp-image-662" /></a>
   
   <p class="wp-caption-text">
     Formato de transcrição de texto

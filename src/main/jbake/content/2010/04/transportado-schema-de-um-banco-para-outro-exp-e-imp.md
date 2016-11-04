@@ -99,7 +99,7 @@ mesmo exerce sobre si para realizar a tarefa. Vc precisa demonstrar que é capaz
 Bom o resultado final é que depois de toda essa luta, encontrei outra maneira 
 fácil de resolver esse problema - extrair a definição de determinados usuários e 
 seus grants -. 
-Muito fácil mesmo. <img src="http://blog.gilbertoca.com/img/uploads/icon_smile.gif" alt=":)" class="smiley" /> 
+Muito fácil mesmo. :)
 
 <pre>
 <p>definição</p>
