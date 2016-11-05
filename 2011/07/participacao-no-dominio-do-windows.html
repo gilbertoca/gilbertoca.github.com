@@ -3,7 +3,7 @@
     <head>
         <title></title>
         <meta charset="utf-8"/>
-        <title>Linux - Participação no domínio do Windows </title>
+        <title>Linux - Participação no domínio do Windows</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
 
@@ -38,35 +38,50 @@
 <section>
 <article>
     <header>
-        <h1>Linux - Participação no domínio do Windows </h1>
+        <h1>Linux - Participação no domínio do Windows</h1>
         <p>by <em>Gilberto C. Andrade</em> on <strong>15 Julho 2011</strong></p>
         <p>Tagged as: 
-            <a href="../../tags/Active Directory.html">Active Directory</a>,
+            <a href="../../tags/Active-Directory.html">Active-Directory</a>,
             <a href="../../tags/kerberos.html">kerberos</a>,
             <a href="../../tags/Linux.html">Linux</a>,
             <a href="../../tags/openSUSE.html">openSUSE</a>,
-            <a href="../../tags/Sistema Operacional.html">Sistema Operacional</a>,
+            <a href="../../tags/Sistema-Operacional.html">Sistema-Operacional</a>,
             <a href="../../tags/Windows.html">Windows</a>,
         </p>
     </header>
     <section>
-	<blockquote><p>Eu não quero compartilhar aquivo nenhum, apenas quero me logar no dominio MS, para assim usar internet, e-mail, enfim tudo que uma estação d trabalho com XP faria quando ngressa no dominio!<br/>Eu não quero criar um server com samba sem ser PDC E deixar na rede, quero apenas ao inves de usar o XP como estação de trabalho usar o openSUSE! </p>
+	<blockquote><p>Eu não quero compartilhar aquivo nenhum, apenas quero me logar no dominio MS, para assim usar internet, e-mail, enfim tudo que uma estação de trabalho com XP faria quando ingressa no dominio! Eu não quero criar um server com samba sem ser PDC E deixar na rede, quero apenas ao inves de usar o XP como estação de trabalho usar o openSUSE!</p>
 </blockquote><p>Este pedido de ajuda está registrado <a href="http://www.vivaolinux.com.br/topico/Suse/Linux-em-dominio-Windows" title="Linux em dominio Windows" target="_blank">aqui</a> na comunidade <a href="http://www.vivaolinux.com.br/" title="Viva o Linux" target="_blank">vivaolinux</a>. </p><p>Apesar de ser uma discussão antiga, ainda assim é bom fazer um passo a passo deste procedimento. Antes devo relatar que aqui na secretaria usamos <a href="http://technet.microsoft.com/pt-br/library/cc668412.aspx" title="Active Directory" target="_blank">Active Directory</a> para autenticação, então foi esse ambiente que usei para testar a inclusão de uma estação <a href="http://pt.openSUSE.org/Portal:Distribui%C3%A7%C3%A3o" title="openSUSE" target="_blank">Linux openSUSE</a> em um Domínio Windows: </p>
 <ol>
-  <li>Registrar seu controlador de domínio(DC) na lista de nomes de máquinas. Adicione todo o nome qualificado primeiro e o apelido como alias: 192.168.1.2 = server.domain.com server<br/><a href="http://blog.gilbertoca.com/img/uploads/1-register_domain_controler_machine_hosts.png"><img src="http://blog.gilbertoca.com/img/uploads/1-register_domain_controler_machine_hosts.png"  title="1-register_domain_controler_machine_hosts" width="1024" height="768" class="alignright size-full wp-image-769" /></a></li>
-  <li>Editar o arquivo /etc/resolv.conf e adicionar seu DC como nameserver: nameserver = server.domain.com<br/><a href="http://blog.gilbertoca.com/img/uploads/2-edit_etc_resolver_conf_add_DC_as_nameserver.png"><img src="http://blog.gilbertoca.com/img/uploads/2-edit_etc_resolver_conf_add_DC_as_nameserver.png"  title="2-edit_etc_resolver_conf_add_DC_as_nameserver" width="1024" height="768" class="alignright size-full wp-image-770" /></a></li>
-  <li>Configure o kerberos através do yast: o realm deverá ser escrito em letra maiúscula: DOMAIN.COM<br/><a href="http://blog.gilbertoca.com/img/uploads/3-configure_kerberos_capitalletters_for_DC.png"><img src="http://blog.gilbertoca.com/img/uploads/3-configure_kerberos_capitalletters_for_DC.png"  title="3-configure_kerberos_capitalletters_for_DC" width="1024" height="768" class="alignright size-full wp-image-771" /></a></li>
-  <li><p><p>Configura o samba<br/><a href="http://blog.gilbertoca.com/img/uploads/4-samba_DC_none_workgroupname_domain_security_ads_realms.png"><img src="http://blog.gilbertoca.com/img/uploads/4-samba_DC_none_workgroupname_domain_security_ads_realms.png"  title="4-samba_DC_none_workgroupname_domain_security_ads_realms" width="1024" height="768" class="alignright size-full wp-image-772" /></a></p> <div class="wp_syntax">  <table>  <tr>  <td class="code">  <pre class="vim" style="font-family:monospace;">SUGEP265338<span style="color: #000000;">:~</span> # <span style="color: #668080;">more</span> <span style="color: #000000;">/</span>etc<span style="color: #000000;">/</span>samba<span style="color: #000000;">/</span>smb<span style="color: #000000;">.</span>conf </p><h1>smb<span style="color: #000000;">.</span>conf <span style="color: #668080;">is</span> the main Samba configuration file<span style="color: #000000;">.</span> You find a full commented</h1><h1>version at <span style="color: #000000;">/</span>usr<span style="color: #000000;">/</span>share<span style="color: #000000;">/</span>doc<span style="color: #000000;">/</span>packages<span style="color: #000000;">/</span>samba<span style="color: #000000;">/</span>examples<span style="color: #000000;">/</span>smb<span style="color: #000000;">.</span>conf<span style="color: #000000;">.</span>SUSE <span style="color: #804040;">if</span> the</h1><h1>samba<span style="color: #000000;">-</span>doc package <span style="color: #668080;">is</span> installed<span style="color: #000000;">.</span></h1><h1>Date<span style="color: #000000;">:</span> <span style="color: #000000; font-weight:bold;">2011</span><span style="color: #000000;">-</span><span style="color: #000000; font-weight:bold;">11</span><span style="color: #000000;">-</span>02</h1><span style="color: #000000;">&#91;</span>global<span style="color: #000000;">&#93;</span> <span style="color: #25BB4D;">add</span> machine script = <span style="color: #000000;">/</span>usr<span style="color: #000000;">/</span>sbin<span style="color: #000000;">/</span>useradd <span style="color: #000000;">-</span>c Machine <span style="color: #000000;">-</span>d <span style="color: #000000;">/</span>var<span style="color: #000000;">/</span>lib<span style="color: #000000;">/</span>nobody <span style="color: #000000;">-</span>s <span style="color: #000000;">/</span><span style="color: #668080;">bin</span><span style="color: #000000;">/</span>false <span style="color: #000000;">%</span>m<span style="color: #000000;">$</span> domain master = No security = ADS workgroup = ADMINISTRACAO realm = ADMINISTRACAO<span style="color: #000000;">.</span>LOCAL idmap gid = <span style="color: #000000; font-weight:bold;">10000</span><span style="color: #000000;">-</span><span style="color: #000000; font-weight:bold;">20000</span> idmap uid = <span style="color: #000000; font-weight:bold;">10000</span><span style="color: #000000;">-</span><span style="color: #000000; font-weight:bold;">20000</span> usershare allow guests = No template homedir = <span style="color: #000000;">/</span>home<span style="color: #000000;">/%</span>D<span style="color: #000000;">/%</span>U winbind refresh tickets = yes template <span style="color: #668080;">shell</span> = <span style="color: #000000;">/</span><span style="color: #668080;">bin</span><span style="color: #000000;">/</span>bash <span style="color: #000000;">&#91;</span>homes<span style="color: #000000;">&#93;</span> comment = Home Directories valid users = <span style="color: #000000;">%</span>S, <span style="color: #000000;">%</span>D<span style="color: #000000;">%</span>w<span style="color: #000000;">%</span>S browseable = No read only = No inherit acls = Yes <span style="color: #000000;">&#91;</span>profiles<span style="color: #000000;">&#93;</span> <span style="color: #000000;">--</span>More<span style="color: #000000;">--</span><span style="color: #000000;">&#40;</span><span style="color: #000000; font-weight:bold;">51</span><span style="color: #000000;">%</span><span style="color: #000000;">&#41;</span></pre>  </td>  </tr>  </table> </div></p><p>Não esqueça de reiniciar os serviços<br/><a href="http://blog.gilbertoca.com/img/uploads/5-restart_samba_server.png"><img src="http://blog.gilbertoca.com/img/uploads/5-restart_samba_server.png"  title="5-restart_samba_server" width="1024" height="768" class="alignright size-full wp-image-773" /></a> </li> </p>
-  <ul>
-    <li>Adicionar a máquina ao domínio (neste momento utilizando o kerberos)<br/><a href="http://blog.gilbertoca.com/img/uploads/6-test_kerberos_autentication.png"><img src="http://blog.gilbertoca.com/img/uploads/6-test_kerberos_autentication.png"  title="6-test_kerberos_autentication" width="1024" height="768" class="alignright size-full wp-image-774" /></a></p> net ads join -U Administrador<br/><a href="http://blog.gilbertoca.com/img/uploads/7-join_ads_domain.png"><img src="http://blog.gilbertoca.com/img/uploads/7-join_ads_domain.png"  title="7-join_ads_domain" width="1024" height="768" class="alignright size-full wp-image-775" /></a> </li></li>
-  </ul>
-  <pre><code>  * Adicionar a máquina ao domínio (agora utilizando o samba): no yast use a opção:”Participação no domínio do windows”, marcando a opção “Usar informação SMB para autenticação Linux”  
-    [&lt;img src=&quot;http://blog.gilbertoca.com/img/uploads/8-windows_domain_membership.png&quot;  title=&quot;8-windows_domain_membership&quot; width=&quot;1024&quot; height=&quot;768&quot; class=&quot;alignright size-full wp-image-776&quot; /&gt;][8] 
-  * Reinicie a máquina  
-    [&lt;img src=&quot;http://blog.gilbertoca.com/img/uploads/9-reboot_linux_client.png&quot;  title=&quot;9-reboot_linux_client&quot; width=&quot;1024&quot; height=&quot;768&quot; class=&quot;alignright size-full wp-image-777&quot; /&gt;][9] &lt;/ol&gt; 
-
-Use com moderação! &lt;img src=&quot;http://blog.gilbertoca.com/wp-includes/images/smilies/icon_smile.gif&quot; alt=&quot;:)&quot; class=&quot;wp-smiley&quot; /&gt; 
-</code></pre></li>
+  <li>Registrar seu controlador de domínio(DC) na lista de nomes de máquinas. Adicione todo o nome qualificado primeiro e o apelido como alias: 192.168.1.2 = server.domain.com server<br/><a href="1-register_domain_controler_machine_hosts.png"><img src="1-register_domain_controler_machine_hosts.png"  title="1-register_domain_controler_machine_hosts" width="1024" height="768" class="alignright size-full wp-image-769" /></a></li>
+  <li>Editar o arquivo /etc/resolv.conf e adicionar seu DC como nameserver: nameserver = server.domain.com<br/><a href="2-edit_etc_resolver_conf_add_DC_as_nameserver.png"><img src="2-edit_etc_resolver_conf_add_DC_as_nameserver.png"  title="2-edit_etc_resolver_conf_add_DC_as_nameserver" width="1024" height="768" class="alignright size-full wp-image-770" /></a></li>
+  <li>Configure o kerberos através do yast: o realm deverá ser escrito em letra maiúscula: DOMAIN.COM<br/><a href="3-configure_kerberos_capitalletters_for_DC.png"><img src="3-configure_kerberos_capitalletters_for_DC.png"  title="3-configure_kerberos_capitalletters_for_DC" width="1024" height="768" class="alignright size-full wp-image-771" /></a></li>
+  <li><p>Configura o samba<br/><a href="4-samba_DC_none_workgroupname_domain_security_ads_realms.png"><img src="4-samba_DC_none_workgroupname_domain_security_ads_realms.png"  title="4-samba_DC_none_workgroupname_domain_security_ads_realms" width="1024" height="768" class="alignright size-full wp-image-772" /></a></p>
+  <pre><code class="Shell">SUGEP265338:~ # more /etc/samba/smb.conf 
+# smb.conf is the main Samba configuration file. You find a full commented
+# version at /usr/share/doc/packages/samba/examples/smb.conf.SUSE if the
+# samba-doc package is installed.
+# Date: 2011-11-02
+[global]
+        add machine script = /usr/sbin/useradd -c Machine -d /var/lib/nobody -s /bin/false %m$
+        domain master = No
+        security = ADS
+        workgroup = ADMINISTRACAO
+        realm = ADMINISTRACAO.LOCAL
+        idmap gid = 10000-20000
+        idmap uid = 10000-20000
+        usershare allow guests = No
+        template homedir = /home/%D/%U
+        winbind refresh tickets = yes
+        template shell = /bin/bash
+[homes]
+        comment = Home Directories
+        valid users = %S, %D%w%S
+        browseable = No
+        read only = No
+        inherit acls = Yes
+[profiles]
+</code></pre><p>Não esqueça de reiniciar os serviços<br/><a href="5-restart_samba_server.png"><img src="5-restart_samba_server.png"  title="5-restart_samba_server" width="1024" height="768" class="alignright size-full wp-image-773" /></a></p><p>Adicionar a máquina ao domínio (neste momento utilizando o kerberos)<br/><a href="6-test_kerberos_autentication.png"><img src="6-test_kerberos_autentication.png"  title="6-test_kerberos_autentication" width="1024" height="768" class="alignright size-full wp-image-774" /></a></p> </p><p>net ads join -U Administrador<br/><a href="7-join_ads_domain.png"><img src="7-join_ads_domain.png"  title="7-join_ads_domain" width="1024" height="768" class="alignright size-full wp-image-775" /></a> </p><p>Adicionar a máquina ao domínio (agora utilizando o samba): no yast use a opção:”Participação no domínio do windows”, marcando a opção “Usar informação SMB para autenticação Linux”<br/><a href="8-windows_domain_membership.png"><img src="8-windows_domain_membership.png"  title="8-windows_domain_membership" width="1024" height="768" class="alignright size-full wp-image-776" /></a> </p><p>Reinicie a máquina<br/><a href="9-reboot_linux_client.png"><img src="9-reboot_linux_client.png"  title="9-reboot_linux_client" width="1024" height="768" class="alignright size-full wp-image-777" /></a></p><p>Use com moderação! </p></li>
 </ol>
     </section>
 <section>
