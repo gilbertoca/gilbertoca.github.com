@@ -46,7 +46,7 @@
             <plugin>
                 <groupId>br.com.ingenieux</groupId>
                 <artifactId>jbake-maven-plugin</artifactId>
-                <version>0.0.9</version>
+                <version>0.3.0</version>
                 <executions>
                     <execution>
                         <id>default-generate</id>
@@ -57,32 +57,6 @@
                     </execution>
                 </executions>
                 <dependencies>
-                    <dependency>
-                        <groupId>org.jbake</groupId>
-                        <artifactId>jbake-core</artifactId>
-                        <version>2.5.0</version>
-                    </dependency>
-                    <!-- for groovy templates (.gte) -->
-                    <dependency>
-                        <groupId>org.codehaus.groovy</groupId>
-                        <artifactId>groovy</artifactId>
-                        <version>2.4.7</version>
-                    </dependency>
-                    <dependency>
-                        <groupId>org.codehaus.groovy</groupId>
-                        <artifactId>groovy-templates</artifactId>
-                        <version>2.4.7</version>
-                    </dependency>
-                    <dependency>
-                        <groupId>org.codehaus.groovy</groupId>
-                        <artifactId>groovy-xml</artifactId>
-                        <version>2.4.7</version>
-                    </dependency>
-                    <dependency>
-                        <groupId>org.asciidoctor</groupId>
-                        <artifactId>asciidoctorj</artifactId>
-                        <version>1.5.4.1</version>
-                    </dependency>
                     <!-- for freemarker templates (.ftl) -->
                     <dependency>
                         <groupId>org.freemarker</groupId>
