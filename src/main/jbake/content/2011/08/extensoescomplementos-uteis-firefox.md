@@ -79,11 +79,16 @@ As seguintes [extensões (complementos)][1] para o [navegador FireFox][2] melhor
   </tr>
   <tr>
     <td>
-      <a href="https://addons.mozilla.org/en-US/firefox/addon/easy-youtube-video-download/?src=search">Easy Youtube Video Downloader Express</a>
+      <a href="https://addons.mozilla.org/en-US/firefox/addon/easy-youtube-video-download/">Easy Youtube Video Downloader Express</a>
     </td>
     
     <td>
       Utilitário para baixar vídeos
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://addons.mozilla.org/pt-BR/firefox/addon/video-downloader-player/">Ant Video Downloader com Player FLV incorporado</a>
     </td>
   </tr>
   <tr>
