@@ -19,7 +19,16 @@ As seguintes [extensões (complementos)][1] para o [navegador FireFox][2] melhor
       <strong>Utilidade</strong>
     </td>
   </tr>
-  
+
+  <tr>
+    <td>
+      <a href="https://addons.mozilla.org/pt-BR/firefox/addon/download-status-bar/">download-status-bar</a>
+    </td>
+    
+    <td>
+      Gerenciador de Downloads
+    </td>
+  </tr>
   <tr>
     <td>
       <a href="https://addons.mozilla.org/pt-BR/firefox/addon/201">DownThemAll!</a>
