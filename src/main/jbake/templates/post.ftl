@@ -14,6 +14,7 @@
     <section>
 	${content.body}
     </section>
+    <#include "advertisements.ftl">
     <#include "disqus.ftl">
 </article>
 	
