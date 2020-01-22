@@ -56,7 +56,8 @@
     $ sux – oracle
     $ source .oracleDB #ou oracleDS ou oracleAS
 </code>    
-</pre><p>Dos scripts de mudança de ambiente não tenho como escapar mas para facilitar minha vida, acabei adicionando os grupos DBA e oinstall para minha lista de grupos. Dessa forma não preciso usar o su para mudança de usuario. Ai tem um porém, meu grupo padrão é users. Nessa, quando tento compilar um forms ou iniciar o servidor de aplicações, acontece vários erros de permissões. Isso porque meu grupo principal/efetivo, como já disse, não é o oinstall nem DBA. Para contornar este problema usei o utilitário de sistema newgrp. O comando newgrp é usado para alterar o grupo efetivo do usuário para o grupo solicitado em uma nova sessão de login:</p>
+</pre>
+<p>Dos scripts de mudança de ambiente não tenho como escapar mas para facilitar minha vida, acabei adicionando os grupos DBA e oinstall para minha lista de grupos. Dessa forma não preciso usar o su para mudança de usuario. Ai tem um porém, meu grupo padrão é users. Nessa, quando tento compilar um forms ou iniciar o servidor de aplicações, acontece vários erros de permissões. Isso porque meu grupo principal/efetivo, como já disse, não é o oinstall nem DBA. Para contornar este problema usei o utilitário de sistema newgrp. O comando newgrp é usado para alterar o grupo efetivo do usuário para o grupo solicitado em uma nova sessão de login:</p>
 <pre>
 <code class="bash">
     $ groups
@@ -68,13 +69,19 @@
     $ groups
     users disk uucp dialout audio video oinstall dba
 </code>
-</pre><p>Desta forma meu grupo principal torna-se oinstall, me possibilitando trabalhar com a compilação dos forms. Legal hein! O outro utilitario de sistema que podemos usar é o sg. O sg é mais usando que vc so precisa executar um comando, mas usando o grupo o qual vc necessita:</p>
+</pre>
+<p>Desta forma meu grupo principal torna-se oinstall, me possibilitando trabalhar com a compilação dos forms. Legal hein! O outro utilitario de sistema que podemos usar é o sg. O sg é mais usando que vc so precisa executar um comando, mas usando o grupo o qual vc necessita:</p>
 <pre>
 <code class="bash">
     sg oinstall -c rm *.err
 </code>    
 </pre>
+
     </section>
+<section>
+<div id="advertisements"></div>
+<script data-ad-client="ca-pub-3863943400063116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</section>
 <section>
 <div id="disqus_thread"></div>
         <script type="text/javascript">

@@ -42,72 +42,67 @@
     <th style="width: 150px; border: 1px inset #cccccc;" width="150">
       O que você quer?
     </th>
-    
-    <th style="width: 300px; border: 1px inset #cccccc;" width="200">
-      Como fazer?
-    </th>
+<pre><code>&lt;th style=&quot;width: 300px; border: 1px inset #cccccc;&quot; width=&quot;200&quot;&gt;
+  Como fazer?
+&lt;/th&gt;
+</code></pre>
   </tr>
-  
   <tr>
     <td>
       active-profiles
     </td>
-    
-    <td>
-      mvn help:all-profiles
-    </td>
+<pre><code>&lt;td&gt;
+  mvn help:all-profiles
+&lt;/td&gt;
+</code></pre>
   </tr>
-  
   <tr>
     <td>
       executar um único teste
     </td>
-    
-    <td>
-      mvn test -Dtest=CustomerTest
-    </td>
+<pre><code>&lt;td&gt;
+  mvn test -Dtest=CustomerTest
+&lt;/td&gt;
+</code></pre>
   </tr>
-  
   <tr>
     <td>
       gerar documentação
     </td>
-    
-    <td>
-      mvn javadoc:javadoc
-    </td>
+<pre><code>&lt;td&gt;
+  mvn javadoc:javadoc
+&lt;/td&gt;
+</code></pre>
   </tr>
-  
   <tr>
     <td>
       pular a fase de teste
     </td>
-    
-    <td>
-      mvn -Dmaven.test.skip=true
-    </td>
+<pre><code>&lt;td&gt;
+  mvn -Dmaven.test.skip=true
+&lt;/td&gt;
+</code></pre>
   </tr>
-  
   <tr>
     <td>
       sobrescrever propriedades
     </td>
-    
-    <td>
-      mvn -Djdbc.url=”jdbc:h2:file:data/parkDB;create=true;MODE=PostgreSQL;DB_CLOSE_DELAY=-1” -Dmaven.test.skip=true clean install
-    </td>
+<pre><code>&lt;td&gt;
+  mvn -Djdbc.url=”jdbc:h2:file:data/parkDB;create=true;MODE=PostgreSQL;DB_CLOSE_DELAY=-1” -Dmaven.test.skip=true clean install
+&lt;/td&gt;
+</code></pre>
   </tr>
-  
   <tr>
     <td>
       Executar um programa java
     </td>
-    
-    <td>
-      mvn clean compile exec:java -Dexec.mainClass=”com.tengen.m101j.HelloWorldMongoDBStyle”
-    </td>
+<pre><code>&lt;td&gt;
+  mvn clean compile exec:java -Dexec.mainClass=”com.tengen.m101j.HelloWorldMongoDBStyle”
+&lt;/td&gt;
+</code></pre>
   </tr>
-</table></p>
+</table>
+</p>
 <section>
 <div id="disqus_thread"></div>
         <script type="text/javascript">

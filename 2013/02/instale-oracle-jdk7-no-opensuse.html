@@ -47,8 +47,9 @@
         </p>
     </header>
     <section>
-	<p>Realize o download a partir deste local: <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html" title="Java SE Development Kit 7 Downloads" target="_blank">Java SE Development Kit 7 Downloads</a>, em um diretório de sua escolha - escolhi: /Softwares_usados/Tools/java/jdk/ . </p><p>Depois como super usuário (root) utilize <a href="http://doc.openSUSE.org/documentation/html/openSUSE/openSUSE-startup/cha.sw_cl.html" title="Ferramenta de Gerenciamento de Software - Zypper" target="_blank">a Ferramente de Gerencimanto de Software - Zypper -</a> para instalar o pacote (arquivo RPM):</p>
-<pre><code class="Shell">gilberto.andrade@A37710:~$ su - Senha
+	<p>Realize o download a partir deste local: <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html" title="Java SE Development Kit 7 Downloads" target="_blank">Java SE Development Kit 7 Downloads</a>, em um diretório de sua escolha - escolhi: /Softwares_usados/Tools/java/jdk/ .</p>
+<p>Depois como super usuário (root) utilize <a href="http://doc.openSUSE.org/documentation/html/openSUSE/openSUSE-startup/cha.sw_cl.html" title="Ferramenta de Gerenciamento de Software - Zypper" target="_blank">a Ferramente de Gerencimanto de Software - Zypper -</a> para instalar o pacote (arquivo RPM):</p>
+<pre><code class="language-Shell">gilberto.andrade@A37710:~$ su - Senha
 A37710:~ # cd /dados/D/Softwares_usados/Tools/java/jdk/ 
 A37710:/dados/D/Softwares_usados/Tools/java/jdk # ll 
 total 439208 
@@ -58,7 +59,39 @@ total 439208
 -rw-r----- 1 gilberto.andrade users 60768483 Feb 11 18:10 jdk-7u15-apidocs.zip 
 -rw-r----- 1 gilberto.andrade users 109860709 Feb 16 04:08 jdk-7u15-linux-x64.rpm   
 A37710:/dados/D/Softwares_usados/Tools/java/jdk # zypper install jdk-7u15-linux-x64.rpm
-</code></pre><p>Vamos “avisar” o mecanismo do sistema que é responsável por estes serviços - <a href="/2012/03/alterne-entre-versoes-java-facilmente-update-alternatives-parte-2.html" title="Alterne entre versões Java facilmente [update-alternatives] parte 2" target="_blank">update-alternatives</a>- que existe uma nova versão do jdk instalada. O diretório (melhor dizendo, link) <strong>/usr/java/latest</strong> representa a versão mais recente instalada e irá apontar para última e mais nova versão:</p><p><div class="wp_syntax">  <table>  <tr>  <td class="code">  <pre class="bash" style="font-family:monospace;">A37710:<span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>java <span style="color: #666666; font-style: italic;"># ll</span> total <span style="color: #000000;">12</span> lrwxrwxrwx <span style="color: #000000;">1</span> root root <span style="color: #000000;">16</span> Feb <span style="color: #000000;">15</span> <span style="color: #000000;">16</span>:09 default -<span style="color: #000000; font-weight: bold;">&gt;</span> <span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>java<span style="color: #000000; font-weight: bold;">/</span>latest drwxr-xr-x <span style="color: #000000;">4</span> root root <span style="color: #000000;">4096</span> Feb <span style="color: #000000;">15</span> <span style="color: #000000;">15</span>:<span style="color: #000000;">13</span> jdk1.7.0_07 drwxr-xr-x <span style="color: #000000;">3</span> root root <span style="color: #000000;">4096</span> Feb <span style="color: #000000;">21</span> <span style="color: #000000;">14</span>:<span style="color: #000000;">36</span> jdk1.7.0_13 drwxr-xr-x <span style="color: #000000;">8</span> root root <span style="color: #000000;">4096</span> Feb <span style="color: #000000;">21</span> <span style="color: #000000;">14</span>:<span style="color: #000000;">36</span> jdk1.7.0_15 lrwxrwxrwx <span style="color: #000000;">1</span> root root <span style="color: #000000;">21</span> Feb <span style="color: #000000;">21</span> <span style="color: #000000;">14</span>:<span style="color: #000000;">36</span> latest -<span style="color: #000000; font-weight: bold;">&gt;</span> <span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>java<span style="color: #000000; font-weight: bold;">/</span>jdk1.7.0_15</pre>  </td>  </tr>  </table> </div></p> </p><p>A partir do diretório <strong>latest/bin</strong> e <strong>latest/jre/bin</strong> realize as seguintes modificações:</p><p><div class="wp_syntax">  <table>  <tr>  <td class="code">  <pre class="bash" style="font-family:monospace;">A37710:<span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>java <span style="color: #666666; font-style: italic;"># cd latest/bin/</span> A37710:<span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>java<span style="color: #000000; font-weight: bold;">/</span>latest<span style="color: #000000; font-weight: bold;">/</span>bin <span style="color: #666666; font-style: italic;"># for bin in *; do update-alternatives &ndash;install /usr/bin/$bin $bin $(pwd)/$bin 20000; done</span> A37710:<span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>java<span style="color: #000000; font-weight: bold;">/</span>latest<span style="color: #000000; font-weight: bold;">/</span>bin <span style="color: #666666; font-style: italic;"># cd ..</span> A37710:<span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>java<span style="color: #000000; font-weight: bold;">/</span>latest <span style="color: #666666; font-style: italic;"># cd jre/bin/</span> A37710:<span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>java<span style="color: #000000; font-weight: bold;">/</span>latest<span style="color: #000000; font-weight: bold;">/</span>jre<span style="color: #000000; font-weight: bold;">/</span>bin <span style="color: #666666; font-style: italic;"># for bin in *; do update-alternatives &ndash;install /usr/bin/$bin $bin $(pwd)/$bin 20000; done</span> A37710:<span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>java<span style="color: #000000; font-weight: bold;">/</span>latest<span style="color: #000000; font-weight: bold;">/</span>jre<span style="color: #000000; font-weight: bold;">/</span>bin <span style="color: #666666; font-style: italic;">#</span></pre>  </td>  </tr>  </table> </div></p> </p><p>Por fim, atualizaremos o <strong>plugin java - javaplugin.so -</strong> para os navegadores instalados no sistema:</p>
+</code></pre>
+<p>Vamos “avisar” o mecanismo do sistema que é responsável por estes serviços - <a href="/2012/03/alterne-entre-versoes-java-facilmente-update-alternatives-parte-2.html" title="Alterne entre versões Java facilmente [update-alternatives] parte 2" target="_blank">update-alternatives</a>- que existe uma nova versão do jdk instalada. O diretório (melhor dizendo, link) <strong>/usr/java/latest</strong> representa a versão mais recente instalada e irá apontar para última e mais nova versão:</p>
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="bash" style="font-family:monospace;">A37710:<span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>java <span style="color: #666666; font-style: italic;"># ll</span>
+total <span style="color: #000000;">12</span>
+lrwxrwxrwx <span style="color: #000000;">1</span> root root   <span style="color: #000000;">16</span> Feb <span style="color: #000000;">15</span> <span style="color: #000000;">16</span>:09 default -<span style="color: #000000; font-weight: bold;">&gt;</span> <span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>java<span style="color: #000000; font-weight: bold;">/</span>latest
+drwxr-xr-x <span style="color: #000000;">4</span> root root <span style="color: #000000;">4096</span> Feb <span style="color: #000000;">15</span> <span style="color: #000000;">15</span>:<span style="color: #000000;">13</span> jdk1.7.0_07
+drwxr-xr-x <span style="color: #000000;">3</span> root root <span style="color: #000000;">4096</span> Feb <span style="color: #000000;">21</span> <span style="color: #000000;">14</span>:<span style="color: #000000;">36</span> jdk1.7.0_13
+drwxr-xr-x <span style="color: #000000;">8</span> root root <span style="color: #000000;">4096</span> Feb <span style="color: #000000;">21</span> <span style="color: #000000;">14</span>:<span style="color: #000000;">36</span> jdk1.7.0_15
+lrwxrwxrwx <span style="color: #000000;">1</span> root root   <span style="color: #000000;">21</span> Feb <span style="color: #000000;">21</span> <span style="color: #000000;">14</span>:<span style="color: #000000;">36</span> latest -<span style="color: #000000; font-weight: bold;">&gt;</span> <span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>java<span style="color: #000000; font-weight: bold;">/</span>jdk1.7.0_15</pre>
+      </td>
+    </tr>
+  </table>
+</div></p> 
+<p>A partir do diretório <strong>latest/bin</strong> e <strong>latest/jre/bin</strong> realize as seguintes modificações:</p>
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="bash" style="font-family:monospace;">A37710:<span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>java <span style="color: #666666; font-style: italic;"># cd latest/bin/</span>
+A37710:<span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>java<span style="color: #000000; font-weight: bold;">/</span>latest<span style="color: #000000; font-weight: bold;">/</span>bin <span style="color: #666666; font-style: italic;"># for bin in *; do update-alternatives --install /usr/bin/$bin $bin $(pwd)/$bin 20000; done</span>
+A37710:<span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>java<span style="color: #000000; font-weight: bold;">/</span>latest<span style="color: #000000; font-weight: bold;">/</span>bin <span style="color: #666666; font-style: italic;"># cd ..</span>
+A37710:<span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>java<span style="color: #000000; font-weight: bold;">/</span>latest <span style="color: #666666; font-style: italic;"># cd jre/bin/</span>
+A37710:<span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>java<span style="color: #000000; font-weight: bold;">/</span>latest<span style="color: #000000; font-weight: bold;">/</span>jre<span style="color: #000000; font-weight: bold;">/</span>bin <span style="color: #666666; font-style: italic;"># for bin in *; do update-alternatives --install /usr/bin/$bin $bin $(pwd)/$bin 20000; done</span>
+A37710:<span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>java<span style="color: #000000; font-weight: bold;">/</span>latest<span style="color: #000000; font-weight: bold;">/</span>jre<span style="color: #000000; font-weight: bold;">/</span>bin <span style="color: #666666; font-style: italic;">#</span></pre>
+      </td>
+    </tr>
+  </table>
+</div></p> 
+<p>Por fim, atualizaremos o <strong>plugin java - javaplugin.so -</strong> para os navegadores instalados no sistema:</p>
 <div class="wp_syntax">
   <table>
     <tr>
@@ -67,8 +100,15 @@ A37710:/dados/D/Softwares_usados/Tools/java/jdk # zypper install jdk-7u15-linux-
       </td>
     </tr>
   </table>
-</div><p>Olhe com atenção pois utilizamos como referência para atualizar o update-alternatives o caminho base <strong>/usr/java/latest</strong>.<br/><strong>Por quê? Você sabe explicar?</strong></p>
+</div>
+<p>Olhe com atenção pois utilizamos como referência para atualizar o update-alternatives o caminho base <strong>/usr/java/latest</strong>.<br />
+<strong>Por quê? Você sabe explicar?</strong></p>
+
     </section>
+<section>
+<div id="advertisements"></div>
+<script data-ad-client="ca-pub-3863943400063116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</section>
 <section>
 <div id="disqus_thread"></div>
         <script type="text/javascript">

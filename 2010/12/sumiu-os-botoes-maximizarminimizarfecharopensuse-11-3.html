@@ -49,7 +49,31 @@
         </p>
     </header>
     <section>
-	<p>Este comportamento do gerenciador de janelas é esquisito, para não dizer indesejável. A coisa fica mais estranha ainda pois não tenho meios de rastrear a causa do problema (placa de vídeo, kernel, gnome, gdm qual é o cupido?). Alguém pode, em algumas situações, acusar o compiz, mas este não o caso - placa legada:</p><p><div class="wp_syntax">  <table>  <tr>  <td class="code">  <pre class="bash" style="font-family:monospace;">dhcppc0:<span style="color: #000000; font-weight: bold;">/</span>home<span style="color: #000000; font-weight: bold;">/</span>gilberto <span style="color: #666666; font-style: italic;"># hwinfo &ndash;gfxcard </span> <span style="color: #000000;">21</span>: PCI<span style="color: #7a0874; font-weight: bold;">&#40;</span>AGP<span style="color: #7a0874; font-weight: bold;">&#41;</span> <span style="color: #000000;">100.0</span>: 0300 VGA compatible controller <span style="color: #7a0874; font-weight: bold;">&#40;</span>VGA<span style="color: #7a0874; font-weight: bold;">&#41;</span><br/> <span style="color: #7a0874; font-weight: bold;">&#91;</span>Created at pci.318<span style="color: #7a0874; font-weight: bold;">&#93;</span>  Unique ID: VCu0.UZW4QWn62T6  Parent ID: vSkL.uvrveDpO5n6  SysFS ID: <span style="color: #000000; font-weight: bold;">/</span>devices<span style="color: #000000; font-weight: bold;">/</span>pci0000:00<span style="color: #000000; font-weight: bold;">/</span>0000:00:<span style="color: #000000;">01.0</span><span style="color: #000000; font-weight: bold;">/</span>0000:01:<span style="color: #000000;">00.0</span>  SysFS BusID: 0000:01:<span style="color: #000000;">00.0</span>  Hardware Class: graphics card  Model: <span style="color: #ff0000;">&ldquo;nVidia GeForce4 MX 440 with AGP8X&rdquo;</span>  Vendor: pci 0x10de <span style="color: #ff0000;">&ldquo;nVidia Corporation&rdquo;</span>  Device: pci 0x0181 <span style="color: #ff0000;">&ldquo;GeForce4 MX 440 with AGP8X&rdquo;</span>  Revision: 0xc1  Driver: <span style="color: #ff0000;">&ldquo;nvidia&rdquo;</span>  Driver Modules: <span style="color: #ff0000;">&ldquo;nvidia&rdquo;</span></pre>  </td>  </tr>  </table> </div></p> </p><p>Assim que estalei o openSUSE 11.3 em casa ficou difícil evitar seu uso e olha que minha família ainda não viu - ou não usufruiu - das ferramentas gráficas pois ficamos aproximadamente 3 meses usando o <a href="http://nouveau.freedesktop.org/wiki/">driver de vídeo que vem instalado por padrão</a> - O projeto Nouveau. Só recentemente a Nvidia publicou uma atualização <a href="http://www.nvidia.com/object/linux-display-ia32-96.43.19-driver.html">para minha placa de vídeo</a> e é claro para a minha versão do kernel. </p><p>Bom, até agora podemos dizer que o problema não é hardware. Por que? Você pode perguntar. Veja, usei dois tipos de driver e com ambos o comportamento (defeito) persistiu. O pior é que fica dias sem aparecer e de repente acontece. Até então não havia outro meio de contornar o problema senão encerrar a sessão e entrar novamente. Hoje encontrei <a href="http://ubuntuforum-br.org/index.php?topic=69863.msg388780#msg388780">uma discussão sobre o assunto</a> - Adivinha? Aconteceu hoje novamente - e nessa discussão o usuário “Rvos” sugere o seguinte contorno:</p>
+	<p>Este comportamento do gerenciador de janelas é esquisito, para não dizer indesejável. A coisa fica mais estranha ainda pois não tenho meios de rastrear a causa do problema (placa de vídeo, kernel, gnome, gdm qual é o cupido?). Alguém pode, em algumas situações, acusar o compiz, mas este não o caso - placa legada:</p>
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="bash" style="font-family:monospace;">dhcppc0:<span style="color: #000000; font-weight: bold;">/</span>home<span style="color: #000000; font-weight: bold;">/</span>gilberto <span style="color: #666666; font-style: italic;"># hwinfo --gfxcard </span>
+<span style="color: #000000;">21</span>: PCI<span style="color: #7a0874; font-weight: bold;">&#40;</span>AGP<span style="color: #7a0874; font-weight: bold;">&#41;</span> <span style="color: #000000;">100.0</span>: 0300 VGA compatible controller <span style="color: #7a0874; font-weight: bold;">&#40;</span>VGA<span style="color: #7a0874; font-weight: bold;">&#41;</span>        
+  <span style="color: #7a0874; font-weight: bold;">&#91;</span>Created at pci.318<span style="color: #7a0874; font-weight: bold;">&#93;</span>
+  Unique ID: VCu0.UZW4QWn62T6
+  Parent ID: vSkL.uvrveDpO5n6
+  SysFS ID: <span style="color: #000000; font-weight: bold;">/</span>devices<span style="color: #000000; font-weight: bold;">/</span>pci0000:00<span style="color: #000000; font-weight: bold;">/</span>0000:00:<span style="color: #000000;">01.0</span><span style="color: #000000; font-weight: bold;">/</span>0000:01:<span style="color: #000000;">00.0</span>
+  SysFS BusID: 0000:01:<span style="color: #000000;">00.0</span>
+  Hardware Class: graphics card
+  Model: <span style="color: #ff0000;">"nVidia GeForce4 MX 440 with AGP8X"</span>
+  Vendor: pci 0x10de <span style="color: #ff0000;">"nVidia Corporation"</span>
+  Device: pci 0x0181 <span style="color: #ff0000;">"GeForce4 MX 440 with AGP8X"</span>
+  Revision: 0xc1
+  Driver: <span style="color: #ff0000;">"nvidia"</span>
+  Driver Modules: <span style="color: #ff0000;">"nvidia"</span></pre>
+      </td>
+    </tr>
+  </table>
+</div></p> 
+<p>Assim que estalei o openSUSE 11.3 em casa ficou difícil evitar seu uso e olha que minha família ainda não viu - ou não usufruiu - das ferramentas gráficas pois ficamos aproximadamente 3 meses usando o <a href="http://nouveau.freedesktop.org/wiki/">driver de vídeo que vem instalado por padrão</a> - O projeto Nouveau. Só recentemente a Nvidia publicou uma atualização <a href="http://www.nvidia.com/object/linux-display-ia32-96.43.19-driver.html">para minha placa de vídeo</a> e é claro para a minha versão do kernel.</p>
+<p>Bom, até agora podemos dizer que o problema não é hardware. Por que? Você pode perguntar. Veja, usei dois tipos de driver e com ambos o comportamento (defeito) persistiu. O pior é que fica dias sem aparecer e de repente acontece. Até então não havia outro meio de contornar o problema senão encerrar a sessão e entrar novamente. Hoje encontrei <a href="http://ubuntuforum-br.org/index.php?topic=69863.msg388780#msg388780">uma discussão sobre o assunto</a> - Adivinha? Aconteceu hoje novamente - e nessa discussão o usuário “Rvos” sugere o seguinte contorno:</p>
 <div class="wp_syntax">
   <table>
     <tr>
@@ -58,7 +82,13 @@
       </td>
     </tr>
   </table>
-</div><p>Com essa opção não tenho que encerra a sessão para que as janelas voltem ao normal. </p><p>Mas &#8230; como vamos explicar essa solução para meu filho de 9 anos ou mesmo para minha esposa?<br/>Sei que farão com bastante tranquilidade quando estiver por perto, mas quando não estiver? </p><p><strong>ATUALIZAÇÃO (25/06/2011):</strong><br/>Após um longo período sem este problema, aconteceu novamente: desta vez enquanto usava o <a href="http://qbittorrent.sourceforge.net/">qBittorrent</a>.<br/><a href="http://forums.fedoraforum.org/archive/index.php/t-241590.html">Esta discussão</a> pode revelar algum caminho para resolução deste problema. Com o comando sugerido, verifiquei a minha configuração:</p>
+</div>
+<p>Com essa opção não tenho que encerra a sessão para que as janelas voltem ao normal.</p>
+<p>Mas … como vamos explicar essa solução para meu filho de 9 anos ou mesmo para minha esposa?<br />
+Sei que farão com bastante tranquilidade quando estiver por perto, mas quando não estiver?</p>
+<p><strong>ATUALIZAÇÃO (25/06/2011):</strong><br />
+Após um longo período sem este problema, aconteceu novamente: desta vez enquanto usava o <a href="http://qbittorrent.sourceforge.net/">qBittorrent</a>.<br />
+<a href="http://forums.fedoraforum.org/archive/index.php/t-241590.html">Esta discussão</a> pode revelar algum caminho para resolução deste problema. Com o comando sugerido, verifiquei a minha configuração:</p>
 <div class="wp_syntax">
   <table>
     <tr>
@@ -74,7 +104,8 @@
       </td>
     </tr>
   </table>
-</div><p>E com outro ajustei para o sugerido:</p>
+</div>
+<p>E com outro ajustei para o sugerido:</p>
 <div class="wp_syntax">
   <table>
     <tr>
@@ -83,8 +114,20 @@
       </td>
     </tr>
   </table>
-</div><p>Vamos aguardar e torcer! <img src="http://blog.gilbertoca.com/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" /> </p><p><strong>ATUALIZAÇÃO (31/12/2010):</strong><br/>Aconteceu novamente. Desta vez enquanto verificava a lista de contatos no <a href="http://live.gnome.org/Empathy">Empathy</a>. O mais complicado foi constatar que este problema afeta a digitação. Ao utilizar as teclas de atalho - alt + f2 - não aconteceu nada, a tela de execução de aplicativos não apareceu. Utilizei o menu iniciar para acionar o prompt de comando - terminal gnome - que logo apareceu, mas não recebia qualquer digitação. O que fazer? Fui abrindo - através do menu iniciar - aplicativos que pudessem receber digitação, mas nenhum respondia. Então tentei a caixa de texto para pesquisa do próprio menu iniciar:<br/><img src="http://dl.dropbox.com/u/9093640/imagem1.png" alt="Caixa de texto para pesquisa, menu iniciar.""/> </p><p>Com isso, fiz uma cópia do texto - ctrl+c - e adicionei um ícone no <a href="http://pt.wikipedia.org/wiki/Gnome-panel">painel principal</a>, aquela grande barra no rodapé da tela, para acionar o Executar Aplicativo:<br/><img src="http://dl.dropbox.com/u/9093640/adicionar_ao_painel.png" alt="adicionar ao painel""/><br/>Observe que a imagem traz o botão de fechar, isso porque fiz a captura da tela agora depois de todo o processo. Com o ícone disponível foi só acioná-lo e colar - ctrl+v - o comando (metacity -replace) e executar. Pronto, Voltou ao normal! Até quando? <img src="http://blog.gilbertoca.com/wp-includes/images/smilies/icon_sad.gif" alt=":(" class="wp-smiley" /></p>
+</div>
+<p>Vamos aguardar e torcer! <img src="http://blog.gilbertoca.com/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" /></p>
+<p><strong>ATUALIZAÇÃO (31/12/2010):</strong><br />
+Aconteceu novamente. Desta vez enquanto verificava a lista de contatos no <a href="http://live.gnome.org/Empathy">Empathy</a>. O mais complicado foi constatar que este problema afeta a digitação. Ao utilizar as teclas de atalho - alt + f2 - não aconteceu nada, a tela de execução de aplicativos não apareceu. Utilizei o menu iniciar para acionar o prompt de comando - terminal gnome - que logo apareceu, mas não recebia qualquer digitação. O que fazer? Fui abrindo - através do menu iniciar - aplicativos que pudessem receber digitação, mas nenhum respondia. Então tentei a caixa de texto para pesquisa do próprio menu iniciar:<br />
+<img src="http://dl.dropbox.com/u/9093640/imagem1.png" alt="Caixa de texto para pesquisa, menu iniciar." /></p>
+<p>Com isso, fiz uma cópia do texto - ctrl+c - e adicionei um ícone no <a href="http://pt.wikipedia.org/wiki/Gnome-panel">painel principal</a>, aquela grande barra no rodapé da tela, para acionar o Executar Aplicativo:<br />
+<img src="http://dl.dropbox.com/u/9093640/adicionar_ao_painel.png" alt="adicionar ao painel" /><br />
+Observe que a imagem traz o botão de fechar, isso porque fiz a captura da tela agora depois de todo o processo. Com o ícone disponível foi só acioná-lo e colar - ctrl+v - o comando (metacity -replace) e executar. Pronto, Voltou ao normal! Até quando? <img src="http://blog.gilbertoca.com/wp-includes/images/smilies/icon_sad.gif" alt=":(" class="wp-smiley" /></p>
+
     </section>
+<section>
+<div id="advertisements"></div>
+<script data-ad-client="ca-pub-3863943400063116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</section>
 <section>
 <div id="disqus_thread"></div>
         <script type="text/javascript">

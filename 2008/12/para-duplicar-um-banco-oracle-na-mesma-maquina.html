@@ -45,21 +45,26 @@
         </p>
     </header>
     <section>
-	<p>Atualmente aqui na <a href="www.secad.to.gov.br">Secretaria</a> estamos em um processo de implantação de um <a href="http://www.techne.com.br/produtos/produtos.asp?id=4">sistema de recursos humanos</a>, para ser mais exato, praticamente toda parte de infraestrutura (hardware e software) já está pronta para uso. Mas por questões que foge ao meu conhecimento (penso ser licitação), a fase mais densa (treinamento e uso pelo usuário final) está em fase de planejamento/reestruturação. Bom, apesar dessa, vamos dizer morosidade, tem uma fase desse processo que não pára: a migração. Nesse processo participam duas equipes: parametrização e a própria migração, o qual nessa última pertenço. </p><p>A migração é um ciclo constante onde a partir de modificações(parametrização) importantes no banco de produção, é acionado uma requisição de atualização do banco de migração (utilizado para validar a parametrização com a ativação de funções do sistema de recursos humanos, por exemplo, calculo de folha). Para esse ciclo funcionar tive que realizar uma das tarefas mais comuns para quem administra um que é cópia/duplicação/clonagem de um banco em produção para outro banco (até mesmo em outro servidor) a ser utilizado como teste. O procedimento descrito aqui, nada mais é do que sequência descrita na própria [documentação (<a href="http://download.oracle.com/docs/cd/B19306_01/backup.102/b14191/rcmdupdb">http://download.oracle.com/docs/cd/B19306_01/backup.102/b14191/rcmdupdb</a>. htm#i1006474):</p>
+	<p>Atualmente aqui na <a href="www.secad.to.gov.br">Secretaria</a> estamos em um processo de implantação de um <a href="http://www.techne.com.br/produtos/produtos.asp?id=4">sistema de recursos humanos</a>, para ser mais exato, praticamente toda parte de infraestrutura (hardware e software) já está pronta para uso. Mas por questões que foge ao meu conhecimento (penso ser licitação), a fase mais densa (treinamento e uso pelo usuário final) está em fase de planejamento/reestruturação. Bom, apesar dessa, vamos dizer morosidade, tem uma fase desse processo que não pára: a migração. Nesse processo participam duas equipes: parametrização e a própria migração, o qual nessa última pertenço.</p>
+<p>A migração é um ciclo constante onde a partir de modificações(parametrização) importantes no banco de produção, é acionado uma requisição de atualização do banco de migração (utilizado para validar a parametrização com a ativação de funções do sistema de recursos humanos, por exemplo, calculo de folha). Para esse ciclo funcionar tive que realizar uma das tarefas mais comuns para quem administra um que é cópia/duplicação/clonagem de um banco em produção para outro banco (até mesmo em outro servidor) a ser utilizado como teste. O procedimento descrito aqui, nada mais é do que sequência descrita na própria [documentação (<a href="http://download.oracle.com/docs/cd/B19306_01/backup.102/b14191/rcmdupdb">http://download.oracle.com/docs/cd/B19306_01/backup.102/b14191/rcmdupdb</a>. htm#i1006474):</p>
 <ol>
-  <li><a href="#task1">Create an Oracle Password File for the Auxiliary Instance</a></li>
-  <li><a href="#task2">Establish Oracle Net Connectivity to the Auxiliary Instance</a></li>
-  <li><a href="#task3">Create an Initialization Parameter File for the Auxiliary Instance</a></li>
-  <li><a href="#task4">Start the Auxiliary Instance</a></li>
-  <li><a href="#task5">Mount or Open the Target Database</a></li>
-  <li><a href="#task6">Make Sure You Have the Necessary Backups and Archived Redo Logs (Essencial - você precisa de um backup</a></li>
-  <li><a href="#task7">Allocate Auxiliary Channels if Automatic Channels Are Not Configured</a></li>
-  <li><a href="#task8">Recrie a tablespace temporária (extra)</a></li>
-</ol><h3><a name="task1">Task 1: Create an Oracle Password File for the Auxiliary</h3><p>Instance</a></p>
-<pre><code class="Shell">cd $ORACLE_HOME/dbs/
+<li><a href="#task1">Create an Oracle Password File for the Auxiliary Instance</a></li>
+<li><a href="#task2">Establish Oracle Net Connectivity to the Auxiliary Instance</a></li>
+<li><a href="#task3">Create an Initialization Parameter File for the Auxiliary Instance</a></li>
+<li><a href="#task4">Start the Auxiliary Instance</a></li>
+<li><a href="#task5">Mount or Open the Target Database</a></li>
+<li><a href="#task6">Make Sure You Have the Necessary Backups and Archived Redo Logs (Essencial - você precisa de um backup</a></li>
+<li><a href="#task7">Allocate Auxiliary Channels if Automatic Channels Are Not Configured</a></li>
+<li><a href="#task8">Recrie a tablespace temporária (extra)</a></li>
+</ol>
+<h3><a href="#task-1-create-an-oracle-password-file-for-the-auxiliary" id="task-1-create-an-oracle-password-file-for-the-auxiliary"><a name="task1">Task 1: Create an Oracle Password File for the Auxiliary</a></h3>
+<p>Instance</a></p>
+<pre><code class="language-Shell">cd $ORACLE_HOME/dbs/
 orapwd file=$ORACLE_HOME/dbs/orapwbeta password=senha entries=5
-</code></pre><h3><a name="task2">Task 2: Establish Oracle Net Connectivity to the Auxiliary</h3><p>Instance</a></p>
-<pre><code class="Shell">vi $ORACLE_HOME/network/admin/tnsnames.ora
+</code></pre>
+<h3><a href="#task-2-establish-oracle-net-connectivity-to-the-auxiliary" id="task-2-establish-oracle-net-connectivity-to-the-auxiliary"><a name="task2">Task 2: Establish Oracle Net Connectivity to the Auxiliary</a></h3>
+<p>Instance</a></p>
+<pre><code class="language-Shell">vi $ORACLE_HOME/network/admin/tnsnames.ora
 BETA =
   (DESCRIPTION =
     (ADDRESS_LIST =
@@ -69,8 +74,10 @@ BETA =
       (SERVICE_NAME = beta.secad.to.gov.br)
     )
   )
-</code></pre><p>Atenção: a criação estática de um listener é importantíssima, caso contrário vc encontrá problemas de conexão, como o erro:<br/>`ORA-12528: TNS:listener: all appropriate instances are blocking new connections </p>
-<pre><code class="Shell">vi $ORACLE_HOME/network/admin/listener.ora
+</code></pre>
+<p>Atenção: a criação estática de um listener é importantíssima, caso contrário vc encontrá problemas de conexão, como o erro:<br />
+`ORA-12528: TNS:listener: all appropriate instances are blocking new connections</p>
+<pre><code class="language-Shell">vi $ORACLE_HOME/network/admin/listener.ora
 # listener.ora Network Configuration File: 
 /opt/oracle/db/10.2.0.1.0/server/network/admin/listener.ora
 # Generated by Oracle configuration tools.
@@ -98,8 +105,11 @@ LISTENER =
   (DESCRIPTION =
     (ADDRESS = (PROTOCOL = TCP)(HOST = oracleibm)(PORT = 1521))
   )
-</code></pre><h3><a name="task3">Task 3: Create an Initialization Parameter File for the</h3><p>Auxiliary Instance</a></p><p>vamos criar primeiro a estrutura de diretorios onde ficarão os arquivos do banco <code>Shell
-cd /dm0/oracle/admin/beta
+</code></pre>
+<h3><a href="#task-3-create-an-initialization-parameter-file-for-the" id="task-3-create-an-initialization-parameter-file-for-the"><a name="task3">Task 3: Create an Initialization Parameter File for the</a></h3>
+<p>Auxiliary Instance</a></p>
+<p>vamos criar primeiro a estrutura de diretorios onde ficarão os arquivos do banco</p>
+<pre><code class="language-Shell">cd /dm0/oracle/admin/beta
 mkdir adump
 mkdir arch
 mkdir bdump
@@ -110,16 +120,19 @@ mkdir pfile
 mkdir scripts
 mkdir udump
 mkdir utlfile
-</code></p><p>Agora o arquivo de inicialização, para isso vou fazer uma copia do banco original e fazer a mudanças necessárias </p>
-<pre><code class="Shell">cd /dm0/oracle/admin/beta/pfile/
+</code></pre>
+<p>Agora o arquivo de inicialização, para isso vou fazer uma copia do banco original e fazer a mudanças necessárias</p>
+<pre><code class="language-Shell">cd /dm0/oracle/admin/beta/pfile/
 cp ../../producao/pfile/init.ora.292007145712 initbeta.ora
 vi initbeta.ora
-</code></pre><p>Se estiver usando spfile no banco original, crie um arquivo de inicialização (pfile) a partir dele </p>
-<pre><code class="Shell">export ORACLE_SID=producao
+</code></pre>
+<p>Se estiver usando spfile no banco original, crie um arquivo de inicialização (pfile) a partir dele</p>
+<pre><code class="language-Shell">export ORACLE_SID=producao
 sqlplus /as sysdba
-CREATE PFILE=&#39;/dm0/oracle/admin/beta/pfile/initbeta.ora&#39; FROM SPFILE;
-</code></pre><p>Substitua todas as ocorrências do banco anterior</p>
-<pre><code class="Shell">:g/producao/s//beta/g
+CREATE PFILE='/dm0/oracle/admin/beta/pfile/initbeta.ora' FROM SPFILE;
+</code></pre>
+<p>Substitua todas as ocorrências do banco anterior</p>
+<pre><code class="language-Shell">:g/producao/s//beta/g
 
 #Acrescente mais uma seção neste arquivo
 ###########################################
@@ -131,17 +144,25 @@ DB_FILE_NAME_CONVERT=(/dm0/oracle/admin/producao/data/
 ,/dm0/oracle/admin/beta/data/)
 LOG_FILE_NAME_CONVERT=(/dm0/oracle/admin/producao/data 
 ,/dm0/oracle/admin/beta/data)
-</code></pre><p>Salve o arquivo. Para facilitar a duplicação recomenda-se criar um spfile no local padrao da instalação. Isso irá lhe poupar o trabalho quando o rman fizer o shutdwon e startup, ele não solicitará o arquivo de inicialização pfile.</p>
-<pre><code class="Shellexport ORACLE_SID=beta">sqlplus /as sysdba
-CREATE SPFILE FROM PFILE=&#39;/dm0/oracle/admin/beta/pfile/initbeta.ora&#39;;
-</code></pre><h3><a name="task4">Task 4: Start the Auxiliary Instance</a></h3>
-<pre><code class="Shell">export ORACLE_SID=beta
+</code></pre>
+<p>Salve o arquivo. Para facilitar a duplicação recomenda-se criar um spfile no local padrao da instalação. Isso irá lhe poupar o trabalho quando o rman fizer o shutdwon e startup, ele não solicitará o arquivo de inicialização pfile.</p>
+<pre><code class="language-Shellexport">sqlplus /as sysdba
+CREATE SPFILE FROM PFILE='/dm0/oracle/admin/beta/pfile/initbeta.ora';
+</code></pre>
+<h3><a href="#task-4-start-the-auxiliary-instance" id="task-4-start-the-auxiliary-instance"><a name="task4">Task 4: Start the Auxiliary Instance</a></a></h3>
+<pre><code class="language-Shell">export ORACLE_SID=beta
 sqlplus /as sysdba
 STARTUP FORCE NOMOUNT
-</code></pre><h3><a name="task5">Task 5: Mount or Open the Target Database (Opcional -</h3><p>provavelmente o banco original já esteja aberto!)</a></p><p>Conecte-se ao banco de origem</p>
-<pre><code class="ShellSQL> CONNECT SYS/oracle@producao AS SYSDBA;"><br/>STARTUP MOUNT;#mount or open database origem
-</code></pre><h3><a name="task6">Task 6: Make Sure You Have the Necessary Backups and</h3><p>Archived Redo Logs (Essencial - você precisa de um backup recente, caso contrário, a clonagem criará um banco antigo)</a></p>
-<pre><code class="Shell">export ORACLE_SID=producao
+</code></pre>
+<h3><a href="#task-5-mount-or-open-the-target-database-opcional-" id="task-5-mount-or-open-the-target-database-opcional-"><a name="task5">Task 5: Mount or Open the Target Database (Opcional -</a></h3>
+<p>provavelmente o banco original já esteja aberto!)</a></p>
+<p>Conecte-se ao banco de origem</p>
+<pre><code class="language-ShellSQL&gt;">
+STARTUP MOUNT;#mount or open database origem
+</code></pre>
+<h3><a href="#task-6-make-sure-you-have-the-necessary-backups-and" id="task-6-make-sure-you-have-the-necessary-backups-and"><a name="task6">Task 6: Make Sure You Have the Necessary Backups and</a></h3>
+<p>Archived Redo Logs (Essencial - você precisa de um backup recente, caso contrário, a clonagem criará um banco antigo)</a></p>
+<pre><code class="language-Shell">export ORACLE_SID=producao
 rman target /
 Recovery Manager: Release 10.2.0.2.0 - Production on Wed Mar 14 18:12:58 2007
 Copyright (c) 1982, 2005, Oracle.  All rights reserved.
@@ -150,13 +171,20 @@ RMAN&gt; list backup;
 using target database control file instead of recovery catalog
 List of Backup Sets
 ===================
-</code></pre><h3><a name="task7">Task 7: Allocate Auxiliary Channels if Automatic Channels</h3><p>Are Not Configured</a></p><p>Start RMAN with a connection to the target database, the auxiliary instance, and, if applicable, the recovery catalog database<br/>Nesta conexão pode ocorrer um error comum na versao 10g:<br/>`ORA-12528: TNS:listener: all appropriate instances are blocking new connections<br/>Este é um erro conhecido do Oracle 10g onde um SHUTDOWN IMMEDIATE é seguido por um STARTUP MOUNT ou STARTUP FORCE MOUNT. Execute um novo SHUTDOWN no banco e então um STARTUP. Você será capaz de conectar novamente.<br/>Se ainda sim você não conseguir conectar, inverta as opções do rman:<br/><code>Shell
-#Forma alternativa  
+</code></pre>
+<h3><a href="#task-7-allocate-auxiliary-channels-if-automatic-channels" id="task-7-allocate-auxiliary-channels-if-automatic-channels"><a name="task7">Task 7: Allocate Auxiliary Channels if Automatic Channels</a></h3>
+<p>Are Not Configured</a></p>
+<p>Start RMAN with a connection to the target database, the auxiliary instance, and, if applicable, the recovery catalog database<br />
+Nesta conexão pode ocorrer um error comum na versao 10g:<br />
+`ORA-12528: TNS:listener: all appropriate instances are blocking new connections<br />
+Este é um erro conhecido do Oracle 10g onde um SHUTDOWN IMMEDIATE é seguido por um STARTUP MOUNT ou STARTUP FORCE MOUNT. Execute um novo SHUTDOWN no banco e então um STARTUP. Você será capaz de conectar novamente.<br />
+Se ainda sim você não conseguir conectar, inverta as opções do rman:</p>
+<pre><code class="language-Shell">#Forma alternativa  
 #oracle@oracleibm:/dm0/oracle/admin/beta/pfile&gt; export ORACLE_SID=beta  
 #oracle@oracleibm:/dm0/oracle/admin/beta/pfile&gt;rman target sys@producao 
 auxiliary / 
-</code></p>
-<pre><code class="Shell">oracle@oracleibm:/dm0/oracle/admin/beta/pfile&gt; export 
+</code></pre>
+<pre><code class="language-Shell">oracle@oracleibm:/dm0/oracle/admin/beta/pfile&gt; export 
 ORACLE_SID=producao
 oracle@oracleibm:/dm0/oracle/admin/beta/pfile&gt; rman TARGET /  AUXILIARY SYS@beta
 
@@ -193,13 +221,15 @@ database opened
 Finished Duplicate Db at 15/03/2007 09:55:47
 
 RMAN&gt; quit
-</code></pre><h3><a name="task8">Task 8: Recrie a tablespace temporária (extra)</a></h3>
-<pre><code class="Shell#(versão 9i e acima)">ALTER DATABASE TEMPFILE &#39;/dm0/oracle/admin/beta/data/temp01.dbf&#39; DROP INCLUDING 
+</code></pre>
+<h3><a href="#task-8-recrie-a-tablespace-temporária-extra" id="task-8-recrie-a-tablespace-temporária-extra"><a name="task8">Task 8: Recrie a tablespace temporária (extra)</a></a></h3>
+<pre><code class="language-Shell#(versão">ALTER DATABASE TEMPFILE '/dm0/oracle/admin/beta/data/temp01.dbf' DROP INCLUDING 
 DATAFILES;
-ALTER TABLESPACE TEMP ADD TEMPFILE &#39;/dm0/oracle/admin/beta/data/temp01.dbf&#39; 
+ALTER TABLESPACE TEMP ADD TEMPFILE '/dm0/oracle/admin/beta/data/temp01.dbf' 
 SIZE 200M REUSE AUTOEXTEND ON NEXT 5M MAXSIZE 2000M; 
-</code></pre><p>Outra coisa, como este banco é para teste, devemos desabilitar o modo archive do mesmo</p>
-<pre><code class="Shell">oracle@oracleibm:/dm0/oracle/admin/beta/pfile&gt; export ORACLE_SID=beta
+</code></pre>
+<p>Outra coisa, como este banco é para teste, devemos desabilitar o modo archive do mesmo</p>
+<pre><code class="language-Shell">oracle@oracleibm:/dm0/oracle/admin/beta/pfile&gt; export ORACLE_SID=beta
 oracle@oracleibm:/dm0/oracle/admin/beta/pfile&gt; sqlplus / as sysdba
 SQL&gt; archive log list
 Database log mode              Archive Mode
@@ -236,12 +266,20 @@ Archive destination            /opt/oracle/db/10.2.0.1.0/server/dbs/arch
 Oldest online log sequence     0
 Current log sequence           1
 SQL&gt; 
-</code></pre><p>** </p><h1>Não esquecer de coletar estatísticas</h1><p>**</p>
-<pre><code class="Shell">begin
-dbms_stats.gather_database_stats(options=&gt; &#39;GATHER AUTO&#39;);
+</code></pre>
+<p>**</p>
+<h1><a href="#não-esquecer-de-coletar-estatísticas" id="não-esquecer-de-coletar-estatísticas">Não esquecer de coletar estatísticas</a></h1>
+<p>**</p>
+<pre><code class="language-Shell">begin
+dbms_stats.gather_database_stats(options=&gt; 'GATHER AUTO');
 end;
 </code></pre>
+
     </section>
+<section>
+<div id="advertisements"></div>
+<script data-ad-client="ca-pub-3863943400063116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</section>
 <section>
 <div id="disqus_thread"></div>
         <script type="text/javascript">

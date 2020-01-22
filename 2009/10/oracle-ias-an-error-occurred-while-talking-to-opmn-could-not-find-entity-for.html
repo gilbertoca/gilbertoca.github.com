@@ -48,20 +48,24 @@
     </header>
     <section>
 	<p>O servidor de aplicações Oracle (IAS 10g) não inicia, o enterprise manager reporta um erro que não diz muito:</p>
-<blockquote><p>An error occurred while talking to OPMN. Could not find entity for “nome do servidor” </p>
-</blockquote><p>Os arquivos de log necessários são:</p>
+<blockquote>
+<p>An error occurred while talking to OPMN. Could not find entity for “nome do servidor”</p>
+</blockquote>
+<p>Os arquivos de log necessários são:</p>
 <ul>
-  <li>$ORACLE_HOME/opmn/logs/ons.log</li>
-  <li>$ORACLE_HOME/opmn/logs/opmn.log</li>
-  <li>$ORACLE_HOME/opmn/logs/ipm.log</li>
-</ul><p>O único que mostrou algo de errado foi ipm.log:<br/><code>&lt;br /&gt;
-cat ipm.log&lt;br /&gt;
-09/10/19 10:18:09 [2] BIND (Address already in use)&lt;br /&gt;
-09/10/19 10:18:09 [2] 127.0.0.1:6101 - listener BIND failed&lt;br /&gt;
-09/10/19 10:18:09 [4] Thread do listener 98311: 127.0.0.1:6101 (0x442) está sendo encerrado&lt;br /&gt;
-09/10/19 10:18:09 [1] Listener local encerrado&lt;br /&gt;
-</code><br/>A solução foi fechar todas a aplicações oracle em execução e verificar pelo utilitário <strong><a href="http://linux.die.net/man/1/ps">ps</a></strong> a existência de algum ainda rodando, para fechá-lo também.</p>
+<li>$ORACLE_HOME/opmn/logs/ons.log</li>
+<li>$ORACLE_HOME/opmn/logs/opmn.log</li>
+<li>$ORACLE_HOME/opmn/logs/ipm.log</li>
+</ul>
+<p>O único que mostrou algo de errado foi ipm.log:<br />
+<code>&lt;br /&gt; cat ipm.log&lt;br /&gt; 09/10/19 10:18:09 [2] BIND (Address already in use)&lt;br /&gt; 09/10/19 10:18:09 [2] 127.0.0.1:6101 - listener BIND failed&lt;br /&gt; 09/10/19 10:18:09 [4] Thread do listener 98311: 127.0.0.1:6101 (0x442) está sendo encerrado&lt;br /&gt; 09/10/19 10:18:09 [1] Listener local encerrado&lt;br /&gt;</code><br />
+A solução foi fechar todas a aplicações oracle em execução e verificar pelo utilitário <strong><a href="http://linux.die.net/man/1/ps">ps</a></strong> a existência de algum ainda rodando, para fechá-lo também.</p>
+
     </section>
+<section>
+<div id="advertisements"></div>
+<script data-ad-client="ca-pub-3863943400063116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</section>
 <section>
 <div id="disqus_thread"></div>
         <script type="text/javascript">

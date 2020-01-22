@@ -53,64 +53,174 @@
         </p>
     </header>
     <section>
-	<p>** </p><p>Este post é uma tradução livre do artigo “<a href="http://meri-stuff.blogspot.com/2011/03/apache-shiro-part-1-basics.html" target="_blank"> Apache Shiro Part 1 - Basics </a>“, publicado por Meri em 27 de março 2011 </p><p></strong><br/><strong>ATUALIZAÇÃO: duas novas seções adicionadas - tratamento de erros e hashing de senhas.</strong></p><p><A href="http://shiro.apache.org/index.html" target="_blank"> Apache Shiro</A>, inicialmente chamado JSecurity, é um framework de segurança desenvolvido em java. Foi aceito e tornou-se um projeto Apache de nível superior em 2010. Tem como objetivo ser poderoso e fácil de usar. </p><p>O projeto está em constante desenvolvimento e com listas de e-mails ativas para usuários e desenvolvedores. Áreas mais importantes estão <a href="http://shiro.apache.org/documentation.html" target="_blank"> documentadas em sua página web</a>. No entanto, existem algumas lacunas na documentação. Não é possível aprender a usar o máximo dos recursos do Shiro somente com a documentação. Felizmente, o código é bem documentado e onde o testei, ela foi de fácil leitura. </p><p>Principais recursos do projeto Shiro são: </p>
+	<p>**</p>
+<p>Este post é uma tradução livre do artigo “<a href="http://meri-stuff.blogspot.com/2011/03/apache-shiro-part-1-basics.html" target="_blank"> Apache Shiro Part 1 - Basics </a>“, publicado por Meri em 27 de março 2011</p>
+<p></strong><br />
+<strong>ATUALIZAÇÃO: duas novas seções adicionadas - tratamento de erros e hashing de senhas.</strong></p>
+<p><A href="http://shiro.apache.org/index.html" target="_blank"> Apache Shiro</A>, inicialmente chamado JSecurity, é um framework de segurança desenvolvido em java. Foi aceito e tornou-se um projeto Apache de nível superior em 2010. Tem como objetivo ser poderoso e fácil de usar.</p>
+<p>O projeto está em constante desenvolvimento e com listas de e-mails ativas para usuários e desenvolvedores. Áreas mais importantes estão <a href="http://shiro.apache.org/documentation.html" target="_blank"> documentadas em sua página web</a>. No entanto, existem algumas lacunas na documentação. Não é possível aprender a usar o máximo dos recursos do Shiro somente com a documentação. Felizmente, o código é bem documentado e onde o testei, ela foi de fácil leitura.</p>
+<p>Principais recursos do projeto Shiro são:</p>
 <ul>
-  <li>autenticação,</li>
+<li>
+<p>autenticação,</p>
+</li>
+<li>
+<p>autorização,</p>
+</li>
+<li>
+<p>criptografia,</p>
+</li>
+<li>
+<p>gerenciamento de sessão.</p>
+</li>
 </ul>
+<p>Neste artigo tentaremos demonstrar vários recursos do Shiro. Vamos começar com uma simples aplicação sem segurança e então adicionaremos recursos de segurança. Todo código está disponível no projeto <A href="https://github.com/SomMeri/SimpleShiroSecuredApplication" target="_blank"> SimpleShiroSecuredApplication</A> hospedado no <a href="https://github.com/" target="_blank"> Github</a>.</p>
+<h4><a href="#aplicação-sem-segurança" id="aplicação-sem-segurança">Aplicação sem Segurança</a></h4>
+<p>O código da aplicação sem segurança está localizado no ramo(branch) <A href="https://github.com/SomMeri/SimpleShiroSecuredApplication/tree/unsecured_application" target="_blank"> unsecured_application</A>.<br />
+A aplicação representa um sistema interno para uma companhia fictícia. A companhia tem quatro departamentos:</p>
 <ul>
-  <li>autorização,</li>
+<li>
+<p>administradores(administrators),</p>
+</li>
+<li>
+<p>reparadores(repairmen),</p>
+</li>
+<li>
+<p>cientistas(scientists),</p>
+</li>
+<li>
+<p>vendedores(sales).</p>
+</li>
 </ul>
+<p>Cada departamento tem sua própria página. Cada página contém botões que serão usados por usuários em sua atividade. Quando o usuário pressiona o botão, o trabalho é realizado. Por exemplo, qualquer reparador pode acessar a página reparadores(repairmen) e pressionar o botão “Reparar Refrigerador(Repair Refrigerator)”. O botão repara refrigerador e mostra mensagem de sucesso.</p>
+<p>Cada usuário tem sua própria página de gerenciamento de conta. Esta página de gerenciamento contém informações privadas do usuário. Como a aplicação sem segurança não tem usuários ainda, a página de gerenciamento de conta não faz nada. Adicionalmente, há uma página que contém todas funções da aplicação. Tudo que alguém pode fazer é possível ser feito nesta página.</p>
+<p>Qualquer pessoa pode fazer qualquer coisa e ver todas as páginas. A aplicação exemplo é executada na classe de teste <A href="https://github.com/SomMeri/SimpleShiroSecuredApplication/blob/unsecured_application/src/test/java/org/meri/simpleshirosecuredapplication/RunWaitTest.java" target="_blank"> RunWaitTest</A>. Não é uma boa prática usar teste de unidade desta forma, mas isso não é importante agora. Se você executar a classe a aplicação estará disponível no endereço (url) <a href="http://localhost:9180/simpleshirosecuredapplication/">http://localhost:9180/simpleshirosecuredapplication/</a>.</p>
+<h4><a href="#adicionando-autenticação" id="adicionando-autenticação">Adicionando Autenticação</a></h4>
+<p>Primeiro, temos que verificar a identidade do usuário. A mais fácil e padronizada forma de autenticação é feita por senha e nome usuário. Usuário preenche o seu nome de usuário e senha e o sistema verifica se os valores fornecidos combinam com alguma conta de usuário.</p>
+<p>Para aplicações mais simples, é suficiente armazenar nome e senha de usuários em arquivos de texto puro. Em um cenário mais realista, o nome e senha são armazenados em um mecanismo de persistente or a verificação é feita por outro sistema como ldap ou active directory. Shiro suporta todos os métodos de autenticação mencionados. Se os recursos de autenticação pré-existentes não são suficientes, é possível estender o framework com sua própria implementação de verificação.</p>
+<p>Neste capítulo, iremos adicionar autenticação baseada em nome de usuário e senha na aplicação. Nome de usuário e senha serão armazenados no arquivo de inicialização do Shiro, o qual é texto e estático.</p>
+<p><strong>Novos requisitos:</strong><br />
+É possível a entrada e saída de usuários(log in/out). A aplicação será acessível somente para usuários registrados. Usuário com autenticação sem erros é redirecionado para sua própria página de gerenciamento de conta. Todas as páginas e funções da aplicação serão acessíveis para qualquer usuário autenticado.<br />
+Passos necessários:</p>
 <ul>
-  <li>criptografia,</li>
+<li>
+<p>adicionar Apache Shiro,</p>
+</li>
+<li>
+<p>criar página de autenticação(log in),</p>
+</li>
+<li>
+<p>configurar usuários e senhas,</p>
+</li>
+<li>
+<p>criar página de saída(log out).</p>
+</li>
 </ul>
+<h5><a href="#adicionar-apache-shiro" id="adicionar-apache-shiro">Adicionar Apache Shiro</a></h5>
+<p>Shiro é integrado à aplicação web através de <a href="http://download.oracle.com/javaee/5/api/javax/servlet/Filter.html" target="_blank"> filtros servlet</a>. Um filtro intercepta requisições e respostas antes do servlet e executa todas as tarefas necessárias (como a identificação do usuário atualmente autenticado, anexar o usuário ao thread corrente, …). Filtros Shiro pré-definidos fornecem recursos de segurança básicos, como:</p>
 <ul>
-  <li>gerenciamento de sessão.</li>
-</ul><p>Neste artigo tentaremos demonstrar vários recursos do Shiro. Vamos começar com uma simples aplicação sem segurança e então adicionaremos recursos de segurança. Todo código está disponível no projeto <A href="https://github.com/SomMeri/SimpleShiroSecuredApplication" target="_blank"> SimpleShiroSecuredApplication</A> hospedado no <a href="https://github.com/" target="_blank"> Github</a>. </p><h4>Aplicação sem Segurança</h4><p>O código da aplicação sem segurança está localizado no ramo(branch) <A href="https://github.com/SomMeri/SimpleShiroSecuredApplication/tree/unsecured_application" target="_blank"> unsecured_application</A>.<br/>A aplicação representa um sistema interno para uma companhia fictícia. A companhia tem quatro departamentos: </p>
-<ul>
-  <li>administradores(administrators),</li>
+<li>
+<p>força a autenticação do usuário(log in),</p>
+</li>
+<li>
+<p>força ssl,</p>
+</li>
+<li>
+<p>verificação dos direitos de acesso à página.</p>
+</li>
 </ul>
+<p>Se você quiser aprender mais sobre filtros Shiro pré-definidos, um bom lugar para começar é a enumeração <A href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/web/filter/mgt/DefaultFilter.html" target="_blank"> DefaultFilter</A>. Ela lista todos os filtros Shiro pré-definidos disponíveis. Se estes não forem suficientes para suas necessidades, você pode criar um personalizado.</p>
+<p>Usaremos o filtro altamente configurável <A href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/web/servlet/IniShiroFilter.html" target="_blank"> IniShiroFilter</A>. Ele lê a configuração Shiro a partir do arquivo ini e inicializa o framework de segurança. Ele não executa qualquer verificação de segurança. Verificação de segurança, autenticação de usuário, verificação de protocolo, etc. são todos transferidos(delegados) tanto para o filtro Shiro pré-definido quanto para o filtro personalizado(outra implementação). O filtro IniShiroFilter apenas os inicializa.</p>
+<p>A configuração ini é descrita na <A href="http://shiro.apache.org/configuration.html" target="_blank"> documentação</A> e no <A href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/web/servlet/IniShiroFilter.html" target="_blank"> javadoc</A>. O arquivo de configuração ini tem quatro seções:</p>
 <ul>
-  <li>reparadores(repairmen),</li>
+<li>
+<p>Seção [main] contém a inicialização do Shiro. Filtros e objetos personalizados são configurados aqui.</p>
+</li>
+<li>
+<p>Seção [users] define usuários, senhas e perfis de usuário(roles).</p>
+</li>
+<li>
+<p>Seção [roles] associa perfis(roles) com permissões.</p>
+</li>
+<li>
+<p>Seção [urls] especifica direitos de acesso às páginas da aplicação (urls). É feito ligando filtro tanto pré-definido quanto personalizado às urls</p>
+</li>
 </ul>
-<ul>
-  <li>cientistas(scientists),</li>
-</ul>
-<ul>
-  <li>vendedores(sales).</li>
-</ul><p>Cada departamento tem sua própria página. Cada página contém botões que serão usados por usuários em sua atividade. Quando o usuário pressiona o botão, o trabalho é realizado. Por exemplo, qualquer reparador pode acessar a página reparadores(repairmen) e pressionar o botão “Reparar Refrigerador(Repair Refrigerator)”. O botão repara refrigerador e mostra mensagem de sucesso. </p><p>Cada usuário tem sua própria página de gerenciamento de conta. Esta página de gerenciamento contém informações privadas do usuário. Como a aplicação sem segurança não tem usuários ainda, a página de gerenciamento de conta não faz nada. Adicionalmente, há uma página que contém todas funções da aplicação. Tudo que alguém pode fazer é possível ser feito nesta página. </p><p>Qualquer pessoa pode fazer qualquer coisa e ver todas as páginas. A aplicação exemplo é executada na classe de teste <A href="https://github.com/SomMeri/SimpleShiroSecuredApplication/blob/unsecured_application/src/test/java/org/meri/simpleshirosecuredapplication/RunWaitTest.java" target="_blank"> RunWaitTest</A>. Não é uma boa prática usar teste de unidade desta forma, mas isso não é importante agora. Se você executar a classe a aplicação estará disponível no endereço (url) <a href="http://localhost:9180/simpleshirosecuredapplication/">http://localhost:9180/simpleshirosecuredapplication/</a>. </p><h4>Adicionando Autenticação</h4><p>Primeiro, temos que verificar a identidade do usuário. A mais fácil e padronizada forma de autenticação é feita por senha e nome usuário. Usuário preenche o seu nome de usuário e senha e o sistema verifica se os valores fornecidos combinam com alguma conta de usuário. </p><p>Para aplicações mais simples, é suficiente armazenar nome e senha de usuários em arquivos de texto puro. Em um cenário mais realista, o nome e senha são armazenados em um mecanismo de persistente or a verificação é feita por outro sistema como ldap ou active directory. Shiro suporta todos os métodos de autenticação mencionados. Se os recursos de autenticação pré-existentes não são suficientes, é possível estender o framework com sua própria implementação de verificação. </p><p>Neste capítulo, iremos adicionar autenticação baseada em nome de usuário e senha na aplicação. Nome de usuário e senha serão armazenados no arquivo de inicialização do Shiro, o qual é texto e estático. </p><p><strong>Novos requisitos:</strong><br/>É possível a entrada e saída de usuários(log in/out). A aplicação será acessível somente para usuários registrados. Usuário com autenticação sem erros é redirecionado para sua própria página de gerenciamento de conta. Todas as páginas e funções da aplicação serão acessíveis para qualquer usuário autenticado.<br/>Passos necessários: </p>
-<ul>
-  <li>adicionar Apache Shiro,</li>
-</ul>
-<ul>
-  <li>criar página de autenticação(log in),</li>
-</ul>
-<ul>
-  <li>configurar usuários e senhas,</li>
-</ul>
-<ul>
-  <li>criar página de saída(log out).</li>
-</ul><h5>Adicionar Apache Shiro</h5><p>Shiro é integrado à aplicação web através de <a href="http://download.oracle.com/javaee/5/api/javax/servlet/Filter.html" target="_blank"> filtros servlet</a>. Um filtro intercepta requisições e respostas antes do servlet e executa todas as tarefas necessárias (como a identificação do usuário atualmente autenticado, anexar o usuário ao thread corrente, &#8230;). Filtros Shiro pré-definidos fornecem recursos de segurança básicos, como: </p>
-<ul>
-  <li>força a autenticação do usuário(log in),</li>
-</ul>
-<ul>
-  <li>força ssl,</li>
-</ul>
-<ul>
-  <li>verificação dos direitos de acesso à página.</li>
-</ul><p>Se você quiser aprender mais sobre filtros Shiro pré-definidos, um bom lugar para começar é a enumeração <A href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/web/filter/mgt/DefaultFilter.html" target="_blank"> DefaultFilter</A>. Ela lista todos os filtros Shiro pré-definidos disponíveis. Se estes não forem suficientes para suas necessidades, você pode criar um personalizado. </p><p>Usaremos o filtro altamente configurável <A href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/web/servlet/IniShiroFilter.html" target="_blank"> IniShiroFilter</A>. Ele lê a configuração Shiro a partir do arquivo ini e inicializa o framework de segurança. Ele não executa qualquer verificação de segurança. Verificação de segurança, autenticação de usuário, verificação de protocolo, etc. são todos transferidos(delegados) tanto para o filtro Shiro pré-definido quanto para o filtro personalizado(outra implementação). O filtro IniShiroFilter apenas os inicializa. </p><p>A configuração ini é descrita na <A href="http://shiro.apache.org/configuration.html" target="_blank"> documentação</A> e no <A href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/web/servlet/IniShiroFilter.html" target="_blank"> javadoc</A>. O arquivo de configuração ini tem quatro seções: </p>
-<ul>
-  <li>Seção [main] contém a inicialização do Shiro. Filtros e objetos personalizados são configurados aqui.</li>
-</ul>
-<ul>
-  <li>Seção [users] define usuários, senhas e perfis de usuário(roles).</li>
-</ul>
-<ul>
-  <li>Seção [roles] associa perfis(roles) com permissões.</li>
-</ul>
-<ul>
-  <li>Seção [urls] especifica direitos de acesso às páginas da aplicação (urls). É feito ligando filtro tanto pré-definido quanto personalizado às urls</li>
-</ul><p>Adicione Apache Shiro como dependência ao arquivo pom.xml:</p><p><div class="wp_syntax">  <table>  <tr>  <td class="code">  <pre class="xml" style="font-family:monospace;"><span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;properties<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>  <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;shiro.version<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>1.1.0<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/shiro.version<span style="color: #000000; font-weight: bold;">&gt;</span></span></span> <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/properties<span style="color: #000000; font-weight: bold;">&gt;</span></span></span> <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;dependencies<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>  <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;dependency<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>  <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;groupId<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>org.apache.shiro<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/groupId<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>  <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;artifactId<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>shiro-core<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/artifactId<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>  <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;version<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>${shiro.version}<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/version<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>  <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/dependency<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>  <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;dependency<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>  <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;groupId<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>org.apache.shiro<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/groupId<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>  <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;artifactId<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>shiro-web<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/artifactId<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>  <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;version<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>${shiro.version}<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/version<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>  <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/dependency<span style="color: #000000; font-weight: bold;">&gt;</span></span></span> <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/dependencies<span style="color: #000000; font-weight: bold;">&gt;</span></span></span></pre>  </td>  </tr>  </table> </div></p> </p><p>Crie o arquivo Shiro.ini e o coloque no classpath. Configure o arquivo web.xml para chamar o filtro IniShiroFilter antes de cada requisição:</p><p><div class="wp_syntax">  <table>  <tr>  <td class="code">  <pre class="xml" style="font-family:monospace;"><span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;filter<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>  <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;filter-name<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>ShiroFilter<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/filter-name<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>  <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;filter-class<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>org.apache.shiro.web.servlet.IniShiroFilter<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/filter-class<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>  <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;init-param<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>  <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;param-name<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>configPath<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/param-name<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>  <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;param-value<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>classpath:Shiro.ini<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/param-value<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>  <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/init-param<span style="color: #000000; font-weight: bold;">&gt;</span></span></span> <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/filter<span style="color: #000000; font-weight: bold;">&gt;</span></span></span> <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;filter-mapping<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>  <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;filter-name<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>ShiroFilter<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/filter-name<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>  <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;url-pattern<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>/*<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/url-pattern<span style="color: #000000; font-weight: bold;">&gt;</span></span></span> <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/filter-mapping<span style="color: #000000; font-weight: bold;">&gt;</span></span></span></pre>  </td>  </tr>  </table> </div></p> </p><h5>Criar Página de Autenticação(Log in)</h5><p>A página de autenticação é uma simples página html contendo um botão submissão, nome de usuário e senha. A funcionalidade de autenticação é tratada pelo filtro Shiro authc pré-definido. O filtro autch permite acesso à página (url) somente a usuários autenticados. Se o usuário não está autenticado, o filtro o redirecionará para a página de autenticação (log in). </p><p>Crie a página login.jsp:</p><p><div class="wp_syntax">  <table>  <tr>  <td class="code">  <pre class="xml" style="font-family:monospace;"><span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;form</span> <span style="color: #000066;">name</span>=<span style="color: #ff0000;">&ldquo;loginform&rdquo;</span> <span style="color: #000066;">action</span>=<span style="color: #ff0000;">&quot;&ldquo;</span> <span style="color: #000066;">method</span>=<span style="color: #ff0000;">&rdquo;post&ldquo;</span><span style="color: #000000; font-weight: bold;">&gt;</span></span>  <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;table</span> <span style="color: #000066;">align</span>=<span style="color: #ff0000;">&rdquo;left&ldquo;</span> <span style="color: #000066;">border</span>=<span style="color: #ff0000;">&rdquo;0&ldquo;</span> <span style="color: #000066;">cellspacing</span>=<span style="color: #ff0000;">&rdquo;0&ldquo;</span> <span style="color: #000066;">cellpadding</span>=<span style="color: #ff0000;">&rdquo;3&ldquo;</span><span style="color: #000000; font-weight: bold;">&gt;</span></span>  <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;tr<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>  <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;td<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>Username:<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/td<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>  <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;td<span style="color: #000000; font-weight: bold;">&gt;</span></span><span style="color: #000000; font-weight: bold;">&lt;input</span> <span style="color: #000066;">type</span>=<span style="color: #ff0000;">&rdquo;text&ldquo;</span> <span style="color: #000066;">name</span>=<span style="color: #ff0000;">&rdquo;user&ldquo;</span> <span style="color: #000066;">maxlength</span>=<span style="color: #ff0000;">&rdquo;30&ldquo;</span><span style="color: #000000; font-weight: bold;">&gt;</span><span style="color: #000000; font-weight: bold;">&lt;/td<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>  <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/tr<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>  <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;tr<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>  <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;td<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>Password:<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/td<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>  <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;td<span style="color: #000000; font-weight: bold;">&gt;</span></span><span style="color: #000000; font-weight: bold;">&lt;input</span> <span style="color: #000066;">type</span>=<span style="color: #ff0000;">&rdquo;password&ldquo;</span> <span style="color: #000066;">name</span>=<span style="color: #ff0000;">&rdquo;pass&ldquo;</span> <span style="color: #000066;">maxlength</span>=<span style="color: #ff0000;">&rdquo;30&ldquo;</span><span style="color: #000000; font-weight: bold;">&gt;</span><span style="color: #000000; font-weight: bold;">&lt;/td<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>  <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/tr<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>  <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;tr<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>  <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;td</span> <span style="color: #000066;">colspan</span>=<span style="color: #ff0000;">&rdquo;2&ldquo;</span> <span style="color: #000066;">align</span>=<span style="color: #ff0000;">&rdquo;left&ldquo;</span><span style="color: #000000; font-weight: bold;">&gt;</span><span style="color: #000000; font-weight: bold;">&lt;input</span> <span style="color: #000066;">type</span>=<span style="color: #ff0000;">&rdquo;checkbox&ldquo;</span> <span style="color: #000066;">name</span>=<span style="color: #ff0000;">&rdquo;remember&ldquo;</span><span style="color: #000000; font-weight: bold;">&gt;</span><span style="color: #000000; font-weight: bold;">&lt;font</span> <span style="color: #000066;">size</span>=<span style="color: #ff0000;">&rdquo;2&ldquo;</span><span style="color: #000000; font-weight: bold;">&gt;</span></span>Remember Me<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/font<span style="color: #000000; font-weight: bold;">&gt;</span></span><span style="color: #000000; font-weight: bold;">&lt;/td<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>  <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/tr<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>  <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;tr<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>  <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;td</span> <span style="color: #000066;">colspan</span>=<span style="color: #ff0000;">&rdquo;2&ldquo;</span> <span style="color: #000066;">align</span>=<span style="color: #ff0000;">&rdquo;right&ldquo;</span><span style="color: #000000; font-weight: bold;">&gt;</span><span style="color: #000000; font-weight: bold;">&lt;input</span> <span style="color: #000066;">type</span>=<span style="color: #ff0000;">&rdquo;submit&ldquo;</span> <span style="color: #000066;">name</span>=<span style="color: #ff0000;">&rdquo;submit&ldquo;</span> <span style="color: #000066;">value</span>=<span style="color: #ff0000;">&rdquo;Login&quot;</span><span style="color: #000000; font-weight: bold;">&gt;</span><span style="color: #000000; font-weight: bold;">&lt;/td<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>  <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/tr<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>  <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/table<span style="color: #000000; font-weight: bold;">&gt;</span></span></span> <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/form<span style="color: #000000; font-weight: bold;">&gt;</span></span></span></pre>  </td>  </tr>  </table> </div></p> </p><p>Habilite o filtro authc para todas as páginas da aplicação:</p>
+<p>Adicione Apache Shiro como dependência ao arquivo pom.xml:</p>
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="xml" style="font-family:monospace;"><span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;properties<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+    <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;shiro.version<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>1.1.0<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/shiro.version<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/properties<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;dependencies<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+    <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;dependency<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+        <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;groupId<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>org.apache.shiro<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/groupId<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+        <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;artifactId<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>shiro-core<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/artifactId<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+        <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;version<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>${shiro.version}<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/version<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+    <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/dependency<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+    <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;dependency<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+        <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;groupId<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>org.apache.shiro<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/groupId<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+        <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;artifactId<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>shiro-web<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/artifactId<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+        <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;version<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>${shiro.version}<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/version<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+    <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/dependency<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/dependencies<span style="color: #000000; font-weight: bold;">&gt;</span></span></span></pre>
+      </td>
+    </tr>
+  </table>
+</div></p> 
+<p>Crie o arquivo Shiro.ini e o coloque no classpath. Configure o arquivo web.xml para chamar o filtro IniShiroFilter antes de cada requisição:</p>
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="xml" style="font-family:monospace;"><span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;filter<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+    <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;filter-name<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>ShiroFilter<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/filter-name<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+    <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;filter-class<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>org.apache.shiro.web.servlet.IniShiroFilter<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/filter-class<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+    <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;init-param<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+        <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;param-name<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>configPath<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/param-name<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+        <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;param-value<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>classpath:Shiro.ini<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/param-value<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+    <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/init-param<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/filter<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;filter-mapping<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+    <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;filter-name<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>ShiroFilter<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/filter-name<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+    <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;url-pattern<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>/*<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/url-pattern<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/filter-mapping<span style="color: #000000; font-weight: bold;">&gt;</span></span></span></pre>
+      </td>
+    </tr>
+  </table>
+</div></p> 
+<h5><a href="#criar-página-de-autenticaçãolog-in" id="criar-página-de-autenticaçãolog-in">Criar Página de Autenticação(Log in)</a></h5>
+<p>A página de autenticação é uma simples página html contendo um botão submissão, nome de usuário e senha. A funcionalidade de autenticação é tratada pelo filtro Shiro authc pré-definido. O filtro autch permite acesso à página (url) somente a usuários autenticados. Se o usuário não está autenticado, o filtro o redirecionará para a página de autenticação (log in).</p>
+<p>Crie a página login.jsp:</p>
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="xml" style="font-family:monospace;"><span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;form</span> <span style="color: #000066;">name</span>=<span style="color: #ff0000;">"loginform"</span> <span style="color: #000066;">action</span>=<span style="color: #ff0000;">""</span> <span style="color: #000066;">method</span>=<span style="color: #ff0000;">"post"</span><span style="color: #000000; font-weight: bold;">&gt;</span></span>
+    <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;table</span> <span style="color: #000066;">align</span>=<span style="color: #ff0000;">"left"</span> <span style="color: #000066;">border</span>=<span style="color: #ff0000;">"0"</span> <span style="color: #000066;">cellspacing</span>=<span style="color: #ff0000;">"0"</span> <span style="color: #000066;">cellpadding</span>=<span style="color: #ff0000;">"3"</span><span style="color: #000000; font-weight: bold;">&gt;</span></span>
+        <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;tr<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+            <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;td<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>Username:<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/td<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+            <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;td<span style="color: #000000; font-weight: bold;">&gt;</span></span><span style="color: #000000; font-weight: bold;">&lt;input</span> <span style="color: #000066;">type</span>=<span style="color: #ff0000;">"text"</span> <span style="color: #000066;">name</span>=<span style="color: #ff0000;">"user"</span> <span style="color: #000066;">maxlength</span>=<span style="color: #ff0000;">"30"</span><span style="color: #000000; font-weight: bold;">&gt;</span><span style="color: #000000; font-weight: bold;">&lt;/td<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+        <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/tr<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+        <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;tr<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+            <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;td<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>Password:<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/td<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+            <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;td<span style="color: #000000; font-weight: bold;">&gt;</span></span><span style="color: #000000; font-weight: bold;">&lt;input</span> <span style="color: #000066;">type</span>=<span style="color: #ff0000;">"password"</span> <span style="color: #000066;">name</span>=<span style="color: #ff0000;">"pass"</span> <span style="color: #000066;">maxlength</span>=<span style="color: #ff0000;">"30"</span><span style="color: #000000; font-weight: bold;">&gt;</span><span style="color: #000000; font-weight: bold;">&lt;/td<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+        <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/tr<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+        <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;tr<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+            <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;td</span> <span style="color: #000066;">colspan</span>=<span style="color: #ff0000;">"2"</span> <span style="color: #000066;">align</span>=<span style="color: #ff0000;">"left"</span><span style="color: #000000; font-weight: bold;">&gt;</span><span style="color: #000000; font-weight: bold;">&lt;input</span> <span style="color: #000066;">type</span>=<span style="color: #ff0000;">"checkbox"</span> <span style="color: #000066;">name</span>=<span style="color: #ff0000;">"remember"</span><span style="color: #000000; font-weight: bold;">&gt;</span><span style="color: #000000; font-weight: bold;">&lt;font</span> <span style="color: #000066;">size</span>=<span style="color: #ff0000;">"2"</span><span style="color: #000000; font-weight: bold;">&gt;</span></span>Remember Me<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/font<span style="color: #000000; font-weight: bold;">&gt;</span></span><span style="color: #000000; font-weight: bold;">&lt;/td<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+        <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/tr<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+        <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;tr<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+            <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;td</span> <span style="color: #000066;">colspan</span>=<span style="color: #ff0000;">"2"</span> <span style="color: #000066;">align</span>=<span style="color: #ff0000;">"right"</span><span style="color: #000000; font-weight: bold;">&gt;</span><span style="color: #000000; font-weight: bold;">&lt;input</span> <span style="color: #000066;">type</span>=<span style="color: #ff0000;">"submit"</span> <span style="color: #000066;">name</span>=<span style="color: #ff0000;">"submit"</span> <span style="color: #000066;">value</span>=<span style="color: #ff0000;">"Login"</span><span style="color: #000000; font-weight: bold;">&gt;</span><span style="color: #000000; font-weight: bold;">&lt;/td<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+        <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/tr<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+    <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/table<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/form<span style="color: #000000; font-weight: bold;">&gt;</span></span></span></pre>
+      </td>
+    </tr>
+  </table>
+</div></p> 
+<p>Habilite o filtro authc para todas as páginas da aplicação:</p>
 <div class="wp_syntax">
   <table>
     <tr>
@@ -135,7 +245,10 @@ authc<span style="color: #000000;">.</span>successUrl  = <span style="color: #00
       </td>
     </tr>
   </table>
-</div><p><strong>Atualização:</strong> Shiro automaticamente executa a equiparação(comparação) de caminho(path matching) relativa ao contexto. Como a aplicação SimpleShiroSecuredApplication não tem o caminho do contexto definido, caminhos completos no arquivo Shiro.ini são necessários. No entanto, se o contexto da aplicação fosse definido para /simpleshirosecuredapplication, então os caminhos poderiam ser relativos, por exemplo, /**=authc ou /account/personalaccountpage.jsp. </p><p>Como não é seguro enviar nome de usuário e senha pela rede, devemos forçar autenticações com o protocolo ssl. O filtro ssl faz exatamente isso. Ele tem um parâmetro opcional: número da porta ssl. Se o parâmetro porta(port) for omitido, ele usa a porta ssl pré-definida 443. </p><p>Antes de configurar o protocolo ssl no Shiro, precisamos habilitá-lo no servidor web. Como fazer isso, depende do servidor web. Iremos demonstrar como habilitá-lo no <a href="http://jetty.codehaus.org/jetty/" target="_blank"> Jetty</a>. Primeiro, crie um keystore com o certificado auto assinado:</p>
+</div>
+<p><strong>Atualização:</strong> Shiro automaticamente executa a equiparação(comparação) de caminho(path matching) relativa ao contexto. Como a aplicação SimpleShiroSecuredApplication não tem o caminho do contexto definido, caminhos completos no arquivo Shiro.ini são necessários. No entanto, se o contexto da aplicação fosse definido para /simpleshirosecuredapplication, então os caminhos poderiam ser relativos, por exemplo, /**=authc ou /account/personalaccountpage.jsp.</p>
+<p>Como não é seguro enviar nome de usuário e senha pela rede, devemos forçar autenticações com o protocolo ssl. O filtro ssl faz exatamente isso. Ele tem um parâmetro opcional: número da porta ssl. Se o parâmetro porta(port) for omitido, ele usa a porta ssl pré-definida 443.</p>
+<p>Antes de configurar o protocolo ssl no Shiro, precisamos habilitá-lo no servidor web. Como fazer isso, depende do servidor web. Iremos demonstrar como habilitá-lo no <a href="http://jetty.codehaus.org/jetty/" target="_blank"> Jetty</a>. Primeiro, crie um keystore com o certificado auto assinado:</p>
 <div class="wp_syntax">
   <table>
     <tr>
@@ -144,7 +257,26 @@ authc<span style="color: #000000;">.</span>successUrl  = <span style="color: #00
       </td>
     </tr>
   </table>
-</div><p>Responda todas questões e no final pressione ENTER, assim o keystore senha e a chave senha serão o mesmo. </p><p>Segundo, adicione o keystore ao projeto e configure <a href="http://jetty.codehaus.org/jetty/" target="_blank"> o servidor Jetty</a> para usar o protocolo ssl. O código java está disponível na classe<A href="https://github.com/SomMeri/SimpleShiroSecuredApplication/blob/static_authentication_and_authorization/src/test/java/org/meri/simpleshirosecuredapplication/test/AbstractContainerTest.java" target="_blank"> AbstractContainerTest</A>. </p><p>Agora é possível configurar o filtro ssl no arquivo Shiro.ini:</p><p><div class="wp_syntax">  <table>  <tr>  <td class="code">  <pre class="vim" style="font-family:monospace;"><span style="color: #000000;">&#91;</span>urls<span style="color: #000000;">&#93;</span></p><h1>force <span style="color: #668080;">ssl</span> <span style="color: #804040;">for</span> login page</h1><p><span style="color: #000000;">/</span>simpleshirosecuredapplication<span style="color: #000000;">/</span>account<span style="color: #000000;">/</span>login<span style="color: #000000;">.</span>jsp=<span style="color: #668080;">ssl</span><span style="color: #000000;">&#91;</span><span style="color: #000000; font-weight:bold;">8443</span><span style="color: #000000;">&#93;</span>,authc</p><h1>enable authc <span style="color: #25BB4D;">filter</span> <span style="color: #804040;">for</span> the all application pages; as Shiro reads urls from up <span style="color: #668080;">to</span> down, must be last</h1><p><span style="color: #000000;">/</span>simpleshirosecuredapplication<span style="color: #000000;">/**</span>=authc</pre>  </td>  </tr>  </table> </div></p> </p><h5>Configurar Usuários e Senhas</h5><p>A aplicação SimpleShiroSecuredApplication estará agora disponível somente para usuários autenticados. Assim, é necessário adicionar alguns usuários de forma que algumas pessoas tenham acesso à aplicação.<br/>A configuração é feita na seção [users] do arquivo Shiro.ini. O formato das entradas da seção é:</p>
+</div>
+<p>Responda todas questões e no final pressione ENTER, assim o keystore senha e a chave senha serão o mesmo.</p>
+<p>Segundo, adicione o keystore ao projeto e configure <a href="http://jetty.codehaus.org/jetty/" target="_blank"> o servidor Jetty</a> para usar o protocolo ssl. O código java está disponível na classe<A href="https://github.com/SomMeri/SimpleShiroSecuredApplication/blob/static_authentication_and_authorization/src/test/java/org/meri/simpleshirosecuredapplication/test/AbstractContainerTest.java" target="_blank"> AbstractContainerTest</A>.</p>
+<p>Agora é possível configurar o filtro ssl no arquivo Shiro.ini:</p>
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="vim" style="font-family:monospace;"><span style="color: #000000;">&#91;</span>urls<span style="color: #000000;">&#93;</span>
+# force <span style="color: #668080;">ssl</span> <span style="color: #804040;">for</span> login page
+<span style="color: #000000;">/</span>simpleshirosecuredapplication<span style="color: #000000;">/</span>account<span style="color: #000000;">/</span>login<span style="color: #000000;">.</span>jsp=<span style="color: #668080;">ssl</span><span style="color: #000000;">&#91;</span><span style="color: #000000; font-weight:bold;">8443</span><span style="color: #000000;">&#93;</span>,authc
+# enable authc <span style="color: #25BB4D;">filter</span> <span style="color: #804040;">for</span> the all application pages; as Shiro reads urls from up <span style="color: #668080;">to</span> down, must be last
+<span style="color: #000000;">/</span>simpleshirosecuredapplication<span style="color: #000000;">/**</span>=authc</pre>
+      </td>
+    </tr>
+  </table>
+</div></p> 
+<h5><a href="#configurar-usuários-e-senhas" id="configurar-usuários-e-senhas">Configurar Usuários e Senhas</a></h5>
+<p>A aplicação SimpleShiroSecuredApplication estará agora disponível somente para usuários autenticados. Assim, é necessário adicionar alguns usuários de forma que algumas pessoas tenham acesso à aplicação.<br />
+A configuração é feita na seção [users] do arquivo Shiro.ini. O formato das entradas da seção é:</p>
 <div class="wp_syntax">
   <table>
     <tr>
@@ -153,7 +285,30 @@ authc<span style="color: #000000;">.</span>successUrl  = <span style="color: #00
       </td>
     </tr>
   </table>
-</div><p>A seguinte seção cria sete usuários, todos com a mesma senha &#8216;heslo&#8217;:</p><p><div class="wp_syntax">  <table>  <tr>  <td class="code">  <pre class="vim" style="font-family:monospace;"><span style="color: #000000;">&#91;</span>users<span style="color: #000000;">&#93;</span> administrator=heslo,Administrator friendlyrepairmen=heslo,repairmen unfriendlyrepairmen=heslo,repairmen mathematician=heslo,scientist physicien=heslo,scientist productsales=heslo,sales servicessales=heslo,sales</pre>  </td>  </tr>  </table> </div></p> </p><p>Agora é possível ser autenticado e ter acesso à aplicação. No entanto, nenhuma mensagem de erro razoável é mostrada se o usuário comete um erro. Além disso, as senhas são armazenadas em arquivo texto. </p><h5>Tratamento de Erro</h5><p>Se o usuário comete um erro ao fazer a autenticação (log in), o Shiro o redireciona de volta para a página de login. A página parece exatamente a mesma de antes, o que pode confundir o usuário. </p><p><strong>Novo requerimento:</strong><br/>Mostrar mensagem de erro após cada tentativa de autenticação(log in) sem êxito. </p><p>Toda vez que ocorrer um erro de autenticação, uma exceção é lançada. Por definição, o filtro de autenticação captura a exceção e armazena nome da classe (exceção) em um parâmentro da requisição (request). Como desejamos personalizar os dados enviados à página, teremos que estender o filtro pré-definido <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/web/filter/authc/FormAuthenticationFilter.html" target="_blank">FormAuthenticationFilter</a> e sobrescrever o método <a href="https://github.com/SomMeri/SimpleShiroSecuredApplication/blob/static_authentication_and_authorization/src/main/java/org/meri/simpleshirosecuredapplication/servlet/VerboseFormAuthenticationFilter.java" target="_blank">setFailureAttribute</a>: </p>
+</div>
+<p>A seguinte seção cria sete usuários, todos com a mesma senha ‘heslo’:</p>
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="vim" style="font-family:monospace;"><span style="color: #000000;">&#91;</span>users<span style="color: #000000;">&#93;</span>
+administrator=heslo,Administrator
+friendlyrepairmen=heslo,repairmen
+unfriendlyrepairmen=heslo,repairmen
+mathematician=heslo,scientist
+physicien=heslo,scientist
+productsales=heslo,sales
+servicessales=heslo,sales</pre>
+      </td>
+    </tr>
+  </table>
+</div></p> 
+<p>Agora é possível ser autenticado e ter acesso à aplicação. No entanto, nenhuma mensagem de erro razoável é mostrada se o usuário comete um erro. Além disso, as senhas são armazenadas em arquivo texto.</p>
+<h5><a href="#tratamento-de-erro" id="tratamento-de-erro">Tratamento de Erro</a></h5>
+<p>Se o usuário comete um erro ao fazer a autenticação (log in), o Shiro o redireciona de volta para a página de login. A página parece exatamente a mesma de antes, o que pode confundir o usuário.</p>
+<p><strong>Novo requerimento:</strong><br />
+Mostrar mensagem de erro após cada tentativa de autenticação(log in) sem êxito.</p>
+<p>Toda vez que ocorrer um erro de autenticação, uma exceção é lançada. Por definição, o filtro de autenticação captura a exceção e armazena nome da classe (exceção) em um parâmentro da requisição (request). Como desejamos personalizar os dados enviados à página, teremos que estender o filtro pré-definido <a href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/web/filter/authc/FormAuthenticationFilter.html" target="_blank">FormAuthenticationFilter</a> e sobrescrever o método <a href="https://github.com/SomMeri/SimpleShiroSecuredApplication/blob/static_authentication_and_authorization/src/main/java/org/meri/simpleshirosecuredapplication/servlet/VerboseFormAuthenticationFilter.java" target="_blank">setFailureAttribute</a>:</p>
 <div class="wp_syntax">
   <table>
     <tr>
@@ -166,7 +321,8 @@ authc<span style="color: #000000;">.</span>successUrl  = <span style="color: #00
       </td>
     </tr>
   </table>
-</div><p>Substitua o filtro pré-definido FormAuthenticationFilter por <a href="https://github.com/SomMeri/SimpleShiroSecuredApplication/blob/static_authentication_and_authorization/src/main/java/org/meri/simpleshirosecuredapplication/servlet/VerboseFormAuthenticationFilter.java">VerboseFormAuthenticationFilter</a> e o configure para usar o atributo de requisição (request) &#8216;simpleShiroApplicationLoginFailure&#8217; para armazenar a informação do erro: </p>
+</div>
+<p>Substitua o filtro pré-definido FormAuthenticationFilter por <a href="https://github.com/SomMeri/SimpleShiroSecuredApplication/blob/static_authentication_and_authorization/src/main/java/org/meri/simpleshirosecuredapplication/servlet/VerboseFormAuthenticationFilter.java">VerboseFormAuthenticationFilter</a> e o configure para usar o atributo de requisição (request) ‘simpleShiroApplicationLoginFailure’ para armazenar a informação do erro:</p>
 <div class="wp_syntax">
   <table>
     <tr>
@@ -179,7 +335,8 @@ authc<span style="color: #000000;">.</span>failureKeyAttribute=simpleShiroApplic
       </td>
     </tr>
   </table>
-</div><p>Mostrar o erro na página login.jsp: </p>
+</div>
+<p>Mostrar o erro na página login.jsp:</p>
 <div class="wp_syntax">
   <table>
     <tr>
@@ -195,7 +352,43 @@ Login attempt was unsuccessful<span style="color: #339933;">:</span> <span style
       </td>
     </tr>
   </table>
-</div><p>Cuidado: uma aplicação real não deve apresentar muitas informações de erro de autenticação. Uma mensagem como “tentativa de logon sem sucesso.”, com nenhuma informação adicional é geralmente suficiente. </p><h5>Hashing de Senhas</h5><p>Na versão atual da aplicação, todas as senhas estão, ainda, em texto puro. É melhor armazenar e comparar somente o hashing da senha. </p><p>Objetos responsáveis por autenticação são chamados de <A href="http://shiro.apache.org/realm.html" target="_blank"> realms</A>. Por padrão, Shiro usa o <A href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/realm/text/IniRealm.html" target="_blank"> IniRealm</A> com comparador de senha plugável para comparar senhas. Iremos substituir as senhas no ini por suas correspondentes hasheadas com SHA-256 e configurar o IniRealm para usar este comparador de senhas. </p><p>Gerar o hash SHA-256 da senha:</p><p><div class="wp_syntax">  <table>  <tr>  <td class="code">  <pre class="java" style="font-family:monospace;"><span style="color: #000000; font-weight: bold;">import</span> <span style="color: #006699;">org.apache.shiro.crypto.hash.Sha256Hash</span><span style="color: #339933;">;</span> &nbsp; <span style="color: #000000; font-weight: bold;">public</span> <span style="color: #000000; font-weight: bold;">static</span> <span style="color: #000066; font-weight: bold;">void</span> main<span style="color: #009900;">&#40;</span><span style="color: #003399;">String</span><span style="color: #009900;">&#91;</span><span style="color: #009900;">&#93;</span> args<span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>  Sha256Hash sha256Hash <span style="color: #339933;">=</span> <span style="color: #000000; font-weight: bold;">new</span> Sha256Hash<span style="color: #009900;">&#40;</span><span style="color: #0000ff;">&ldquo;heslo&rdquo;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>  <span style="color: #003399;">System</span>.<span style="color: #006633;">out</span>.<span style="color: #006633;">println</span><span style="color: #009900;">&#40;</span>sha256Hash.<span style="color: #006633;">toHex</span><span style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span> <span style="color: #009900;">&#125;</span></pre>  </td>  </tr>  </table> </div></p> </p><p>Configurar o Shiro para comparar senha trasnformada(hashing) ao invés da própria senha:</p><p><div class="wp_syntax">  <table>  <tr>  <td class="code">  <pre class="vim" style="font-family:monospace;"><span style="color: #000000;">&#91;</span>main<span style="color: #000000;">&#93;</span> </p><h1><span style="color: #668080;">define</span> matcher matching hashes instead of passwords</h1><p>sha256Matcher = org<span style="color: #000000;">.</span>apache<span style="color: #000000;">.</span>shiro<span style="color: #000000;">.</span>authc<span style="color: #000000;">.</span>credential<span style="color: #000000;">.</span>HashedCredentialsMatcher sha256Matcher<span style="color: #000000;">.</span>hashAlgorithmName=SHA<span style="color: #000000;">-</span><span style="color: #000000; font-weight:bold;">256</span> &nbsp;</p><h1>enable matcher <span style="color: #804040;">in</span> iniRealm <span style="color: #000000;">&#40;</span>object responsible <span style="color: #804040;">for</span> authentication<span style="color: #000000;">&#41;</span></h1><p>iniRealm<span style="color: #000000;">.</span>credentialsMatcher = <span style="color: #000000;">$</span>sha256Matcher</pre>  </td>  </tr>  </table> </div></p> </p><p>Substituir as senhas dos usuários por senhas trasnformadas(hashing):</p>
+</div>
+<p>Cuidado: uma aplicação real não deve apresentar muitas informações de erro de autenticação. Uma mensagem como “tentativa de logon sem sucesso.”, com nenhuma informação adicional é geralmente suficiente.</p>
+<h5><a href="#hashing-de-senhas" id="hashing-de-senhas">Hashing de Senhas</a></h5>
+<p>Na versão atual da aplicação, todas as senhas estão, ainda, em texto puro. É melhor armazenar e comparar somente o hashing da senha.</p>
+<p>Objetos responsáveis por autenticação são chamados de <A href="http://shiro.apache.org/realm.html" target="_blank"> realms</A>. Por padrão, Shiro usa o <A href="http://shiro.apache.org/static/current/apidocs/org/apache/shiro/realm/text/IniRealm.html" target="_blank"> IniRealm</A> com comparador de senha plugável para comparar senhas. Iremos substituir as senhas no ini por suas correspondentes hasheadas com SHA-256 e configurar o IniRealm para usar este comparador de senhas.</p>
+<p>Gerar o hash SHA-256 da senha:</p>
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="java" style="font-family:monospace;"><span style="color: #000000; font-weight: bold;">import</span> <span style="color: #006699;">org.apache.shiro.crypto.hash.Sha256Hash</span><span style="color: #339933;">;</span>
+&nbsp;
+<span style="color: #000000; font-weight: bold;">public</span> <span style="color: #000000; font-weight: bold;">static</span> <span style="color: #000066; font-weight: bold;">void</span> main<span style="color: #009900;">&#40;</span><span style="color: #003399;">String</span><span style="color: #009900;">&#91;</span><span style="color: #009900;">&#93;</span> args<span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+    Sha256Hash sha256Hash <span style="color: #339933;">=</span> <span style="color: #000000; font-weight: bold;">new</span> Sha256Hash<span style="color: #009900;">&#40;</span><span style="color: #0000ff;">"heslo"</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+    <span style="color: #003399;">System</span>.<span style="color: #006633;">out</span>.<span style="color: #006633;">println</span><span style="color: #009900;">&#40;</span>sha256Hash.<span style="color: #006633;">toHex</span><span style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+<span style="color: #009900;">&#125;</span></pre>
+      </td>
+    </tr>
+  </table>
+</div></p> 
+<p>Configurar o Shiro para comparar senha trasnformada(hashing) ao invés da própria senha:</p>
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="vim" style="font-family:monospace;"><span style="color: #000000;">&#91;</span>main<span style="color: #000000;">&#93;</span> 
+# <span style="color: #668080;">define</span> matcher matching hashes instead of passwords
+sha256Matcher = org<span style="color: #000000;">.</span>apache<span style="color: #000000;">.</span>shiro<span style="color: #000000;">.</span>authc<span style="color: #000000;">.</span>credential<span style="color: #000000;">.</span>HashedCredentialsMatcher
+sha256Matcher<span style="color: #000000;">.</span>hashAlgorithmName=SHA<span style="color: #000000;">-</span><span style="color: #000000; font-weight:bold;">256</span>
+&nbsp;
+# enable matcher <span style="color: #804040;">in</span> iniRealm <span style="color: #000000;">&#40;</span>object responsible <span style="color: #804040;">for</span> authentication<span style="color: #000000;">&#41;</span>
+iniRealm<span style="color: #000000;">.</span>credentialsMatcher = <span style="color: #000000;">$</span>sha256Matcher</pre>
+      </td>
+    </tr>
+  </table>
+</div></p> 
+<p>Substituir as senhas dos usuários por senhas trasnformadas(hashing):</p>
 <div class="wp_syntax">
   <table>
     <tr>
@@ -211,7 +404,10 @@ servicessales=56b1db8133d9eb398aabd376f07bf8ab5fc584ea0b8bd6a1770200cb613ca005, 
       </td>
     </tr>
   </table>
-</div><p>Nota: não é possível especificar SALT no arquivo de configuração ini. </p><h5>Criar Página de Saída(Log out)</h5><p>Qualque aplicação que tenha recursos de autenticação deveria também ter o recurso de saída. Terminar uma sessão corrente com Shiro é fácil, use o comando:</p>
+</div>
+<p>Nota: não é possível especificar SALT no arquivo de configuração ini.</p>
+<h5><a href="#criar-página-de-saídalog-out" id="criar-página-de-saídalog-out">Criar Página de Saída(Log out)</a></h5>
+<p>Qualque aplicação que tenha recursos de autenticação deveria também ter o recurso de saída. Terminar uma sessão corrente com Shiro é fácil, use o comando:</p>
 <div class="wp_syntax">
   <table>
     <tr>
@@ -221,7 +417,27 @@ SecurityUtils.<span style="color: #006633;">getSubject</span><span style="color:
       </td>
     </tr>
   </table>
-</div><p>A página de saída(Log out) então fica assim:</p><p><div class="wp_syntax">  <table>  <tr>  <td class="code">  <pre class="xml" style="font-family:monospace;"><span style="color: #009900;">&lt;%@ page <span style="color: #000066;">import</span>=<span style="color: #ff0000;">&ldquo;org.apache.shiro.SecurityUtils&rdquo;</span> %<span style="color: #000000; font-weight: bold;">&gt;</span></span> <span style="color: #009900;">&lt;% SecurityUtils.getSubject<span style="color: #66cc66;">&#40;</span><span style="color: #66cc66;">&#41;</span>.logout<span style="color: #66cc66;">&#40;</span><span style="color: #66cc66;">&#41;</span>;%<span style="color: #000000; font-weight: bold;">&gt;</span></span> You have succesfully logged out.</pre>  </td>  </tr>  </table> </div></p> </p><h4>Adicionar Autorização</h4><p>Concluiremos esta primeira parte adicionando autorização à aplicação. Começamos limitando o acesso às páginas aos usuários. Nenhum usuário deveria ser capaz de ver páginas de outros departamentos. Fornecendo assim, somente segurança parcial ao projeto, pois o usuário ainda é capaz de usar a página com “todas as funções da aplicação” ou editar o endereço (url) no navegador para realizar qualquer ação. Nós a chamaremos de autorização em nível de página. </p><p>Então, limitaremos a habilidade dos usuários para realizar ações próprias. Mesmo que abra a página com “todas as funções da aplicação” ou edite o endereço (url) no navegador, ele poderá realizar somente funções específicas de seu departamento. Nós a chamaremos de autorização em nível de função. </p><p><strong>Novos requisitos:</strong> o usuário não é capaz de ver páginas de departamentos que não pertence. O usuário é capaz de realizar somente funções de seu departamento. Uma exceção a essa regra é o administrador, que pode realizar funções administrativas e de reparação. </p><h5>Página de Autorização</h5><p>Autorização em nível de página é feita com filtro de perfis(roles).<br/>Parâmetro parte do filtro pode conter qualquer número de perfis. Usuário autenticado pode acessar a página somente se ele tem todas os perfis fornecidos. </p><p>Como de costume, o filtro de perfis(roles) é configurado no arquivo Shiro.ini:</p>
+</div>
+<p>A página de saída(Log out) então fica assim:</p>
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="xml" style="font-family:monospace;"><span style="color: #009900;">&lt;%@ page <span style="color: #000066;">import</span>=<span style="color: #ff0000;">"org.apache.shiro.SecurityUtils"</span> %<span style="color: #000000; font-weight: bold;">&gt;</span></span>
+<span style="color: #009900;">&lt;% SecurityUtils.getSubject<span style="color: #66cc66;">&#40;</span><span style="color: #66cc66;">&#41;</span>.logout<span style="color: #66cc66;">&#40;</span><span style="color: #66cc66;">&#41;</span>;%<span style="color: #000000; font-weight: bold;">&gt;</span></span>
+You have succesfully logged out.</pre>
+      </td>
+    </tr>
+  </table>
+</div></p> 
+<h4><a href="#adicionar-autorização" id="adicionar-autorização">Adicionar Autorização</a></h4>
+<p>Concluiremos esta primeira parte adicionando autorização à aplicação. Começamos limitando o acesso às páginas aos usuários. Nenhum usuário deveria ser capaz de ver páginas de outros departamentos. Fornecendo assim, somente segurança parcial ao projeto, pois o usuário ainda é capaz de usar a página com “todas as funções da aplicação” ou editar o endereço (url) no navegador para realizar qualquer ação. Nós a chamaremos de autorização em nível de página.</p>
+<p>Então, limitaremos a habilidade dos usuários para realizar ações próprias. Mesmo que abra a página com “todas as funções da aplicação” ou edite o endereço (url) no navegador, ele poderá realizar somente funções específicas de seu departamento. Nós a chamaremos de autorização em nível de função.</p>
+<p><strong>Novos requisitos:</strong> o usuário não é capaz de ver páginas de departamentos que não pertence. O usuário é capaz de realizar somente funções de seu departamento. Uma exceção a essa regra é o administrador, que pode realizar funções administrativas e de reparação.</p>
+<h5><a href="#página-de-autorização" id="página-de-autorização">Página de Autorização</a></h5>
+<p>Autorização em nível de página é feita com filtro de perfis(roles).<br />
+Parâmetro parte do filtro pode conter qualquer número de perfis. Usuário autenticado pode acessar a página somente se ele tem todas os perfis fornecidos.</p>
+<p>Como de costume, o filtro de perfis(roles) é configurado no arquivo Shiro.ini:</p>
 <div class="wp_syntax">
   <table>
     <tr>
@@ -241,31 +457,66 @@ SecurityUtils.<span style="color: #006633;">getSubject</span><span style="color:
       </td>
     </tr>
   </table>
-</div><p>Teste se a segurança funciona: entre como um usuário de vendas, clique home, clique no link &#8216;repairmen page&#8217;. Você verá um erro feio. </p><p>Nós terminamos a página de autorização e substituimos o erro redirecionando-o para uma página de erro. Os filtros pré-definidos do Shiro possuem a propriedade unauthorizedUrl. Em caso de acesso não autorizado, o filtro redirecionará o usuário para um endereço (url) específico.</p><p><div class="wp_syntax">  <table>  <tr>  <td class="code">  <pre class="vim" style="font-family:monospace;"><span style="color: #000000;">&#91;</span>main<span style="color: #000000;">&#93;</span></p><h1>redirect <span style="color: #668080;">to</span> an error page <span style="color: #804040;">if</span> <span style="color: #804040;">user</span> does not have access rights</h1><p>roles<span style="color: #000000;">.</span>unauthorizedUrl = <span style="color: #000000;">/</span>simpleshirosecuredapplication<span style="color: #000000;">/</span>account<span style="color: #000000;">/</span>accessdenied<span style="color: #000000;">.</span>jsp</pre>  </td>  </tr>  </table> </div></p> </p><p>accessdenied.jsp: </p><p><div class="wp_syntax">  <table>  <tr>  <td class="code">  <pre class="xml" style="font-family:monospace;"><span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;body<span style="color: #000000; font-weight: bold;">&gt;</span></span></span> Sorry, you do not have access rights to that area. <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/body<span style="color: #000000; font-weight: bold;">&gt;</span></span></span></pre>  </td>  </tr>  </table> </div></p> </p><h5>Autorização de Funções</h5><p>Todas as páginas departamentais estão protegidas agora. No entanto, qualquer usuário pode ainda realizar qualquer função na página com “todas as funções da aplicação”. Além disso, qualquer usuário autenticado pode editar endereço (url) e assim fazer qualquer ação. Por exemplo, se você entrar como vendedor e colocar<br/><a href="https://localhost:8443/simpleshirosecuredapplication/masterservlet?action=MANAGE_REPAIRMEN">https://localhost:8443/simpleshirosecuredapplication/masterservlet?action=MANAGE_REPAIRMEN</a> na url, a aplicação irá realizar a função gerenciar reparadores também (e então irá dispará a exceção: null point, mas a violação de segurança já foi feita).<br/>Atribuimos uma úncia <A href="http://shiro.apache.org/permissions.html" target="_blank"> permissão</A> para cada função. Elas estão divididas em grupos: </p>
+</div>
+<p>Teste se a segurança funciona: entre como um usuário de vendas, clique home, clique no link ‘repairmen page’. Você verá um erro feio.</p>
+<p>Nós terminamos a página de autorização e substituimos o erro redirecionando-o para uma página de erro. Os filtros pré-definidos do Shiro possuem a propriedade unauthorizedUrl. Em caso de acesso não autorizado, o filtro redirecionará o usuário para um endereço (url) específico.</p>
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="vim" style="font-family:monospace;"><span style="color: #000000;">&#91;</span>main<span style="color: #000000;">&#93;</span>
+# redirect <span style="color: #668080;">to</span> an error page <span style="color: #804040;">if</span> <span style="color: #804040;">user</span> does not have access rights
+roles<span style="color: #000000;">.</span>unauthorizedUrl = <span style="color: #000000;">/</span>simpleshirosecuredapplication<span style="color: #000000;">/</span>account<span style="color: #000000;">/</span>accessdenied<span style="color: #000000;">.</span>jsp</pre>
+      </td>
+    </tr>
+  </table>
+</div></p> 
+<p>accessdenied.jsp:</p>
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="xml" style="font-family:monospace;"><span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;body<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+Sorry, you do not have access rights to that area.
+<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/body<span style="color: #000000; font-weight: bold;">&gt;</span></span></span></pre>
+      </td>
+    </tr>
+  </table>
+</div></p> 
+<h5><a href="#autorização-de-funções" id="autorização-de-funções">Autorização de Funções</a></h5>
+<p>Todas as páginas departamentais estão protegidas agora. No entanto, qualquer usuário pode ainda realizar qualquer função na página com “todas as funções da aplicação”. Além disso, qualquer usuário autenticado pode editar endereço (url) e assim fazer qualquer ação. Por exemplo, se você entrar como vendedor e colocar<br />
+<a href="https://localhost:8443/simpleshirosecuredapplication/masterservlet?action=MANAGE_REPAIRMEN">https://localhost:8443/simpleshirosecuredapplication/masterservlet?action=MANAGE_REPAIRMEN</a> na url, a aplicação irá realizar a função gerenciar reparadores também (e então irá dispará a exceção: null point, mas a violação de segurança já foi feita).<br />
+Atribuimos uma úncia <A href="http://shiro.apache.org/permissions.html" target="_blank"> permissão</A> para cada função. Elas estão divididas em grupos:</p>
 <ul>
-  <li>todas as permissões estão no grupo “functions”,</li>
+<li>
+<p>todas as permissões estão no grupo “functions”,</p>
+</li>
+<li>
+<p>todas as permissões administrativas estão no grupo “manage”,</p>
+</li>
+<li>
+<p>todas as permissões reparação estão no grupo “repair”,</p>
+</li>
+<li>
+<p>todas as permissões venda estão no grupo “sale”,</p>
+</li>
+<li>
+<p>todas as permissões ciência estão no grupo “science”.</p>
+</li>
 </ul>
+<p>Shiro suporta permissões de múltiplos níveis representadas como strings. Níveis são separados com o símbolo ‘:’. p.e. “functions:manage:repairmen” tem três níveis: “functions”, “manage” e “repairman”. Permissões de múltiplos níveis permitem facilmente o agrupamento de permissões. Por exemplo, o grupo science pertence ao grupo functions e contém três permissões:</p>
 <ul>
-  <li>todas as permissões administrativas estão no grupo “manage”,</li>
+<li>
+<p>functions:science:research,</p>
+</li>
+<li>
+<p>functions:science:writearticle,</p>
+</li>
+<li>
+<p>functions:science:preparetalk.</p>
+</li>
 </ul>
-<ul>
-  <li>todas as permissões reparação estão no grupo “repair”,</li>
-</ul>
-<ul>
-  <li>todas as permissões venda estão no grupo “sale”,</li>
-</ul>
-<ul>
-  <li>todas as permissões ciência estão no grupo “science”.</li>
-</ul><p>Shiro suporta permissões de múltiplos níveis representadas como strings. Níveis são separados com o símbolo &#8216;:&#8217;. p.e. “functions:manage:repairmen” tem três níveis: “functions”, “manage” e “repairman”. Permissões de múltiplos níveis permitem facilmente o agrupamento de permissões. Por exemplo, o grupo science pertence ao grupo functions e contém três permissões: </p>
-<ul>
-  <li>functions:science:research,</li>
-</ul>
-<ul>
-  <li>functions:science:writearticle,</li>
-</ul>
-<ul>
-  <li>functions:science:preparetalk.</li>
-</ul><p>A classe <A href="https://github.com/SomMeri/SimpleShiroSecuredApplication/blob/static_authentication_and_authorization/src/main/java/org/meri/simpleshirosecuredapplication/actions/Actions.java" target="_blank"> Ações</A> verifica as permissões do usuário autenticado(log in) antes de fazer seu trabalho:</p>
+<p>A classe <A href="https://github.com/SomMeri/SimpleShiroSecuredApplication/blob/static_authentication_and_authorization/src/main/java/org/meri/simpleshirosecuredapplication/actions/Actions.java" target="_blank"> Ações</A> verifica as permissões do usuário autenticado(log in) antes de fazer seu trabalho:</p>
 <div class="wp_syntax">
   <table>
     <tr>
@@ -281,8 +532,57 @@ SecurityUtils.<span style="color: #006633;">getSubject</span><span style="color:
       </td>
     </tr>
   </table>
-</div><p>NOTA: Outro modo de se alcançar o mesmo objetivo é através de anotações. </p><p>O servlet <A href="https://github.com/SomMeri/SimpleShiroSecuredApplication/blob/static_authentication_and_authorization/src/main/java/org/meri/simpleshirosecuredapplication/servlet/PerformFunctionAndGoBackServlet.java" target="_blank"> PerformFunctionAndGoBackServlet</A> captura exceções de autorização e as converte em mensagem de erro:</p><p><div class="wp_syntax">  <table>  <tr>  <td class="code">  <pre class="java" style="font-family:monospace;"><span style="color: #000000; font-weight: bold;">private</span> <span style="color: #003399;">String</span> performAction<span style="color: #009900;">&#40;</span><span style="color: #003399;">String</span> actionName<span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>  <span style="color: #000000; font-weight: bold;">try</span> <span style="color: #009900;">&#123;</span>  Actions action <span style="color: #339933;">=</span> findAction<span style="color: #009900;">&#40;</span>actionName<span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>  <span style="color: #003399;">String</span> result <span style="color: #339933;">=</span> action <span style="color: #339933;">==</span> <span style="color: #000066; font-weight: bold;">null</span> <span style="color: #339933;">?</span> <span style="color: #000066; font-weight: bold;">null</span> <span style="color: #339933;">:</span> action.<span style="color: #006633;">doIt</span><span style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>  log.<span style="color: #006633;">debug</span><span style="color: #009900;">&#40;</span><span style="color: #0000ff;">&ldquo;Performed function with result: &rdquo;</span> <span style="color: #339933;">+</span> result<span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>  <span style="color: #000000; font-weight: bold;">return</span> result<span style="color: #339933;">;</span>  <span style="color: #009900;">&#125;</span> <span style="color: #000000; font-weight: bold;">catch</span> <span style="color: #009900;">&#40;</span>ShiroException ex<span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>  log.<span style="color: #006633;">debug</span><span style="color: #009900;">&#40;</span><span style="color: #0000ff;">&ldquo;Function failed with &rdquo;</span> <span style="color: #339933;">+</span> ex.<span style="color: #006633;">getMessage</span><span style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span> <span style="color: #339933;">+</span> <span style="color: #0000ff;">&ldquo; message.&rdquo;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>  <span style="color: #000000; font-weight: bold;">return</span> <span style="color: #0000ff;">&ldquo;Error: &rdquo;</span> <span style="color: #339933;">+</span> ex.<span style="color: #006633;">getMessage</span><span style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>  <span style="color: #009900;">&#125;</span> <span style="color: #009900;">&#125;</span></pre>  </td>  </tr>  </table> </div></p> </p><p>Finalmente, precisamos configurar as permissões para os perfis no arquivo Shiro.ini. Shiro suporta curingas para permissões de múltiplo nível. Assim, não temos que especificar cada permissão departamental em separado:</p><p><div class="wp_syntax">  <table>  <tr>  <td class="code">  <pre class="vim" style="font-family:monospace;"><span style="color: #000000;">&#91;</span>roles<span style="color: #000000;">&#93;</span></p><h1>members of departments should be able <span style="color: #668080;">to</span> perform all departmental functions</h1><p>sales=functions<span style="color: #000000;">:</span>sale<span style="color: #000000;">:*</span> scientist=functions<span style="color: #000000;">:</span>science<span style="color: #000000;">:*</span> repairman=functions<span style="color: #000000;">:</span>repair<span style="color: #000000;">:*</span> &nbsp;</p><h1>administrators are able <span style="color: #668080;">to</span> do all management functions and repair functions</h1><p>Administrator=functions<span style="color: #000000;">:</span>manage<span style="color: #000000;">:*</span>,functions<span style="color: #000000;">:</span>repair<span style="color: #000000;">:*</span></pre>  </td>  </tr>  </table> </div></p> </p><p>Você pode agora acessar a página “todas as funções da aplicação” e testar as funções.<br/>Se um usuário autenticado não tiver a permissão requerida, uma mensagem de erro aparecerá no topo da página. Além disso, se você fizer a autenticação (log in) como vendedor e tentar hackear<br/><a href="https://localhost:8443/simpleshirosecuredapplication/masterservlet?action=MANAGE_REPAIRMEN">https://localhost:8443/simpleshirosecuredapplication/masterservlet?action=MANAGE_REPAIRMEN</a>, você verá uma mensagem de erro no console (em vez de uma mensagem de sucesso). </p><h4>Fim</h4><p>A aplicação final está disponível no ramo(branch) <A href="https://github.com/SomMeri/SimpleShiroSecuredApplication/tree/static_authentication_and_authorization" target="_blank"> &#8216;static_authentication_and_authorization&#8217;</A> hospedado no Github. </p><p>Na segunda parte iremos criar um <A href="http://shiro.apache.org/realm.html" target="_blank"> realm</A> personalizado e mover usuários, senhas, perfis(roles) e permissões do arquivo ini para um banco de dados.</p>
+</div>
+<p>NOTA: Outro modo de se alcançar o mesmo objetivo é através de anotações.</p>
+<p>O servlet <A href="https://github.com/SomMeri/SimpleShiroSecuredApplication/blob/static_authentication_and_authorization/src/main/java/org/meri/simpleshirosecuredapplication/servlet/PerformFunctionAndGoBackServlet.java" target="_blank"> PerformFunctionAndGoBackServlet</A> captura exceções de autorização e as converte em mensagem de erro:</p>
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="java" style="font-family:monospace;"><span style="color: #000000; font-weight: bold;">private</span> <span style="color: #003399;">String</span> performAction<span style="color: #009900;">&#40;</span><span style="color: #003399;">String</span> actionName<span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+    <span style="color: #000000; font-weight: bold;">try</span> <span style="color: #009900;">&#123;</span>
+        Actions action <span style="color: #339933;">=</span> findAction<span style="color: #009900;">&#40;</span>actionName<span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+        <span style="color: #003399;">String</span> result <span style="color: #339933;">=</span> action <span style="color: #339933;">==</span> <span style="color: #000066; font-weight: bold;">null</span> <span style="color: #339933;">?</span> <span style="color: #000066; font-weight: bold;">null</span> <span style="color: #339933;">:</span> action.<span style="color: #006633;">doIt</span><span style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+        log.<span style="color: #006633;">debug</span><span style="color: #009900;">&#40;</span><span style="color: #0000ff;">"Performed function with result: "</span> <span style="color: #339933;">+</span> result<span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+        <span style="color: #000000; font-weight: bold;">return</span> result<span style="color: #339933;">;</span>
+    <span style="color: #009900;">&#125;</span> <span style="color: #000000; font-weight: bold;">catch</span> <span style="color: #009900;">&#40;</span>ShiroException ex<span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+        log.<span style="color: #006633;">debug</span><span style="color: #009900;">&#40;</span><span style="color: #0000ff;">"Function failed with "</span> <span style="color: #339933;">+</span> ex.<span style="color: #006633;">getMessage</span><span style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span> <span style="color: #339933;">+</span> <span style="color: #0000ff;">" message."</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+        <span style="color: #000000; font-weight: bold;">return</span> <span style="color: #0000ff;">"Error: "</span> <span style="color: #339933;">+</span> ex.<span style="color: #006633;">getMessage</span><span style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+    <span style="color: #009900;">&#125;</span>
+<span style="color: #009900;">&#125;</span></pre>
+      </td>
+    </tr>
+  </table>
+</div></p> 
+<p>Finalmente, precisamos configurar as permissões para os perfis no arquivo Shiro.ini. Shiro suporta curingas para permissões de múltiplo nível. Assim, não temos que especificar cada permissão departamental em separado:</p>
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="vim" style="font-family:monospace;"><span style="color: #000000;">&#91;</span>roles<span style="color: #000000;">&#93;</span>
+# members of departments should be able <span style="color: #668080;">to</span> perform all departmental functions
+sales=functions<span style="color: #000000;">:</span>sale<span style="color: #000000;">:*</span>
+scientist=functions<span style="color: #000000;">:</span>science<span style="color: #000000;">:*</span>
+repairman=functions<span style="color: #000000;">:</span>repair<span style="color: #000000;">:*</span>
+&nbsp;
+# administrators are able <span style="color: #668080;">to</span> do all management functions and repair functions
+Administrator=functions<span style="color: #000000;">:</span>manage<span style="color: #000000;">:*</span>,functions<span style="color: #000000;">:</span>repair<span style="color: #000000;">:*</span></pre>
+      </td>
+    </tr>
+  </table>
+</div></p> 
+<p>Você pode agora acessar a página “todas as funções da aplicação” e testar as funções.<br />
+Se um usuário autenticado não tiver a permissão requerida, uma mensagem de erro aparecerá no topo da página. Além disso, se você fizer a autenticação (log in) como vendedor e tentar hackear<br />
+<a href="https://localhost:8443/simpleshirosecuredapplication/masterservlet?action=MANAGE_REPAIRMEN">https://localhost:8443/simpleshirosecuredapplication/masterservlet?action=MANAGE_REPAIRMEN</a>, você verá uma mensagem de erro no console (em vez de uma mensagem de sucesso).</p>
+<h4><a href="#fim" id="fim">Fim</a></h4>
+<p>A aplicação final está disponível no ramo(branch) <A href="https://github.com/SomMeri/SimpleShiroSecuredApplication/tree/static_authentication_and_authorization" target="_blank"> ‘static_authentication_and_authorization’</A> hospedado no Github.</p>
+<p>Na segunda parte iremos criar um <A href="http://shiro.apache.org/realm.html" target="_blank"> realm</A> personalizado e mover usuários, senhas, perfis(roles) e permissões do arquivo ini para um banco de dados.</p>
+
     </section>
+<section>
+<div id="advertisements"></div>
+<script data-ad-client="ca-pub-3863943400063116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</section>
 <section>
 <div id="disqus_thread"></div>
         <script type="text/javascript">

@@ -49,9 +49,11 @@
         </p>
     </header>
     <section>
-	<p>Recentimente resolvi, novamente, atualizar o gnome da versão 2.28 para 2.30 através do procedimento descrito neste endereço: <a href="http://en.openSUSE.org/GNOME/2.30">http://en.openSUSE.org/GNOME/2.30</a> .  Como sempre sem problemas. <a href="http://www.gnome.org/" target="_blank">O gnome</a> é um ambiente bastante consistente e a meu ver seguro! Mas um componente que uso como meio de comunicação - <a href="http://live.gnome.org/Empathy" target="_blank">Empathy</a> - começou a apresentar um erro conexão usando o protocolo MSN. Não havia percebido tal problema porque até então só tinha utilizado o <a href="http://pt.wikipedia.org/wiki/Extensible_Messaging_and_Presence_Protocol" target="_blank">protocolo Jabber</a>.</p><p>Bem, após uma pesquisa pelo google, <a href="http://ubuntu-utah.ubuntuforums.org/showpost.php?p=8058121&postcount=9" target="_blank">encontrei a solução do problema</a>: desisntalar o *pacote telepathy-butterfly. *Lembrando que há a necessidade de fechar o programa antes de remover este componente.</p>
-<blockquote><p><strong>Atualização(13/12/2011):</strong> Hoje, após uma atualização, o empathy parou de conectar. Voltando <a href="http://forums.openSUSE.org/english/get-technical-help-here/applications/467973-empathy-not-working-msn-2.html#post2417727" target="_blank">àquela discussão no forum openSUSE</a>, notei que a solução é bem mais simples:</p>
-  <div class="wp_syntax">
+	<p>Recentimente resolvi, novamente, atualizar o gnome da versão 2.28 para 2.30 através do procedimento descrito neste endereço: <a href="http://en.openSUSE.org/GNOME/2.30">http://en.openSUSE.org/GNOME/2.30</a> .  Como sempre sem problemas. <a href="http://www.gnome.org/" target="_blank">O gnome</a> é um ambiente bastante consistente e a meu ver seguro! Mas um componente que uso como meio de comunicação - <a href="http://live.gnome.org/Empathy" target="_blank">Empathy</a> - começou a apresentar um erro conexão usando o protocolo MSN. Não havia percebido tal problema porque até então só tinha utilizado o <a href="http://pt.wikipedia.org/wiki/Extensible_Messaging_and_Presence_Protocol" target="_blank">protocolo Jabber</a>.</p>
+<p>Bem, após uma pesquisa pelo google, <a href="http://ubuntu-utah.ubuntuforums.org/showpost.php?p=8058121&postcount=9" target="_blank">encontrei a solução do problema</a>: desisntalar o *pacote telepathy-butterfly. *Lembrando que há a necessidade de fechar o programa antes de remover este componente.</p>
+<blockquote>
+<p><strong>Atualização(13/12/2011):</strong> Hoje, após uma atualização, o empathy parou de conectar. Voltando <a href="http://forums.openSUSE.org/english/get-technical-help-here/applications/467973-empathy-not-working-msn-2.html#post2417727" target="_blank">àquela discussão no forum openSUSE</a>, notei que a solução é bem mais simples:</p>
+<div class="wp_syntax">
   <table>
     <tr>
       <td class="code">
@@ -64,8 +66,11 @@
       </td>
     </tr>
   </table>
-</div><p><a href="empathy_msn.png"><img src="empathy_msn-300x240.png"  title="Empathy MSN" width="300" height="240" class="alignnone size-medium wp-image-850" /></a><br/>Lembre-se: você precisa fechar o aplicativo(Empathy). </p><p><strong>Atualização(28/11/2011):</strong> No trabalho já estou utilizando o openSUSE 12.1 (adaptando-me ao novo jeito do gnome 3). Este gerenciador de mensagens, novamente, veio com problema para conectar ao protocolo MSN. Desta vez não precisamos desinstalar nada, apenas realizar uma pequena modificação em uma biblioteca que o acompanha. <a href="http://forums.openSUSE.org/english/get-technical-help-here/applications/467973-empathy-not-working-msn.html#post2405889" title="Empathy not working with MSN" target="_blank">Edite o seguinte arquivo da biblioteca ql</a>:</p>
-  <div class="wp_syntax">
+</div>
+<p><a href="empathy_msn.png"><img src="empathy_msn-300x240.png"  title="Empathy MSN" width="300" height="240" class="alignnone size-medium wp-image-850" /></a><br />
+Lembre-se: você precisa fechar o aplicativo(Empathy).</p>
+<p><strong>Atualização(28/11/2011):</strong> No trabalho já estou utilizando o openSUSE 12.1 (adaptando-me ao novo jeito do gnome 3). Este gerenciador de mensagens, novamente, veio com problema para conectar ao protocolo MSN. Desta vez não precisamos desinstalar nada, apenas realizar uma pequena modificação em uma biblioteca que o acompanha. <a href="http://forums.openSUSE.org/english/get-technical-help-here/applications/467973-empathy-not-working-msn.html#post2405889" title="Empathy not working with MSN" target="_blank">Edite o seguinte arquivo da biblioteca ql</a>:</p>
+<div class="wp_syntax">
   <table>
     <tr>
       <td class="code">
@@ -73,8 +78,9 @@
       </td>
     </tr>
   </table>
-</div><p>e faça a seguinte modificação:</p>
-  <div class="wp_syntax">
+</div>
+<p>e faça a seguinte modificação:</p>
+<div class="wp_syntax">
   <table>
     <tr>
       <td class="code">
@@ -83,9 +89,16 @@ url = <span style="color: #C5A22D;">"http://local-bay.contacts.msn.com/abservice
       </td>
     </tr>
   </table>
-</div><p>Lembre-se: você precisa fechar o aplicativo(Empathy). </p>
-</blockquote><p>Espero que esta informação ajude a outros colegas usuários linux.</p>
+</div>
+<p>Lembre-se: você precisa fechar o aplicativo(Empathy).</p>
+</blockquote>
+<p>Espero que esta informação ajude a outros colegas usuários linux.</p>
+
     </section>
+<section>
+<div id="advertisements"></div>
+<script data-ad-client="ca-pub-3863943400063116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</section>
 <section>
 <div id="disqus_thread"></div>
         <script type="text/javascript">

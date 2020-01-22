@@ -50,69 +50,79 @@
         </p>
     </header>
     <section>
-	<p>Com o surgimento de versões e atualizações da máquina virtual java, preciso verificar a compatibilidade da mesma com o <a href="http://www.techne.com.br/produtos/produtos.asp?id=4">sistema de gestão de pessoal</a> sendo implantado <a href="http://www.secad.to.gov.br">aqui na secretária</a>. </p>
-<blockquote><p>Atualizado em: 01/12/2005 16:10 - CONSAD</p><p>Tocantins faz sua apresentação em TI</p><p>As experiências inovadoras que o Tocantins tem desenvolvido em Tecnologia da Informação (TI) foram apresentadas na manhã deste primeiro dia do LX Fórum do Conselho Nacional de Secretários de Estado de Administração (Consad). O representante da superintendência de Informática do Estado, Marcos Tiago, foi o responsável pela apresentação. Nela, ele demonstrou aos presentes as redes digitais de todo o Estado, incluindo as que circundam a sede do Governo (Palácio Araguaia), e das secretarias da Administração, Fazenda e Segurança Pública.</p><p>Em relação à Secad – Secretaria da Administração, Marcos Tiago apresentou o sistema de interligação de Recursos Humanos (Ergon) que está sendo implantado; citou ainda a experiência de Educação à Distância voltada para os servidores do Estado, onde o governo acaba de capacitar mais de 28 mil servidores no curso de Excelência no Atendimento e nas Relações de Trabalho.</p><p>Fonte: Shirley Cruz / Secad </p>
-</blockquote><p>Longo tempo hein? Pois é, nossa administração pública! Mas o Estado, nestes dois últimos anos, ficou politicamente conturbado (<a href="http://www.portalct.com.br/n/61036301f280e5de0acb74eeebc8e948/to-chega-a-maioridade-em-clima-de-convulsao-e-inde/">Tocantins chega à maioridade em clima de convulsão e indefinição política</a>). Felizmente esta faze está passando e os projetos, aos poucos, retornam a sua normalidade. </p><p>O sistema usa como base a tecnologia <a href="www.oracle.com/technology/products/forms">Forms da empresa Oracle</a>, que usa applet no cliente.<br/>Bom, primeiro precisamos instalar as versões que desejamos. Para facilitar adicione os seguintes repositórios ao <a href="http://en.openSUSE.org/Yast">Yast</a>:</p>
+	<p>Com o surgimento de versões e atualizações da máquina virtual java, preciso verificar a compatibilidade da mesma com o <a href="http://www.techne.com.br/produtos/produtos.asp?id=4">sistema de gestão de pessoal</a> sendo implantado <a href="http://www.secad.to.gov.br">aqui na secretária</a>.</p>
+<blockquote>
+<p>Atualizado em: 01/12/2005 16:10 - CONSAD</p>
+<p>Tocantins faz sua apresentação em TI</p>
+<p>As experiências inovadoras que o Tocantins tem desenvolvido em Tecnologia da Informação (TI) foram apresentadas na manhã deste primeiro dia do LX Fórum do Conselho Nacional de Secretários de Estado de Administração (Consad). O representante da superintendência de Informática do Estado, Marcos Tiago, foi o responsável pela apresentação. Nela, ele demonstrou aos presentes as redes digitais de todo o Estado, incluindo as que circundam a sede do Governo (Palácio Araguaia), e das secretarias da Administração, Fazenda e Segurança Pública.</p>
+<p>Em relação à Secad – Secretaria da Administração, Marcos Tiago apresentou o sistema de interligação de Recursos Humanos (Ergon) que está sendo implantado; citou ainda a experiência de Educação à Distância voltada para os servidores do Estado, onde o governo acaba de capacitar mais de 28 mil servidores no curso de Excelência no Atendimento e nas Relações de Trabalho.</p>
+<p>Fonte: Shirley Cruz / Secad</p>
+</blockquote>
+<p>Longo tempo hein? Pois é, nossa administração pública! Mas o Estado, nestes dois últimos anos, ficou politicamente conturbado (<a href="http://www.portalct.com.br/n/61036301f280e5de0acb74eeebc8e948/to-chega-a-maioridade-em-clima-de-convulsao-e-inde/">Tocantins chega à maioridade em clima de convulsão e indefinição política</a>). Felizmente esta faze está passando e os projetos, aos poucos, retornam a sua normalidade.</p>
+<p>O sistema usa como base a tecnologia <a href="www.oracle.com/technology/products/forms">Forms da empresa Oracle</a>, que usa applet no cliente.<br />
+Bom, primeiro precisamos instalar as versões que desejamos. Para facilitar adicione os seguintes repositórios ao <a href="http://en.openSUSE.org/Yast">Yast</a>:</p>
 <table>
   <tr>
     <td>
       Nome
     </td>
+<pre><code>&lt;td&gt;
+  Repositório
+&lt;/td&gt;
+
+&lt;tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;
+      Java:sun:Factory
+    &lt;/td&gt;
     
-    <td>
-      Repositório
-    </td>
+    &lt;td&gt;
+      &lt;a href=&quot;http://download.openSUSE.org/repositories/Java:/sun:/Factory/openSUSE_11.2/&quot;&gt;http://download.openSUSE.org/repositories/Java:/sun:/Factory/openSUSE_11.2/&lt;/a&gt;
+    &lt;/td&gt;
     
-    <tr>
-      <tr>
-        <td>
-          Java:sun:Factory
-        </td>
+    &lt;tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          JPackages
+        &lt;/td&gt;
         
-        <td>
-          <a href="http://download.openSUSE.org/repositories/Java:/sun:/Factory/openSUSE_11.2/">http://download.openSUSE.org/repositories/Java:/sun:/Factory/openSUSE_11.2/</a>
-        </td>
+        &lt;td&gt;
+          &lt;a href=&quot;http://download.openSUSE.org/repositories/Java:/packages/openSUSE_11.2/&quot;&gt;http://download.openSUSE.org/repositories/Java:/packages/openSUSE_11.2&lt;/a&gt;
+        &lt;/td&gt;
         
-        <tr>
-          <tr>
-            <td>
-              JPackages
-            </td>
-            
-            <td>
-              <a href="http://download.openSUSE.org/repositories/Java:/packages/openSUSE_11.2/">http://download.openSUSE.org/repositories/Java:/packages/openSUSE_11.2</a>
-            </td>
-            
-            <tr>
-              </table>
-<pre><code>          &lt;p&gt;
+        &lt;tr&gt;
+          &lt;/table&gt; 
+          
+          &lt;p&gt;
             Veja o que tenho em meu ambiente:&lt;br /&gt; &lt;a href=&quot;yast_java_instalado.png&quot;&gt;&lt;img src:&quot;yast_java_instalado.png&quot; alt=&quot;Ambiente Java Instalado&quot; title=&quot;yast_java_instalado&quot; width=&quot;808&quot; height=&quot;627&quot; class=&quot;alignleft size-full wp-image-405&quot; /&gt;&lt;/a&gt;
           &lt;/p&gt;
-
+          
           &lt;p&gt;
             Agora, como alternar entre as versões sem ter que manualmente mexer em variáveis de ambiente?&lt;br /&gt; Qual versão estou usando?
           &lt;/p&gt;
-
+          
           &lt;div class=&quot;wp_syntax&quot;&gt;
             &lt;table&gt;
               &lt;tr&gt;
                 &lt;td class=&quot;code&quot;&gt;
                   &lt;pre class=&quot;bash&quot; style=&quot;font-family:monospace;&quot;&gt;gilberto&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;@&lt;/span&gt;SUGEP-DMASI:~&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;&amp;gt;&lt;/span&gt; java &lt;span style=&quot;color: #660033;&quot;&gt;-version&lt;/span&gt;
-</code></pre><p>java version <span style="color: #ff0000;">&ldquo;1.5.0_22&rdquo;</span> Java<span style="color: #7a0874; font-weight: bold;">&#40;</span>TM<span style="color: #7a0874; font-weight: bold;">&#41;</span> <span style="color: #000000;">2</span> Runtime Environment, Standard Edition <span style="color: #7a0874; font-weight: bold;">&#40;</span>build 1.5.0_22-b03<span style="color: #7a0874; font-weight: bold;">&#41;</span> Java HotSpot<span style="color: #7a0874; font-weight: bold;">&#40;</span>TM<span style="color: #7a0874; font-weight: bold;">&#41;</span> Server VM <span style="color: #7a0874; font-weight: bold;">&#40;</span>build 1.5.0_22-b03, mixed mode<span style="color: #7a0874; font-weight: bold;">&#41;</span> gilberto<span style="color: #000000; font-weight: bold;">@</span>SUGEP-DMASI:~<span style="color: #000000; font-weight: bold;">&gt;</span></pre>  </td>  </tr>  </table>  </div></p>
+</code></pre>
+<p>java version <span style="color: #ff0000;">&ldquo;1.5.0_22&rdquo;</span> Java<span style="color: #7a0874; font-weight: bold;">(</span>TM<span style="color: #7a0874; font-weight: bold;">)</span> <span style="color: #000000;">2</span> Runtime Environment, Standard Edition <span style="color: #7a0874; font-weight: bold;">(</span>build 1.5.0_22-b03<span style="color: #7a0874; font-weight: bold;">)</span> Java HotSpot<span style="color: #7a0874; font-weight: bold;">(</span>TM<span style="color: #7a0874; font-weight: bold;">)</span> Server VM <span style="color: #7a0874; font-weight: bold;">(</span>build 1.5.0_22-b03, mixed mode<span style="color: #7a0874; font-weight: bold;">)</span> gilberto<span style="color: #000000; font-weight: bold;">@</span>SUGEP-DMASI:~<span style="color: #000000; font-weight: bold;">&gt;</span></pre> </td> </tr> </table> </div></p>
 <pre><code>          &lt;p&gt;
             Para verificar de forma geral como o ambiente está, além da figura acima, vamos abrir um terminal como usuário root e checar através do comando &lt;code&gt;update-alternatives&lt;/code&gt;:
           &lt;/p&gt;
-
+          
           &lt;div class=&quot;wp_syntax&quot;&gt;
             &lt;table&gt;
               &lt;tr&gt;
                 &lt;td class=&quot;code&quot;&gt;
                   &lt;pre class=&quot;bash&quot; style=&quot;font-family:monospace;&quot;&gt;gilberto&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;@&lt;/span&gt;SUGEP-DMASI:~&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&quot;color: #c20cb9; font-weight: bold;&quot;&gt;su&lt;/span&gt; -
-</code></pre><p>Password: SUGEP-DMASI:~ <span style="color: #666666; font-style: italic;"># update-alternatives &ndash;list java</span> <span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>lib<span style="color: #000000; font-weight: bold;">/</span>jvm<span style="color: #000000; font-weight: bold;">/</span>jre-1.6.0-openjdk<span style="color: #000000; font-weight: bold;">/</span>bin<span style="color: #000000; font-weight: bold;">/</span>java <span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>lib<span style="color: #000000; font-weight: bold;">/</span>jvm<span style="color: #000000; font-weight: bold;">/</span>jre-1.5.0-gcj<span style="color: #000000; font-weight: bold;">/</span>bin<span style="color: #000000; font-weight: bold;">/</span>java <span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>lib<span style="color: #000000; font-weight: bold;">/</span>jvm<span style="color: #000000; font-weight: bold;">/</span>jre-1.6.0-sun<span style="color: #000000; font-weight: bold;">/</span>bin<span style="color: #000000; font-weight: bold;">/</span>java <span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>lib<span style="color: #000000; font-weight: bold;">/</span>jvm<span style="color: #000000; font-weight: bold;">/</span>jre-1.5.0-sun<span style="color: #000000; font-weight: bold;">/</span>bin<span style="color: #000000; font-weight: bold;">/</span>java SUGEP-DMASI:~ <span style="color: #666666; font-style: italic;"># update-alternatives &ndash;list javac</span> <span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>lib<span style="color: #000000; font-weight: bold;">/</span>jvm<span style="color: #000000; font-weight: bold;">/</span>java-1.5.0-gcj<span style="color: #000000; font-weight: bold;">/</span>bin<span style="color: #000000; font-weight: bold;">/</span>javac <span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>lib<span style="color: #000000; font-weight: bold;">/</span>jvm<span style="color: #000000; font-weight: bold;">/</span>java-1.6.0-openjdk<span style="color: #000000; font-weight: bold;">/</span>bin<span style="color: #000000; font-weight: bold;">/</span>javac <span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>lib<span style="color: #000000; font-weight: bold;">/</span>jvm<span style="color: #000000; font-weight: bold;">/</span>java-1.6.0-sun<span style="color: #000000; font-weight: bold;">/</span>bin<span style="color: #000000; font-weight: bold;">/</span>javac <span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>lib<span style="color: #000000; font-weight: bold;">/</span>jvm<span style="color: #000000; font-weight: bold;">/</span>java-1.5.0-sun<span style="color: #000000; font-weight: bold;">/</span>bin<span style="color: #000000; font-weight: bold;">/</span>javac SUGEP-DMASI:~ <span style="color: #666666; font-style: italic;"># update-alternatives &ndash;list javapluging</span> No alternatives <span style="color: #000000; font-weight: bold;">for</span> javapluging. SUGEP-DMASI:~ <span style="color: #666666; font-style: italic;"># update-alternatives &ndash;list javaplugin</span> <span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>lib<span style="color: #000000; font-weight: bold;">/</span>jvm<span style="color: #000000; font-weight: bold;">/</span>jre-1.6.0-openjdk<span style="color: #000000; font-weight: bold;">/</span>lib<span style="color: #000000; font-weight: bold;">/</span>i386<span style="color: #000000; font-weight: bold;">/</span>IcedTeaNPPlugin.so <span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>lib<span style="color: #000000; font-weight: bold;">/</span>jvm<span style="color: #000000; font-weight: bold;">/</span>java-1.6.0-sun-1.6.0<span style="color: #000000; font-weight: bold;">/</span>jre<span style="color: #000000; font-weight: bold;">/</span>lib<span style="color: #000000; font-weight: bold;">/</span>i386<span style="color: #000000; font-weight: bold;">/</span>libnpjp2.so <span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>lib<span style="color: #000000; font-weight: bold;">/</span>jvm<span style="color: #000000; font-weight: bold;">/</span>java-1.5.0-sun-1.5.0<span style="color: #000000; font-weight: bold;">/</span>jre<span style="color: #000000; font-weight: bold;">/</span>plugin<span style="color: #000000; font-weight: bold;">/</span>i386<span style="color: #000000; font-weight: bold;">/</span>ns7<span style="color: #000000; font-weight: bold;">/</span>libjavaplugin_oji.so SUGEP-DMASI:~ <span style="color: #666666; font-style: italic;">#</span></pre>  </td>  </tr>  </table>  </div></p> </p>
+</code></pre>
+<p>Password: SUGEP-DMASI:~ <span style="color: #666666; font-style: italic;"># update-alternatives &ndash;list java</span> <span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>lib<span style="color: #000000; font-weight: bold;">/</span>jvm<span style="color: #000000; font-weight: bold;">/</span>jre-1.6.0-openjdk<span style="color: #000000; font-weight: bold;">/</span>bin<span style="color: #000000; font-weight: bold;">/</span>java <span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>lib<span style="color: #000000; font-weight: bold;">/</span>jvm<span style="color: #000000; font-weight: bold;">/</span>jre-1.5.0-gcj<span style="color: #000000; font-weight: bold;">/</span>bin<span style="color: #000000; font-weight: bold;">/</span>java <span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>lib<span style="color: #000000; font-weight: bold;">/</span>jvm<span style="color: #000000; font-weight: bold;">/</span>jre-1.6.0-sun<span style="color: #000000; font-weight: bold;">/</span>bin<span style="color: #000000; font-weight: bold;">/</span>java <span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>lib<span style="color: #000000; font-weight: bold;">/</span>jvm<span style="color: #000000; font-weight: bold;">/</span>jre-1.5.0-sun<span style="color: #000000; font-weight: bold;">/</span>bin<span style="color: #000000; font-weight: bold;">/</span>java SUGEP-DMASI:~ <span style="color: #666666; font-style: italic;"># update-alternatives &ndash;list javac</span> <span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>lib<span style="color: #000000; font-weight: bold;">/</span>jvm<span style="color: #000000; font-weight: bold;">/</span>java-1.5.0-gcj<span style="color: #000000; font-weight: bold;">/</span>bin<span style="color: #000000; font-weight: bold;">/</span>javac <span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>lib<span style="color: #000000; font-weight: bold;">/</span>jvm<span style="color: #000000; font-weight: bold;">/</span>java-1.6.0-openjdk<span style="color: #000000; font-weight: bold;">/</span>bin<span style="color: #000000; font-weight: bold;">/</span>javac <span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>lib<span style="color: #000000; font-weight: bold;">/</span>jvm<span style="color: #000000; font-weight: bold;">/</span>java-1.6.0-sun<span style="color: #000000; font-weight: bold;">/</span>bin<span style="color: #000000; font-weight: bold;">/</span>javac <span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>lib<span style="color: #000000; font-weight: bold;">/</span>jvm<span style="color: #000000; font-weight: bold;">/</span>java-1.5.0-sun<span style="color: #000000; font-weight: bold;">/</span>bin<span style="color: #000000; font-weight: bold;">/</span>javac SUGEP-DMASI:~ <span style="color: #666666; font-style: italic;"># update-alternatives &ndash;list javapluging</span> No alternatives <span style="color: #000000; font-weight: bold;">for</span> javapluging. SUGEP-DMASI:~ <span style="color: #666666; font-style: italic;"># update-alternatives &ndash;list javaplugin</span> <span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>lib<span style="color: #000000; font-weight: bold;">/</span>jvm<span style="color: #000000; font-weight: bold;">/</span>jre-1.6.0-openjdk<span style="color: #000000; font-weight: bold;">/</span>lib<span style="color: #000000; font-weight: bold;">/</span>i386<span style="color: #000000; font-weight: bold;">/</span>IcedTeaNPPlugin.so <span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>lib<span style="color: #000000; font-weight: bold;">/</span>jvm<span style="color: #000000; font-weight: bold;">/</span>java-1.6.0-sun-1.6.0<span style="color: #000000; font-weight: bold;">/</span>jre<span style="color: #000000; font-weight: bold;">/</span>lib<span style="color: #000000; font-weight: bold;">/</span>i386<span style="color: #000000; font-weight: bold;">/</span>libnpjp2.so <span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>lib<span style="color: #000000; font-weight: bold;">/</span>jvm<span style="color: #000000; font-weight: bold;">/</span>java-1.5.0-sun-1.5.0<span style="color: #000000; font-weight: bold;">/</span>jre<span style="color: #000000; font-weight: bold;">/</span>plugin<span style="color: #000000; font-weight: bold;">/</span>i386<span style="color: #000000; font-weight: bold;">/</span>ns7<span style="color: #000000; font-weight: bold;">/</span>libjavaplugin_oji.so SUGEP-DMASI:~ <span style="color: #666666; font-style: italic;">#</span></pre> </td> </tr> </table> </div></p></p>
 <pre><code>          &lt;p&gt;
             Para saber mais sobre este comando digite:
           &lt;/p&gt;
-
+          
           &lt;div class=&quot;wp_syntax&quot;&gt;
             &lt;table&gt;
               &lt;tr&gt;
@@ -122,21 +132,22 @@
               &lt;/tr&gt;
             &lt;/table&gt;
           &lt;/div&gt;
-
+          
           &lt;p&gt;
             Agora vamos usá-lo para alternar entre as versões. Note nas opções acima que podemos alternar não somente a máquina virtual, mas também o plugin para navegadores de internet. Então mãos a obra! Para alternar usaremos a opção &lt;code&gt;--config&lt;/code&gt;:
           &lt;/p&gt;
-
+          
           &lt;div class=&quot;wp_syntax&quot;&gt;
             &lt;table&gt;
               &lt;tr&gt;
                 &lt;td class=&quot;code&quot;&gt;
                   &lt;pre class=&quot;bash&quot; style=&quot;font-family:monospace;&quot;&gt;SUGEP-DMASI:~ &lt;span style=&quot;color: #666666; font-style: italic;&quot;&gt;# update-alternatives --config java&lt;/span&gt;
-</code></pre><p>&nbsp; There are <span style="color: #000000;">4</span> alternatives <span style="color: #c20cb9; font-weight: bold;">which</span> provide <span style="color: #000000; font-weight: bold;">`</span>java<span style="color: #ff0000;">&rsquo;. &nbsp;</p><h2> Selection Alternative</h2>
+</code></pre>
+<h2><a href="#there-are-4-alternatives-which-provide-javaselection-alternative" id="there-are-4-alternatives-which-provide-javaselection-alternative">  There are <span style="color: #000000;">4</span> alternatives <span style="color: #c20cb9; font-weight: bold;">which</span> provide <span style="color: #000000; font-weight: bold;">`</span>java<span style="color: #ff0000;">&rsquo;.   Selection    Alternative</a></h2>
 <ul>
-  <li>1 /usr/lib/jvm/jre-1.6.0-openjdk/bin/java  2 /usr/lib/jvm/jre-1.5.0-gcj/bin/java  3 /usr/lib/jvm/jre-1.6.0-sun/bin/java</li>
-  <li><p>4 /usr/lib/jvm/jre-1.5.0-sun/bin/java &nbsp; Press enter to keep the default[*], or type selection number: 3 Using &lsquo;</span><span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>lib<span style="color: #000000; font-weight: bold;">/</span>jvm<span style="color: #000000; font-weight: bold;">/</span>jre-1.6.0-sun<span style="color: #000000; font-weight: bold;">/</span>bin<span style="color: #000000; font-weight: bold;">/</span>java<span style="color: #ff0000;">&rsquo; to provide &lsquo;</span>java<span style="color: #ff0000;">&rsquo;. SUGEP-DMASI:~ #</span></pre>  </td>  </tr>  </table>  </div></p>
-  <pre><code>      &lt;p&gt;
+<li>1    /usr/lib/jvm/jre-1.6.0-openjdk/bin/java 2    /usr/lib/jvm/jre-1.5.0-gcj/bin/java 3    /usr/lib/jvm/jre-1.6.0-sun/bin/java</li>
+<li>4    /usr/lib/jvm/jre-1.5.0-sun/bin/java   Press enter to keep the default[*], or type selection number: 3 Using &lsquo;</span><span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>lib<span style="color: #000000; font-weight: bold;">/</span>jvm<span style="color: #000000; font-weight: bold;">/</span>jre-1.6.0-sun<span style="color: #000000; font-weight: bold;">/</span>bin<span style="color: #000000; font-weight: bold;">/</span>java<span style="color: #ff0000;">&rsquo; to provide &lsquo;</span>java<span style="color: #ff0000;">&rsquo;. SUGEP-DMASI:~ #</span></pre> </td> </tr> </table> </div>
+<pre><code>      &lt;p&gt;
         Abra um novo terminal e verifique a versão atual:
       &lt;/p&gt;
 
@@ -145,13 +156,20 @@
           &lt;tr&gt;
             &lt;td class=&quot;code&quot;&gt;
               &lt;pre class=&quot;bash&quot; style=&quot;font-family:monospace;&quot;&gt;gilberto&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;@&lt;/span&gt;SUGEP-DMASI:~&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;&amp;gt;&lt;/span&gt; java &lt;span style=&quot;color: #660033;&quot;&gt;-version&lt;/span&gt;
-</code></pre></li>
-</ul><p>java version <span style="color: #ff0000;">&ldquo;1.6.0_20&rdquo;</span> Java<span style="color: #7a0874; font-weight: bold;">&#40;</span>TM<span style="color: #7a0874; font-weight: bold;">&#41;</span> SE Runtime Environment <span style="color: #7a0874; font-weight: bold;">&#40;</span>build 1.6.0_20-b02<span style="color: #7a0874; font-weight: bold;">&#41;</span> Java HotSpot<span style="color: #7a0874; font-weight: bold;">&#40;</span>TM<span style="color: #7a0874; font-weight: bold;">&#41;</span> Server VM <span style="color: #7a0874; font-weight: bold;">&#40;</span>build <span style="color: #000000;">16.3</span>-b01, mixed mode<span style="color: #7a0874; font-weight: bold;">&#41;</span> You have mail <span style="color: #000000; font-weight: bold;">in</span> <span style="color: #000000; font-weight: bold;">/</span>var<span style="color: #000000; font-weight: bold;">/</span>spool<span style="color: #000000; font-weight: bold;">/</span>mail<span style="color: #000000; font-weight: bold;">/</span>gilberto gilberto<span style="color: #000000; font-weight: bold;">@</span>SUGEP-DMASI:~<span style="color: #000000; font-weight: bold;">&gt;</span></pre>  </td>  </tr>  </table>  </div></p> </p>
+</code></pre>
+</li>
+</ul>
+<p>java version <span style="color: #ff0000;">&ldquo;1.6.0_20&rdquo;</span> Java<span style="color: #7a0874; font-weight: bold;">(</span>TM<span style="color: #7a0874; font-weight: bold;">)</span> SE Runtime Environment <span style="color: #7a0874; font-weight: bold;">(</span>build 1.6.0_20-b02<span style="color: #7a0874; font-weight: bold;">)</span> Java HotSpot<span style="color: #7a0874; font-weight: bold;">(</span>TM<span style="color: #7a0874; font-weight: bold;">)</span> Server VM <span style="color: #7a0874; font-weight: bold;">(</span>build <span style="color: #000000;">16.3</span>-b01, mixed mode<span style="color: #7a0874; font-weight: bold;">)</span> You have mail <span style="color: #000000; font-weight: bold;">in</span> <span style="color: #000000; font-weight: bold;">/</span>var<span style="color: #000000; font-weight: bold;">/</span>spool<span style="color: #000000; font-weight: bold;">/</span>mail<span style="color: #000000; font-weight: bold;">/</span>gilberto gilberto<span style="color: #000000; font-weight: bold;">@</span>SUGEP-DMASI:~<span style="color: #000000; font-weight: bold;">&gt;</span></pre> </td> </tr> </table> </div></p></p>
 <pre><code>          &lt;p&gt;
             Podemos usar o utilitário &lt;code&gt;update-alternatives&lt;/code&gt; para gerenciar outros links no sistema, mas o post já ficou extenso. Na próxima podemos mostrar como gerenciar links manualmente.
           &lt;/p&gt;
 </code></pre>
+
     </section>
+<section>
+<div id="advertisements"></div>
+<script data-ad-client="ca-pub-3863943400063116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</section>
 <section>
 <div id="disqus_thread"></div>
         <script type="text/javascript">

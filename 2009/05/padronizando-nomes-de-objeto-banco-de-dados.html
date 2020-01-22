@@ -47,295 +47,226 @@
         </p>
     </header>
     <section>
-	<p>Primeiro definimos a extensão dos arquivos que conterão as sentenças de criação dos objetos do banco de dados: </p>
+	<p>Primeiro definimos a extensão dos arquivos que conterão as sentenças de criação dos objetos do banco de dados:</p>
 <table border="0">
   <tr>
     <td>
       <modulo>.tbs
     </td>
-    
-    <td>
-      Tablespace (Tablespace)- Script de criação do(s) espaço(s) de armazenamento
-    </td>
+<pre><code>&lt;td&gt;
+  Tablespace (Tablespace)- Script de criação do(s) espaço(s) de armazenamento
+&lt;/td&gt;
+</code></pre>
   </tr>
-  
   <tr>
     <td>
       <modulo>.vw
     </td>
-    
-    <td>
-      View (visão)-Script de criação da visões
-    </td>
+<pre><code>&lt;td&gt;
+  View (visão)-Script de criação da visões
+&lt;/td&gt;
+</code></pre>
   </tr>
-  
   <tr>
     <td>
       <modulo>.usr
     </td>
-    
-    <td>
-      Schema (esquema)- Criação do Proprietário do Módulo (Schema), juntamente com a role(papel) de aplicação e usário(s) correspondente(s)
-    </td>
+<pre><code>&lt;td&gt;
+  Schema (esquema)- Criação do Proprietário do Módulo (Schema), juntamente com a role(papel) de aplicação e usário(s) correspondente(s)
+&lt;/td&gt;
+</code></pre>
   </tr>
-  
   <tr>
     <td>
       <modulo>.grt
     </td>
-    
-    <td>
-      Grant (Permissão)- Script que estabelece as permissões a outros usuário e a role de aplicação
-    </td>
+<pre><code>&lt;td&gt;
+  Grant (Permissão)- Script que estabelece as permissões a outros usuário e a role de aplicação
+&lt;/td&gt;
+</code></pre>
   </tr>
-  
   <tr>
     <td>
       <modulo>.rvk
     </td>
-    
-    <td>
-      Revoke (Permissão)- Script que revoga as permissões a outros usuário e a role de aplicação
-    </td>
+<pre><code>&lt;td&gt;
+  Revoke (Permissão)- Script que revoga as permissões a outros usuário e a role de aplicação
+&lt;/td&gt;
+</code></pre>
   </tr>
-  
   <tr>
     <td>
       <modulo>.syn
     </td>
-    
-    <td>
-      Synonym (Sinônimo)- Script que estabelece os sinônimos dos objetos a outros usuários
-    </td>
+<pre><code>&lt;td&gt;
+  Synonym (Sinônimo)- Script que estabelece os sinônimos dos objetos a outros usuários
+&lt;/td&gt;
+</code></pre>
   </tr>
-  
   <tr>
     <td>
       <modulo>.tab
     </td>
-    
-    <td>
-      Table (Tabela)- Script de criação das tabelas
-    </td>
+<pre><code>&lt;td&gt;
+  Table (Tabela)- Script de criação das tabelas
+&lt;/td&gt;
+</code></pre>
   </tr>
-  
   <tr>
     <td>
       <modulo>.con
     </td>
-    
-    <td>
-      Constraint (Restrição)- Script de criação das restrições de integridade
-    </td>
+<pre><code>&lt;td&gt;
+  Constraint (Restrição)- Script de criação das restrições de integridade
+&lt;/td&gt;
+</code></pre>
   </tr>
-  
   <tr>
     <td>
       <modulo>.ind
     </td>
-    
-    <td>
-      Index (Índice)- Script de criação dos índeces
-    </td>
+<pre><code>&lt;td&gt;
+  Index (Índice)- Script de criação dos índeces
+&lt;/td&gt;
+</code></pre>
   </tr>
-  
   <tr>
     <td>
       <modulo>.trg
     </td>
-    
-    <td>
-      Trigger (Gatilho)- Script de criação dos gatilhos
-    </td>
+<pre><code>&lt;td&gt;
+  Trigger (Gatilho)- Script de criação dos gatilhos
+&lt;/td&gt;
+</code></pre>
   </tr>
-  
   <tr>
     <td>
       <modulo>.seq
     </td>
-    
-    <td>
-      Sequence (Sequência)- Script de criação das sequências
-    </td>
+<pre><code>&lt;td&gt;
+  Sequence (Sequência)- Script de criação das sequências
+&lt;/td&gt;
+</code></pre>
   </tr>
-  
   <tr>
     <td>
       <modulo>.prc
     </td>
-    
-    <td>
-      Stored Procedure (Procedimento Armazenado)- Script de criação de procedimentos armazenados
-    </td>
+<pre><code>&lt;td&gt;
+  Stored Procedure (Procedimento Armazenado)- Script de criação de procedimentos armazenados
+&lt;/td&gt;
+</code></pre>
   </tr>
-  
   <tr>
     <td>
       <modulo>.fnc
     </td>
-    
-    <td>
-      Stored Function (Função Armazenada)- Script de criação de funções armazenadas
-    </td>
+<pre><code>&lt;td&gt;
+  Stored Function (Função Armazenada)- Script de criação de funções armazenadas
+&lt;/td&gt;
+</code></pre>
   </tr>
-  
   <tr>
     <td>
       <modulo>.pks
     </td>
-    
-    <td>
-      Package Specification (Especificação de Pacote) - Script de criação das especificações dos pacotes
-    </td>
+<pre><code>&lt;td&gt;
+  Package Specification (Especificação de Pacote) - Script de criação das especificações dos pacotes
+&lt;/td&gt;
+</code></pre>
   </tr>
-  
   <tr>
     <td>
       <modulo>.pkb
     </td>
-    
-    <td>
-      Package Body (Corpo de Pacote) - Script de criação do corpo dos pacotes
-    </td>
+<pre><code>&lt;td&gt;
+  Package Body (Corpo de Pacote) - Script de criação do corpo dos pacotes
+&lt;/td&gt;
+</code></pre>
   </tr>
-  
   <tr>
     <td>
       <modulo>.sql
     </td>
-    
-    <td>
-      Reponsável por chamar/executar os outros arquivos em uma sequencia apropriada:
-    </td>
+<pre><code>&lt;td&gt;
+  Reponsável por chamar/executar os outros arquivos em uma sequencia apropriada:
+&lt;/td&gt;
+</code></pre>
   </tr>
 </table>
 <table>
-  <thead>
-    <tr>
-      <th>Para Tabelas </th>
-      <th>Descrição </th>
-      <th>Exemplo </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><prefixo>_<nometabela> </td>
-      <td>onde <prefixo> deverá ser letras representando o módulo em que esta tabela pertença. </td>
-      <td>ger_pessoa </td>
-    </tr>
-  </tbody>
+<thead>
+<tr><th> Para Tabelas           </th><th> Descrição                                                                            </th><th> Exemplo    </th></tr>
+</thead>
+<tbody>
+<tr><td> <prefixo>_<nometabela> </td><td> onde <prefixo> deverá ser letras representando o módulo em que esta tabela pertença. </td><td> ger_pessoa </td></tr>
+</tbody>
+</table>
+</tr> | Para Visão                 | Descrição                                                                            | Exemplo              |
+| -------------------------- | ------------------------------------------------------------------------------------ | -------------------- |
+| <prefixo>\_<nomevisao>\_vw | onde <prefixo> deverá ser letras representando o módulo em que esta tabela pertença. | ger\_funcionario\_vw |
+<table>
+<thead>
+<tr><th> Para Sequências                   </th><th> Descrição                                                                            </th><th> Exemplo                    </th></tr>
+</thead>
+<tbody>
+<tr><td> <prefixo>_<nometabela>_sequence </td><td> onde <prefixo> deverá ser letras representando o módulo em que esta tabela pertença. </td><td> ger_funcionario_sequence </td></tr>
+</tbody>
 </table>
 <table>
-  <thead>
-    <tr>
-      <th></tr> </th>
-      <th>Para Visão </th>
-      <th>Descrição </th>
-      <th>Exemplo </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><prefixo>_<nomevisao>_vw </td>
-      <td>onde <prefixo> deverá ser letras representando o módulo em que esta tabela pertença. </td>
-      <td>ger_funcionario_vw </td>
-    </tr>
-  </tbody>
+<thead>
+<tr><th> Para Colunas                                              </th><th> Descrição                                                     </th><th> Exemplo                       </th></tr>
+</thead>
+<tbody>
+<tr><td> <cd>_<nometabela>                                         </td><td> para coluna representando a chave primaria da tabela.         </td><td> cd_pessoa                     </td></tr>
+<tr><td> <cd>_<nometabelaestrangeira>                              </td><td> para coluna(s) representando a presença de chave estrangeira. </td><td> cd_municipio                  </td></tr>
+<tr><td> <cd>_<nometabelaestrangeira><significadodorelacionamento> </td><td> para coluna(s) representando a presença de chave estrangeira. </td><td> cd_municipionaturalidade      </td></tr>
+<tr><td> <fl>_<nomecampo>                                          </td><td> para coluna representando campo lógico(verdadeiro ou falso).  </td><td> fl_dependente, fl_encerrado </td></tr>
+<tr><td> <dt>_<nomecampo>                                          </td><td> para coluna representando campo data.                         </td><td> dt_nascimento                 </td></tr>
+<tr><td> <hr>_<nomecampo>                                          </td><td> para coluna representando campo tempo.                        </td><td> hr_saida                      </td></tr>
+<tr><td> <nu>_<nomecampo>                                          </td><td> para coluna representando campo numerico.                     </td><td> nu_leicriacao                 </td></tr>
+</tbody>
 </table>
+<p>Para nomear constraints, devemos usar um padrão porque não pode haver repetição de nomes dos mesmos (limitado a 30 caracteres - limitação do oracle).</p>
 <table>
-  <thead>
-    <tr>
-      <th>Para Sequências </th>
-      <th>Descrição </th>
-      <th>Exemplo </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><prefixo>_<nometabela>_sequence </td>
-      <td>onde <prefixo> deverá ser letras representando o módulo em que esta tabela pertença. </td>
-      <td>ger_funcionario_sequence </td>
-    </tr>
-  </tbody>
+<thead>
+<tr><th> Para Constraints                                                                               </th><th> Descrição                                                     </th><th> Exemplo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </th></tr>
+</thead>
+<tbody>
+<tr><td> <nome da tabela com prefixo>_<pk>                                                              </td><td> para chave primaria.                                          </td><td> constraint sys_usuario_pk primary key (cd_usuario) enable                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </td></tr>
+<tr><td> <nome da tabela com prefixo>_<uk>                                                              </td><td> para indice unico.                                            </td><td> constraint sys_usuario_uk unique (login, email) enable                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   </td></tr>
+<tr><td> <nome da tabela origem sem prefixo>_<to>_&lt;nome da tabela atual(destino sem prefixo&gt;_<fk>     </td><td> para coluna(s) representando a presença de chave estrangeira. </td><td> constraint entidade_to_subentidade_fk foreign key (id_entidade) references kira.sys_entidade (id_entidade) enable                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </td></tr>
+<tr><td> <nome da tabela sem prefixo>_<nome da coluna>_<ck>_&lt;um digito - caso ocorra repeticao&gt; </td><td> para check.                                                   </td><td> create table ergon.ergon_regras_compara_ff</td></tr>
+</tbody>
 </table>
-<table>
-  <thead>
-    <tr>
-      <th>Para Colunas </th>
-      <th>Descrição </th>
-      <th>Exemplo </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><cd>_<nometabela> </td>
-      <td>para coluna representando a chave primaria da tabela. </td>
-      <td>cd_pessoa </td>
-    </tr>
-    <tr>
-      <td><cd>_<nometabelaestrangeira> </td>
-      <td>para coluna(s) representando a presença de chave estrangeira. </td>
-      <td>cd_municipio </td>
-    </tr>
-    <tr>
-      <td><cd>_<nometabelaestrangeira><significadodorelacionamento> </td>
-      <td>para coluna(s) representando a presença de chave estrangeira. </td>
-      <td>cd_municipionaturalidade </td>
-    </tr>
-    <tr>
-      <td><fl>_<nomecampo> </td>
-      <td>para coluna representando campo lógico(verdadeiro ou falso). </td>
-      <td>fl_dependente, fl_encerrado </td>
-    </tr>
-    <tr>
-      <td><dt>_<nomecampo> </td>
-      <td>para coluna representando campo data. </td>
-      <td>dt_nascimento </td>
-    </tr>
-    <tr>
-      <td><hr>_<nomecampo> </td>
-      <td>para coluna representando campo tempo. </td>
-      <td>hr_saida </td>
-    </tr>
-    <tr>
-      <td><nu>_<nomecampo> </td>
-      <td>para coluna representando campo numerico. </td>
-      <td>nu_leicriacao </td>
-    </tr>
-  </tbody>
-</table><p>Para nomear constraints, devemos usar um padrão porque não pode haver repetição de nomes dos mesmos (limitado a 30 caracteres - limitação do oracle). </p>
-<table>
-  <thead>
-    <tr>
-      <th>Para Constraints </th>
-      <th>Descrição </th>
-      <th>Exemplo </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><nome da tabela com prefixo>_<pk> </td>
-      <td>para chave primaria. </td>
-      <td>constraint sys_usuario_pk primary key (cd_usuario) enable </td>
-    </tr>
-    <tr>
-      <td><nome da tabela com prefixo>_<uk> </td>
-      <td>para indice unico. </td>
-      <td>constraint sys_usuario_uk unique (login, email) enable </td>
-    </tr>
-    <tr>
-      <td><nome da tabela origem sem prefixo>_<to>_&lt;nome da tabela atual(destino sem prefixo&gt;_<fk> </td>
-      <td>para coluna(s) representando a presença de chave estrangeira. </td>
-      <td>constraint entidade_to_subentidade_fk foreign key (id_entidade) references kira.sys_entidade (id_entidade) enable </td>
-    </tr>
-    <tr>
-      <td><nome da tabela sem prefixo>_<nome da coluna>_<ck>_<um digito - caso ocorra repeticao> </td>
-      <td>para check. </td>
-      <td>create table ergon.ergon_regras_compara_ff</td>
-    </tr>
-  </tbody>
-</table><p>(<br/>regra number(6,0) constraint regras_compara_ff_regra_ck_0 not null enable,<br/>fl_ativa_1 char(1 byte) default &#8216;n&#8217; constraint rg_cp_ff_fl_ativa_1_ck_0 not null enable,<br/>fl_ativa_2 char(1 byte) default &#8216;n&#8217; constraint rg_cp_ff_fl_ativa_2_ck_0 not null enable,<br/>fl_ativa_3 char(1 byte) default &#8216;n&#8217; constraint rg_cp_ff_fl_ativa_3_ck_0 not null enable,<br/>limite_diferenca number(11,2),<br/>constraint ergon_regras_compara_ff_pk primary key (regra) enable,<br/>constraint rg_cp_ff_fl_ativa_1_ck_1 check (fl_ativa_1 in (&#8216;s&#8217;, &#8216;n&#8217;)) enable novalidate,<br/>constraint rg_cp_ff_fl_ativa_2_ck_2 check (fl_ativa_2 in (&#8216;s&#8217;, &#8216;n&#8217;)) enable novalidate,<br/>constraint rg_cp_ff_fl_ativa_3_ck_3 check (fl_ativa_3 in (&#8216;s&#8217;, &#8216;n&#8217;)) enable novalidate<br/>) ; |</p><p><strong>Nota:</strong> em todos os casos acima, sendo o nome do objeto grande, devemos abreviar o nome do mesmo.<br/>ex.:<br/>aplicacoes = apli (4)<br/>aplicacao_funcoes = apfu (2:2)<br/>aplicacao_funcao_papeis = apfp (2:1:1)<br/>aplicacao_funcao_papel_bananas = afpb (1:1:1:1)<br/>aplicacao_funcao_papel_banana_macas = (Seja criativo!) </p><p><strong>REFERENCIA:</strong> <a href="http://www.oracle-base.com/articles/misc/NamingConventions.php">NamingConventions.php</a></p><p>Uso essa estratégia há algum tempo e fica muito fácil de trabalhar e manter. </p><p>Você adota uma notação?<br/>Qual notação você usa?</p>
+<p>(<br />
+regra number(6,0) constraint regras_compara_ff_regra_ck_0 not null enable,<br />
+fl_ativa_1 char(1 byte) default ‘n’ constraint rg_cp_ff_fl_ativa_1_ck_0 not null enable,<br />
+fl_ativa_2 char(1 byte) default ‘n’ constraint rg_cp_ff_fl_ativa_2_ck_0 not null enable,<br />
+fl_ativa_3 char(1 byte) default ‘n’ constraint rg_cp_ff_fl_ativa_3_ck_0 not null enable,<br />
+limite_diferenca number(11,2),<br />
+constraint ergon_regras_compara_ff_pk primary key (regra) enable,<br />
+constraint rg_cp_ff_fl_ativa_1_ck_1 check (fl_ativa_1 in (‘s’, ‘n’)) enable novalidate,<br />
+constraint rg_cp_ff_fl_ativa_2_ck_2 check (fl_ativa_2 in (‘s’, ‘n’)) enable novalidate,<br />
+constraint rg_cp_ff_fl_ativa_3_ck_3 check (fl_ativa_3 in (‘s’, ‘n’)) enable novalidate<br />
+) ; |</p>
+<p><strong>Nota:</strong> em todos os casos acima, sendo o nome do objeto grande, devemos abreviar o nome do mesmo.<br />
+ex.:<br />
+aplicacoes = apli (4)<br />
+aplicacao_funcoes = apfu (2:2)<br />
+aplicacao_funcao_papeis = apfp (2:1:1)<br />
+aplicacao_funcao_papel_bananas = afpb (1:1:1:1)<br />
+aplicacao_funcao_papel_banana_macas = (Seja criativo!)</p>
+<p><strong>REFERENCIA:</strong> <a href="http://www.oracle-base.com/articles/misc/NamingConventions.php">NamingConventions.php</a></p>
+<p>Uso essa estratégia há algum tempo e fica muito fácil de trabalhar e manter.</p>
+<p>Você adota uma notação?<br />
+Qual notação você usa?</p>
+
     </section>
+<section>
+<div id="advertisements"></div>
+<script data-ad-client="ca-pub-3863943400063116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</section>
 <section>
 <div id="disqus_thread"></div>
         <script type="text/javascript">

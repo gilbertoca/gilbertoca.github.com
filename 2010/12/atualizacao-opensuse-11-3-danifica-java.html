@@ -49,7 +49,9 @@
         </p>
     </header>
     <section>
-	<p>Veja como o <a href="http://blog.gilbertoca.com/?p=383">post que menciono o uso do utilitário update-alternatives</a> é importante.<br/>Recentemente apliquei um patch - atualização de correção - para o <a href="http://www.openSUSE.org/pt-br/">openSUSE 11.3</a> e se não houvesse duas <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">máquinas virtuais java - JRE -</a>, certamente não conseguiria acessar qualquer site que dependesse do <a href="http://www.oracle.com/technetwork/java/index.html">Java</a>. </p><p>Veja o problema:</p>
+	<p>Veja como o <a href="http://blog.gilbertoca.com/?p=383">post que menciono o uso do utilitário update-alternatives</a> é importante.<br />
+Recentemente apliquei um patch - atualização de correção - para o <a href="http://www.openSUSE.org/pt-br/">openSUSE 11.3</a> e se não houvesse duas <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">máquinas virtuais java - JRE -</a>, certamente não conseguiria acessar qualquer site que dependesse do <a href="http://www.oracle.com/technetwork/java/index.html">Java</a>.</p>
+<p>Veja o problema:</p>
 <pre>
 <code class="bash">
 gilberto@dhcppc0:~> firefox -g
@@ -62,7 +64,9 @@ ERROR: Invalid browser function table. Some functionality may be restricted.
 /usr/src/packages/BUILD/icedtea6-1.9.2/plugin/icedteanp/IcedTeaNPPlugin.cc:1506: thread 0x8090738: Error: Failed to spawn applet viewer: Falha ao executar processo filho "/etc/alternatives/../../bin/java" (Arquivo ou diretório não encontrado)
 gilberto@dhcppc0:~>
 </code>    
-</pre><p>Quando constatei o problema, utilizei o <a href="http://transit.iut2.upmf-grenoble.fr/cgi-bin/man/man2html?8+update-alternatives">update-alternatives</a> para alternar a versão da máquina virtual java:</p>
+</pre>
+Quando constatei o problema, utilizei o [update-alternatives][5] para alternar 
+a versão da máquina virtual java:
 <pre>
 <code class="bash">
 gilberto@dhcppc0:~> su -
@@ -73,12 +77,16 @@ There are 2 alternatives which provide `javaplugin’.
 -----------------------------------------------
  +        1    /usr/lib/jvm/jre-1.6.0-openjdk/lib/i386/IcedTeaPlugin.so
 *         2    /usr/lib/jvm/java-1.6.0-sun-1.6.0/jre/lib/i386/libnpjp2.so
+<p>Press enter to keep the default[*], or type selection number: dhcppc0:~ # </code></p>
+</pre>
+<p>Outra solução, caso você só tenha uma versão instalada, se encontra <a href="http://www.dslreports.com/forum/r24716562-suse-update-broke-java">nesta discussão</a>, pelo comentário do usuário nwrickert.</p>
+<p><strong>ATUALIZAÇÃO:</strong> esqueci-me de mencionar que está estação de trabalho é a de minha casa e que hoje fazem 60 dias que instalei o openSUSE 11.3. Por que está nota? Porque os usuários do Windows XP - minha esposa e meu filho(9 anos) - adoraram a mudança!</p>
 
-Press enter to keep the default[*], or type selection number: 
-dhcppc0:~ #
-</code>    
-</pre><p>Outra solução, caso você só tenha uma versão instalada, se encontra <a href="http://www.dslreports.com/forum/r24716562-suse-update-broke-java">nesta discussão</a>, pelo comentário do usuário nwrickert. </p><p><strong>ATUALIZAÇÃO:</strong> esqueci-me de mencionar que está estação de trabalho é a de minha casa e que hoje fazem 60 dias que instalei o openSUSE 11.3. Por que está nota? Porque os usuários do Windows XP - minha esposa e meu filho(9 anos) - adoraram a mudança!</p>
     </section>
+<section>
+<div id="advertisements"></div>
+<script data-ad-client="ca-pub-3863943400063116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</section>
 <section>
 <div id="disqus_thread"></div>
         <script type="text/javascript">
