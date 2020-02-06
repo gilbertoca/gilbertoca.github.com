@@ -12,6 +12,22 @@
         </p>
     </header>
     <section>
+        <!-- google-graphic-content -->
+        <div class="ingph">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+            </script>
+            <ins class="adsbygoogle"
+                style="display:block; text-align:center;"
+                data-ad-layout="in-article"
+                data-ad-format="fluid"
+                data-full-width-responsive="true">
+                data-ad-client="ca-pub-3863943400063116"
+                data-ad-slot="8234899195">
+            </ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
 	${content.body}
     </section>
     <#include "disqus.ftl">
