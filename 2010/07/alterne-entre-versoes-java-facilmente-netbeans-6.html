@@ -15,8 +15,18 @@
         <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/monokai_sublime.min.css">  
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>        
         <script>hljs.initHighlightingOnLoad();</script>
+        <!-- Google Analytics -->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-        <!-- Fav and touch icons -->
+            ga('create', 'UA-2586578-2', { 'storage': 'none' });
+            ga('set', 'anonymizeIp', true);
+            ga('send', 'pageview');
+        </script>
+        <!-- End Google Analytics -->
         <link rel="shortcut icon" href="../../favicon.ico">
     </head>
     <body>
@@ -50,6 +60,22 @@
         </p>
     </header>
     <section>
+        <!-- google-graphic-content -->
+        <div class="ingph">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+            </script>
+            <ins class="adsbygoogle"
+                style="display:block; text-align:center;"
+                data-ad-layout="in-article"
+                data-ad-format="fluid"
+                data-full-width-responsive="true">
+                data-ad-client="ca-pub-3863943400063116"
+                data-ad-slot="8234899195">
+            </ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
 	<p>Outro dia escrevi como <a href="http://blog.gilbertoca.com/?p=383">alterner entre versões Java facilmente</a> utilizando o utilitário de sistema operacional <a href="http://man.he.net/man8/update-alternatives">update-alternatives</a>. Aquele post tem uma perspectiva do lado do servidor onde estão instalados servidores de aplicação java ou mesmo aplicativos e o administrador/desenvolvedor precisa testar como estes artefatos mencionados se comportariam em cada versão.</p>
 <p>Hoje vou relatar outra maneira de alternar entre versões java em perspectiva do lado do desenvolvedor. Aqui na secretaria, podemos escolher entre <a href="http://www.netbeans.org">Netbeans</a> e <a href="http://www.eclipse.org">Eclipse</a> como ambientes de desenvolvimento, desde que o projeto seja gerenciado pela ferramenta de construção <a href="http://maven.apache.org">Maven</a>.</p>
 <p>Minha escolha, assim como de mais alguns colegas foi o <a href="http://netbeans.org/index.html">Netbeans</a> 6.8. Vejamos então como configurar o IDE Netbeans para facilitar a traca de versões java para compilar ou rodar aplicativos.<br />
@@ -60,10 +86,6 @@ A partir deste diálogo, você poderá alternar de versão através “Java Plat
 Lembrando que antes disso precisamos instalar as versões que desejamos utilizar.</p>
 
     </section>
-<section>
-<div id="advertisements"></div>
-<script data-ad-client="ca-pub-3863943400063116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-</section>
 <section>
 <div id="disqus_thread"></div>
         <script type="text/javascript">
@@ -84,22 +106,28 @@ Lembrando que antes disso precisamos instalar as versões que desejamos utilizar
 </article>
 	
 </section>
-<footer>
-	<p>
-		<a href="https://pages.github.com/">Hosted by GitHub Pages</a> -
-		<a href="http://jbake.org/">Generated with JBake</a> -
-		<a href="http://github.com/gilbertoca/gilbertoca.com">Source code</a>
-	</p>
-</footer>
-<script type="text/javascript">
-	var _gaq = _gaq || [];
-	_gaq.push(['_setAccount', 'UA-2586578-2']);
-	_gaq.push(['_trackPageview']);
-	(function() {
-	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	})();
-</script>
+    <!-- google-matched-content -->
+    <div id="mon">
+            <p>You may also like:</p>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+            </script>
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-format="autorelaxed"
+                data-full-width-responsive="true">
+                data-ad-client="ca-pub-3863943400063116"
+                data-ad-slot="6949737682">
+            </ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+    </div>
+    <footer>
+        <p>
+            <a href="https://pages.github.com/">Hosted by GitHub Pages</a> -
+            <a href="http://jbake.org/">Generated with JBake</a> -
+            <a href="http://github.com/gilbertoca/gilbertoca.com">Source code</a>
+        </p>
+    </footer>
 </body>
 </html>

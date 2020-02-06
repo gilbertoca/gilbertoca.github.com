@@ -15,8 +15,18 @@
         <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/monokai_sublime.min.css">  
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>        
         <script>hljs.initHighlightingOnLoad();</script>
+        <!-- Google Analytics -->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-        <!-- Fav and touch icons -->
+            ga('create', 'UA-2586578-2', { 'storage': 'none' });
+            ga('set', 'anonymizeIp', true);
+            ga('send', 'pageview');
+        </script>
+        <!-- End Google Analytics -->
         <link rel="shortcut icon" href="../../favicon.ico">
     </head>
     <body>
@@ -51,6 +61,22 @@
         </p>
     </header>
     <section>
+        <!-- google-graphic-content -->
+        <div class="ingph">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+            </script>
+            <ins class="adsbygoogle"
+                style="display:block; text-align:center;"
+                data-ad-layout="in-article"
+                data-ad-format="fluid"
+                data-full-width-responsive="true">
+                data-ad-client="ca-pub-3863943400063116"
+                data-ad-slot="8234899195">
+            </ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
 	<p>A um tempo atrás escrevi sobre o <a href="http://linux.die.net/man/8/update-alternatives" title="update-alternatives" target="_blank">utilitário de sistema update-alternatives</a> e mostrei <a href="http://blog.gilbertoca.com/?p=383" title="Alterne entre versões Java facilmente [update-alternatives]" target="_blank">como alternar entre versões do Java usando o mesmo</a>. Naquele mesmo post mostrei que o Java já havia sido instalado e configurado pelo sistema de gerenciamento de pacotes pre-definido - <a href="http://en.openSUSE.org/YaST_Software_Management" title="Yast" target="_blank">Yast</a>. Como já é de conhecimento de alguns a <a href="http://www.oracle.com" title="oracle" target="_blank">Oracle</a> mudou a <a href="http://www.hardware.com.br/noticias/2011-08/java-licenca-linux.html" title="mudança de licença Java" target="_blank">forma de licenciamento do Java</a> e com isso a maioria das distribuições - senão todas - optaram por retirar o Java distribuído pela Oracle de seus repositórios. Com isso, se você precisar instalar a versão Java da Oracle terá que fazê-la manualmente.</p>
 <p>Antes de começar, quero notificar aos usuários do navegador Chromium que como eles tive dificuldades, no início, para fazê-lo funcionar com Java ao acessar o site do Banco do Brasil. Para confirmar este problema é só fazer uma pesquisa no Google usando a seguinte sentença: <a href="https://www.google.com.br/search?sourceid:chrome&#038;ie=UTF-8&#038;q=chromium+banco+do+brasil" title="chromium banco do brasil" target="_blank">chromium banco do brasil</a>. Então para a felicidade geral nação “chromiumana”, relato que esta maneira manual aqui demonstrada soluciona este pequeno problema.</p>
 <p>Então vamos lá!<br />
@@ -110,10 +136,6 @@ zypper <span style="color: #c20cb9; font-weight: bold;">install</span> jdk-<span
 
     </section>
 <section>
-<div id="advertisements"></div>
-<script data-ad-client="ca-pub-3863943400063116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-</section>
-<section>
 <div id="disqus_thread"></div>
         <script type="text/javascript">
             /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -133,22 +155,28 @@ zypper <span style="color: #c20cb9; font-weight: bold;">install</span> jdk-<span
 </article>
 	
 </section>
-<footer>
-	<p>
-		<a href="https://pages.github.com/">Hosted by GitHub Pages</a> -
-		<a href="http://jbake.org/">Generated with JBake</a> -
-		<a href="http://github.com/gilbertoca/gilbertoca.com">Source code</a>
-	</p>
-</footer>
-<script type="text/javascript">
-	var _gaq = _gaq || [];
-	_gaq.push(['_setAccount', 'UA-2586578-2']);
-	_gaq.push(['_trackPageview']);
-	(function() {
-	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	})();
-</script>
+    <!-- google-matched-content -->
+    <div id="mon">
+            <p>You may also like:</p>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+            </script>
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-format="autorelaxed"
+                data-full-width-responsive="true">
+                data-ad-client="ca-pub-3863943400063116"
+                data-ad-slot="6949737682">
+            </ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+    </div>
+    <footer>
+        <p>
+            <a href="https://pages.github.com/">Hosted by GitHub Pages</a> -
+            <a href="http://jbake.org/">Generated with JBake</a> -
+            <a href="http://github.com/gilbertoca/gilbertoca.com">Source code</a>
+        </p>
+    </footer>
 </body>
 </html>
