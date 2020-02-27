@@ -1,5 +1,6 @@
-    <!-- google-matched-content -->
-    <div id="google-matched-content">
+<section>    
+<!-- google-matched-content -->
+    <div id="google-matched-content"></div>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <!-- google-matched-content -->
         <ins class="adsbygoogle"
@@ -11,7 +12,8 @@
         <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
-    </div>
+    
+</section>
 </section>
     <footer>
         <p>
