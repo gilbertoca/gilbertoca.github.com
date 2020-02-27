@@ -1,19 +1,49 @@
 git config --local user.email "gilbertoca at gmail"
 git config --local user.name "Gilberto Caetano de Andrade"
 
-mvn clean compile jbake:inline -Djbake.port=8080 -Djbake.listenAddress=0.0.0.0
 mvn jbake:inline -Djbake.port=8080 -Djbake.listenAddress=0.0.0.0
+ou 
+mvn jbake:generate
 
-Following [this tip](https://gist.github.com/cobyism/4730490)
+Setup
 
-1. clone the master branch and create/change your post/article;
-2. chech the result by building locally:
-   #the compile goal will copy the resources images/video as well
-   #to the output folder target/blog
-   mvn clean compile jbake:inline -Djbake.port=8080 -Djbake.listenAddress=0.0.0.0
-3. check-out your gh-pages branch in the target/blog subfolder and keep that folder in the gitignore to keep your history clean;
-4. git clone git@github.com:gilbertoca/gilbertoca.com.git --branch gh-pages target/blog
-5. rm -rf target/blog/*
-6. mvn compile jbake:generate
-7. cd target/blog/ && git add --all && git commit -m "Publising at $(date)" && git push
-8. cd ../.. and continue again
+$ rm -rf dist
+$ echo "dist/" >> .gitignore
+$ git worktree add dist gh-pages
+
+Making changes
+
+$ make # or what ever you run to populate dist
+$ cd dist
+$ git add --all
+$ git commit -m "Deploy to gh-pages"
+$ git push origin gh-pages
+$ cd ..
+
+Notes
+
+git worktree feature has its own garbage collection so if dist is deleted it will not affect much and can be recreated as needed. If you want it to go away you can use git worktree prune See man pages on it.
+Makefile
+
+To make this stream line the following Makefile can be used to automate this process:
+
+.PHONY: all deploy clean
+
+all: dist dist/index.html
+
+dist:
+	git worktree add dist gh-pages
+
+# Replace this rule with whatever builds your project
+dist/index.html: src/index.html
+	cp $< $@
+
+deploy: all
+	cd dist && \
+	git add --all && \
+	git commit -m "Deploy to gh-pages" && \
+	git push origin gh-pages
+
+# Removing the actual dist directory confuses git and will require a git worktree prune to fix
+clean:
+	rm -rf dist/*
