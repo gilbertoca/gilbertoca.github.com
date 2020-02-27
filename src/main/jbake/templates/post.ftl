@@ -13,7 +13,7 @@
     </header>
     <section>
         <!-- google-graphic-content -->
-        <div class="ingph">
+        <div id="google-matched-content">
             <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
             <!-- google-graphic-content -->
             <ins class="adsbygoogle"

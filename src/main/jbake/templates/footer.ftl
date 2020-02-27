@@ -1,5 +1,5 @@
     <!-- google-matched-content -->
-    <div id="mon">
+    <div id="google-matched-content">
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <!-- google-matched-content -->
         <ins class="adsbygoogle"
